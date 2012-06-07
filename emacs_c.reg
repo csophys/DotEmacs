@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\GNU\Emacs]
+"Home"="C:\\DotEmacs"
+"Emacs.Background"="DarkSlateGray"
+"Emacs.FontBackend"="xft"
+"Emacs.Font"="Consolas-10.5"
+"Emacs.geometry"="81x39+300+20"
+"Emacs.ScrollBars"="off"
+"Emacs.MenuBar"="1"
+"Emacs.ToolBar"="0"
+
+
+
+
