@@ -1,25 +1,20 @@
 ;;;csophys_writingSytle.el
-
 (color-theme-gnome2);设置darkskategrey灰色
-(setq default-major-mode 'text-mode);设置默认主属性为text模式。
-(setq-default ispell-program-name "aspell") ;;启用拼写检查
 (delete-selection-mode); 操作region区域和其他程序
 (auto-image-file-mode t);打开图片显示功能
 (fset 'yes-or-no-p 'y-or-n-p);简化yes or no 选择
 (column-number-mode t);显示列号
 (setq default-fill-column 80);默认列数为80列
-;日期和时间显示
 (display-time-mode 1);打开时间显示模式
-(setq display-time-24hr-format t) ;显示24小时制时间
-(setq display-time-day-and-date t);
-
 (setq confirm-kill-emacs 'y-or-n-p);;关闭emacs给出提示
 (global-auto-revert-mode t);;自动载入变化的文件
+;;显示24小时制时间
+(setq display-time-24hr-format t) ;
+(setq display-time-day-and-date t);
+
 (mouse-avoidance-mode 'animate);光标远离鼠标指针
-;;去除emacs的自动备份功能
-(setq make-backup-files nil)
-;;设置tab为4个空格的宽度，而不是原来的2
-(setq default-tab-width 4 )
+(setq make-backup-files nil);;去除emacs的自动备份功能
+(setq default-tab-width 4 );;设置tab为4个空格的宽度，而不是原来的2
 (blink-cursor-mode -1);关闭指针的闪烁
 (set-message-beep 'silent);取消Emacs的错误提示音
 (setq inhibit-startup-message t);取消emacs和gnus启动时的引导界面
@@ -31,6 +26,8 @@
 (require 'ibuffer)
 (global-set-key (kbd "C-x C-b")'ibuffer);设置ibuffer为默认的buffer,并且绑定按键
 (require 'ido)
+;;(tramp-unload-tramp) ;;禁用tramp
+(add-to-list 'load-path "~/plugin/plink"); 把theme载入load-path
 (require 'tramp) ;
 (cond
  ((eq system-type 'windows-nt)
@@ -38,12 +35,13 @@
         tramp-password-end-of-line "\r\n"))
  ((eq system-type 'gnu/linux)
   (setq tramp-default-method "ssh")))
-
 (ido-mode t);设置智能文件名提示功能
 (setq default-directory "D:");设置默认工作目录
 (show-paren-mode t) ;当指针到一个括号，自动显示所匹配的另一个括号
 (global-linum-mode t);显示行号
 (org-remember-insinuate)
+;;(setq org-directory "E:/kuaipan/文档/mine")
+;;(setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
 (define-key global-map "\C-ca" 'org-agenda);;映射org日程
 (setq org-todo-keywords '((sequence "TODO" "DONE" "IDEA" "OTHER")))

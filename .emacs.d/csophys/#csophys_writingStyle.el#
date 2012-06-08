@@ -1,33 +1,36 @@
 ;;;csophys_writingSytle.el
-(color-theme-gnome2);è®¾ç½®darkskategreyç°è‰²
-(delete-selection-mode); æ“ä½œregionåŒºåŸŸå’Œå…¶ä»–ç¨‹åº
-(auto-image-file-mode t);æ‰“å¼€å›¾ç‰‡æ˜¾ç¤ºåŠŸèƒ½
-(fset 'yes-or-no-p 'y-or-n-p);ç®€åŒ–yes or no é€‰æ‹©
-(column-number-mode t);æ˜¾ç¤ºåˆ—å·
-(setq default-fill-column 80);é»˜è®¤åˆ—æ•°ä¸º80åˆ—
-(display-time-mode 1);æ‰“å¼€æ—¶é—´æ˜¾ç¤ºæ¨¡å¼
-(setq confirm-kill-emacs 'y-or-n-p);;å…³é—­emacsç»™å‡ºæç¤º
-(global-auto-revert-mode t);;è‡ªåŠ¨è½½å…¥å˜åŒ–çš„æ–‡ä»¶
-;;æ˜¾ç¤º24å°æ—¶åˆ¶æ—¶é—´
-(setq display-time-24hr-format t) ;
+
+(color-theme-gnome2);‘Éè‘ÖÃdarkskategrey‘»Ò‘É«
+(setq default-major-mode 'text-mode);‘Éè‘ÖÃ‘Ä¬‘ÈÏ‘Ö÷‘Êô‘ĞÔ‘Îªtext‘Ä£‘Ê½‘¡£
+(setq-default ispell-program-name "aspell") ;;‘Æô‘ÓÃ‘Æ´‘Ğ´‘¼ì‘²é
+(delete-selection-mode); ‘²Ù‘×÷region‘Çø‘Óò‘ºÍ‘Æä‘Ëû‘³Ì‘Ğò
+(auto-image-file-mode t);‘´ò‘¿ª‘Í¼‘Æ¬‘ÏÔ‘Ê¾‘¹¦‘ÄÜ
+(fset 'yes-or-no-p 'y-or-n-p);‘¼ò‘»¯yes or no ‘Ñ¡‘Ôñ
+(column-number-mode t);‘ÏÔ‘Ê¾‘ÁĞ‘ºÅ
+(setq default-fill-column 80);‘Ä¬‘ÈÏ‘ÁĞ‘Êı‘Îª80‘ÁĞ
+;‘ÈÕ‘ÆÚ‘ºÍ‘Ê±‘¼ä‘ÏÔ‘Ê¾
+(display-time-mode 1);‘´ò‘¿ª‘Ê±‘¼ä‘ÏÔ‘Ê¾‘Ä£‘Ê½
+(setq display-time-24hr-format t) ;‘ÏÔ‘Ê¾24‘Ğ¡‘Ê±‘ÖÆ‘Ê±‘¼ä
 (setq display-time-day-and-date t);
 
-(mouse-avoidance-mode 'animate);å…‰æ ‡è¿œç¦»é¼ æ ‡æŒ‡é’ˆ
-(setq make-backup-files nil);;å»é™¤emacsçš„è‡ªåŠ¨å¤‡ä»½åŠŸèƒ½
-(setq default-tab-width 4 );;è®¾ç½®tabä¸º4ä¸ªç©ºæ ¼çš„å®½åº¦ï¼Œè€Œä¸æ˜¯åŸæ¥çš„2
-(blink-cursor-mode -1);å…³é—­æŒ‡é’ˆçš„é—ªçƒ
-(set-message-beep 'silent);å–æ¶ˆEmacsçš„é”™è¯¯æç¤ºéŸ³
-(setq inhibit-startup-message t);å–æ¶ˆemacså’Œgnuså¯åŠ¨æ—¶çš„å¼•å¯¼ç•Œé¢
-(setq frame-title-format "%b@csophys");è®¾ç½®emacsçš„çª—å£æ ‡é¢˜,%bæŒ‡çš„æ˜¯å½“å‰æ´»åŠ¨çª—å£
-(set-default-font "Consolas-10.5");;è®¾ç½®é»˜è®¤å­—ä½“Ms Consolas
-;;è®¾ç½®é»˜è®¤ä¸­æ–‡å­—ä½“,ä¸è¦†ç›–è‹±æ–‡å­—ä½“ï¼ˆMs Consolas-10.5)
+(setq confirm-kill-emacs 'y-or-n-p);;‘¹Ø‘±Õemacs‘¸ø‘³ö‘Ìá‘Ê¾
+(global-auto-revert-mode t);;‘×Ô‘¶¯‘ÔØ‘Èë‘±ä‘»¯‘µÄ‘ÎÄ‘¼ş
+(mouse-avoidance-mode 'animate);‘¹â‘±ê‘Ô¶‘Àë‘Êó‘±ê‘Ö¸‘Õë
+;;‘È¥‘³ıemacs‘µÄ‘×Ô‘¶¯‘±¸‘·İ‘¹¦‘ÄÜ
+(setq make-backup-files nil)
+;;‘Éè‘ÖÃtab‘Îª4‘¸ö‘¿Õ‘¸ñ‘µÄ‘¿í‘¶È‘£¬‘¶ø‘²»‘ÊÇ‘Ô­‘À´‘µÄ2
+(setq default-tab-width 4 )
+(blink-cursor-mode -1);‘¹Ø‘±Õ‘Ö¸‘Õë‘µÄ‘ÉÁ‘Ë¸
+(set-message-beep 'silent);‘È¡‘ÏûEmacs‘µÄ‘´í‘Îó‘Ìá‘Ê¾‘Òô
+(setq inhibit-startup-message t);‘È¡‘Ïûemacs‘ºÍgnus‘Æô‘¶¯‘Ê±‘µÄ‘Òı‘µ¼‘½ç‘Ãæ
+(setq frame-title-format "%b@csophys");‘Éè‘ÖÃemacs‘µÄ‘´°‘¿Ú‘±ê‘Ìâ,%b‘Ö¸‘µÄ‘ÊÇ‘µ±‘Ç°‘»î‘¶¯‘´°‘¿Ú
+(set-default-font "Consolas-10.5");;‘Éè‘ÖÃ‘Ä¬‘ÈÏ‘×Ö‘ÌåMs Consolas
+;;‘Éè‘ÖÃ‘Ä¬‘ÈÏ‘ÖĞ‘ÎÄ‘×Ö‘Ìå,‘²»‘¸²‘¸Ç‘Ó¢‘ÎÄ‘×Ö‘Ìå‘£¨Ms Consolas-10.5)
 (set-fontset-font t 'unicode '("Microsoft Yahei" . "unicode-bmp"))
-(global-set-key (kbd "RET")'newline-and-indent);è®¾ç½®RETçš„åŠŸèƒ½ä¸ºnewline and indent
+(global-set-key (kbd "RET")'newline-and-indent);‘Éè‘ÖÃRET‘µÄ‘¹¦‘ÄÜ‘Îªnewline and indent
 (require 'ibuffer)
-(global-set-key (kbd "C-x C-b")'ibuffer);è®¾ç½®ibufferä¸ºé»˜è®¤çš„buffer,å¹¶ä¸”ç»‘å®šæŒ‰é”®
+(global-set-key (kbd "C-x C-b")'ibuffer);‘Éè‘ÖÃibuffer‘Îª‘Ä¬‘ÈÏ‘µÄbuffer,‘²¢‘ÇÒ‘°ó‘¶¨‘°´‘¼ü
 (require 'ido)
-;;(tramp-unload-tramp) ;;ç¦ç”¨tramp
-(add-to-list 'load-path "~/plugin/plink"); æŠŠthemeè½½å…¥load-path
 (require 'tramp) ;
 (cond
  ((eq system-type 'windows-nt)
@@ -35,15 +38,14 @@
         tramp-password-end-of-line "\r\n"))
  ((eq system-type 'gnu/linux)
   (setq tramp-default-method "ssh")))
-(ido-mode t);è®¾ç½®æ™ºèƒ½æ–‡ä»¶åæç¤ºåŠŸèƒ½
-(setq default-directory "D:");è®¾ç½®é»˜è®¤å·¥ä½œç›®å½•
-(show-paren-mode t) ;å½“æŒ‡é’ˆåˆ°ä¸€ä¸ªæ‹¬å·ï¼Œè‡ªåŠ¨æ˜¾ç¤ºæ‰€åŒ¹é…çš„å¦ä¸€ä¸ªæ‹¬å·
-(global-linum-mode t);æ˜¾ç¤ºè¡Œå·
+
+(ido-mode t);‘Éè‘ÖÃ‘ÖÇ‘ÄÜ‘ÎÄ‘¼ş‘Ãû‘Ìá‘Ê¾‘¹¦‘ÄÜ
+(setq default-directory "D:");‘Éè‘ÖÃ‘Ä¬‘ÈÏ‘¹¤‘×÷‘Ä¿‘Â¼
+(show-paren-mode t) ;‘µ±‘Ö¸‘Õë‘µ½‘Ò»‘¸ö‘À¨‘ºÅ‘£¬‘×Ô‘¶¯‘ÏÔ‘Ê¾‘Ëù‘Æ¥‘Åä‘µÄ‘Áí‘Ò»‘¸ö‘À¨‘ºÅ
+(global-linum-mode t);‘ÏÔ‘Ê¾‘ĞĞ‘ºÅ
 (org-remember-insinuate)
-;;(setq org-directory "E:/kuaipan/æ–‡æ¡£/mine")
-;;(setq org-default-notes-file (concat org-directory "/notes.org"))
-(define-key global-map [f12] 'org-remember);è®¾ç½®f12ç»‘å®šorg-remember
-(define-key global-map "\C-ca" 'org-agenda);;æ˜ å°„orgæ—¥ç¨‹
+(define-key global-map [f12] 'org-remember);‘Éè‘ÖÃf12‘°ó‘¶¨org-remember
+(define-key global-map "\C-ca" 'org-agenda);;‘Ó³‘Éäorg‘ÈÕ‘³Ì
 (setq org-todo-keywords '((sequence "TODO" "DONE" "IDEA" "OTHER")))
 
 (setq org-remember-templates
@@ -53,30 +55,30 @@
 ))
 
 (setq bookmark-default-file "~/emacs.bmk")
-;;org-mode æŠ˜è¡Œ
+;;org-mode ‘ÕÛ‘ĞĞ
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
-(setq org-startup-indented t);;è®¾ç½®orgçš„è‡ªåŠ¨ç¼©è¿›
-;;sql-modeå›æ˜¾
+(setq org-startup-indented t);;‘Éè‘ÖÃorg‘µÄ‘×Ô‘¶¯‘Ëõ‘½ø
+;;sql-mode‘»Ø‘ÏÔ
 (setq sql-mysql-options '("-C" "-t" "-f" "-n"))
 
-;;è¾“å…¥å½“å‰æ—¥æœŸinsert-dateæ–¹æ³•
+;;‘Êä‘Èë‘µ±‘Ç°‘ÈÕ‘ÆÚinsert-date‘·½‘·¨
  (defun insert-date ()
     "Inserts standard date time string." 
     (interactive)
     (insert (format-time-string "%c")))
 
-;;ç”¨easypgæ¥è¿›è¡Œæ–‡ä»¶çš„åŠ å¯†
+;;‘ÓÃeasypg‘À´‘½ø‘ĞĞ‘ÎÄ‘¼ş‘µÄ‘¼Ó‘ÃÜ
 (require 'epa-file)
 (epa-file-enable)
-;;ä½¿ç”¨å¯¹ç§°åŠ å¯†
+;;‘Ê¹‘ÓÃ‘¶Ô‘³Æ‘¼Ó‘ÃÜ
 (setq epa-file-encrypt-to nil)
-;;ä¿å­˜ä¸€ä¸ªsessionçš„å¯†ç ,ä¸ç„¶éœ€è¦æ€»è¾“å…¥å¯†ç 
+;;‘±£‘´æ‘Ò»‘¸ösession‘µÄ‘ÃÜ‘Âë,‘²»‘È»‘Ğè‘Òª‘×Ü‘Êä‘Èë‘ÃÜ‘Âë
 ;; save the password
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;; auto-save
 (setq epa-file-inhibit-auto-save nil)
 
-;;;;ç”¨f9è¿½è¸ªelispå‡½æ•°æˆ–å˜é‡å£°æ˜ä½ç½®
+;;;;‘ÓÃf9‘×·‘×Ùelisp‘º¯‘Êı‘»ò‘±ä‘Á¿‘Éù‘Ã÷‘Î»‘ÖÃ
 (define-key global-map (kbd "C-c j") 'find-tag-at-point)
 (defun find-tag-at-point ()
   "Find variable or function at point."
@@ -89,7 +91,7 @@
 		  (find-file-at-point)))
 	(find-variable-at-point)))
 
-;;;;;;;;;;;;;é…ç½®åªèƒ½ä¹¦ç­¾å€™é€‰å½¢å¼
+;;;;;;;;;;;;;‘Åä‘ÖÃ‘Ö»‘ÄÜ‘Êé‘Ç©‘ºò‘Ñ¡‘ĞÎ‘Ê½
 (defun bookmark-ido-read()
 (interactive)
 (bookmark-maybe-load-default-file)
@@ -98,7 +100,7 @@
 (define-key global-map (kbd "C-x rb") 'bookmark-ido-read)
 
 
-;;;;;;;;;;é…ç½®cè¯­è¨€çš„ç¼–è¯‘å™¨åŠå¿«é€Ÿç¼–è¯‘é”®ç»‘å®š
+;;;;;;;;;;‘Åä‘ÖÃc‘Óï‘ÑÔ‘µÄ‘±à‘Òë‘Æ÷‘¼°‘¿ì‘ËÙ‘±à‘Òë‘¼ü‘°ó‘¶¨
 (defun quick-compile ()  
 "A quick compile funciton for C++"  
 (interactive)  
