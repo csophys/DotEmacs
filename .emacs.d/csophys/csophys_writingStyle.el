@@ -42,7 +42,7 @@
 ("OTHER" ?o "* Other %?\n %o\n %a" "~/schedule.org.gpg" "Other")
 ))
 
-;;;;;;;;;;;;;;;;;;;;;;;;启用内置的一些功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;启用一些扩展功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'ibuffer)
 (global-set-key (kbd "C-x C-b")'ibuffer);设置ibuffer为默认的buffer,并且绑定按键
 
@@ -61,6 +61,11 @@
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;; auto-save
 (setq epa-file-inhibit-auto-save nil)
+
+(el-get-init "autopair");;;;使用autopair
+(autopair-global-mode)
+
+(require 'magit);;;;magit
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)

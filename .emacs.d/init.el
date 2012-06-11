@@ -1,4 +1,3 @@
-
 ;;如果不存在el-get，就连接网络
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (unless (require 'el-get nil t)
@@ -16,7 +15,8 @@
 ;;设置custom文件位置
 (setq custom-file "~/.emacs.d/.csophys_custom.el")
 (load "~/.emacs.d/.csophys_custom.el")
-
+;;设置magit的加载路径
+(add-to-list 'load-path "~/.emacs.d/magit")
 
 ;; 设置一些文件位置，判断是否是公司的机器
 (if (equal system-name "chensheng")
