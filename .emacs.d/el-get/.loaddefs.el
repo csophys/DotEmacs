@@ -143,9 +143,11 @@ Initialize the color theme package by loading color-theme-libraries.
 
 ;;;***
 
-;;;### (autoloads nil nil ("autopair/autopair.el" "color-theme/color-theme-autoloads.el"
-;;;;;;  "el-get/el-get-install.el" "el-get/el-get.el") (20438 4961
-;;;;;;  600000))
+;;;### (autoloads nil nil ("auto-complete/auto-complete-config.el"
+;;;;;;  "auto-complete/auto-complete-pkg.el" "auto-complete/auto-complete.el"
+;;;;;;  "autopair/autopair.el" "color-theme/color-theme-autoloads.el"
+;;;;;;  "el-get/el-get-install.el" "el-get/el-get.el" "popup/popup-test.el"
+;;;;;;  "popup/popup.el") (20438 8132 67000))
 
 ;;;***
 

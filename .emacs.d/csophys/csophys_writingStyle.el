@@ -67,6 +67,10 @@
 
 (require 'magit);;;;magit
 
+(el-get-init "auto-complete");;;;配置auto-complete
+
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
