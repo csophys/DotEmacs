@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-remember-last-stored"
+ (filename . "~/schedule.org.gpg")
+ (front-context-string . "** TODO 设置根据机器名来")
+ (rear-context-string . "company.bmk\")]]\n")
+ (position . 3733))
+)
