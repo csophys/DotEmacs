@@ -11,8 +11,8 @@
 
 ;;设置csophys的个人配置
 (add-to-list 'load-path "~/.emacs.d/csophys")
-;(require 'csophys_writingStyle)
-;(require 'csophys_function)
+(require 'csophys_function)
+(require 'csophys_writingStyle)
 ;;设置custom文件位置
 (setq custom-file "~/.emacs.d/.csophys_custom.el")
 (load "~/.emacs.d/.csophys_custom.el")
