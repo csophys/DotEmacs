@@ -22,7 +22,7 @@
 (blink-cursor-mode -1);关闭指针的闪烁
 (set-message-beep 'silent);取消Emacs的错误提示音
 (setq inhibit-startup-message t);取消emacs和gnus启动时的引导界面
-(setq frame-title-format "%b@csophys");设置emacs的窗口标题,%b指的是当前活动窗口
+(setq frame-title-format '("%S" (buffer-file-name "%f" (dired-directory dired-directory "%b")) "@csophys"))
 (set-default-font "Consolas-10.5");;设置默认字体Ms Consolas
 (set-fontset-font t 'unicode '("Microsoft Yahei" . "unicode-bmp"));;设置默认中文字体,不覆盖英文字体（Ms Consolas-10.5)
 (show-paren-mode t) ;当指针到一个括号，自动显示所匹配的另一个括号
@@ -34,8 +34,12 @@
 (setq org-startup-indented t);;设置org的自动缩进
 (org-remember-insinuate)
 (define-key global-map "\C-ca" 'org-agenda);;映射org日程
-(setq org-todo-keywords '((sequence "TODO" "DONE" "IDEA" "OTHER")))
-
+(setq org-todo-keywords '((sequence "TODO"  "IDEA" "OTHER" "|" "DONE")))
+(setq org-remember-templates
+'(("TODO" ?t "* TODO %?\n %x\n %a"  "~/schedule.org.gpg" "Tasks")
+("IDEA" ?i "* IDEA %?\n %i\n %a"  "~/schedule.org.gpg" "Idea")
+("OTHER" ?o "* Other %?\n %o\n %a" "~/schedule.org.gpg" "Other")
+))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;启用内置的一些功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'ibuffer)
@@ -61,6 +65,6 @@
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
 (global-set-key (kbd "RET")'newline-and-indent);设置RET的功能为newline and indent
-(global-set-key "\C-c\C-j" 'dired-jump)
+(global-set-key "\C-x\C-j" 'dired-jump)
 (provide 'csophys_writingStyle)
 

@@ -16,13 +16,16 @@
 ;;设置custom文件位置
 (setq custom-file "~/.emacs.d/.csophys_custom.el")
 (load "~/.emacs.d/.csophys_custom.el")
-;; 设置书签文件位置
 
+
+;; 设置一些文件位置，判断是否是公司的机器
+(if (equal system-name "chensheng")
+	(progn
 (setq bookmark-default-file "~/.emacs.d/.csophys_company.bmk")
 (setq default-directory "C:/EmacsDir");设置默认工作目录
-(setq org-remember-templates
-'(("TODO" ?t "* TODO %?\n %x\n %a"  "~/schedule.org.gpg" "Tasks")
-("IDEA" ?i "* IDEA %?\n %i\n %a"  "~/schedule.org.gpg" "Idea")
-("OTHER" ?o "* Other %?\n %o\n %a" "~/schedule.org.gpg" "Other")
-))
-
+) 
+(setq bookmark-default-file "~/.emacs.d/.csophys_person.bmk")
+(setq default-directory "D:/EmacsDir");设置默认工作目录
+)
+;;取消一些命令警告信息
+(put 'dired-find-alternate-file 'disabled nil)
