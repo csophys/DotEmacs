@@ -1,0 +1,45 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/" . "EmacsDir/")
+ ("c:/DotEmacs/.emacs.d/" . "csophys/")
+ ("c:/DotEmacs/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/EmacsDir/"
+ "c:/DotEmacs/.emacs.d/"
+ "c:/DotEmacs/.emacs.d/csophys/"
+ "C:/EmacsDir/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "schedule.org"
+ "init.el"
+ "csophys_writingStyle.el"
+ "#csophys_writingStyle.el#"
+ "csophys_function.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/EmacsDir/" (20432 6246) "TestJDEE/" "Test/" "svnRepository/" "schedule.org" "schedule.html" "PythonStudy/" "Project/" "magit/" "image/" "Hello World/" "gitRepository/" "GitDocument/" "EmacsPluginFromGit/" "document.org" "C/" "ant/" "../" "./")
+
+ ("C:/EmacsDir/" (20432 6246) "TestJDEE/" "Test/" "svnRepository/" "schedule.org" "schedule.html" "PythonStudy/" "Project/" "magit/" "image/" "Hello World/" "gitRepository/" "GitDocument/" "EmacsPluginFromGit/" "document.org" "C/" "ant/" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/" (20437 24545) "init.el~" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" ".csophys_custom.el~" ".csophys_custom.el" "../" "./")
+
+ ("c:/Documents and Settings/Administrator/" (20433 49122) "デスクトップ/" "スタート メニュー/" "_viminfo" "xen/" "workspace/" "WINDOWS/" "UserData/" "Templates/" "SendTo/" "Recent/" "PrintHood/" "ntuser.ini" "NTUSER.DAT.LOG" "NTUSER.DAT" "NetHood/" "My Documents/" "magit/" "Local Settings/" "grizzly~git/" "Favorites/" "Cookies/" "chensheng/" "Application Data/" ".subversion/" ".ssh/" ".m2/" ".gitk" ".gitconfig" ".freemind/" ".bash_history" ".astah/" ".asadmintruststore" ".asadminpass" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/csophys/" (20437 23639) "csophys_writingStyle.el~" "csophys_writingStyle.el" "csophys_function.el~" "csophys_function.el" "../" "./")
+
+ ("c:/DotEmacs/" (20437 24098) "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "#message-20120606-235651#" "../" "./")
+
+ ("c:/emacs-24.1/lisp/international/" (20430 64296) "utf-7.elc" "utf-7.el" "uni-uppercase.el" "uni-titlecase.el" "uni-old-name.el" "uni-numeric.el" "uni-name.el" "uni-mirrored.el" "uni-lowercase.el" "uni-digit.el" "uni-decomposition.el" "uni-decimal.el" "uni-comment.el" "uni-combining.el" "uni-category.el" "uni-bidi.el" "ucs-normalize.elc" "ucs-normalize.el" "titdic-cnv.elc" "titdic-cnv.el" "robin.elc" "robin.el" "README" "quail.elc" "quail.el" "ogonek.elc" "ogonek.el" "mule.elc" "mule.el" "mule-util.elc" "mule-util.el" "mule-diag.elc" "mule-diag.el" "mule-conf.elc" "mule-conf.el" "mule-cmds.elc" "mule-cmds.el" "latin1-disp.elc" "latin1-disp.el" "latexenc.elc" "latexenc.el" "kkc.elc" "kkc.el" "kinsoku.elc" "kinsoku.el" "ja-dic-utl.elc" "ja-dic-utl.el" "ja-dic-cnv.elc" "ja-dic-cnv.el" "iso-transl.elc" "iso-transl.el" "iso-cvt.elc" "iso-cvt.el" "iso-ascii.elc" "iso-ascii.el" "isearch-x.elc" "isearch-x.el" "fontset.elc" "fontset.el" "eucjp-ms.el" "cp51932.el" "charprop.el" "characters.elc" "characters.el" "ccl.elc" "ccl.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

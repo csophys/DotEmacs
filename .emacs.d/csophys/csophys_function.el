@@ -2,7 +2,6 @@
 
 
 (defun os_tramp()
-  "use tramp with different os"
 (cond
  ((eq system-type 'windows-nt)
   (setq tramp-default-method "plink"
