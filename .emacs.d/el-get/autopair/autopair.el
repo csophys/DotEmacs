@@ -48,10 +48,15 @@
 ;; (add-hook 'c-mode-common-hook #'(lambda () (autopair-mode)))
 ;;
 ;; Alternatively, do use `autopair-global-mode' and create
-;; *exceptions* using the `autopair-dont-activate' local variable,
+;; *exceptions* using the `autopair-dont-activate' local variable (for
+;; emacs < 24), or just using (autopair-mode -1) (for emacs >= 24)
 ;; like:
 ;;
-;; (add-hook 'c-mode-common-hook #'(lambda () (setq autopair-dont-activate t)))
+;; (add-hook 'c-mode-common-hook
+;;           #'(lambda ()
+;;             (setq autopair-dont-activate t)
+;;             (autopair-mode -1)))
+;;
 ;;
 ;;; Use:
 ;;
@@ -92,8 +97,7 @@
 ;; wrap the selection region with the delimiters you're trying to
 ;; insert. This is done conditionally based of syntaxes of the two
 ;; ends of the selection region. It is compatible with `cua-mode's
-;; typing-deletes-selection behaviour. This feature is probably still
-;; a little unstable, hence `autopair-autowrap' defaults to nil.
+;; typing-deletes-selection behaviour. 
 ;;
 ;; If you find the paren-blinking annoying, turn `autopair-blink' to
 ;; nil.
@@ -194,14 +198,15 @@ criterious when skipping.")
   "A dinamic keymap for autopair set mostly from the current
   syntax table.")
 
-(defvar autopair-dont-activate nil
-  "Control activation of `autopair-global-mode'.
+(unless (> emacs-major-version 23)
+  (defvar autopair-dont-activate nil
+    "Control activation of `autopair-global-mode'.
 
 Set this to a non-nil value to skip activation of `autopair-mode'
 in certain contexts.  If however the value satisfies `functionp'
 and is a function of no arguments, the function is called and it is
 the return value that decides.")
-(make-variable-buffer-local 'autopair-dont-activate)
+  (make-variable-buffer-local 'autopair-dont-activate))
 
 (defvar autopair-extra-pairs nil
   "Extra pairs for which to use pairing.
@@ -326,11 +331,14 @@ For now, simply returns `last-command-event'"
 ;;
 (define-globalized-minor-mode autopair-global-mode autopair-mode autopair-on)
 
-(defun autopair-on () (unless (or buffer-read-only
-                                  (if (functionp autopair-dont-activate)
-                                      (funcall autopair-dont-activate)
-                                    autopair-dont-activate))
-                                  (autopair-mode 1)))
+(defun autopair-on ()
+  (unless (or buffer-read-only
+              (and (not (minibufferp))
+                   (string-match "^ \\*" (buffer-name)))
+              (eq major-mode 'sldb-mode) 
+              (and (boundp 'autopair-dont-activate)
+                   autopair-dont-activate))
+    (autopair-mode 1)))
 
 (define-minor-mode autopair-mode
   "Automagically pair braces and quotes like in TextMate."
@@ -473,7 +481,7 @@ A list of four elements is returned:
                 point-before
                 region-before))))))
 
-(defun autopair-original-binding ()
+(defun autopair-original-binding (fallback-keys)
   (or (key-binding `[,autopair-inserted])
       (key-binding (this-single-command-keys))
       (key-binding fallback-keys)))
@@ -481,8 +489,8 @@ A list of four elements is returned:
 (defun autopair-fallback (&optional fallback-keys)
   (let* ((autopair-emulation-alist nil)
          (beyond-cua (let ((cua--keymap-alist nil))
-                       (autopair-original-binding)))
-         (beyond-autopair (autopair-original-binding)))
+                       (autopair-original-binding fallback-keys)))
+         (beyond-autopair (autopair-original-binding fallback-keys)))
     (when autopair-autowrap
       (setq autopair-wrap-action (autopair-calculate-wrap-action)))
     

@@ -62,14 +62,7 @@
 ;; auto-save
 (setq epa-file-inhibit-auto-save nil)
 
-(el-get-init "autopair");;;;使用autopair
-(autopair-global-mode)
-
 (require 'magit);;;;magit
-
-(el-get-init "auto-complete");;;;配置auto-complete
-
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
