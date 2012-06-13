@@ -1,3 +1,4 @@
+
 ;;;csophys_writingSytle.el
 ;;;;;;;;;;;;;;;;;;;;;;;;基本配置;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (el-get-init "color-theme")
@@ -63,6 +64,22 @@
 (setq epa-file-inhibit-auto-save nil)
 
 (require 'magit);;;;magit
+
+(autopair-global-mode t);;;启动autopair mode
+
+;;;;auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
+(define-key ac-completing-map (kbd "<return>") 'ac-complete)
+(define-key ac-mode-map (kbd "M-/") 'auto-complete)
+(define-key ac-completing-map (kbd "ESC") 'ac-stop)
+(define-key ac-completing-map (kbd "<backtab>") 'ac-previous)
+
+
+;;;;yasnippet
+(yas/initialize)
+(setq yas/prompt-functions '(yas/dropdown-prompt))
+(define-key org-mode-map (kbd "<tab>") 'yas/expand)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)

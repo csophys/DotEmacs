@@ -9,14 +9,15 @@
 (el-get 'sync) ;;使用同步方式下载，默认是异步方式
 
 ;;设置csophys的个人配置
+;;设置magit的加载路径
+(add-to-list 'load-path "~/.emacs.d/magit")
 (add-to-list 'load-path "~/.emacs.d/csophys")
 (require 'csophys_function)
 (require 'csophys_writingStyle)
 ;;设置custom文件位置
 (setq custom-file "~/.emacs.d/.csophys_custom.el")
 (load "~/.emacs.d/.csophys_custom.el")
-;;设置magit的加载路径
-(add-to-list 'load-path "~/.emacs.d/magit")
+
 
 ;; 设置一些文件位置，判断是否是公司的机器
 (if (equal system-name "chensheng")
