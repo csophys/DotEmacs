@@ -2,7 +2,32 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-remember-last-stored"
+(("csophys_writingStyle.el"
+ (filename . "~/.emacs.d/csophys/csophys_writingStyle.el")
+ (front-context-string . "\n\n;;;;yasnippet\n")
+ (rear-context-string . ") 'ac-previous)\n")
+ (position . 2710))
+("task.org"
+ (filename . "c:/task/task.org")
+ (front-context-string . "#+STYLE:<link re")
+ (rear-context-string)
+ (position . 1))
+("command.txt"
+ (filename . "c:/task/command.txt")
+ (front-context-string . "cd C:\\Interstage")
+ (rear-context-string)
+ (position . 1))
+("blog.org"
+ (filename . "c:/EmacsDir/blog.org")
+ (front-context-string . "#+STYLE:<link re")
+ (rear-context-string)
+ (position . 1))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "\n(setq default-d")
+ (rear-context-string . "ys_company.bmk\")")
+ (position . 745))
+("org-remember-last-stored"
  (filename . "~/schedule.org.gpg")
  (front-context-string . "** TODO 设置根据机器名来")
  (rear-context-string . "company.bmk\")]]\n")

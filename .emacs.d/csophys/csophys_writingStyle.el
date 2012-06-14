@@ -44,6 +44,7 @@
 ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;启用一些扩展功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'bookmark)
 (require 'ibuffer)
 (global-set-key (kbd "C-x C-b")'ibuffer);设置ibuffer为默认的buffer,并且绑定按键
 
@@ -67,6 +68,11 @@
 
 (autopair-global-mode t);;;启动autopair mode
 
+;;;;yasnippet
+(yas/initialize)
+(setq yas/prompt-functions '(yas/dropdown-prompt))
+(define-key org-mode-map (kbd "<tab>") 'yas/expand)
+
 ;;;;auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
@@ -75,11 +81,6 @@
 (define-key ac-completing-map (kbd "ESC") 'ac-stop)
 (define-key ac-completing-map (kbd "<backtab>") 'ac-previous)
 
-
-;;;;yasnippet
-(yas/initialize)
-(setq yas/prompt-functions '(yas/dropdown-prompt))
-(define-key org-mode-map (kbd "<tab>") 'yas/expand)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)

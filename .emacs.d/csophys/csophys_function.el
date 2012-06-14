@@ -26,7 +26,7 @@
         (function (function-called-at-point)))
     (if (equal variable 0)
         (if function
-            (find-function-do-it function nil 'switch-to-buffer)
+			(find-function-at-point)
 		  (find-file-at-point)))
 	(find-variable-at-point)))
 

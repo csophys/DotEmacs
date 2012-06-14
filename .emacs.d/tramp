@@ -1,0 +1,25 @@
+;; -*- emacs-lisp -*- <12/06/14 11:26:42 c:/DotEmacs/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["plink" "isdev" "10.124.174.204" nil]
+  ("uname" "SunOS 5.10")
+  ("test" "test")
+  ("remote-path"
+   ("/usr/xpg4/bin" "/usr/ccs/bin" "/usr/bin" "/bin" "/usr/sbin"))
+  ("remote-shell" "/usr/bin/bash")
+  ("busybox" nil)
+  ("file-exists" "test -e")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" nil)
+  ("stat" nil)
+  ("id" "/usr/xpg4/bin/id")
+  ("gid-string" "isgroup")
+  ("gid-integer" 100)
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" tramp-perl-encode-with-module)
+  ("remote-decoding" tramp-perl-decode-with-module)
+  ("ls" "/usr/xpg4/bin/ls")))
