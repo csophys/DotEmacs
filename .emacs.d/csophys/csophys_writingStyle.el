@@ -75,6 +75,9 @@
 
 ;;;;auto-complete
 (require 'auto-complete-config)
+(defun ac-common-setup ()
+  (add-to-list 'ac-sources 'ac-source-filename)
+  )
 (ac-config-default)
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
