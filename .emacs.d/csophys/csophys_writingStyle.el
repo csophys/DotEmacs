@@ -1,4 +1,5 @@
 
+
 ;;;csophys_writingSytle.el
 ;;;;;;;;;;;;;;;;;;;;;;;;基本配置;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (el-get-init "color-theme")
@@ -75,13 +76,22 @@
 
 ;;;;auto-complete
 (require 'auto-complete-config)
+;;;;重新定义函数ac-source-yasnippet，能够适用于最新的yasnippet
+(defun ac-yasnippet-candidates ()
+  (with-no-warnings
+        ;; >0.6.0
+        (apply 'append (mapcar 'ac-yasnippet-candidate-1 (yas/get-snippet-tables)))
+      ))
+
 (defun ac-common-setup ()
   (add-to-list 'ac-sources 'ac-source-filename)
   )
 (ac-config-default)
+(setq ac-auto-start t);;设定输入几个字符后提示
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map (kbd "ESC") 'ac-stop)
+(define-key ac-completing-map (kbd "<tab>") 'ac-next)
 (define-key ac-completing-map (kbd "<backtab>") 'ac-previous)
 
 
