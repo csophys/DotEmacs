@@ -1,5 +1,3 @@
-
-
 ;;;csophys_writingSytle.el
 ;;;;;;;;;;;;;;;;;;;;;;;;基本配置;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (el-get-init "color-theme")
@@ -69,6 +67,18 @@
 
 (autopair-global-mode t);;;启动autopair mode
 
+
+(require 'cedet)
+(require 'semantic/sb)
+(semantic-mode 1)
+(global-semantic-idle-scheduler-mode t)
+(global-semanticdb-minor-mode t)
+(global-semantic-idle-summary-mode t)
+(global-semantic-idle-completions-mode t)
+(global-semantic-highlight-func-mode t)
+(global-semantic-decoration-mode t)
+(global-semantic-stickyfunc-mode t)
+
 ;;;;yasnippet
 (yas/initialize)
 (setq yas/prompt-functions '(yas/dropdown-prompt))
@@ -82,10 +92,31 @@
         ;; >0.6.0
         (apply 'append (mapcar 'ac-yasnippet-candidate-1 (yas/get-snippet-tables)))
       ))
+;;;;添加directionary
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;;;;增加ac-modes的
+(setq ac-modes
+      (append ac-modes '(org-mode objc-mode jde-mode sql-mode
+								  eshell-mode shell-mode
+                                  change-log-mode text-mode
+                                  makefile-gmake-mode makefile-bsdmake-mo
+                                  autoconf-mode makefile-automake-mode graphviz-dot-mode))
+      )
 
 (defun ac-common-setup ()
   (add-to-list 'ac-sources 'ac-source-filename)
   )
+;;;;可以载入多个字典目录
+(defun ac-mode-dictionary (mode)
+  (let (result)
+    (dolist (name (cons (symbol-name mode)
+		      (ignore-errors (list (file-name-extension (buffer-file-name))))))
+    (dolist (dir ac-dictionary-directories)
+      (let ((file (concat dir "/" name)))
+ 	(if (file-exists-p file)
+ 	    (setq result (append result (ac-file-dictionary file)))))))
+    result))
+
 (ac-config-default)
 (setq ac-auto-start t);;设定输入几个字符后提示
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)

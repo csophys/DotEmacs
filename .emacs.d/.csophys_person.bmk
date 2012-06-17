@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("csophys_writingStyle.el"
+ (filename . "~/.emacs.d/csophys/csophys_writingStyle.el")
+ (front-context-string . "\n\n;;;;yasnippet\n")
+ (rear-context-string . ") 'ac-previous)\n")
+ (position . 2710))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "\n(setq default-d")
+ (rear-context-string . "ys_company.bmk\")")
+ (position . 745))
+("org-remember-last-stored"
+ (filename . "~/schedule.org.gpg")
+ (front-context-string . "** TODO 设置根据机器名来")
+ (rear-context-string . "company.bmk\")]]\n")
+ (position . 3733))
+)

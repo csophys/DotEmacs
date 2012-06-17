@@ -2,8 +2,11 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("D:/EmacsDir/" . "C/")
+ ("e:/kuaipan/dotemacs/plugin/auto-complete/" . "ac-dict/")
+ ("e:/kuaipan/dotemacs/plugin/" . "auto-complete/")
  ("e:/kuaipan/dotemacs/csophys/" . "programeExpand/")
- ("e:/kuaipan/dotemacs/" . "csophys/")
+ ("e:/kuaipan/dotemacs/" . "plugin/")
  ("e:/kuaipan/" . "dotemacs/")
  ("e:/" . "kuaipan/")
  ("d:/DotEmacs/.emacs.d/el-get/auto-complete/" . "dict/")
@@ -17,10 +20,13 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "D:/EmacsDir/C/"
  "d:/DotEmacs/.emacs.d/csophys/"
- "d:/DotEmacs/.emacs.d/el-get/auto-complete/"
+ "D:/EmacsDir/"
  "e:/kuaipan/dotemacs/csophys/programeExpand/"
+ "e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/"
  "d:/DotEmacs/.emacs.d/"
+ "d:/DotEmacs/.emacs.d/el-get/auto-complete/"
  "c:/DotEmacs/.emacs.d/csophys/"
  "c:/DotEmacs/.emacs.d/"
  "c:/task/"
@@ -36,22 +42,38 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "test.c"
  "csophys_writingStyle.el"
+ "1.java"
+ "1.dot"
  "csophys_autoComplete.el"
+ ".csophys_person.bmk"
+ "init.el"
  "csophys_function.el"
  "ac-comphist.dat"
- "task.org"
- "command.txt"
- "blog.org"
- "COPYING"
- "init.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/DotEmacs/" (20443 16660) "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "#schedule.org.gpg#" "../" "./")
+ ("d:/DotEmacs/.emacs.d/csophys/" (20445 49057) "csophys_writingStyle.elc" "csophys_writingStyle.el" "csophys_function.elc" "csophys_function.el" "../" "./")
 
- ("d:/DotEmacs/.emacs.d/csophys/" (20442 742) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+ ("d:/DotEmacs/.emacs.d/" (20445 52943) "tramp" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("D:/EmacsDir/C/" (20445 47101) "test.c" "../" "./")
+
+ ("D:/EmacsDir/" (20445 47121) "Project/" "Java/" "C/" "1.java" "../" "./")
+
+ ("d:/EmacsDir/C/" (20445 43565) "test.c" "#test.c#" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/el-get/yasnippet/" (20439 27758) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/" (20352 23320) "tcl-mode" "scheme-mode" "ruby-mode" "python-mode" "php-mode" "javascript-mode" "java-mode" "graphviz-dot-mode" "css-mode" "clojure-mode" "c-mode" "c++-mode" "../" "./")
+
+ ("e:/kuaipan/dotemacs/plugin/auto-complete/" (20352 23320) "popup.elc" "popup.el" "fuzzy.elc" "fuzzy.el" "auto-complete.elc" "auto-complete.el" "auto-complete-config.elc" "auto-complete-config.el" "ac-dict/" "../" "./")
+
+ ("e:/kuaipan/dotemacs/plugin/" (20422 3031) "yasnippet.rar" "yasnippet/" "w32fullscreen/" "w32-expand/" "undotree/" "theme/" "script/" "python/" "org/" "nxhtml/" "magit/" "jdibug-0.5/" "jdee/" "jde/" "graphviz/" "elib/" "ecb/" "cedet/" "bookmark+/" "auto-complete/" "ajc-java-complete/" "../" "./")
+
+ ("d:/DotEmacs/" (20443 21455) "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
 
  ("d:/DotEmacs/.emacs.d/el-get/" (20442 742) "yasnippet/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
 
@@ -62,8 +84,6 @@
  ("e:/kuaipan/dotemacs/" (20438 3583) "_emacs.before_ecb_2.40" "_emacs" "runemacs.bat" "plugin/" "Mail/" "emacs.bmk" "csophys/" "backup/" ".semanticdb/" ".ido.last" ".history" ".eshell/" ".emacs.desktop" ".emacs.d/" "../" "./")
 
  ("e:/kuaipan/" (20371 33111) "软件/" "照片/" "文档/" "备份/" "其他/" "书籍/" "临时/" "dotemacs/" "document/" "Desktop.ini" ".klive/" ".emacs.d/" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/" (20442 742) "tramp" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/csophys/" (20441 26658) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
@@ -90,8 +110,6 @@
  ("~/.emacs.d/" (20438 3112) "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
  ("c:/Users/" (19937 44666) "Public/" "desktop.ini" "Default User/" "Default/" "csophys/" "All Users/" "Administrator/" "../" "./")
-
- ("D:/EmacsDir/" (20410 17574) "Project/" "Java/" "C/" "../" "./")
 
  ("d:/emacs-24.1-rc-bin-i386/emacs-24.1/" (20424 46166) "site-lisp/" "README.W32" "README" "lisp/" "leim/" "info/" "etc/" "COPYING" "BUGS" "bin/" "../" "./")
 
