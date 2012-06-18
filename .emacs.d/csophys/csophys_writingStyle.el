@@ -35,11 +35,12 @@
 (setq org-startup-indented t);;设置org的自动缩进
 (org-remember-insinuate)
 (define-key global-map "\C-ca" 'org-agenda);;映射org日程
-(setq org-todo-keywords '((sequence "TODO"  "IDEA" "OTHER" "|" "DONE")))
+(setq org-todo-keywords '((sequence "TODO"  "IDEA"  "|" "DONE")))
 (setq org-remember-templates
 '(("TODO" ?t "* TODO %?\n %x\n %a"  "~/schedule.org.gpg" "Tasks")
 ("IDEA" ?i "* IDEA %?\n %i\n %a"  "~/schedule.org.gpg" "Idea")
-("OTHER" ?o "* Other %?\n %o\n %a" "~/schedule.org.gpg" "Other")
+("编程语言" ?b "* 编程语言 %?\n %i\n %a"  "~/study.org" "编程语言")
+("设计模式" ?s "* 设计模式 %?\n %i\n %a"  "~/study.org" "设计模式")
 ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;启用一些扩展功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -106,6 +107,8 @@
 (defun ac-common-setup ()
   (add-to-list 'ac-sources 'ac-source-filename)
   )
+(defun ac-cc-mode-setup ()
+  (setq ac-sources (append '(ac-source-yasnippet ac-source-gtags ac-source-semantic) ac-sources)))
 ;;;;可以载入多个字典目录
 (defun ac-mode-dictionary (mode)
   (let (result)

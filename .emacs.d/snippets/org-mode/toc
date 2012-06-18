@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: toc
+# key: toc
+# --
+#+OPTIONS: toc:${1:nil}
+$0

@@ -1,0 +1,31 @@
+;; Object EmacsDir/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "EmacsDir/"
+  :tables (list 
+   (semanticdb-table "test.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("test" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [43 56]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19 130]))                  
+                :type "class")
+                nil [3 133]))          
+    :file "test.java"
+    :pointmax 137
+    :fsize 146
+    :lastmodtime '(20446 57509)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!EmacsDir!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

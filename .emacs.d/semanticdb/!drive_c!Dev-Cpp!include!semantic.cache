@@ -1,0 +1,1809 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "stdio.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_STDIO_H_" variable (:constant-flag t) nil [489 498])
+            ("_mingw.h" include (:system-flag t) nil [541 560])
+            ("__need_size_t" variable (:constant-flag t) nil [589 602])
+            ("__need_NULL" variable (:constant-flag t) nil [611 622])
+            ("__need_wchar_t" variable (:constant-flag t) nil [631 645])
+            ("__need_wint_t" variable (:constant-flag t) nil [654 667])
+            ("stddef.h" include (:system-flag t) nil [668 687])
+            ("__need___va_list" variable (:constant-flag t) nil [696 712])
+            ("stdarg.h" include (:system-flag t) nil [713 732])
+            ("_IOREAD" variable (:constant-flag t) nil [808 815])
+            ("_IOWRT" variable (:constant-flag t) nil [850 856])
+            ("_IORW" variable (:constant-flag t) nil [891 896])
+            ("STDIN_FILENO" variable (:constant-flag t) nil [1084 1096])
+            ("STDOUT_FILENO" variable (:constant-flag t) nil [1107 1120])
+            ("STDERR_FILENO" variable (:constant-flag t) nil [1131 1144])
+            ("EOF" variable (:constant-flag t) nil [1227 1230])
+            ("FILENAME_MAX" variable (:constant-flag t) nil [1422 1434])
+            ("FOPEN_MAX" variable (:constant-flag t) nil [1598 1607])
+            ("TMP_MAX" variable (:constant-flag t) nil [1691 1698])
+            ("_P_tmpdir" variable (:constant-flag t) nil [1951 1960])
+            ("P_tmpdir" variable (:constant-flag t) nil [2000 2008])
+            ("_wP_tmpdir" variable (:constant-flag t) nil [2034 2044])
+            ("L_tmpnam" variable (:constant-flag t) nil [2302 2310])
+            ("_IOFBF" variable (:constant-flag t) nil [2325 2331])
+            ("_IOLBF" variable (:constant-flag t) nil [2371 2377])
+            ("_IONBF" variable (:constant-flag t) nil [2417 2423])
+            ("_IOMYBUF" variable (:constant-flag t) nil [2463 2471])
+            ("_IOEOF" variable (:constant-flag t) nil [2519 2525])
+            ("_IOERR" variable (:constant-flag t) nil [2571 2577])
+            ("_IOSTRG" variable (:constant-flag t) nil [2625 2632])
+            ("BUFSIZ" variable (:constant-flag t) nil [2875 2881])
+            ("SEEK_SET" variable (:constant-flag t) nil [3074 3082])
+            ("SEEK_CUR" variable (:constant-flag t) nil [3093 3101])
+            ("SEEK_END" variable (:constant-flag t) nil [3112 3120])
+            ("__VALIST" variable (:constant-flag t) nil [3223 3231])
+            ("_FILE_DEFINED" variable (:constant-flag t) nil [3519 3532])
+            ("FILE" type
+               (:typedef ("_iobuf" type (:type "struct") nil nil)
+                :superclasses "_iobuf"
+                :type "typedef")
+                nil [3533 3673])
+            ("_iobuf" type
+               (:members 
+                  ( ("_ptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3558 3569])
+                    ("_cnt" variable (:type "int") (reparse-symbol classsubparts) [3571 3580])
+                    ("_base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3582 3594])
+                    ("_flag" variable (:type "int") (reparse-symbol classsubparts) [3596 3606])
+                    ("_file" variable (:type "int") (reparse-symbol classsubparts) [3608 3618])
+                    ("_charbuf" variable (:type "int") (reparse-symbol classsubparts) [3620 3633])
+                    ("_bufsiz" variable (:type "int") (reparse-symbol classsubparts) [3635 3647])
+                    ("_tmpfname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3649 3665]))                  
+                :type "struct")
+                nil [3533 3673])
+            ("FILE" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("_imp___iob" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3787 3798]))                  
+                :type "int")
+                nil [3773 3800])
+            ("_iob" variable (:constant-flag t) nil [3847 3851])
+            ("stdin" variable (:constant-flag t) nil [4038 4043])
+            ("stdout" variable (:constant-flag t) nil [4074 4080])
+            ("stderr" variable (:constant-flag t) nil [4112 4118])
+            ("fopen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4254 4266])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4267 4279]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4231 4280])
+            ("freopen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4328 4340])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4341 4353])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4354 4360]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4303 4361])
+            ("fflush" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4406 4412]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4382 4413])
+            ("fclose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4458 4464]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4434 4465])
+            ("remove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4578 4590]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4554 4591])
+            ("rename" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4636 4648])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4649 4661]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4612 4662])
+            ("tmpfile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4710 4715]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4685 4716])
+            ("tmpnam" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4763 4769]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4739 4770])
+            ("_tempnam" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4844 4856])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4857 4869]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4818 4870])
+            ("_rmtmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4914 4919]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4891 4920])
+            ("_unlink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4966 4978]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [4941 4979])
+            ("tempnam" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5048 5060])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5061 5073]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5023 5074])
+            ("rmtmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5117 5122]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5095 5123])
+            ("unlink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5168 5180]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5144 5181])
+            ("setvbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5264 5270])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5271 5277])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5278 5282])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5283 5290]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5239 5291])
+            ("setbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5338 5344])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5345 5351]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5314 5352])
+            ("__mingw_stdio_redirect__" variable (:constant-flag t) nil [5542 5566])
+            ("__mingw_fprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5652 5658])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5659 5671])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5672 5676]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5618 5677])
+            ("__mingw_printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5722 5734])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5735 5739]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5689 5740])
+            ("__mingw_sprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5786 5792])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5793 5805])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5806 5810]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5752 5811])
+            ("__mingw_snprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5858 5864])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5865 5872])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5873 5885])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5886 5890]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5823 5891])
+            ("__mingw_vfprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5938 5944])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5945 5957])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5958 5967]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5903 5968])
+            ("__mingw_vprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6014 6026])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6027 6036]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [5980 6037])
+            ("__mingw_vsprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6084 6090])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6091 6103])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6104 6113]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [6049 6114])
+            ("__mingw_vsnprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6162 6168])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6169 6176])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6177 6189])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6190 6199]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [6126 6200])
+            ("__mingw_stdio_redirect__" variable (:constant-flag t) nil [6788 6812])
+            ("fprintf" function
+               (:arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7047 7062])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7063 7084])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7085 7089]))                  
+                :type "int")
+                nil [7034 7320])
+            ("printf" function
+               (:arguments 
+                  ( ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7359 7380])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7381 7385]))                  
+                :type "int")
+                nil [7347 7605])
+            ("sprintf" function
+               (:arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7645 7660])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7661 7682])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7683 7687]))                  
+                :type "int")
+                nil [7632 7918])
+            ("vfprintf" function
+               (:arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7959 7974])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7975 7996])
+                    ("__local_argv" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7997 8019]))                  
+                :type "int")
+                nil [7945 8086])
+            ("vprintf" function
+               (:arguments 
+                  ( ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8126 8147])
+                    ("__local_argv" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8148 8170]))                  
+                :type "int")
+                nil [8113 8226])
+            ("vsprintf" function
+               (:arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8267 8282])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8283 8304])
+                    ("__local_argv" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8305 8327]))                  
+                :type "int")
+                nil [8253 8394])
+            ("__mingw_stdio_redirect__" variable (:constant-flag t) nil [9087 9111])
+            ("__msvcrt_fprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9199 9205])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9206 9218])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [9219 9223]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9165 9224])
+            ("__msvcrt_printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9270 9282])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [9283 9287]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9237 9288])
+            ("__msvcrt_sprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9335 9341])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9342 9354])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [9355 9359]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9301 9360])
+            ("__msvcrt_vfprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9408 9414])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9415 9427])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9428 9437]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9373 9438])
+            ("__msvcrt_vprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9485 9497])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9498 9507]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9451 9508])
+            ("__msvcrt_vsprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9556 9562])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9563 9575])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9576 9585]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9521 9586])
+            ("_snprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9741 9747])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9748 9755])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9756 9768])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [9769 9773]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9714 9774])
+            ("_vsnprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9823 9829])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9830 9837])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9838 9850])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9851 9860]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9795 9861])
+            ("snprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10298 10305])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10306 10313])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10314 10327])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10328 10332]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10272 10333])
+            ("vsnprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10373 10380])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10381 10388])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10389 10402])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10403 10412]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10346 10413])
+            ("vscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10451 10476])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10464 10477])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10478 10487]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10427 10488])
+            ("vfscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10526 10545])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10533 10546])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10547 10572])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10560 10573])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10581 10590]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10501 10591])
+            ("vsscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10629 10654])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10642 10655])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10663 10688])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10676 10689])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10690 10699]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10604 10700])
+            ("fscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10802 10808])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10809 10821])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10822 10826]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10778 10827])
+            ("scanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10871 10883])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10884 10888]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10848 10889])
+            ("sscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10934 10946])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10947 10959])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10960 10964]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10910 10965])
+            ("fgetc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11057 11063]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11034 11064])
+            ("fgets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11110 11116])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11117 11121])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11122 11128]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11087 11129])
+            ("fputc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11173 11177])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11178 11184]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11150 11185])
+            ("fputs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11229 11241])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11242 11248]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11206 11249])
+            ("gets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11294 11300]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11272 11301])
+            ("puts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11344 11356]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11322 11357])
+            ("ungetc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11402 11406])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11407 11413]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11378 11414])
+            ("_filbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11746 11752]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11721 11753])
+            ("_flsbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11799 11803])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11804 11810]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11774 11811])
+            ("getc" function
+               (:arguments 
+                  ( ("__F" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11878 11888]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11856 11983])
+            ("putc" function
+               (:arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [12032 12040])
+                    ("__F" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12041 12051]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12010 12166])
+            ("getchar" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12218 12223]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12193 12324])
+            ("putchar" function
+               (:arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [12375 12383]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12351 12506])
+            ("fread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12854 12860])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12861 12868])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12869 12876])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12877 12883]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12831 12884])
+            ("fwrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12932 12944])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12945 12952])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12953 12960])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12961 12967]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12908 12968])
+            ("fseek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13051 13057])
+                    ("" variable (:type "long") (reparse-symbol arg-sub-list) [13058 13063])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13064 13068]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13028 13069])
+            ("ftell" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13114 13120]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13091 13121])
+            ("rewind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13167 13173]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13143 13174])
+            ("_fseek_nolock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13259 13265])
+                    ("" variable (:type "long") (reparse-symbol arg-sub-list) [13266 13271])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13272 13276]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13228 13277])
+            ("_ftell_nolock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13330 13336]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13299 13337])
+            ("_fseeki64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13386 13392])
+                    ("" variable (:type ("__int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13393 13401])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13402 13406]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13359 13407])
+            ("_ftelli64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13459 13465]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13432 13466])
+            ("_fseeki64_nolock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13521 13527])
+                    ("" variable (:type ("__int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13528 13536])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13537 13541]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13487 13542])
+            ("_ftelli64_nolock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13601 13607]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13567 13608])
+            ("__mingw_fseek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13850 13857])
+                    ("" variable (:type "long") (reparse-symbol arg-sub-list) [13858 13863])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13864 13868]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13819 13869])
+            ("__mingw_fwrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13917 13929])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13930 13937])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13938 13945])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13946 13952]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13885 13953])
+            ("fseek" variable (:constant-flag t) nil [13962 13967])
+            ("fwrite" variable (:constant-flag t) nil [14031 14037])
+            ("fpos_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [14679 14699])
+            ("fgetpos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14753 14759])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fpos_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14760 14768]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [14728 14769])
+            ("fsetpos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14815 14821])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fpos_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14822 14836]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [14790 14837])
+            ("feof" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14908 14914]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [14886 14915])
+            ("ferror" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14960 14966]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [14936 14967])
+            ("feof" variable (:constant-flag t) nil [15176 15180])
+            ("ferror" variable (:constant-flag t) nil [15222 15228])
+            ("clearerr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15315 15321]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15289 15322])
+            ("perror" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15368 15380]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15344 15381])
+            ("_popen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15470 15482])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15483 15495]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15446 15496])
+            ("_pclose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15542 15548]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15517 15549])
+            ("popen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15616 15628])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15629 15641]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15593 15642])
+            ("pclose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15687 15693]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15663 15694])
+            ("_flushall" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15785 15790]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15758 15791])
+            ("_fgetchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15839 15844]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15812 15845])
+            ("_fputchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15893 15897]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15866 15898])
+            ("_fdopen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15946 15950])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15951 15963]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15921 15964])
+            ("_fileno" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16010 16016]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15985 16017])
+            ("_fcloseall" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16066 16071]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16038 16072])
+            ("_fsopen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16120 16132])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16133 16145])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16146 16150]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16095 16151])
+            ("_get_output_format" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16388 16393]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16352 16394])
+            ("_set_output_format" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16460 16473]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16424 16474])
+            ("_TWO_DIGIT_EXPONENT" variable (:constant-flag t) nil [16484 16503])
+            ("_get_printf_count_output" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16570 16575]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16528 16576])
+            ("_set_printf_count_output" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [16639 16643]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16597 16644])
+            ("fgetchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16720 16725]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16694 16726])
+            ("fputchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [16773 16777]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16747 16778])
+            ("fdopen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [16825 16829])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16830 16842]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16801 16843])
+            ("fileno" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16888 16894]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16864 16895])
+            ("_fileno" variable (:constant-flag t) nil [16935 16942])
+            ("fileno" variable (:constant-flag t) nil [16992 16998])
+            ("sys/types.h" include (:system-flag t) nil [17081 17103])
+            ("fopen64" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17156 17177])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17178 17195]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [17131 17233])
+            ("fseeko64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17273 17279])
+                    ("" variable (:type ("off64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17280 17288])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [17289 17293]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [17247 17294])
+            ("ftello64" function
+               (:arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17528 17542]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [17502 17641])
+            ("fwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17835 17841])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [17842 17857])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [17858 17862]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [17809 17863])
+            ("wprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [17909 17924])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [17925 17929]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [17884 17930])
+            ("_snwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [17979 17988])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17989 17996])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [17997 18012])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18013 18017]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [17951 18018])
+            ("vfwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18066 18072])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18073 18088])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18089 18098]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18039 18099])
+            ("vwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18146 18161])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18162 18171]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18120 18172])
+            ("_vsnwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18222 18231])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18232 18239])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18240 18255])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18256 18265]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18193 18266])
+            ("fwscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18312 18318])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18319 18334])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18335 18339]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18287 18340])
+            ("wscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18385 18400])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18401 18405]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18361 18406])
+            ("swscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18452 18467])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18468 18483])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18484 18488]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18427 18489])
+            ("fgetwc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18537 18543]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18513 18544])
+            ("fputwc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [18592 18600])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18601 18607]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18568 18608])
+            ("ungetwc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [18657 18665])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18666 18672]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18632 18673])
+            ("swprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18839 18848])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18849 18864])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18865 18869]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18813 18870])
+            ("vswprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18918 18927])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [18928 18943])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18944 18953]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [18891 18954])
+            ("snwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20347 20358])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20359 20368])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20369 20392])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [20393 20397]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [20320 20398])
+            ("vsnwprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20439 20450])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20451 20460])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20461 20483])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20484 20497]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [20411 20498])
+            ("vsnwprintf" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20574 20585])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20586 20595])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20596 20618])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20619 20632]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [20546 20678])
+            ("vwscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20723 20751])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20739 20752])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20753 20762]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [20698 20763])
+            ("vfwscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20802 20821])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20809 20822])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20832 20860])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20848 20861])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20862 20871]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [20776 20872])
+            ("vswscanf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20911 20939])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20927 20940])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [20950 20978])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20966 20979])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20980 20989]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [20885 20990])
+            ("_WSTDIO_DEFINED" variable (:constant-flag t) nil [21007 21022])
+            ("_fgetwchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21343 21348]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21315 21349])
+            ("_fputwchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("wint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21401 21408]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21373 21409])
+            ("_getw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21453 21459]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21430 21460])
+            ("_putw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21504 21508])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21509 21515]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21481 21516])
+            ("fgetwchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21589 21594]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21562 21595])
+            ("fputwchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("wint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21646 21653]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21619 21654])
+            ("getw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21697 21703]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21675 21704])
+            ("putw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21747 21751])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21752 21758]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [21725 21759]))          
+    :file "stdio.h"
+    :pointmax 21900
+    :fsize 21899
+    :lastmodtime '(19216 52580)
+    :unmatched-syntax '((symbol 21717 . 21724) (INT 21713 . 21716) (symbol 21705 . 21712) (symbol 21667 . 21674) (INT 21663 . 21666) (symbol 21655 . 21662) (symbol 21611 . 21618) (symbol 21604 . 21610) (symbol 21596 . 21603) (symbol 21554 . 21561) (symbol 21547 . 21553) (symbol 21539 . 21546) (symbol 21473 . 21480) (INT 21469 . 21472) (symbol 21461 . 21468) (symbol 21422 . 21429) (INT 21418 . 21421) (symbol 21410 . 21417) (symbol 21365 . 21372) (symbol 21358 . 21364) (symbol 21350 . 21357) (symbol 21307 . 21314) (symbol 21300 . 21306) (symbol 21292 . 21299) (symbol 20877 . 20884) (INT 20873 . 20876) (symbol 20768 . 20775) (INT 20764 . 20767) (symbol 20690 . 20697) (INT 20686 . 20689) (symbol 20538 . 20545) (INT 20534 . 20537) (symbol 20521 . 20533) (symbol 20403 . 20410) (INT 20399 . 20402) (symbol 20312 . 20319) (INT 20308 . 20311) (symbol 18883 . 18890) (INT 18879 . 18882) (symbol 18871 . 18878) (symbol 18805 . 18812) (INT 18801 . 18804) (symbol 18793 . 18800) (symbol 18624 . 18631) (symbol 18617 . 18623) (symbol 18609 . 18616) (symbol 18560 . 18567) (symbol 18553 . 18559) (symbol 18545 . 18552) (symbol 18505 . 18512) (symbol 18498 . 18504) (symbol 18490 . 18497) (symbol 18419 . 18426) (INT 18415 . 18418) (symbol 18407 . 18414) (symbol 18353 . 18360) (INT 18349 . 18352) (symbol 18341 . 18348) (symbol 18279 . 18286) (INT 18275 . 18278) (symbol 18267 . 18274) (symbol 18185 . 18192) (INT 18181 . 18184) (symbol 18173 . 18180) (symbol 18112 . 18119) (INT 18108 . 18111) (symbol 18100 . 18107) (symbol 18031 . 18038) (INT 18027 . 18030) (symbol 18019 . 18026) (symbol 17943 . 17950) (INT 17939 . 17942) (symbol 17931 . 17938) (symbol 17876 . 17883) (INT 17872 . 17875) (symbol 17864 . 17871) (symbol 17801 . 17808) (INT 17797 . 17800) (symbol 17789 . 17796) (symbol 17494 . 17501) (symbol 17486 . 17493) (symbol 17473 . 17485) (symbol 17239 . 17246) (INT 17235 . 17238) (symbol 17123 . 17130) (punctuation 17121 . 17122) (symbol 17117 . 17121) (symbol 17104 . 17116) (symbol 16856 . 16863) (INT 16852 . 16855) (symbol 16844 . 16851) (symbol 16793 . 16800) (punctuation 16791 . 16792) (symbol 16787 . 16791) (symbol 16779 . 16786) (symbol 16739 . 16746) (INT 16735 . 16738) (symbol 16727 . 16734) (symbol 16686 . 16693) (INT 16682 . 16685) (symbol 16674 . 16681) (symbol 16589 . 16596) (INT 16585 . 16588) (symbol 16577 . 16584) (symbol 16520 . 16527) (INT 16516 . 16519) (symbol 16508 . 16515) (symbol 16416 . 16423) (INT 16412 . 16415) (UNSIGNED 16403 . 16411) (symbol 16395 . 16402) (symbol 16344 . 16351) (INT 16340 . 16343) (UNSIGNED 16331 . 16339) (symbol 16323 . 16330) (symbol 16087 . 16094) (punctuation 16085 . 16086) (symbol 16081 . 16085) (symbol 16073 . 16080) (symbol 16030 . 16037) (INT 16026 . 16029) (symbol 16018 . 16025) (symbol 15977 . 15984) (INT 15973 . 15976) (symbol 15965 . 15972) (symbol 15913 . 15920) (punctuation 15911 . 15912) (symbol 15907 . 15911) (symbol 15899 . 15906) (symbol 15858 . 15865) (INT 15854 . 15857) (symbol 15846 . 15853) (symbol 15804 . 15811) (INT 15800 . 15803) (symbol 15792 . 15799) (symbol 15750 . 15757) (INT 15746 . 15749) (symbol 15738 . 15745) (symbol 15655 . 15662) (INT 15651 . 15654) (symbol 15643 . 15650) (symbol 15585 . 15592) (punctuation 15583 . 15584) (symbol 15579 . 15583) (symbol 15571 . 15578) (symbol 15509 . 15516) (INT 15505 . 15508) (symbol 15497 . 15504) (symbol 15438 . 15445) (punctuation 15436 . 15437) (symbol 15432 . 15436) (symbol 15424 . 15431) (symbol 15336 . 15343) (VOID 15331 . 15335) (symbol 15323 . 15330) (symbol 15281 . 15288) (VOID 15276 . 15280) (symbol 15268 . 15275) (symbol 14928 . 14935) (INT 14924 . 14927) (symbol 14916 . 14923) (symbol 14878 . 14885) (INT 14874 . 14877) (symbol 14866 . 14873) (symbol 14782 . 14789) (INT 14778 . 14781) (symbol 14770 . 14777) (symbol 14720 . 14727) (INT 14716 . 14719) (symbol 14708 . 14715) (symbol 13877 . 13884) (symbol 13870 . 13876) (symbol 13811 . 13818) (INT 13807 . 13810) (symbol 13559 . 13566) (symbol 13551 . 13558) (symbol 13543 . 13550) (symbol 13479 . 13486) (INT 13475 . 13478) (symbol 13467 . 13474) (symbol 13424 . 13431) (symbol 13416 . 13423) (symbol 13408 . 13415) (symbol 13351 . 13358) (INT 13347 . 13350) (symbol 13339 . 13346) (symbol 13291 . 13298) (LONG 13286 . 13290) (symbol 13278 . 13285) (symbol 13220 . 13227) (INT 13216 . 13219) (symbol 13208 . 13215) (symbol 13135 . 13142) (VOID 13130 . 13134) (symbol 13122 . 13129) (symbol 13083 . 13090) (LONG 13078 . 13082) (symbol 13070 . 13077) (symbol 13020 . 13027) (INT 13016 . 13019) (symbol 13008 . 13015) (symbol 12900 . 12907) (symbol 12893 . 12899) (symbol 12885 . 12892) (symbol 12823 . 12830) (symbol 12816 . 12822) (symbol 12808 . 12815) (symbol 12343 . 12350) (INT 12339 . 12342) (symbol 12326 . 12338) (symbol 12185 . 12192) (INT 12181 . 12184) (symbol 12168 . 12180) (symbol 12002 . 12009) (INT 11998 . 12001) (symbol 11985 . 11997) (symbol 11848 . 11855) (INT 11844 . 11847) (symbol 11831 . 11843) (symbol 11766 . 11773) (INT 11762 . 11765) (symbol 11754 . 11761) (symbol 11713 . 11720) (INT 11709 . 11712) (symbol 11701 . 11708) (symbol 11370 . 11377) (INT 11366 . 11369) (symbol 11358 . 11365) (symbol 11314 . 11321) (INT 11310 . 11313) (symbol 11302 . 11309) (symbol 11264 . 11271) (punctuation 11262 . 11263) (CHAR 11258 . 11262) (symbol 11250 . 11257) (symbol 11198 . 11205) (INT 11194 . 11197) (symbol 11186 . 11193) (symbol 11142 . 11149) (INT 11138 . 11141) (symbol 11130 . 11137) (symbol 11079 . 11086) (punctuation 11077 . 11078) (CHAR 11073 . 11077) (symbol 11065 . 11072) (symbol 11026 . 11033) (INT 11022 . 11025) (symbol 11014 . 11021) (symbol 10902 . 10909) (INT 10898 . 10901) (symbol 10890 . 10897) (symbol 10840 . 10847) (INT 10836 . 10839) (symbol 10828 . 10835) (symbol 10770 . 10777) (INT 10766 . 10769) (symbol 10758 . 10765) (symbol 10596 . 10603) (INT 10592 . 10595) (symbol 10493 . 10500) (INT 10489 . 10492) (symbol 10419 . 10426) (INT 10415 . 10418) (symbol 10338 . 10345) (INT 10334 . 10337) (symbol 10264 . 10271) (INT 10260 . 10263) (symbol 9787 . 9794) (INT 9783 . 9786) (symbol 9775 . 9782) (symbol 9706 . 9713) (INT 9702 . 9705) (symbol 9694 . 9701) (symbol "__cdecl" 9521 . 9555) (INT 9517 . 9520) (symbol 9509 . 9516) (symbol "__cdecl" 9451 . 9484) (INT 9447 . 9450) (symbol 9439 . 9446) (symbol "__cdecl" 9373 . 9407) (INT 9369 . 9372) (symbol 9361 . 9368) (symbol "__cdecl" 9301 . 9334) (INT 9297 . 9300) (symbol 9289 . 9296) (symbol "__cdecl" 9237 . 9269) (INT 9233 . 9236) (symbol 9225 . 9232) (symbol "__cdecl" 9165 . 9198) (INT 9161 . 9164) (symbol 9153 . 9160) (symbol "__MINGW_NOTHROW" 8228 . 8252) (symbol "__cdecl" 8228 . 8252) (symbol "__inline__" 8228 . 8252) (STATIC "static" 8228 . 8252) (symbol "__MINGW_NOTHROW" 8088 . 8112) (symbol "__cdecl" 8088 . 8112) (symbol "__inline__" 8088 . 8112) (STATIC "static" 8088 . 8112) (symbol "__MINGW_NOTHROW" 7920 . 7944) (symbol "__cdecl" 7920 . 7944) (symbol "__inline__" 7920 . 7944) (STATIC "static" 7920 . 7944) (symbol "__MINGW_NOTHROW" 7607 . 7631) (symbol "__cdecl" 7607 . 7631) (symbol "__inline__" 7607 . 7631) (STATIC "static" 7607 . 7631) (symbol "__MINGW_NOTHROW" 7322 . 7346) (symbol "__cdecl" 7322 . 7346) (symbol "__inline__" 7322 . 7346) (STATIC "static" 7322 . 7346) (symbol "__MINGW_NOTHROW" 7009 . 7033) (symbol "__cdecl" 7009 . 7033) (symbol "__inline__" 7009 . 7033) (STATIC "static" 7009 . 7033) (symbol "__cdecl" 6126 . 6161) (INT 6122 . 6125) (EXTERN 6115 . 6121) (symbol "__cdecl" 6049 . 6083) (INT 6045 . 6048) (EXTERN 6038 . 6044) (symbol "__cdecl" 5980 . 6013) (INT 5976 . 5979) (EXTERN 5969 . 5975) (symbol "__cdecl" 5903 . 5937) (INT 5899 . 5902) (EXTERN 5892 . 5898) (symbol "__cdecl" 5823 . 5857) (INT 5819 . 5822) (EXTERN 5812 . 5818) (symbol "__cdecl" 5752 . 5785) (INT 5748 . 5751) (EXTERN 5741 . 5747) (symbol "__cdecl" 5689 . 5721) (INT 5685 . 5688) (EXTERN 5678 . 5684) (symbol "__cdecl" 5618 . 5651) (INT 5614 . 5617) (EXTERN 5607 . 5613) (symbol 5306 . 5313) (VOID 5301 . 5305) (symbol 5293 . 5300) (symbol 5231 . 5238) (INT 5227 . 5230) (symbol 5219 . 5226) (symbol 5136 . 5143) (INT 5132 . 5135) (symbol 5124 . 5131) (symbol 5087 . 5094) (INT 5083 . 5086) (symbol 5075 . 5082) (symbol 5015 . 5022) (punctuation 5013 . 5014) (CHAR 5009 . 5013) (symbol 5001 . 5008) (symbol 4933 . 4940) (INT 4929 . 4932) (symbol 4921 . 4928) (symbol 4883 . 4890) (INT 4879 . 4882) (symbol 4871 . 4878) (symbol 4810 . 4817) (punctuation 4808 . 4809) (CHAR 4804 . 4808) (symbol 4796 . 4803) (symbol 4731 . 4738) (punctuation 4729 . 4730) (CHAR 4725 . 4729) (symbol 4717 . 4724) (symbol 4677 . 4684) (punctuation 4675 . 4676) (symbol 4671 . 4675) (symbol 4663 . 4670) (symbol 4604 . 4611) (INT 4600 . 4603) (symbol 4592 . 4599) (symbol 4546 . 4553) (INT 4542 . 4545) (symbol 4534 . 4541) (symbol 4426 . 4433) (INT 4422 . 4425) (symbol 4414 . 4421) (symbol 4374 . 4381) (INT 4370 . 4373) (symbol 4362 . 4369) (symbol 4295 . 4302) (punctuation 4293 . 4294) (symbol 4289 . 4293) (symbol 4281 . 4288) (symbol 4223 . 4230) (punctuation 4221 . 4222) (symbol 4217 . 4221) (symbol 4209 . 4216) (punctuation 3800 . 3801) (punctuation 3786 . 3787))
+    :lexical-table 
+        '(("P_tmpdir" . ((symbol "_P_tmpdir" 2009 . 2018)))
+          ("_IOSTRG" . ((number "0x0040" 2635 . 2641)))
+          ("ferror" (spp-arg-list ("__F") 15228 . 15233) . ((semantic-list "((__F)->_flag & _IOERR)" 15236 . 15259)))
+          ("fileno" (spp-arg-list ("__F") 16998 . 17003) . ((semantic-list "((__F)->_file)" 17004 . 17018)))
+          ("__need___va_list")
+          ("STDIN_FILENO" . ((number "0" 1097 . 1098)))
+          ("STDOUT_FILENO" . ((number "1" 1121 . 1122)))
+          ("STDERR_FILENO" . ((number "2" 1145 . 1146)))
+          ("_wP_tmpdir" . ((string "L\"\\\\\"" 2046 . 2051)))
+          ("_IOEOF" . ((number "0x0010" 2529 . 2535)))
+          ("SEEK_CUR" . ((number "1" 3102 . 3103)))
+          ("__VALIST" . ((CHAR "char" 3232 . 3236) (punctuation "*" 3236 . 3237)))
+          ("stderr" . ((semantic-list "(&_iob[STDERR_FILENO])" 4119 . 4141)))
+          ("fwrite" (spp-arg-list ("buffer" "size" "count" "fp") 14037 . 14062) . ((symbol "__mingw_fwrite" 14064 . 14078) (semantic-list "(buffer, size, count, fp)" 14078 . 14103)))
+          ("__need_size_t")
+          ("_iob" . ((semantic-list "(*_imp___iob)" 3852 . 3865)))
+          ("__need_wchar_t")
+          ("feof" (spp-arg-list ("__F") 15180 . 15185) . ((semantic-list "((__F)->_flag & _IOEOF)" 15190 . 15213)))
+          ("_IOWRT" . ((number "2" 857 . 858)))
+          ("FILENAME_MAX" . ((semantic-list "(260)" 1435 . 1440)))
+          ("_P_tmpdir" . ((string "\"\\\\\"" 1963 . 1967)))
+          ("_IONBF" . ((number "0x0004" 2427 . 2433)))
+          ("_fileno" (spp-arg-list ("__F") 16942 . 16947) . ((semantic-list "((__F)->_file)" 16948 . 16962)))
+          ("_WSTDIO_DEFINED")
+          ("__need_wint_t")
+          ("_IOREAD" . ((number "1" 816 . 817)))
+          ("EOF" . ((semantic-list "(-1)" 1231 . 1235)))
+          ("stdin" . ((semantic-list "(&_iob[STDIN_FILENO])" 4044 . 4065)))
+          ("_TWO_DIGIT_EXPONENT" . ((number "1" 16505 . 16506)))
+          ("_STDIO_H_")
+          ("TMP_MAX" . ((number "32767" 1699 . 1704)))
+          ("SEEK_SET" . ((number "0" 3083 . 3084)))
+          ("_IOERR" . ((number "0x0020" 2581 . 2587)))
+          ("L_tmpnam" . ((semantic-list "(16)" 2311 . 2315)))
+          ("_IOFBF" . ((number "0x0000" 2335 . 2341)))
+          ("SEEK_END" . ((number "2" 3121 . 3122)))
+          ("_IORW" . ((number "0x0080" 897 . 903)))
+          ("FOPEN_MAX" . ((semantic-list "(20)" 1608 . 1612)))
+          ("_IOMYBUF" . ((number "0x0008" 2473 . 2479)))
+          ("_FILE_DEFINED")
+          ("stdout" . ((semantic-list "(&_iob[STDOUT_FILENO])" 4081 . 4103)))
+          ("fseek" (spp-arg-list ("fp" "offset" "whence") 13967 . 13987) . ((symbol "__mingw_fseek" 13989 . 14002) (semantic-list "(fp, offset, whence)" 14002 . 14022)))
+          ("__need_NULL")
+          ("_IOLBF" . ((number "0x0040" 2381 . 2387)))
+          ("BUFSIZ" . ((number "512" 2882 . 2885)))
+          )
+
+    )
+   (semanticdb-table "_mingw.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__MINGW_H" variable (:constant-flag t) nil [648 657])
+            ("__MINGW32_VERSION" variable (:constant-flag t) nil [667 684])
+            ("__MINGW32_MAJOR_VERSION" variable (:constant-flag t) nil [708 731])
+            ("__MINGW32_MINOR_VERSION" variable (:constant-flag t) nil [746 769])
+            ("__MINGW32_PATCHLEVEL" variable (:constant-flag t) nil [785 805])
+            ("__MINGW_ANSI_STDIO__" variable (:constant-flag t) nil [2377 2397])
+            ("__MINGW_LC_EXTENSIONS__" variable (:constant-flag t) nil [2556 2579])
+            ("__MINGW_LC_MESSAGES__" variable (:constant-flag t) nil [2611 2632])
+            ("__MINGW_LC_ENVVARS__" variable (:constant-flag t) nil [2664 2684])
+            ("__MINGW_IMPORT" variable (:constant-flag t) nil [2898 2912])
+            ("_CRTIMP" variable (:constant-flag t) nil [2955 2962])
+            ("__cdecl" variable (:constant-flag t) nil [2999 3006])
+            ("__stdcall" variable (:constant-flag t) nil [3062 3071])
+            ("__int64" variable (:constant-flag t) nil [3126 3133])
+            ("__int32" variable (:constant-flag t) nil [3179 3186])
+            ("__int16" variable (:constant-flag t) nil [3227 3234])
+            ("__int8" variable (:constant-flag t) nil [3275 3281])
+            ("__small" variable (:constant-flag t) nil [3322 3329])
+            ("__hyper" variable (:constant-flag t) nil [3370 3377])
+            ("__volatile__" variable (:constant-flag t) nil [3428 3440])
+            ("__restrict__" variable (:constant-flag t) nil [3490 3502])
+            ("NONAMELESSUNION" variable (:constant-flag t) nil [3529 3544])
+            ("__DECLSPEC_SUPPORTED" variable (:constant-flag t) nil [4906 4926])
+            ("__attribute__" variable (:constant-flag t) nil [4936 4949])
+            ("__MINGW_GNUC_PREREQ" variable (:constant-flag t) nil [5034 5053])
+            ("__CRT_INLINE" variable (:constant-flag t) nil [5301 5313])
+            ("__UNUSED_PARAM" variable (:constant-flag t) nil [5569 5583])
+            ("__MINGW_ATTRIB_NORETURN" variable (:constant-flag t) nil [5755 5778])
+            ("__MINGW_ATTRIB_CONST" variable (:constant-flag t) nil [5787 5807])
+            ("__MINGW_ATTRIB_MALLOC" variable (:constant-flag t) nil [5855 5876])
+            ("__MINGW_ATTRIB_PURE" variable (:constant-flag t) nil [5914 5933])
+            ("__MINGW_ATTRIB_NONNULL" variable (:constant-flag t) nil [6246 6268])
+            ("__MINGW_ATTRIB_DEPRECATED" variable (:constant-flag t) nil [6418 6443])
+            ("__MINGW_NOTHROW" variable (:constant-flag t) nil [6584 6599])
+            ("__MSVCRT_VERSION__" variable (:constant-flag t) nil [6932 6950])
+            ("__USE_MINGW_ANSI_STDIO" variable (:constant-flag t) nil [7541 7563]))          
+    :file "_mingw.h"
+    :pointmax 7769
+    :fsize 7768
+    :lastmodtime '(19216 52576)
+    :unmatched-syntax '((symbol 846 . 859) (symbol 842 . 845) (symbol 835 . 841) (punctuation 834 . 835))
+    :lexical-table 
+        '(("__MINGW32_VERSION" . ((number "3.17" 695 . 699)))
+          ("__int8" . ((CHAR "char" 3282 . 3286)))
+          ("__hyper" . ((LONG "long" 3378 . 3382) (LONG "long" 3383 . 3387)))
+          ("__MINGW_ATTRIB_NONNULL" (spp-arg-list ("arg") 6268 . 6273) . ((symbol "__attribute__" 6274 . 6287) (semantic-list "((__nonnull__ (arg)))" 6288 . 6309)))
+          ("__MINGW32_MINOR_VERSION" . ((number "17" 774 . 776)))
+          ("__attribute__" (spp-arg-list ("x") 4949 . 4952))
+          ("__MINGW_ATTRIB_PURE" . ((symbol "__attribute__" 5934 . 5947) (semantic-list "((__pure__))" 5948 . 5960)))
+          ("__MINGW_NOTHROW" . ((symbol "__attribute__" 6600 . 6613) (semantic-list "((__nothrow__))" 6614 . 6629)))
+          ("__MINGW_H")
+          ("__DECLSPEC_SUPPORTED")
+          ("__USE_MINGW_ANSI_STDIO" . ((number "1" 7567 . 7568)))
+          ("__MINGW32_PATCHLEVEL" . ((number "0" 813 . 814)))
+          ("__small" . ((CHAR "char" 3330 . 3334)))
+          ("__MINGW_IMPORT" . ((EXTERN "extern" 2913 . 2919)))
+          ("NONAMELESSUNION")
+          ("__MINGW_GNUC_PREREQ" (spp-arg-list ("major" "minor") 5053 . 5067) . ((semantic-list "(__GNUC__ > (major) \\
+   || (__GNUC__ == (major) && __GNUC_MINOR__ >= (minor)))" 5072 . 5151)))
+          ("__MINGW_ATTRIB_DEPRECATED" . ((symbol "__attribute__" 6444 . 6457) (semantic-list "((__deprecated__))" 6458 . 6476)))
+          ("__MINGW_LC_MESSAGES__" . ((symbol "0x0000000000000010ULL" 2634 . 2655)))
+          ("__MINGW_LC_ENVVARS__" . ((symbol "0x0000000000000040ULL" 2686 . 2707)))
+          ("_CRTIMP")
+          ("__int64" . ((LONG "long" 3134 . 3138) (LONG "long" 3139 . 3143)))
+          ("__int16" . ((SHORT "short" 3235 . 3240)))
+          ("__MINGW_ATTRIB_MALLOC" . ((symbol "__attribute__" 5877 . 5890) (semantic-list "((__malloc__))" 5891 . 5905)))
+          ("__MINGW_LC_EXTENSIONS__" . ((symbol "0x0000000000000050ULL" 2581 . 2602)))
+          ("__restrict__" . ((symbol "restrict" 3503 . 3511)))
+          ("__MINGW_ATTRIB_NORETURN")
+          ("__MINGW_ATTRIB_CONST")
+          ("__MINGW32_MAJOR_VERSION" . ((number "3" 736 . 737)))
+          ("__cdecl" . ((symbol "_Pragma" 3008 . 3015) (semantic-list "(\"cdecl\")" 3015 . 3024)))
+          ("__int32" . ((LONG "long" 3187 . 3191)))
+          ("__CRT_INLINE" . 
+              ((EXTERN "extern" 5314 . 5320) (INLINE "inline" 5321 . 5327) (symbol "__attribute__" 5328 . 5341) (semantic-list "((__gnu_inline__))" 5341 . 5359)))
+          ("__MSVCRT_VERSION__" . ((number "0x0600" 6951 . 6957)))
+          ("__MINGW_ANSI_STDIO__" . ((symbol "0x0000000000000001ULL" 2399 . 2420)))
+          ("__stdcall" . ((symbol "_Pragma" 3072 . 3079) (semantic-list "(\"stdcall\")" 3079 . 3090)))
+          ("__UNUSED_PARAM" (spp-arg-list ("x") 5583 . 5586) . ((symbol "x" 5587 . 5588)))
+          ("__volatile__" . ((VOLATILE "volatile" 3441 . 3449)))
+          )
+
+    )
+   (semanticdb-table "stddef.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "stddef.h"
+    :pointmax 185
+    :fsize 184
+    :lastmodtime '(16892 4012)
+    :unmatched-syntax '((punctuation 176 . 177) (symbol 175 . 176) (punctuation 174 . 175) (symbol 168 . 174) (punctuation 167 . 168) (symbol 155 . 167) (punctuation 154 . 155))
+    )
+   (semanticdb-table "stdarg.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "stdarg.h"
+    :pointmax 184
+    :fsize 183
+    :lastmodtime '(16892 4012)
+    :unmatched-syntax '((punctuation 175 . 176) (symbol 174 . 175) (punctuation 173 . 174) (symbol 167 . 173) (punctuation 166 . 167) (symbol 154 . 166) (punctuation 153 . 154))
+    )
+   )
+  :file "!drive_c!Dev-Cpp!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
