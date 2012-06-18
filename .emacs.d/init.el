@@ -18,7 +18,6 @@
 (setq custom-file "~/.emacs.d/.csophys_custom.el")
 (load "~/.emacs.d/.csophys_custom.el")
 
-
 ;; 设置一些文件位置，判断是否是公司的机器
 (if (equal system-name "chensheng")
 	(progn
