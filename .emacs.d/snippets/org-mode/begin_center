@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: begin_center
+# key: cen
+# --
+#+BEGIN_CENTER
+$0
+#+END_CENTER

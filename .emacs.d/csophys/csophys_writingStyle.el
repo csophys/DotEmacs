@@ -34,12 +34,14 @@
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)));;org-mode 折行
 (setq org-startup-indented t);;设置org的自动缩进
 (org-remember-insinuate)
+(setq org-src-fontify-natively t);;;;org中的代码段语法高亮 
 (define-key global-map "\C-ca" 'org-agenda);;映射org日程
-(setq org-todo-keywords '((sequence "TODO"  "IDEA" "OTHER" "|" "DONE")))
+(setq org-todo-keywords '((sequence "TODO"  "IDEA"  "|" "DONE")))
 (setq org-remember-templates
 '(("TODO" ?t "* TODO %?\n %x\n %a"  "~/schedule.org.gpg" "Tasks")
 ("IDEA" ?i "* IDEA %?\n %i\n %a"  "~/schedule.org.gpg" "Idea")
-("OTHER" ?o "* Other %?\n %o\n %a" "~/schedule.org.gpg" "Other")
+("编程语言" ?b "* 编程语言 %?\n %i\n %a"  "~/study.org" "编程语言")
+("设计模式" ?s "* 设计模式 %?\n %i\n %a"  "~/study.org" "设计模式")
 ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;启用一些扩展功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,7 +65,7 @@
 ;; auto-save
 (setq epa-file-inhibit-auto-save nil)
 (require 'magit);;;;magit
-
+(require 'w32-browser);;;;w32-brower
 (autopair-global-mode t);;;启动autopair mode
 
 (semantic-mode 1)
@@ -74,6 +76,8 @@
 (global-semantic-idle-completions-mode t)
 (global-semantic-highlight-func-mode t)
 (global-semantic-decoration-mode t)
+
+
 
 ;;;;yasnippet
 (yas/initialize)
@@ -100,8 +104,12 @@
       )
 
 (defun ac-common-setup ()
-  (add-to-list 'ac-sources 'ac-source-filename)
+  (add-to-list 'ac-sources  'ac-source-filename)
+  (add-to-list 'ac-sources  'ac-source-yasnippet)
   )
+
+(defun ac-cc-mode-setup ()
+  (setq ac-sources (append '(ac-source-yasnippet ac-source-gtags ac-source-semantic) ac-sources)))
 ;;;;可以载入多个字典目录
 (defun ac-mode-dictionary (mode)
   (let (result)
@@ -115,6 +123,7 @@
 
 (ac-config-default)
 (setq ac-auto-start t);;设定输入几个字符后提示
+
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map (kbd "ESC") 'ac-stop)

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: auto digraph
+# key: dg
+# --
+digraph g{
+	node[style="rounded",shape="box",fontname="YaHei Consolas Hybrid"];
+	edge[fontname="YaHei Consolas Hybrid"];
+	$0
+}

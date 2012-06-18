@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("csophys_writingStyle.el"
+(("mine"
+ (filename . "e:/kuaipan/文档/mine/")
+ (front-context-string . "English\n  -rw-rw")
+ (rear-context-string . "  0 04-08 18:53 ")
+ (position . 308))
+("csophys_writingStyle.el"
  (filename . "~/.emacs.d/csophys/csophys_writingStyle.el")
  (front-context-string . "\n\n;;;;yasnippet\n")
  (rear-context-string . ") 'ac-previous)\n")
@@ -14,7 +19,7 @@
  (position . 745))
 ("org-remember-last-stored"
  (filename . "~/schedule.org.gpg")
- (front-context-string . "** TODO 设置根据机器名来")
- (rear-context-string . "company.bmk\")]]\n")
- (position . 3733))
+ (front-context-string . "** TODO 电视剧金太郎34")
+ (rear-context-string . "\",sizeof(x));]]\n")
+ (position . 4272))
 )

@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <12/06/14 11:26:42 c:/DotEmacs/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <12/06/15 11:53:42 c:/DotEmacs/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -22,4 +22,30 @@
   ("local-decoding" base64-decode-region)
   ("remote-encoding" tramp-perl-encode-with-module)
   ("remote-decoding" tramp-perl-decode-with-module)
-  ("ls" "/usr/xpg4/bin/ls")))
+  ("ls" "/usr/xpg4/bin/ls"))
+ (["plink" nil "root" nil]
+  nil)
+ (["plink" "root" "193.168.238.155" nil]
+  ("uname" "Linux 2.6.32-71.el6.i686")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("ls" "/bin/ls --color=never")
+  ("gid-string" "root")
+  ("uid-integer" 0)
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "base64")
+  ("remote-decoding" "base64 -d -i")
+  ("inline-compress" nil)
+  ("inline-decompress" nil)))

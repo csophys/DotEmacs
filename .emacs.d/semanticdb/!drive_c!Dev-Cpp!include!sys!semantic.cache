@@ -1,0 +1,148 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables (list 
+   (semanticdb-table "types.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_TYPES_H_" variable (:constant-flag t) nil [319 328])
+            ("_mingw.h" include (:system-flag t) nil [371 390])
+            ("__need_wchar_t" variable (:constant-flag t) nil [400 414])
+            ("__need_size_t" variable (:constant-flag t) nil [423 436])
+            ("__need_ptrdiff_t" variable (:constant-flag t) nil [445 461])
+            ("stddef.h" include (:system-flag t) nil [481 500])
+            ("time_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [574 594])
+            ("_TIME_T_DEFINED" variable (:constant-flag t) nil [603 618])
+            ("__time64_t" type
+               (:typedef ("__int64" type (:type "class") nil nil)
+                :superclasses "__int64"
+                :type "typedef")
+                nil [653 680])
+            ("_TIME64_T_DEFINED" variable (:constant-flag t) nil [689 706])
+            ("_OFF_T_" variable (:constant-flag t) nil [739 746])
+            ("_off_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [747 767])
+            ("off_t" type
+               (:typedef ("_off_t" type (:type "class") nil nil)
+                :superclasses "_off_t"
+                :type "typedef")
+                nil [790 811])
+            ("_DEV_T_" variable (:constant-flag t) nil [870 877])
+            ("_dev_t" type
+               (:typedef ("short")
+                :superclasses "short"
+                :type "typedef")
+                nil [931 952])
+            ("dev_t" type
+               (:typedef ("_dev_t" type (:type "class") nil nil)
+                :superclasses "_dev_t"
+                :type "typedef")
+                nil [982 1003])
+            ("_INO_T_" variable (:constant-flag t) nil [1062 1069])
+            ("_ino_t" type
+               (:typedef ("short")
+                :superclasses "short"
+                :type "typedef")
+                nil [1070 1091])
+            ("ino_t" type
+               (:typedef ("_ino_t" type (:type "class") nil nil)
+                :superclasses "_ino_t"
+                :type "typedef")
+                nil [1114 1135])
+            ("_PID_T_" variable (:constant-flag t) nil [1194 1201])
+            ("_pid_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [1202 1221])
+            ("pid_t" type
+               (:typedef ("_pid_t" type (:type "class") nil nil)
+                :superclasses "_pid_t"
+                :type "typedef")
+                nil [1244 1265])
+            ("_MODE_T_" variable (:constant-flag t) nil [1325 1333])
+            ("_mode_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1334 1365])
+            ("mode_t" type
+               (:typedef ("_mode_t" type (:type "class") nil nil)
+                :superclasses "_mode_t"
+                :type "typedef")
+                nil [1388 1411])
+            ("_SIGSET_T_" variable (:constant-flag t) nil [1474 1484])
+            ("_sigset_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [1485 1507])
+            ("sigset_t" type
+               (:typedef ("_sigset_t" type (:type "class") nil nil)
+                :superclasses "_sigset_t"
+                :type "typedef")
+                nil [1530 1557])
+            ("_SSIZE_T_" variable (:constant-flag t) nil [1620 1629])
+            ("_ssize_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [1630 1652])
+            ("ssize_t" type
+               (:typedef ("_ssize_t" type (:type "class") nil nil)
+                :superclasses "_ssize_t"
+                :type "typedef")
+                nil [1675 1700])
+            ("_FPOS64_T_" variable (:constant-flag t) nil [1764 1774])
+            ("fpos64_t" type
+               (:typedef ("long long")
+                :superclasses "long long"
+                :type "typedef")
+                nil [1775 1802])
+            ("_OFF64_T_" variable (:constant-flag t) nil [1837 1846])
+            ("off64_t" type
+               (:typedef ("long long")
+                :superclasses "long long"
+                :type "typedef")
+                nil [1847 1873])
+            ("useconds_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1908 1940]))          
+    :file "types.h"
+    :pointmax 2029
+    :fsize 2028
+    :lastmodtime '(19216 52584)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_OFF_T_")
+          ("__need_size_t")
+          ("_TIME64_T_DEFINED")
+          ("_FPOS64_T_")
+          ("__need_wchar_t")
+          ("_PID_T_")
+          ("_OFF64_T_")
+          ("_MODE_T_")
+          ("_DEV_T_")
+          ("_INO_T_")
+          ("_SIGSET_T_")
+          ("_TIME_T_DEFINED")
+          ("_TYPES_H_")
+          ("_SSIZE_T_")
+          ("__need_ptrdiff_t")
+          )
+
+    )
+   )
+  :file "!drive_c!Dev-Cpp!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
