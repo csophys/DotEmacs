@@ -20,9 +20,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "D:/EmacsDir/"
  "D:/EmacsDir/C/"
  "d:/DotEmacs/.emacs.d/csophys/"
- "D:/EmacsDir/"
  "e:/kuaipan/dotemacs/csophys/programeExpand/"
  "e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/"
  "d:/DotEmacs/.emacs.d/"
@@ -42,6 +42,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "test.org"
  "test.c"
  "csophys_writingStyle.el"
  "1.java"

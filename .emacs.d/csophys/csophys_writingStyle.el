@@ -62,22 +62,18 @@
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;; auto-save
 (setq epa-file-inhibit-auto-save nil)
-
 (require 'magit);;;;magit
 
 (autopair-global-mode t);;;启动autopair mode
 
-
-(require 'cedet)
-(require 'semantic/sb)
 (semantic-mode 1)
+
 (global-semantic-idle-scheduler-mode t)
 (global-semanticdb-minor-mode t)
 (global-semantic-idle-summary-mode t)
 (global-semantic-idle-completions-mode t)
 (global-semantic-highlight-func-mode t)
 (global-semantic-decoration-mode t)
-(global-semantic-stickyfunc-mode t)
 
 ;;;;yasnippet
 (yas/initialize)
