@@ -75,10 +75,8 @@
 
 ;;;;auto-complete
 (require 'auto-complete-config)
-(defun ac-common-setup ()
-  (add-to-list 'ac-sources 'ac-source-filename)
-  )
 (ac-config-default)
+(setq ac-auto-start t);;定义从输入几个字符开始提示
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map (kbd "ESC") 'ac-stop)
