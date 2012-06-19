@@ -30,12 +30,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/DotEmacs/.emacs.d/snippets/"
+ "c:/task/database/linux/"
+ "c:/EmacsDir/"
+ "c:/DotEmacs/"
  "C:/EmacsDir/C/"
+ "c:/DotEmacs/.emacs.d/snippets/"
  "C:/EmacsDir/"
  "c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/text-mode/"
  "c:/"
- "c:/task/database/linux/"
  "c:/DotEmacs/.emacs.d/"
  "c:/DotEmacs/.emacs.d/el-get/auto-complete/"
  "D:/EmacsDir/C/"
@@ -56,31 +58,35 @@
  "c:/Users/"
  "d:/DotEmacs/"
  "d:/emacs-24.1-rc-bin-i386/emacs-24.1/bin/"
- "c:/EmacsDir/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "test.c"
+ "symfoware(LE).properties"
  "test.java"
+ "study.org"
+ "test.c"
  "oracle.properties"
  "auto-complete-config.el"
  "csophys_writingStyle.el"
  "init.el"
  "COPYING.FDL"
  "ac.png"
- "csophys_function.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("c:/EmacsDir/" (20446 41846) "test.java" "test.c" "schedule.org" "GitDocument/" "C/" "blog.org~" "blog.org" "blog.html" "../" "./")
+
+ ("c:/DotEmacs/" (20446 50284) "study.org" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
+
+ ("c:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
+
+ ("C:/EmacsDir/C/" (20446 42565) "test.c" "a.exe" "../" "./")
+
  ("c:/DotEmacs/.emacs.d/snippets/" (20446 42581) "org-mode/" "java-mode/" "graphviz-dot-mode/" "../" "./")
 
- ("c:/EmacsDir/C/" (20446 42565) "test.c" "a.exe" "../" "./")
-
  ("c:/DotEmacs/.emacs.d/el-get/yasnippet/" (20441 22647) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
-
- ("C:/EmacsDir/C/" (20446 41843) "test.c" "a.exe" "../" "./")
 
  ("C:/EmacsDir/" (20446 41846) "test.java" "test.c" "schedule.org" "GitDocument/" "C/" "blog.org~" "blog.org" "blog.html" "../" "./")
 
@@ -98,13 +104,9 @@
 
  ("c:/DotEmacs/.emacs.d/" (20446 40082) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
- ("c:/EmacsDir/" (20443 1385) "test.c" "schedule.org" "GitDocument/" "C/" "blog.org~" "blog.org" "blog.html" "../" "./")
-
  ("c:/DotEmacs/.emacs.d/csophys/" (20446 32915) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("c:/task/" (20446 36513) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
-
- ("c:/DotEmacs/" (20446 32745) "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
 
  ("d:/DotEmacs/.emacs.d/csophys/" (20445 49057) "csophys_writingStyle.elc" "csophys_writingStyle.el" "csophys_function.elc" "csophys_function.el" "../" "./")
 
