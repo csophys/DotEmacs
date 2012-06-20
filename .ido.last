@@ -2,6 +2,13 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/emacs-backup/dotemacs/csophys/" . "programeExpand/")
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/" . "common/")
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/" . "JavaEE/")
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/" . "APP/")
+ ("/plink:isdev@10.124.174.224:/export/home/" . "TestSet/")
+ ("/plink:isdev@10.124.174.224:/export/" . "home/")
+ ("/plink:isdev@10.124.174.224:/" . "export/")
  ("c:/EmacsDir/GitDocument/" . "MyDocument/")
  ("c:/EmacsDir/" . "GitDocument/")
  ("e:/kuaipan/文档/mine/" . "English/")
@@ -9,7 +16,7 @@
  ("c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/" . "text-mode/")
  ("c:/emacs-backup/dotemacs/plugin/yasnippet/" . "snippets/")
  ("c:/emacs-backup/dotemacs/plugin/" . "ecb/")
- ("c:/emacs-backup/dotemacs/" . "plugin/")
+ ("c:/emacs-backup/dotemacs/" . "csophys/")
  ("c:/emacs-backup/" . "dotemacs/")
  ("c:/DotEmacs/.emacs.d/el-get/" . "auto-complete/")
  ("C:/EmacsDir/" . "C/")
@@ -27,15 +34,20 @@
  ("d:/DotEmacs/.emacs.d/el-get/" . "auto-complete/")
  ("d:/DotEmacs/" . ".emacs.d/")
  ("d:/DotEmacs/.emacs.d/" . "el-get/")
- ("c:/" . "EmacsDir/")
+ ("c:/" . "emacs-backup/")
  ("c:/DotEmacs/.emacs.d/" . "snippets/")
  ("c:/DotEmacs/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/emacs-backup/dotemacs/csophys/programeExpand/"
+ "c:/task/"
  "c:/"
+ "C:/EmacsDir/"
+ "/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/"
  "c:/task/database/linux/"
+ "c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/"
  "c:/DotEmacs/.emacs.d/"
  "c:/EmacsDir/GitDocument/MyDocument/"
  "c:/emacs-backup/dotemacs/plugin/ecb/"
@@ -50,7 +62,6 @@
  "D:/EmacsDir/"
  "c:/DotEmacs/.emacs.d/snippets/"
  "C:/EmacsDir/C/"
- "C:/EmacsDir/"
  "c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/text-mode/"
  "c:/DotEmacs/.emacs.d/el-get/auto-complete/"
  "D:/EmacsDir/C/"
@@ -61,7 +72,6 @@
  "c:/Interstage etc/testset/TestSet/APP/JavaEE/connector/"
  "c:/DotEmacs/.emacs.d/el-get/auto-complete/doc/"
  "/plink:root@193.168.238.155:/"
- "c:/task/"
  "c:/emacs-24.1/bin/"
  "d:/DotEmacs/.emacs.d/el-get/auto-complete/dict/"
  "c:/Users/"
@@ -71,28 +81,58 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "csophys_ecb.el"
+ "command.txt"
+ "test.c"
+ "test.java"
  "symfoware.properties"
+ "symfoware(LE).properties"
+ "task.org"
  "myPaper.org.gpg"
  "NEWS"
- "symfoware(LE).properties"
- "dired+.el"
- "csophys_programmingExpand.el"
- ".status.el"
- "Learning_and_Earning.txt"
- "ac-comphist.dat"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("c:/emacs-backup/dotemacs/csophys/programeExpand/" (20441 27268) "w32-browser.el" "unicad.elc" "unicad.el" "socks.el" "org-html5presentation.el" "htmlize.el" "dos.el" "dos-indent.el" "dired+.el" "csophys_yasnippet.el" "csophys_undotree.el" "csophys_nxhtml.el" "csophys_jde.el" "csophys_graphviz.el" "csophys_ecb.el" "csophys_cedet.el" "csophys_autoComplete.el" "csophys_ajc.el" "autopair.el" ".emacs.desktop" "#csophys_autoComplete.el#" "../" "./")
+
+ ("c:/emacs-backup/dotemacs/csophys/" (20433 46353) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" "../" "./")
+
+ ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/Test/src/acc/" (20300 25552) "PrimaryAccClient.java" "NumberAccClient.java" "DateAccClient.java" "CharAccClient.java" "BlobAccClient.java" ".svn/" "../" "./")
+
+ ("c:/task/" (20448 9967) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
+
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/" (ftp . 372247.23305555555) "./" "../" "common-macros.xml" "common-properties.xml" "javadb.properties" "oracle.properties" "password.txt" "sqlserver.properties" "symfoware.properties")
+
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/" (ftp . 372247.2319444445) "./" "../" "build.xml" "common/" "connector/" "createDDL.jdbc" "db_cooperation/" "dropDDL.jdbc" "jndi/" "jpa/" "resources/" "tools/" "transaction/" "TranUseCaseLog.txt" "TranUseCaseLog.txt.1")
+
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/" (ftp . 372247.2311111111) "./" "../" "JavaEE/" "RESULT/" "result.zip")
+
+ ("/plink:isdev@10.124.174.224:/export/home/TestSet/" (ftp . 372247.23) "./" "../" "APP/")
+
+ ("/plink:isdev@10.124.174.224:/export/home/" (ftp . 372247.2288888889) "./" "../" "PKG/" "isgroup/" "lzg/" "apache-ant-1.7.0/" "instantclient_11_2/" "V11/" "TestSet/" "basic-11.2.0.1.0-solaris-sparc32.zip" "TestSet.zip")
+
+ ("/plink:isdev@10.124.174.224:/export/" (ftp . 372247.22833333333) "./" "../" "home/")
+
+ ("/plink:isdev@10.124.174.224:/" (ftp . 372247.2261111111) "./" "../" "export/" "var/" "bin/" "etc/" "lib/" "opt/" "platform/" "sbin/" "usr/" "system/" "proc/" "home/" "tmp/" "mnt/" "dev/" "net/" ".sunw/" ".bash_history" ".asadminpass" ".asadmintruststore" "share/" ".ssh/" "vpd.properties" "oradiag_root/")
+
+ ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/" (20418 59019) "要因表/" "querytimeout/" "ping/" "environment/" "dbaccess/" "common/" "build.xml" ".svn/" "../" "./")
+
+ ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/dbaccess/" (20418 59023) "servlet/" "jpaandweb/" "jpa/" "initsyfdb.xml" "initdb.xml" "common/" "cmp/" "build.xml" ".svn/" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/csophys/" (20447 53386) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+
+ ("C:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
+
+ ("c:/EmacsDir/GitDocument/MyDocument/" (20447 57088) "README.md" "myPaper.org.gpg" ".git/" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/" (20447 62461) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
  ("c:/Program Files/Java/jdk1.6.0_20/lib/" (20293 58473) "visualvm/" "tools.jar" "orb.idl" "jvm.lib" "jconsole.jar" "jawt.lib" "ir.idl" "htmlconverter.jar" "dt.jar" "ct.sym" "../" "./")
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/testdriver/src/" (20418 59344) "SmokeTestSuite.java" "SmokeTest.java" "CharTest.java" "AllTestSuite.java" "AllTest.java" ".svn/" "../" "./")
 
- ("c:/DotEmacs/.emacs.d/" (20447 53386) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
-
  ("c:/DotEmacs/" (20447 53386) "study.org" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
-
- ("c:/EmacsDir/GitDocument/MyDocument/" (20421 55914) "README.md" "myPaper.org.gpg" ".git/" "../" "./")
 
  ("c:/EmacsDir/GitDocument/" (20412 43468) "MyDocument/" "../" "./")
 
@@ -128,8 +168,6 @@
 
  ("c:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
 
- ("C:/EmacsDir/C/" (20446 42565) "test.c" "a.exe" "../" "./")
-
  ("c:/DotEmacs/.emacs.d/snippets/" (20446 42581) "org-mode/" "java-mode/" "graphviz-dot-mode/" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/el-get/yasnippet/" (20441 22647) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
@@ -145,10 +183,6 @@
  ("c:/emacs-backup/dotemacs/" (20442 62744) "_viminfo" "_emacs.before_ecb_2.40" "_emacs" "test.org" "test.html" "plugin/" "notes.org" "notes.html" "Mail/" "insert/" "emacs.bmk" "csophys/" "blog.org~" "blog.org" "blog.mm" "blog.html" ".ssh/" ".semanticdb/" ".ido.last" ".history" ".gitconfig" ".eshell/" ".emacs.desktop" ".emacs.d/" ".bash_history" "../" "./")
 
  ("c:/emacs-backup/" (20433 30073) "图片支持dll.rar" "WSDM/" "usages/" "undo-tree.rar" "undo-tree.el" "ThinkinJava.pdf" "socat-2.0.0-b4.rar" "socat-2.0.0-b4/" "paper/" "org-7.8.09.zip" "org-7.8.09/" "muse-2.2.0-src/" "HjDict(ALL)/" "grep-2.5.1-2-bin.exe" "graphviz-dot-mode" "graphviz-2.28.0.msi" "git-emacs/" "gcc3.4.5/" "gcc-core-4.5.0_20100311-2-mingw32-bin/" "FreeMind-Windows-Installer-0.9.0-max.exe" "findutils-4.2.20-2.exe" "Emacsplus_Eclipse_Plug-in.maff.zip" "Emacsplus_Eclipse_Plug-in.maff/" "emacsplus/" "emacs.reg" "emacs.d.rar" "emacs-23.4-bin-i386.zip" "el-get/" "dotemacs.rar" "dotemacs/" "diffutils-2.8.7-1.exe" "C程序设计语言_第2版(高清).pdf" "Consolas/" "com.mulgasoft.emacsplus_3.6.2.zip" "bash4.0-中文文档.pdf" "../" "./")
-
- ("c:/DotEmacs/.emacs.d/csophys/" (20446 32915) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
-
- ("c:/task/" (20446 36513) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
 
  ("d:/DotEmacs/.emacs.d/csophys/" (20445 49057) "csophys_writingStyle.elc" "csophys_writingStyle.el" "csophys_function.elc" "csophys_function.el" "../" "./")
 

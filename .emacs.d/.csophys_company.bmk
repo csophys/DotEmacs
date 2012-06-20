@@ -34,7 +34,7 @@
  (position . 745))
 ("org-remember-last-stored"
  (filename . "~/study.org")
- (front-context-string . "** 编程语言 HashMap和")
- (rear-context-string . ".168.238.155)]]\n")
- (position . 791))
+ (front-context-string . "** 基本概念 指针和引用的区别")
+ (rear-context-string . "      \n\n\n* 基本概念\n")
+ (position . 4953))
 )

@@ -56,6 +56,10 @@
 (require 'tramp)
 (os_tramp)
 
+(require 'magit);;;;magit
+(require 'w32-browser);;;;w32-brower
+(autopair-global-mode t);;;启动autopair mode
+;------------------------------------------------------------------------------
 (require 'epa-file);;用easypg来进行文件的加密
 (epa-file-enable)
 ;;使用对称加密
@@ -65,24 +69,20 @@
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;; auto-save
 (setq epa-file-inhibit-auto-save nil)
-(require 'magit);;;;magit
-(require 'w32-browser);;;;w32-brower
-(autopair-global-mode t);;;启动autopair mode
-
+;------------------------------------------------------------------------------
 (semantic-mode 1)
-
 (global-semantic-idle-scheduler-mode t)
 (global-semanticdb-minor-mode t)
 (global-semantic-idle-summary-mode t)
 (global-semantic-idle-completions-mode t)
 (global-semantic-highlight-func-mode t)
 (global-semantic-decoration-mode t)
-
+;------------------------------------------------------------------------------
 ;;;;yasnippet
 (yas/initialize)
 (setq yas/prompt-functions '(yas/dropdown-prompt))
 (define-key org-mode-map (kbd "<tab>") 'yas/expand)
-
+;------------------------------------------------------------------------------
 ;;;;auto-complete
 (require 'auto-complete-config)
 ;;;;重新定义函数ac-source-yasnippet，能够适用于最新的yasnippet
@@ -128,7 +128,80 @@
 (define-key ac-completing-map (kbd "ESC") 'ac-stop)
 (define-key ac-completing-map (kbd "<tab>") 'ac-next)
 (define-key ac-completing-map (kbd "<backtab>") 'ac-previous)
+;------------------------------------------------------------------------------
+(add-to-list 'load-path "~/.emacs.d/ecb/");
+(require 'ecb)
+(defconst initial-frame-width (frame-width)
+  "This file will change the width of frame,remember the init value.")
+(setq ecb-compile-window-height 6
+      ecb-compile-window-width 'edit-window
+      ecb-compile-window-temporally-enlarge 'both
+      ecb-create-layout-file "~/.emacs.d/auto-save-list/.ecb-user-layouts.el"
+      ecb-windows-width 30
+      ecb-fix-window-size 'width ;
+      ecb-layout-name "right1"
+      ecb-tip-of-the-day nil
+      ecb-tip-of-the-day-file "~/.emacs/auto-save-list/.ecb-tip-of-day.el"
+      ecb-primary-secondary-mouse-buttons 'mouse-1--mouse-2 ;
+      ;;ecb-create-layout-frame-height 40
+      ;;ecb-create-layout-frame-width 110
+      )
+(add-to-list 'ecb-compilation-buffer-names '("*info*"))
 
+(add-hook 'ecb-show-ecb-windows-before-hook
+          'ecb-enlarge-frame-width-before-show)
+(add-hook 'ecb-hide-ecb-windows-before-hook
+          'ecb-shrink-frame-width-before-hide)
+(add-hook 'ecb-deactivate-hook
+          'ecb-shrink-frame-width-before-hide)
+(add-hook 'ecb-activate-before-layout-draw-hook
+          'ecb-enlarge-frame-width-before-activate)
+
+(defun frame-horizontal-maximized-p ()
+  "Test current frame wheather be maxmized by test the frame width and height equal to the screen resolution"
+  (interactive)
+  (equal (frame-pixel-width) (display-pixel-width)))
+
+(defun ecb-enlarge-frame-width-before-show ()
+  "Enlarge frame width before ecb shows layout."
+  (if (and (ecb-windows-all-hidden)
+           (<= (+ (frame-pixel-width) (* (frame-char-width)
+                                         (+ ecb-windows-width 2)))
+               (display-pixel-width)))
+      (set-frame-width (selected-frame) (+ (frame-width) (+ ecb-windows-width 2)))))
+(defun ecb-shrink-frame-width-before-hide ()
+  "Shrink frame width before ecb hide layout."
+  (if (and (not (ecb-windows-all-hidden))
+           
+           (not (eq (frame-pixel-width)
+                    (display-pixel-width))))
+      (if (< (- (frame-width) (+ ecb-windows-width 2)) initial-frame-width)
+          (set-frame-width (selected-frame) initial-frame-width)
+        (set-frame-width (selected-frame) (- (frame-width) (+ ecb-windows-width 2))))))
+(defun ecb-enlarge-frame-width-before-activate ()
+  "Enlarge frame width when ecb active and need it to."
+  (let ((use-last-win-conf (and ecb-last-window-config-before-deactivation
+                                (equal ecb-split-edit-window-after-start
+                                       'before-deactivation)
+                                (not (ecb-window-configuration-invalidp
+                                      ecb-last-window-config-before-deactivation)))))
+    (unless (or (and use-last-win-conf
+                     (eq (nth 5 ecb-last-window-config-before-deactivation)
+                         ecb-windows-hidden-all-value))
+                (> (+ (frame-pixel-width) (* (frame-char-width)
+                                         (+ ecb-windows-width 2)))
+                   (display-pixel-width)))
+      (set-frame-width (selected-frame) (+ (frame-width) (+ ecb-windows-width 2))))))
+
+(defadvice ecb-activate (after ecb-activate-after activate)
+  "Redraw layout after activation of ecb."
+  (ecb-redraw-layout))
+(setq ecb-compile-window-height nil);;;取消编译窗口显示
+; ;;ecb开启时隐藏ecb-window，不要删除该代码!!!
+;;;默认ecb关闭，可以用C-c .ls和C-c .ld来开启和关闭
+(define-key global-map (kbd "C-c .ls") 'ecb-activate);
+(define-key global-map (kbd "C-c .ld") 'ecb-deactivate);
+;------------------------------------------------------------------------------
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
