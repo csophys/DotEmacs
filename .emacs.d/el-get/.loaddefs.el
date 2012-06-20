@@ -1805,15 +1805,15 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 ;;;***
 
 ;;;### (autoloads nil nil ("auto-complete/auto-complete-config.el"
-;;;;;;  "auto-complete/auto-complete-pkg.el" "auto-complete/auto-complete.el"
-;;;;;;  "autopair/autopair-tests.el" "autopair/autopair.el" "color-theme/color-theme-autoloads.el"
+;;;;;;  "auto-complete/auto-complete-pkg.el" "autopair/autopair-tests.el"
+;;;;;;  "autopair/autopair.el" "color-theme/color-theme-autoloads.el"
 ;;;;;;  "el-get/el-get-autoloads.el" "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
 ;;;;;;  "el-get/el-get-core.el" "el-get/el-get-custom.el" "el-get/el-get-dependencies.el"
 ;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
 ;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "fuzzy/fuzzy.el"
-;;;;;;  "popup/popup-test.el" "popup/popup.el" "yasnippet/dropdown-list.el"
-;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
-;;;;;;  (20439 28469 96000))
+;;;;;;  "popup/popup-test.el" "popup/popup.el" "w32-browser/w32-browser.el"
+;;;;;;  "yasnippet/dropdown-list.el" "yasnippet/yasnippet-debug.el"
+;;;;;;  "yasnippet/yasnippet-tests.el") (20447 20466 498000))
 
 ;;;***
 

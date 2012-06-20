@@ -1,0 +1,1656 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "Arrays.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [173 191])
+            ("java.lang.reflect.*" include nil nil [193 220])
+            ("Arrays" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("Arrays" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [1420 1444])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [1992 2000]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1968 2033])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [3160 3168])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [3170 3183])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [3185 3196]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3136 3296])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [3827 3834]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3803 3867])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [5000 5007])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [5009 5022])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [5024 5035]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4976 5135])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [5668 5677]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5644 5710])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [6845 6854])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [6856 6869])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [6871 6882]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6821 6982])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [7514 7522]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7490 7555])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [8689 8697])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [8699 8712])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [8714 8725]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8665 8825])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9357 9365]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9333 9398])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [10532 10540])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [10542 10555])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [10557 10568]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10508 10668])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [12061 12071]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12037 12104])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [14089 14099])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [14101 14114])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [14116 14127]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14065 14217])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [15612 15621]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15588 15654])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [17641 17650])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [17652 17665])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [17667 17678]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17617 17768])
+                    ("sort2" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [17800 17810])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [17812 17825])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [17827 17838]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17774 19179])
+                    ("sort2" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [19212 19221])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [19223 19236])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [19238 19249]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19186 20582])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [20812 20820])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [20822 20829])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [20831 20838]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20786 22075])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [22151 22159])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [22161 22166])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [22168 22173]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22126 22223])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [22324 22332])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [22334 22339])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [22341 22346])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [22348 22353]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22296 22417])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [22530 22538])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [22540 22545])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [22547 22552])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [22554 22559]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [22506 22679])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [22798 22805])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [22807 22814])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [22816 22823]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22772 24059])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [24135 24142])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [24144 24149])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [24151 24156]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24110 24205])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [24306 24313])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [24315 24320])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [24322 24327])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [24329 24334]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24278 24398])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [24514 24521])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [24523 24528])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [24530 24535])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [24537 24542]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [24490 24662])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [24779 24788])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [24790 24797])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [24799 24806]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24753 26044])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [26120 26129])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [26131 26136])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [26138 26143]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26095 26194])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [26295 26304])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [26306 26311])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [26313 26318])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [26320 26325]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26267 26389])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [26503 26512])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [26514 26519])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [26521 26526])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [26528 26533]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [26479 26653])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [26770 26778])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [26780 26787])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [26789 26796]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26744 28033])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [28109 28117])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [28119 28124])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [28126 28131]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28084 28181])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [28282 28290])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [28292 28297])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [28299 28304])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [28306 28311]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28254 28375])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [28488 28496])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [28498 28503])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [28505 28510])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [28512 28517]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [28464 28637])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [28754 28762])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [28764 28771])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [28773 28780]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28728 30017])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [30093 30101])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [30103 30108])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [30110 30115]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30068 30165])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [30266 30274])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [30276 30281])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [30283 30288])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [30290 30295]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30238 30359])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [30472 30480])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [30482 30487])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [30489 30494])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [30496 30501]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [30448 30621])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [30740 30750])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [30752 30759])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [30761 30768]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30714 32007])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [32083 32093])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [32095 32100])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [32102 32107]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32058 32159])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [32260 32270])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [32272 32277])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [32279 32284])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [32286 32291]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32232 32355])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [32470 32480])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [32482 32487])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [32489 32494])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [32496 32501]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [32446 32621])
+                    ("sort1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [32739 32748])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [32750 32757])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [32759 32766]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32713 34004])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [34080 34089])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [34091 34096])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [34098 34103]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34055 34154])
+                    ("vecswap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [34255 34264])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [34266 34271])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [34273 34278])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [34280 34285]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34227 34349])
+                    ("med3" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [34463 34472])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [34474 34479])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [34481 34486])
+                            ("c" variable (:type "int") (reparse-symbol formal_parameters) [34488 34493]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34439 34613])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [35731 35741]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [35707 35837])
+                    ("sort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [37569 37579])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [37581 37594])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [37596 37607]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [37545 37777])
+                    ("INSERTIONSORT_THRESHOLD" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [37928 37981])
+                    ("mergeSort" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("src" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [38334 38346])
+                            ("dest" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [38354 38367])
+                            ("low" variable (:type "int") (reparse-symbol formal_parameters) [38375 38382])
+                            ("high" variable (:type "int") (reparse-symbol formal_parameters) [38390 38398])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [38406 38413]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38304 39645])
+                    ("swap" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [39721 39731])
+                            ("a" variable (:type "int") (reparse-symbol formal_parameters) [39733 39738])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [39740 39745]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39696 39797])
+                    ("sort" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [41007 41012]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40997 41204])
+                    ("sort" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [43012 43017])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [43019 43032])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [43034 43045]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43002 43348])
+                    ("mergeSort" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("src" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [43696 43708])
+                            ("dest" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [43716 43729])
+                            ("low" variable (:type "int") (reparse-symbol formal_parameters) [43737 43744])
+                            ("high" variable (:type "int") (reparse-symbol formal_parameters) [43746 43754])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [43756 43763])
+                            ("c" variable (:type "Comparator") (reparse-symbol formal_parameters) [43771 43783]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43666 44921])
+                    ("rangeCheck" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("arrayLen" variable (:type "int") (reparse-symbol formal_parameters) [45086 45098])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [45100 45113])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [45115 45126]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45055 45483])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [46606 46614])
+                            ("key" variable (:type "long") (reparse-symbol formal_parameters) [46616 46624]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [46575 46677])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [48269 48277])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [48279 48292])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [48294 48305])
+                            ("key" variable (:type "long") (reparse-symbol formal_parameters) [48314 48322]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [48238 48425])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [48518 48526])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [48528 48541])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [48543 48554])
+                            ("key" variable (:type "long") (reparse-symbol formal_parameters) [48565 48573]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [48485 48881])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [49984 49991])
+                            ("key" variable (:type "int") (reparse-symbol formal_parameters) [49993 50000]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [49953 50053])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [51643 51650])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [51652 51665])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [51667 51678])
+                            ("key" variable (:type "int") (reparse-symbol formal_parameters) [51687 51694]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [51612 51797])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [51890 51897])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [51899 51912])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [51914 51925])
+                            ("key" variable (:type "int") (reparse-symbol formal_parameters) [51936 51943]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [51857 52250])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [53357 53366])
+                            ("key" variable (:type "short") (reparse-symbol formal_parameters) [53368 53377]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [53326 53430])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [55024 55033])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [55035 55048])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [55050 55061])
+                            ("key" variable (:type "short") (reparse-symbol formal_parameters) [55070 55079]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [54993 55182])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [55275 55284])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [55286 55299])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [55301 55312])
+                            ("key" variable (:type "short") (reparse-symbol formal_parameters) [55323 55332]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [55242 55641])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [56746 56754])
+                            ("key" variable (:type "char") (reparse-symbol formal_parameters) [56756 56764]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [56715 56817])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [58409 58417])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [58419 58432])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [58434 58445])
+                            ("key" variable (:type "char") (reparse-symbol formal_parameters) [58454 58462]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58378 58565])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [58658 58666])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [58668 58681])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [58683 58694])
+                            ("key" variable (:type "char") (reparse-symbol formal_parameters) [58705 58713]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58625 59021])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [60126 60134])
+                            ("key" variable (:type "byte") (reparse-symbol formal_parameters) [60136 60144]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60095 60197])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [61789 61797])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [61799 61812])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [61814 61825])
+                            ("key" variable (:type "byte") (reparse-symbol formal_parameters) [61834 61842]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [61758 61945])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [62038 62046])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [62048 62061])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [62063 62074])
+                            ("key" variable (:type "byte") (reparse-symbol formal_parameters) [62085 62093]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [62005 62401])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [63582 63592])
+                            ("key" variable (:type "double") (reparse-symbol formal_parameters) [63594 63604]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [63551 63657])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [65325 65335])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [65337 65350])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [65352 65363])
+                            ("key" variable (:type "double") (reparse-symbol formal_parameters) [65372 65382]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [65294 65485])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [65578 65588])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [65590 65603])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [65605 65616])
+                            ("key" variable (:type "double") (reparse-symbol formal_parameters) [65627 65637]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [65545 66556])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [67736 67745])
+                            ("key" variable (:type "float") (reparse-symbol formal_parameters) [67747 67756]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [67705 67809])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [69476 69485])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [69487 69500])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [69502 69513])
+                            ("key" variable (:type "float") (reparse-symbol formal_parameters) [69522 69531]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [69445 69634])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [69727 69736])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [69738 69751])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [69753 69764])
+                            ("key" variable (:type "float") (reparse-symbol formal_parameters) [69775 69784]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [69694 70694])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [72266 72276])
+                            ("key" variable (:type "Object") (reparse-symbol formal_parameters) [72278 72288]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [72235 72341])
+                    ("binarySearch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [74420 74430])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [74432 74445])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [74447 74458])
+                            ("key" variable (:type "Object") (reparse-symbol formal_parameters) [74467 74477]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [74389 74580])
+                    ("binarySearch0" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [74673 74683])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [74685 74698])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [74700 74711])
+                            ("key" variable (:type "Object") (reparse-symbol formal_parameters) [74722 74732]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [74640 75086])
+                    ("binarySearch" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [76772 76777])
+                            ("key" variable (:type "T") (reparse-symbol formal_parameters) [76779 76784]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [76755 76872])
+                    ("binarySearch" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [79048 79053])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [79055 79068])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [79070 79081])
+                            ("key" variable (:type "T") (reparse-symbol formal_parameters) [79094 79099]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [79031 79237])
+                    ("binarySearch0" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [79334 79339])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [79341 79354])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [79356 79367])
+                            ("key" variable (:type "T") (reparse-symbol formal_parameters) [79375 79380]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [79316 79829])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [80539 80547])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [80549 80558]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [80510 80882])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [81565 81572])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [81574 81582]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [81536 81906])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [82591 82600])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [82602 82612]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [82562 82936])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [83620 83628])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [83630 83639]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [83591 83963])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [84647 84655])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [84657 84666]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [84618 84990])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [85677 85688])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [85690 85702]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [85648 86026])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [87023 87033])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [87035 87046]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [86994 87411])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [88403 88412])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [88414 88424]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [88374 88783])
+                    ("equals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [89612 89622])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [89624 89635]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [89583 90057])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [90332 90340])
+                            ("val" variable (:type "long") (reparse-symbol formal_parameters) [90342 90350]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [90308 90394])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [91309 91317])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [91319 91332])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [91334 91345])
+                            ("val" variable (:type "long") (reparse-symbol formal_parameters) [91347 91355]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [91285 91484])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [91740 91747])
+                            ("val" variable (:type "int") (reparse-symbol formal_parameters) [91749 91756]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [91716 91800])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [92713 92720])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [92722 92735])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [92737 92748])
+                            ("val" variable (:type "int") (reparse-symbol formal_parameters) [92750 92757]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [92689 92886])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [93146 93155])
+                            ("val" variable (:type "short") (reparse-symbol formal_parameters) [93157 93166]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [93122 93210])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [94127 94136])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [94138 94151])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [94153 94164])
+                            ("val" variable (:type "short") (reparse-symbol formal_parameters) [94166 94175]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [94103 94304])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [94562 94570])
+                            ("val" variable (:type "char") (reparse-symbol formal_parameters) [94572 94580]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [94538 94624])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [95539 95547])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [95549 95562])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [95564 95575])
+                            ("val" variable (:type "char") (reparse-symbol formal_parameters) [95577 95585]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [95515 95714])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [95972 95980])
+                            ("val" variable (:type "byte") (reparse-symbol formal_parameters) [95982 95990]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [95948 96034])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [96949 96957])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [96959 96972])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [96974 96985])
+                            ("val" variable (:type "byte") (reparse-symbol formal_parameters) [96987 96995]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [96925 97124])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [97388 97399])
+                            ("val" variable (:type "boolean") (reparse-symbol formal_parameters) [97401 97412]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [97364 97456])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [98377 98388])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [98390 98403])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [98405 98416])
+                            ("val" variable (:type "boolean") (reparse-symbol formal_parameters) [98446 98457]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [98353 98586])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [98848 98858])
+                            ("val" variable (:type "double") (reparse-symbol formal_parameters) [98860 98870]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [98824 98914])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [99833 99843])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [99845 99858])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [99860 99871])
+                            ("val" variable (:type "double") (reparse-symbol formal_parameters) [99872 99882]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [99809 100010])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [100270 100279])
+                            ("val" variable (:type "float") (reparse-symbol formal_parameters) [100281 100290]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [100246 100334])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [101251 101260])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [101262 101275])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [101277 101288])
+                            ("val" variable (:type "float") (reparse-symbol formal_parameters) [101290 101299]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [101227 101428])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [101834 101844])
+                            ("val" variable (:type "Object") (reparse-symbol formal_parameters) [101846 101856]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [101810 101900])
+                    ("fill" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [102963 102973])
+                            ("fromIndex" variable (:type "int") (reparse-symbol formal_parameters) [102975 102988])
+                            ("toIndex" variable (:type "int") (reparse-symbol formal_parameters) [102990 103001])
+                            ("val" variable (:type "Object") (reparse-symbol formal_parameters) [103003 103013]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [102939 103142])
+                    ("copyOf" function
+                       (:arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [104169 104181])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [104183 104196]))                          
+                        :type "T[]")
+                        (reparse-symbol class_member_declaration) [104158 104276])
+                    ("copyOf" function
+                       (:arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "U")
+                                (reparse-symbol formal_parameters) [105513 105525])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [105527 105540]))                          
+                        :type "T[]")
+                        (reparse-symbol class_member_declaration) [105502 105894])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [106828 106843])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [106845 106858]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [106800 107042])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [107978 107994])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [107996 108009]))                          
+                        :type "short[]")
+                        (reparse-symbol class_member_declaration) [107949 108195])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [109122 109136])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [109138 109151]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [109095 109333])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [110262 110277])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [110279 110292]))                          
+                        :type "long[]")
+                        (reparse-symbol class_member_declaration) [110234 110476])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [111432 111447])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [111449 111462]))                          
+                        :type "char[]")
+                        (reparse-symbol class_member_declaration) [111404 111646])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [112576 112592])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [112594 112607]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [112547 112793])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [113724 113741])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [113743 113756]))                          
+                        :type "double[]")
+                        (reparse-symbol class_member_declaration) [113694 113944])
+                    ("copyOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [114897 114915])
+                            ("newLength" variable (:type "int") (reparse-symbol formal_parameters) [114917 114930]))                          
+                        :type "boolean[]")
+                        (reparse-symbol class_member_declaration) [114866 115120])
+                    ("copyOfRange" function
+                       (:arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [116823 116835])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [116837 116845])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [116847 116853]))                          
+                        :type "T[]")
+                        (reparse-symbol class_member_declaration) [116807 116944])
+                    ("copyOfRange" function
+                       (:arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "U")
+                                (reparse-symbol formal_parameters) [118863 118875])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [118877 118885])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [118887 118893]))                          
+                        :type "T[]")
+                        (reparse-symbol class_member_declaration) [118847 119386])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [121001 121016])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [121018 121026])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [121028 121034]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [120968 121357])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [122974 122990])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [122992 123000])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [123002 123008]))                          
+                        :type "short[]")
+                        (reparse-symbol class_member_declaration) [122940 123333])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [124941 124955])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [124957 124965])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [124967 124973]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [124909 125294])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [126904 126919])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [126921 126929])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [126931 126937]))                          
+                        :type "long[]")
+                        (reparse-symbol class_member_declaration) [126871 127260])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [128886 128901])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [128903 128911])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [128913 128919]))                          
+                        :type "char[]")
+                        (reparse-symbol class_member_declaration) [128853 129242])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [130853 130869])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [130871 130879])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [130881 130887]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [130819 131212])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [132824 132841])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [132843 132851])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [132853 132859]))                          
+                        :type "double[]")
+                        (reparse-symbol class_member_declaration) [132789 133186])
+                    ("copyOfRange" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("original" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [134811 134829])
+                            ("from" variable (:type "int") (reparse-symbol formal_parameters) [134831 134839])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [134841 134847]))                          
+                        :type "boolean[]")
+                        (reparse-symbol class_member_declaration) [134775 135176])
+                    ("asList" function (:constructor-flag t) (reparse-symbol class_member_declaration) [135946 135997])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [138211 138219]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [138184 138478])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [139307 139314]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [139280 139491])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [140311 140320]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [140284 140499])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [141322 141330]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [141295 141508])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [142326 142334]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [142299 142512])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [143336 143347]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [143309 143544])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [144364 144373]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [144337 144574])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [145396 145406]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [145369 145675])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [146720 146730]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [146693 146946])
+                    ("deepHashCode" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [148552 148562]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [148521 149850])
+                    ("deepEquals" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a1" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [151543 151554])
+                            ("a2" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [151556 151567]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [151510 153345])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [154000 154008]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [153970 154360])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [155014 155021]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [154984 155373])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "short")
+                                (reparse-symbol formal_parameters) [156029 156038]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [155999 156390])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [157045 157053]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [157015 157405])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [158060 158068]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [158030 158420])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [159078 159089]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [159048 159441])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [160097 160106]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [160067 160458])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [161115 161125]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [161085 161477])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [162260 162270]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [162230 162638])
+                    ("deepToString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [164343 164353]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [164309 164662])
+                    ("deepToString" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("a" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [164701 164711])
+                            ("buf" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [164713 164730]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [164668 166709]))                  
+                :type "class")
+                nil [1325 166711]))          
+    :file "Arrays.java"
+    :pointmax 166712
+    :fsize 166711
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((GT 164781 . 164782) (IDENTIFIER 164769 . 164772) (LT 164772 . 164773) (COMMA 136124 . 136125) (IMPLEMENTS 136101 . 136111) (GT 136098 . 136099) (LT 136096 . 136097) (EXTENDS 136076 . 136083) (GT 136074 . 136075) (PRIVATE 136042 . 136049) (LT 136072 . 136073) (DOT 135956 . 135957) (IDENTIFIER 135953 . 135954) (DOT 135955 . 135956) (GT 135944 . 135945) (LT 135942 . 135943) (GT 135936 . 135937) (PUBLIC 135920 . 135926) (LT 135934 . 135935) (GT 118914 . 118915) (EXTENDS 118903 . 118910) (QUESTION 118901 . 118902) (IDENTIFIER 118895 . 118900) (LT 118900 . 118901) (GT 118845 . 118846) (COMMA 118843 . 118844) (PUBLIC 118827 . 118833) (LT 118841 . 118842) (GT 116805 . 116806) (PUBLIC 116789 . 116795) (LT 116803 . 116804) (GT 105561 . 105562) (EXTENDS 105550 . 105557) (QUESTION 105548 . 105549) (IDENTIFIER 105542 . 105547) (LT 105547 . 105548) (GT 105500 . 105501) (COMMA 105498 . 105499) (PUBLIC 105482 . 105488) (LT 105496 . 105497) (GT 104156 . 104157) (PUBLIC 104140 . 104146) (LT 104154 . 104155) (GT 79402 . 79403) (SUPER 79395 . 79400) (QUESTION 79393 . 79394) (IDENTIFIER 79382 . 79392) (LT 79392 . 79393) (GT 79314 . 79315) (PRIVATE 79297 . 79304) (LT 79312 . 79313) (GT 79121 . 79122) (SUPER 79114 . 79119) (QUESTION 79112 . 79113) (IDENTIFIER 79101 . 79111) (LT 79111 . 79112) (GT 79029 . 79030) (PUBLIC 79013 . 79019) (LT 79027 . 79028) (GT 76806 . 76807) (SUPER 76799 . 76804) (QUESTION 76797 . 76798) (IDENTIFIER 76786 . 76796) (LT 76796 . 76797) (GT 76753 . 76754) (PUBLIC 76737 . 76743) (LT 76751 . 76752) (GT 43071 . 43072) (SUPER 43064 . 43069) (QUESTION 43062 . 43063) (IDENTIFIER 43051 . 43061) (LT 43061 . 43062) (GT 43000 . 43001) (PUBLIC 42984 . 42990) (LT 42998 . 42999) (GT 41034 . 41035) (SUPER 41027 . 41032) (QUESTION 41025 . 41026) (IDENTIFIER 41014 . 41024) (LT 41024 . 41025) (GT 40995 . 40996) (PUBLIC 40979 . 40985) (LT 40993 . 40994))
+    )
+   (semanticdb-table "Collection.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [177 195]))          
+    :file "Collection.java"
+    :pointmax 20551
+    :fsize 20550
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 5380 . 20550) (GT 5378 . 5379) (IDENTIFIER 5377 . 5378) (LT 5376 . 5377) (IDENTIFIER 5368 . 5376) (EXTENDS 5360 . 5367) (GT 5358 . 5359) (IDENTIFIER 5357 . 5358) (PUBLIC 5329 . 5335) (LT 5356 . 5357))
+    )
+   (semanticdb-table "StringTokenizer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [182 200])
+            ("java.lang.*" include nil nil [202 221]))          
+    :file "StringTokenizer.java"
+    :pointmax 14151
+    :fsize 14150
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 3061 . 14150) (GT 3059 . 3060) (IDENTIFIER 3053 . 3059) (PUBLIC 3001 . 3007) (LT 3052 . 3053))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

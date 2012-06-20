@@ -15,13 +15,13 @@
                                 :type "String")
                                 (reparse-symbol formal_parameters) [43 56]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [19 130]))                  
+                        (reparse-symbol class_member_declaration) [19 137]))                  
                 :type "class")
-                nil [3 133]))          
+                nil [3 140]))          
     :file "test.java"
-    :pointmax 137
-    :fsize 146
-    :lastmodtime '(20446 57509)
+    :pointmax 144
+    :fsize 153
+    :lastmodtime '(20448 14419)
     :unmatched-syntax 'nil
     )
    )

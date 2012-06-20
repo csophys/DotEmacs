@@ -21,6 +21,8 @@
 			(:name org-html5presentation :type http :website "https://gist.github.com/509761" :description "html5 presentation from org files" :url "https://raw.github.com/gist/509761/org-html5presentation.el" :autoloads t))
  (popup status "installed" recipe
 	(:name popup :website "https://github.com/m2ym/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :pkgname "m2ym/popup-el"))
+ (w32-browser status "installed" recipe
+	      (:name w32-browser :type emacswiki :description "Run Windows application associated with a file." :load-path "."))
  (yasnippet status "installed" recipe
 	    (:name yasnippet :website "https://github.com/capitaomorte/yasnippet.git" :description "YASnippet is a template system for Emacs." :type github :pkgname "capitaomorte/yasnippet" :features "yasnippet" :pre-init
 		   (unless

@@ -1,0 +1,275 @@
+;; Object acc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "acc/"
+  :tables (list 
+   (semanticdb-table "CharAccClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.acc" package nil nil [1 26])
+            ("java.util.Arrays" include nil nil [74 98])
+            ("java.util.Collection" include nil nil [99 127])
+            ("javax.persistence.EntityManager" include nil nil [129 168])
+            ("javax.persistence.EntityManagerFactory" include nil nil [169 215])
+            ("javax.persistence.Persistence" include nil nil [216 253])
+            ("javax.persistence.PersistenceUnit" include nil nil [254 295])
+            ("jpa.javatype.entity.CharEntity" include nil nil [297 335])
+            ("jpa.javatype.entity.CharWithLengthEntity" include nil nil [336 384])
+            ("jpa.javatype.entity.NCharEntity" include nil nil [385 424])
+            ("jpa.javatype.entity.NCharVarEntity" include nil nil [425 467])
+            ("jpa.javatype.entity.NCharVarWithLengthEntity" include nil nil [468 520])
+            ("jpa.javatype.entity.NCharWithLengthEntity" include nil nil [521 570])
+            ("jpa.javatype.entity.VarCharEntity" include nil nil [571 612])
+            ("jpa.javatype.entity.VarCharWithLengthEntity" include nil nil [613 664])
+            ("CharAccClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("emf" variable
+                       (:typemodifiers ("private" "static")
+                        :type "EntityManagerFactory")
+                        (reparse-symbol class_member_declaration) [725 765])
+                    ("entityClasses" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [775 1106])
+                    ("longStr" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1116 1148])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1182 1195]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1158 1818])
+                    ("test" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("classIndex" variable (:type "int") (reparse-symbol formal_parameters) [1845 1859])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [1861 1873])
+                            ("insertValue" variable (:type "String") (reparse-symbol formal_parameters) [1875 1893])
+                            ("findValue" variable (:type "String") (reparse-symbol formal_parameters) [1895 1911]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1828 3367])
+                    ("initObject" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("object" variable (:type "Object") (reparse-symbol formal_parameters) [3403 3416])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [3418 3430])
+                            ("value" variable (:type "Object") (reparse-symbol formal_parameters) [3432 3444]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3377 3811])
+                    ("getField" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("object" variable (:type "Object") (reparse-symbol formal_parameters) [3845 3858])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [3860 3872]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3821 4225])
+                    ("strCons" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4235 5007]))                  
+                :type "class")
+                nil [666 5014]))          
+    :file "CharAccClient.java"
+    :pointmax 5015
+    :fsize 5173
+    :lastmodtime '(20300 25552)
+    :unmatched-syntax '((IDENTIFIER 59 . 71) (DOT 58 . 59) (IDENTIFIER 52 . 58) (DOT 51 . 52) (IDENTIFIER 46 . 51) (DOT 45 . 46) (IMPORT 28 . 34) (STATIC 35 . 41) (IDENTIFIER 42 . 45))
+    )
+   (semanticdb-table "BlobAccClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.acc" package nil nil [1 26])
+            ("javax.persistence.EntityManager" include nil nil [28 67])
+            ("javax.persistence.EntityManagerFactory" include nil nil [68 114])
+            ("javax.persistence.PersistenceUnit" include nil nil [115 156])
+            ("jpa.javatype.entity.BlobEntity" include nil nil [158 196])
+            ("BlobAccClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("emf" variable
+                       (:typemodifiers ("private" "static")
+                        :type "EntityManagerFactory")
+                        (reparse-symbol class_member_declaration) [253 293])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [324 337]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [300 437])
+                    ("test" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [448 1406]))                  
+                :type "class")
+                nil [198 1409]))          
+    :file "BlobAccClient.java"
+    :pointmax 1410
+    :fsize 1462
+    :lastmodtime '(20300 25552)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DateAccClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.acc" package nil nil [1 26])
+            ("java.sql.Time" include nil nil [28 49])
+            ("java.sql.Timestamp" include nil nil [50 76])
+            ("java.sql.Date" include nil nil [77 98])
+            ("javax.persistence.EntityManager" include nil nil [100 139])
+            ("javax.persistence.EntityManagerFactory" include nil nil [140 186])
+            ("javax.persistence.Persistence" include nil nil [187 224])
+            ("javax.persistence.PersistenceUnit" include nil nil [225 266])
+            ("jpa.javatype.entity.CharEntity" include nil nil [268 306])
+            ("jpa.javatype.entity.CharWithLengthEntity" include nil nil [307 355])
+            ("jpa.javatype.entity.DateEntity" include nil nil [356 394])
+            ("jpa.javatype.entity.NCharEntity" include nil nil [395 434])
+            ("jpa.javatype.entity.NCharVarEntity" include nil nil [435 477])
+            ("jpa.javatype.entity.NCharVarWithLengthEntity" include nil nil [478 530])
+            ("jpa.javatype.entity.NCharWithLengthEntity" include nil nil [531 580])
+            ("jpa.javatype.entity.TimeEntity" include nil nil [581 619])
+            ("jpa.javatype.entity.TimeStampEntity" include nil nil [620 663])
+            ("jpa.javatype.entity.VarCharEntity" include nil nil [664 705])
+            ("jpa.javatype.entity.VarCharWithLengthEntity" include nil nil [706 757])
+            ("org.junit.Assert" include nil nil [759 783])
+            ("DateAccClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("emf" variable
+                       (:typemodifiers ("private" "static")
+                        :type "EntityManagerFactory")
+                        (reparse-symbol class_member_declaration) [841 881])
+                    ("entityClasses" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [892 1001])
+                    ("insertValues" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1011 1103])
+                    ("findValues" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1113 1163])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1197 1210]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1173 1578])
+                    ("test" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("classIndex" variable (:type "int") (reparse-symbol formal_parameters) [1614 1628])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [1630 1642])
+                            ("insertValue" variable (:type "Object") (reparse-symbol formal_parameters) [1644 1662])
+                            ("findValue" variable (:type "Object") (reparse-symbol formal_parameters) [1664 1680]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1597 3039])
+                    ("initObject" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("object" variable (:type "Object") (reparse-symbol formal_parameters) [3075 3088])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [3090 3102])
+                            ("value" variable (:type "Object") (reparse-symbol formal_parameters) [3104 3116]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3049 3483])
+                    ("getField" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("object" variable (:type "Object") (reparse-symbol formal_parameters) [3517 3530])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [3532 3544]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3493 3886]))                  
+                :type "class")
+                nil [785 3888]))          
+    :file "DateAccClient.java"
+    :pointmax 3889
+    :fsize 4006
+    :lastmodtime '(20300 25552)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NumberAccClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.acc" package nil nil [1 26])
+            ("javax.persistence.EntityManager" include nil nil [28 67])
+            ("javax.persistence.EntityManagerFactory" include nil nil [68 114])
+            ("javax.persistence.PersistenceUnit" include nil nil [115 156])
+            ("jpa.javatype.entity.Decimal18Entity" include nil nil [158 201])
+            ("jpa.javatype.entity.Decimal3_2Entity" include nil nil [202 246])
+            ("jpa.javatype.entity.Decimal3_2WithScaleEntity" include nil nil [247 300])
+            ("jpa.javatype.entity.DoublePrecisionEntity" include nil nil [301 350])
+            ("jpa.javatype.entity.Float23Entity" include nil nil [351 392])
+            ("jpa.javatype.entity.Float52Entity" include nil nil [393 434])
+            ("jpa.javatype.entity.IntegerEntity" include nil nil [435 476])
+            ("jpa.javatype.entity.Numeric18Entity" include nil nil [477 520])
+            ("jpa.javatype.entity.Numeric3_2Entity" include nil nil [521 565])
+            ("jpa.javatype.entity.Numeric3_2WithScaleEntity" include nil nil [566 619])
+            ("jpa.javatype.entity.RealEntity" include nil nil [620 658])
+            ("jpa.javatype.entity.SmallIntEntity" include nil nil [659 701])
+            ("NumberAccClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("emf" variable
+                       (:typemodifiers ("private" "static")
+                        :type "EntityManagerFactory")
+                        (reparse-symbol class_member_declaration) [761 801])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [831 844]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [807 1176])
+                    ("test" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("entityClass" variable (:type "Class") (reparse-symbol formal_parameters) [1203 1220])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [1222 1234])
+                            ("sqlValue" variable (:type "String") (reparse-symbol formal_parameters) [1236 1251])
+                            ("javaValue" variable (:type "String") (reparse-symbol formal_parameters) [1253 1269]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1186 2443])
+                    ("getField" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("object" variable (:type "Object") (reparse-symbol formal_parameters) [2477 2490])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [2492 2504]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2453 2820])
+                    ("entityClasses" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2826 3213]))                  
+                :type "class")
+                nil [703 3215]))          
+    :file "NumberAccClient.java"
+    :pointmax 3216
+    :fsize 3307
+    :lastmodtime '(20300 25552)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Interstage etc!testset!TestSet!APP!JavaEE!jpa!javatype!Char!Test!src!acc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
