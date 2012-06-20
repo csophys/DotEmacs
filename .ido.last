@@ -35,12 +35,13 @@
  ("d:/DotEmacs/" . ".emacs.d/")
  ("d:/DotEmacs/.emacs.d/" . "el-get/")
  ("c:/" . "emacs-backup/")
- ("c:/DotEmacs/.emacs.d/" . "snippets/")
+ ("c:/DotEmacs/.emacs.d/" . "csophys/")
  ("c:/DotEmacs/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/DotEmacs/.emacs.d/csophys/"
  "c:/emacs-backup/dotemacs/csophys/programeExpand/"
  "c:/task/"
  "c:/"
@@ -68,7 +69,6 @@
  "d:/DotEmacs/.emacs.d/csophys/"
  "e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/"
  "d:/DotEmacs/.emacs.d/el-get/auto-complete/"
- "c:/DotEmacs/.emacs.d/csophys/"
  "c:/Interstage etc/testset/TestSet/APP/JavaEE/connector/"
  "c:/DotEmacs/.emacs.d/el-get/auto-complete/doc/"
  "/plink:root@193.168.238.155:/"
@@ -81,6 +81,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "csophys_writingStyle.el"
  "csophys_ecb.el"
  "command.txt"
  "test.c"
@@ -94,6 +95,12 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("c:/DotEmacs/.emacs.d/csophys/" (20449 12388) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/" (20449 12187) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("c:/Documents and Settings/Administrator/" (20446 32728) "デスクトップ/" "スタート メニュー/" "_viminfo" "xen/" "workspace/" "WINDOWS/" "UserData/" "Templates/" "SendTo/" "Recent/" "PrintHood/" "ntuser.ini" "NTUSER.DAT.LOG" "NTUSER.DAT" "NetHood/" "My Documents/" "magit/" "Local Settings/" "grizzly~git/" "Favorites/" "Cookies/" "chensheng/" "Application Data/" ".subversion/" ".ssh/" ".m2/" ".gitk" ".gitconfig" ".freemind/" ".bash_history" ".astah/" ".asadmintruststore" ".asadminpass" "../" "./")
+
  ("c:/emacs-backup/dotemacs/csophys/programeExpand/" (20441 27268) "w32-browser.el" "unicad.elc" "unicad.el" "socks.el" "org-html5presentation.el" "htmlize.el" "dos.el" "dos-indent.el" "dired+.el" "csophys_yasnippet.el" "csophys_undotree.el" "csophys_nxhtml.el" "csophys_jde.el" "csophys_graphviz.el" "csophys_ecb.el" "csophys_cedet.el" "csophys_autoComplete.el" "csophys_ajc.el" "autopair.el" ".emacs.desktop" "#csophys_autoComplete.el#" "../" "./")
 
  ("c:/emacs-backup/dotemacs/csophys/" (20433 46353) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" "../" "./")
@@ -102,31 +109,13 @@
 
  ("c:/task/" (20448 9967) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
 
- ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/" (ftp . 372247.23305555555) "./" "../" "common-macros.xml" "common-properties.xml" "javadb.properties" "oracle.properties" "password.txt" "sqlserver.properties" "symfoware.properties")
-
- ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/" (ftp . 372247.2319444445) "./" "../" "build.xml" "common/" "connector/" "createDDL.jdbc" "db_cooperation/" "dropDDL.jdbc" "jndi/" "jpa/" "resources/" "tools/" "transaction/" "TranUseCaseLog.txt" "TranUseCaseLog.txt.1")
-
- ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/" (ftp . 372247.2311111111) "./" "../" "JavaEE/" "RESULT/" "result.zip")
-
- ("/plink:isdev@10.124.174.224:/export/home/TestSet/" (ftp . 372247.23) "./" "../" "APP/")
-
- ("/plink:isdev@10.124.174.224:/export/home/" (ftp . 372247.2288888889) "./" "../" "PKG/" "isgroup/" "lzg/" "apache-ant-1.7.0/" "instantclient_11_2/" "V11/" "TestSet/" "basic-11.2.0.1.0-solaris-sparc32.zip" "TestSet.zip")
-
- ("/plink:isdev@10.124.174.224:/export/" (ftp . 372247.22833333333) "./" "../" "home/")
-
- ("/plink:isdev@10.124.174.224:/" (ftp . 372247.2261111111) "./" "../" "export/" "var/" "bin/" "etc/" "lib/" "opt/" "platform/" "sbin/" "usr/" "system/" "proc/" "home/" "tmp/" "mnt/" "dev/" "net/" ".sunw/" ".bash_history" ".asadminpass" ".asadmintruststore" "share/" ".ssh/" "vpd.properties" "oradiag_root/")
-
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/" (20418 59019) "要因表/" "querytimeout/" "ping/" "environment/" "dbaccess/" "common/" "build.xml" ".svn/" "../" "./")
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/dbaccess/" (20418 59023) "servlet/" "jpaandweb/" "jpa/" "initsyfdb.xml" "initdb.xml" "common/" "cmp/" "build.xml" ".svn/" "../" "./")
 
- ("c:/DotEmacs/.emacs.d/csophys/" (20447 53386) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
-
  ("C:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
 
  ("c:/EmacsDir/GitDocument/MyDocument/" (20447 57088) "README.md" "myPaper.org.gpg" ".git/" "../" "./")
-
- ("c:/DotEmacs/.emacs.d/" (20447 62461) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
  ("c:/Program Files/Java/jdk1.6.0_20/lib/" (20293 58473) "visualvm/" "tools.jar" "orb.idl" "jvm.lib" "jconsole.jar" "jawt.lib" "ir.idl" "htmlconverter.jar" "dt.jar" "ct.sym" "../" "./")
 
@@ -207,8 +196,6 @@
  ("e:/kuaipan/dotemacs/" (20438 3583) "_emacs.before_ecb_2.40" "_emacs" "runemacs.bat" "plugin/" "Mail/" "emacs.bmk" "csophys/" "backup/" ".semanticdb/" ".ido.last" ".history" ".eshell/" ".emacs.desktop" ".emacs.d/" "../" "./")
 
  ("e:/kuaipan/" (20371 33111) "软件/" "照片/" "文档/" "备份/" "其他/" "书籍/" "临时/" "dotemacs/" "document/" "Desktop.ini" ".klive/" ".emacs.d/" "../" "./")
-
- ("c:/Documents and Settings/Administrator/" (20438 47672) "デスクトップ/" "スタート メニュー/" "_viminfo" "xen/" "workspace/" "WINDOWS/" "UserData/" "Templates/" "SendTo/" "Recent/" "PrintHood/" "ntuser.ini" "NTUSER.DAT.LOG" "NTUSER.DAT" "NetHood/" "My Documents/" "magit/" "Local Settings/" "grizzly~git/" "Favorites/" "Cookies/" "chensheng/" "Application Data/" ".subversion/" ".ssh/" ".m2/" ".gitk" ".gitconfig" ".freemind/" ".bash_history" ".astah/" ".asadmintruststore" ".asadminpass" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/el-get/" (20441 14737) "yasnippet/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
 

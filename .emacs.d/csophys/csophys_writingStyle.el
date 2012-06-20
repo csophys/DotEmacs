@@ -207,6 +207,7 @@
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
 (global-set-key (kbd "RET")'newline-and-indent);设置RET的功能为newline and indent
+
 (global-set-key "\C-x\C-j" 'dired-jump)
 (provide 'csophys_writingStyle)
 
