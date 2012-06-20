@@ -32,9 +32,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "d:/DotEmacs/.emacs.d/el-get/"
  "e:/kuaipan/dotemacs/csophys/programeExpand/"
  "e:/kuaipan/dotemacs/csophys/"
- "d:/DotEmacs/.emacs.d/el-get/"
  "e:/kuaipan/文档/mine/English/"
  "e:/kuaipan/文档/mine/"
  "d:/DotEmacs/.emacs.d/"
@@ -66,9 +66,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".status.el"
  "dired+.el"
  "csophys_programmingExpand.el"
- ".status.el"
  "Learning_and_Earning.txt"
  "ac-comphist.dat"
  "a"
@@ -80,11 +80,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("d:/DotEmacs/.emacs.d/el-get/" (20447 20654) "yasnippet/" "w32-browser/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
  ("e:/kuaipan/dotemacs/csophys/programeExpand/" (20445 37758) "w32-browser.el" "unicad.el" "org-html5presentation.el" "htmlize.el" "dos.el" "dos-indent.el" "dired+.el" "csophys_yasnippet.el" "csophys_undotree.el" "csophys_nxhtml.el" "csophys_jde.el" "csophys_graphviz.el" "csophys_ecb.el" "csophys_cedet.el" "csophys_autoComplete.el" "csophys_ajc.el" "cmd-mode.el" "autopair.el" ".emacs.desktop" "#1.dot#" "../" "./")
 
  ("e:/kuaipan/document/" (20411 36288) "secret.org.gpg" "schedule.org" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/el-get/" (20447 20073) "yasnippet/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "ecb/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
 
  ("d:/DotEmacs/.emacs.d/csophys/" (20447 19781) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 

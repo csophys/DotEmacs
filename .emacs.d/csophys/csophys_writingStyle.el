@@ -29,7 +29,7 @@
 (show-paren-mode t) ;当指针到一个括号，自动显示所匹配的另一个括号
 (global-linum-mode t);显示行号
 (setq sql-mysql-options '("-C" "-t" "-f" "-n"));;sql-mode回显
-
+(setq w32-get-true-file-attributes nil) ; try to improve slow performance on windows.
 ;;;;配置org,agenda相关信息
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)));;org-mode 折行
 (setq org-startup-indented t);;设置org的自动缩进
