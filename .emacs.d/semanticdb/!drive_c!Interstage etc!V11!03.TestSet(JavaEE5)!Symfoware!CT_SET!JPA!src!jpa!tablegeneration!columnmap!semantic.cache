@@ -1,0 +1,77 @@
+;; Object columnmap/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "columnmap/"
+  :tables (list 
+   (semanticdb-table "AccessColumnMapBeanTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.tablegeneration.columnmap" package nil nil [1 39])
+            ("java.util.Date" include nil nil [41 63])
+            ("javax.naming.InitialContext" include nil nil [64 99])
+            ("jpa.common.runners.RunnerOfFnst" include nil nil [101 140])
+            ("jpa.common.util.CommonUtils" include nil nil [141 176])
+            ("jpa.common.util.DatabaseUtilClient" include nil nil [177 219])
+            ("org.junit.AfterClass" include nil nil [221 249])
+            ("org.junit.Before" include nil nil [250 274])
+            ("org.junit.BeforeClass" include nil nil [275 304])
+            ("org.junit.Test" include nil nil [305 327])
+            ("org.junit.runner.RunWith" include nil nil [328 360])
+            ("AccessColumnMapBeanTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable (:type "int") (reparse-symbol class_member_declaration) [470 477])
+                    ("appName" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [482 534])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [539 561])
+                    ("bean" variable (:type "AccessColumnMap") (reparse-symbol class_member_declaration) [566 587])
+                    ("beforeClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [610 751])
+                    ("afterClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [775 870])
+                    ("before" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [888 943])
+                    ("testColumnMapping" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [963 1754])
+                    ("testInsert" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1770 2199])
+                    ("testUpdate" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2215 2745])
+                    ("testBadLength" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2761 2867])
+                    ("testBadPreicision" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2883 2993])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2999 3268]))                  
+                :type "class")
+                nil [426 3270]))          
+    :file "AccessColumnMapBeanTest.java"
+    :pointmax 3271
+    :fsize 3384
+    :lastmodtime '(20458 27494)
+    :unmatched-syntax '((PAREN_BLOCK 405 . 425) (IDENTIFIER 397 . 405) (MULT 393 . 394) (DOT 392 . 393) (IDENTIFIER 386 . 392) (DOT 385 . 386) (IDENTIFIER 380 . 385) (DOT 379 . 380) (IMPORT 362 . 368) (STATIC 369 . 375) (IDENTIFIER 376 . 379))
+    )
+   )
+  :file "!drive_c!Interstage etc!V11!03.TestSet(JavaEE5)!Symfoware!CT_SET!JPA!src!jpa!tablegeneration!columnmap!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

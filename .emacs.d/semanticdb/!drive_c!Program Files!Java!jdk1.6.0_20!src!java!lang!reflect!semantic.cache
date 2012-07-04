@@ -1,0 +1,549 @@
+;; Object reflect/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "reflect/"
+  :tables (list 
+   (semanticdb-table "Array.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [172 198])
+            ("Array" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("Array" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [637 655])
+                    ("newInstance" function
+                       (:throws ("NegativeArraySizeException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("length" variable (:type "int") (reparse-symbol formal_parameters) [1525 1535]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1468 1620])
+                    ("newInstance" function
+                       (:throws ("IllegalArgumentException" "NegativeArraySizeException")
+                        :typemodifiers ("public" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3311 3505])
+                    ("getLength" function
+                       (:throws ("IllegalArgumentException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [3808 3820]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3773 3855])
+                    ("get" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [4601 4613])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [4615 4624]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [4569 4692])
+                    ("getBoolean" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [5496 5508])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [5510 5519]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5456 5586])
+                    ("getByte" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [6381 6393])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [6395 6404]))                          
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [6347 6471])
+                    ("getChar" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [7266 7278])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [7280 7289]))                          
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [7232 7356])
+                    ("getShort" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [8154 8166])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [8168 8177]))                          
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [8118 8244])
+                    ("getInt" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [9037 9049])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [9051 9060]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9005 9127])
+                    ("getLong" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [9922 9934])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [9936 9945]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [9888 10012])
+                    ("getFloat" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [10810 10822])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [10824 10833]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [10774 10900])
+                    ("getDouble" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [11701 11713])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [11715 11724]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [11663 11791])
+                    ("set" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [12662 12674])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [12676 12685])
+                            ("value" variable (:type "Object") (reparse-symbol formal_parameters) [12687 12699]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12632 12766])
+                    ("setBoolean" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [13637 13649])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [13651 13660])
+                            ("z" variable (:type "boolean") (reparse-symbol formal_parameters) [13662 13671]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13600 13738])
+                    ("setByte" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [14603 14615])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [14617 14626])
+                            ("b" variable (:type "byte") (reparse-symbol formal_parameters) [14628 14634]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14569 14701])
+                    ("setChar" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [15566 15578])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [15580 15589])
+                            ("c" variable (:type "char") (reparse-symbol formal_parameters) [15591 15597]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15532 15664])
+                    ("setShort" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [16531 16543])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [16545 16554])
+                            ("s" variable (:type "short") (reparse-symbol formal_parameters) [16556 16563]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16496 16630])
+                    ("setInt" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [17493 17505])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [17507 17516])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [17518 17523]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17460 17590])
+                    ("setLong" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [18455 18467])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [18469 18478])
+                            ("l" variable (:type "long") (reparse-symbol formal_parameters) [18480 18486]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18421 18553])
+                    ("setFloat" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [19420 19432])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [19434 19443])
+                            ("f" variable (:type "float") (reparse-symbol formal_parameters) [19445 19452]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19385 19519])
+                    ("setDouble" function
+                       (:throws ("IllegalArgumentException" "ArrayIndexOutOfBoundsException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("array" variable (:type "Object") (reparse-symbol formal_parameters) [20388 20400])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [20402 20411])
+                            ("d" variable (:type "double") (reparse-symbol formal_parameters) [20413 20421]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20352 20488])
+                    ("newArray" function
+                       (:throws ("NegativeArraySizeException")
+                        :typemodifiers ("private" "static" "native")
+                        :arguments 
+                          ( ("componentType" variable (:type "Class") (reparse-symbol formal_parameters) [20563 20582])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [20584 20594]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [20525 20631])
+                    ("multiNewArray" function
+                       (:throws ("IllegalArgumentException" "NegativeArraySizeException")
+                        :typemodifiers ("private" "static" "native")
+                        :arguments 
+                          ( ("componentType" variable (:type "Class") (reparse-symbol formal_parameters) [20680 20699])
+                            ("dimensions" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [20702 20718]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [20637 20781]))                  
+                :type "class")
+                nil [535 20785]))          
+    :file "Array.java"
+    :pointmax 20786
+    :fsize 20785
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((DOT 3373 . 3374) (DOT 3372 . 3373) (DOT 3371 . 3372) (COMMA 3366 . 3367) (GT 3351 . 3352) (QUESTION 3350 . 3351) (IDENTIFIER 3344 . 3349) (LT 3349 . 3350) (COMMA 1523 . 1524) (GT 1508 . 1509) (QUESTION 1507 . 1508) (IDENTIFIER 1501 . 1506) (LT 1506 . 1507))
+    )
+   (semanticdb-table "Modifier.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [175 201])
+            ("java.security.AccessController" include nil nil [203 241])
+            ("sun.reflect.LangReflectAccess" include nil nil [242 279])
+            ("sun.reflect.ReflectionFactory" include nil nil [280 317])
+            ("Modifier" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("isPublic" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [2146 2153]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2115 2191])
+                    ("isPrivate" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [2537 2544]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2505 2583])
+                    ("isProtected" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [2935 2942]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2901 2983])
+                    ("isStatic" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [3326 3333]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3295 3371])
+                    ("isFinal" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [3711 3718]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3681 3755])
+                    ("isSynchronized" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [4116 4123]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4079 4167])
+                    ("isVolatile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [4516 4523]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4483 4563])
+                    ("isTransient" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [4915 4922]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4881 4963])
+                    ("isNative" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [5306 5313]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5275 5351])
+                    ("isInterface" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [5703 5710]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5669 5751])
+                    ("isAbstract" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [6100 6107]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6067 6147])
+                    ("isStrict" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [6494 6501]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6463 6539])
+                    ("toString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [8460 8467]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8430 9283])
+                    ("PUBLIC" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9567 9621])
+                    ("PRIVATE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9737 9791])
+                    ("PROTECTED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9909 9963])
+                    ("STATIC" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10078 10132])
+                    ("FINAL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10246 10300])
+                    ("SYNCHRONIZED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10421 10475])
+                    ("VOLATILE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10592 10646])
+                    ("TRANSIENT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10764 10818])
+                    ("NATIVE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10933 10987])
+                    ("INTERFACE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11105 11159])
+                    ("ABSTRACT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11276 11330])
+                    ("STRICT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11447 11501])
+                    ("BRIDGE" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11768 11808])
+                    ("VARARGS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11813 11853])
+                    ("SYNTHETIC" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11858 11898])
+                    ("ANNOTATION" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11903 11943])
+                    ("ENUM" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11948 11988])
+                    ("isSynthetic" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("mod" variable (:type "int") (reparse-symbol formal_parameters) [12020 12027]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11993 12073]))                  
+                :type "class")
+                nil [1374 12075]))          
+    :file "Modifier.java"
+    :pointmax 12076
+    :fsize 12075
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Proxy.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [172 198])
+            ("java.lang.ref.Reference" include nil nil [200 231])
+            ("java.lang.ref.WeakReference" include nil nil [232 267])
+            ("java.util.Arrays" include nil nil [268 292])
+            ("java.util.Collections" include nil nil [293 322])
+            ("java.util.HashMap" include nil nil [323 348])
+            ("java.util.HashSet" include nil nil [349 374])
+            ("java.util.Map" include nil nil [375 396])
+            ("java.util.Set" include nil nil [397 418])
+            ("java.util.WeakHashMap" include nil nil [419 448])
+            ("sun.misc.ProxyGenerator" include nil nil [449 480])
+            ("Proxy" type
+               (:typemodifiers ("public")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [9713 9780])
+                    ("proxyClassNamePrefix" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9830 9890])
+                    ("constructorParams" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final" "static")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [9952 10030])
+                    ("loaderToCache" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [10108 10161])
+                    ("pendingGenerationMarker" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [10243 10304])
+                    ("nextUniqueNumber" variable
+                       (:typemodifiers ("private" "static")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [10383 10424])
+                    ("nextUniqueNumberLock" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [10429 10487])
+                    ("proxyClasses" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [10572 10654])
+                    ("h" variable
+                       (:typemodifiers ("protected")
+                        :type "InvocationHandler")
+                        (reparse-symbol class_member_declaration) [10746 10776])
+                    ("Proxy" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [10830 10853])
+                    ("Proxy" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("h" variable (:type "InvocationHandler") (reparse-symbol formal_parameters) [11133 11152]))                          )
+                        (reparse-symbol class_member_declaration) [11117 11174])
+                    ("getProxyClass" function
+                       (:constructor-flag t
+                        :throws ("IllegalArgumentException")
+                        :arguments 
+                          ( ("loader" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [14703 14721]))                          )
+                        (reparse-symbol class_member_declaration) [14689 21452])
+                    ("newProxyInstance" function
+                       (:throws ("IllegalArgumentException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("loader" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [22895 22913])
+                            ("h" variable (:type "InvocationHandler") (reparse-symbol formal_parameters) [22952 22971]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [22857 23724])
+                    ("isProxyClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24398 24553])
+                    ("getInvocationHandler" function
+                       (:throws ("IllegalArgumentException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("proxy" variable (:type "Object") (reparse-symbol formal_parameters) [24932 24944]))                          
+                        :type "InvocationHandler")
+                        (reparse-symbol class_member_declaration) [24879 25204])
+                    ("defineClass0" function
+                       (:typemodifiers ("private" "static" "native")
+                        :arguments 
+                          ( ("loader" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [25251 25269])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [25271 25282])
+                            ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [25294 25302])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [25304 25311])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [25313 25320]))                          
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [25210 25322]))                  
+                :type "class")
+                nil [9655 25324]))          
+    :file "Proxy.java"
+    :pointmax 25325
+    :fsize 25324
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((GT 24440 . 24441) (QUESTION 24439 . 24440) (IDENTIFIER 24433 . 24438) (LT 24438 . 24439) (COMMA 22943 . 22944) (BRACK_BLOCK 22930 . 22932) (GT 22929 . 22930) (QUESTION 22928 . 22929) (IDENTIFIER 22922 . 22927) (LT 22927 . 22928) (DOT 14775 . 14776) (DOT 14774 . 14775) (DOT 14773 . 14774) (GT 14772 . 14773) (QUESTION 14771 . 14772) (IDENTIFIER 14765 . 14770) (LT 14770 . 14771) (GT 14687 . 14688) (QUESTION 14686 . 14687) (PUBLIC 14666 . 14672) (LT 14685 . 14686))
+    )
+   (semanticdb-table "InvocationTargetException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [192 218])
+            ("InvocationTargetException" type
+               (:typemodifiers ("public")
+                :superclasses "Exception"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [941 1007])
+                    ("target" variable
+                       (:typemodifiers ("private")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [1210 1235])
+                    ("InvocationTargetException" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [1373 1466])
+                    ("InvocationTargetException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("target" variable (:type "Throwable") (reparse-symbol formal_parameters) [1642 1658]))                          )
+                        (reparse-symbol class_member_declaration) [1609 1745])
+                    ("InvocationTargetException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("target" variable (:type "Throwable") (reparse-symbol formal_parameters) [1988 2004])
+                            ("s" variable (:type "String") (reparse-symbol formal_parameters) [2006 2014]))                          )
+                        (reparse-symbol class_member_declaration) [1955 2093])
+                    ("getTargetException" function
+                       (:typemodifiers ("public")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [2431 2492])
+                    ("getCause" function
+                       (:typemodifiers ("public")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [2695 2753]))                  
+                :type "class")
+                nil [798 2755]))          
+    :file "InvocationTargetException.java"
+    :pointmax 2756
+    :fsize 2755
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!lang!reflect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

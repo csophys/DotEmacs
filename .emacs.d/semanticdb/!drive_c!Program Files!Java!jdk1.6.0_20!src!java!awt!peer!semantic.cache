@@ -1,0 +1,24 @@
+;; Object peer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "peer/"
+  :tables (list 
+   (semanticdb-table "LightweightPeer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.peer" package nil nil [182 204])
+            ("LightweightPeer" type
+               (:typemodifiers ("public")
+                :interfaces ("ComponentPeer")
+                :type "interface")
+                nil [778 837]))          
+    :file "LightweightPeer.java"
+    :pointmax 838
+    :fsize 837
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!peer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

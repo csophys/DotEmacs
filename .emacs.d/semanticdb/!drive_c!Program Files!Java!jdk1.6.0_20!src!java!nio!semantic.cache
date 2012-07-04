@@ -1,0 +1,227 @@
+;; Object nio/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nio/"
+  :tables (list 
+   (semanticdb-table "ByteBuffer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio" package nil nil [239 256]))          
+    :file "ByteBuffer.java"
+    :pointmax 54828
+    :fsize 56821
+    :lastmodtime '(19394 46822)
+    :unmatched-syntax '((BRACE_BLOCK 7764 . 54827) (GT 7762 . 7763) (IDENTIFIER 7752 . 7762) (PUBLIC 7674 . 7680) (LT 7751 . 7752))
+    )
+   (semanticdb-table "CharBuffer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio" package nil nil [239 256])
+            ("java.io.IOException" include nil nil [259 286]))          
+    :file "CharBuffer.java"
+    :pointmax 40496
+    :fsize 41902
+    :lastmodtime '(19394 46824)
+    :unmatched-syntax '((BRACE_BLOCK 3271 . 40495) (IDENTIFIER 3262 . 3270) (COMMA 3260 . 3261) (IDENTIFIER 3248 . 3260) (COMMA 3246 . 3247) (IDENTIFIER 3236 . 3246) (COMMA 3234 . 3235) (GT 3233 . 3234) (IDENTIFIER 3223 . 3233) (PUBLIC 3145 . 3151) (LT 3222 . 3223))
+    )
+   (semanticdb-table "Buffer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio" package nil nil [173 190])
+            ("Buffer" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("mark" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5727 5749])
+                    ("position" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5754 5779])
+                    ("limit" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5784 5802])
+                    ("capacity" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5807 5828])
+                    ("address" variable (:type "long") (reparse-symbol class_member_declaration) [5935 5948])
+                    ("Buffer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("mark" variable (:type "int") (reparse-symbol formal_parameters) [6082 6090])
+                            ("pos" variable (:type "int") (reparse-symbol formal_parameters) [6092 6099])
+                            ("lim" variable (:type "int") (reparse-symbol formal_parameters) [6101 6108])
+                            ("cap" variable (:type "int") (reparse-symbol formal_parameters) [6110 6117]))                          )
+                        (reparse-symbol class_member_declaration) [6075 6358])
+                    ("capacity" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6475 6528])
+                    ("position" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6645 6698])
+                    ("position" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newPosition" variable (:type "int") (reparse-symbol formal_parameters) [7178 7193]))                          
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [7149 7366])
+                    ("limit" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7477 7524])
+                    ("limit" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newLimit" variable (:type "int") (reparse-symbol formal_parameters) [8077 8089]))                          
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [8051 8291])
+                    ("mark" function
+                       (:typemodifiers ("public" "final")
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [8401 8467])
+                    ("reset" function
+                       (:typemodifiers ("public" "final")
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [8783 8920])
+                    ("clear" function
+                       (:typemodifiers ("public" "final")
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [9604 9699])
+                    ("flip" function
+                       (:typemodifiers ("public" "final")
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [10568 10662])
+                    ("rewind" function
+                       (:typemodifiers ("public" "final")
+                        :type "Buffer")
+                        (reparse-symbol class_member_declaration) [11190 11267])
+                    ("remaining" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11454 11516])
+                    ("hasRemaining" function
+                       (:typemodifiers ("public" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11763 11832])
+                    ("isReadOnly" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11992 12029])
+                    ("hasArray" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12458 12493])
+                    ("array" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [13456 13487])
+                    ("arrayOffset" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14371 14405])
+                    ("isDirect" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14635 14670])
+                    ("nextGetIndex" function
+                       (:typemodifiers ("final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15022 15163])
+                    ("nextGetIndex" function
+                       (:typemodifiers ("final")
+                        :arguments 
+                          ( ("nb" variable (:type "int") (reparse-symbol formal_parameters) [15192 15198]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15169 15353])
+                    ("nextPutIndex" function
+                       (:typemodifiers ("final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15638 15778])
+                    ("nextPutIndex" function
+                       (:typemodifiers ("final")
+                        :arguments 
+                          ( ("nb" variable (:type "int") (reparse-symbol formal_parameters) [15807 15813]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15784 15967])
+                    ("checkIndex" function
+                       (:typemodifiers ("final")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [16180 16185]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16159 16300])
+                    ("checkIndex" function
+                       (:typemodifiers ("final")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [16327 16332])
+                            ("nb" variable (:type "int") (reparse-symbol formal_parameters) [16334 16340]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16306 16458])
+                    ("markValue" function
+                       (:typemodifiers ("final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16464 16529])
+                    ("checkBounds" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("off" variable (:type "int") (reparse-symbol formal_parameters) [16559 16566])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [16568 16575])
+                            ("size" variable (:type "int") (reparse-symbol formal_parameters) [16577 16585]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16535 16723]))                  
+                :type "class")
+                nil [5634 16726]))          
+    :file "Buffer.java"
+    :pointmax 16727
+    :fsize 16726
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BufferOverflowException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio" package nil nil [308 325])
+            ("BufferOverflowException" type
+               (:typemodifiers ("public")
+                :superclasses "RuntimeException"
+                :members 
+                  ( ("BufferOverflowException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [620 656]))                  
+                :type "class")
+                nil [486 659]))          
+    :file "BufferOverflowException.java"
+    :pointmax 660
+    :fsize 691
+    :lastmodtime '(19394 46916)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BufferUnderflowException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio" package nil nil [309 326])
+            ("BufferUnderflowException" type
+               (:typemodifiers ("public")
+                :superclasses "RuntimeException"
+                :members 
+                  ( ("BufferUnderflowException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [622 659]))                  
+                :type "class")
+                nil [487 662]))          
+    :file "BufferUnderflowException.java"
+    :pointmax 663
+    :fsize 694
+    :lastmodtime '(19394 46916)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!nio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

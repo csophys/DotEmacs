@@ -1,0 +1,50 @@
+;; Object ref/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ref/"
+  :tables (list 
+   (semanticdb-table "WeakReference.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.ref" package nil nil [180 202]))          
+    :file "WeakReference.java"
+    :pointmax 1914
+    :fsize 1913
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 1188 . 1913) (GT 1186 . 1187) (IDENTIFIER 1185 . 1186) (LT 1184 . 1185) (IDENTIFIER 1175 . 1184) (EXTENDS 1167 . 1174) (GT 1165 . 1166) (IDENTIFIER 1164 . 1165) (PUBLIC 1137 . 1143) (LT 1163 . 1164))
+    )
+   (semanticdb-table "ReferenceQueue.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.ref" package nil nil [181 203]))          
+    :file "ReferenceQueue.java"
+    :pointmax 3990
+    :fsize 3989
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 477 . 3989) (GT 475 . 476) (IDENTIFIER 474 . 475) (PUBLIC 446 . 452) (LT 473 . 474))
+    )
+   (semanticdb-table "Reference.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.ref" package nil nil [176 198])
+            ("sun.misc.Cleaner" include nil nil [200 224]))          
+    :file "Reference.java"
+    :pointmax 7277
+    :fsize 7276
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 603 . 7276) (GT 601 . 602) (IDENTIFIER 600 . 601) (PUBLIC 568 . 574) (LT 599 . 600))
+    )
+   (semanticdb-table "SoftReference.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.ref" package nil nil [180 202]))          
+    :file "SoftReference.java"
+    :pointmax 3774
+    :fsize 3773
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 2170 . 3773) (GT 2168 . 2169) (IDENTIFIER 2167 . 2168) (LT 2166 . 2167) (IDENTIFIER 2157 . 2166) (EXTENDS 2149 . 2156) (GT 2147 . 2148) (IDENTIFIER 2146 . 2147) (PUBLIC 2119 . 2125) (LT 2145 . 2146))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!lang!ref!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

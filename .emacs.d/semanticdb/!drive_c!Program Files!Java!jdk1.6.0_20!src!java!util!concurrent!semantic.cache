@@ -1,0 +1,36 @@
+;; Object concurrent/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "concurrent/"
+  :tables (list 
+   (semanticdb-table "ConcurrentHashMap.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.concurrent" package nil nil [184 213])
+            ("java.util.concurrent.locks.*" include nil nil [214 250])
+            ("java.util.*" include nil nil [251 270])
+            ("java.io.Serializable" include nil nil [271 299])
+            ("java.io.IOException" include nil nil [300 327])
+            ("java.io.ObjectInputStream" include nil nil [328 361])
+            ("java.io.ObjectOutputStream" include nil nil [362 396]))          
+    :file "ConcurrentHashMap.java"
+    :pointmax 47002
+    :fsize 47001
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 3609 . 47001) (IDENTIFIER 3596 . 3608) (COMMA 3594 . 3595) (GT 3593 . 3594) (IDENTIFIER 3592 . 3593) (COMMA 3590 . 3591) (IDENTIFIER 3589 . 3590) (LT 3588 . 3589) (IDENTIFIER 3575 . 3588) (IMPLEMENTS 3564 . 3574) (GT 3554 . 3555) (IDENTIFIER 3553 . 3554) (COMMA 3551 . 3552) (IDENTIFIER 3550 . 3551) (LT 3549 . 3550) (IDENTIFIER 3538 . 3549) (EXTENDS 3530 . 3537) (GT 3528 . 3529) (IDENTIFIER 3527 . 3528) (COMMA 3525 . 3526) (IDENTIFIER 3524 . 3525) (PUBLIC 3493 . 3499) (LT 3523 . 3524))
+    )
+   (semanticdb-table "ConcurrentMap.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.concurrent" package nil nil [180 209])
+            ("java.util.Map" include nil nil [210 231]))          
+    :file "ConcurrentMap.java"
+    :pointmax 6053
+    :fsize 6052
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 1066 . 6052) (GT 1064 . 1065) (IDENTIFIER 1063 . 1064) (COMMA 1061 . 1062) (IDENTIFIER 1060 . 1061) (LT 1059 . 1060) (IDENTIFIER 1056 . 1059) (EXTENDS 1048 . 1055) (GT 1046 . 1047) (IDENTIFIER 1045 . 1046) (COMMA 1043 . 1044) (IDENTIFIER 1042 . 1043) (PUBLIC 1011 . 1017) (LT 1041 . 1042))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!concurrent!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

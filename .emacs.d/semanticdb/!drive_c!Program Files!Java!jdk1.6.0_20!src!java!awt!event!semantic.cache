@@ -1,0 +1,761 @@
+;; Object event/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "event/"
+  :tables (list 
+   (semanticdb-table "InputEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.event" package nil nil [177 200])
+            ("java.awt.Event" include nil nil [202 224])
+            ("java.awt.Component" include nil nil [225 251])
+            ("java.awt.GraphicsEnvironment" include nil nil [252 288])
+            ("java.awt.Toolkit" include nil nil [289 313])
+            ("InputEvent" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "ComponentEvent"
+                :members 
+                  ( ("SHIFT_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1125 1179])
+                    ("CTRL_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1305 1357])
+                    ("META_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1480 1532])
+                    ("ALT_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1653 1703])
+                    ("ALT_GRAPH_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1768 1816])
+                    ("BUTTON1_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1947 1993])
+                    ("BUTTON2_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2186 2240])
+                    ("BUTTON3_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2434 2489])
+                    ("SHIFT_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2578 2627])
+                    ("CTRL_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2718 2766])
+                    ("META_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2854 2902])
+                    ("ALT_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3009 3056])
+                    ("BUTTON1_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3149 3201])
+                    ("BUTTON2_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3294 3346])
+                    ("BUTTON3_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3439 3491])
+                    ("ALT_GRAPH_DOWN_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3583 3637])
+                    ("FIRST_HIGH_BIT" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3876 3918])
+                    ("JDK_1_3_MODIFIERS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3928 3985])
+                    ("HIGH_MODIFIERS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3990 4048])
+                    ("when" variable (:type "long") (reparse-symbol class_member_declaration) [4234 4244])
+                    ("modifiers" variable (:type "int") (reparse-symbol class_member_declaration) [4504 4518])
+                    ("canAccessSystemClipboard" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4640 4691])
+                    ("initIDs" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5007 5044])
+                    ("InputEvent" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [5741 5757])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [5759 5765])
+                            ("when" variable (:type "long") (reparse-symbol formal_parameters) [5767 5776])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [5778 5791]))                          )
+                        (reparse-symbol class_member_declaration) [5730 5952])
+                    ("canAccessSystemClipboard" function
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5958 6439])
+                    ("isShiftDown" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6533 6615])
+                    ("isControlDown" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6711 6794])
+                    ("isMetaDown" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6887 6967])
+                    ("isAltDown" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7059 7137])
+                    ("isAltGraphDown" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7234 7323])
+                    ("getWhen" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [7403 7453])
+                    ("getModifiers" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7524 7622])
+                    ("getModifiersEx" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9093 9175])
+                    ("consume" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9321 9375])
+                    ("isConsumed" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9478 9538])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [9598 9657])
+                    ("getModifiersExText" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [10266 10279]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10226 11830]))                  
+                :type "class")
+                nil [943 11832]))          
+    :file "InputEvent.java"
+    :pointmax 11834
+    :fsize 11833
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ActionEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.event" package nil nil [178 201])
+            ("java.awt.AWTEvent" include nil nil [203 228])
+            ("java.awt.Event" include nil nil [229 251])
+            ("ActionEvent" type
+               (:typemodifiers ("public")
+                :superclasses "AWTEvent"
+                :members 
+                  ( ("SHIFT_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1512 1567])
+                    ("CTRL_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1691 1744])
+                    ("META_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1863 1916])
+                    ("ALT_MASK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2033 2084])
+                    ("ACTION_FIRST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2175 2220])
+                    ("ACTION_LAST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2309 2361])
+                    ("ACTION_PERFORMED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2448 2504])
+                    ("actionCommand" variable (:type "String") (reparse-symbol class_member_declaration) [2770 2791])
+                    ("when" variable (:type "long") (reparse-symbol class_member_declaration) [3038 3048])
+                    ("modifiers" variable (:type "int") (reparse-symbol class_member_declaration) [3312 3326])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3380 3447])
+                    ("ActionEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Object") (reparse-symbol formal_parameters) [4189 4202])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [4204 4210])
+                            ("command" variable (:type "String") (reparse-symbol formal_parameters) [4212 4226]))                          )
+                        (reparse-symbol class_member_declaration) [4170 4273])
+                    ("ActionEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Object") (reparse-symbol formal_parameters) [5113 5126])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [5128 5134])
+                            ("command" variable (:type "String") (reparse-symbol formal_parameters) [5136 5150])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [5152 5165]))                          )
+                        (reparse-symbol class_member_declaration) [5094 5223])
+                    ("ActionEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Object") (reparse-symbol formal_parameters) [6175 6188])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [6190 6196])
+                            ("command" variable (:type "String") (reparse-symbol formal_parameters) [6198 6212])
+                            ("when" variable (:type "long") (reparse-symbol formal_parameters) [6214 6223])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [6248 6261]))                          )
+                        (reparse-symbol class_member_declaration) [6156 6397])
+                    ("getActionCommand" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7094 7164])
+                    ("getWhen" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [7442 7492])
+                    ("getModifiers" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7647 7706])
+                    ("paramString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7941 8317]))                  
+                :type "class")
+                nil [1349 8319]))          
+    :file "ActionEvent.java"
+    :pointmax 8320
+    :fsize 8319
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FocusEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.event" package nil nil [177 200])
+            ("java.awt.Component" include nil nil [202 228])
+            ("java.awt.Event" include nil nil [229 251])
+            ("sun.awt.AppContext" include nil nil [253 279])
+            ("sun.awt.SunToolkit" include nil nil [280 306])
+            ("FocusEvent" type
+               (:typemodifiers ("public")
+                :superclasses "ComponentEvent"
+                :members 
+                  ( ("FOCUS_FIRST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2096 2140])
+                    ("FOCUS_LAST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2228 2271])
+                    ("FOCUS_GAINED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2364 2415])
+                    ("FOCUS_LOST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2532 2585])
+                    ("temporary" variable (:type "boolean") (reparse-symbol class_member_declaration) [2940 2958])
+                    ("opposite" variable
+                       (:typemodifiers ("transient")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [3413 3442])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3498 3563])
+                    ("FocusEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [5005 5021])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [5023 5029])
+                            ("temporary" variable (:type "boolean") (reparse-symbol formal_parameters) [5031 5048])
+                            ("opposite" variable (:type "Component") (reparse-symbol formal_parameters) [5072 5090]))                          )
+                        (reparse-symbol class_member_declaration) [4987 5182])
+                    ("FocusEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [5900 5916])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [5918 5924])
+                            ("temporary" variable (:type "boolean") (reparse-symbol formal_parameters) [5926 5943]))                          )
+                        (reparse-symbol class_member_declaration) [5882 5995])
+                    ("FocusEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [6579 6595])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [6597 6603]))                          )
+                        (reparse-symbol class_member_declaration) [6561 6645])
+                    ("isTemporary" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6853 6915])
+                    ("getOppositeComponent" function
+                       (:typemodifiers ("public")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [7426 7645])
+                    ("paramString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7863 8294]))                  
+                :type "class")
+                nil [1955 8297]))          
+    :file "FocusEvent.java"
+    :pointmax 8298
+    :fsize 8297
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "MouseEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.event" package nil nil [177 200])
+            ("java.awt.Component" include nil nil [202 228])
+            ("java.awt.Event" include nil nil [229 251])
+            ("java.awt.GraphicsEnvironment" include nil nil [252 288])
+            ("java.awt.Point" include nil nil [289 311])
+            ("java.awt.Toolkit" include nil nil [312 336])
+            ("java.io.IOException" include nil nil [337 364])
+            ("java.io.ObjectInputStream" include nil nil [365 398])
+            ("java.awt.IllegalComponentStateException" include nil nil [399 446])
+            ("MouseEvent" type
+               (:typemodifiers ("public")
+                :superclasses "InputEvent"
+                :members 
+                  ( ("MOUSE_FIRST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7640 7683])
+                    ("MOUSE_LAST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7771 7821])
+                    ("MOUSE_CLICKED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7965 8017])
+                    ("MOUSE_PRESSED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8152 8208])
+                    ("MOUSE_RELEASED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8358 8415])
+                    ("MOUSE_MOVED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8562 8616])
+                    ("MOUSE_ENTERED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8816 8872])
+                    ("MOUSE_EXITED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9070 9125])
+                    ("MOUSE_DRAGGED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9308 9364])
+                    ("MOUSE_WHEEL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9578 9632])
+                    ("NOBUTTON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9738 9775])
+                    ("BUTTON1" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9878 9914])
+                    ("BUTTON2" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10017 10053])
+                    ("BUTTON3" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10156 10192])
+                    ("x" variable (:type "int") (reparse-symbol class_member_declaration) [10365 10371])
+                    ("y" variable (:type "int") (reparse-symbol class_member_declaration) [10544 10550])
+                    ("xAbs" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10972 10989])
+                    ("yAbs" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11413 11430])
+                    ("clickCount" variable (:type "int") (reparse-symbol class_member_declaration) [11883 11898])
+                    ("button" variable (:type "int") (reparse-symbol class_member_declaration) [12217 12228])
+                    ("popupTrigger" variable (:type "boolean") (reparse-symbol class_member_declaration) [12598 12627])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [12681 12747])
+                    ("initIDs" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13063 13100])
+                    ("getLocationOnScreen" function
+                       (:typemodifiers ("public")
+                        :type "Point")
+                        (reparse-symbol class_member_declaration) [13690 13767])
+                    ("getXOnScreen" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14330 14384])
+                    ("getYOnScreen" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14943 14997])
+                    ("MouseEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [17599 17615])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [17617 17623])
+                            ("when" variable (:type "long") (reparse-symbol formal_parameters) [17625 17634])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [17636 17649])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [17673 17678])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [17680 17685])
+                            ("clickCount" variable (:type "int") (reparse-symbol formal_parameters) [17687 17701])
+                            ("popupTrigger" variable (:type "boolean") (reparse-symbol formal_parameters) [17703 17723])
+                            ("button" variable (:type "int") (reparse-symbol formal_parameters) [17747 17757]))                          )
+                        (reparse-symbol class_member_declaration) [17581 18207])
+                    ("MouseEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [20226 20242])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [20244 20250])
+                            ("when" variable (:type "long") (reparse-symbol formal_parameters) [20252 20261])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [20263 20276])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [20300 20305])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [20307 20312])
+                            ("clickCount" variable (:type "int") (reparse-symbol formal_parameters) [20314 20328])
+                            ("popupTrigger" variable (:type "boolean") (reparse-symbol formal_parameters) [20330 20350]))                          )
+                        (reparse-symbol class_member_declaration) [20208 20445])
+                    ("MouseEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [22859 22875])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [22877 22883])
+                            ("when" variable (:type "long") (reparse-symbol formal_parameters) [22885 22894])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [22896 22909])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [22933 22938])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [22940 22945])
+                            ("xAbs" variable (:type "int") (reparse-symbol formal_parameters) [22947 22955])
+                            ("yAbs" variable (:type "int") (reparse-symbol formal_parameters) [22957 22965])
+                            ("clickCount" variable (:type "int") (reparse-symbol formal_parameters) [22989 23003])
+                            ("popupTrigger" variable (:type "boolean") (reparse-symbol formal_parameters) [23005 23025])
+                            ("button" variable (:type "int") (reparse-symbol formal_parameters) [23027 23037]))                          )
+                        (reparse-symbol class_member_declaration) [22841 23679])
+                    ("getX" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [23908 23951])
+                    ("getY" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [24175 24218])
+                    ("getPoint" function
+                       (:typemodifiers ("public")
+                        :type "Point")
+                        (reparse-symbol class_member_declaration) [24461 24600])
+                    ("translatePoint" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [25026 25031])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [25033 25038]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24986 25089])
+                    ("getClickCount" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [25242 25303])
+                    ("getButton" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [25586 25632])
+                    ("isPopupTrigger" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [26141 26209])
+                    ("getMouseModifiersText" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [27266 27279]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [27223 28790])
+                    ("paramString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [29008 30512])
+                    ("setNewModifiers" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30603 32041])
+                    ("setOldModifiers" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32108 33094])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [33198 33217]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33174 33383]))                  
+                :type "class")
+                nil [7507 33385]))          
+    :file "MouseEvent.java"
+    :pointmax 33387
+    :fsize 33386
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PaintEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.event" package nil nil [177 200])
+            ("java.awt.Component" include nil nil [202 228])
+            ("java.awt.Event" include nil nil [229 251])
+            ("java.awt.Rectangle" include nil nil [252 278])
+            ("PaintEvent" type
+               (:typemodifiers ("public")
+                :superclasses "ComponentEvent"
+                :members 
+                  ( ("PAINT_FIRST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [874 917])
+                    ("PAINT_LAST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1006 1048])
+                    ("PAINT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1101 1145])
+                    ("UPDATE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1199 1248])
+                    ("updateRect" variable (:type "Rectangle") (reparse-symbol class_member_declaration) [1548 1569])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1623 1689])
+                    ("PaintEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Component") (reparse-symbol formal_parameters) [2303 2319])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [2321 2327])
+                            ("updateRect" variable (:type "Rectangle") (reparse-symbol formal_parameters) [2329 2349]))                          )
+                        (reparse-symbol class_member_declaration) [2285 2423])
+                    ("getUpdateRect" function
+                       (:typemodifiers ("public")
+                        :type "Rectangle")
+                        (reparse-symbol class_member_declaration) [2558 2625])
+                    ("setUpdateRect" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("updateRect" variable (:type "Rectangle") (reparse-symbol formal_parameters) [2855 2875]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2829 2922])
+                    ("paramString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2928 3326]))                  
+                :type "class")
+                nil [732 3328]))          
+    :file "PaintEvent.java"
+    :pointmax 3329
+    :fsize 3328
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "WindowEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.event" package nil nil [178 201])
+            ("java.awt.Component" include nil nil [203 229])
+            ("java.awt.Event" include nil nil [230 252])
+            ("java.awt.Window" include nil nil [253 276])
+            ("sun.awt.AppContext" include nil nil [278 304])
+            ("sun.awt.SunToolkit" include nil nil [305 331])
+            ("WindowEvent" type
+               (:typemodifiers ("public")
+                :superclasses "ComponentEvent"
+                :members 
+                  ( ("WINDOW_FIRST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1411 1461])
+                    ("WINDOW_OPENED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1593 1646])
+                    ("WINDOW_CLOSING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1978 2036])
+                    ("WINDOW_CLOSED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2213 2270])
+                    ("WINDOW_ICONIFIED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2591 2651])
+                    ("WINDOW_DEICONIFIED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2838 2900])
+                    ("WINDOW_ACTIVATED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3396 3456])
+                    ("WINDOW_DEACTIVATED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3934 3996])
+                    ("WINDOW_GAINED_FOCUS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4231 4294])
+                    ("WINDOW_LOST_FOCUS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4541 4604])
+                    ("WINDOW_STATE_CHANGED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4808 4872])
+                    ("WINDOW_LAST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4961 5028])
+                    ("opposite" variable
+                       (:typemodifiers ("transient")
+                        :type "Window")
+                        (reparse-symbol class_member_declaration) [5612 5638])
+                    ("oldState" variable (:type "int") (reparse-symbol class_member_declaration) [5672 5685])
+                    ("newState" variable (:type "int") (reparse-symbol class_member_declaration) [5690 5703])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5757 5824])
+                    ("WindowEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Window") (reparse-symbol formal_parameters) [6724 6737])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [6739 6745])
+                            ("opposite" variable (:type "Window") (reparse-symbol formal_parameters) [6747 6762])
+                            ("oldState" variable (:type "int") (reparse-symbol formal_parameters) [6773 6785])
+                            ("newState" variable (:type "int") (reparse-symbol formal_parameters) [6787 6799]))                          )
+                        (reparse-symbol class_member_declaration) [6705 6920])
+                    ("WindowEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Window") (reparse-symbol formal_parameters) [8808 8821])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [8823 8829])
+                            ("opposite" variable (:type "Window") (reparse-symbol formal_parameters) [8831 8846]))                          )
+                        (reparse-symbol class_member_declaration) [8789 8897])
+                    ("WindowEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Window") (reparse-symbol formal_parameters) [9942 9955])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [9957 9963])
+                            ("oldState" variable (:type "int") (reparse-symbol formal_parameters) [9965 9977])
+                            ("newState" variable (:type "int") (reparse-symbol formal_parameters) [9979 9991]))                          )
+                        (reparse-symbol class_member_declaration) [9923 10045])
+                    ("WindowEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Window") (reparse-symbol formal_parameters) [10573 10586])
+                            ("id" variable (:type "int") (reparse-symbol formal_parameters) [10588 10594]))                          )
+                        (reparse-symbol class_member_declaration) [10554 10641])
+                    ("getWindow" function
+                       (:typemodifiers ("public")
+                        :type "Window")
+                        (reparse-symbol class_member_declaration) [10773 10873])
+                    ("getOppositeWindow" function
+                       (:typemodifiers ("public")
+                        :type "Window")
+                        (reparse-symbol class_member_declaration) [11549 11762])
+                    ("getOldState" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12416 12466])
+                    ("getNewState" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [13110 13160])
+                    ("paramString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13378 14582]))                  
+                :type "class")
+                nil [1272 14584]))          
+    :file "WindowEvent.java"
+    :pointmax 14585
+    :fsize 14584
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!event!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

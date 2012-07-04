@@ -1,0 +1,542 @@
+;; Object jar/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jar/"
+  :tables (list 
+   (semanticdb-table "JarEntry.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.jar" package nil nil [175 197])
+            ("java.io.IOException" include nil nil [199 226])
+            ("java.util.zip.ZipEntry" include nil nil [227 257])
+            ("java.security.CodeSigner" include nil nil [258 290])
+            ("java.security.cert.Certificate" include nil nil [291 329])
+            ("JarEntry" type
+               (:typemodifiers ("public")
+                :superclasses "ZipEntry"
+                :members 
+                  ( ("attr" variable (:type "Attributes") (reparse-symbol class_member_declaration) [437 453])
+                    ("certs" variable
+                       (:dereference 1
+                        :type "Certificate")
+                        (reparse-symbol class_member_declaration) [458 478])
+                    ("signers" variable
+                       (:dereference 1
+                        :type "CodeSigner")
+                        (reparse-symbol class_member_declaration) [483 504])
+                    ("JarEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [867 878]))                          )
+                        (reparse-symbol class_member_declaration) [851 901])
+                    ("JarEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ze" variable (:type "ZipEntry") (reparse-symbol formal_parameters) [1165 1176]))                          )
+                        (reparse-symbol class_member_declaration) [1149 1197])
+                    ("JarEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("je" variable (:type "JarEntry") (reparse-symbol formal_parameters) [1410 1421]))                          )
+                        (reparse-symbol class_member_declaration) [1394 1525])
+                    ("getAttributes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Attributes")
+                        (reparse-symbol class_member_declaration) [1789 1863])
+                    ("getCertificates" function
+                       (:typemodifiers ("public")
+                        :type "Certificate[]")
+                        (reparse-symbol class_member_declaration) [2777 2885])
+                    ("getCodeSigners" function
+                       (:typemodifiers ("public")
+                        :type "CodeSigner[]")
+                        (reparse-symbol class_member_declaration) [3502 3611]))                  
+                :type "class")
+                nil [392 3613]))          
+    :file "JarEntry.java"
+    :pointmax 3614
+    :fsize 3613
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "JarFile.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.jar" package nil nil [179 201])
+            ("java.io.*" include nil nil [203 220])
+            ("java.net.URL" include nil nil [221 241])
+            ("java.lang.ref.SoftReference" include nil nil [242 277])
+            ("java.util.*" include nil nil [278 297])
+            ("java.util.zip.*" include nil nil [298 321])
+            ("java.security.CodeSigner" include nil nil [322 354])
+            ("java.security.CodeSource" include nil nil [355 387])
+            ("java.security.cert.Certificate" include nil nil [388 426])
+            ("java.security.AccessController" include nil nil [427 465])
+            ("sun.security.action.GetPropertyAction" include nil nil [466 511])
+            ("sun.security.util.ManifestEntryVerifier" include nil nil [512 559])
+            ("sun.misc.SharedSecrets" include nil nil [560 590])
+            ("JarFile" type
+               (:typemodifiers ("public")
+                :superclasses "ZipFile"
+                :members 
+                  ( ("manEntry" variable
+                       (:typemodifiers ("private")
+                        :type "JarEntry")
+                        (reparse-symbol class_member_declaration) [1413 1439])
+                    ("jv" variable
+                       (:typemodifiers ("private")
+                        :type "JarVerifier")
+                        (reparse-symbol class_member_declaration) [1444 1467])
+                    ("jvInitialized" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1472 1502])
+                    ("verify" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1507 1530])
+                    ("computedHasClassPathAttribute" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1535 1581])
+                    ("hasClassPathAttribute" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1586 1624])
+                    ("MANIFEST_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1823 1889])
+                    ("JarFile" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2320 2331]))                          )
+                        (reparse-symbol class_member_declaration) [2305 2407])
+                    ("JarFile" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2856 2867])
+                            ("verify" variable (:type "boolean") (reparse-symbol formal_parameters) [2869 2883]))                          )
+                        (reparse-symbol class_member_declaration) [2841 2968])
+                    ("JarFile" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("file" variable (:type "File") (reparse-symbol formal_parameters) [3389 3398]))                          )
+                        (reparse-symbol class_member_declaration) [3374 3464])
+                    ("JarFile" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("file" variable (:type "File") (reparse-symbol formal_parameters) [3904 3913])
+                            ("verify" variable (:type "boolean") (reparse-symbol formal_parameters) [3915 3929]))                          )
+                        (reparse-symbol class_member_declaration) [3889 3997])
+                    ("JarFile" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("file" variable (:type "File") (reparse-symbol formal_parameters) [4738 4747])
+                            ("verify" variable (:type "boolean") (reparse-symbol formal_parameters) [4749 4763])
+                            ("mode" variable (:type "int") (reparse-symbol formal_parameters) [4765 4773]))                          )
+                        (reparse-symbol class_member_declaration) [4723 4844])
+                    ("getManifest" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Manifest")
+                        (reparse-symbol class_member_declaration) [5113 5205])
+                    ("getManifestFromReference" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :type "Manifest")
+                        (reparse-symbol class_member_declaration) [5211 5792])
+                    ("getMetaInfEntryNames" function
+                       (:typemodifiers ("private" "native")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [5798 5845])
+                    ("getJarEntry" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [6316 6327]))                          
+                        :type "JarEntry")
+                        (reparse-symbol class_member_declaration) [6288 6370])
+                    ("getEntry" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [6837 6848]))                          
+                        :type "ZipEntry")
+                        (reparse-symbol class_member_declaration) [6812 6964])
+                    ("entries" function (:constructor-flag t) (reparse-symbol class_member_declaration) [7070 7380])
+                    ("JarFileEntry" type
+                       (:typemodifiers ("private")
+                        :superclasses "JarEntry"
+                        :members 
+                          ( ("JarFileEntry" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ze" variable (:type "ZipEntry") (reparse-symbol formal_parameters) [7446 7457]))                                  )
+                                (reparse-symbol class_member_declaration) [7433 7479])
+                            ("getAttributes" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :type "Attributes")
+                                (reparse-symbol class_member_declaration) [7481 7685])
+                            ("getCertificates" function
+                               (:typemodifiers ("public")
+                                :type "Certificate[]")
+                                (reparse-symbol class_member_declaration) [7687 8047])
+                            ("getCodeSigners" function
+                               (:typemodifiers ("public")
+                                :type "CodeSigner[]")
+                                (reparse-symbol class_member_declaration) [8049 8371]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [7386 8377])
+                    ("maybeInstantiateVerifier" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8620 9581])
+                    ("initializeVerifier" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9719 10907])
+                    ("getBytes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("ze" variable (:type "ZipEntry") (reparse-symbol formal_parameters) [11041 11052]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [11017 11245])
+                    ("getInputStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("ze" variable (:type "ZipEntry") (reparse-symbol formal_parameters) [11874 11885]))                          
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [11827 12508])
+                    ("lastOcc" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12638 12667])
+                    ("optoSft" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12718 12747])
+                    ("src" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [12814 12884])
+                    ("getManEntry" function
+                       (:typemodifiers ("private")
+                        :type "JarEntry")
+                        (reparse-symbol class_member_declaration) [13196 14007])
+                    ("hasClassPathAttribute" function
+                       (:throws ("IOException")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14278 15626])
+                    ("javaHome" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15632 15663])
+                    ("jarNames" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15668 15701])
+                    ("isKnownToNotHaveClassPathAttribute" function
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [15706 17207])
+                    ("ensureInitialization" function
+                       (:typemodifiers ("private" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17213 17469])
+                    ("newEntry" function
+                       (:arguments 
+                          ( ("ze" variable (:type "ZipEntry") (reparse-symbol formal_parameters) [17493 17504]))                          
+                        :type "JarEntry")
+                        (reparse-symbol class_member_declaration) [17475 17543])
+                    ("entryNames" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cs" variable
+                               (:dereference 1
+                                :type "CodeSource")
+                                (reparse-symbol formal_parameters) [17580 17595]))                          )
+                        (reparse-symbol class_member_declaration) [17569 18220])
+                    ("entries2" function (:constructor-flag t) (reparse-symbol class_member_declaration) [18439 19309])
+                    ("getCodeSources" function
+                       (:arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [19348 19355]))                          
+                        :type "CodeSource[]")
+                        (reparse-symbol class_member_declaration) [19320 19716])
+                    ("unsignedEntryNames" function (:constructor-flag t) (reparse-symbol class_member_declaration) [19750 20611])
+                    ("getCodeSource" function
+                       (:arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [20642 20649])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [20651 20662]))                          
+                        :type "CodeSource")
+                        (reparse-symbol class_member_declaration) [20617 21061])
+                    ("setEagerValidation" function
+                       (:arguments 
+                          ( ("eager" variable (:type "boolean") (reparse-symbol formal_parameters) [21091 21104]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21067 21276])
+                    ("getManifestDigests" function (:type "List") (reparse-symbol class_member_declaration) [21282 21424]))                  
+                :type "class")
+                nil [1326 21426]))          
+    :file "JarFile.java"
+    :pointmax 21427
+    :fsize 21426
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((GT 19748 . 19749) (PRIVATE 19722 . 19729) (LT 19741 . 19742) (GT 18437 . 18438) (IDENTIFIER 18417 . 18428) (LT 18428 . 18429) (GT 17567 . 17568) (IDENTIFIER 17549 . 17560) (LT 17560 . 17561) (GT 7068 . 7069) (PUBLIC 7041 . 7047) (LT 7059 . 7060) (SEMICOLON 1407 . 1408) (GT 1399 . 1400) (PRIVATE 1369 . 1376) (LT 1390 . 1391))
+    )
+   (semanticdb-table "Attributes.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.jar" package nil nil [182 204])
+            ("java.io.DataInputStream" include nil nil [206 237])
+            ("java.io.DataOutputStream" include nil nil [238 270])
+            ("java.io.IOException" include nil nil [271 298])
+            ("java.util.HashMap" include nil nil [299 324])
+            ("java.util.Map" include nil nil [325 346])
+            ("java.util.Set" include nil nil [347 368])
+            ("java.util.Collection" include nil nil [369 397])
+            ("java.util.AbstractSet" include nil nil [398 427])
+            ("java.util.Iterator" include nil nil [428 454])
+            ("java.util.logging.Logger" include nil nil [455 487])
+            ("java.util.Comparator" include nil nil [489 517])
+            ("sun.misc.ASCIICaseInsensitiveComparator" include nil nil [518 565]))          
+    :file "Attributes.java"
+    :pointmax 22266
+    :fsize 22265
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 1245 . 22265) (IDENTIFIER 1235 . 1244) (COMMA 1233 . 1234) (GT 1232 . 1233) (IDENTIFIER 1226 . 1232) (COMMA 1225 . 1226) (IDENTIFIER 1219 . 1225) (PUBLIC 1180 . 1186) (LT 1218 . 1219))
+    )
+   (semanticdb-table "Manifest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.jar" package nil nil [175 197])
+            ("java.io.FilterInputStream" include nil nil [199 232])
+            ("java.io.DataOutputStream" include nil nil [233 265])
+            ("java.io.InputStream" include nil nil [266 293])
+            ("java.io.OutputStream" include nil nil [294 322])
+            ("java.io.IOException" include nil nil [323 350])
+            ("java.util.Map" include nil nil [351 372])
+            ("java.util.HashMap" include nil nil [373 398])
+            ("java.util.Iterator" include nil nil [399 425])
+            ("Manifest" type
+               (:typemodifiers ("public")
+                :interfaces ("Cloneable")
+                :members 
+                  ( ("attr" variable
+                       (:typemodifiers ("private")
+                        :type "Attributes")
+                        (reparse-symbol class_member_declaration) [935 978])
+                    ("entries" variable
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [1008 1044])
+                    ("Manifest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1107 1132])
+                    ("Manifest" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("is" variable (:type "InputStream") (reparse-symbol formal_parameters) [1357 1371]))                          )
+                        (reparse-symbol class_member_declaration) [1341 1410])
+                    ("Manifest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("man" variable (:type "Manifest") (reparse-symbol formal_parameters) [1569 1581]))                          )
+                        (reparse-symbol class_member_declaration) [1553 1664])
+                    ("getMainAttributes" function
+                       (:typemodifiers ("public")
+                        :type "Attributes")
+                        (reparse-symbol class_member_declaration) [1791 1850])
+                    ("getEntries" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2298 2335])
+                    ("getAttributes" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [3331 3342]))                          
+                        :type "Attributes")
+                        (reparse-symbol class_member_declaration) [3299 3395])
+                    ("clear" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3492 3552])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("out" variable (:type "OutputStream") (reparse-symbol formal_parameters) [3893 3909]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3875 4675])
+                    ("make72Safe" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("line" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [4784 4801]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4761 5085])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("is" variable (:type "InputStream") (reparse-symbol formal_parameters) [5385 5399]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5368 7548])
+                    ("parseName" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("lbuf" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [7579 7590])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [7592 7599]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7554 7918])
+                    ("toLower" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [7944 7949]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7924 8012])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [8336 8344]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8314 8533])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8603 8678])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [8938 8995])
+                    ("FastInputStream" type
+                       (:typemodifiers ("static")
+                        :superclasses "FilterInputStream"
+                        :members 
+                          ( ("buf" variable
+                               (:dereference 1
+                                :typemodifiers ("private")
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [9138 9157])
+                            ("count" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9159 9181])
+                            ("pos" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9183 9203])
+                            ("FastInputStream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [9222 9236]))                                  )
+                                (reparse-symbol class_member_declaration) [9206 9263])
+                            ("FastInputStream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [9282 9296])
+                                    ("size" variable (:type "int") (reparse-symbol formal_parameters) [9298 9306]))                                  )
+                                (reparse-symbol class_member_declaration) [9266 9355])
+                            ("read" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9358 9515])
+                            ("read" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("b" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [9534 9542])
+                                    ("off" variable (:type "int") (reparse-symbol formal_parameters) [9544 9551])
+                                    ("len" variable (:type "int") (reparse-symbol formal_parameters) [9553 9560]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [9518 9911])
+                            ("readLine" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("b" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [10062 10070])
+                                    ("off" variable (:type "int") (reparse-symbol formal_parameters) [10072 10079])
+                                    ("len" variable (:type "int") (reparse-symbol formal_parameters) [10081 10088]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [10042 10656])
+                            ("peek" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [10659 10756])
+                            ("readLine" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("b" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [10779 10787]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [10759 10850])
+                            ("skip" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("n" variable (:type "long") (reparse-symbol formal_parameters) [10870 10876]))                                  
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [10853 11093])
+                            ("available" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [11096 11186])
+                            ("close" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [11189 11303])
+                            ("fill" function
+                               (:throws ("IOException")
+                                :typemodifiers ("private")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [11306 11451]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [9080 11457]))                  
+                :type "class")
+                nil [854 11459]))          
+    :file "Manifest.java"
+    :pointmax 11460
+    :fsize 11459
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((GT 2296 . 2297) (COMMA 2285 . 2286) (PUBLIC 2268 . 2274) (LT 2278 . 2279))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!jar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,780 @@
+;; Object security/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "security/"
+  :tables (list 
+   (semanticdb-table "AccessControlContext.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [188 210])
+            ("java.util.ArrayList" include nil nil [212 239])
+            ("java.util.List" include nil nil [240 262])
+            ("sun.security.util.Debug" include nil nil [263 294])
+            ("sun.security.util.SecurityConstants" include nil nil [295 338])
+            ("AccessControlContext" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("context" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "ProtectionDomain")
+                        (reparse-symbol class_member_declaration) [1924 1959])
+                    ("isPrivileged" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1964 1993])
+                    ("privilegedContext" variable
+                       (:typemodifiers ("private")
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [1998 2045])
+                    ("combiner" variable
+                       (:typemodifiers ("private")
+                        :type "DomainCombiner")
+                        (reparse-symbol class_member_declaration) [2050 2089])
+                    ("debugInit" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2095 2136])
+                    ("debug" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Debug")
+                        (reparse-symbol class_member_declaration) [2141 2175])
+                    ("getDebug" function
+                       (:typemodifiers ("static")
+                        :type "Debug")
+                        (reparse-symbol class_member_declaration) [2181 2374])
+                    ("AccessControlContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable
+                               (:dereference 1
+                                :type "ProtectionDomain")
+                                (reparse-symbol formal_parameters) [2818 2844]))                          )
+                        (reparse-symbol class_member_declaration) [2790 3387])
+                    ("AccessControlContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("acc" variable (:type "AccessControlContext") (reparse-symbol formal_parameters) [4267 4291])
+                            ("combiner" variable (:type "DomainCombiner") (reparse-symbol formal_parameters) [4297 4320]))                          )
+                        (reparse-symbol class_member_declaration) [4239 4776])
+                    ("AccessControlContext" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("context" variable
+                               (:dereference 1
+                                :type "ProtectionDomain")
+                                (reparse-symbol formal_parameters) [4863 4889])
+                            ("combiner" variable (:type "DomainCombiner") (reparse-symbol formal_parameters) [4891 4914]))                          )
+                        (reparse-symbol class_member_declaration) [4842 5034])
+                    ("AccessControlContext" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("context" variable
+                               (:dereference 1
+                                :type "ProtectionDomain")
+                                (reparse-symbol formal_parameters) [5147 5173])
+                            ("isPrivileged" variable (:type "boolean") (reparse-symbol formal_parameters) [5181 5201]))                          )
+                        (reparse-symbol class_member_declaration) [5126 5274])
+                    ("isPrivileged" function (:type "boolean") (reparse-symbol class_member_declaration) [5347 5404])
+                    ("getAssignedCombiner" function (:type "DomainCombiner") (reparse-symbol class_member_declaration) [5500 5762])
+                    ("getDomainCombiner" function
+                       (:typemodifiers ("public")
+                        :type "DomainCombiner")
+                        (reparse-symbol class_member_declaration) [6284 6493])
+                    ("checkPermission" function
+                       (:throws ("AccessControlException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("perm" variable (:type "Permission") (reparse-symbol formal_parameters) [7374 7389]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7346 9878])
+                    ("optimize" function (:type "AccessControlContext") (reparse-symbol class_member_declaration) [10019 12696])
+                    ("goCombiner" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("current" variable
+                               (:dereference 1
+                                :type "ProtectionDomain")
+                                (reparse-symbol formal_parameters) [12742 12768])
+                            ("assigned" variable (:type "AccessControlContext") (reparse-symbol formal_parameters) [12775 12804]))                          
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [12702 13432])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [13900 13910]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13878 14467])
+                    ("containsAllPDs" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("that" variable (:type "AccessControlContext") (reparse-symbol formal_parameters) [14504 14529]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14473 15492])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15755 15979]))                  
+                :type "class")
+                nil [1877 15981]))          
+    :file "AccessControlContext.java"
+    :pointmax 15982
+    :fsize 15981
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AccessController.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [184 206])
+            ("sun.security.util.Debug" include nil nil [208 239])
+            ("AccessController" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("AccessController" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [8455 8485])
+                    ("doPrivileged" function (:type "T") (reparse-symbol class_member_declaration) [9466 9509])
+                    ("doPrivilegedWithCombiner" function (:type "T") (reparse-symbol class_member_declaration) [10374 10711])
+                    ("doPrivileged" function
+                       (:arguments 
+                          ( ("context" variable (:type "AccessControlContext") (reparse-symbol formal_parameters) [12060 12088]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [12008 12090])
+                    ("doPrivileged" function
+                       (:throws ("PrivilegedActionException")
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [13234 13321])
+                    ("doPrivilegedWithCombiner" function
+                       (:throws ("PrivilegedActionException")
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [14422 14803])
+                    ("preserveCombiner" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("combiner" variable (:type "DomainCombiner") (reparse-symbol formal_parameters) [14942 14965]))                          
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [14883 15646])
+                    ("doPrivileged" function
+                       (:throws ("PrivilegedActionException")
+                        :arguments 
+                          ( ("context" variable (:type "AccessControlContext") (reparse-symbol formal_parameters) [17170 17198]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [17110 17234])
+                    ("getStackAccessControlContext" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [17596 17670])
+                    ("getInheritedAccessControlContext" function
+                       (:typemodifiers ("static" "native")
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [17876 17946])
+                    ("getContext" function
+                       (:typemodifiers ("public" "static")
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [18374 18724])
+                    ("checkPermission" function
+                       (:throws ("AccessControlException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("perm" variable (:type "Permission") (reparse-symbol formal_parameters) [19498 19513]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19463 20514]))                  
+                :type "class")
+                nil [8334 20516]))          
+    :file "AccessController.java"
+    :pointmax 20517
+    :fsize 20516
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((COMMA 17161 . 17162) (GT 17153 . 17154) (IDENTIFIER 17126 . 17151) (LT 17151 . 17152) (GT 17108 . 17109) (PUBLIC 17085 . 17091) (LT 17106 . 17107) (GT 14478 . 14479) (IDENTIFIER 14451 . 14476) (LT 14476 . 14477) (GT 14420 . 14421) (PUBLIC 14404 . 14410) (LT 14418 . 14419) (GT 13277 . 13278) (IDENTIFIER 13250 . 13275) (LT 13275 . 13276) (GT 13232 . 13233) (PUBLIC 13209 . 13215) (LT 13230 . 13231) (COMMA 12049 . 12050) (GT 12041 . 12042) (IDENTIFIER 12023 . 12039) (LT 12039 . 12040) (GT 12006 . 12007) (PUBLIC 11983 . 11989) (LT 12004 . 12005) (GT 10419 . 10420) (IDENTIFIER 10401 . 10417) (LT 10417 . 10418) (GT 10372 . 10373) (PUBLIC 10356 . 10362) (LT 10370 . 10371) (GT 9499 . 9500) (IDENTIFIER 9481 . 9497) (LT 9497 . 9498) (GT 9464 . 9465) (PUBLIC 9441 . 9447) (LT 9462 . 9463))
+    )
+   (semanticdb-table "PrivilegedAction.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [183 205]))          
+    :file "PrivilegedAction.java"
+    :pointmax 1373
+    :fsize 1372
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 759 . 1372) (GT 757 . 758) (IDENTIFIER 756 . 757) (PUBLIC 722 . 728) (LT 755 . 756))
+    )
+   (semanticdb-table "PrivilegedActionException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [192 214])
+            ("PrivilegedActionException" type
+               (:typemodifiers ("public")
+                :superclasses "Exception"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1456 1522])
+                    ("exception" variable
+                       (:typemodifiers ("private")
+                        :type "Exception")
+                        (reparse-symbol class_member_declaration) [1559 1587])
+                    ("PrivilegedActionException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("exception" variable (:type "Exception") (reparse-symbol formal_parameters) [1796 1815]))                          )
+                        (reparse-symbol class_member_declaration) [1763 1908])
+                    ("getException" function
+                       (:typemodifiers ("public")
+                        :type "Exception")
+                        (reparse-symbol class_member_declaration) [2662 2720])
+                    ("getCause" function
+                       (:typemodifiers ("public")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [2990 3051])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3057 3206]))                  
+                :type "class")
+                nil [1329 3208]))          
+    :file "PrivilegedActionException.java"
+    :pointmax 3209
+    :fsize 3208
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PrivilegedExceptionAction.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [192 214]))          
+    :file "PrivilegedExceptionAction.java"
+    :pointmax 1799
+    :fsize 1798
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 961 . 1798) (GT 959 . 960) (IDENTIFIER 958 . 959) (PUBLIC 915 . 921) (LT 957 . 958))
+    )
+   (semanticdb-table "AccessControlException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [190 212])
+            ("AccessControlException" type
+               (:typemodifiers ("public")
+                :superclasses "SecurityException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [865 931])
+                    ("perm" variable
+                       (:typemodifiers ("private")
+                        :type "Permission")
+                        (reparse-symbol class_member_declaration) [1001 1025])
+                    ("AccessControlException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [1228 1236]))                          )
+                        (reparse-symbol class_member_declaration) [1198 1263])
+                    ("AccessControlException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [1590 1598])
+                            ("p" variable (:type "Permission") (reparse-symbol formal_parameters) [1600 1612]))                          )
+                        (reparse-symbol class_member_declaration) [1560 1650])
+                    ("getPermission" function
+                       (:typemodifiers ("public")
+                        :type "Permission")
+                        (reparse-symbol class_member_declaration) [1848 1903]))                  
+                :type "class")
+                nil [796 1905]))          
+    :file "AccessControlException.java"
+    :pointmax 1907
+    :fsize 1906
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SecureRandom.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [180 202])
+            ("java.util.*" include nil nil [204 223])
+            ("java.security.Provider.Service" include nil nil [225 263])
+            ("sun.security.jca.*" include nil nil [265 291])
+            ("sun.security.jca.GetInstance.Instance" include nil nil [292 337])
+            ("SecureRandom" type
+               (:typemodifiers ("public")
+                :superclasses "java.util.Random"
+                :members 
+                  ( ("provider" variable
+                       (:typemodifiers ("private")
+                        :type "Provider")
+                        (reparse-symbol class_member_declaration) [2384 2417])
+                    ("secureRandomSpi" variable
+                       (:typemodifiers ("private")
+                        :type "SecureRandomSpi")
+                        (reparse-symbol class_member_declaration) [2516 2563])
+                    ("algorithm" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2674 2699])
+                    ("seedGenerator" variable
+                       (:typemodifiers ("private" "static" "volatile")
+                        :type "SecureRandom")
+                        (reparse-symbol class_member_declaration) [2727 2785])
+                    ("SecureRandom" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [4156 4403])
+                    ("SecureRandom" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("seed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [5518 5529]))                          )
+                        (reparse-symbol class_member_declaration) [5498 5578])
+                    ("getDefaultPRNG" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("setSeed" variable (:type "boolean") (reparse-symbol formal_parameters) [5616 5631])
+                            ("seed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [5633 5644]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5588 6761])
+                    ("SecureRandom" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("secureRandomSpi" variable (:type "SecureRandomSpi") (reparse-symbol formal_parameters) [6951 6982])
+                            ("provider" variable (:type "Provider") (reparse-symbol formal_parameters) [6990 7007]))                          )
+                        (reparse-symbol class_member_declaration) [6928 7056])
+                    ("SecureRandom" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("secureRandomSpi" variable (:type "SecureRandomSpi") (reparse-symbol formal_parameters) [7087 7118])
+                            ("provider" variable (:type "Provider") (reparse-symbol formal_parameters) [7120 7137])
+                            ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [7145 7161]))                          )
+                        (reparse-symbol class_member_declaration) [7066 7278])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [8868 8884]))                          
+                        :type "SecureRandom")
+                        (reparse-symbol class_member_declaration) [8829 9126])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException" "NoSuchProviderException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [10958 10974])
+                            ("provider" variable (:type "String") (reparse-symbol formal_parameters) [10976 10991]))                          
+                        :type "SecureRandom")
+                        (reparse-symbol class_member_declaration) [10919 11267])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [12812 12828])
+                            ("provider" variable (:type "Provider") (reparse-symbol formal_parameters) [12835 12852]))                          
+                        :type "SecureRandom")
+                        (reparse-symbol class_member_declaration) [12773 13098])
+                    ("getSecureRandomSpi" function (:type "SecureRandomSpi") (reparse-symbol class_member_declaration) [13185 13254])
+                    ("getProvider" function
+                       (:typemodifiers ("public" "final")
+                        :type "Provider")
+                        (reparse-symbol class_member_declaration) [13397 13458])
+                    ("getAlgorithm" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13715 13804])
+                    ("setSeed" function
+                       (:typemodifiers ("synchronized" "public")
+                        :arguments 
+                          ( ("seed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [14105 14116]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14072 14163])
+                    ("setSeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("seed" variable (:type "long") (reparse-symbol formal_parameters) [14634 14643]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14614 14976])
+                    ("nextBytes" function
+                       (:typemodifiers ("synchronized" "public")
+                        :arguments 
+                          ( ("bytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [15426 15438]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15391 15488])
+                    ("next" function
+                       (:typemodifiers ("final" "protected")
+                        :arguments 
+                          ( ("numBits" variable (:type "int") (reparse-symbol formal_parameters) [16209 16220]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16184 16444])
+                    ("getSeed" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("numBytes" variable (:type "int") (reparse-symbol formal_parameters) [17151 17163]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [17122 17287])
+                    ("generateSeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("numBytes" variable (:type "int") (reparse-symbol formal_parameters) [17649 17661]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [17622 17724])
+                    ("longToByteArray" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("l" variable (:type "long") (reparse-symbol formal_parameters) [17882 17888]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [17844 18020])
+                    ("getPrngAlgorithm" function
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18335 18732])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [18799 18854])
+                    ("state" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [18942 18963])
+                    ("digest" variable
+                       (:typemodifiers ("private")
+                        :type "MessageDigest")
+                        (reparse-symbol class_member_declaration) [18999 19035])
+                    ("randomBytes" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [19322 19349])
+                    ("randomBytesUsed" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [19385 19413])
+                    ("counter" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19449 19470]))                  
+                :type "class")
+                nil [2249 19472]))          
+    :file "SecureRandom.java"
+    :pointmax 19473
+    :fsize 19472
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PermissionCollection.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [187 209])
+            ("java.util.*" include nil nil [211 230])
+            ("PermissionCollection" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3583 3650])
+                    ("readOnly" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3702 3736])
+                    ("add" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [4072 4093]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4047 4095])
+                    ("implies" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [4471 4492]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4439 4494])
+                    ("setReadOnly" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4939 4990])
+                    ("isReadOnly" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5439 5492])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6339 6715]))                  
+                :type "class")
+                nil [3501 6717]))          
+    :file "PermissionCollection.java"
+    :pointmax 6718
+    :fsize 6717
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((SEMICOLON 4706 . 4707) (GT 4694 . 4695) (PUBLIC 4656 . 4662) (LT 4683 . 4684))
+    )
+   (semanticdb-table "ProtectionDomain.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [184 206])
+            ("java.util.ArrayList" include nil nil [208 235])
+            ("java.util.Collections" include nil nil [236 265])
+            ("java.util.Enumeration" include nil nil [266 295])
+            ("java.util.List" include nil nil [296 318])
+            ("java.util.Map" include nil nil [319 340])
+            ("java.util.WeakHashMap" include nil nil [341 370])
+            ("sun.misc.JavaSecurityProtectionDomainAccess" include nil nil [371 422])
+            ("sun.misc.SharedSecrets" include nil nil [504 534])
+            ("sun.security.util.Debug" include nil nil [535 566])
+            ("sun.security.util.SecurityConstants" include nil nil [567 610])
+            ("ProtectionDomain" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("codesource" variable
+                       (:typemodifiers ("private")
+                        :type "CodeSource")
+                        (reparse-symbol class_member_declaration) [1419 1450])
+                    ("classloader" variable
+                       (:typemodifiers ("private")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [1516 1548])
+                    ("principals" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Principal")
+                        (reparse-symbol class_member_declaration) [1616 1647])
+                    ("permissions" variable
+                       (:typemodifiers ("private")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [1708 1749])
+                    ("hasAllPerm" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1809 1844])
+                    ("staticPermissions" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1958 1992])
+                    ("key" variable
+                       (:typemodifiers ("final")
+                        :type "Key")
+                        (reparse-symbol class_member_declaration) [2091 2117])
+                    ("debug" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Debug")
+                        (reparse-symbol class_member_declaration) [2123 2186])
+                    ("ProtectionDomain" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("codesource" variable (:type "CodeSource") (reparse-symbol formal_parameters) [2716 2737])
+                            ("permissions" variable (:type "PermissionCollection") (reparse-symbol formal_parameters) [2746 2778]))                          )
+                        (reparse-symbol class_member_declaration) [2692 3142])
+                    ("ProtectionDomain" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("codesource" variable (:type "CodeSource") (reparse-symbol formal_parameters) [4613 4634])
+                            ("permissions" variable (:type "PermissionCollection") (reparse-symbol formal_parameters) [4643 4675])
+                            ("classloader" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [4684 4707])
+                            ("principals" variable
+                               (:dereference 1
+                                :type "Principal")
+                                (reparse-symbol formal_parameters) [4716 4738]))                          )
+                        (reparse-symbol class_member_declaration) [4589 5178])
+                    ("getCodeSource" function
+                       (:typemodifiers ("public" "final")
+                        :type "CodeSource")
+                        (reparse-symbol class_member_declaration) [5328 5400])
+                    ("getClassLoader" function
+                       (:typemodifiers ("public" "final")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [5560 5635])
+                    ("getPrincipals" function
+                       (:typemodifiers ("public" "final")
+                        :type "Principal[]")
+                        (reparse-symbol class_member_declaration) [5861 5955])
+                    ("getPermissions" function
+                       (:typemodifiers ("public" "final")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [6208 6287])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [7545 7566]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7522 7908])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7987 8814])
+                    ("seeAllp" function
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9300 9824])
+                    ("mergePermissions" function
+                       (:typemodifiers ("private")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [9830 12385])
+                    ("Key" type
+                       (:typemodifiers ("final")
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [12467 12485]))                  
+                :type "class")
+                nil [1361 13423]))          
+    :file "ProtectionDomain.java"
+    :pointmax 13424
+    :fsize 13423
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((IDENTIFIER 481 . 502) (DOT 480 . 481) (IDENTIFIER 446 . 480) (DOT 445 . 446) (IDENTIFIER 441 . 445) (DOT 440 . 441) (IMPORT 423 . 429) (STATIC 430 . 436) (IDENTIFIER 437 . 440))
+    )
+   (semanticdb-table "Permission.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [178 200])
+            ("Permission" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("Guard" "java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1889 1956])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1962 1982])
+                    ("Permission" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2157 2168]))                          )
+                        (reparse-symbol class_member_declaration) [2139 2196])
+                    ("checkGuard" function
+                       (:throws ("SecurityException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("object" variable (:type "Object") (reparse-symbol formal_parameters) [2874 2887]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2851 3015])
+                    ("implies" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [3734 3755]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3702 3757])
+                    ("equals" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [4157 4167]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4126 4169])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5085 5116])
+                    ("getName" function
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5352 5403])
+                    ("getActions" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6059 6095])
+                    ("newPermissionCollection" function
+                       (:typemodifiers ("public")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [6846 6921])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7210 7488]))                  
+                :type "class")
+                nil [1810 7490]))          
+    :file "Permission.java"
+    :pointmax 7492
+    :fsize 7491
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CodeSigner.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [177 199])
+            ("java.io.Serializable" include nil nil [201 229])
+            ("java.security.cert.CertPath" include nil nil [230 265])
+            ("CodeSigner" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [484 550])
+                    ("signerCertPath" variable
+                       (:typemodifiers ("private")
+                        :type "CertPath")
+                        (reparse-symbol class_member_declaration) [632 664])
+                    ("timestamp" variable
+                       (:typemodifiers ("private")
+                        :type "Timestamp")
+                        (reparse-symbol class_member_declaration) [739 767])
+                    ("myhash" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [827 861])
+                    ("CodeSigner" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("signerCertPath" variable (:type "CertPath") (reparse-symbol formal_parameters) [1365 1388])
+                            ("timestamp" variable (:type "Timestamp") (reparse-symbol formal_parameters) [1390 1409]))                          )
+                        (reparse-symbol class_member_declaration) [1347 1559])
+                    ("getSignerCertPath" function
+                       (:typemodifiers ("public")
+                        :type "CertPath")
+                        (reparse-symbol class_member_declaration) [1669 1736])
+                    ("getTimestamp" function
+                       (:typemodifiers ("public")
+                        :type "Timestamp")
+                        (reparse-symbol class_member_declaration) [1875 1933])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2182 2422])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [2860 2870]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2838 3396])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3583 3891]))                  
+                :type "class")
+                nil [423 3893]))          
+    :file "CodeSigner.java"
+    :pointmax 3894
+    :fsize 3893
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!security!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

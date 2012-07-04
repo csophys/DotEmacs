@@ -1,0 +1,102 @@
+;; Object im/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "im/"
+  :tables (list 
+   (semanticdb-table "InputMethodHighlight.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.im" package nil nil [187 207])
+            ("java.awt.font.TextAttribute" include nil nil [209 244])
+            ("java.util.Map" include nil nil [245 266])
+            ("InputMethodHighlight" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("RAW_TEXT" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2239 2276])
+                    ("CONVERTED_TEXT" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2344 2387])
+                    ("UNSELECTED_RAW_TEXT_HIGHLIGHT" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "InputMethodHighlight")
+                        (reparse-symbol class_member_declaration) [2477 2600])
+                    ("SELECTED_RAW_TEXT_HIGHLIGHT" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "InputMethodHighlight")
+                        (reparse-symbol class_member_declaration) [2687 2807])
+                    ("UNSELECTED_CONVERTED_TEXT_HIGHLIGHT" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "InputMethodHighlight")
+                        (reparse-symbol class_member_declaration) [2902 3037])
+                    ("SELECTED_CONVERTED_TEXT_HIGHLIGHT" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "InputMethodHighlight")
+                        (reparse-symbol class_member_declaration) [3130 3262])
+                    ("InputMethodHighlight" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("selected" variable (:type "boolean") (reparse-symbol formal_parameters) [3756 3772])
+                            ("state" variable (:type "int") (reparse-symbol formal_parameters) [3774 3783]))                          )
+                        (reparse-symbol class_member_declaration) [3728 3832])
+                    ("InputMethodHighlight" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("selected" variable (:type "boolean") (reparse-symbol formal_parameters) [4368 4384])
+                            ("state" variable (:type "int") (reparse-symbol formal_parameters) [4386 4395])
+                            ("variation" variable (:type "int") (reparse-symbol formal_parameters) [4397 4410]))                          )
+                        (reparse-symbol class_member_declaration) [4340 4467])
+                    ("InputMethodHighlight" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("selected" variable (:type "boolean") (reparse-symbol formal_parameters) [5124 5140])
+                            ("state" variable (:type "int") (reparse-symbol formal_parameters) [5142 5151])
+                            ("variation" variable (:type "int") (reparse-symbol formal_parameters) [5153 5166]))                          )
+                        (reparse-symbol class_member_declaration) [5096 5498])
+                    ("isSelected" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5571 5631])
+                    ("getState" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5887 5938])
+                    ("getVariation" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6008 6067])
+                    ("getStyle" function (:constructor-flag t) (reparse-symbol class_member_declaration) [6214 6254])
+                    ("selected" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6260 6285])
+                    ("state" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6290 6308])
+                    ("variation" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6313 6335])
+                    ("style" variable
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [6340 6358]))                  
+                :type "class")
+                nil [2142 6361]))          
+    :file "InputMethodHighlight.java"
+    :pointmax 6363
+    :fsize 6362
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((GT 6212 . 6213) (QUESTION 6211 . 6212) (COMMA 6210 . 6211) (PUBLIC 6186 . 6192) (LT 6196 . 6197) (GT 5191 . 5192) (QUESTION 5190 . 5191) (COMMA 5189 . 5190) (IDENTIFIER 5172 . 5175) (LT 5175 . 5176))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!im!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

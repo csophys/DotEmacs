@@ -1,0 +1,39 @@
+;; Object sql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sql/"
+  :tables (list 
+   (semanticdb-table "DataSource.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("javax.sql" package nil nil [177 195])
+            ("java.sql.Connection" include nil nil [197 224])
+            ("java.sql.SQLException" include nil nil [225 254])
+            ("java.sql.Wrapper" include nil nil [255 279])
+            ("DataSource" type
+               (:typemodifiers ("public")
+                :interfaces ("Wrapper" "CommonDataSource")
+                :members 
+                  ( ("getConnection" function
+                       (:throws ("SQLException")
+                        :type "Connection")
+                        (reparse-symbol interface_member_declaration) [2763 2810])
+                    ("getConnection" function
+                       (:throws ("SQLException")
+                        :arguments 
+                          ( ("username" variable (:type "String") (reparse-symbol formal_parameters) [3241 3256])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [3258 3273]))                          
+                        :type "Connection")
+                        (reparse-symbol interface_member_declaration) [3216 3300]))                  
+                :type "interface")
+                nil [2448 3303]))          
+    :file "DataSource.java"
+    :pointmax 3309
+    :fsize 3308
+    :lastmodtime '(19394 43708)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!javax!sql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

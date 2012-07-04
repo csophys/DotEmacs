@@ -1,0 +1,316 @@
+;; Object internal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "internal/"
+  :tables (list 
+   (semanticdb-table "ResourceManager.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.sun.naming.internal" package nil nil [182 214])
+            ("java.applet.Applet" include nil nil [216 242])
+            ("java.io.InputStream" include nil nil [243 270])
+            ("java.io.IOException" include nil nil [271 298])
+            ("java.net.URL" include nil nil [299 319])
+            ("java.lang.ref.WeakReference" include nil nil [320 355])
+            ("java.util.Enumeration" include nil nil [356 385])
+            ("java.util.HashMap" include nil nil [386 411])
+            ("java.util.Hashtable" include nil nil [412 439])
+            ("java.util.Map" include nil nil [440 461])
+            ("java.util.Properties" include nil nil [462 490])
+            ("java.util.StringTokenizer" include nil nil [491 524])
+            ("java.util.List" include nil nil [525 547])
+            ("java.util.ArrayList" include nil nil [548 575])
+            ("java.util.WeakHashMap" include nil nil [576 605])
+            ("javax.naming.*" include nil nil [607 629])
+            ("ResourceManager" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("PROVIDER_RESOURCE_FILE_NAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [933 1022])
+                    ("APP_RESOURCE_FILE_NAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1086 1157])
+                    ("JRELIB_PROPERTY_FILE_NAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1229 1303])
+                    ("listProperties" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1396 1653])
+                    ("helper" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "VersionHelper")
+                        (reparse-symbol class_member_declaration) [1659 1741])
+                    ("propertiesCache" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "WeakHashMap")
+                        (reparse-symbol class_member_declaration) [2052 2123])
+                    ("factoryCache" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "WeakHashMap")
+                        (reparse-symbol class_member_declaration) [2470 2538])
+                    ("urlFactoryCache" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "WeakHashMap")
+                        (reparse-symbol class_member_declaration) [2917 2988])
+                    ("NO_FACTORY" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "WeakReference")
+                        (reparse-symbol class_member_declaration) [2993 3065])
+                    ("ResourceManager" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [3123 3156])
+                    ("getInitialEnvironment" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("env" variable (:type "Hashtable") (reparse-symbol formal_parameters) [3938 3951]))                          
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [3892 5138])
+                    ("getProperty" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("propName" variable (:type "String") (reparse-symbol formal_parameters) [6109 6124])
+                            ("env" variable (:type "Hashtable") (reparse-symbol formal_parameters) [6126 6139])
+                            ("ctx" variable (:type "Context") (reparse-symbol formal_parameters) [6142 6153])
+                            ("concat" variable (:type "boolean") (reparse-symbol formal_parameters) [6155 6169]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6076 6558])
+                    ("getFactories" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("propName" variable (:type "String") (reparse-symbol formal_parameters) [8820 8835])
+                            ("env" variable (:type "Hashtable") (reparse-symbol formal_parameters) [8837 8850])
+                            ("ctx" variable (:type "Context") (reparse-symbol formal_parameters) [8853 8864]))                          
+                        :type "FactoryEnumeration")
+                        (reparse-symbol class_member_declaration) [8774 10311])
+                    ("getFactory" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("propName" variable (:type "String") (reparse-symbol formal_parameters) [12085 12100])
+                            ("env" variable (:type "Hashtable") (reparse-symbol formal_parameters) [12102 12115])
+                            ("ctx" variable (:type "Context") (reparse-symbol formal_parameters) [12117 12128])
+                            ("classSuffix" variable (:type "String") (reparse-symbol formal_parameters) [12131 12149])
+                            ("defaultPkgPrefix" variable (:type "String") (reparse-symbol formal_parameters) [12151 12174]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [12053 14173])
+                    ("getProviderResource" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [14596 14606]))                          
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [14551 15325])
+                    ("getApplicationResources" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("private" "static")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [16022 17270])
+                    ("mergeTables" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("props1" variable (:type "Hashtable") (reparse-symbol formal_parameters) [17648 17664])
+                            ("props2" variable (:type "Hashtable") (reparse-symbol formal_parameters) [17666 17682]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17616 18049])
+                    ("isListProperty" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("prop" variable (:type "String") (reparse-symbol formal_parameters) [18208 18219]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [18170 18380]))                  
+                :type "class")
+                nil [802 18382]))          
+    :file "ResourceManager.java"
+    :pointmax 18383
+    :fsize 18382
+    :lastmodtime '(19394 43672)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "VersionHelper.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.sun.naming.internal" package nil nil [185 217])
+            ("java.io.InputStream" include nil nil [219 246])
+            ("java.io.IOException" include nil nil [247 274])
+            ("java.net.MalformedURLException" include nil nil [275 313])
+            ("java.net.URL" include nil nil [314 334])
+            ("java.util.Enumeration" include nil nil [335 364])
+            ("java.util.StringTokenizer" include nil nil [365 398])
+            ("java.util.Vector" include nil nil [399 423])
+            ("javax.naming.NamingEnumeration" include nil nil [425 463])
+            ("VersionHelper" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("helper" variable
+                       (:typemodifiers ("private" "static")
+                        :type "VersionHelper")
+                        (reparse-symbol class_member_declaration) [921 964])
+                    ("PROPS" variable
+                       (:dereference 1
+                        :typemodifiers ("final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [970 1376])
+                    ("INITIAL_CONTEXT_FACTORY" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1382 1434])
+                    ("OBJECT_FACTORIES" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1439 1484])
+                    ("URL_PKG_PREFIXES" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1489 1534])
+                    ("STATE_FACTORIES" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1539 1583])
+                    ("PROVIDER_URL" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1588 1629])
+                    ("DNS_URL" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1634 1670])
+                    ("CONTROL_FACTORIES" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1675 1721])
+                    ("VersionHelper" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1727 1745])
+                    ("getVersionHelper" function
+                       (:typemodifiers ("public" "static")
+                        :type "VersionHelper")
+                        (reparse-symbol class_member_declaration) [1851 1921])
+                    ("loadClass" function
+                       (:throws ("ClassNotFoundException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("className" variable (:type "String") (reparse-symbol formal_parameters) [1959 1975]))                          
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1927 2009])
+                    ("loadClass" function
+                       (:throws ("ClassNotFoundException")
+                        :typemodifiers ("abstract")
+                        :arguments 
+                          ( ("className" variable (:type "String") (reparse-symbol formal_parameters) [2040 2056])
+                            ("cl" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [2058 2072]))                          
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2015 2105])
+                    ("loadClass" function
+                       (:throws ("ClassNotFoundException" "MalformedURLException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("className" variable (:type "String") (reparse-symbol formal_parameters) [2143 2159])
+                            ("codebase" variable (:type "String") (reparse-symbol formal_parameters) [2161 2176]))                          
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2111 2233])
+                    ("getJndiProperty" function
+                       (:typemodifiers ("abstract")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [2442 2447]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2410 2449])
+                    ("getJndiProperties" function
+                       (:typemodifiers ("abstract")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [2753 2791])
+                    ("getResourceAsStream" function
+                       (:typemodifiers ("abstract")
+                        :arguments 
+                          ( ("c" variable (:type "Class") (reparse-symbol formal_parameters) [2983 2990])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [2992 3003]))                          
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [2942 3005])
+                    ("getJavaHomeLibStream" function
+                       (:typemodifiers ("abstract")
+                        :arguments 
+                          ( ("filename" variable (:type "String") (reparse-symbol formal_parameters) [3241 3256]))                          
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [3199 3258])
+                    ("getResources" function
+                       (:throws ("IOException")
+                        :typemodifiers ("abstract")
+                        :arguments 
+                          ( ("cl" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [3549 3563])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [3565 3576]))                          
+                        :type "NamingEnumeration")
+                        (reparse-symbol class_member_declaration) [3509 3598])
+                    ("getContextClassLoader" function
+                       (:typemodifiers ("abstract")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [3853 3898])
+                    ("getUrlArray" function
+                       (:throws ("MalformedURLException")
+                        :typemodifiers ("static" "protected")
+                        :arguments 
+                          ( ("codebase" variable (:type "String") (reparse-symbol formal_parameters) [3939 3954]))                          
+                        :type "URL[]")
+                        (reparse-symbol class_member_declaration) [3904 4463]))                  
+                :type "class")
+                nil [879 4465]))          
+    :file "VersionHelper.java"
+    :pointmax 4466
+    :fsize 4465
+    :lastmodtime '(19394 43672)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FactoryEnumeration.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.sun.naming.internal" package nil nil [184 216])
+            ("java.util.List" include nil nil [218 240])
+            ("javax.naming.NamingException" include nil nil [241 277])
+            ("FactoryEnumeration" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("factories" variable
+                       (:typemodifiers ("private")
+                        :type "List")
+                        (reparse-symbol class_member_declaration) [555 578])
+                    ("posn" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [583 604])
+                    ("loader" variable
+                       (:typemodifiers ("private")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [609 636])
+                    ("FactoryEnumeration" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("factories" variable (:type "List") (reparse-symbol formal_parameters) [1553 1567])
+                            ("loader" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [1569 1587]))                          )
+                        (reparse-symbol class_member_declaration) [1534 1648])
+                    ("next" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1655 2789])
+                    ("hasMore" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2795 2895]))                  
+                :type "class")
+                nil [510 2897]))          
+    :file "FactoryEnumeration.java"
+    :pointmax 2898
+    :fsize 2897
+    :lastmodtime '(19394 43672)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!com!sun!naming!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

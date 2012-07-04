@@ -1,0 +1,2203 @@
+;; Object regex/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "regex/"
+  :tables (list 
+   (semanticdb-table "Matcher.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.regex" package nil nil [174 198])
+            ("Matcher" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("MatchResult")
+                :members 
+                  ( ("parentPattern" variable (:type "Pattern") (reparse-symbol class_member_declaration) [3876 3898])
+                    ("groups" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4038 4051])
+                    ("to" variable (:type "int") (reparse-symbol class_member_declaration) [4246 4249])
+                    ("from" variable (:type "int") (reparse-symbol class_member_declaration) [4236 4245])
+                    ("lookbehindTo" variable (:type "int") (reparse-symbol class_member_declaration) [4407 4424])
+                    ("text" variable (:type "CharSequence") (reparse-symbol class_member_declaration) [4488 4506])
+                    ("ENDANCHOR" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4714 4745])
+                    ("NOANCHOR" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4750 4780])
+                    ("acceptMode" variable (:type "int") (reparse-symbol class_member_declaration) [4785 4811])
+                    ("last" variable (:type "int") (reparse-symbol class_member_declaration) [5088 5097])
+                    ("first" variable (:type "int") (reparse-symbol class_member_declaration) [5072 5087])
+                    ("oldLast" variable (:type "int") (reparse-symbol class_member_declaration) [5185 5202])
+                    ("lastAppendPosition" variable (:type "int") (reparse-symbol class_member_declaration) [5290 5317])
+                    ("locals" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5549 5562])
+                    ("hitEnd" variable (:type "boolean") (reparse-symbol class_member_declaration) [6130 6145])
+                    ("requireEnd" variable (:type "boolean") (reparse-symbol class_member_declaration) [6587 6606])
+                    ("transparentBounds" variable (:type "boolean") (reparse-symbol class_member_declaration) [6827 6861])
+                    ("anchoringBounds" variable (:type "boolean") (reparse-symbol class_member_declaration) [7001 7032])
+                    ("Matcher" function (:constructor-flag t) (reparse-symbol class_member_declaration) [7085 7102])
+                    ("Matcher" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("parent" variable (:type "Pattern") (reparse-symbol formal_parameters) [7199 7213])
+                            ("text" variable (:type "CharSequence") (reparse-symbol formal_parameters) [7215 7232]))                          )
+                        (reparse-symbol class_member_declaration) [7191 7565])
+                    ("pattern" function
+                       (:typemodifiers ("public")
+                        :type "Pattern")
+                        (reparse-symbol class_member_declaration) [7721 7783])
+                    ("toMatchResult" function
+                       (:typemodifiers ("public")
+                        :type "MatchResult")
+                        (reparse-symbol class_member_declaration) [8070 8332])
+                    ("usePattern" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newPattern" variable (:type "Pattern") (reparse-symbol formal_parameters) [8951 8969]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [8925 9509])
+                    ("reset" function
+                       (:typemodifiers ("public")
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [9913 10239])
+                    ("reset" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "CharSequence") (reparse-symbol formal_parameters) [10777 10795]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [10756 10850])
+                    ("start" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11151 11289])
+                    ("start" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "int") (reparse-symbol formal_parameters) [12321 12330]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12304 12567])
+                    ("end" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12877 13012])
+                    ("end" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "int") (reparse-symbol formal_parameters) [14061 14070]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14046 14311])
+                    ("group" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15141 15195])
+                    ("group" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "int") (reparse-symbol formal_parameters) [16893 16902]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [16873 17289])
+                    ("groupCount" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17755 17840])
+                    ("matches" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [18211 18282])
+                    ("find" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [18958 19490])
+                    ("find" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol formal_parameters) [20341 20350]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [20321 20559])
+                    ("lookingAt" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [21192 21264])
+                    ("quoteReplacement" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [21956 21964]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [21918 22449])
+                    ("appendReplacement" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sb" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [25775 25790])
+                            ("replacement" variable (:type "String") (reparse-symbol formal_parameters) [25792 25810]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [25742 28033])
+                    ("appendTail" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sb" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [28610 28625]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [28579 28729])
+                    ("replaceAll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("replacement" variable (:type "String") (reparse-symbol formal_parameters) [30477 30495]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [30452 30862])
+                    ("replaceFirst" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("replacement" variable (:type "String") (reparse-symbol formal_parameters) [32619 32637]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [32592 32923])
+                    ("region" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol formal_parameters) [34139 34148])
+                            ("end" variable (:type "int") (reparse-symbol formal_parameters) [34150 34157]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [34117 34551])
+                    ("regionStart" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34900 34953])
+                    ("regionEnd" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [35310 35359])
+                    ("hasTransparentBounds" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [36021 36100])
+                    ("useTransparentBounds" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable (:type "boolean") (reparse-symbol formal_parameters) [37316 37325]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [37280 37386])
+                    ("hasAnchoringBounds" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [37997 38072])
+                    ("useAnchoringBounds" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable (:type "boolean") (reparse-symbol formal_parameters) [38943 38952]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [38909 39011])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [39331 39721])
+                    ("hitEnd" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [40145 40199])
+                    ("requireEnd" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [40774 40836])
+                    ("search" function
+                       (:arguments 
+                          ( ("from" variable (:type "int") (reparse-symbol formal_parameters) [41567 41575]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [41552 42053])
+                    ("match" function
+                       (:arguments 
+                          ( ("from" variable (:type "int") (reparse-symbol formal_parameters) [42379 42387])
+                            ("anchor" variable (:type "int") (reparse-symbol formal_parameters) [42389 42399]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [42365 42880])
+                    ("getTextLength" function (:type "int") (reparse-symbol class_member_declaration) [43013 43070])
+                    ("getSubSequence" function
+                       (:arguments 
+                          ( ("beginIndex" variable (:type "int") (reparse-symbol formal_parameters) [43378 43392])
+                            ("endIndex" variable (:type "int") (reparse-symbol formal_parameters) [43394 43406]))                          
+                        :type "CharSequence")
+                        (reparse-symbol class_member_declaration) [43350 43470])
+                    ("charAt" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [43616 43621]))                          
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [43604 43661]))                  
+                :type "class")
+                nil [3750 43664]))          
+    :file "Matcher.java"
+    :pointmax 43665
+    :fsize 43664
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Pattern.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.regex" package nil nil [175 199])
+            ("java.security.AccessController" include nil nil [201 239])
+            ("java.security.PrivilegedAction" include nil nil [240 278])
+            ("java.text.CharacterIterator" include nil nil [279 314])
+            ("java.text.Normalizer" include nil nil [315 343])
+            ("java.util.ArrayList" include nil nil [344 371])
+            ("java.util.HashMap" include nil nil [372 397])
+            ("java.util.Arrays" include nil nil [398 422])
+            ("Pattern" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("UNIX_LINES" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [32852 32894])
+                    ("CASE_INSENSITIVE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [33449 33497])
+                    ("COMMENTS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [33828 33868])
+                    ("MULTILINE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34338 34379])
+                    ("LITERAL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34989 35028])
+                    ("DOTALL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [35482 35520])
+                    ("UNICODE_CASE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [36116 36160])
+                    ("CANON_EQ" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [36775 36815])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [37077 37143])
+                    ("pattern" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [37242 37265])
+                    ("flags" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [37344 37362])
+                    ("compiled" variable
+                       (:typemodifiers ("private" "transient" "volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [37511 37563])
+                    ("normalizedPattern" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [37623 37666])
+                    ("root" variable
+                       (:typemodifiers ("transient")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [37815 37835])
+                    ("matchRoot" variable
+                       (:typemodifiers ("transient")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [38023 38048])
+                    ("buffer" variable
+                       (:dereference 1
+                        :typemodifiers ("transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38126 38149])
+                    ("groupNodes" variable
+                       (:dereference 1
+                        :typemodifiers ("transient")
+                        :type "GroupHead")
+                        (reparse-symbol class_member_declaration) [38233 38266])
+                    ("temp" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38365 38394])
+                    ("capturingGroupCount" variable
+                       (:typemodifiers ("transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38542 38576])
+                    ("localCount" variable
+                       (:typemodifiers ("transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38723 38748])
+                    ("cursor" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38860 38889])
+                    ("patternLength" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38958 38994])
+                    ("compile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("regex" variable (:type "String") (reparse-symbol formal_parameters) [39286 39298]))                          
+                        :type "Pattern")
+                        (reparse-symbol class_member_declaration) [39256 39345])
+                    ("compile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("regex" variable (:type "String") (reparse-symbol formal_parameters) [40138 40150])
+                            ("flags" variable (:type "int") (reparse-symbol formal_parameters) [40152 40161]))                          
+                        :type "Pattern")
+                        (reparse-symbol class_member_declaration) [40108 40212])
+                    ("pattern" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [40372 40427])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [40680 40736])
+                    ("matcher" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "CharSequence") (reparse-symbol formal_parameters) [41006 41024]))                          
+                        :type "Matcher")
+                        (reparse-symbol class_member_declaration) [40983 41185])
+                    ("flags" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [41336 41384])
+                    ("matches" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("regex" variable (:type "String") (reparse-symbol formal_parameters) [42288 42300])
+                            ("input" variable (:type "CharSequence") (reparse-symbol formal_parameters) [42302 42320]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [42258 42439])
+                    ("split" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "CharSequence") (reparse-symbol formal_parameters) [45383 45401])
+                            ("limit" variable (:type "int") (reparse-symbol formal_parameters) [45403 45412]))                          
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [45361 46781])
+                    ("split" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "CharSequence") (reparse-symbol formal_parameters) [47991 48009]))                          
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [47969 48050])
+                    ("quote" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [48623 48631]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [48596 49212])
+                    ("readObject" function
+                       (:throws ("java.io.IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectInputStream") (reparse-symbol formal_parameters) [49401 49428]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49377 49876])
+                    ("Pattern" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable (:type "String") (reparse-symbol formal_parameters) [50185 50193])
+                            ("f" variable (:type "int") (reparse-symbol formal_parameters) [50195 50200]))                          )
+                        (reparse-symbol class_member_declaration) [50169 50507])
+                    ("normalize" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [50676 52452])
+                    ("normalizeCharClass" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("newPattern" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [52683 52707])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [52709 52714]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [52652 54524])
+                    ("produceEquivalentAlternation" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [54790 54803]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [54746 55543])
+                    ("producePermutations" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("input" variable (:type "String") (reparse-symbol formal_parameters) [56011 56023]))                          
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [55974 58077])
+                    ("getClass" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [58104 58109]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58083 58175])
+                    ("composeOneStep" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("input" variable (:type "String") (reparse-symbol formal_parameters) [58573 58585]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [58543 58968])
+                    ("RemoveQEQuoting" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [59118 60132])
+                    ("compile" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [60287 62460])
+                    ("printObjectTree" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [62592 62601]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [62556 64002])
+                    ("TreeInfo" type
+                       (:typemodifiers ("static" "final")
+                        :members 
+                          ( ("minLength" variable (:type "int") (reparse-symbol class_member_declaration) [64196 64210])
+                            ("maxLength" variable (:type "int") (reparse-symbol class_member_declaration) [64219 64233])
+                            ("maxValid" variable (:type "boolean") (reparse-symbol class_member_declaration) [64242 64259])
+                            ("deterministic" variable (:type "boolean") (reparse-symbol class_member_declaration) [64268 64290])
+                            ("TreeInfo" function (:constructor-flag t) (reparse-symbol class_member_declaration) [64300 64343])
+                            ("reset" function (:type "void") (reparse-symbol class_member_declaration) [64352 64493]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [64158 64499])
+                    ("has" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("f" variable (:type "int") (reparse-symbol formal_parameters) [64835 64840]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [64815 64882])
+                    ("accept" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [64977 64983])
+                            ("s" variable (:type "String") (reparse-symbol formal_parameters) [64985 64993]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [64957 65183])
+                    ("mark" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [65281 65286]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [65263 65328])
+                    ("peek" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [65413 65557])
+                    ("read" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [65642 65789])
+                    ("readEscaped" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [65911 65996])
+                    ("next" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [66081 66227])
+                    ("nextEscaped" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [66349 66434])
+                    ("peekPastWhitespace" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [66541 66547]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [66510 66789])
+                    ("parsePastWhitespace" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [66898 66904]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [66866 67131])
+                    ("parsePastLine" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [67201 67369])
+                    ("peekPastLine" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [67438 67605])
+                    ("isLineSeparator" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [67730 67736]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [67698 67981])
+                    ("skip" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [68080 68201])
+                    ("unread" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [68284 68331])
+                    ("error" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [68534 68542]))                          
+                        :type "PatternSyntaxException")
+                        (reparse-symbol class_member_declaration) [68497 68622])
+                    ("findSupplementary" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol formal_parameters) [68789 68798])
+                            ("end" variable (:type "int") (reparse-symbol formal_parameters) [68800 68807]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [68755 68921])
+                    ("isSupplementary" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [69093 69099]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [69048 69181])
+                    ("expr" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("end" variable (:type "Node") (reparse-symbol formal_parameters) [69551 69559]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [69533 71077])
+                    ("sequence" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("end" variable (:type "Node") (reparse-symbol formal_parameters) [71171 71179]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [71149 74481])
+                    ("atom" function
+                       (:typemodifiers ("private")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [74547 76844])
+                    ("append" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [76870 76876])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [76878 76885]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [76850 77088])
+                    ("ref" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("refNum" variable (:type "int") (reparse-symbol formal_parameters) [77383 77393]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [77366 78113])
+                    ("escape" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("inclass" variable (:type "boolean") (reparse-symbol formal_parameters) [78476 78491])
+                            ("create" variable (:type "boolean") (reparse-symbol formal_parameters) [78493 78507]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [78457 80728])
+                    ("clazz" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("consume" variable (:type "boolean") (reparse-symbol formal_parameters) [81048 81063]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [81021 84722])
+                    ("bitsOrSingle" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("bits" variable (:type "BitClass") (reparse-symbol formal_parameters) [84762 84775])
+                            ("ch" variable (:type "int") (reparse-symbol formal_parameters) [84777 84783]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [84728 85813])
+                    ("range" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("bits" variable (:type "BitClass") (reparse-symbol formal_parameters) [85979 85992]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [85952 87440])
+                    ("single" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [87446 87650])
+                    ("family" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("singleLetter" variable (:type "boolean") (reparse-symbol formal_parameters) [87778 87798]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [87750 88688])
+                    ("unicodeBlockPropertyFor" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [88828 88839]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [88783 89207])
+                    ("charPropertyNodeFor" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [89345 89356]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [89304 89526])
+                    ("group0" function
+                       (:typemodifiers ("private")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [89729 95108])
+                    ("createGroup" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("anonymous" variable (:type "boolean") (reparse-symbol formal_parameters) [95336 95353]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [95311 95714])
+                    ("addFlag" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [95798 96672])
+                    ("subFlag" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [96789 97563])
+                    ("MAX_REPS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [97569 97610])
+                    ("GREEDY" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [97616 97648])
+                    ("LAZY" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [97654 97686])
+                    ("POSSESSIVE" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [97692 97724])
+                    ("INDEPENDENT" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [97730 97763])
+                    ("closure" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("prev" variable (:type "Node") (reparse-symbol formal_parameters) [98020 98029]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [97999 100615])
+                    ("c" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [100698 100857])
+                    ("o" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [100938 101496])
+                    ("x" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [101583 101881])
+                    ("u" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [101964 102264])
+                    ("isSurrogate" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [102420 102425]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [102379 102513])
+                    ("countChars" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [102555 102571])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [102573 102582])
+                            ("lengthInCodePoints" variable (:type "int") (reparse-symbol formal_parameters) [102589 102611]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [102519 103456])
+                    ("countCodePoints" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [103503 103519]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [103462 103765])
+                    ("BitClass" type
+                       (:typemodifiers ("private" "static" "final")
+                        :superclasses "BmpCharProperty"
+                        :members 
+                          ( ("bits" variable
+                               (:dereference 1
+                                :typemodifiers ("final")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [104043 104064])
+                            ("BitClass" function (:constructor-flag t) (reparse-symbol class_member_declaration) [104066 104105])
+                            ("BitClass" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("bits" variable
+                                       (:dereference 1
+                                        :type "boolean")
+                                        (reparse-symbol formal_parameters) [104131 104145]))                                  )
+                                (reparse-symbol class_member_declaration) [104114 104168])
+                            ("add" function
+                               (:arguments 
+                                  ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [104190 104195])
+                                    ("flags" variable (:type "int") (reparse-symbol formal_parameters) [104197 104206]))                                  
+                                :type "BitClass")
+                                (reparse-symbol class_member_declaration) [104177 104600])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [104624 104630]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [104602 104677]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [103980 104683])
+                    ("newSingle" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ch" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol formal_parameters) [104800 104812]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [104769 105359])
+                    ("newSlice" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("buf" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [105463 105472])
+                            ("count" variable (:type "int") (reparse-symbol formal_parameters) [105474 105483])
+                            ("hasSupplementary" variable (:type "boolean") (reparse-symbol formal_parameters) [105485 105509]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [105441 106083])
+                    ("Node" type
+                       (:typemodifiers ("static")
+                        :superclasses "Object"
+                        :members 
+                          ( ("next" variable (:type "Node") (reparse-symbol class_member_declaration) [106676 106686])
+                            ("Node" function (:constructor-flag t) (reparse-symbol class_member_declaration) [106695 106748])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [106854 106869])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [106871 106876])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [106878 106894]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [106840 107055])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [107165 107178]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [107151 107342]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [106633 107348])
+                    ("LastNode" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [107599 107614])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [107616 107621])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [107623 107639]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [107585 107906]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [107354 107912])
+                    ("Start" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("minLength" variable (:type "int") (reparse-symbol class_member_declaration) [108234 108248])
+                            ("Start" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [108263 108272]))                                  )
+                                (reparse-symbol class_member_declaration) [108257 108429])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [108452 108467])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [108469 108474])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [108476 108492]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [108438 109121])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [109144 109157]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [109130 109301]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [108192 109307])
+                    ("StartS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Start"
+                        :members 
+                          ( ("StartS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [109465 109474]))                                  )
+                                (reparse-symbol class_member_declaration) [109458 109505])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [109528 109543])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [109545 109550])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [109552 109568]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [109514 110450]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [109408 110456])
+                    ("Begin" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [110716 110731])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [110733 110738])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [110740 110756]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [110702 111142]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [110654 111148])
+                    ("End" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [111377 111392])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [111394 111399])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [111401 111417]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [111363 111703]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [111317 111709])
+                    ("Caret" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [111911 111926])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [111928 111933])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [111935 111951]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [111897 112839]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [111849 112845])
+                    ("UnixCaret" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [113004 113019])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [113021 113026])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [113028 113044]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [112990 113694]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [112938 113700])
+                    ("LastMatch" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [113892 113907])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [113909 113914])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [113916 113932]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [113878 114061]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [113826 114067])
+                    ("Dollar" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("multiline" variable (:type "boolean") (reparse-symbol class_member_declaration) [114633 114651])
+                            ("Dollar" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mul" variable (:type "boolean") (reparse-symbol formal_parameters) [114667 114678]))                                  )
+                                (reparse-symbol class_member_declaration) [114660 114720])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [114743 114758])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [114760 114765])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [114767 114783]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [114729 116707])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [116730 116743]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [116716 116825]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [114584 116831])
+                    ("UnixDollar" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("multiline" variable (:type "boolean") (reparse-symbol class_member_declaration) [117029 117047])
+                            ("UnixDollar" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mul" variable (:type "boolean") (reparse-symbol formal_parameters) [117067 117078]))                                  )
+                                (reparse-symbol class_member_declaration) [117056 117120])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [117143 117158])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [117160 117165])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [117167 117183]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [117129 118285])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [118308 118321]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [118294 118403]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [116976 118409])
+                    ("CharProperty" type
+                       (:typemodifiers ("private" "static" "abstract")
+                        :superclasses "Node"
+                        :members 
+                          ( ("isSatisfiedBy" function
+                               (:typemodifiers ("abstract")
+                                :arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [118612 118618]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [118581 118620])
+                            ("complement" function (:type "CharProperty") (reparse-symbol class_member_declaration) [118622 118775])
+                            ("maybeComplement" function
+                               (:arguments 
+                                  ( ("complement" variable (:type "boolean") (reparse-symbol formal_parameters) [118806 118824]))                                  
+                                :type "CharProperty")
+                                (reparse-symbol class_member_declaration) [118777 118876])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [118899 118914])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [118916 118921])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [118923 118939]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [118885 119193])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [119216 119229]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [119202 119332]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [118522 119338])
+                    ("BmpCharProperty" type
+                       (:typemodifiers ("private" "static" "abstract")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [119568 119583])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [119585 119590])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [119592 119608]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [119554 119809]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [119484 119815])
+                    ("SingleS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("c" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [119960 119972])
+                            ("SingleS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [119989 119994]))                                  )
+                                (reparse-symbol class_member_declaration) [119981 120011])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [120035 120041]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [120013 120068]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [119902 120074])
+                    ("Single" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "BmpCharProperty"
+                        :members 
+                          ( ("c" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [120209 120221])
+                            ("Single" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [120237 120242]))                                  )
+                                (reparse-symbol class_member_declaration) [120230 120259])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [120283 120289]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [120261 120316]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [120149 120322])
+                    ("SingleI" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "BmpCharProperty"
+                        :members 
+                          ( ("lower" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [120459 120475])
+                            ("upper" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [120477 120493])
+                            ("SingleI" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("lower" variable (:type "int") (reparse-symbol formal_parameters) [120510 120519])
+                                    ("upper" variable (:type "int") (reparse-symbol formal_parameters) [120521 120530]))                                  )
+                                (reparse-symbol class_member_declaration) [120502 120586])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [120610 120616]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [120588 120662]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [120398 120668])
+                    ("SingleU" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("lower" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [120814 120830])
+                            ("SingleU" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("lower" variable (:type "int") (reparse-symbol formal_parameters) [120847 120856]))                                  )
+                                (reparse-symbol class_member_declaration) [120839 120887])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [120911 120917]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [120889 121011]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [120756 121017])
+                    ("Category" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("typeMask" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [121149 121168])
+                            ("Category" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("typeMask" variable (:type "int") (reparse-symbol formal_parameters) [121186 121198]))                                  )
+                                (reparse-symbol class_member_declaration) [121177 121229])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [121253 121259]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [121231 121325]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [121090 121331])
+                    ("Ctype" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "BmpCharProperty"
+                        :members 
+                          ( ("ctype" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [121457 121473])
+                            ("Ctype" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ctype" variable (:type "int") (reparse-symbol formal_parameters) [121488 121497]))                                  )
+                                (reparse-symbol class_member_declaration) [121482 121522])
+                            ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [121546 121552]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [121524 121607]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [121398 121613])
+                    ("SliceNode" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("buffer" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [121719 121732])
+                            ("SliceNode" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [121751 121760]))                                  )
+                                (reparse-symbol class_member_declaration) [121741 121799])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [121822 121835]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [121808 121975]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [121673 121981])
+                    ("Slice" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "SliceNode"
+                        :members 
+                          ( ("Slice" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [122149 122158]))                                  )
+                                (reparse-symbol class_member_declaration) [122143 122195])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [122218 122233])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [122235 122240])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [122242 122258]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [122204 122662]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [122090 122668])
+                    ("SliceI" type
+                       (:typemodifiers ("static")
+                        :superclasses "SliceNode"
+                        :members 
+                          ( ("SliceI" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [122834 122843]))                                  )
+                                (reparse-symbol class_member_declaration) [122827 122880])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [122903 122918])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [122920 122925])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [122927 122943]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [122889 123396]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [122779 123402])
+                    ("SliceU" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "SliceNode"
+                        :members 
+                          ( ("SliceU" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [123609 123618]))                                  )
+                                (reparse-symbol class_member_declaration) [123602 123648])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [123671 123686])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [123688 123693])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [123695 123711]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [123657 124181]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [123548 124187])
+                    ("SliceS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "SliceNode"
+                        :members 
+                          ( ("SliceS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [124383 124392]))                                  )
+                                (reparse-symbol class_member_declaration) [124376 124429])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [124452 124467])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [124469 124474])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [124476 124492]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [124438 124995]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [124322 125001])
+                    ("SliceIS" type
+                       (:typemodifiers ("static")
+                        :superclasses "SliceNode"
+                        :members 
+                          ( ("SliceIS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [125195 125204]))                                  )
+                                (reparse-symbol class_member_declaration) [125187 125241])
+                            ("toLower" function
+                               (:arguments 
+                                  ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [125255 125260]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [125243 125296])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [125319 125334])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [125336 125341])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [125343 125359]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [125305 125886]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [125138 125892])
+                    ("SliceUS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "SliceIS"
+                        :members 
+                          ( ("SliceUS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [126082 126091]))                                  )
+                                (reparse-symbol class_member_declaration) [126074 126121])
+                            ("toLower" function
+                               (:arguments 
+                                  ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [126135 126140]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [126123 126207]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [126021 126213])
+                    ("inRange" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("lower" variable (:type "int") (reparse-symbol formal_parameters) [126250 126259])
+                            ("ch" variable (:type "int") (reparse-symbol formal_parameters) [126261 126267])
+                            ("upper" variable (:type "int") (reparse-symbol formal_parameters) [126269 126278]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [126219 126323])
+                    ("rangeFor" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("lower" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol formal_parameters) [126458 126473])
+                            ("upper" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol formal_parameters) [126481 126496]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [126421 126611])
+                    ("caseInsensitiveRangeFor" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("lower" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol formal_parameters) [126790 126805])
+                            ("upper" variable
+                               (:typemodifiers ("final")
+                                :type "int")
+                                (reparse-symbol formal_parameters) [126814 126829]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [126745 127437])
+                    ("All" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [127625 127631]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [127603 127655]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [127556 127661])
+                    ("Dot" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [127824 127830]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [127802 127963]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [127755 127969])
+                    ("UnixDot" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "CharProperty"
+                        :members 
+                          ( ("isSatisfiedBy" function
+                               (:arguments 
+                                  ( ("ch" variable (:type "int") (reparse-symbol formal_parameters) [128169 128175]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [128147 128205]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [128096 128211])
+                    ("Ques" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("atom" variable (:type "Node") (reparse-symbol class_member_declaration) [128353 128363])
+                            ("type" variable (:type "int") (reparse-symbol class_member_declaration) [128372 128381])
+                            ("Ques" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [128395 128404])
+                                    ("type" variable (:type "int") (reparse-symbol formal_parameters) [128406 128414]))                                  )
+                                (reparse-symbol class_member_declaration) [128390 128487])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [128510 128525])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [128527 128532])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [128534 128550]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [128496 129210])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [129233 129246]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [129219 129609]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [128306 129615])
+                    ("Curly" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("atom" variable (:type "Node") (reparse-symbol class_member_declaration) [129880 129890])
+                            ("type" variable (:type "int") (reparse-symbol class_member_declaration) [129899 129908])
+                            ("cmin" variable (:type "int") (reparse-symbol class_member_declaration) [129917 129926])
+                            ("cmax" variable (:type "int") (reparse-symbol class_member_declaration) [129935 129944])
+                            ("Curly" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [129960 129969])
+                                    ("cmin" variable (:type "int") (reparse-symbol formal_parameters) [129971 129979])
+                                    ("cmax" variable (:type "int") (reparse-symbol formal_parameters) [129981 129989])
+                                    ("type" variable (:type "int") (reparse-symbol formal_parameters) [129991 129999]))                                  )
+                                (reparse-symbol class_member_declaration) [129954 130132])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [130155 130170])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [130172 130177])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [130179 130195]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [130141 130686])
+                            ("match0" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [130836 130851])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [130853 130858])
+                                    ("j" variable (:type "int") (reparse-symbol formal_parameters) [130860 130865])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [130867 130883]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [130821 132273])
+                            ("match1" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [132473 132488])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [132490 132495])
+                                    ("j" variable (:type "int") (reparse-symbol formal_parameters) [132497 132502])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [132504 132520]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [132458 133212])
+                            ("match2" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [133236 133251])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [133253 133258])
+                                    ("j" variable (:type "int") (reparse-symbol formal_parameters) [133260 133265])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [133267 133283]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [133221 133571])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [133594 133607]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [133580 134570]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [129832 134576])
+                    ("GroupCurly" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("atom" variable (:type "Node") (reparse-symbol class_member_declaration) [135089 135099])
+                            ("type" variable (:type "int") (reparse-symbol class_member_declaration) [135108 135117])
+                            ("cmin" variable (:type "int") (reparse-symbol class_member_declaration) [135126 135135])
+                            ("cmax" variable (:type "int") (reparse-symbol class_member_declaration) [135144 135153])
+                            ("localIndex" variable (:type "int") (reparse-symbol class_member_declaration) [135162 135177])
+                            ("groupIndex" variable (:type "int") (reparse-symbol class_member_declaration) [135186 135201])
+                            ("capture" variable (:type "boolean") (reparse-symbol class_member_declaration) [135210 135226])
+                            ("GroupCurly" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [135247 135256])
+                                    ("cmin" variable (:type "int") (reparse-symbol formal_parameters) [135258 135266])
+                                    ("cmax" variable (:type "int") (reparse-symbol formal_parameters) [135268 135276])
+                                    ("type" variable (:type "int") (reparse-symbol formal_parameters) [135278 135286])
+                                    ("local" variable (:type "int") (reparse-symbol formal_parameters) [135288 135297])
+                                    ("group" variable (:type "int") (reparse-symbol formal_parameters) [135318 135327])
+                                    ("capture" variable (:type "boolean") (reparse-symbol formal_parameters) [135329 135344]))                                  )
+                                (reparse-symbol class_member_declaration) [135236 135587])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [135610 135625])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [135627 135632])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [135634 135650]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [135596 137150])
+                            ("match0" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [137208 137223])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [137225 137230])
+                                    ("j" variable (:type "int") (reparse-symbol formal_parameters) [137232 137237])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [137239 137255]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [137193 139391])
+                            ("match1" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [139445 139460])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [139462 139467])
+                                    ("j" variable (:type "int") (reparse-symbol formal_parameters) [139469 139474])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [139476 139492]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [139430 140067])
+                            ("match2" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [140122 140137])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [140139 140144])
+                                    ("j" variable (:type "int") (reparse-symbol formal_parameters) [140146 140151])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [140153 140169]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [140107 140663])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [140686 140699]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [140672 141682]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [135036 141688])
+                    ("BranchConn" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("BranchConn" function (:constructor-flag t) (reparse-symbol class_member_declaration) [142035 142050])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [142074 142089])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [142091 142096])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [142098 142114]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [142060 142175])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [142198 142211]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [142184 142256]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [141982 142262])
+                    ("Branch" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("atoms" variable
+                               (:dereference 1
+                                :type "Node")
+                                (reparse-symbol class_member_declaration) [142515 142542])
+                            ("size" variable (:type "int") (reparse-symbol class_member_declaration) [142551 142564])
+                            ("conn" variable (:type "Node") (reparse-symbol class_member_declaration) [142573 142583])
+                            ("Branch" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("first" variable (:type "Node") (reparse-symbol formal_parameters) [142599 142609])
+                                    ("second" variable (:type "Node") (reparse-symbol formal_parameters) [142611 142622])
+                                    ("branchConn" variable (:type "Node") (reparse-symbol formal_parameters) [142624 142639]))                                  )
+                                (reparse-symbol class_member_declaration) [142592 142756])
+                            ("add" function
+                               (:arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [142775 142784]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [142766 143035])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [143059 143074])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [143076 143081])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [143083 143099]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [143045 143431])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [143455 143468]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [143441 144323]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [142466 144329])
+                    ("GroupHead" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("localIndex" variable (:type "int") (reparse-symbol class_member_declaration) [144782 144797])
+                            ("GroupHead" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("localCount" variable (:type "int") (reparse-symbol formal_parameters) [144816 144830]))                                  )
+                                (reparse-symbol class_member_declaration) [144806 144880])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [144903 144918])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [144920 144925])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [144927 144943]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [144889 145177])
+                            ("matchRef" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [145203 145218])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [145220 145225])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [145227 145243]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [145186 145486]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [144730 145492])
+                    ("GroupRef" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("head" variable (:type "GroupHead") (reparse-symbol class_member_declaration) [145732 145747])
+                            ("GroupRef" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("head" variable (:type "GroupHead") (reparse-symbol formal_parameters) [145765 145779]))                                  )
+                                (reparse-symbol class_member_declaration) [145756 145822])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [145845 145860])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [145862 145867])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [145869 145885]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [145831 146007])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [146030 146043]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [146016 146168]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [145681 146174])
+                    ("GroupTail" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("localIndex" variable (:type "int") (reparse-symbol class_member_declaration) [146594 146609])
+                            ("groupIndex" variable (:type "int") (reparse-symbol class_member_declaration) [146618 146633])
+                            ("GroupTail" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("localCount" variable (:type "int") (reparse-symbol formal_parameters) [146652 146666])
+                                    ("groupCount" variable (:type "int") (reparse-symbol formal_parameters) [146668 146682]))                                  )
+                                (reparse-symbol class_member_declaration) [146642 146782])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [146805 146820])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [146822 146827])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [146829 146845]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [146791 147777]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [146542 147783])
+                    ("Prolog" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("loop" variable (:type "Loop") (reparse-symbol class_member_declaration) [147925 147935])
+                            ("Prolog" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("loop" variable (:type "Loop") (reparse-symbol formal_parameters) [147951 147960]))                                  )
+                                (reparse-symbol class_member_declaration) [147944 148003])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [148026 148041])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [148043 148048])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [148050 148066]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [148012 148131])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [148154 148167]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [148140 148217]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [147876 148223])
+                    ("Loop" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("body" variable (:type "Node") (reparse-symbol class_member_declaration) [148547 148557])
+                            ("countIndex" variable (:type "int") (reparse-symbol class_member_declaration) [148566 148581])
+                            ("beginIndex" variable (:type "int") (reparse-symbol class_member_declaration) [148629 148644])
+                            ("cmax" variable (:type "int") (reparse-symbol class_member_declaration) [148688 148693])
+                            ("cmin" variable (:type "int") (reparse-symbol class_member_declaration) [148678 148687])
+                            ("Loop" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("countIndex" variable (:type "int") (reparse-symbol formal_parameters) [148707 148721])
+                                    ("beginIndex" variable (:type "int") (reparse-symbol formal_parameters) [148723 148737]))                                  )
+                                (reparse-symbol class_member_declaration) [148702 148834])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [148857 148872])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [148874 148879])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [148881 148897]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [148843 150352])
+                            ("matchInit" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [150379 150394])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [150396 150401])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [150403 150419]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [150361 151023])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [151046 151059]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [151032 151173]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [148506 151179])
+                    ("LazyLoop" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Loop"
+                        :members 
+                          ( ("LazyLoop" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("countIndex" variable (:type "int") (reparse-symbol formal_parameters) [151525 151539])
+                                    ("beginIndex" variable (:type "int") (reparse-symbol formal_parameters) [151541 151555]))                                  )
+                                (reparse-symbol class_member_declaration) [151516 151611])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [151634 151649])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [151651 151656])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [151658 151674]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [151620 152876])
+                            ("matchInit" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [152903 152918])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [152920 152925])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [152927 152943]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [152885 153468])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [153491 153504]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [153477 153618]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [151465 153624])
+                    ("BackRef" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("groupIndex" variable (:type "int") (reparse-symbol class_member_declaration) [153812 153827])
+                            ("BackRef" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("groupCount" variable (:type "int") (reparse-symbol formal_parameters) [153844 153858]))                                  )
+                                (reparse-symbol class_member_declaration) [153836 153942])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [153965 153980])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [153982 153987])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [153989 154005]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [153951 154802])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [154825 154838]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [154811 154923]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [153768 154929])
+                    ("CIBackRef" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("groupIndex" variable (:type "int") (reparse-symbol class_member_declaration) [154981 154996])
+                            ("doUnicodeCase" variable (:type "boolean") (reparse-symbol class_member_declaration) [154998 155020])
+                            ("CIBackRef" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("groupCount" variable (:type "int") (reparse-symbol formal_parameters) [155039 155053])
+                                    ("doUnicodeCase" variable (:type "boolean") (reparse-symbol formal_parameters) [155055 155076]))                                  )
+                                (reparse-symbol class_member_declaration) [155029 155201])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [155224 155239])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [155241 155246])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [155248 155264]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [155210 156520])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [156543 156556]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [156529 156641]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [154935 156647])
+                    ("First" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("atom" variable (:type "Node") (reparse-symbol class_member_declaration) [156951 156961])
+                            ("First" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [156976 156985]))                                  )
+                                (reparse-symbol class_member_declaration) [156970 157042])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [157065 157080])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [157082 157087])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [157089 157105]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [157051 157668])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [157691 157704]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [157677 157859]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [156903 157865])
+                    ("Conditional" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("not" variable (:type "Node") (reparse-symbol class_member_declaration) [157941 157945])
+                            ("yes" variable (:type "Node") (reparse-symbol class_member_declaration) [157936 157940])
+                            ("cond" variable (:type "Node") (reparse-symbol class_member_declaration) [157925 157935])
+                            ("Conditional" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [157966 157975])
+                                    ("yes" variable (:type "Node") (reparse-symbol formal_parameters) [157977 157985])
+                                    ("not" variable (:type "Node") (reparse-symbol formal_parameters) [157987 157995]))                                  )
+                                (reparse-symbol class_member_declaration) [157954 158094])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [158117 158132])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [158134 158139])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [158141 158157]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [158103 158354])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [158377 158390]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [158363 159033]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [157871 159039])
+                    ("Pos" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("cond" variable (:type "Node") (reparse-symbol class_member_declaration) [159145 159155])
+                            ("Pos" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [159168 159177]))                                  )
+                                (reparse-symbol class_member_declaration) [159164 159220])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [159243 159258])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [159260 159265])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [159267 159283]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [159229 159816]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [159099 159822])
+                    ("Neg" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("cond" variable (:type "Node") (reparse-symbol class_member_declaration) [159928 159938])
+                            ("Neg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [159951 159960]))                                  )
+                                (reparse-symbol class_member_declaration) [159947 160003])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [160026 160041])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [160043 160048])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [160050 160066]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [160012 160920]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [159882 160926])
+                    ("lookbehindEnd" variable
+                       (:typemodifiers ("static")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [161047 161216])
+                    ("Behind" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("cond" variable (:type "Node") (reparse-symbol class_member_declaration) [161320 161330])
+                            ("rmin" variable (:type "int") (reparse-symbol class_member_declaration) [161349 161354])
+                            ("rmax" variable (:type "int") (reparse-symbol class_member_declaration) [161339 161348])
+                            ("Behind" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [161370 161379])
+                                    ("rmax" variable (:type "int") (reparse-symbol formal_parameters) [161381 161389])
+                                    ("rmin" variable (:type "int") (reparse-symbol formal_parameters) [161391 161399]))                                  )
+                                (reparse-symbol class_member_declaration) [161363 161502])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [161526 161541])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [161543 161548])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [161550 161566]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [161512 162395]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [161277 162401])
+                    ("BehindS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Behind"
+                        :members 
+                          ( ("BehindS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [162588 162597])
+                                    ("rmax" variable (:type "int") (reparse-symbol formal_parameters) [162599 162607])
+                                    ("rmin" variable (:type "int") (reparse-symbol formal_parameters) [162609 162617]))                                  )
+                                (reparse-symbol class_member_declaration) [162580 162667])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [162690 162705])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [162707 162712])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [162714 162730]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [162676 163730]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [162528 163736])
+                    ("NotBehind" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("cond" variable (:type "Node") (reparse-symbol class_member_declaration) [163843 163853])
+                            ("rmin" variable (:type "int") (reparse-symbol class_member_declaration) [163872 163877])
+                            ("rmax" variable (:type "int") (reparse-symbol class_member_declaration) [163862 163871])
+                            ("NotBehind" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [163896 163905])
+                                    ("rmax" variable (:type "int") (reparse-symbol formal_parameters) [163907 163915])
+                                    ("rmin" variable (:type "int") (reparse-symbol formal_parameters) [163917 163925]))                                  )
+                                (reparse-symbol class_member_declaration) [163886 164028])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [164052 164067])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [164069 164074])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [164076 164092]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [164038 164933]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [163797 164939])
+                    ("NotBehindS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "NotBehind"
+                        :members 
+                          ( ("NotBehindS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "Node") (reparse-symbol formal_parameters) [165135 165144])
+                                    ("rmax" variable (:type "int") (reparse-symbol formal_parameters) [165146 165154])
+                                    ("rmin" variable (:type "int") (reparse-symbol formal_parameters) [165156 165164]))                                  )
+                                (reparse-symbol class_member_declaration) [165124 165214])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [165237 165252])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [165254 165259])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [165261 165277]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [165223 166293]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [165066 166299])
+                    ("union" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:typemodifiers ("final")
+                                :type "CharProperty")
+                                (reparse-symbol formal_parameters) [166411 166433])
+                            ("rhs" variable
+                               (:typemodifiers ("final")
+                                :type "CharProperty")
+                                (reparse-symbol formal_parameters) [166445 166467]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [166377 166603])
+                    ("intersection" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:typemodifiers ("final")
+                                :type "CharProperty")
+                                (reparse-symbol formal_parameters) [166729 166751])
+                            ("rhs" variable
+                               (:typemodifiers ("final")
+                                :type "CharProperty")
+                                (reparse-symbol formal_parameters) [166763 166785]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [166688 166921])
+                    ("setDifference" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:typemodifiers ("final")
+                                :type "CharProperty")
+                                (reparse-symbol formal_parameters) [167046 167068])
+                            ("rhs" variable
+                               (:typemodifiers ("final")
+                                :type "CharProperty")
+                                (reparse-symbol formal_parameters) [167081 167103]))                          
+                        :type "CharProperty")
+                        (reparse-symbol class_member_declaration) [167004 167241])
+                    ("Bound" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "Node"
+                        :members 
+                          ( ("LEFT" variable
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [167685 167707])
+                            ("RIGHT" variable
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [167716 167738])
+                            ("BOTH" variable
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [167747 167769])
+                            ("NONE" variable
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [167778 167800])
+                            ("type" variable (:type "int") (reparse-symbol class_member_declaration) [167809 167818])
+                            ("Bound" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [167833 167838]))                                  )
+                                (reparse-symbol class_member_declaration) [167827 167873])
+                            ("check" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [167892 167907])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [167909 167914])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [167916 167932]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [167882 169172])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [169195 169210])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [169212 169217])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [169219 169235]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [169181 169351]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [167637 169357])
+                    ("hasBaseCharacter" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [169535 169550])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [169552 169557])
+                            ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [169603 169619]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [169495 170035])
+                    ("BnM" type
+                       (:typemodifiers ("static")
+                        :superclasses "Node"
+                        :members 
+                          ( ("buffer" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [171678 171691])
+                            ("lastOcc" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [171700 171714])
+                            ("optoSft" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [171723 171737])
+                            ("optimize" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable (:type "Node") (reparse-symbol formal_parameters) [172139 172148]))                                  
+                                :type "Node")
+                                (reparse-symbol class_member_declaration) [172118 174257])
+                            ("BnM" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [174270 174279])
+                                    ("lastOcc" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [174281 174294])
+                                    ("optoSft" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [174296 174309])
+                                    ("next" variable (:type "Node") (reparse-symbol formal_parameters) [174311 174320]))                                  )
+                                (reparse-symbol class_member_declaration) [174266 174466])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [174489 174504])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [174506 174511])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [174513 174529]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [174475 175989])
+                            ("study" function
+                               (:arguments 
+                                  ( ("info" variable (:type "TreeInfo") (reparse-symbol formal_parameters) [176012 176025]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [175998 176155]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [171638 176161])
+                    ("BnMS" type
+                       (:typemodifiers ("static" "final")
+                        :superclasses "BnM"
+                        :members 
+                          ( ("lengthInChars" variable (:type "int") (reparse-symbol class_member_declaration) [176328 176346])
+                            ("BnMS" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [176354 176363])
+                                    ("lastOcc" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [176365 176378])
+                                    ("optoSft" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [176380 176393])
+                                    ("next" variable (:type "Node") (reparse-symbol formal_parameters) [176395 176404]))                                  )
+                                (reparse-symbol class_member_declaration) [176349 176556])
+                            ("match" function
+                               (:arguments 
+                                  ( ("matcher" variable (:type "Matcher") (reparse-symbol formal_parameters) [176572 176587])
+                                    ("i" variable (:type "int") (reparse-symbol formal_parameters) [176589 176594])
+                                    ("seq" variable (:type "CharSequence") (reparse-symbol formal_parameters) [176596 176612]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [176558 177967]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [176289 177973])
+                    ("accept" variable
+                       (:typemodifiers ("static")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [178205 178237])
+                    ("lastAccept" variable
+                       (:typemodifiers ("static")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [178243 178283])
+                    ("CharPropertyNames" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("charPropertyFor" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [178368 178379]))                                  
+                                :type "CharProperty")
+                                (reparse-symbol class_member_declaration) [178332 178470])
+                            ("CharPropertyFactory" type
+                               (:typemodifiers ("private" "static" "abstract")
+                                :members 
+                                  ( ("make" function
+                                       (:typemodifiers ("abstract")
+                                        :type "CharProperty")
+                                        (reparse-symbol class_member_declaration) [178530 178559]))                                  
+                                :type "class")
+                                (reparse-symbol class_member_declaration) [178473 178562])
+                            ("defCategory" function
+                               (:typemodifiers ("private" "static")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [178597 178608])
+                                    ("typeMask" variable
+                                       (:typemodifiers ("final")
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [178615 178633]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [178565 178749])
+                            ("defRange" function
+                               (:typemodifiers ("private" "static")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [178781 178792])
+                                    ("lower" variable
+                                       (:typemodifiers ("final")
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [178803 178818])
+                                    ("upper" variable
+                                       (:typemodifiers ("final")
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [178820 178835]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [178752 178951])
+                            ("defCtype" function
+                               (:typemodifiers ("private" "static")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [178983 178994])
+                                    ("ctype" variable
+                                       (:typemodifiers ("final")
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [179005 179020]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [178954 179130])
+                            ("CloneableProperty" type
+                               (:typemodifiers ("private" "static" "abstract")
+                                :interfaces ("Cloneable")
+                                :superclasses "CharProperty"
+                                :members 
+                                  ( ("clone" function
+                                       (:typemodifiers ("public")
+                                        :type "CloneableProperty")
+                                        (reparse-symbol class_member_declaration) [179236 179415]))                                  
+                                :type "class")
+                                (reparse-symbol class_member_declaration) [179133 179418])
+                            ("defClone" function
+                               (:typemodifiers ("private" "static")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [179450 179461])
+                                    ("p" variable
+                                       (:typemodifiers ("final")
+                                        :type "CloneableProperty")
+                                        (reparse-symbol formal_parameters) [179472 179497]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [179421 179600]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [178289 187168]))                  
+                :type "class")
+                nil [32007 187170]))          
+    :file "Pattern.java"
+    :pointmax 187171
+    :fsize 187170
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((SEMICOLON 179721 . 179722) (PAREN_BLOCK 179719 . 179721) (GT 179718 . 179719) (COMMA 179697 . 179698) (LT 179690 . 179691) (NEW 179679 . 179682) (EQ 179677 . 179678) (GT 179666 . 179667) (COMMA 179645 . 179646) (PRIVATE 179610 . 179617) (LT 179638 . 179639) (SEMICOLON 142050 . 142051))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!regex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

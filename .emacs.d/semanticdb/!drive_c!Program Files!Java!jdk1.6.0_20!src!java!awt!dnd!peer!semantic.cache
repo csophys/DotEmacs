@@ -1,0 +1,53 @@
+;; Object peer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "peer/"
+  :tables (list 
+   (semanticdb-table "DragSourceContextPeer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd.peer" package nil nil [188 214])
+            ("java.awt.event.InputEvent" include nil nil [216 249])
+            ("java.awt.Component" include nil nil [250 276])
+            ("java.awt.Cursor" include nil nil [277 300])
+            ("java.awt.Image" include nil nil [301 323])
+            ("java.awt.Point" include nil nil [324 346])
+            ("java.awt.Rectangle" include nil nil [347 373])
+            ("java.awt.datatransfer.Transferable" include nil nil [375 417])
+            ("java.awt.dnd.DragSource" include nil nil [419 450])
+            ("java.awt.dnd.DragGestureEvent" include nil nil [451 488])
+            ("java.awt.dnd.DragSourceContext" include nil nil [489 527])
+            ("java.awt.dnd.DragSourceListener" include nil nil [528 567])
+            ("java.awt.dnd.InvalidDnDOperationException" include nil nil [568 617])
+            ("DragSourceContextPeer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :arguments 
+                          ( ("dsc" variable (:type "DragSourceContext") (reparse-symbol formal_parameters) [948 969])
+                            ("c" variable (:type "Cursor") (reparse-symbol formal_parameters) [971 979])
+                            ("dragImage" variable (:type "Image") (reparse-symbol formal_parameters) [981 996])
+                            ("imageOffset" variable (:type "Point") (reparse-symbol formal_parameters) [998 1015]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [933 1053])
+                    ("getCursor" function (:type "Cursor") (reparse-symbol interface_member_declaration) [1114 1133])
+                    ("setCursor" function
+                       (:throws ("InvalidDnDOperationException")
+                        :arguments 
+                          ( ("c" variable (:type "Cursor") (reparse-symbol formal_parameters) [1206 1214]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1191 1252])
+                    ("transferablesFlavorsChanged" function (:type "void") (reparse-symbol interface_member_declaration) [1346 1381]))                  
+                :type "interface")
+                nil [850 1383]))          
+    :file "DragSourceContextPeer.java"
+    :pointmax 1384
+    :fsize 1383
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!dnd!peer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

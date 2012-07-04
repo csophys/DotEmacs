@@ -1,0 +1,75 @@
+;; Object ddl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ddl/"
+  :tables (list 
+   (semanticdb-table "AccessDDLTableGenBeanTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.tablegeneration.ddl" package nil nil [1 33])
+            ("java.util.Arrays" include nil nil [161 185])
+            ("java.util.Collection" include nil nil [186 214])
+            ("javax.naming.InitialContext" include nil nil [216 251])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [253 299])
+            ("jpa.common.util.CommonUtils" include nil nil [300 335])
+            ("jpa.common.util.DatabaseUtilClient" include nil nil [336 378])
+            ("org.junit.After" include nil nil [380 403])
+            ("org.junit.Before" include nil nil [404 428])
+            ("org.junit.Test" include nil nil [429 451])
+            ("org.junit.runner.RunWith" include nil nil [452 484])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [485 535])
+            ("AccessDDLTableGenBeanTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [670 3002])
+                    ("AccessDDLTableGenBeanTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [3054 3060])
+                            ("expResult" variable (:type "String") (reparse-symbol formal_parameters) [3074 3090]))                          )
+                        (reparse-symbol class_member_declaration) [3008 3157])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [3162 3169])
+                    ("name" variable (:type "String") (reparse-symbol class_member_declaration) [3174 3194])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [3199 3216])
+                    ("bean" variable (:type "AccessDDLTableGen") (reparse-symbol class_member_declaration) [3221 3244])
+                    ("data" variable (:type "DDLTableGenEntity") (reparse-symbol class_member_declaration) [3249 3272])
+                    ("appName" variable (:type "String") (reparse-symbol class_member_declaration) [3277 3292])
+                    ("setUp" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3310 3456])
+                    ("after" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3471 3725])
+                    ("testCreateTwoEntityWithoutPK" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3741 4929])
+                    ("checkResults" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable (:type "DDLTableGenEntity") (reparse-symbol formal_parameters) [4961 4980]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4935 5035])
+                    ("isDeploySuccessfully" function (:type "boolean") (reparse-symbol class_member_declaration) [5042 5176])
+                    ("isUnDeploySuccessfully" function (:type "boolean") (reparse-symbol class_member_declaration) [5180 5318])
+                    ("isTableExist" function (:type "boolean") (reparse-symbol class_member_declaration) [5322 5444])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5450 5723]))                  
+                :type "class")
+                nil [573 5725]))          
+    :file "AccessDDLTableGenBeanTest.java"
+    :pointmax 5726
+    :fsize 5881
+    :lastmodtime '(20466 40848)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!plink!!isdev@10.124.174.224!!!export!home!isgroup!isdev!CT_SET!JPA!src!jpa!tablegeneration!ddl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

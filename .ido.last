@@ -41,16 +41,17 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/EmacsDir/GitDocument/MyDocument/"
+ "C:/EmacsDir/"
+ "c:/Documents and Settings/Administrator/"
  "c:/DotEmacs/.emacs.d/csophys/"
  "c:/emacs-backup/dotemacs/csophys/programeExpand/"
  "c:/task/"
  "c:/"
- "C:/EmacsDir/"
  "/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/"
  "c:/task/database/linux/"
  "c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/"
  "c:/DotEmacs/.emacs.d/"
- "c:/EmacsDir/GitDocument/MyDocument/"
  "c:/emacs-backup/dotemacs/plugin/ecb/"
  "c:/EmacsDir/"
  "c:/DotEmacs/"
@@ -81,23 +82,27 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "myPaper.org.gpg"
+ "test.java"
  "csophys_writingStyle.el"
  "csophys_ecb.el"
  "command.txt"
  "test.c"
- "test.java"
  "symfoware.properties"
  "symfoware(LE).properties"
  "task.org"
- "myPaper.org.gpg"
  "NEWS"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/DotEmacs/.emacs.d/csophys/" (20449 12388) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+ ("c:/EmacsDir/GitDocument/MyDocument/" (20449 41162) "README.md" "myPaper.org.gpg" ".git/" "../" "./")
 
- ("c:/DotEmacs/.emacs.d/" (20449 12187) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+ ("c:/DotEmacs/.emacs.d/" (20449 30956) "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("c:/task/" (20449 33201) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/csophys/" (20449 12388) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("c:/Documents and Settings/Administrator/" (20446 32728) "デスクトップ/" "スタート メニュー/" "_viminfo" "xen/" "workspace/" "WINDOWS/" "UserData/" "Templates/" "SendTo/" "Recent/" "PrintHood/" "ntuser.ini" "NTUSER.DAT.LOG" "NTUSER.DAT" "NetHood/" "My Documents/" "magit/" "Local Settings/" "grizzly~git/" "Favorites/" "Cookies/" "chensheng/" "Application Data/" ".subversion/" ".ssh/" ".m2/" ".gitk" ".gitconfig" ".freemind/" ".bash_history" ".astah/" ".asadmintruststore" ".asadminpass" "../" "./")
 
@@ -107,15 +112,11 @@
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/Test/src/acc/" (20300 25552) "PrimaryAccClient.java" "NumberAccClient.java" "DateAccClient.java" "CharAccClient.java" "BlobAccClient.java" ".svn/" "../" "./")
 
- ("c:/task/" (20448 9967) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
-
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/" (20418 59019) "要因表/" "querytimeout/" "ping/" "environment/" "dbaccess/" "common/" "build.xml" ".svn/" "../" "./")
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/dbaccess/" (20418 59023) "servlet/" "jpaandweb/" "jpa/" "initsyfdb.xml" "initdb.xml" "common/" "cmp/" "build.xml" ".svn/" "../" "./")
 
  ("C:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
-
- ("c:/EmacsDir/GitDocument/MyDocument/" (20447 57088) "README.md" "myPaper.org.gpg" ".git/" "../" "./")
 
  ("c:/Program Files/Java/jdk1.6.0_20/lib/" (20293 58473) "visualvm/" "tools.jar" "orb.idl" "jvm.lib" "jconsole.jar" "jawt.lib" "ir.idl" "htmlconverter.jar" "dt.jar" "ct.sym" "../" "./")
 

@@ -43,6 +43,7 @@
 ("编程语言" ?b "* 编程语言 %?\n %i\n %a"  "~/study.org" "编程语言")
 ("设计模式" ?s "* 设计模式 %?\n %i\n %a"  "~/study.org" "设计模式")
 ("基本概念" ?j "* 基本概念 %?\n %i\n %a"  "~/study.org" "基本概念")
+("算法" ?a "* 算法 %?\n %i\n %a"  "~/study.org" "算法")
 ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;启用一些扩展功能;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -199,15 +200,14 @@
 (setq ecb-compile-window-height nil);;;取消编译窗口显示
 ; ;;ecb开启时隐藏ecb-window，不要删除该代码!!!
 ;;;默认ecb关闭，可以用C-c .ls和C-c .ld来开启和关闭
-(define-key global-map (kbd "C-c .ls") 'ecb-activate);
-(define-key global-map (kbd "C-c .ld") 'ecb-deactivate);
+(define-key global-map (kbd "C-c ls") 'ecb-activate);
+(define-key global-map (kbd "C-c ld") 'ecb-deactivate);
 ;------------------------------------------------------------------------------
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
 (global-set-key (kbd "RET")'newline-and-indent);设置RET的功能为newline and indent
-
 (global-set-key "\C-x\C-j" 'dired-jump)
 (provide 'csophys_writingStyle)
 

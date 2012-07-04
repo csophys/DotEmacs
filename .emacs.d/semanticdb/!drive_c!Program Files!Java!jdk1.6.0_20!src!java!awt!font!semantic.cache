@@ -1,0 +1,284 @@
+;; Object font/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "font/"
+  :tables (list 
+   (semanticdb-table "TextAttribute.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.font" package nil nil [754 776])
+            ("java.io.InvalidObjectException" include nil nil [778 816])
+            ("java.text.AttributedCharacterIterator.Attribute" include nil nil [817 872])
+            ("java.util.Map" include nil nil [873 894])
+            ("java.util.HashMap" include nil nil [895 920])
+            ("TextAttribute" type
+               (:typemodifiers ("public" "final")
+                :superclasses "Attribute"
+                :members 
+                  ( ("instanceMap" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [8897 8952])
+                    ("TextAttribute" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9161 9172]))                          )
+                        (reparse-symbol class_member_declaration) [9137 9307])
+                    ("readResolve" function
+                       (:throws ("InvalidObjectException")
+                        :typemodifiers ("protected")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [9403 9881])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [10105 10163])
+                    ("FAMILY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [11523 11596])
+                    ("WEIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [12489 12562])
+                    ("WEIGHT_EXTRA_LIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [12643 12712])
+                    ("WEIGHT_LIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [12788 12852])
+                    ("WEIGHT_DEMILIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [13000 13069])
+                    ("WEIGHT_REGULAR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [13190 13255])
+                    ("WEIGHT_SEMIBOLD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [13366 13433])
+                    ("WEIGHT_MEDIUM" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [13579 13643])
+                    ("WEIGHT_DEMIBOLD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [13751 13818])
+                    ("WEIGHT_BOLD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [13893 13955])
+                    ("WEIGHT_HEAVY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [14063 14127])
+                    ("WEIGHT_EXTRABOLD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [14199 14266])
+                    ("WEIGHT_ULTRABOLD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [14347 14415])
+                    ("WIDTH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [14988 15059])
+                    ("WIDTH_CONDENSED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [15144 15211])
+                    ("WIDTH_SEMI_CONDENSED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [15289 15362])
+                    ("WIDTH_REGULAR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [15488 15551])
+                    ("WIDTH_SEMI_EXTENDED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [15628 15699])
+                    ("WIDTH_EXTENDED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [15783 15848])
+                    ("POSTURE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [16688 16763])
+                    ("POSTURE_REGULAR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [16905 16971])
+                    ("POSTURE_OBLIQUE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [17050 17117])
+                    ("SIZE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [17773 17842])
+                    ("TRANSFORM" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [19536 19615])
+                    ("SUPERSCRIPT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [20523 20606])
+                    ("SUPERSCRIPT_SUPER" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [20682 20751])
+                    ("SUPERSCRIPT_SUB" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [20825 20893])
+                    ("FONT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [24214 24283])
+                    ("CHAR_REPLACEMENT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [25266 25359])
+                    ("FOREGROUND" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [25952 26033])
+                    ("BACKGROUND" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [26679 26760])
+                    ("UNDERLINE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [27111 27190])
+                    ("UNDERLINE_ON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [27269 27333])
+                    ("STRIKETHROUGH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [27714 27801])
+                    ("STRIKETHROUGH_ON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [27888 27950])
+                    ("RUN_DIRECTION" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [28854 28941])
+                    ("RUN_DIRECTION_LTR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [29026 29090])
+                    ("RUN_DIRECTION_RTL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [29175 29238])
+                    ("BIDI_EMBEDDING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [30219 30308])
+                    ("JUSTIFICATION" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [31295 31381])
+                    ("JUSTIFICATION_FULL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [31550 31619])
+                    ("JUSTIFICATION_NONE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [31714 31783])
+                    ("INPUT_METHOD_HIGHLIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [32788 32893])
+                    ("INPUT_METHOD_UNDERLINE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [33712 33816])
+                    ("UNDERLINE_LOW_ONE_PIXEL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [33933 34008])
+                    ("UNDERLINE_LOW_TWO_PIXEL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [34125 34200])
+                    ("UNDERLINE_LOW_DOTTED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [34318 34390])
+                    ("UNDERLINE_LOW_GRAY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [34506 34576])
+                    ("UNDERLINE_LOW_DASHED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [34694 34766])
+                    ("SWAP_COLORS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [35608 35691])
+                    ("SWAP_COLORS_ON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [35797 35857])
+                    ("NUMERIC_SHAPING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [36467 36558])
+                    ("KERNING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [37224 37299])
+                    ("KERNING_ON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [37393 37455])
+                    ("LIGATURES" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [37856 37935])
+                    ("LIGATURES_ON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [38042 38106])
+                    ("TRACKING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "TextAttribute")
+                        (reparse-symbol class_member_declaration) [38891 38968])
+                    ("TRACKING_TIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [39061 39127])
+                    ("TRACKING_LOOSE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [39220 39285]))                  
+                :type "class")
+                nil [8774 39287]))          
+    :file "TextAttribute.java"
+    :pointmax 39288
+    :fsize 39287
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!font!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

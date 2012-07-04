@@ -1,0 +1,878 @@
+;; Object dnd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dnd/"
+  :tables (list 
+   (semanticdb-table "DragSource.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [177 198])
+            ("java.awt.AWTError" include nil nil [200 225])
+            ("java.awt.AWTException" include nil nil [226 255])
+            ("java.awt.event.InputEvent" include nil nil [256 289])
+            ("java.awt.AWTPermission" include nil nil [290 320])
+            ("java.awt.Component" include nil nil [321 347])
+            ("java.awt.Cursor" include nil nil [348 371])
+            ("java.awt.GraphicsEnvironment" include nil nil [372 408])
+            ("java.awt.HeadlessException" include nil nil [409 443])
+            ("java.awt.Image" include nil nil [444 466])
+            ("java.awt.Point" include nil nil [467 489])
+            ("java.awt.Toolkit" include nil nil [490 514])
+            ("java.awt.datatransfer.FlavorMap" include nil nil [515 554])
+            ("java.awt.datatransfer.SystemFlavorMap" include nil nil [555 600])
+            ("java.awt.datatransfer.Transferable" include nil nil [601 643])
+            ("java.awt.dnd.peer.DragSourceContextPeer" include nil nil [644 691])
+            ("java.io.Serializable" include nil nil [692 720])
+            ("java.io.IOException" include nil nil [721 748])
+            ("java.io.ObjectInputStream" include nil nil [749 782])
+            ("java.io.ObjectOutputStream" include nil nil [783 817])
+            ("java.io.Serializable" include nil nil [818 846])
+            ("java.security.AccessController" include nil nil [847 885])
+            ("java.util.EventListener" include nil nil [886 917])
+            ("sun.awt.dnd.SunDragSourceContextPeer" include nil nil [918 962])
+            ("sun.security.action.GetIntegerAction" include nil nil [963 1007])
+            ("DragSource" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3649 3715])
+                    ("load" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [3800 3811]))                          
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [3773 4139])
+                    ("DefaultCopyDrop" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [4445 4526])
+                    ("DefaultMoveDrop" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [4828 4909])
+                    ("DefaultLinkDrop" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [5211 5292])
+                    ("DefaultCopyNoDrop" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [5598 5683])
+                    ("DefaultMoveNoDrop" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [5989 6074])
+                    ("DefaultLinkNoDrop" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [6381 6466])
+                    ("dflt" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [6472 6580])
+                    ("dragSourceListenerK" variable
+                       (:typemodifiers ("static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6649 6705])
+                    ("dragSourceMotionListenerK" variable
+                       (:typemodifiers ("static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6710 6778])
+                    ("getDefaultDragSource" function
+                       (:typemodifiers ("public" "static")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [7096 7294])
+                    ("isDragImageSupported" function
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7527 7838])
+                    ("DragSource" function
+                       (:constructor-flag t
+                        :throws ("HeadlessException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [8068 8221])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("trigger" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [9632 9658])
+                            ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [9665 9687])
+                            ("dragImage" variable (:type "Image") (reparse-symbol formal_parameters) [9694 9715])
+                            ("imageOffset" variable (:type "Point") (reparse-symbol formal_parameters) [9722 9745])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [9752 9782])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [9789 9811])
+                            ("flavorMap" variable (:type "FlavorMap") (reparse-symbol formal_parameters) [9818 9842]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9610 11073])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("trigger" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [12100 12126])
+                            ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [12133 12155])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [12162 12192])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [12199 12221])
+                            ("flavorMap" variable (:type "FlavorMap") (reparse-symbol formal_parameters) [12228 12252]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12078 12372])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("trigger" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [13635 13661])
+                            ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [13668 13690])
+                            ("dragImage" variable (:type "Image") (reparse-symbol formal_parameters) [13697 13718])
+                            ("dragOffset" variable (:type "Point") (reparse-symbol formal_parameters) [13725 13747])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [13754 13784])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [13791 13813]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13613 13939])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("trigger" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [14825 14851])
+                            ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [14858 14880])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [14887 14917])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [14924 14946]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14803 15061])
+                    ("createDragSourceContext" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("dscp" variable (:type "DragSourceContextPeer") (reparse-symbol formal_parameters) [17686 17712])
+                            ("dgl" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [17714 17734])
+                            ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [17736 17753])
+                            ("dragImage" variable (:type "Image") (reparse-symbol formal_parameters) [17755 17770])
+                            ("imageOffset" variable (:type "Point") (reparse-symbol formal_parameters) [17772 17789])
+                            ("t" variable (:type "Transferable") (reparse-symbol formal_parameters) [17791 17805])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [17807 17829]))                          
+                        :type "DragSourceContext")
+                        (reparse-symbol class_member_declaration) [17634 17924])
+                    ("getFlavorMap" function
+                       (:typemodifiers ("public")
+                        :type "FlavorMap")
+                        (reparse-symbol class_member_declaration) [18129 18182])
+                    ("createDragGestureRecognizer" function
+                       (:arguments 
+                          ( ("c" variable (:type "Component") (reparse-symbol formal_parameters) [19204 19215])
+                            ("actions" variable (:type "int") (reparse-symbol formal_parameters) [19217 19228])
+                            ("dgl" variable (:type "DragGestureListener") (reparse-symbol formal_parameters) [19238 19261]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [19131 19387])
+                    ("createDefaultDragGestureRecognizer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "Component") (reparse-symbol formal_parameters) [20442 20453])
+                            ("actions" variable (:type "int") (reparse-symbol formal_parameters) [20455 20466])
+                            ("dgl" variable (:type "DragGestureListener") (reparse-symbol formal_parameters) [20468 20491]))                          
+                        :type "DragGestureRecognizer")
+                        (reparse-symbol class_member_declaration) [20378 20622])
+                    ("addDragSourceListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [21163 21185]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21129 21339])
+                    ("removeDragSourceListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [21955 21977]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21918 22141])
+                    ("getDragSourceListeners" function
+                       (:typemodifiers ("public")
+                        :type "DragSourceListener[]")
+                        (reparse-symbol class_member_declaration) [22567 22704])
+                    ("addDragSourceMotionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsml" variable (:type "DragSourceMotionListener") (reparse-symbol formal_parameters) [23276 23305]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23236 23473])
+                    ("removeDragSourceMotionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsml" variable (:type "DragSourceMotionListener") (reparse-symbol formal_parameters) [24120 24149]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24077 24327])
+                    ("getDragSourceMotionListeners" function
+                       (:typemodifiers ("public")
+                        :type "DragSourceMotionListener[]")
+                        (reparse-symbol class_member_declaration) [24781 24956])
+                    ("getListeners" function (:type "T[]") (reparse-symbol class_member_declaration) [25986 26327])
+                    ("processDragEnter" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [26653 26677]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26631 26799])
+                    ("processDragOver" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [27123 27147]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27102 27268])
+                    ("processDropActionChanged" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [27610 27634]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27580 27764])
+                    ("processDragExit" function
+                       (:arguments 
+                          ( ("dse" variable (:type "DragSourceEvent") (reparse-symbol formal_parameters) [28079 28098]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28058 28218])
+                    ("processDragDropEnd" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDropEvent") (reparse-symbol formal_parameters) [28544 28568]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28520 28692])
+                    ("processDragMouseMoved" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [29030 29054]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29003 29196])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [30824 30844]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30799 31162])
+                    ("readObject" function
+                       (:throws ("ClassNotFoundException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [32465 32484]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32441 33395])
+                    ("getDragThreshold" function
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34242 34729])
+                    ("flavorMap" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "FlavorMap")
+                        (reparse-symbol class_member_declaration) [34765 34843])
+                    ("listener" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "DragSourceListener")
+                        (reparse-symbol class_member_declaration) [34849 34895])
+                    ("motionListener" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "DragSourceMotionListener")
+                        (reparse-symbol class_member_declaration) [34901 34959]))                  
+                :type "class")
+                nil [3594 34961]))          
+    :file "DragSource.java"
+    :pointmax 34962
+    :fsize 34961
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((GT 26010 . 26011) (IDENTIFIER 26003 . 26008) (LT 26008 . 26009) (GT 25984 . 25985) (EXTENDS 25963 . 25970) (PUBLIC 25953 . 25959) (LT 25960 . 25961) (COMMA 19194 . 19195) (GT 19169 . 19170) (IDENTIFIER 19162 . 19167) (LT 19167 . 19168) (GT 19129 . 19130) (EXTENDS 19100 . 19107) (PUBLIC 19090 . 19096) (LT 19097 . 19098))
+    )
+   (semanticdb-table "DragGestureRecognizer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [188 209])
+            ("java.awt.event.InputEvent" include nil nil [211 244])
+            ("java.awt.Component" include nil nil [245 271])
+            ("java.awt.Point" include nil nil [272 294])
+            ("java.util.TooManyListenersException" include nil nil [296 339])
+            ("java.util.ArrayList" include nil nil [340 367])
+            ("java.io.IOException" include nil nil [369 396])
+            ("java.io.ObjectInputStream" include nil nil [397 430])
+            ("java.io.ObjectOutputStream" include nil nil [431 465])
+            ("java.io.Serializable" include nil nil [466 494])
+            ("DragGestureRecognizer" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2341 2407])
+                    ("DragGestureRecognizer" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ds" variable (:type "DragSource") (reparse-symbol formal_parameters) [3789 3802])
+                            ("c" variable (:type "Component") (reparse-symbol formal_parameters) [3804 3815])
+                            ("sa" variable (:type "int") (reparse-symbol formal_parameters) [3817 3823])
+                            ("dgl" variable (:type "DragGestureListener") (reparse-symbol formal_parameters) [3825 3848]))                          )
+                        (reparse-symbol class_member_declaration) [3757 4197])
+                    ("DragGestureRecognizer" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ds" variable (:type "DragSource") (reparse-symbol formal_parameters) [5345 5358])
+                            ("c" variable (:type "Component") (reparse-symbol formal_parameters) [5360 5371])
+                            ("sa" variable (:type "int") (reparse-symbol formal_parameters) [5373 5379]))                          )
+                        (reparse-symbol class_member_declaration) [5313 5412])
+                    ("DragGestureRecognizer" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ds" variable (:type "DragSource") (reparse-symbol formal_parameters) [6367 6380])
+                            ("c" variable (:type "Component") (reparse-symbol formal_parameters) [6382 6393]))                          )
+                        (reparse-symbol class_member_declaration) [6335 6442])
+                    ("DragGestureRecognizer" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ds" variable (:type "DragSource") (reparse-symbol formal_parameters) [6909 6922]))                          )
+                        (reparse-symbol class_member_declaration) [6877 6948])
+                    ("registerListeners" function
+                       (:typemodifiers ("protected" "abstract")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7096 7140])
+                    ("unregisterListeners" function
+                       (:typemodifiers ("protected" "abstract")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7290 7336])
+                    ("getDragSource" function
+                       (:typemodifiers ("public")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [7577 7633])
+                    ("getComponent" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [7925 7991])
+                    ("setComponent" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("c" variable (:type "Component") (reparse-symbol formal_parameters) [8313 8324]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8275 8515])
+                    ("getSourceActions" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8733 8801])
+                    ("setSourceActions" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("actions" variable (:type "int") (reparse-symbol formal_parameters) [9037 9048]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8995 9147])
+                    ("getTriggerEvent" function
+                       (:typemodifiers ("public")
+                        :type "InputEvent")
+                        (reparse-symbol class_member_declaration) [9373 9472])
+                    ("resetRecognizer" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9582 9631])
+                    ("addDragGestureListener" function
+                       (:throws ("TooManyListenersException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("dgl" variable (:type "DragGestureListener") (reparse-symbol formal_parameters) [10022 10045]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9974 10258])
+                    ("removeDragGestureListener" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("dgl" variable (:type "DragGestureListener") (reparse-symbol formal_parameters) [10671 10694]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10620 10912])
+                    ("fireDragGestureRecognized" function
+                       (:typemodifiers ("protected" "synchronized")
+                        :arguments 
+                          ( ("dragAction" variable (:type "int") (reparse-symbol formal_parameters) [11300 11314])
+                            ("p" variable (:type "Point") (reparse-symbol formal_parameters) [11316 11323]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11246 11575])
+                    ("appendEvent" function
+                       (:typemodifiers ("protected" "synchronized")
+                        :arguments 
+                          ( ("awtie" variable (:type "InputEvent") (reparse-symbol formal_parameters) [12444 12460]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12404 12489])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [13032 13052]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13007 13234])
+                    ("readObject" function
+                       (:throws ("ClassNotFoundException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [13597 13616]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13573 13779])
+                    ("dragSource" variable
+                       (:typemodifiers ("protected")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [13961 14002])
+                    ("component" variable
+                       (:typemodifiers ("protected")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [14146 14186])
+                    ("dragGestureListener" variable
+                       (:typemodifiers ("protected" "transient")
+                        :type "DragGestureListener")
+                        (reparse-symbol class_member_declaration) [14317 14377])
+                    ("sourceActions" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14526 14555]))                  
+                :type "class")
+                nil [2266 14810]))          
+    :file "DragGestureRecognizer.java"
+    :pointmax 14811
+    :fsize 14810
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((SEMICOLON 14807 . 14808) (PAREN_BLOCK 14804 . 14807) (GT 14803 . 14804) (LT 14792 . 14793) (NEW 14779 . 14782) (EQ 14777 . 14778) (GT 14768 . 14769) (PROTECTED 14738 . 14747) (LT 14757 . 14758))
+    )
+   (semanticdb-table "DragGestureEvent.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [184 205])
+            ("java.awt.Component" include nil nil [207 233])
+            ("java.awt.Cursor" include nil nil [234 257])
+            ("java.awt.Image" include nil nil [259 281])
+            ("java.awt.Point" include nil nil [282 304])
+            ("java.awt.event.InputEvent" include nil nil [306 339])
+            ("java.awt.datatransfer.Transferable" include nil nil [341 383])
+            ("java.util.EventObject" include nil nil [385 414])
+            ("java.util.Collections" include nil nil [416 445])
+            ("java.util.List" include nil nil [446 468])
+            ("java.util.Iterator" include nil nil [469 495])
+            ("java.io.IOException" include nil nil [497 524])
+            ("java.io.ObjectInputStream" include nil nil [525 558])
+            ("java.io.ObjectOutputStream" include nil nil [559 593])
+            ("java.io.Serializable" include nil nil [594 622])
+            ("DragGestureEvent" type
+               (:typemodifiers ("public")
+                :superclasses "EventObject"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1137 1203])
+                    ("DragGestureEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("dgr" variable (:type "DragGestureRecognizer") (reparse-symbol formal_parameters) [1934 1959])
+                            ("act" variable (:type "int") (reparse-symbol formal_parameters) [1961 1968])
+                            ("ori" variable (:type "Point") (reparse-symbol formal_parameters) [1970 1979]))                          )
+                        (reparse-symbol class_member_declaration) [1910 2671])
+                    ("getSourceAsDragGestureRecognizer" function
+                       (:typemodifiers ("public")
+                        :type "DragGestureRecognizer")
+                        (reparse-symbol class_member_declaration) [2838 2953])
+                    ("getComponent" function
+                       (:typemodifiers ("public")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [3118 3171])
+                    ("getDragSource" function
+                       (:typemodifiers ("public")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [3292 3348])
+                    ("getDragOrigin" function
+                       (:typemodifiers ("public")
+                        :type "Point")
+                        (reparse-symbol class_member_declaration) [3578 3630])
+                    ("iterator" function (:constructor-flag t) (reparse-symbol class_member_declaration) [3843 3883])
+                    ("toArray" function
+                       (:typemodifiers ("public")
+                        :type "Object[]")
+                        (reparse-symbol class_member_declaration) [4073 4127])
+                    ("toArray" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("array" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [4393 4407]))                          
+                        :type "Object[]")
+                        (reparse-symbol class_member_declaration) [4369 4442])
+                    ("getDragAction" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4612 4657])
+                    ("getTriggerEvent" function
+                       (:typemodifiers ("public")
+                        :type "InputEvent")
+                        (reparse-symbol class_member_declaration) [4828 4933])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [6093 6110])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [6112 6137]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6071 6257])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [6904 6921])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [6923 6948])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [6950 6972]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6882 7077])
+                    ("startDrag" function
+                       (:throws ("InvalidDnDOperationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [7903 7920])
+                            ("dragImage" variable (:type "Image") (reparse-symbol formal_parameters) [7922 7937])
+                            ("imageOffset" variable (:type "Point") (reparse-symbol formal_parameters) [7939 7956])
+                            ("transferable" variable (:type "Transferable") (reparse-symbol formal_parameters) [7958 7983])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [7985 8007]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7881 8137])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [8837 8857]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8812 8991])
+                    ("readObject" function
+                       (:throws ("ClassNotFoundException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [9783 9802]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9759 10573])
+                    ("events" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "List")
+                        (reparse-symbol class_member_declaration) [10609 10639])
+                    ("dragSource" variable
+                       (:typemodifiers ("private")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [10744 10774])
+                    ("component" variable
+                       (:typemodifiers ("private")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [10878 10907])
+                    ("origin" variable
+                       (:typemodifiers ("private")
+                        :type "Point")
+                        (reparse-symbol class_member_declaration) [10982 11008])
+                    ("action" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11088 11114]))                  
+                :type "class")
+                nil [1080 11116]))          
+    :file "DragGestureEvent.java"
+    :pointmax 11117
+    :fsize 11116
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((GT 3841 . 3842) (PUBLIC 3815 . 3821) (LT 3830 . 3831) (GT 2013 . 2014) (EXTENDS 1995 . 2002) (QUESTION 1993 . 1994) (IDENTIFIER 1988 . 1992) (LT 1992 . 1993))
+    )
+   (semanticdb-table "DragGestureListener.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [188 209])
+            ("java.util.EventListener" include nil nil [211 242])
+            ("DragGestureListener" type
+               (:typemodifiers ("public")
+                :interfaces ("EventListener")
+                :members 
+                  ( ("dragGestureRecognized" function
+                       (:arguments 
+                          ( ("dge" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [1100 1120]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1073 1122]))                  
+                :type "interface")
+                nil [663 1124]))          
+    :file "DragGestureListener.java"
+    :pointmax 1125
+    :fsize 1124
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "InvalidDnDOperationException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [195 216])
+            ("InvalidDnDOperationException" type
+               (:typemodifiers ("public")
+                :superclasses "IllegalStateException"
+                :members 
+                  ( ("dft_msg" variable
+                       (:typemodifiers ("static" "private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [636 773])
+                    ("InvalidDnDOperationException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [830 887])
+                    ("InvalidDnDOperationException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [1054 1064]))                          )
+                        (reparse-symbol class_member_declaration) [1018 1081]))                  
+                :type "class")
+                nil [553 1084]))          
+    :file "InvalidDnDOperationException.java"
+    :pointmax 1088
+    :fsize 1087
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DragSourceContext.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [184 205])
+            ("java.awt.event.InputEvent" include nil nil [207 240])
+            ("java.awt.Component" include nil nil [241 267])
+            ("java.awt.Cursor" include nil nil [268 291])
+            ("java.awt.Image" include nil nil [292 314])
+            ("java.awt.Point" include nil nil [315 337])
+            ("java.awt.datatransfer.DataFlavor" include nil nil [339 379])
+            ("java.awt.datatransfer.Transferable" include nil nil [380 422])
+            ("java.awt.datatransfer.UnsupportedFlavorException" include nil nil [423 479])
+            ("java.awt.dnd.DragGestureEvent" include nil nil [481 518])
+            ("java.awt.dnd.DragSource" include nil nil [519 550])
+            ("java.awt.dnd.DragSourceListener" include nil nil [551 590])
+            ("java.awt.dnd.InvalidDnDOperationException" include nil nil [591 640])
+            ("java.awt.dnd.peer.DragSourceContextPeer" include nil nil [642 689])
+            ("java.io.IOException" include nil nil [691 718])
+            ("java.io.ObjectOutputStream" include nil nil [719 753])
+            ("java.io.ObjectInputStream" include nil nil [754 787])
+            ("java.io.Serializable" include nil nil [788 816])
+            ("java.util.TooManyListenersException" include nil nil [818 861])
+            ("DragSourceContext" type
+               (:typemodifiers ("public")
+                :interfaces ("DragSourceListener" "DragSourceMotionListener" "Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2042 2108])
+                    ("DEFAULT" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2338 2377])
+                    ("ENTER" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2551 2590])
+                    ("OVER" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2760 2799])
+                    ("CHANGED" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2936 2975])
+                    ("DragSourceContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("dscp" variable (:type "DragSourceContextPeer") (reparse-symbol formal_parameters) [5851 5877])
+                            ("trigger" variable (:type "DragGestureEvent") (reparse-symbol formal_parameters) [5909 5933])
+                            ("dragCursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [5935 5952])
+                            ("dragImage" variable (:type "Image") (reparse-symbol formal_parameters) [5984 5999])
+                            ("offset" variable (:type "Point") (reparse-symbol formal_parameters) [6001 6013])
+                            ("t" variable (:type "Transferable") (reparse-symbol formal_parameters) [6015 6029])
+                            ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [6060 6082]))                          )
+                        (reparse-symbol class_member_declaration) [5826 7472])
+                    ("getDragSource" function
+                       (:typemodifiers ("public")
+                        :type "DragSource")
+                        (reparse-symbol class_member_declaration) [7716 7787])
+                    ("getComponent" function
+                       (:typemodifiers ("public")
+                        :type "Component")
+                        (reparse-symbol class_member_declaration) [7985 8054])
+                    ("getTrigger" function
+                       (:typemodifiers ("public")
+                        :type "DragGestureEvent")
+                        (reparse-symbol class_member_declaration) [8225 8281])
+                    ("getSourceActions" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8589 8657])
+                    ("setCursor" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("c" variable (:type "Cursor") (reparse-symbol formal_parameters) [9134 9142]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9099 9216])
+                    ("getCursor" function
+                       (:typemodifiers ("public")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [9356 9400])
+                    ("addDragSourceListener" function
+                       (:throws ("TooManyListenersException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [10034 10056]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9987 10323])
+                    ("removeDragSourceListener" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("dsl" variable (:type "DragSourceListener") (reparse-symbol formal_parameters) [10691 10713]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10641 10844])
+                    ("transferablesFlavorsChanged" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10975 11079])
+                    ("dragEnter" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [11455 11479]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11433 11724])
+                    ("dragOver" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [12098 12122]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12077 12364])
+                    ("dragExit" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dse" variable (:type "DragSourceEvent") (reparse-symbol formal_parameters) [12729 12748]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12708 12998])
+                    ("dropActionChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [13390 13414]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13360 13677])
+                    ("dragDropEnd" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsde" variable (:type "DragSourceDropEvent") (reparse-symbol formal_parameters) [14057 14081]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14033 14255])
+                    ("dragMouseMoved" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [14661 14685]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14634 14747])
+                    ("getTransferable" function
+                       (:typemodifiers ("public")
+                        :type "Transferable")
+                        (reparse-symbol class_member_declaration) [14927 14989])
+                    ("updateCurrentCursor" function
+                       (:typemodifiers ("protected" "synchronized")
+                        :arguments 
+                          ( ("sourceAct" variable (:type "int") (reparse-symbol formal_parameters) [15591 15604])
+                            ("targetAct" variable (:type "int") (reparse-symbol formal_parameters) [15606 15619])
+                            ("status" variable (:type "int") (reparse-symbol formal_parameters) [15621 15631]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15543 16687])
+                    ("setCursorImpl" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("c" variable (:type "Cursor") (reparse-symbol formal_parameters) [16720 16728]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16693 16876])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [17906 17926]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17881 18193])
+                    ("readObject" function
+                       (:throws ("ClassNotFoundException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [18808 18827]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18784 19913])
+                    ("emptyTransferable" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Transferable")
+                        (reparse-symbol class_member_declaration) [19919 19965])
+                    ("peer" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "DragSourceContextPeer")
+                        (reparse-symbol class_member_declaration) [20001 20046])
+                    ("trigger" variable
+                       (:typemodifiers ("private")
+                        :type "DragGestureEvent")
+                        (reparse-symbol class_member_declaration) [20146 20182])
+                    ("cursor" variable
+                       (:typemodifiers ("private")
+                        :type "Cursor")
+                        (reparse-symbol class_member_declaration) [20258 20293])
+                    ("transferable" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "Transferable")
+                        (reparse-symbol class_member_declaration) [20299 20348])
+                    ("listener" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "DragSourceListener")
+                        (reparse-symbol class_member_declaration) [20354 20403])
+                    ("useCustomCursor" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [20541 20573])
+                    ("sourceActions" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [20829 20861]))                  
+                :type "class")
+                nil [1929 20863]))          
+    :file "DragSourceContext.java"
+    :pointmax 20864
+    :fsize 20863
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DragSourceListener.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.dnd" package nil nil [185 206])
+            ("java.util.EventListener" include nil nil [208 239])
+            ("DragSourceListener" type
+               (:typemodifiers ("public")
+                :interfaces ("EventListener")
+                :members 
+                  ( ("dragEnter" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [1407 1431]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1392 1433])
+                    ("dragOver" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [1965 1989]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1951 1991])
+                    ("dropActionChanged" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDragEvent") (reparse-symbol formal_parameters) [2393 2417]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2370 2419])
+                    ("dragExit" function
+                       (:arguments 
+                          ( ("dse" variable (:type "DragSourceEvent") (reparse-symbol formal_parameters) [3123 3142]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3109 3144])
+                    ("dragDropEnd" function
+                       (:arguments 
+                          ( ("dsde" variable (:type "DragSourceDropEvent") (reparse-symbol formal_parameters) [3724 3748]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3707 3750]))                  
+                :type "interface")
+                nil [891 3752]))          
+    :file "DragSourceListener.java"
+    :pointmax 3759
+    :fsize 3758
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!dnd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

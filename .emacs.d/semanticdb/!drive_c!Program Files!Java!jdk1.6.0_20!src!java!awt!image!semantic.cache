@@ -1,0 +1,732 @@
+;; Object image/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "image/"
+  :tables (list 
+   (semanticdb-table "ColorModel.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.image" package nil nil [177 200])
+            ("java.awt.Transparency" include nil nil [202 231])
+            ("java.awt.color.ColorSpace" include nil nil [232 265])
+            ("java.awt.color.ICC_ColorSpace" include nil nil [266 303])
+            ("sun.awt.color.ICC_Transform" include nil nil [304 339])
+            ("sun.awt.color.CMM" include nil nil [340 365])
+            ("java.awt.Toolkit" include nil nil [366 390])
+            ("java.util.Collections" include nil nil [391 420])
+            ("java.util.Map" include nil nil [421 442])
+            ("java.util.WeakHashMap" include nil nil [443 472])
+            ("ColorModel" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("Transparency")
+                :members 
+                  ( ("pData" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [7183 7202])
+                    ("pixel_bits" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7316 7341])
+                    ("nBits" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7346 7358])
+                    ("transparency" variable (:type "int") (reparse-symbol class_member_declaration) [7363 7407])
+                    ("supportsAlpha" variable (:type "boolean") (reparse-symbol class_member_declaration) [7412 7441])
+                    ("isAlphaPremultiplied" variable (:type "boolean") (reparse-symbol class_member_declaration) [7446 7483])
+                    ("numComponents" variable (:type "int") (reparse-symbol class_member_declaration) [7488 7511])
+                    ("numColorComponents" variable (:type "int") (reparse-symbol class_member_declaration) [7516 7544])
+                    ("colorSpace" variable (:type "ColorSpace") (reparse-symbol class_member_declaration) [7549 7616])
+                    ("colorSpaceType" variable (:type "int") (reparse-symbol class_member_declaration) [7621 7662])
+                    ("maxBits" variable (:type "int") (reparse-symbol class_member_declaration) [7667 7679])
+                    ("is_sRGB" variable (:type "boolean") (reparse-symbol class_member_declaration) [7684 7707])
+                    ("transferType" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7791 7818])
+                    ("loaded" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9038 9076])
+                    ("loadLibraries" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9081 9260])
+                    ("initIDs" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9265 9302])
+                    ("RGBdefault" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ColorModel")
+                        (reparse-symbol class_member_declaration) [9414 9451])
+                    ("getRGBdefault" function
+                       (:typemodifiers ("public" "static")
+                        :type "ColorModel")
+                        (reparse-symbol class_member_declaration) [10371 10650])
+                    ("ColorModel" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("bits" variable (:type "int") (reparse-symbol formal_parameters) [11827 11835]))                          )
+                        (reparse-symbol class_member_declaration) [11809 12182])
+                    ("ColorModel" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("pixel_bits" variable (:type "int") (reparse-symbol formal_parameters) [14906 14920])
+                            ("bits" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [14922 14932])
+                            ("cspace" variable (:type "ColorSpace") (reparse-symbol formal_parameters) [14934 14951])
+                            ("hasAlpha" variable (:type "boolean") (reparse-symbol formal_parameters) [14978 14994])
+                            ("isAlphaPremultiplied" variable (:type "boolean") (reparse-symbol formal_parameters) [15021 15049])
+                            ("transparency" variable (:type "int") (reparse-symbol formal_parameters) [15076 15092])
+                            ("transferType" variable (:type "int") (reparse-symbol formal_parameters) [15119 15135]))                          )
+                        (reparse-symbol class_member_declaration) [14885 17596])
+                    ("hasAlpha" function
+                       (:typemodifiers ("final" "public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [17833 17902])
+                    ("isAlphaPremultiplied" function
+                       (:typemodifiers ("final" "public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [18554 18642])
+                    ("getTransferType" function
+                       (:typemodifiers ("final" "public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [18887 18958])
+                    ("getPixelSize" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [19124 19177])
+                    ("getComponentSize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("componentIdx" variable (:type "int") (reparse-symbol formal_parameters) [20154 20170]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [20126 20359])
+                    ("getComponentSize" function
+                       (:typemodifiers ("public")
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [20693 20835])
+                    ("getTransparency" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [21113 21178])
+                    ("getNumComponents" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [21480 21547])
+                    ("getNumColorComponents" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [21881 21958])
+                    ("getRed" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("pixel" variable (:type "int") (reparse-symbol formal_parameters) [22725 22734]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [22698 22736])
+                    ("getGreen" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("pixel" variable (:type "int") (reparse-symbol formal_parameters) [23513 23522]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [23484 23524])
+                    ("getBlue" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("pixel" variable (:type "int") (reparse-symbol formal_parameters) [24296 24305]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [24268 24307])
+                    ("getAlpha" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("pixel" variable (:type "int") (reparse-symbol formal_parameters) [24770 24779]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [24741 24781])
+                    ("getRGB" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pixel" variable (:type "int") (reparse-symbol formal_parameters) [25572 25581]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [25554 25711])
+                    ("getRed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inData" variable (:type "Object") (reparse-symbol formal_parameters) [27717 27730]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [27699 28744])
+                    ("getGreen" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inData" variable (:type "Object") (reparse-symbol formal_parameters) [30808 30821]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [30788 31837])
+                    ("getBlue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inData" variable (:type "Object") (reparse-symbol formal_parameters) [33863 33876]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [33844 34891])
+                    ("getAlpha" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inData" variable (:type "Object") (reparse-symbol formal_parameters) [36580 36593]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [36560 37609])
+                    ("getRGB" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inData" variable (:type "Object") (reparse-symbol formal_parameters) [38599 38612]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38581 38774])
+                    ("getDataElements" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("rgb" variable (:type "int") (reparse-symbol formal_parameters) [40748 40755])
+                            ("pixel" variable (:type "Object") (reparse-symbol formal_parameters) [40757 40769]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [40718 40893])
+                    ("getComponents" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pixel" variable (:type "int") (reparse-symbol formal_parameters) [42896 42905])
+                            ("components" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [42907 42923])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [42925 42935]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [42869 43059])
+                    ("getComponents" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pixel" variable (:type "Object") (reparse-symbol formal_parameters) [45341 45353])
+                            ("components" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [45355 45371])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [45373 45383]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [45314 45507])
+                    ("getUnnormalizedComponents" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("normComponents" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [48247 48269])
+                            ("normOffset" variable (:type "int") (reparse-symbol formal_parameters) [48314 48328])
+                            ("components" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [48373 48389])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [48391 48401]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [48208 50178])
+                    ("getNormalizedComponents" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("components" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [53244 53260])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [53262 53272])
+                            ("normComponents" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [53317 53339])
+                            ("normOffset" variable (:type "int") (reparse-symbol formal_parameters) [53384 53398]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [53205 55442])
+                    ("getDataElement" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("components" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [57480 57496])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [57498 57508]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [57454 57659])
+                    ("getDataElements" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("components" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [60343 60359])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [60361 60371])
+                            ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [60373 60383]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [60313 60543])
+                    ("getDataElement" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("normComponents" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [62371 62393])
+                            ("normOffset" variable (:type "int") (reparse-symbol formal_parameters) [62395 62409]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [62345 62608])
+                    ("getDataElements" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("normComponents" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [64995 65017])
+                            ("normOffset" variable (:type "int") (reparse-symbol formal_parameters) [65019 65033])
+                            ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [65069 65079]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [64965 65284])
+                    ("getNormalizedComponents" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pixel" variable (:type "Object") (reparse-symbol formal_parameters) [68487 68499])
+                            ("normComponents" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [68544 68566])
+                            ("normOffset" variable (:type "int") (reparse-symbol formal_parameters) [68611 68625]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [68448 68814])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [69271 69281]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [69249 70145])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [70275 70723])
+                    ("getColorSpace" function
+                       (:typemodifiers ("final" "public")
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [70929 71003])
+                    ("coerceData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("raster" variable (:type "WritableRaster") (reparse-symbol formal_parameters) [72252 72273])
+                            ("isAlphaPremultiplied" variable (:type "boolean") (reparse-symbol formal_parameters) [72309 72337]))                          
+                        :type "ColorModel")
+                        (reparse-symbol class_member_declaration) [72222 72460])
+                    ("isCompatibleRaster" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("raster" variable (:type "Raster") (reparse-symbol formal_parameters) [73268 73281]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [73234 73406])
+                    ("createCompatibleWritableRaster" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("w" variable (:type "int") (reparse-symbol formal_parameters) [74351 74356])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [74358 74363]))                          
+                        :type "WritableRaster")
+                        (reparse-symbol class_member_declaration) [74298 74479])
+                    ("createCompatibleSampleModel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("w" variable (:type "int") (reparse-symbol formal_parameters) [75357 75362])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [75364 75369]))                          
+                        :type "SampleModel")
+                        (reparse-symbol class_member_declaration) [75310 75485])
+                    ("isCompatibleSampleModel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sm" variable (:type "SampleModel") (reparse-symbol formal_parameters) [76271 76285]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [76232 76401])
+                    ("finalize" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [76582 76612])
+                    ("getAlphaRaster" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("raster" variable (:type "WritableRaster") (reparse-symbol formal_parameters) [78132 78153]))                          
+                        :type "WritableRaster")
+                        (reparse-symbol class_member_declaration) [78095 78183])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [78431 78853])
+                    ("getDefaultTransferType" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("pixel_bits" variable (:type "int") (reparse-symbol formal_parameters) [78893 78907]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [78859 79222])
+                    ("l8Tos8" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [79228 79256])
+                    ("s8Tol8" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [79308 79336])
+                    ("l16Tos8" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [79388 79417])
+                    ("s8Tol16" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [79469 79499])
+                    ("g8Tos8Map" variable
+                       (:typemodifiers ("static")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [79630 79658])
+                    ("lg16Toog8Map" variable
+                       (:typemodifiers ("static")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [79709 79740])
+                    ("g16Tos8Map" variable
+                       (:typemodifiers ("static")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [79785 79814])
+                    ("lg16Toog16Map" variable
+                       (:typemodifiers ("static")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [79865 79897])
+                    ("isLinearRGBspace" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("cs" variable (:type "ColorSpace") (reparse-symbol formal_parameters) [79975 79988]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [79943 80174])
+                    ("isLinearGRAYspace" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("cs" variable (:type "ColorSpace") (reparse-symbol formal_parameters) [80213 80226]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [80180 80401])
+                    ("getLinearRGB8TosRGB8LUT" function
+                       (:typemodifiers ("static")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [80407 81298])
+                    ("getsRGB8ToLinearRGB8LUT" function
+                       (:typemodifiers ("static")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [81304 81927])
+                    ("getLinearRGB16TosRGB8LUT" function
+                       (:typemodifiers ("static")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [81933 82606])
+                    ("getsRGB8ToLinearRGB16LUT" function
+                       (:typemodifiers ("static")
+                        :type "short[]")
+                        (reparse-symbol class_member_declaration) [82612 83245])
+                    ("getGray8TosRGB8LUT" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("grayCS" variable (:type "ICC_ColorSpace") (reparse-symbol formal_parameters) [83636 83657]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [83603 85236])
+                    ("getLinearGray16ToOtherGray8LUT" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("grayCS" variable (:type "ICC_ColorSpace") (reparse-symbol formal_parameters) [85517 85538]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [85472 86862])
+                    ("getGray16TosRGB8LUT" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("grayCS" variable (:type "ICC_ColorSpace") (reparse-symbol formal_parameters) [87255 87276]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [87221 89042])
+                    ("getLinearGray16ToOtherGray16LUT" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("grayCS" variable (:type "ICC_ColorSpace") (reparse-symbol formal_parameters) [89327 89348]))                          
+                        :type "short[]")
+                        (reparse-symbol class_member_declaration) [89280 90419]))                  
+                :type "class")
+                nil [7121 90422]))          
+    :file "ColorModel.java"
+    :pointmax 90423
+    :fsize 90422
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ImageObserver.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.image" package nil nil [180 203])
+            ("java.awt.Image" include nil nil [205 227])
+            ("ImageObserver" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("imageUpdate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("img" variable (:type "Image") (reparse-symbol formal_parameters) [2921 2930])
+                            ("infoflags" variable (:type "int") (reparse-symbol formal_parameters) [2932 2945])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [2957 2962])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [2964 2969])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [2971 2980])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [2982 2992]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2894 2994])
+                    ("WIDTH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [3278 3312])
+                    ("HEIGHT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [3599 3634])
+                    ("PROPERTIES" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [3839 3878])
+                    ("SOMEBITS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [4273 4310])
+                    ("FRAMEBITS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [4694 4733])
+                    ("ALLBITS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [5108 5145])
+                    ("ERROR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [5573 5608])
+                    ("ABORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [6140 6176]))                  
+                :type "interface")
+                nil [410 6178]))          
+    :file "ImageObserver.java"
+    :pointmax 6179
+    :fsize 6178
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ImageProducer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.image" package nil nil [180 203])
+            ("ImageProducer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("addConsumer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [1255 1271]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1231 1273])
+                    ("isConsumer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [1753 1769]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [1727 1771])
+                    ("removeConsumer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [2231 2247]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2204 2249])
+                    ("startProduction" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [2820 2836]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2792 2838])
+                    ("requestTopDownLeftRightResend" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3822 3838]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3780 3840]))                  
+                :type "interface")
+                nil [589 3842]))          
+    :file "ImageProducer.java"
+    :pointmax 3843
+    :fsize 3842
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ImageFilter.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.image" package nil nil [178 201])
+            ("java.util.Hashtable" include nil nil [203 230])
+            ("ImageFilter" type
+               (:typemodifiers ("public")
+                :interfaces ("ImageConsumer" "Cloneable")
+                :members 
+                  ( ("consumer" variable
+                       (:typemodifiers ("protected")
+                        :type "ImageConsumer")
+                        (reparse-symbol class_member_declaration) [1405 1438])
+                    ("getFilterInstance" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [2214 2230]))                          
+                        :type "ImageFilter")
+                        (reparse-symbol class_member_declaration) [2177 2329])
+                    ("setDimensions" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("width" variable (:type "int") (reparse-symbol formal_parameters) [2857 2866])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [2868 2878]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2831 2927])
+                    ("setProperties" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3563 3886])
+                    ("setColorModel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("model" variable (:type "ColorModel") (reparse-symbol formal_parameters) [4413 4429]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4387 4470])
+                    ("setHints" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hints" variable (:type "int") (reparse-symbol formal_parameters) [4983 4992]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4962 5028])
+                    ("setPixels" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [5574 5579])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [5581 5586])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [5588 5593])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [5595 5600])
+                            ("model" variable (:type "ColorModel") (reparse-symbol formal_parameters) [5607 5623])
+                            ("pixels" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [5625 5638])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [5640 5647])
+                            ("scansize" variable (:type "int") (reparse-symbol formal_parameters) [5654 5666]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5552 5738])
+                    ("setPixels" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [6287 6292])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [6294 6299])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [6301 6306])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [6308 6313])
+                            ("model" variable (:type "ColorModel") (reparse-symbol formal_parameters) [6320 6336])
+                            ("pixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [6338 6350])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [6352 6359])
+                            ("scansize" variable (:type "int") (reparse-symbol formal_parameters) [6366 6378]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6265 6450])
+                    ("imageComplete" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("status" variable (:type "int") (reparse-symbol formal_parameters) [6978 6988]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6952 7030])
+                    ("resendTopDownLeftRight" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ip" variable (:type "ImageProducer") (reparse-symbol formal_parameters) [8890 8906]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8855 8956])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [9009 9206]))                  
+                :type "class")
+                nil [901 9208]))          
+    :file "ImageFilter.java"
+    :pointmax 9209
+    :fsize 9208
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((GT 3602 . 3603) (QUESTION 3601 . 3602) (COMMA 3600 . 3601) (QUESTION 3599 . 3600) (IDENTIFIER 3589 . 3598) (LT 3598 . 3599))
+    )
+   (semanticdb-table "FilteredImageSource.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.image" package nil nil [186 209])
+            ("java.awt.Image" include nil nil [211 233])
+            ("java.awt.image.ImageFilter" include nil nil [234 268])
+            ("java.awt.image.ImageConsumer" include nil nil [269 305])
+            ("java.awt.image.ImageProducer" include nil nil [306 342])
+            ("java.util.Hashtable" include nil nil [343 370])
+            ("java.awt.image.ColorModel" include nil nil [371 404])
+            ("FilteredImageSource" type
+               (:typemodifiers ("public")
+                :interfaces ("ImageProducer")
+                :members 
+                  ( ("src" variable (:type "ImageProducer") (reparse-symbol class_member_declaration) [1082 1100])
+                    ("filter" variable (:type "ImageFilter") (reparse-symbol class_member_declaration) [1105 1124])
+                    ("FilteredImageSource" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("orig" variable (:type "ImageProducer") (reparse-symbol formal_parameters) [1459 1477])
+                            ("imgf" variable (:type "ImageFilter") (reparse-symbol formal_parameters) [1479 1495]))                          )
+                        (reparse-symbol class_member_declaration) [1432 1533])
+                    ("proxies" variable
+                       (:typemodifiers ("private")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [1539 1565])
+                    ("addConsumer" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [2487 2503]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2450 2717])
+                    ("isConsumer" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3326 3342]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3287 3405])
+                    ("removeConsumer" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3861 3877]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3821 4103])
+                    ("startProduction" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [5056 5072]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5028 5313])
+                    ("requestTopDownLeftRightResend" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ic" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [5947 5963]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5905 6122]))                  
+                :type "class")
+                nil [1018 6124]))          
+    :file "FilteredImageSource.java"
+    :pointmax 6125
+    :fsize 6124
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!image!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

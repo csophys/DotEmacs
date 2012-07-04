@@ -1,0 +1,138 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "AccessRowLockBeanReadCommittedTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.rowlock.test" package nil nil [1 26])
+            ("java.sql.Connection" include nil nil [160 187])
+            ("java.util.Arrays" include nil nil [189 213])
+            ("java.util.Collection" include nil nil [215 243])
+            ("java.util.Date" include nil nil [245 267])
+            ("javax.naming.InitialContext" include nil nil [271 306])
+            ("javax.sql.DataSource" include nil nil [308 336])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [340 386])
+            ("jpa.common.util.CommonUtils" include nil nil [388 423])
+            ("jpa.common.util.DatabaseUtilClient" include nil nil [425 467])
+            ("jpa.common.util.MethodName" include nil nil [469 503])
+            ("jpa.common.util.ThreadRunnerSingle" include nil nil [505 547])
+            ("oracle.toplink.essentials.config.PessimisticLock" include nil nil [549 605])
+            ("org.junit.After" include nil nil [609 632])
+            ("org.junit.AfterClass" include nil nil [634 662])
+            ("org.junit.Before" include nil nil [664 688])
+            ("org.junit.BeforeClass" include nil nil [690 719])
+            ("org.junit.Test" include nil nil [721 743])
+            ("org.junit.runner.RunWith" include nil nil [745 777])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [779 829])
+            ("AccessRowLockBeanReadCommittedTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("notused" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [924 953])
+                    ("forupdate" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [956 987])
+                    ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1041 2038])
+                    ("AccessRowLockBeanReadCommittedTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [2085 2091])
+                            ("queryType" variable (:type "String") (reparse-symbol formal_parameters) [2093 2109])
+                            ("data" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [2111 2129])
+                            ("lockBySql" variable (:type "int") (reparse-symbol formal_parameters) [2135 2148])
+                            ("lockType" variable (:type "String") (reparse-symbol formal_parameters) [2150 2165])
+                            ("expResult" variable (:type "String") (reparse-symbol formal_parameters) [2167 2183]))                          )
+                        (reparse-symbol class_member_declaration) [2043 2383])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [2388 2395])
+                    ("name" variable (:type "String") (reparse-symbol class_member_declaration) [2398 2410])
+                    ("queryType" variable (:type "String") (reparse-symbol class_member_declaration) [2413 2430])
+                    ("data" variable (:type "RowLockEntity") (reparse-symbol class_member_declaration) [2433 2452])
+                    ("lockBySql" variable (:type "int") (reparse-symbol class_member_declaration) [2455 2469])
+                    ("lockType" variable (:type "String") (reparse-symbol class_member_declaration) [2472 2488])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [2491 2508])
+                    ("bean" variable
+                       (:typemodifiers ("static")
+                        :type "AccessRowLock")
+                        (reparse-symbol class_member_declaration) [2513 2539])
+                    ("appName" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2542 2581])
+                    ("beforewClass" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2601 2849])
+                    ("afterClass" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2868 3283])
+                    ("setUp" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3299 3387])
+                    ("setDown" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3402 3483])
+                    ("testRowLock" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3496 3933])
+                    ("retrieveWithOptimisticNoLock" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3938 4483])
+                    ("retrieveWithOptimisticNoLockByFind" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4489 5004])
+                    ("retrieveWithPessimisticLock" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5009 6251])
+                    ("retrieveWithPessimisticNoLock" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6256 7592])
+                    ("sleep" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sleep" variable (:type "int") (reparse-symbol formal_parameters) [7616 7625]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7598 7809])
+                    ("checkResults" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [7840 7855]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7814 7976])
+                    ("lookIsolationLevel" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("dsString" variable (:type "String") (reparse-symbol formal_parameters) [8020 8035]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7981 8785])
+                    ("lookupBean" function
+                       (:typemodifiers ("private" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8790 9021]))                  
+                :type "class")
+                nil [870 9024]))          
+    :file "AccessRowLockBeanReadCommittedTest.java"
+    :pointmax 9024
+    :fsize 9025
+    :lastmodtime '(20466 10010)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!!193.168.251.37!ct_set!JPA!src!jpa!rowlock!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
