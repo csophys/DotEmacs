@@ -84,6 +84,7 @@
 ;;;;yasnippet
 (el-get-init "yasnippet")
 (yas/initialize)
+(add-to-list 'yas/snippet-dirs "~/.emacs.d/snippets")
 (setq yas/prompt-functions '(yas/dropdown-prompt))
 (define-key org-mode-map (kbd "<tab>") 'yas/expand)
 ;------------------------------------------------------------------------------

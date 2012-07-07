@@ -1,0 +1,17 @@
+;; Object Java/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Java/"
+  :tables (list 
+   (semanticdb-table "TestString.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("TestString" type (:type "class") nil [1 26]))          
+    :file "TestString.java"
+    :pointmax 22
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!EmacsDir!Java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
