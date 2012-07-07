@@ -1,0 +1,197 @@
+;; Object applet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "applet/"
+  :tables (list 
+   (semanticdb-table "Applet.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.applet" package nil nil [172 192])
+            ("java.awt.*" include nil nil [194 212])
+            ("java.awt.image.ColorModel" include nil nil [213 246])
+            ("java.io.IOException" include nil nil [247 274])
+            ("java.io.ObjectInputStream" include nil nil [275 308])
+            ("java.net.URL" include nil nil [309 329])
+            ("java.net.MalformedURLException" include nil nil [330 368])
+            ("java.util.Hashtable" include nil nil [369 396])
+            ("java.util.Locale" include nil nil [397 421])
+            ("javax.accessibility.*" include nil nil [422 451])
+            ("Applet" type
+               (:typemodifiers ("public")
+                :superclasses "Panel"
+                :members 
+                  ( ("Applet" function
+                       (:constructor-flag t
+                        :throws ("HeadlessException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1494 1643])
+                    ("stub" variable
+                       (:typemodifiers ("transient" "private")
+                        :type "AppletStub")
+                        (reparse-symbol class_member_declaration) [2038 2072])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2120 2187])
+                    ("readObject" function
+                       (:throws ("ClassNotFoundException" "IOException" "HeadlessException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [2494 2513]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2470 2724])
+                    ("setStub" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("stub" variable (:type "AppletStub") (reparse-symbol formal_parameters) [3164 3179]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3138 3395])
+                    ("isActive" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3824 3991])
+                    ("getDocumentBase" function
+                       (:typemodifiers ("public")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [4568 4636])
+                    ("getCodeBase" function
+                       (:typemodifiers ("public")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [4914 4974])
+                    ("getParameter" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [5645 5656]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5618 5700])
+                    ("getAppletContext" function
+                       (:typemodifiers ("public")
+                        :type "AppletContext")
+                        (reparse-symbol class_member_declaration) [5998 6078])
+                    ("resize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("width" variable (:type "int") (reparse-symbol formal_parameters) [6302 6311])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [6313 6323]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6283 6511])
+                    ("resize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("d" variable (:type "Dimension") (reparse-symbol formal_parameters) [6667 6678]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6648 6715])
+                    ("showStatus" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [7047 7057]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7024 7103])
+                    ("getImage" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [7764 7771]))                          
+                        :type "Image")
+                        (reparse-symbol class_member_declaration) [7742 7822])
+                    ("getImage" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [8688 8695])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [8697 8708]))                          
+                        :type "Image")
+                        (reparse-symbol class_member_declaration) [8666 8824])
+                    ("newAudioClip" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [9067 9074]))                          
+                        :type "AudioClip")
+                        (reparse-symbol class_member_declaration) [9024 9135])
+                    ("getAudioClip" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [9646 9653]))                          
+                        :type "AudioClip")
+                        (reparse-symbol class_member_declaration) [9616 9708])
+                    ("getAudioClip" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [10393 10400])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [10402 10413]))                          
+                        :type "AudioClip")
+                        (reparse-symbol class_member_declaration) [10363 10533])
+                    ("getAppletInfo" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [11019 11070])
+                    ("getLocale" function
+                       (:typemodifiers ("public")
+                        :type "Locale")
+                        (reparse-symbol class_member_declaration) [11398 11558])
+                    ("getParameterInfo" function
+                       (:typemodifiers ("public")
+                        :type "String[][]")
+                        (reparse-symbol class_member_declaration) [12411 12469])
+                    ("play" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [12709 12716]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12692 12804])
+                    ("play" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [13217 13224])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [13226 13237]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13200 13331])
+                    ("init" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14108 14134])
+                    ("start" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15569 15596])
+                    ("stop" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16484 16510])
+                    ("destroy" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17369 17398])
+                    ("accessibleContext" variable (:type "AccessibleContext") (reparse-symbol class_member_declaration) [17448 17491])
+                    ("getAccessibleContext" function
+                       (:typemodifiers ("public")
+                        :type "AccessibleContext")
+                        (reparse-symbol class_member_declaration) [17859 18055])
+                    ("AccessibleApplet" type
+                       (:typemodifiers ("protected")
+                        :superclasses "AccessibleAWTPanel"
+                        :members 
+                          ( ("serialVersionUID" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [18376 18442])
+                            ("getAccessibleRole" function
+                               (:typemodifiers ("public")
+                                :type "AccessibleRole")
+                                (reparse-symbol class_member_declaration) [18621 18715])
+                            ("getAccessibleStateSet" function
+                               (:typemodifiers ("public")
+                                :type "AccessibleStateSet")
+                                (reparse-symbol class_member_declaration) [18944 19151]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [18305 19158]))                  
+                :type "class")
+                nil [969 19160]))          
+    :file "Applet.java"
+    :pointmax 19161
+    :fsize 19160
+    :lastmodtime '(19394 43698)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!applet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

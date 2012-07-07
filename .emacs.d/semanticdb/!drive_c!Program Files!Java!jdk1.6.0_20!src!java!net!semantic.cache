@@ -1,0 +1,955 @@
+;; Object net/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "net/"
+  :tables (list 
+   (semanticdb-table "MalformedURLException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [188 205])
+            ("java.io.IOException" include nil nil [207 234])
+            ("MalformedURLException" type
+               (:typemodifiers ("public")
+                :superclasses "IOException"
+                :members 
+                  ( ("MalformedURLException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [644 682])
+                    ("MalformedURLException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [881 891]))                          )
+                        (reparse-symbol class_member_declaration) [852 913]))                  
+                :type "class")
+                nil [488 915]))          
+    :file "MalformedURLException.java"
+    :pointmax 916
+    :fsize 915
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "URL.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [171 188])
+            ("java.io.IOException" include nil nil [190 217])
+            ("java.io.InputStream" include nil nil [218 245])
+            ("java.io.OutputStream" include nil nil [246 274])
+            ("java.util.Hashtable" include nil nil [275 302])
+            ("java.util.StringTokenizer" include nil nil [303 336])
+            ("sun.security.util.SecurityConstants" include nil nil [337 380])
+            ("URL" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5196 5255])
+                    ("protocolPathProp" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5975 6051])
+                    ("protocol" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6145 6169])
+                    ("host" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6242 6262])
+                    ("port" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6339 6361])
+                    ("file" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6508 6528])
+                    ("query" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6585 6616])
+                    ("authority" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6692 6717])
+                    ("path" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6773 6803])
+                    ("userInfo" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6863 6897])
+                    ("ref" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6954 6973])
+                    ("hostAddress" variable
+                       (:typemodifiers ("transient")
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [7130 7164])
+                    ("handler" variable
+                       (:typemodifiers ("transient")
+                        :type "URLStreamHandler")
+                        (reparse-symbol class_member_declaration) [7228 7263])
+                    ("hashCode" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7314 7340])
+                    ("URL" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [11384 11399])
+                            ("host" variable (:type "String") (reparse-symbol formal_parameters) [11401 11412])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [11414 11422])
+                            ("file" variable (:type "String") (reparse-symbol formal_parameters) [11424 11435]))                          )
+                        (reparse-symbol class_member_declaration) [11373 11519])
+                    ("URL" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [12378 12393])
+                            ("host" variable (:type "String") (reparse-symbol formal_parameters) [12395 12406])
+                            ("file" variable (:type "String") (reparse-symbol formal_parameters) [12408 12419]))                          )
+                        (reparse-symbol class_member_declaration) [12367 12495])
+                    ("URL" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [14487 14502])
+                            ("host" variable (:type "String") (reparse-symbol formal_parameters) [14504 14515])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [14517 14525])
+                            ("file" variable (:type "String") (reparse-symbol formal_parameters) [14527 14538])
+                            ("handler" variable (:type "URLStreamHandler") (reparse-symbol formal_parameters) [14548 14572]))                          )
+                        (reparse-symbol class_member_declaration) [14476 16100])
+                    ("URL" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("spec" variable (:type "String") (reparse-symbol formal_parameters) [16617 16628]))                          )
+                        (reparse-symbol class_member_declaration) [16606 16685])
+                    ("URL" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable (:type "URL") (reparse-symbol formal_parameters) [19188 19199])
+                            ("spec" variable (:type "String") (reparse-symbol formal_parameters) [19201 19212]))                          )
+                        (reparse-symbol class_member_declaration) [19177 19278])
+                    ("URL" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable (:type "URL") (reparse-symbol formal_parameters) [20298 20309])
+                            ("spec" variable (:type "String") (reparse-symbol formal_parameters) [20311 20322])
+                            ("handler" variable (:type "URLStreamHandler") (reparse-symbol formal_parameters) [20324 20348]))                          )
+                        (reparse-symbol class_member_declaration) [20287 23587])
+                    ("isValidProtocol" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [23706 23721]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23674 24088])
+                    ("checkSpecifyHandler" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("sm" variable (:type "SecurityManager") (reparse-symbol formal_parameters) [24200 24218]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24167 24294])
+                    ("set" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [24736 24751])
+                            ("host" variable (:type "String") (reparse-symbol formal_parameters) [24753 24764])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [24775 24783])
+                            ("file" variable (:type "String") (reparse-symbol formal_parameters) [24785 24796])
+                            ("ref" variable (:type "String") (reparse-symbol formal_parameters) [24798 24808]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24717 25385])
+                    ("set" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [26008 26023])
+                            ("host" variable (:type "String") (reparse-symbol formal_parameters) [26025 26036])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [26038 26046])
+                            ("authority" variable (:type "String") (reparse-symbol formal_parameters) [26071 26087])
+                            ("userInfo" variable (:type "String") (reparse-symbol formal_parameters) [26089 26104])
+                            ("path" variable (:type "String") (reparse-symbol formal_parameters) [26106 26117])
+                            ("query" variable (:type "String") (reparse-symbol formal_parameters) [26142 26154])
+                            ("ref" variable (:type "String") (reparse-symbol formal_parameters) [26156 26166]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25989 26649])
+                    ("getQuery" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [26857 26904])
+                    ("getPath" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [27107 27152])
+                    ("getUserInfo" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [27366 27419])
+                    ("getAuthority" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [27583 27638])
+                    ("getPort" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [27783 27825])
+                    ("getDefaultPort" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [28128 28197])
+                    ("getProtocol" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [28337 28390])
+                    ("getHost" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [28743 28788])
+                    ("getFile" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [29251 29296])
+                    ("getRef" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [29557 29600])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [30698 30708]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [30676 30840])
+                    ("hashCode" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [31141 31295])
+                    ("sameFile" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("other" variable (:type "URL") (reparse-symbol formal_parameters) [31781 31790]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [31757 31845])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [32304 32362])
+                    ("toExternalForm" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [32821 32897])
+                    ("toURI" function
+                       (:throws ("URISyntaxException")
+                        :typemodifiers ("public")
+                        :type "URI")
+                        (reparse-symbol class_member_declaration) [33491 33573])
+                    ("openConnection" function
+                       (:throws ("java.io.IOException")
+                        :typemodifiers ("public")
+                        :type "URLConnection")
+                        (reparse-symbol class_member_declaration) [34691 34801])
+                    ("openConnection" function
+                       (:throws ("java.io.IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("proxy" variable (:type "Proxy") (reparse-symbol formal_parameters) [36251 36262]))                          
+                        :type "URLConnection")
+                        (reparse-symbol class_member_declaration) [36215 36878])
+                    ("openStream" function
+                       (:throws ("java.io.IOException")
+                        :typemodifiers ("public" "final")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [37415 37530])
+                    ("getContent" function
+                       (:throws ("java.io.IOException")
+                        :typemodifiers ("public" "final")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [37882 37988])
+                    ("getContent" function
+                       (:throws ("java.io.IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("classes" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [38615 38630]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [38584 38716])
+                    ("factory" variable
+                       (:typemodifiers ("static")
+                        :type "URLStreamHandlerFactory")
+                        (reparse-symbol class_member_declaration) [38775 38814])
+                    ("setURLStreamHandlerFactory" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("fac" variable (:type "URLStreamHandlerFactory") (reparse-symbol formal_parameters) [39921 39948]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39875 40247])
+                    ("handlers" variable
+                       (:typemodifiers ("static")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [40306 40350])
+                    ("streamHandlerLock" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [40355 40410])
+                    ("getURLStreamHandler" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [40554 40569]))                          
+                        :type "URLStreamHandler")
+                        (reparse-symbol class_member_declaration) [40510 42972])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectOutputStream") (reparse-symbol formal_parameters) [43447 43475]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43409 43560])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectInputStream") (reparse-symbol formal_parameters) [43782 43809]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43745 45081]))                  
+                :type "class")
+                nil [5134 45083])
+            ("Parts" type
+               (:members 
+                  ( ("ref" variable (:type "String") (reparse-symbol class_member_declaration) [45123 45127])
+                    ("query" variable (:type "String") (reparse-symbol class_member_declaration) [45116 45122])
+                    ("path" variable (:type "String") (reparse-symbol class_member_declaration) [45103 45115])
+                    ("Parts" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("file" variable (:type "String") (reparse-symbol formal_parameters) [45143 45154]))                          )
+                        (reparse-symbol class_member_declaration) [45137 45436])
+                    ("getPath" function (:type "String") (reparse-symbol class_member_declaration) [45443 45481])
+                    ("getQuery" function (:type "String") (reparse-symbol class_member_declaration) [45491 45531])
+                    ("getRef" function (:type "String") (reparse-symbol class_member_declaration) [45541 45577]))                  
+                :type "class")
+                nil [45085 45579]))          
+    :file "URL.java"
+    :pointmax 45581
+    :fsize 45580
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "JarURLConnection.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [183 200])
+            ("java.io.IOException" include nil nil [202 229])
+            ("java.util.jar.JarFile" include nil nil [230 259])
+            ("java.util.jar.JarEntry" include nil nil [260 290])
+            ("java.util.jar.Attributes" include nil nil [291 323])
+            ("java.util.jar.Manifest" include nil nil [324 354])
+            ("java.security.Permission" include nil nil [355 387])
+            ("sun.net.www.ParseUtil" include nil nil [388 417])
+            ("JarURLConnection" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "URLConnection"
+                :members 
+                  ( ("jarFileURL" variable
+                       (:typemodifiers ("private")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [3355 3378])
+                    ("entryName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3383 3408])
+                    ("jarFileURLConnection" variable
+                       (:typemodifiers ("protected")
+                        :type "URLConnection")
+                        (reparse-symbol class_member_declaration) [3549 3594])
+                    ("JarURLConnection" function
+                       (:constructor-flag t
+                        :throws ("MalformedURLException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [3884 3891]))                          )
+                        (reparse-symbol class_member_declaration) [3857 3960])
+                    ("parseSpecs" function
+                       (:throws ("MalformedURLException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [4111 4118]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4087 4665])
+                    ("getJarFileURL" function
+                       (:typemodifiers ("public")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [4816 4870])
+                    ("getEntryName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5152 5207])
+                    ("getJarFile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :type "JarFile")
+                        (reparse-symbol class_member_declaration) [5602 5658])
+                    ("getManifest" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Manifest")
+                        (reparse-symbol class_member_declaration) [6007 6099])
+                    ("getJarEntry" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "JarEntry")
+                        (reparse-symbol class_member_declaration) [6646 6747])
+                    ("getAttributes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Attributes")
+                        (reparse-symbol class_member_declaration) [7167 7302])
+                    ("getMainAttributes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Attributes")
+                        (reparse-symbol class_member_declaration) [7658 7808])
+                    ("getCertificates" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "java.security.cert.Certificate[]")
+                        (reparse-symbol class_member_declaration) [8474 8641]))                  
+                :type "class")
+                nil [3287 8643]))          
+    :file "JarURLConnection.java"
+    :pointmax 8650
+    :fsize 8649
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "URLConnection.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [181 198])
+            ("java.io.IOException" include nil nil [200 227])
+            ("java.io.InputStream" include nil nil [228 255])
+            ("java.io.OutputStream" include nil nil [256 284])
+            ("java.util.Hashtable" include nil nil [285 312])
+            ("java.util.Date" include nil nil [313 335])
+            ("java.util.StringTokenizer" include nil nil [336 369])
+            ("java.util.Collections" include nil nil [370 399])
+            ("java.util.Map" include nil nil [400 421])
+            ("java.util.List" include nil nil [422 444])
+            ("java.security.Permission" include nil nil [445 477])
+            ("java.security.AccessController" include nil nil [478 516])
+            ("sun.security.util.SecurityConstants" include nil nil [517 560])
+            ("sun.net.www.MessageHeader" include nil nil [561 594])
+            ("URLConnection" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("url" variable
+                       (:typemodifiers ("protected")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [6879 6897])
+                    ("doInput" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7471 7504])
+                    ("doOutput" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8083 8118])
+                    ("defaultAllowUserInteraction" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8124 8183])
+                    ("allowUserInteraction" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9037 9106])
+                    ("defaultUseCaches" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9112 9159])
+                    ("useCaches" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9842 9889])
+                    ("ifModifiedSince" variable
+                       (:typemodifiers ("protected")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [10687 10722])
+                    ("connected" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10941 10977])
+                    ("connectTimeout" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11017 11044])
+                    ("readTimeout" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11049 11073])
+                    ("requests" variable
+                       (:typemodifiers ("private")
+                        :type "MessageHeader")
+                        (reparse-symbol class_member_declaration) [11113 11144])
+                    ("fileNameMap" variable
+                       (:typemodifiers ("private" "static")
+                        :type "FileNameMap")
+                        (reparse-symbol class_member_declaration) [11186 11225])
+                    ("fileNameMapLoaded" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11267 11316])
+                    ("getFileNameMap" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :type "FileNameMap")
+                        (reparse-symbol class_member_declaration) [11748 12133])
+                    ("setFileNameMap" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("map" variable (:type "FileNameMap") (reparse-symbol formal_parameters) [12763 12778]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12729 12897])
+                    ("connect" function
+                       (:throws ("IOException")
+                        :typemodifiers ("abstract" "public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14080 14130])
+                    ("setConnectTimeout" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("timeout" variable (:type "int") (reparse-symbol formal_parameters) [14994 15005]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14964 15136])
+                    ("getConnectTimeout" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15492 15554])
+                    ("setReadTimeout" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("timeout" variable (:type "int") (reparse-symbol formal_parameters) [16440 16451]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16413 16579])
+                    ("getReadTimeout" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16923 16979])
+                    ("URLConnection" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [17204 17211]))                          )
+                        (reparse-symbol class_member_declaration) [17180 17237])
+                    ("getURL" function
+                       (:typemodifiers ("public")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [17505 17545])
+                    ("getContentLength" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17825 17911])
+                    ("getContentType" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18209 18287])
+                    ("getContentEncoding" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18593 18679])
+                    ("getExpiration" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19044 19121])
+                    ("getDate" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19501 19569])
+                    ("getLastModified" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19957 20042])
+                    ("getHeaderField" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [20499 20510]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20470 20533])
+                    ("getHeaderFields" function (:constructor-flag t) (reparse-symbol class_member_declaration) [20907 20970])
+                    ("getHeaderFieldInt" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [21638 21649])
+                            ("Default" variable (:type "int") (reparse-symbol formal_parameters) [21651 21662]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [21609 21797])
+                    ("getHeaderFieldDate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [22580 22591])
+                            ("Default" variable (:type "long") (reparse-symbol formal_parameters) [22593 22605]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [22549 22734])
+                    ("getHeaderFieldKey" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [23163 23168]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [23131 23191])
+                    ("getHeaderField" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [23862 23867]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [23833 23890])
+                    ("getContent" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [26392 26700])
+                    ("getContent" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("classes" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [27809 27824]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [27784 28116])
+                    ("getPermission" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "Permission")
+                        (reparse-symbol class_member_declaration) [30187 30289])
+                    ("getInputStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [30923 31055])
+                    ("getOutputStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "OutputStream")
+                        (reparse-symbol class_member_declaration) [31444 31579])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [31760 31839])
+                    ("setDoInput" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("doinput" variable (:type "boolean") (reparse-symbol formal_parameters) [32391 32406]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32368 32510])
+                    ("getDoInput" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [32778 32830])
+                    ("setDoOutput" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dooutput" variable (:type "boolean") (reparse-symbol formal_parameters) [33342 33358]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33318 33464])
+                    ("getDoOutput" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [33735 33789])
+                    ("setAllowUserInteraction" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("allowuserinteraction" variable (:type "boolean") (reparse-symbol formal_parameters) [34122 34150]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34086 34280])
+                    ("getAllowUserInteraction" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [34561 34639])
+                    ("setDefaultAllowUserInteraction" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("defaultallowuserinteraction" variable (:type "boolean") (reparse-symbol formal_parameters) [34997 35032]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34947 35101])
+                    ("getDefaultAllowUserInteraction" function
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [35569 35668])
+                    ("setUseCaches" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("usecaches" variable (:type "boolean") (reparse-symbol formal_parameters) [36472 36489]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [36447 36597])
+                    ("getUseCaches" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [36869 36925])
+                    ("setIfModifiedSince" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ifmodifiedsince" variable (:type "long") (reparse-symbol formal_parameters) [37261 37281]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [37230 37401])
+                    ("getIfModifiedSince" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [37625 37690])
+                    ("getDefaultUseCaches" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [38176 38246])
+                    ("setDefaultUseCaches" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("defaultusecaches" variable (:type "boolean") (reparse-symbol formal_parameters) [38494 38518]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38462 38565])
+                    ("setRequestProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [39356 39366])
+                            ("value" variable (:type "String") (reparse-symbol formal_parameters) [39368 39380]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39325 39639])
+                    ("addRequestProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [40198 40208])
+                            ("value" variable (:type "String") (reparse-symbol formal_parameters) [40210 40222]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40167 40467])
+                    ("getRequestProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [40966 40976]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [40933 41136])
+                    ("getRequestProperties" function (:constructor-flag t) (reparse-symbol class_member_declaration) [41642 41856])
+                    ("setDefaultRequestProperty" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [42657 42667])
+                            ("value" variable (:type "String") (reparse-symbol formal_parameters) [42669 42681]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42612 42690])
+                    ("getDefaultRequestProperty" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [43397 43407]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [43350 43430])
+                    ("factory" variable
+                       (:typemodifiers ("static")
+                        :type "ContentHandlerFactory")
+                        (reparse-symbol class_member_declaration) [43487 43524])
+                    ("setContentHandlerFactory" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("fac" variable (:type "ContentHandlerFactory") (reparse-symbol formal_parameters) [44536 44561]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [44479 44780])
+                    ("handlers" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [44786 44838])
+                    ("UnknownContentHandlerP" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "ContentHandler")
+                        (reparse-symbol class_member_declaration) [44843 44932])
+                    ("getContentHandler" function
+                       (:throws ("UnknownServiceException")
+                        :typemodifiers ("synchronized")
+                        :type "ContentHandler")
+                        (reparse-symbol class_member_declaration) [45067 45801])
+                    ("stripOffParameters" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("contentType" variable (:type "String") (reparse-symbol formal_parameters) [46007 46025]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [45973 46214])
+                    ("contentClassPrefix" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [46220 46291])
+                    ("contentPathProp" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [46296 46370])
+                    ("lookupContentHandlerClassFor" function
+                       (:throws ("InstantiationException" "IllegalAccessException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("contentType" variable (:type "String") (reparse-symbol formal_parameters) [46902 46920]))                          
+                        :type "ContentHandler")
+                        (reparse-symbol class_member_declaration) [46850 47848])
+                    ("typeToPackageName" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("contentType" variable (:type "String") (reparse-symbol formal_parameters) [48077 48095]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [48044 48554])
+                    ("getContentHandlerPkgPrefixes" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [48927 49242])
+                    ("guessContentTypeFromName" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("fname" variable (:type "String") (reparse-symbol formal_parameters) [49766 49778]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [49720 49838])
+                    ("guessContentTypeFromStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static" "public")
+                        :arguments 
+                          ( ("is" variable (:type "InputStream") (reparse-symbol formal_parameters) [50967 50981]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [50919 54394])
+                    ("checkfpx" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static" "private")
+                        :arguments 
+                          ( ("is" variable (:type "InputStream") (reparse-symbol formal_parameters) [54719 54733]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [54687 59238])
+                    ("readBytes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static" "private")
+                        :arguments 
+                          ( ("c" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [59449 59456])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [59458 59465])
+                            ("is" variable (:type "InputStream") (reparse-symbol formal_parameters) [59467 59481]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [59420 59713])
+                    ("skipForward" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static" "private")
+                        :arguments 
+                          ( ("is" variable (:type "InputStream") (reparse-symbol formal_parameters) [59931 59945])
+                            ("toSkip" variable (:type "long") (reparse-symbol formal_parameters) [59947 59958]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [59899 60412]))                  
+                :type "class")
+                nil [6368 60415])
+            ("UnknownContentHandler" type
+               (:superclasses "ContentHandler"
+                :members 
+                  ( ("getContent" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("uc" variable (:type "URLConnection") (reparse-symbol formal_parameters) [60500 60516]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [60475 60573]))                  
+                :type "class")
+                nil [60418 60575]))          
+    :file "URLConnection.java"
+    :pointmax 60576
+    :fsize 60575
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((RSHIFT 41639 . 41641) (LT 41632 . 41633) (COMMA 41627 . 41628) (PUBLIC 41610 . 41616) (LT 41620 . 41621) (RSHIFT 20904 . 20906) (LT 20897 . 20898) (COMMA 20892 . 20893) (PUBLIC 20875 . 20881) (LT 20885 . 20886))
+    )
+   (semanticdb-table "URI.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [170 187])
+            ("java.io.IOException" include nil nil [189 216])
+            ("java.io.InvalidObjectException" include nil nil [217 255])
+            ("java.io.ObjectInputStream" include nil nil [256 289])
+            ("java.io.ObjectOutputStream" include nil nil [290 324])
+            ("java.io.Serializable" include nil nil [325 353])
+            ("java.nio.ByteBuffer" include nil nil [354 381])
+            ("java.nio.CharBuffer" include nil nil [382 409])
+            ("java.nio.charset.CharsetDecoder" include nil nil [410 449])
+            ("java.nio.charset.CharsetEncoder" include nil nil [450 489])
+            ("java.nio.charset.CoderResult" include nil nil [490 526])
+            ("java.nio.charset.CodingErrorAction" include nil nil [527 569])
+            ("java.nio.charset.CharacterCodingException" include nil nil [570 619])
+            ("java.text.Normalizer" include nil nil [620 648])
+            ("sun.nio.cs.ThreadLocalCoders" include nil nil [649 685])
+            ("java.lang.Character" include nil nil [687 714])
+            ("java.lang.NullPointerException" include nil nil [731 769]))          
+    :file "URI.java"
+    :pointmax 119170
+    :fsize 119169
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 21047 . 119169) (IDENTIFIER 21034 . 21046) (COMMA 21032 . 21033) (GT 21031 . 21032) (IDENTIFIER 21028 . 21031) (PUBLIC 20979 . 20985) (LT 21027 . 21028))
+    )
+   (semanticdb-table "URISyntaxException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [184 201])
+            ("URISyntaxException" type
+               (:typemodifiers ("public")
+                :superclasses "Exception"
+                :members 
+                  ( ("input" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [450 471])
+                    ("index" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [476 494])
+                    ("URISyntaxException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "String") (reparse-symbol formal_parameters) [1113 1125])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [1127 1140])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [1142 1151]))                          )
+                        (reparse-symbol class_member_declaration) [1087 1359])
+                    ("URISyntaxException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "String") (reparse-symbol formal_parameters) [1787 1799])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [1801 1814]))                          )
+                        (reparse-symbol class_member_declaration) [1761 1849])
+                    ("getInput" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1944 1991])
+                    ("getReason" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2131 2192])
+                    ("getIndex" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2403 2447])
+                    ("getMessage" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2916 3149]))                  
+                :type "class")
+                nil [390 3152]))          
+    :file "URISyntaxException.java"
+    :pointmax 3153
+    :fsize 3152
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!net!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

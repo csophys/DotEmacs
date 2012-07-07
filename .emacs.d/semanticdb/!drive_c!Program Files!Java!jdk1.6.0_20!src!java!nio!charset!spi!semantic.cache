@@ -1,0 +1,36 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "CharsetProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset.spi" package nil nil [182 211])
+            ("java.nio.charset.Charset" include nil nil [213 245])
+            ("java.util.Iterator" include nil nil [246 272])
+            ("CharsetProvider" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("CharsetProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [2657 2827])
+                    ("charsetForName" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("charsetName" variable (:type "String") (reparse-symbol formal_parameters) [3612 3630]))                          
+                        :type "Charset")
+                        (reparse-symbol class_member_declaration) [3573 3632]))                  
+                :type "class")
+                nil [2366 3635]))          
+    :file "CharsetProvider.java"
+    :pointmax 3636
+    :fsize 3635
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((SEMICOLON 3181 . 3182) (GT 3169 . 3170) (PUBLIC 3137 . 3143) (LT 3161 . 3162))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!nio!charset!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

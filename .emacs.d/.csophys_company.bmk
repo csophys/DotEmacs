@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("study.org"
+(("myPaper.org.gpg"
+ (filename . "c:/EmacsDir/GitDocument/MyDocument/myPaper.org.gpg")
+ (front-context-string . "#+TITLE:基于WSDM的集")
+ (rear-context-string)
+ (position . 1))
+("study.org"
  (filename . "~/study.org")
  (front-context-string . "* 编程语言\n** 编程语言 c")
  (rear-context-string)

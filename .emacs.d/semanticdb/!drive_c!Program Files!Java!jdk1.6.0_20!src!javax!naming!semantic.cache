@@ -1,0 +1,429 @@
+;; Object naming/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "naming/"
+  :tables (list 
+   (semanticdb-table "InitialContext.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("javax.naming" package nil nil [181 202])
+            ("java.util.Hashtable" include nil nil [204 231])
+            ("javax.naming.spi.NamingManager" include nil nil [232 270])
+            ("com.sun.naming.internal.ResourceManager" include nil nil [271 318])
+            ("InitialContext" type
+               (:typemodifiers ("public")
+                :interfaces ("Context")
+                :members 
+                  ( ("defaultInitCtx" variable
+                       (:typemodifiers ("protected")
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [5774 5814])
+                    ("gotDefault" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6021 6058])
+                    ("InitialContext" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("lazy" variable (:type "boolean") (reparse-symbol formal_parameters) [6814 6826]))                          )
+                        (reparse-symbol class_member_declaration) [6789 6892])
+                    ("InitialContext" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [7176 7243])
+                    ("InitialContext" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [7741 7928])
+                    ("init" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8497 8800])
+                    ("doLookup" function
+                       (:throws ("NamingException")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [9618 9627]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [9607 9723])
+                    ("doLookup" function
+                       (:throws ("NamingException")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [10082 10093]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [10071 10189])
+                    ("getURLScheme" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [10230 10240]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10195 10448])
+                    ("getDefaultInitCtx" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("protected")
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [10892 11168])
+                    ("getURLOrDefaultInitCtx" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [12045 12056]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [12004 12384])
+                    ("getURLOrDefaultInitCtx" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [14237 14246]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [14196 14643])
+                    ("lookup" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [14744 14755]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [14723 14838])
+                    ("lookup" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [14865 14874]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [14844 14957])
+                    ("bind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [14980 14991])
+                            ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [14993 15003]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14963 15082])
+                    ("bind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [15105 15114])
+                            ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [15116 15126]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15088 15205])
+                    ("rebind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [15230 15241])
+                            ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [15243 15253]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15211 15334])
+                    ("rebind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [15359 15368])
+                            ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [15370 15380]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15340 15461])
+                    ("unbind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [15486 15497]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15467 15574])
+                    ("unbind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [15599 15608]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15580 15685])
+                    ("rename" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("oldName" variable (:type "String") (reparse-symbol formal_parameters) [15710 15724])
+                            ("newName" variable (:type "String") (reparse-symbol formal_parameters) [15726 15740]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15691 15831])
+                    ("rename" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("oldName" variable (:type "Name") (reparse-symbol formal_parameters) [15856 15868])
+                            ("newName" variable (:type "Name") (reparse-symbol formal_parameters) [15870 15882]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15837 15978])
+                    ("list" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [16029 16040]))                          )
+                        (reparse-symbol class_member_declaration) [16024 16128])
+                    ("list" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [16179 16188]))                          )
+                        (reparse-symbol class_member_declaration) [16174 16276])
+                    ("listBindings" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [16329 16340]))                          )
+                        (reparse-symbol class_member_declaration) [16316 16435])
+                    ("listBindings" function
+                       (:constructor-flag t
+                        :throws ("NamingException")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [16488 16497]))                          )
+                        (reparse-symbol class_member_declaration) [16475 16592])
+                    ("destroySubcontext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [16628 16639]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16598 16727])
+                    ("destroySubcontext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [16763 16772]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16733 16860])
+                    ("createSubcontext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [16898 16909]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [16866 17003])
+                    ("createSubcontext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [17041 17050]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [17009 17144])
+                    ("lookupLink" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [17175 17186]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [17150 17274])
+                    ("lookupLink" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [17305 17314]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [17280 17401])
+                    ("getNameParser" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [17439 17450]))                          
+                        :type "NameParser")
+                        (reparse-symbol class_member_declaration) [17407 17540])
+                    ("getNameParser" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [17579 17588]))                          
+                        :type "NameParser")
+                        (reparse-symbol class_member_declaration) [17547 17678])
+                    ("composeName" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [18000 18011])
+                            ("prefix" variable (:type "String") (reparse-symbol formal_parameters) [18013 18026]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17974 18077])
+                    ("composeName" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [18383 18392])
+                            ("prefix" variable (:type "Name") (reparse-symbol formal_parameters) [18394 18405]))                          
+                        :type "Name")
+                        (reparse-symbol class_member_declaration) [18359 18470])
+                    ("addToEnvironment" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("propName" variable (:type "String") (reparse-symbol formal_parameters) [18507 18522])
+                            ("propVal" variable (:type "Object") (reparse-symbol formal_parameters) [18524 18538]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [18476 18674])
+                    ("removeFromEnvironment" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("propName" variable (:type "String") (reparse-symbol formal_parameters) [18716 18731]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [18680 18857])
+                    ("getEnvironment" function
+                       (:constructor-flag t
+                        :throws ("NamingException"))
+                        (reparse-symbol class_member_declaration) [18885 18978])
+                    ("close" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18984 19163])
+                    ("getNameInNamespace" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19169 19284]))                  
+                :type "class")
+                nil [5052 19286]))          
+    :file "InitialContext.java"
+    :pointmax 19288
+    :fsize 19287
+    :lastmodtime '(19394 43706)
+    :unmatched-syntax '((GT 18883 . 18884) (QUESTION 18882 . 18883) (COMMA 18881 . 18882) (QUESTION 18880 . 18881) (PUBLIC 18863 . 18869) (LT 18879 . 18880) (GT 16473 . 16474) (PUBLIC 16441 . 16447) (LT 16465 . 16466) (GT 16314 . 16315) (PUBLIC 16282 . 16288) (LT 16306 . 16307) (GT 16172 . 16173) (PUBLIC 16134 . 16140) (LT 16158 . 16159) (GT 16022 . 16023) (PUBLIC 15984 . 15990) (LT 16008 . 16009) (GT 10069 . 10070) (PUBLIC 10053 . 10059) (LT 10067 . 10068) (GT 9605 . 9606) (PUBLIC 9589 . 9595) (LT 9603 . 9604) (GT 8530 . 8531) (QUESTION 8529 . 8530) (COMMA 8528 . 8529) (QUESTION 8527 . 8528) (IDENTIFIER 8517 . 8526) (LT 8526 . 8527) (GT 7776 . 7777) (QUESTION 7775 . 7776) (COMMA 7774 . 7775) (QUESTION 7773 . 7774) (IDENTIFIER 7763 . 7772) (LT 7772 . 7773) (SEMICOLON 5460 . 5461) (EQ 5454 . 5455) (GT 5444 . 5445) (COMMA 5437 . 5438) (PROTECTED 5411 . 5420) (LT 5430 . 5431))
+    )
+   (semanticdb-table "NamingEnumeration.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("javax.naming" package nil nil [183 204])
+            ("java.util.Enumeration" include nil nil [206 235]))          
+    :file "NamingEnumeration.java"
+    :pointmax 5996
+    :fsize 5995
+    :lastmodtime '(19394 43706)
+    :unmatched-syntax '((BRACE_BLOCK 2734 . 5995) (GT 2732 . 2733) (IDENTIFIER 2731 . 2732) (LT 2730 . 2731) (IDENTIFIER 2719 . 2730) (EXTENDS 2711 . 2718) (GT 2709 . 2710) (IDENTIFIER 2708 . 2709) (PUBLIC 2673 . 2679) (LT 2707 . 2708))
+    )
+   (semanticdb-table "NamingException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("javax.naming" package nil nil [182 203])
+            ("NamingException" type
+               (:typemodifiers ("public")
+                :superclasses "Exception"
+                :members 
+                  ( ("resolvedName" variable
+                       (:typemodifiers ("protected")
+                        :type "Name")
+                        (reparse-symbol class_member_declaration) [2038 2066])
+                    ("resolvedObj" variable
+                       (:typemodifiers ("protected")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [2421 2450])
+                    ("remainingName" variable
+                       (:typemodifiers ("protected")
+                        :type "Name")
+                        (reparse-symbol class_member_declaration) [2884 2913])
+                    ("rootException" variable
+                       (:typemodifiers ("protected")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [3623 3664])
+                    ("NamingException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("explanation" variable (:type "String") (reparse-symbol formal_parameters) [3978 3996]))                          )
+                        (reparse-symbol class_member_declaration) [3955 4085])
+                    ("NamingException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [4186 4287])
+                    ("getResolvedName" function
+                       (:typemodifiers ("public")
+                        :type "Name")
+                        (reparse-symbol class_member_declaration) [4642 4701])
+                    ("getRemainingName" function
+                       (:typemodifiers ("public")
+                        :type "Name")
+                        (reparse-symbol class_member_declaration) [5068 5129])
+                    ("getResolvedObj" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [5475 5534])
+                    ("getExplanation" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5854 5914])
+                    ("setResolvedName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [6691 6700]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6663 6802])
+                    ("setRemainingName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [7648 7657]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7619 7761])
+                    ("setResolvedObj" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [8026 8036]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7999 8065])
+                    ("appendRemainingComponent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [8383 8394]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8346 8637])
+                    ("appendRemainingName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "Name") (reparse-symbol formal_parameters) [9389 9398]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9357 9665])
+                    ("getRootCause" function
+                       (:typemodifiers ("public")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [10490 10552])
+                    ("setRootCause" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "Throwable") (reparse-symbol formal_parameters) [11188 11199]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11163 11253])
+                    ("getCause" function
+                       (:typemodifiers ("public")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [11673 11732])
+                    ("initCause" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [12589 12604]))                          
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [12562 12674])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13216 13486])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("detail" variable (:type "boolean") (reparse-symbol formal_parameters) [14103 14117]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [14080 14265])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [14352 14419]))                  
+                :type "class")
+                nil [1630 14421]))          
+    :file "NamingException.java"
+    :pointmax 14423
+    :fsize 14422
+    :lastmodtime '(19394 43706)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!javax!naming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

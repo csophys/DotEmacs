@@ -5,7 +5,8 @@
    (semanticdb-table "test.java"
     :major-mode 'java-mode
     :tags 
-        '( ("test" type
+        '( ("java.util.*" include nil nil [1 20])
+            ("test" type
                (:members 
                   ( ("main" function
                        (:typemodifiers ("public" "static")
@@ -13,15 +14,24 @@
                           ( ("args" variable
                                (:dereference 1
                                 :type "String")
-                                (reparse-symbol formal_parameters) [43 56]))                          
+                                (reparse-symbol formal_parameters) [62 75]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [19 137]))                  
+                        (reparse-symbol class_member_declaration) [38 148])
+                    ("allsort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("array" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [177 188]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [150 226]))                  
                 :type "class")
-                nil [3 140]))          
+                nil [22 228]))          
     :file "test.java"
-    :pointmax 144
-    :fsize 153
-    :lastmodtime '(20448 14419)
+    :pointmax 232
+    :fsize 217
+    :lastmodtime '(20466 35698)
     :unmatched-syntax 'nil
     )
    )

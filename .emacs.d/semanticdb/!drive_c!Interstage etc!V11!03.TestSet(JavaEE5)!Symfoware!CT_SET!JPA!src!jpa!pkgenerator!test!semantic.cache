@@ -1,0 +1,146 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "AccessGenBeanTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.pkgenerator.test" package nil nil [1 30])
+            ("java.util.ArrayList" include nil nil [32 59])
+            ("java.util.Arrays" include nil nil [60 84])
+            ("java.util.Collection" include nil nil [85 113])
+            ("java.util.List" include nil nil [114 136])
+            ("javax.naming.InitialContext" include nil nil [138 173])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [175 221])
+            ("jpa.common.util.CommonUtils" include nil nil [222 257])
+            ("jpa.common.util.DatabaseUtilClient" include nil nil [258 300])
+            ("org.junit.After" include nil nil [302 325])
+            ("org.junit.Before" include nil nil [326 350])
+            ("org.junit.Test" include nil nil [351 373])
+            ("org.junit.runner.RunWith" include nil nil [374 406])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [407 457])
+            ("AccessGenBeanTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("appName" variable (:type "String") (reparse-symbol class_member_declaration) [568 600])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [603 610])
+                    ("strategy" variable (:type "String") (reparse-symbol class_member_declaration) [617 633])
+                    ("generator" variable (:type "String") (reparse-symbol class_member_declaration) [640 657])
+                    ("sequenceGenerator" variable (:type "String") (reparse-symbol class_member_declaration) [664 689])
+                    ("sequenceName" variable (:type "String") (reparse-symbol class_member_declaration) [691 711])
+                    ("initialValue_s" variable (:type "Integer") (reparse-symbol class_member_declaration) [716 739])
+                    ("allocationSize_s" variable (:type "Integer") (reparse-symbol class_member_declaration) [744 769])
+                    ("tableGenerator" variable (:type "String") (reparse-symbol class_member_declaration) [776 798])
+                    ("table" variable (:type "String") (reparse-symbol class_member_declaration) [800 813])
+                    ("pkColumnName" variable (:type "String") (reparse-symbol class_member_declaration) [815 835])
+                    ("pkColumnValue" variable (:type "String") (reparse-symbol class_member_declaration) [837 858])
+                    ("valueColumnName" variable (:type "String") (reparse-symbol class_member_declaration) [860 883])
+                    ("initialValue_t" variable (:type "Integer") (reparse-symbol class_member_declaration) [888 911])
+                    ("allocationSize_t" variable (:type "Integer") (reparse-symbol class_member_declaration) [916 941])
+                    ("bean" variable (:type "AccessGen") (reparse-symbol class_member_declaration) [948 963])
+                    ("data" variable (:type "GenEntity") (reparse-symbol class_member_declaration) [965 980])
+                    ("name" variable (:type "String") (reparse-symbol class_member_declaration) [982 994])
+                    ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1045 21026])
+                    ("AccessGenBeanTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [21054 21060])
+                            ("strategy" variable (:type "String") (reparse-symbol formal_parameters) [21065 21080])
+                            ("generator" variable (:type "String") (reparse-symbol formal_parameters) [21082 21098])
+                            ("sequenceGenerator" variable (:type "String") (reparse-symbol formal_parameters) [21103 21127])
+                            ("sequenceName" variable (:type "String") (reparse-symbol formal_parameters) [21129 21148])
+                            ("initialValue_s" variable (:type "Integer") (reparse-symbol formal_parameters) [21150 21172])
+                            ("allocationSize_s" variable (:type "Integer") (reparse-symbol formal_parameters) [21174 21198])
+                            ("tableGenerator" variable (:type "String") (reparse-symbol formal_parameters) [21203 21224])
+                            ("table" variable (:type "String") (reparse-symbol formal_parameters) [21226 21238])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [21240 21259])
+                            ("valueColumnName" variable (:type "String") (reparse-symbol formal_parameters) [21261 21283])
+                            ("pkColumnValue" variable (:type "String") (reparse-symbol formal_parameters) [21285 21305])
+                            ("initialValue_t" variable (:type "Integer") (reparse-symbol formal_parameters) [21307 21329])
+                            ("allocationSize_t" variable (:type "Integer") (reparse-symbol formal_parameters) [21331 21355]))                          )
+                        (reparse-symbol class_member_declaration) [21029 21942])
+                    ("before" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21954 22027])
+                    ("test" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22037 25516])
+                    ("testTable" function (:type "void") (reparse-symbol class_member_declaration) [25522 25652])
+                    ("testDefaultTable" function (:type "void") (reparse-symbol class_member_declaration) [25662 25748])
+                    ("testDefinedDefaultTable" function (:type "void") (reparse-symbol class_member_declaration) [25758 25895])
+                    ("testTable" function
+                       (:arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [25920 25932])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [25934 25953])
+                            ("valueColumnName" variable (:type "String") (reparse-symbol formal_parameters) [25955 25977])
+                            ("pkColumnValue" variable (:type "String") (reparse-symbol formal_parameters) [25979 25999])
+                            ("initialValue" variable (:type "Integer") (reparse-symbol formal_parameters) [26001 26021])
+                            ("allocationSize" variable (:type "Integer") (reparse-symbol formal_parameters) [26023 26045]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25905 26810])
+                    ("testSequence" function (:type "void") (reparse-symbol class_member_declaration) [26820 26917])
+                    ("testDefaultSequence" function (:type "void") (reparse-symbol class_member_declaration) [26927 27001])
+                    ("testDefinedDefaultSequence" function (:type "void") (reparse-symbol class_member_declaration) [27011 27116])
+                    ("testSequence" function
+                       (:arguments 
+                          ( ("sequenceName" variable (:type "String") (reparse-symbol formal_parameters) [27140 27159])
+                            ("initialValue" variable (:type "Integer") (reparse-symbol formal_parameters) [27161 27181])
+                            ("allocationSize" variable (:type "Integer") (reparse-symbol formal_parameters) [27183 27205]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27122 27582])
+                    ("testDDLTable" function
+                       (:arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [27606 27618])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [27620 27639])
+                            ("valueColumnName" variable (:type "String") (reparse-symbol formal_parameters) [27641 27663])
+                            ("pkColumnValue" variable (:type "String") (reparse-symbol formal_parameters) [27665 27685])
+                            ("initialValue" variable (:type "int") (reparse-symbol formal_parameters) [27687 27703])
+                            ("allocationSize" variable (:type "int") (reparse-symbol formal_parameters) [27705 27723]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27588 27926])
+                    ("testDDLSequence" function
+                       (:arguments 
+                          ( ("sequenceName" variable (:type "String") (reparse-symbol formal_parameters) [27953 27972])
+                            ("initialValue" variable (:type "int") (reparse-symbol formal_parameters) [27973 27989])
+                            ("allocationSize" variable (:type "int") (reparse-symbol formal_parameters) [27991 28009]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27932 28189])
+                    ("testCRUDInternal" function
+                       (:arguments 
+                          ( ("initialValue" variable (:type "int") (reparse-symbol formal_parameters) [28220 28236]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [28195 29120])
+                    ("after" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29137 29354])
+                    ("checkResults" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable (:type "GenEntity") (reparse-symbol formal_parameters) [29386 29397]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29360 29551])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29557 29814])
+                    ("cleanSquenceTable" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29824 30143]))                  
+                :type "class")
+                nil [530 30221]))          
+    :file "AccessGenBeanTest.java"
+    :pointmax 30222
+    :fsize 30686
+    :lastmodtime '(20458 27482)
+    :unmatched-syntax '((SEMICOLON 30213 . 30214) (PAREN_BLOCK 30211 . 30213) (GT 30210 . 30211) (LT 30203 . 30204) (NEW 30190 . 30193) (EQ 30188 . 30189) (GT 30172 . 30173) (PRIVATE 30153 . 30160) (LT 30165 . 30166) (GT 1043 . 1044) (IDENTIFIER 997 . 1008) (PUBLIC 1010 . 1016) (LT 1034 . 1035) (PAREN_BLOCK 502 . 529) (IDENTIFIER 494 . 502) (MULT 489 . 490) (DOT 488 . 489) (IDENTIFIER 482 . 488) (DOT 481 . 482) (IDENTIFIER 476 . 481) (DOT 475 . 476) (IMPORT 458 . 464) (STATIC 465 . 471) (IDENTIFIER 472 . 475))
+    )
+   )
+  :file "!drive_c!Interstage etc!V11!03.TestSet(JavaEE5)!Symfoware!CT_SET!JPA!src!jpa!pkgenerator!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

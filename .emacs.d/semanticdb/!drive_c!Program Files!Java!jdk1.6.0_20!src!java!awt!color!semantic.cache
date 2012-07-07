@@ -1,0 +1,399 @@
+;; Object color/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "color/"
+  :tables (list 
+   (semanticdb-table "ColorSpace.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.color" package nil nil [827 850])
+            ("sun.awt.color.CMM" include nil nil [852 877])
+            ("ColorSpace" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3503 3561])
+                    ("type" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3567 3584])
+                    ("numComponents" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3589 3615])
+                    ("compName" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3620 3664])
+                    ("sRGBspace" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [3730 3766])
+                    ("XYZspace" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [3771 3806])
+                    ("PYCCspace" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [3811 3847])
+                    ("GRAYspace" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [3852 3888])
+                    ("LINEAR_RGBspace" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [3893 3935])
+                    ("TYPE_XYZ" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4007 4044])
+                    ("TYPE_Lab" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4112 4149])
+                    ("TYPE_Luv" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4217 4254])
+                    ("TYPE_YCbCr" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4324 4363])
+                    ("TYPE_Yxy" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4431 4468])
+                    ("TYPE_RGB" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4536 4573])
+                    ("TYPE_GRAY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4642 4680])
+                    ("TYPE_HSV" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4748 4785])
+                    ("TYPE_HLS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4853 4890])
+                    ("TYPE_CMYK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4959 4997])
+                    ("TYPE_CMY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5065 5103])
+                    ("TYPE_2CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5166 5205])
+                    ("TYPE_3CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5268 5307])
+                    ("TYPE_4CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5370 5409])
+                    ("TYPE_5CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5472 5511])
+                    ("TYPE_6CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5574 5613])
+                    ("TYPE_7CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5676 5715])
+                    ("TYPE_8CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5778 5817])
+                    ("TYPE_9CLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5880 5919])
+                    ("TYPE_ACLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5983 6022])
+                    ("TYPE_BCLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6086 6125])
+                    ("TYPE_CCLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6189 6228])
+                    ("TYPE_DCLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6292 6331])
+                    ("TYPE_ECLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6395 6434])
+                    ("TYPE_FCLR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6498 6537])
+                    ("CS_sRGB" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6738 6777])
+                    ("CS_LINEAR_RGB" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6949 6994])
+                    ("CS_CIEXYZ" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7072 7113])
+                    ("CS_PYCC" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7180 7219])
+                    ("CS_GRAY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7292 7331])
+                    ("ColorSpace" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("type" variable (:type "int") (reparse-symbol formal_parameters) [7617 7625])
+                            ("numcomponents" variable (:type "int") (reparse-symbol formal_parameters) [7627 7644]))                          )
+                        (reparse-symbol class_member_declaration) [7595 7723])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("colorspace" variable (:type "int") (reparse-symbol formal_parameters) [8244 8258]))                          
+                        :type "ColorSpace")
+                        (reparse-symbol class_member_declaration) [8206 10603])
+                    ("isCS_sRGB" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10804 10941])
+                    ("toRGB" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("colorvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [12081 12099]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [12051 12101])
+                    ("fromRGB" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("rgbvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [13193 13209]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [13161 13211])
+                    ("toCIEXYZ" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("colorvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [14599 14617]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [14566 14619])
+                    ("fromCIEXYZ" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("colorvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [16067 16085]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [16032 16087])
+                    ("getType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16642 16691])
+                    ("getNumComponents" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16846 16913])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol formal_parameters) [17259 17266]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17236 19484])
+                    ("getMinValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("component" variable (:type "int") (reparse-symbol formal_parameters) [20018 20031]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [19993 20248])
+                    ("getMaxValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("component" variable (:type "int") (reparse-symbol formal_parameters) [20782 20795]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [20757 21012])
+                    ("isCS_CIEXYZ" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("cspace" variable (:type "ColorSpace") (reparse-symbol formal_parameters) [21100 21117]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [21073 21163]))                  
+                :type "class")
+                nil [3431 21165]))          
+    :file "ColorSpace.java"
+    :pointmax 21166
+    :fsize 21165
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ICC_ColorSpace.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.color" package nil nil [831 854])
+            ("sun.awt.color.ICC_Transform" include nil nil [856 891])
+            ("ICC_ColorSpace" type
+               (:typemodifiers ("public")
+                :superclasses "ColorSpace"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3029 3087])
+                    ("thisProfile" variable
+                       (:typemodifiers ("private")
+                        :type "ICC_Profile")
+                        (reparse-symbol class_member_declaration) [3093 3128])
+                    ("minVal" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [3133 3156])
+                    ("maxVal" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [3161 3184])
+                    ("diffMinMax" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [3189 3216])
+                    ("invDiffMinMax" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [3221 3251])
+                    ("needScaleInit" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3256 3293])
+                    ("this2srgb" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ICC_Transform")
+                        (reparse-symbol class_member_declaration) [3371 3413])
+                    ("srgb2this" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ICC_Transform")
+                        (reparse-symbol class_member_declaration) [3418 3460])
+                    ("this2xyz" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ICC_Transform")
+                        (reparse-symbol class_member_declaration) [3465 3506])
+                    ("xyz2this" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ICC_Transform")
+                        (reparse-symbol class_member_declaration) [3511 3552])
+                    ("ICC_ColorSpace" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("profile" variable (:type "ICC_Profile") (reparse-symbol formal_parameters) [3837 3856]))                          )
+                        (reparse-symbol class_member_declaration) [3814 4479])
+                    ("getProfile" function
+                       (:typemodifiers ("public")
+                        :type "ICC_Profile")
+                        (reparse-symbol class_member_declaration) [4610 4677])
+                    ("toRGB" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("colorvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [5797 5815]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [5772 6887])
+                    ("fromRGB" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("rgbvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [7965 7981]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [7939 9069])
+                    ("toCIEXYZ" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("colorvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [14725 14743]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [14698 16173])
+                    ("fromCIEXYZ" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("colorvalue" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol formal_parameters) [21906 21924]))                          
+                        :type "float[]")
+                        (reparse-symbol class_member_declaration) [21877 23402])
+                    ("getMinValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("component" variable (:type "int") (reparse-symbol formal_parameters) [24335 24348]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [24310 24587])
+                    ("getMaxValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("component" variable (:type "int") (reparse-symbol formal_parameters) [25549 25562]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [25524 25801])
+                    ("setMinMax" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25807 26577])
+                    ("setComponentScaling" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26583 27090]))                  
+                :type "class")
+                nil [2975 27093]))          
+    :file "ICC_ColorSpace.java"
+    :pointmax 27094
+    :fsize 27093
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!color!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

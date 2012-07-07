@@ -1,0 +1,147 @@
+;; Object math/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "math/"
+  :tables (list 
+   (semanticdb-table "BigDecimal.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.math" package nil nil [474 492])
+            ("java.util.Arrays" include nil nil [494 518]))          
+    :file "BigDecimal.java"
+    :pointmax 158228
+    :fsize 158227
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 10229 . 158227) (GT 10227 . 10228) (IDENTIFIER 10217 . 10227) (PUBLIC 10156 . 10162) (LT 10216 . 10217) (IDENTIFIER 554 . 563) (DOT 553 . 554) (IDENTIFIER 543 . 553) (DOT 542 . 543) (IDENTIFIER 538 . 542) (DOT 537 . 538) (IMPORT 519 . 525) (STATIC 526 . 532) (IDENTIFIER 533 . 537))
+    )
+   (semanticdb-table "BigInteger.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.math" package nil nil [183 201])
+            ("java.util.Random" include nil nil [203 227])
+            ("java.io.*" include nil nil [228 245]))          
+    :file "BigInteger.java"
+    :pointmax 109520
+    :fsize 109519
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 3675 . 109518) (GT 3673 . 3674) (IDENTIFIER 3663 . 3673) (PUBLIC 3602 . 3608) (LT 3662 . 3663))
+    )
+   (semanticdb-table "MathContext.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.math" package nil nil [427 445])
+            ("java.io.*" include nil nil [446 463])
+            ("MathContext" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("DEFAULT_DIGITS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1207 1251])
+                    ("DEFAULT_ROUNDINGMODE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "RoundingMode")
+                        (reparse-symbol class_member_declaration) [1256 1334])
+                    ("MIN_DIGITS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1404 1444])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1479 1545])
+                    ("UNLIMITED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "MathContext")
+                        (reparse-symbol class_member_declaration) [1840 1933])
+                    ("DECIMAL32" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "MathContext")
+                        (reparse-symbol class_member_declaration) [2180 2275])
+                    ("DECIMAL64" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "MathContext")
+                        (reparse-symbol class_member_declaration) [2523 2619])
+                    ("DECIMAL128" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "MathContext")
+                        (reparse-symbol class_member_declaration) [2868 2965])
+                    ("precision" variable
+                       (:typemodifiers ("final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3369 3389])
+                    ("roundingMode" variable
+                       (:typemodifiers ("final")
+                        :type "RoundingMode")
+                        (reparse-symbol class_member_declaration) [3517 3549])
+                    ("MathContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("setPrecision" variable (:type "int") (reparse-symbol formal_parameters) [3968 3984]))                          )
+                        (reparse-symbol class_member_declaration) [3949 4059])
+                    ("MathContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("setPrecision" variable (:type "int") (reparse-symbol formal_parameters) [4530 4546])
+                            ("setRoundingMode" variable (:type "RoundingMode") (reparse-symbol formal_parameters) [4558 4586]))                          )
+                        (reparse-symbol class_member_declaration) [4511 4889])
+                    ("MathContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("val" variable (:type "String") (reparse-symbol formal_parameters) [5549 5559]))                          )
+                        (reparse-symbol class_member_declaration) [5530 6602])
+                    ("getPrecision" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6816 6875])
+                    ("getRoundingMode" function
+                       (:typemodifiers ("public")
+                        :type "RoundingMode")
+                        (reparse-symbol class_member_declaration) [7393 7467])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "Object") (reparse-symbol formal_parameters) [7901 7909]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7879 8162])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8304 8395])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "java.lang.String")
+                        (reparse-symbol class_member_declaration) [9613 9755])
+                    ("readObject" function
+                       (:throws ("java.io.IOException" "ClassNotFoundException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectInputStream") (reparse-symbol formal_parameters) [9985 10012]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9948 10544]))                  
+                :type "class")
+                nil [1079 10547]))          
+    :file "MathContext.java"
+    :pointmax 10548
+    :fsize 10547
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "RoundingMode.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.math" package nil nil [471 489]))          
+    :file "RoundingMode.java"
+    :pointmax 14360
+    :fsize 14359
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 5108 . 14359) (IDENTIFIER 5095 . 5107) (PUBLIC 5083 . 5089) (IDENTIFIER 5090 . 5094))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!math!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

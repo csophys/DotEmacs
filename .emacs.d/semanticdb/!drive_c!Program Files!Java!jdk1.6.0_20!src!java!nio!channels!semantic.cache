@@ -1,0 +1,225 @@
+;; Object channels/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "channels/"
+  :tables (list 
+   (semanticdb-table "FileChannel.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.channels" package nil nil [178 204])
+            ("java.io.*" include nil nil [206 223])
+            ("java.nio.ByteBuffer" include nil nil [224 251])
+            ("java.nio.MappedByteBuffer" include nil nil [252 285])
+            ("java.nio.channels.spi.AbstractInterruptibleChannel" include nil nil [286 344])
+            ("FileChannel" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("ByteChannel" "GatheringByteChannel" "ScatteringByteChannel")
+                :superclasses "AbstractInterruptibleChannel"
+                :members 
+                  ( ("FileChannel" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [7004 7031])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("dst" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [7472 7486]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7447 7507])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("dsts" variable
+                               (:dereference 1
+                                :type "ByteBuffer")
+                                (reparse-symbol formal_parameters) [7942 7959])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [7961 7971])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [7973 7983]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [7916 8005])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("dsts" variable
+                               (:dereference 1
+                                :type "ByteBuffer")
+                                (reparse-symbol formal_parameters) [8413 8430]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [8390 8494])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("src" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [9102 9116]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9076 9137])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("srcs" variable
+                               (:dereference 1
+                                :type "ByteBuffer")
+                                (reparse-symbol formal_parameters) [9773 9790])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [9792 9802])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [9804 9814]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [9746 9836])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("srcs" variable
+                               (:dereference 1
+                                :type "ByteBuffer")
+                                (reparse-symbol formal_parameters) [10445 10462]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [10421 10527])
+                    ("position" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [10995 11046])
+                    ("position" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("newPosition" variable (:type "long") (reparse-symbol formal_parameters) [12129 12145]))                          
+                        :type "FileChannel")
+                        (reparse-symbol class_member_declaration) [12092 12166])
+                    ("size" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [12517 12564])
+                    ("truncate" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("size" variable (:type "long") (reparse-symbol formal_parameters) [13579 13588]))                          
+                        :type "FileChannel")
+                        (reparse-symbol class_member_declaration) [13542 13609])
+                    ("force" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("metaData" variable (:type "boolean") (reparse-symbol formal_parameters) [16228 16244]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16201 16265])
+                    ("transferTo" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("position" variable (:type "long") (reparse-symbol formal_parameters) [19124 19137])
+                            ("count" variable (:type "long") (reparse-symbol formal_parameters) [19139 19149])
+                            ("target" variable (:type "WritableByteChannel") (reparse-symbol formal_parameters) [19159 19185]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19092 19207])
+                    ("transferFrom" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("src" variable (:type "ReadableByteChannel") (reparse-symbol formal_parameters) [22046 22069])
+                            ("position" variable (:type "long") (reparse-symbol formal_parameters) [22081 22094])
+                            ("count" variable (:type "long") (reparse-symbol formal_parameters) [22096 22106]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [22012 22128])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("dst" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [23898 23912])
+                            ("position" variable (:type "long") (reparse-symbol formal_parameters) [23914 23927]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [23873 23948])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("src" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [25754 25768])
+                            ("position" variable (:type "long") (reparse-symbol formal_parameters) [25770 25783]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [25728 25804])
+                    ("MapMode" type
+                       (:typemodifiers ("public" "static")
+                        :members 
+                          ( ("READ_ONLY" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "MapMode")
+                                (reparse-symbol class_member_declaration) [26103 26173])
+                            ("READ_WRITE" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "MapMode")
+                                (reparse-symbol class_member_declaration) [26221 26293])
+                            ("PRIVATE" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "MapMode")
+                                (reparse-symbol class_member_declaration) [26354 26420])
+                            ("name" variable
+                               (:typemodifiers ("private" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [26423 26449])
+                            ("MapMode" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [26468 26479]))                                  )
+                                (reparse-symbol class_member_declaration) [26452 26508])
+                            ("toString" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [26615 26662]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [26027 26669])
+                    ("map" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("mode" variable (:type "MapMode") (reparse-symbol formal_parameters) [30928 30940])
+                            ("position" variable (:type "long") (reparse-symbol formal_parameters) [30948 30961])
+                            ("size" variable (:type "long") (reparse-symbol formal_parameters) [30963 30972]))                          
+                        :type "MappedByteBuffer")
+                        (reparse-symbol class_member_declaration) [30891 31001])
+                    ("lock" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("position" variable (:type "long") (reparse-symbol formal_parameters) [35241 35254])
+                            ("size" variable (:type "long") (reparse-symbol formal_parameters) [35256 35265])
+                            ("shared" variable (:type "boolean") (reparse-symbol formal_parameters) [35267 35281]))                          
+                        :type "FileLock")
+                        (reparse-symbol class_member_declaration) [35211 35303])
+                    ("lock" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "FileLock")
+                        (reparse-symbol class_member_declaration) [36748 36844])
+                    ("tryLock" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("position" variable (:type "long") (reparse-symbol formal_parameters) [40061 40074])
+                            ("size" variable (:type "long") (reparse-symbol formal_parameters) [40076 40085])
+                            ("shared" variable (:type "boolean") (reparse-symbol formal_parameters) [40087 40101]))                          
+                        :type "FileLock")
+                        (reparse-symbol class_member_declaration) [40028 40123])
+                    ("tryLock" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "FileLock")
+                        (reparse-symbol class_member_declaration) [41268 41370]))                  
+                :type "class")
+                nil [6785 41373]))          
+    :file "FileChannel.java"
+    :pointmax 41374
+    :fsize 41373
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!nio!channels!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

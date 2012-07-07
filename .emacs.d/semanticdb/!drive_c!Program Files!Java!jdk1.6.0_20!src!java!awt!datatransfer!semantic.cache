@@ -1,0 +1,412 @@
+;; Object datatransfer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "datatransfer/"
+  :tables (list 
+   (semanticdb-table "Clipboard.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.datatransfer" package nil nil [176 206])
+            ("java.awt.EventQueue" include nil nil [208 235])
+            ("java.util.Set" include nil nil [237 258])
+            ("java.util.HashSet" include nil nil [259 284])
+            ("java.util.Arrays" include nil nil [285 309])
+            ("java.io.IOException" include nil nil [311 338])
+            ("sun.awt.EventListenerAggregate" include nil nil [340 378])
+            ("Clipboard" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("name" variable (:type "String") (reparse-symbol class_member_declaration) [915 927])
+                    ("owner" variable
+                       (:typemodifiers ("protected")
+                        :type "ClipboardOwner")
+                        (reparse-symbol class_member_declaration) [933 964])
+                    ("contents" variable
+                       (:typemodifiers ("protected")
+                        :type "Transferable")
+                        (reparse-symbol class_member_declaration) [969 1001])
+                    ("flavorListeners" variable
+                       (:typemodifiers ("private")
+                        :type "EventListenerAggregate")
+                        (reparse-symbol class_member_declaration) [1125 1172])
+                    ("currentDataFlavors" variable
+                       (:typemodifiers ("private")
+                        :type "Set")
+                        (reparse-symbol class_member_declaration) [1407 1438])
+                    ("Clipboard" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1567 1578]))                          )
+                        (reparse-symbol class_member_declaration) [1550 1613])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1740 1792])
+                    ("setContents" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("contents" variable (:type "Transferable") (reparse-symbol formal_parameters) [3180 3201])
+                            ("owner" variable (:type "ClipboardOwner") (reparse-symbol formal_parameters) [3203 3223]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3143 3694])
+                    ("getContents" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("requestor" variable (:type "Object") (reparse-symbol formal_parameters) [4505 4521]))                          
+                        :type "Transferable")
+                        (reparse-symbol class_member_declaration) [4460 4555])
+                    ("getAvailableDataFlavors" function
+                       (:typemodifiers ("public")
+                        :type "DataFlavor[]")
+                        (reparse-symbol class_member_declaration) [5060 5288])
+                    ("isDataFlavorAvailable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("flavor" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [5956 5973]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5919 6245])
+                    ("getData" function
+                       (:throws ("UnsupportedFlavorException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("flavor" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [7225 7242]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [7203 7595])
+                    ("addFlavorListener" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("listener" variable (:type "FlavorListener") (reparse-symbol formal_parameters) [8094 8117]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8051 8418])
+                    ("removeFlavorListener" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("listener" variable (:type "FlavorListener") (reparse-symbol formal_parameters) [9134 9157]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9088 9298])
+                    ("getFlavorListeners" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "FlavorListener[]")
+                        (reparse-symbol class_member_declaration) [9727 9927])
+                    ("fireFlavorsChanged" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10160 10928])
+                    ("getAvailableDataFlavorSet" function
+                       (:typemodifiers ("private")
+                        :type "Set")
+                        (reparse-symbol class_member_declaration) [11179 11543]))                  
+                :type "class")
+                nil [885 11545]))          
+    :file "Clipboard.java"
+    :pointmax 11558
+    :fsize 11557
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FlavorMap.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.datatransfer" package nil nil [176 206])
+            ("java.util.Map" include nil nil [208 229])
+            ("FlavorMap" type
+               (:typemodifiers ("public")
+                :type "interface")
+                nil [529 2386]))          
+    :file "FlavorMap.java"
+    :pointmax 2387
+    :fsize 2386
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((SEMICOLON 2383 . 2384) (PAREN_BLOCK 2365 . 2383) (GT 2343 . 2344) (COMMA 2332 . 2333) (LT 2325 . 2326) (SEMICOLON 1474 . 1475) (PAREN_BLOCK 1452 . 1474) (GT 1430 . 1431) (COMMA 1423 . 1424) (IDENTIFIER 1409 . 1412) (LT 1412 . 1413))
+    )
+   (semanticdb-table "SystemFlavorMap.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.datatransfer" package nil nil [182 212])
+            ("java.awt.Toolkit" include nil nil [214 238])
+            ("java.lang.ref.SoftReference" include nil nil [240 275])
+            ("java.io.BufferedReader" include nil nil [277 307])
+            ("java.io.File" include nil nil [308 328])
+            ("java.io.InputStreamReader" include nil nil [329 362])
+            ("java.io.IOException" include nil nil [363 390])
+            ("java.net.URL" include nil nil [392 412])
+            ("java.net.MalformedURLException" include nil nil [413 451])
+            ("java.util.ArrayList" include nil nil [453 480])
+            ("java.util.HashMap" include nil nil [481 506])
+            ("java.util.HashSet" include nil nil [507 532])
+            ("java.util.Iterator" include nil nil [533 559])
+            ("java.util.LinkedList" include nil nil [560 588])
+            ("java.util.List" include nil nil [589 611])
+            ("java.util.Map" include nil nil [612 633])
+            ("java.util.Set" include nil nil [634 655])
+            ("java.util.WeakHashMap" include nil nil [656 685])
+            ("sun.awt.datatransfer.DataTransferer" include nil nil [687 730])
+            ("SystemFlavorMap" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("FlavorMap" "FlavorTable")
+                :members 
+                  ( ("JavaMIME" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1643 1695])
+                    ("flavorMaps" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "WeakHashMap")
+                        (reparse-symbol class_member_declaration) [1797 1861])
+                    ("keyValueSeparators" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1924 1987])
+                    ("strictKeyValueSeparators" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1992 2052])
+                    ("whiteSpaceChars" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2057 2115])
+                    ("UNICODE_TEXT_CLASSES" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2243 2382])
+                    ("ENCODED_TEXT_CLASSES" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2510 2634])
+                    ("TEXT_PLAIN_BASE_TYPE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2707 2771])
+                    ("SYNTHESIZE_IF_NOT_FOUND" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3046 3106])
+                    ("nativeToFlavor" variable
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [3302 3345])
+                    ("getNativeToFlavor" function
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [3639 3787])
+                    ("flavorToNative" variable
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [3983 4026])
+                    ("getFlavorToNative" function
+                       (:typemodifiers ("private" "synchronized")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [4320 4481])
+                    ("isMapInitialized" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4552 4593])
+                    ("getNativesForFlavorCache" variable
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [4749 4802])
+                    ("getFlavorsForNativeCache" variable
+                       (:typemodifiers ("private")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [4955 5008])
+                    ("disabledMappingGenerationKeys" variable
+                       (:typemodifiers ("private")
+                        :type "Set")
+                        (reparse-symbol class_member_declaration) [5301 5359])
+                    ("getDefaultFlavorMap" function
+                       (:typemodifiers ("public" "static")
+                        :type "FlavorMap")
+                        (reparse-symbol class_member_declaration) [5449 6021])
+                    ("SystemFlavorMap" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [6027 6060])
+                    ("initSystemFlavorMap" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6248 9295])
+                    ("parseAndStoreReader" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("in" variable (:type "BufferedReader") (reparse-symbol formal_parameters) [9482 9499]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9449 16487])
+                    ("continueLine" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("line" variable (:type "String") (reparse-symbol formal_parameters) [16580 16591]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16550 16805])
+                    ("loadConvert" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("theString" variable (:type "String") (reparse-symbol formal_parameters) [16895 16911]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [16868 19099])
+                    ("store" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("hashed" variable (:type "Object") (reparse-symbol formal_parameters) [19403 19416])
+                            ("listed" variable (:type "Object") (reparse-symbol formal_parameters) [19418 19431])
+                            ("map" variable (:type "Map") (reparse-symbol formal_parameters) [19433 19440]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19384 19680])
+                    ("nativeToFlavorLookup" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("nat" variable (:type "String") (reparse-symbol formal_parameters) [20030 20040]))                          
+                        :type "List")
+                        (reparse-symbol class_member_declaration) [19996 22248])
+                    ("flavorToNativeLookup" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("flav" variable
+                               (:typemodifiers ("final")
+                                :type "DataFlavor")
+                                (reparse-symbol formal_parameters) [22739 22760])
+                            ("synthesize" variable
+                               (:typemodifiers ("final")
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [22801 22825]))                          
+                        :type "List")
+                        (reparse-symbol class_member_declaration) [22705 24629])
+                    ("getNativesForFlavor" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("flav" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [26025 26040]))                          )
+                        (reparse-symbol class_member_declaration) [26005 30888])
+                    ("getFlavorsForNative" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("nat" variable (:type "String") (reparse-symbol formal_parameters) [32571 32581]))                          )
+                        (reparse-symbol class_member_declaration) [32551 38816])
+                    ("getNativesForFlavors" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("flavors" variable
+                               (:dereference 1
+                                :type "DataFlavor")
+                                (reparse-symbol formal_parameters) [40048 40068]))                          )
+                        (reparse-symbol class_member_declaration) [40027 40712])
+                    ("getFlavorsForNatives" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("natives" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [41998 42014]))                          )
+                        (reparse-symbol class_member_declaration) [41977 42652])
+                    ("addUnencodedNativeForFlavor" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("flav" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [43712 43727])
+                            ("nat" variable (:type "String") (reparse-symbol formal_parameters) [43786 43796]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43659 44312])
+                    ("setNativesForFlavor" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("flav" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [45796 45811])
+                            ("natives" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [45862 45878]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45751 46390])
+                    ("addFlavorForUnencodedNative" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("nat" variable (:type "String") (reparse-symbol formal_parameters) [47343 47353])
+                            ("flav" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [47412 47427]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47290 47942])
+                    ("setFlavorsForNative" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("nat" variable (:type "String") (reparse-symbol formal_parameters) [49366 49376])
+                            ("flavors" variable
+                               (:dereference 1
+                                :type "DataFlavor")
+                                (reparse-symbol formal_parameters) [49427 49447]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49321 49954])
+                    ("encodeJavaMIMEType" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("mimeType" variable (:type "String") (reparse-symbol formal_parameters) [50945 50960]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [50905 51057])
+                    ("encodeDataFlavor" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("flav" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [52313 52328]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [52275 52456])
+                    ("isJavaMIMEType" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [52782 52792]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [52745 52862])
+                    ("decodeJavaMIMEType" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("nat" variable (:type "String") (reparse-symbol formal_parameters) [53187 53197]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [53147 53331])
+                    ("decodeDataFlavor" function
+                       (:throws ("ClassNotFoundException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("nat" variable (:type "String") (reparse-symbol formal_parameters) [53683 53693]))                          
+                        :type "DataFlavor")
+                        (reparse-symbol class_member_declaration) [53641 53910]))                  
+                :type "class")
+                nil [1463 53912]))          
+    :file "SystemFlavorMap.java"
+    :pointmax 53913
+    :fsize 53912
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((GT 41974 . 41975) (COMMA 41963 . 41964) (PUBLIC 41933 . 41939) (LT 41956 . 41957) (GT 40024 . 40025) (COMMA 40017 . 40018) (PUBLIC 39983 . 39989) (LT 40006 . 40007) (GT 32549 . 32550) (PUBLIC 32514 . 32520) (LT 32538 . 32539) (GT 26003 . 26004) (PUBLIC 25972 . 25978) (LT 25996 . 25997))
+    )
+   (semanticdb-table "Transferable.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.awt.datatransfer" package nil nil [179 209])
+            ("java.io.IOException" include nil nil [211 238])
+            ("Transferable" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getTransferDataFlavors" function
+                       (:typemodifiers ("public")
+                        :type "DataFlavor[]")
+                        (reparse-symbol interface_member_declaration) [1034 1079])
+                    ("isDataFlavorSupported" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("flavor" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [1364 1381]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [1327 1383])
+                    ("getTransferData" function
+                       (:throws ("UnsupportedFlavorException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("flavor" variable (:type "DataFlavor") (reparse-symbol formal_parameters) [1946 1963]))                          
+                        :type "Object")
+                        (reparse-symbol interface_member_declaration) [1916 2012]))                  
+                :type "interface")
+                nil [661 2015]))          
+    :file "Transferable.java"
+    :pointmax 2016
+    :fsize 2015
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!awt!datatransfer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

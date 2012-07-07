@@ -1,0 +1,191 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "NamingManager.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("javax.naming.spi" package nil nil [180 205])
+            ("java.util.Enumeration" include nil nil [207 236])
+            ("java.util.Hashtable" include nil nil [237 264])
+            ("java.util.StringTokenizer" include nil nil [265 298])
+            ("java.net.MalformedURLException" include nil nil [299 337])
+            ("javax.naming.*" include nil nil [339 361])
+            ("com.sun.naming.internal.VersionHelper" include nil nil [362 407])
+            ("com.sun.naming.internal.ResourceManager" include nil nil [408 455])
+            ("com.sun.naming.internal.FactoryEnumeration" include nil nil [456 506])
+            ("NamingManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("NamingManager" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1632 1650])
+                    ("helper" variable
+                       (:typemodifiers ("static" "final")
+                        :type "VersionHelper")
+                        (reparse-symbol class_member_declaration) [1703 1772])
+                    ("object_factory_builder" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ObjectFactoryBuilder")
+                        (reparse-symbol class_member_declaration) [1901 1967])
+                    ("setObjectFactoryBuilder" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("builder" variable (:type "ObjectFactoryBuilder") (reparse-symbol formal_parameters) [3208 3236]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3146 3533])
+                    ("getObjectFactoryBuilder" function
+                       (:typemodifiers ("static" "synchronized")
+                        :type "ObjectFactoryBuilder")
+                        (reparse-symbol class_member_declaration) [3605 3711])
+                    ("getObjectFactoryFromReference" function
+                       (:throws ("IllegalAccessException" "InstantiationException" "MalformedURLException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ref" variable (:type "Reference") (reparse-symbol formal_parameters) [4199 4212])
+                            ("factoryName" variable (:type "String") (reparse-symbol formal_parameters) [4214 4232]))                          
+                        :type "ObjectFactory")
+                        (reparse-symbol class_member_declaration) [4146 4891])
+                    ("createObjectFromFactories" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [5228 5238])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [5240 5249])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [5256 5271])
+                            ("environment" variable (:type "Hashtable") (reparse-symbol formal_parameters) [5273 5294]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [5180 5765])
+                    ("getURLScheme" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [5806 5816]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5771 6024])
+                    ("getObjectInstance" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("refInfo" variable (:type "Object") (reparse-symbol formal_parameters) [10719 10733])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [10735 10744])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [10746 10761]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [10679 12264])
+                    ("processURLAddrs" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ref" variable (:type "Reference") (reparse-symbol formal_parameters) [12484 12497])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [12499 12508])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [12510 12525])
+                            ("environment" variable (:type "Hashtable") (reparse-symbol formal_parameters) [12533 12554]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [12454 12929])
+                    ("processURL" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("refInfo" variable (:type "Object") (reparse-symbol formal_parameters) [12968 12982])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [12984 12993])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [13004 13019])
+                            ("environment" variable (:type "Hashtable") (reparse-symbol formal_parameters) [13021 13042]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [12935 13998])
+                    ("getContext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [14872 14882])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [14884 14893])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [14895 14910])
+                            ("environment" variable (:type "Hashtable") (reparse-symbol formal_parameters) [14921 14942]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [14846 15429])
+                    ("getResolver" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [15498 15508])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [15510 15519])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [15521 15536])
+                            ("environment" variable (:type "Hashtable") (reparse-symbol formal_parameters) [15542 15563]))                          
+                        :type "Resolver")
+                        (reparse-symbol class_member_declaration) [15470 16054])
+                    ("getURLContext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("scheme" variable (:type "String") (reparse-symbol formal_parameters) [19122 19135]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [19086 19484])
+                    ("defaultPkgPrefix" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19490 19556])
+                    ("getURLObject" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("scheme" variable (:type "String") (reparse-symbol formal_parameters) [21026 21039])
+                            ("urlInfo" variable (:type "Object") (reparse-symbol formal_parameters) [21041 21055])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [21068 21077])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [21079 21094])
+                            ("environment" variable (:type "Hashtable") (reparse-symbol formal_parameters) [21107 21128]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [20991 21706])
+                    ("initctx_factory_builder" variable
+                       (:typemodifiers ("private" "static")
+                        :type "InitialContextFactoryBuilder")
+                        (reparse-symbol class_member_declaration) [21759 21834])
+                    ("getInitialContextFactoryBuilder" function
+                       (:typemodifiers ("private" "static" "synchronized")
+                        :type "InitialContextFactoryBuilder")
+                        (reparse-symbol class_member_declaration) [21963 22098])
+                    ("getInitialContext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [23313 24439])
+                    ("setInitialContextFactoryBuilder" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("builder" variable (:type "InitialContextFactoryBuilder") (reparse-symbol formal_parameters) [25282 25318]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25216 25647])
+                    ("hasInitialContextFactoryBuilder" function
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [25894 26010])
+                    ("CPE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [26578 26652])
+                    ("getContinuationContext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("cpe" variable (:type "CannotProceedException") (reparse-symbol formal_parameters) [28118 28144]))                          
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [28073 28528])
+                    ("getStateToBind" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [31611 31621])
+                            ("name" variable (:type "Name") (reparse-symbol formal_parameters) [31623 31632])
+                            ("nameCtx" variable (:type "Context") (reparse-symbol formal_parameters) [31634 31649]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [31574 32185]))                  
+                :type "class")
+                nil [1464 32187]))          
+    :file "NamingManager.java"
+    :pointmax 32188
+    :fsize 32187
+    :lastmodtime '(19394 43708)
+    :unmatched-syntax '((GT 31673 . 31674) (QUESTION 31672 . 31673) (COMMA 31671 . 31672) (QUESTION 31670 . 31671) (IDENTIFIER 31660 . 31669) (LT 31669 . 31670) (GT 23366 . 23367) (QUESTION 23365 . 23366) (COMMA 23364 . 23365) (QUESTION 23363 . 23364) (IDENTIFIER 23353 . 23362) (LT 23362 . 23363) (GT 19155 . 19156) (QUESTION 19154 . 19155) (COMMA 19153 . 19154) (QUESTION 19152 . 19153) (IDENTIFIER 19142 . 19151) (LT 19151 . 19152) (GT 10781 . 10782) (QUESTION 10780 . 10781) (COMMA 10779 . 10780) (QUESTION 10778 . 10779) (IDENTIFIER 10768 . 10777) (LT 10777 . 10778))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!javax!naming!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

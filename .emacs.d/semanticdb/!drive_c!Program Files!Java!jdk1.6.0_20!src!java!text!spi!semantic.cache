@@ -1,0 +1,114 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "DateFormatSymbolsProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text.spi" package nil nil [191 213])
+            ("java.text.DateFormatSymbols" include nil nil [215 250])
+            ("java.util.Locale" include nil nil [251 275])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [276 319])
+            ("DateFormatSymbolsProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("DateFormatSymbolsProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [757 802])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [1439 1452]))                          
+                        :type "DateFormatSymbols")
+                        (reparse-symbol class_member_declaration) [1393 1454]))                  
+                :type "class")
+                nil [560 1456]))          
+    :file "DateFormatSymbolsProvider.java"
+    :pointmax 1457
+    :fsize 1456
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DecimalFormatSymbolsProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text.spi" package nil nil [194 216])
+            ("java.text.DecimalFormatSymbols" include nil nil [218 256])
+            ("java.util.Locale" include nil nil [257 281])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [282 325])
+            ("DecimalFormatSymbolsProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("DecimalFormatSymbolsProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [775 823])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [1472 1485]))                          
+                        :type "DecimalFormatSymbols")
+                        (reparse-symbol class_member_declaration) [1423 1487]))                  
+                :type "class")
+                nil [575 1489]))          
+    :file "DecimalFormatSymbolsProvider.java"
+    :pointmax 1490
+    :fsize 1489
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NumberFormatProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text.spi" package nil nil [186 208])
+            ("java.text.NumberFormat" include nil nil [210 240])
+            ("java.util.Locale" include nil nil [241 265])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [266 309])
+            ("NumberFormatProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("NumberFormatProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [741 781])
+                    ("getCurrencyInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [1428 1441]))                          
+                        :type "NumberFormat")
+                        (reparse-symbol class_member_declaration) [1379 1443])
+                    ("getIntegerInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [2470 2483]))                          
+                        :type "NumberFormat")
+                        (reparse-symbol class_member_declaration) [2422 2485])
+                    ("getNumberInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [3127 3140]))                          
+                        :type "NumberFormat")
+                        (reparse-symbol class_member_declaration) [3080 3142])
+                    ("getPercentInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [3787 3800]))                          
+                        :type "NumberFormat")
+                        (reparse-symbol class_member_declaration) [3739 3802]))                  
+                :type "class")
+                nil [549 3804]))          
+    :file "NumberFormatProvider.java"
+    :pointmax 3805
+    :fsize 3804
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!text!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

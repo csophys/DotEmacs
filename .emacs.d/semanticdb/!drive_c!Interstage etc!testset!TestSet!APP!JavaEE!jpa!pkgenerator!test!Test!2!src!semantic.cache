@@ -1,0 +1,61 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "AccessGenBean.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.pkgenerator.test" package nil nil [1 30])
+            ("javax.ejb.Stateless" include nil nil [32 59])
+            ("javax.persistence.EntityManager" include nil nil [60 99])
+            ("javax.persistence.NoResultException" include nil nil [100 143])
+            ("javax.persistence.NonUniqueResultException" include nil nil [144 194])
+            ("javax.persistence.PersistenceContext" include nil nil [195 239])
+            ("javax.persistence.Query" include nil nil [240 271])
+            ("AccessGenBean" type
+               (:typemodifiers ("public")
+                :interfaces ("AccessGen")
+                :members 
+                  ( ("create" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("data" variable (:type "GenEntity") (reparse-symbol formal_parameters) [398 412]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [379 442])
+                    ("retrieve" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [475 481]))                          
+                        :type "GenEntity")
+                        (reparse-symbol class_member_declaration) [449 567])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "GenEntity") (reparse-symbol formal_parameters) [589 600]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [570 621])
+                    ("delete" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "GenEntity") (reparse-symbol formal_parameters) [643 654]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [624 696])
+                    ("findByNameJPQL" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [732 743]))                          
+                        :type "GenEntity")
+                        (reparse-symbol class_member_declaration) [700 1145]))                  
+                :type "class")
+                nil [284 1150]))          
+    :file "AccessGenBean.java"
+    :pointmax 1151
+    :fsize 1203
+    :lastmodtime '(20300 24358)
+    :unmatched-syntax '((IDENTIFIER 336 . 355) (IDENTIFIER 371 . 373) (SEMICOLON 373 . 374) (IDENTIFIER 273 . 283))
+    )
+   )
+  :file "!drive_c!Interstage etc!testset!TestSet!APP!JavaEE!jpa!pkgenerator!test!Test!2!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

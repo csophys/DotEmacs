@@ -7,8 +7,8 @@
 ;;;;;;  color-theme-compare color-theme-make-snapshot color-theme-analyze-defun
 ;;;;;;  color-theme-print color-theme-install-at-point-for-current-frame
 ;;;;;;  color-theme-install-at-mouse color-theme-describe color-theme-select)
-;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (17529
-;;;;;;  41105))
+;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (20471
+;;;;;;  55859))
 ;;; Generated autoloads from color-theme/color-theme.el
 
 (autoload 'color-theme-select "color-theme/color-theme" "\
@@ -200,7 +200,7 @@ Initialize the color theme package by loading color-theme-libraries.
 ;;;;;;  diredp-dired-for-files-other-window diredp-dired-for-files
 ;;;;;;  diredp-dired-files-other-window diredp-dired-files diredp-w32-local-drives
 ;;;;;;  diredp-prompt-for-bookmark-prefix-flag diff-switches) "dired+/dired+"
-;;;;;;  "dired+/dired+.el" (20439 28060))
+;;;;;;  "dired+/dired+.el" (20471 55859))
 ;;; Generated autoloads from dired+/dired+.el
 
 (defvar diff-switches "-c" "\
@@ -1615,60 +1615,11 @@ Send a bug report about a Dired+ problem.
 
 ;;;***
 
-;;;### (autoloads (el-get-checksum el-get-make-recipes el-get-cd
-;;;;;;  el-get-self-update el-get-update-all el-get-version) "el-get/el-get"
-;;;;;;  "el-get/el-get.el" (20439 14156))
-;;; Generated autoloads from el-get/el-get.el
-
-(autoload 'el-get-version "el-get/el-get" "\
-Message the current el-get version
-
-\(fn)" t nil)
-
-(autoload 'el-get-update-all "el-get/el-get" "\
-Performs update of all installed packages.
-
-\(fn &optional NO-PROMPT)" t nil)
-
-(autoload 'el-get-self-update "el-get/el-get" "\
-Update el-get itself.  The standard recipe takes care of reloading the code.
-
-\(fn)" t nil)
-
-(autoload 'el-get-cd "el-get/el-get" "\
-Open dired in the package directory.
-
-\(fn PACKAGE)" t nil)
-
-(autoload 'el-get-make-recipes "el-get/el-get" "\
-Loop over `el-get-sources' and write a recipe file for each
-entry which is not a symbol and is not already a known recipe.
-
-\(fn &optional DIR)" t nil)
-
-(autoload 'el-get-checksum "el-get/el-get" "\
-Compute the checksum of the given package, and put it in the kill-ring
-
-\(fn PACKAGE &optional PACKAGE-STATUS-ALIST)" t nil)
-
-;;;***
-
-;;;### (autoloads (el-get-list-packages) "el-get/el-get-list-packages"
-;;;;;;  "el-get/el-get-list-packages.el" (20439 14156))
-;;; Generated autoloads from el-get/el-get-list-packages.el
-
-(autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
-Display a list of packages.
-
-\(fn)" t nil)
-
-;;;***
-
 ;;;### (autoloads (org-export-html5presentationize-generate-css org-export-as-html5presentation
 ;;;;;;  org-export-region-as-html5presentation org-replace-region-by-html5presentation
 ;;;;;;  org-export-as-html5presentation-to-buffer org-export-as-html5presentation-batch
 ;;;;;;  org-export-as-html5presentation-and-open) "org-html5presentation/org-html5presentation"
-;;;;;;  "org-html5presentation/org-html5presentation.el" (20439 28407))
+;;;;;;  "org-html5presentation/org-html5presentation.el" (20471 55859))
 ;;; Generated autoloads from org-html5presentation/org-html5presentation.el
 
 (put 'org-export-html5presentation-style-include-default 'safe-local-variable 'booleanp)
@@ -1760,60 +1711,8 @@ that uses these same face definitions.
 
 ;;;***
 
-;;;### (autoloads (yas/global-mode yas/minor-mode) "yasnippet/yasnippet"
-;;;;;;  "yasnippet/yasnippet.el" (20439 27758))
-;;; Generated autoloads from yasnippet/yasnippet.el
-
-(autoload 'yas/minor-mode "yasnippet/yasnippet" "\
-Toggle YASnippet mode.
-
-When YASnippet mode is enabled, the `yas/trigger-key' key expands
-snippets of code depending on the mode.
-
-With no argument, this command toggles the mode.
-positive prefix argument turns on the mode.
-Negative prefix argument turns off the mode.
-
-You can customize the key through `yas/trigger-key'.
-
-Key bindings:
-\\{yas/minor-mode-map}
-
-\(fn &optional ARG)" t nil)
-
-(defvar yas/global-mode nil "\
-Non-nil if Yas/Global mode is enabled.
-See the command `yas/global-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `yas/global-mode'.")
-
-(custom-autoload 'yas/global-mode "yasnippet/yasnippet" nil)
-
-(autoload 'yas/global-mode "yasnippet/yasnippet" "\
-Toggle Yas/Minor mode in all buffers.
-With prefix ARG, enable Yas/Global mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Yas/Minor mode is enabled in all buffers where
-`yas/minor-mode-on' would do it.
-See `yas/minor-mode' for more information on Yas/Minor mode.
-
-\(fn &optional ARG)" t nil)
-
-;;;***
-
-;;;### (autoloads nil nil ("auto-complete/auto-complete-config.el"
-;;;;;;  "auto-complete/auto-complete-pkg.el" "autopair/autopair-tests.el"
-;;;;;;  "autopair/autopair.el" "color-theme/color-theme-autoloads.el"
-;;;;;;  "el-get/el-get-autoloads.el" "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
-;;;;;;  "el-get/el-get-core.el" "el-get/el-get-custom.el" "el-get/el-get-dependencies.el"
-;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
-;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "fuzzy/fuzzy.el"
-;;;;;;  "popup/popup-test.el" "popup/popup.el" "w32-browser/w32-browser.el"
-;;;;;;  "yasnippet/dropdown-list.el" "yasnippet/yasnippet-debug.el"
-;;;;;;  "yasnippet/yasnippet-tests.el") (20447 20466 498000))
+;;;### (autoloads nil nil ("el-get/el-get-install.el" "el-get/el-get.el")
+;;;;;;  (20471 56012 789000))
 
 ;;;***
 

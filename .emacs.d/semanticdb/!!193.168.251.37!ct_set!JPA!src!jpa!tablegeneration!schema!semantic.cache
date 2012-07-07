@@ -1,0 +1,78 @@
+;; Object schema/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "schema/"
+  :tables (list 
+   (semanticdb-table "AccessSchemaBeanTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.tablegeneration.schema" package nil nil [1 36])
+            ("javax.naming.InitialContext" include nil nil [38 73])
+            ("jpa.common.runners.RunnerOfFnst" include nil nil [75 114])
+            ("jpa.common.util.CommonUtils" include nil nil [115 150])
+            ("jpa.common.util.DatabaseUtilClient" include nil nil [151 193])
+            ("org.junit.After" include nil nil [229 252])
+            ("org.junit.Before" include nil nil [253 277])
+            ("org.junit.Test" include nil nil [278 300])
+            ("org.junit.runner.RunWith" include nil nil [301 333])
+            ("AccessSchemaBeanTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable (:type "int") (reparse-symbol class_member_declaration) [405 412])
+                    ("appName" variable (:type "String") (reparse-symbol class_member_declaration) [417 459])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [464 486])
+                    ("bean" variable (:type "AccessSchema") (reparse-symbol class_member_declaration) [491 509])
+                    ("setUp" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [527 646])
+                    ("setDown" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [667 766])
+                    ("testColumnMapping" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [782 1215])
+                    ("checkResults" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable (:type "AccessSchemaEntity") (reparse-symbol formal_parameters) [1247 1267]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1221 1318])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1324 1587]))                  
+                :type "class")
+                nil [364 1589]))          
+    :file "AccessSchemaBeanTest.java"
+    :pointmax 1443
+    :fsize 1603
+    :lastmodtime '(20465 63779)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AccessSchema.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "AccessSchema.java"
+    :pointmax 261
+    :fsize 260
+    :lastmodtime '(20433 18896)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AccessSchemaBean.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "AccessSchemaBean.java"
+    :pointmax 598
+    :fsize 597
+    :lastmodtime '(20433 18896)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!!193.168.251.37!ct_set!JPA!src!jpa!tablegeneration!schema!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

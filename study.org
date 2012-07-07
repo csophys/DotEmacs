@@ -21,6 +21,33 @@ Map Collections.synchronizedMap(Map m)
 
  
  [[file:c:/task/task.org::*linux32%20symfoware%20V11(193.168.238.155)][linux32 symfoware V11(193.168.238.155)]]
+** 编程语言 java 中间变量缓存机制
+　　public class Test2 { 
+　　　　public static void main(String[] args) { 
+　　　　　　int j = 0; 
+　　　　　　for (int i = 0; i < 100; i++) { 
+　　　　　　　　j = j++; 
+　　　　　　} 
+　　　　　　System.out.println(j); 
+　　　　} 
+　　} 
+
+是0 
+因为java用了中间缓存变量的机制 
+j=j++;可换成如下写法。 
+temp=j; //j++结果
+j=j+1; //左侧计算完成后自加
+j=temp; //赋值
+所以结果为0 
+ 
+ [[file://193.168.251.37/ct_set/common/common.xml::<macrodef%20name%3D"run-javaee-test">][file://193.168.251.37/ct_set/common/common.xml::<macrodef name="run-javaee-test">]]
+** 编程语言 length和length()的区别
+  - length是数组的属性，用来求数组的长度。
+  - length是字符串的方法，用来求字符串的长度。
+ 
+ [[file://193.168.251.37/ct_set/common/common.xml::<!--%20includes%3D"@{component}/@{pkgname}/@{mname}/@{testname}Test.class"%20-->][file://193.168.251.37/ct_set/common/common.xml::<!-- includes="@{component}/@{pkgname}/@{mname}/@{testname}Test.class" -->]]
+
+*
 * 设计模式
 ** 创建型模式：负责对象地创建
 - 工厂模式：客户类和工厂类分开。消费者任何时候需要某种产品，只需向工厂请求即可。消费者无须修改就可以接纳新产品。缺点是当产品修改时，工厂类也要做相应的修改。如：如何创建及如何向客户端提供。
@@ -58,3 +85,10 @@ Map Collections.synchronizedMap(Map m)
     3) 不存在指向空值的引用，但是存在指向空值的指针。
  
  [[file:~/.emacs.d/csophys/csophys_writingStyle.el::))]]
+* 算法
+** 算法 判断一个数是否是2的阶次方数
+- 基本算法：设计一个递归函数，判断是否是1，返回true.不是，是否是偶数，是就整除2，继续调用当前函数。不然就返回false.
+- 更优算法：当前整数如果是2的阶次方数，那么其的二进制形式一般式10000...形式，其数减去1再与本身相与应为0.故求a&(a-1)是否为0即可。
+** 算法 字符串的排列和组合算法研究
+ 
+ [[file:c:/EmacsDir/test.java::import%20java.util.*%3B][file:c:/EmacsDir/test.java::import java.util.*;]]
