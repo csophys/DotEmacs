@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("csophys_writingStyle.el"
+(("study.org"
+ (filename . "~/study.org")
+ (front-context-string . "* 编程语言\n** 编程语言 c")
+ (rear-context-string)
+ (position . 1))
+("csophys_writingStyle.el"
  (filename . "~/.emacs.d/csophys/csophys_writingStyle.el")
  (front-context-string . "\n\n;;;;yasnippet\n")
  (rear-context-string . ") 'ac-previous)\n")
@@ -28,8 +33,8 @@
  (rear-context-string . "ys_company.bmk\")")
  (position . 745))
 ("org-remember-last-stored"
- (filename . "~/schedule.org.gpg")
- (front-context-string . "** TODO 添加yasnip")
- (rear-context-string . "down::# Intro]]\n")
- (position . 3895))
+ (filename . "~/study.org")
+ (front-context-string . "** 基本概念 指针和引用的区别")
+ (rear-context-string . "      \n\n\n* 基本概念\n")
+ (position . 4953))
 )

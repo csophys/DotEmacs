@@ -1,0 +1,282 @@
+;; Object sql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sql/"
+  :tables (list 
+   (semanticdb-table "Time.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.sql" package nil nil [171 188])
+            ("Time" type
+               (:typemodifiers ("public")
+                :superclasses "java.util.Date"
+                :members 
+                  ( ("Time" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("hour" variable (:type "int") (reparse-symbol formal_parameters) [1331 1339])
+                            ("minute" variable (:type "int") (reparse-symbol formal_parameters) [1341 1351])
+                            ("second" variable (:type "int") (reparse-symbol formal_parameters) [1353 1363]))                          )
+                        (reparse-symbol class_member_declaration) [1319 1412])
+                    ("Time" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [1714 1723]))                          )
+                        (reparse-symbol class_member_declaration) [1702 1746])
+                    ("setTime" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [2047 2056]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2027 2087])
+                    ("valueOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2323 2331]))                          
+                        :type "Time")
+                        (reparse-symbol class_member_declaration) [2296 2940])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3080 3675])
+                    ("getYear" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4050 4127])
+                    ("getMonth" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4432 4510])
+                    ("getDay" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4796 4872])
+                    ("getDate" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5175 5252])
+                    ("setYear" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [5575 5580]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5555 5638])
+                    ("setMonth" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [5964 5969]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5943 6027])
+                    ("setDate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [6350 6355]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6330 6413])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6517 6575]))                  
+                :type "class")
+                nil [589 6577]))          
+    :file "Time.java"
+    :pointmax 6581
+    :fsize 6580
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Timestamp.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.sql" package nil nil [176 193])
+            ("java.util.StringTokenizer" include nil nil [195 228])
+            ("Timestamp" type
+               (:typemodifiers ("public")
+                :superclasses "java.util.Date"
+                :members 
+                  ( ("Timestamp" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [2890 2898])
+                            ("month" variable (:type "int") (reparse-symbol formal_parameters) [2900 2909])
+                            ("date" variable (:type "int") (reparse-symbol formal_parameters) [2911 2919])
+                            ("hour" variable (:type "int") (reparse-symbol formal_parameters) [2929 2937])
+                            ("minute" variable (:type "int") (reparse-symbol formal_parameters) [2939 2949])
+                            ("second" variable (:type "int") (reparse-symbol formal_parameters) [2951 2961])
+                            ("nano" variable (:type "int") (reparse-symbol formal_parameters) [2963 2971]))                          )
+                        (reparse-symbol class_member_declaration) [2873 3153])
+                    ("Timestamp" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [3693 3702]))                          )
+                        (reparse-symbol class_member_declaration) [3676 3877])
+                    ("setTime" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [4217 4226]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4197 4409])
+                    ("getTime" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4716 4825])
+                    ("nanos" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4875 4893])
+                    ("valueOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [5402 5410]))                          
+                        :type "Timestamp")
+                        (reparse-symbol class_member_declaration) [5370 8927])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9253 11513])
+                    ("getNanos" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11720 11764])
+                    ("setNanos" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [12124 12129]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12103 12253])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ts" variable (:type "Timestamp") (reparse-symbol formal_parameters) [12671 12683]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12649 12832])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ts" variable (:type "java.lang.Object") (reparse-symbol formal_parameters) [13648 13667]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13626 13787])
+                    ("before" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ts" variable (:type "Timestamp") (reparse-symbol formal_parameters) [14154 14166]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14132 14202])
+                    ("after" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ts" variable (:type "Timestamp") (reparse-symbol formal_parameters) [14564 14576]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14543 14612])
+                    ("compareTo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ts" variable (:type "Timestamp") (reparse-symbol formal_parameters) [15283 15295]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15262 15528])
+                    ("compareTo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("o" variable (:type "java.util.Date") (reparse-symbol formal_parameters) [16481 16497]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16460 17007])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [17026 17084]))                  
+                :type "class")
+                nil [2309 17087]))          
+    :file "Timestamp.java"
+    :pointmax 17089
+    :fsize 17088
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Date.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.sql" package nil nil [171 188])
+            ("Date" type
+               (:typemodifiers ("public")
+                :superclasses "java.util.Date"
+                :members 
+                  ( ("Date" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [1254 1262])
+                            ("month" variable (:type "int") (reparse-symbol formal_parameters) [1264 1273])
+                            ("day" variable (:type "int") (reparse-symbol formal_parameters) [1275 1282]))                          )
+                        (reparse-symbol class_member_declaration) [1242 1317])
+                    ("Date" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("date" variable (:type "long") (reparse-symbol formal_parameters) [1977 1986]))                          )
+                        (reparse-symbol class_member_declaration) [1965 2078])
+                    ("setTime" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("date" variable (:type "long") (reparse-symbol formal_parameters) [2757 2766]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2737 2866])
+                    ("valueOf" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [3339 3347]))                          
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [3312 5521])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5661 6276])
+                    ("getHours" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6607 6685])
+                    ("getMinutes" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6946 7026])
+                    ("getSeconds" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7291 7371])
+                    ("setHours" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [7651 7656]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7630 7714])
+                    ("setMinutes" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [7998 8003]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7975 8061])
+                    ("setSeconds" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [8345 8350]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8322 8408])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [8513 8571]))                  
+                :type "class")
+                nil [750 8573]))          
+    :file "Date.java"
+    :pointmax 8575
+    :fsize 8574
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!sql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,18 @@
+;; Object EmacsDir/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "EmacsDir/"
+  :tables (list 
+   (semanticdb-table "1.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "1.java"
+    :pointmax 140
+    :fsize 149
+    :lastmodtime '(20445 47121)
+    :unmatched-syntax '((IDENTIFIER 127 . 137) (MINUS 126 . 127) (IDENTIFIER 122 . 126) (MINUS 121 . 122) (IDENTIFIER 119 . 121) (IDENTIFIER 110 . 115) (MINUS 109 . 110) (IDENTIFIER 105 . 109) (MINUS 104 . 105) (IDENTIFIER 98 . 104) (MINUS 97 . 98) (IDENTIFIER 95 . 97) (IDENTIFIER 86 . 93) (MINUS 85 . 86) (IDENTIFIER 81 . 85) (MINUS 80 . 81) (IDENTIFIER 76 . 80) (MINUS 75 . 76) (IDENTIFIER 73 . 75) (MINUS 72 . 73) (IDENTIFIER 67 . 72) (MINUS 66 . 67) (IDENTIFIER 60 . 66) (MINUS 59 . 60) (IDENTIFIER 57 . 59) (IDENTIFIER 44 . 54) (MINUS 43 . 44) (IDENTIFIER 37 . 43) (MINUS 36 . 37) (IDENTIFIER 34 . 36) (IDENTIFIER 30 . 32) (MINUS 29 . 30) (IDENTIFIER 23 . 29) (MINUS 22 . 23) (IDENTIFIER 20 . 22) (IDENTIFIER 9 . 16) (MINUS 8 . 9) (IDENTIFIER 6 . 8) (IDENTIFIER 2 . 5))
+    )
+   )
+  :file "!drive_d!EmacsDir!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

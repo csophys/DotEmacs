@@ -1,0 +1,115 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "CharTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.Char" package nil nil [1 27])
+            ("java.util.Arrays" include nil nil [73 97])
+            ("java.util.Collection" include nil nil [98 126])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [128 174])
+            ("jpa.common.util.CommonUtils" include nil nil [175 210])
+            ("jpa.javatype.Char.AllTest" include nil nil [211 244])
+            ("jpa.javatype.Char.SmokeTest" include nil nil [245 280])
+            ("org.junit.AfterClass" include nil nil [282 310])
+            ("org.junit.BeforeClass" include nil nil [311 340])
+            ("org.junit.Test" include nil nil [341 363])
+            ("org.junit.experimental.categories.Category" include nil nil [364 414])
+            ("org.junit.runner.RunWith" include nil nil [415 447])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [448 498])
+            ("org.junit.Before" include nil nil [500 524])
+            ("org.junit.After" include nil nil [525 548])
+            ("jpa.common.util.CollectLogPerMethod" include nil nil [549 592])
+            ("CharTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("appName" variable
+                       (:typemodifiers ("public" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [656 706])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [708 715])
+                    ("classIndex" variable (:type "int") (reparse-symbol class_member_declaration) [720 735])
+                    ("field" variable (:type "String") (reparse-symbol class_member_declaration) [740 753])
+                    ("insertValue" variable (:type "int") (reparse-symbol class_member_declaration) [758 774])
+                    ("findValue" variable (:type "int") (reparse-symbol class_member_declaration) [779 793])
+                    ("collectLogPerMethod" variable
+                       (:typemodifiers ("static")
+                        :type "CollectLogPerMethod")
+                        (reparse-symbol class_member_declaration) [798 853])
+                    ("beforeMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [879 951])
+                    ("afterMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [972 1064])
+                    ("CharTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [1085 1091])
+                            ("classIndex" variable (:type "int") (reparse-symbol formal_parameters) [1093 1107])
+                            ("field" variable (:type "String") (reparse-symbol formal_parameters) [1109 1121])
+                            ("insertValue" variable (:type "int") (reparse-symbol formal_parameters) [1123 1138])
+                            ("findValue" variable (:type "int") (reparse-symbol formal_parameters) [1140 1153]))                          )
+                        (reparse-symbol class_member_declaration) [1069 1323])
+                    ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1380 2849])
+                    ("test" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2894 3236])
+                    ("test1" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3287 3645])
+                    ("beforeClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3669 3808])
+                    ("afterClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3831 4030]))                  
+                :type "class")
+                nil [630 4033]))          
+    :file "CharTest.java"
+    :pointmax 4034
+    :fsize 4033
+    :lastmodtime '(20418 59344)
+    :unmatched-syntax '((IDENTIFIER 3266 . 3275) (CLASS 3276 . 3281) (IDENTIFIER 2875 . 2882) (CLASS 2883 . 2888) (GT 1378 . 1379) (IDENTIFIER 1329 . 1340) (PUBLIC 1345 . 1351) (LT 1369 . 1370) (PAREN_BLOCK 602 . 629) (IDENTIFIER 594 . 602) (IDENTIFIER 60 . 70) (DOT 59 . 60) (IDENTIFIER 53 . 59) (DOT 52 . 53) (IDENTIFIER 47 . 52) (DOT 46 . 47) (IMPORT 29 . 35) (STATIC 36 . 42) (IDENTIFIER 43 . 46))
+    )
+   (semanticdb-table "AllTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.Char" package nil nil [1 27])
+            ("AllTest" type
+               (:typemodifiers ("public")
+                :type "interface")
+                nil [29 62]))          
+    :file "AllTest.java"
+    :pointmax 63
+    :fsize 67
+    :lastmodtime '(20300 25570)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SmokeTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.Char" package nil nil [1 27])
+            ("SmokeTest" type
+               (:typemodifiers ("public")
+                :type "interface")
+                nil [30 65]))          
+    :file "SmokeTest.java"
+    :pointmax 66
+    :fsize 71
+    :lastmodtime '(20300 25570)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Interstage etc!testset!TestSet!APP!JavaEE!jpa!javatype!Char!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
