@@ -58,7 +58,9 @@
 (os_tramp)
 
 (require 'magit);;;;magit
+(el-get-init "w32-browser")
 (require 'w32-browser);;;;w32-brower
+(el-get-init "autopair")
 (autopair-global-mode t);;;启动autopair mode
 ;------------------------------------------------------------------------------
 (require 'epa-file);;用easypg来进行文件的加密
@@ -80,11 +82,14 @@
 (global-semantic-decoration-mode t)
 ;------------------------------------------------------------------------------
 ;;;;yasnippet
+(el-get-init "yasnippet")
 (yas/initialize)
 (setq yas/prompt-functions '(yas/dropdown-prompt))
 (define-key org-mode-map (kbd "<tab>") 'yas/expand)
 ;------------------------------------------------------------------------------
 ;;;;auto-complete
+(el-get-init "popup")
+(el-get-init "auto-complete")
 (require 'auto-complete-config)
 ;;;;重新定义函数ac-source-yasnippet，能够适用于最新的yasnippet
 (defun ac-yasnippet-candidates ()
