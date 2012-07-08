@@ -1,7 +1,9 @@
 ;;;csophys_writingSytle.el
 ;;;;;;;;;;;;;;;;;;;;;;;;基本配置;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (el-get-init "color-theme")
+(el-get-init "dired+")
 (color-theme-gnome2);设置darkskategrey灰色
+(global-undo-tree-mode t);启用undotree
 (setq default-major-mode 'text-mode);设置默认主属性为text模式。
 ;(setq-default ispell-program-name "aspell") ;;启用拼写检查
 (delete-selection-mode); 操作region区域和其他程序
@@ -85,6 +87,7 @@
 (el-get-init "yasnippet")
 (yas/initialize)
 (add-to-list 'yas/snippet-dirs "~/.emacs.d/snippets")
+(yas/reload-all)
 (setq yas/prompt-functions '(yas/dropdown-prompt))
 (define-key org-mode-map (kbd "<tab>") 'yas/expand)
 ;------------------------------------------------------------------------------
@@ -210,6 +213,26 @@
 (define-key global-map (kbd "C-c ld") 'ecb-deactivate);
 ;------------------------------------------------------------------------------
 
+;------------------------------------------------------------------------------
+(require 'autoinsert)
+(setq auto-insert-mode t)  ;;; Adds hook to find-files-hook
+(setq auto-insert-directory "~/.emacs.d/auto-insert/")
+(setq auto-insert 'other)
+(setq auto-insert-query nil)
+
+;; auto-insert stuff
+(add-hook 'find-file-hooks 'auto-insert)
+(setq auto-insert-alist
+      '(
+        ("\\.java$" . ["insert.java"  auto-update-java-source-file])
+        ))
+
+(defun auto-update-java-source-file ()
+  "do something when open an java source"
+  (interactive)
+  (goto-char (- (point-max) 1))
+  (yas/expand)
+	)
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
