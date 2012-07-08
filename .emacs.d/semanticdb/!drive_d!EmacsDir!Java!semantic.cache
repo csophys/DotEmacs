@@ -36,16 +36,7 @@
     :lastmodtime '(20325 58485)
     :unmatched-syntax 'nil
     )
-   (semanticdb-table "test.java"
-    :major-mode 'java-mode
-    :tags nil
-    :file "test.java"
-    :pointmax 25
-    :fsize 39
-    :lastmodtime '(20472 58441)
-    :unmatched-syntax '((IDENTIFIER 75 . 79) (PAREN_BLOCK 84 . 86) (BRACE_BLOCK 25 . 34))
-    )
-    )
+     )
   :file "!drive_d!EmacsDir!Java!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.0"
