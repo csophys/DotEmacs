@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# key: templete
+# contributor: Translated from TextMate Snippet
+# name: templete
+# --
+${1:public} class `(substring (buffer-name)  0 -5)` $2 {
+			
+		//construct method
+		`(buffer-name)`(){
+				$3
+		}
+
+		$0
+}
+
