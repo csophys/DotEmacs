@@ -1,0 +1,74 @@
+;; Object MyDocument/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MyDocument/"
+  :tables (list 
+   (semanticdb-table "myPaper.org.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("《基于WSDM的集群资源监控的研究和应用》论文预拟提纲" section nil nil [242 2286])
+            ("*///-->" section nil nil [2286 2906])
+            ("《基于WSDM的集群资源监控的研究和应用》论文预拟提纲" section (:members 
+              ( ("《基于WSDM的集群资源监控的研究和应用》论文预拟提纲" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 摘要" anchor nil nil [3114 3117])
+                        ("2 绪论" anchor nil nil [3149 3152])
+                        ("2.1 国内外研究背景与现状" anchor nil nil [3184 3187])
+                        ("2.2 本论文研究的意义" anchor nil nil [3231 3234])
+                        ("2.3 论文研究内容与技术路线" anchor nil nil [3276 3279])
+                        ("2.4 论文的研究成果和新颖之处" anchor nil nil [3324 3327])
+                        ("3 相关理论知识" anchor nil nil [3385 3388])
+                        ("3.1 集群监控流程" anchor nil nil [3424 3427])
+                        ("3.2 WSDM标准规范" anchor nil nil [3467 3470])
+                        ("3.3 RBAC相关知识" anchor nil nil [3512 3515])
+                        ("4 基于WSDM的监控的研究和设计" anchor nil nil [3569 3572])
+                        ("4.1 监控的整体框架设计" anchor nil nil [3617 3620])
+                        ("4.2 监控模块的资源建模" anchor nil nil [3663 3666])
+                        ("5 结合RBAC实现监控地灵活性" anchor nil nil [3721 3724])
+                        ("6 基于WSDM的监控的实现" anchor nil nil [3768 3771])
+                        ("7 实验数据与结果分析" anchor nil nil [3813 3816])
+                        ("7.1 实验环境" anchor nil nil [3855 3858])
+                        ("7.2 结果分析" anchor nil nil [3896 3899])
+                        ("8 结束语" anchor nil nil [3949 3952])
+                        ("8.1 工作总结" anchor nil nil [3985 3988])
+                        ("8.2 展望" anchor nil nil [4026 4029])
+                        ("9 致谢" anchor nil nil [4077 4080])
+                        ("10 参考文献" anchor nil nil [4112 4115])
+                        ("11 攻读硕士期间发表的论文" anchor nil nil [4151 4154])
+                        ("12 攻读硕士期间参加的相关项目" anchor nil nil [4197 4200])
+                        ("1" section nil nil [4311 4481])
+                        ("2" section (:members 
+                          ( ("2.1" section nil nil [4646 4977])
+                            ("2.2" section nil nil [4977 5161])
+                            ("2.3" section nil nil [5161 5440])
+                            ("2.4" section nil nil [5440 5843]))                          ) nil [4481 5843])
+                        ("3" section (:members 
+                          ( ("3.1" section nil nil [6012 6194])
+                            ("3.2" section nil nil [6194 6580])
+                            ("3.3" section nil nil [6580 6769]))                          ) nil [5843 6769])
+                        ("4" section (:members 
+                          ( ("4.1" section nil nil [6947 7190])
+                            ("4.2" section nil nil [7190 7434]))                          ) nil [6769 7434])
+                        ("5" section nil nil [7434 7724])
+                        ("6" section nil nil [7724 7953])
+                        ("7" section (:members 
+                          ( ("7.1" section nil nil [8125 8352])
+                            ("7.2" section nil nil [8352 8600]))                          ) nil [7953 8600])
+                        ("8" section (:members 
+                          ( ("8.1" section nil nil [8766 8946])
+                            ("8.2" section nil nil [8946 9129]))                          ) nil [8600 9129])
+                        ("9" section nil nil [9129 9300])
+                        ("10" section nil nil [9300 9476])
+                        ("11" section nil nil [9476 9659])
+                        ("12" section (:members 
+                          ( ("Validate XHTML 1.0" anchor nil nil [11035 11038]))                          ) nil [9659 11134]))                      ) nil [3044 11134]))                  ) nil [2962 11134]))              ) nil [2906 11134]))          
+    :file "myPaper.org.html"
+    :pointmax 11134
+    :fsize 12431
+    :lastmodtime '(20427 25775)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!paper!MyDocument!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

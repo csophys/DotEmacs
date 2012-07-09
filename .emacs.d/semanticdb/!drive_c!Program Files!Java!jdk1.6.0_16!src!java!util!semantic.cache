@@ -1,0 +1,29 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "List.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [171 189]))          
+    :file "List.java"
+    :pointmax 26316
+    :fsize 26315
+    :lastmodtime '(19058 1796)
+    :unmatched-syntax '((BRACE_BLOCK 4168 . 26315) (GT 4166 . 4167) (IDENTIFIER 4165 . 4166) (LT 4164 . 4165) (IDENTIFIER 4154 . 4164) (EXTENDS 4146 . 4153) (GT 4144 . 4145) (IDENTIFIER 4143 . 4144) (PUBLIC 4121 . 4127) (LT 4142 . 4143))
+    )
+   (semanticdb-table "ArrayList.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [176 194]))          
+    :file "ArrayList.java"
+    :pointmax 21564
+    :fsize 21563
+    :lastmodtime '(19058 1796)
+    :unmatched-syntax '((BRACE_BLOCK 4119 . 21563) (IDENTIFIER 4106 . 4118) (DOT 4105 . 4106) (IDENTIFIER 4103 . 4105) (DOT 4102 . 4103) (IDENTIFIER 4098 . 4102) (COMMA 4096 . 4097) (IDENTIFIER 4087 . 4096) (COMMA 4085 . 4086) (IDENTIFIER 4073 . 4085) (COMMA 4071 . 4072) (GT 4070 . 4071) (IDENTIFIER 4069 . 4070) (LT 4068 . 4069) (IDENTIFIER 4064 . 4068) (IMPLEMENTS 4053 . 4063) (GT 4043 . 4044) (IDENTIFIER 4042 . 4043) (LT 4041 . 4042) (IDENTIFIER 4029 . 4041) (EXTENDS 4021 . 4028) (GT 4019 . 4020) (IDENTIFIER 4018 . 4019) (PUBLIC 3995 . 4001) (LT 4017 . 4018))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

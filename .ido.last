@@ -41,6 +41,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "D:/EmacsDir/"
  "d:/DotEmacs/.emacs.d/csophys/"
  "d:/DotEmacs/.emacs.d/el-get/"
  "d:/DotEmacs/"
@@ -63,7 +64,6 @@
  "e:/kuaipan/文档/mine/English/"
  "e:/kuaipan/文档/mine/"
  "d:/DotEmacs/.emacs.d/"
- "D:/EmacsDir/"
  "c:/DotEmacs/.emacs.d/snippets/"
  "C:/EmacsDir/C/"
  "c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/text-mode/"
@@ -82,6 +82,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "test.dot"
  "csophys_writingStyle.el"
  ".status.el"
  "dired+.el"
@@ -91,21 +92,13 @@
  "a"
  "test.org"
  "csophys_ecb.el"
- "command.txt"
- "subgit.bat"
- "myPaper.org.gpg"
- "test.java"
- "csophys_ecb.el"
- "command.txt"
- "test.c"
- "symfoware.properties"
- "symfoware(LE).properties"
- "task.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/DotEmacs/.emacs.d/csophys/" (20449 45510) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+ ("d:/DotEmacs/.emacs.d/csophys/" (20474 63064) "csophys_writingStyle.el" "csophys_function.el" "#csophys_writingStyle.el#" "../" "./")
+
+ ("D:/EmacsDir/" (20472 16494) "test.xml" "Project/" "Java/" "C/" "1.java" "#1.java#" "../" "./")
 
  ("d:/DotEmacs/.emacs.d/ecb/" (20449 45510) "../" "./")
 
@@ -130,8 +123,6 @@
  ("d:/DotEmacs/.emacs.d/csophys/" (20471 55859) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("D:/EmacsDir/C/" (20325 55847) "test.c" "#test.c#" "../" "./")
-
- ("D:/EmacsDir/" (20417 57512) "ProjectTest/" "Project/" "Java/" "C/" "../" "./")
 
  ("e:/kuaipan/文档/mine/" (20451 4239) "论文/" "记忆性内容/" "简历/" "程序/" "目标方案.dot" "用户管理修改.txt~" "用户管理修改.txt.txt~" "用户管理修改.txt" "班级资料/" "校办资料/" "修改(陈胜).txt" "个人计算机知识鸟瞰.png" "个人计算机知识鸟瞰.mm" "专利/" "test1.gif" "test.mm" "org帮助.org" "orgstyleworg.css" "orgstyle.css" "notes.org" "notes.mm" "notes.html" "English/" "document.org" "document.mm" "document.html" "../" "./")
 

@@ -2,46 +2,41 @@
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "Java/"
   :tables (list 
-<<<<<<< HEAD
-   (semanticdb-table "test.java"
+   (semanticdb-table "TestString.java"
     :major-mode 'java-mode
     :tags 
-        '( ("test" type
+        '( ("java.util.List" include nil nil [1 23])
+            ("java.util.ArrayList" include nil nil [24 51])
+            ("TestString" type
                (:members 
-                  ( ("a" variable
-                       (:typemodifiers ("static")
-                        :type "int")
-                        (reparse-symbol class_member_declaration) [17 30])
-                    ("main" function
+                  ( ("main" function
                        (:typemodifiers ("public" "static")
                         :arguments 
                           ( ("args" variable
                                (:dereference 1
                                 :type "String")
-                                (reparse-symbol formal_parameters) [58 71]))                          
+                                (reparse-symbol formal_parameters) [96 109]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [34 144])
-                    ("testtry" function
-                       (:typemodifiers ("static")
-                        :type "int")
-                        (reparse-symbol class_member_declaration) [147 263]))                  
+                        (reparse-symbol class_member_declaration) [72 414])
+                    ("test" function (:constructor-flag t) (reparse-symbol class_member_declaration) [417 430]))                  
                 :type "class")
-                nil [1 265]))          
-    :file "test.java"
-    :pointmax 297
-    :fsize 340
-    :lastmodtime '(20471 2870)
-=======
-   (semanticdb-table "TestString.java"
-    :major-mode 'java-mode
-    :tags 
-        '( ("TestString" type (:type "class") nil [1 26]))          
+                nil [53 432]))          
     :file "TestString.java"
-    :pointmax 22
->>>>>>> d36bae725867e7c6d164108b874e0d8d12b01df3
+    :pointmax 433
+    :fsize 456
+    :lastmodtime '(20472 57428)
     :unmatched-syntax 'nil
     )
-   )
+   (semanticdb-table "big_n!.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "big_n!.java"
+    :pointmax 200
+    :fsize 212
+    :lastmodtime '(20325 58485)
+    :unmatched-syntax 'nil
+    )
+     )
   :file "!drive_d!EmacsDir!Java!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.0"

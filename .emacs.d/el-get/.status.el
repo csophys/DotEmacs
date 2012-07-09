@@ -17,6 +17,8 @@
 		 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "3.stable" :pkgname "dimitri/el-get" :features el-get :load "el-get.el"))
  (fuzzy status "installed" recipe
 		(:name fuzzy :website "https://github.com/m2ym/fuzzy-el" :description "Fuzzy matching utilities for GNU Emacs" :type github :pkgname "m2ym/fuzzy-el"))
+ (graphviz-dot-mode status "installed" recipe
+					(:name graphviz-dot-mode :type http :website "http://www.graphviz.org/" :description "graphviz dot language mode" :url "http://www.graphviz.org/Misc/graphviz-dot-mode.el" :autoloads t))
  (org-html5presentation status "installed" recipe
 						(:name org-html5presentation :type http :website "https://gist.github.com/509761" :description "html5 presentation from org files" :url "https://raw.github.com/gist/509761/org-html5presentation.el" :autoloads t))
  (popup status "installed" recipe

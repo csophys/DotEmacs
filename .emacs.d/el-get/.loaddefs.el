@@ -7,8 +7,8 @@
 ;;;;;;  color-theme-compare color-theme-make-snapshot color-theme-analyze-defun
 ;;;;;;  color-theme-print color-theme-install-at-point-for-current-frame
 ;;;;;;  color-theme-install-at-mouse color-theme-describe color-theme-select)
-;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (20471
-;;;;;;  55859))
+;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (20472
+;;;;;;  20297))
 ;;; Generated autoloads from color-theme/color-theme.el
 
 (autoload 'color-theme-select "color-theme/color-theme" "\
@@ -200,7 +200,7 @@ Initialize the color theme package by loading color-theme-libraries.
 ;;;;;;  diredp-dired-for-files-other-window diredp-dired-for-files
 ;;;;;;  diredp-dired-files-other-window diredp-dired-files diredp-w32-local-drives
 ;;;;;;  diredp-prompt-for-bookmark-prefix-flag diff-switches) "dired+/dired+"
-;;;;;;  "dired+/dired+.el" (20471 55859))
+;;;;;;  "dired+/dired+.el" (20472 20297))
 ;;; Generated autoloads from dired+/dired+.el
 
 (defvar diff-switches "-c" "\
@@ -1615,11 +1615,67 @@ Send a bug report about a Dired+ problem.
 
 ;;;***
 
+;;;### (autoloads (graphviz-dot-mode) "graphviz-dot-mode/graphviz-dot-mode"
+;;;;;;  "graphviz-dot-mode/graphviz-dot-mode.el" (20474 63900))
+;;; Generated autoloads from graphviz-dot-mode/graphviz-dot-mode.el
+
+(autoload 'graphviz-dot-mode "graphviz-dot-mode/graphviz-dot-mode" "\
+Major mode for the dot language. \\<graphviz-dot-mode-map> 
+TAB indents for graph lines. 
+
+\\[graphviz-dot-indent-graph]	- Indentaion function.
+\\[graphviz-dot-preview]	- Previews graph in a buffer.
+\\[graphviz-dot-view]	- Views graph in an external viewer.
+\\[graphviz-dot-indent-line]	- Indents current line of code.
+\\[graphviz-dot-complete-word]	- Completes the current word.
+\\[electric-graphviz-dot-terminate-line]	- Electric newline.
+\\[electric-graphviz-dot-open-brace]	- Electric open braces.
+\\[electric-graphviz-dot-close-brace]	- Electric close braces.
+\\[electric-graphviz-dot-semi]	- Electric semi colons.
+
+Variables specific to this mode:
+
+  graphviz-dot-dot-program            (default `dot')
+       Location of the dot program.
+  graphviz-dot-view-command           (default `doted %s')
+       Command to run when `graphviz-dot-view' is executed.
+  graphviz-dot-view-edit-command      (default nil)
+       If the user should be asked to edit the view command.
+  graphviz-dot-save-before-view       (default t)
+       Automatically save current buffer berore `graphviz-dot-view'.
+  graphviz-dot-preview-extension      (default `png')
+       File type to use for `graphviz-dot-preview'.
+  graphviz-dot-auto-indent-on-newline (default t)
+       Whether to run `electric-graphviz-dot-terminate-line' when 
+       newline is entered.
+  graphviz-dot-auto-indent-on-braces (default t)
+       Whether to run `electric-graphviz-dot-open-brace' and
+       `electric-graphviz-dot-close-brace' when braces are 
+       entered.
+  graphviz-dot-auto-indent-on-semi (default t)
+       Whether to run `electric-graphviz-dot-semi' when semi colon
+       is typed.
+  graphviz-dot-toggle-completions  (default nil)
+       If completions should be displayed in the buffer instead of a
+       completion buffer when \\[graphviz-dot-complete-word] is
+       pressed repeatedly.
+
+This mode can be customized by running \\[graphviz-dot-customize].
+
+Turning on Graphviz Dot mode calls the value of the variable 
+`graphviz-dot-mode-hook' with no args, if that value is non-nil.
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.dot\\'" . graphviz-dot-mode))
+
+;;;***
+
 ;;;### (autoloads (org-export-html5presentationize-generate-css org-export-as-html5presentation
 ;;;;;;  org-export-region-as-html5presentation org-replace-region-by-html5presentation
 ;;;;;;  org-export-as-html5presentation-to-buffer org-export-as-html5presentation-batch
 ;;;;;;  org-export-as-html5presentation-and-open) "org-html5presentation/org-html5presentation"
-;;;;;;  "org-html5presentation/org-html5presentation.el" (20471 55859))
+;;;;;;  "org-html5presentation/org-html5presentation.el" (20472 20297))
 ;;; Generated autoloads from org-html5presentation/org-html5presentation.el
 
 (put 'org-export-html5presentation-style-include-default 'safe-local-variable 'booleanp)
@@ -1711,8 +1767,55 @@ that uses these same face definitions.
 
 ;;;***
 
+;;;### (autoloads (global-undo-tree-mode undo-tree-mode) "undo-tree/undo-tree"
+;;;;;;  "undo-tree/undo-tree.el" (20474 63693))
+;;; Generated autoloads from undo-tree/undo-tree.el
+
+(autoload 'undo-tree-mode "undo-tree/undo-tree" "\
+Toggle undo-tree mode.
+With no argument, this command toggles the mode.
+A positive prefix argument turns the mode on.
+A negative prefix argument turns it off.
+
+Undo-tree-mode replaces Emacs' standard undo feature with a more
+powerful yet easier to use version, that treats the undo history
+as what it is: a tree.
+
+The following keys are available in `undo-tree-mode':
+
+  \\{undo-tree-map}
+
+Within the undo-tree visualizer, the following keys are available:
+
+  \\{undo-tree-visualizer-map}
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-undo-tree-mode nil "\
+Non-nil if Global-Undo-Tree mode is enabled.
+See the command `global-undo-tree-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-undo-tree-mode'.")
+
+(custom-autoload 'global-undo-tree-mode "undo-tree/undo-tree" nil)
+
+(autoload 'global-undo-tree-mode "undo-tree/undo-tree" "\
+Toggle Undo-Tree mode in all buffers.
+With prefix ARG, enable Global-Undo-Tree mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Undo-Tree mode is enabled in all buffers where
+`turn-on-undo-tree-mode' would do it.
+See `undo-tree-mode' for more information on Undo-Tree mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
 ;;;### (autoloads nil nil ("el-get/el-get-install.el" "el-get/el-get.el")
-;;;;;;  (20471 56012 789000))
+;;;;;;  (20474 63903 687000))
 
 ;;;***
 

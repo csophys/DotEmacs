@@ -1,0 +1,18 @@
+;; Object auto-insert/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "auto-insert/"
+  :tables (list 
+   (semanticdb-table "insert.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "insert.java"
+    :pointmax 29
+    :fsize 44
+    :lastmodtime '(20472 10936)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!DotEmacs!.emacs.d!auto-insert!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

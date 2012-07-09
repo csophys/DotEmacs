@@ -20,6 +20,15 @@ git clone git://github.com/alexott/ecb.git
 ) 
 
 cd el-get
+echo "==============================git undo-tree=============================="
+if exist undo-tree\undo-tree.el (
+echo "undo-tree已经存在"
+) else (
+echo "undo-tree不存在"
+rm -r -f undo-tree
+git clone http://www.dr-qubit.org/git/undo-tree.git
+) 
+
 echo "==============================git yasnippet=============================="
 if exist yasnippet\yasnippet.el (
 echo "yasnippet已经存在"
