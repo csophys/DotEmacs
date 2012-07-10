@@ -4131,6 +4131,1362 @@
     :lastmodtime '(19394 43700)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "ObjectStreamClass.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [185 201])
+            ("java.lang.ref.Reference" include nil nil [203 234])
+            ("java.lang.ref.ReferenceQueue" include nil nil [235 271])
+            ("java.lang.ref.SoftReference" include nil nil [272 307])
+            ("java.lang.ref.WeakReference" include nil nil [308 343])
+            ("java.lang.reflect.Constructor" include nil nil [344 381])
+            ("java.lang.reflect.Field" include nil nil [382 413])
+            ("java.lang.reflect.InvocationTargetException" include nil nil [414 465])
+            ("java.lang.reflect.Member" include nil nil [466 498])
+            ("java.lang.reflect.Method" include nil nil [499 531])
+            ("java.lang.reflect.Modifier" include nil nil [532 566])
+            ("java.lang.reflect.Proxy" include nil nil [567 598])
+            ("java.security.AccessController" include nil nil [599 637])
+            ("java.security.MessageDigest" include nil nil [638 673])
+            ("java.security.NoSuchAlgorithmException" include nil nil [674 720])
+            ("java.security.PrivilegedAction" include nil nil [721 759])
+            ("java.util.ArrayList" include nil nil [760 787])
+            ("java.util.Arrays" include nil nil [788 812])
+            ("java.util.Collections" include nil nil [813 842])
+            ("java.util.Comparator" include nil nil [843 871])
+            ("java.util.HashSet" include nil nil [872 897])
+            ("java.util.Set" include nil nil [898 919])
+            ("java.util.concurrent.ConcurrentHashMap" include nil nil [920 966])
+            ("java.util.concurrent.ConcurrentMap" include nil nil [967 1009])
+            ("sun.misc.Unsafe" include nil nil [1010 1033])
+            ("sun.reflect.ReflectionFactory" include nil nil [1034 1071])
+            ("ObjectStreamClass" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("NO_FIELDS" variable
+                       (:dereference 1
+                        :typemodifiers ("public" "static" "final")
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [1915 1994])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2004 2071])
+                    ("serialPersistentFields" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [2076 2153])
+                    ("reflFactory" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "ReflectionFactory")
+                        (reparse-symbol class_member_declaration) [2234 2396])
+                    ("Caches" type
+                       (:typemodifiers ("private" "static")
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [2402 3135])
+                    ("cl" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [3200 3217])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3278 3298])
+                    ("suid" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [3379 3406])
+                    ("isProxy" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3462 3486])
+                    ("isEnum" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3531 3554])
+                    ("serializable" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3620 3649])
+                    ("externalizable" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3717 3748])
+                    ("hasWriteObjectData" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3830 3865])
+                    ("hasBlockExternalData" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4175 4219])
+                    ("resolveEx" variable
+                       (:typemodifiers ("private")
+                        :type "ClassNotFoundException")
+                        (reparse-symbol class_member_declaration) [4296 4337])
+                    ("deserializeEx" variable
+                       (:typemodifiers ("private")
+                        :type "InvalidClassException")
+                        (reparse-symbol class_member_declaration) [4419 4463])
+                    ("serializeEx" variable
+                       (:typemodifiers ("private")
+                        :type "InvalidClassException")
+                        (reparse-symbol class_member_declaration) [4543 4585])
+                    ("defaultSerializeEx" variable
+                       (:typemodifiers ("private")
+                        :type "InvalidClassException")
+                        (reparse-symbol class_member_declaration) [4664 4713])
+                    ("fields" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [4750 4785])
+                    ("primDataSize" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4847 4872])
+                    ("numObjFields" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4919 4944])
+                    ("fieldRefl" variable
+                       (:typemodifiers ("private")
+                        :type "FieldReflector")
+                        (reparse-symbol class_member_declaration) [5016 5049])
+                    ("dataLayout" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "volatile")
+                        :type "ClassDataSlot")
+                        (reparse-symbol class_member_declaration) [5128 5172])
+                    ("cons" variable
+                       (:typemodifiers ("private")
+                        :type "Constructor")
+                        (reparse-symbol class_member_declaration) [5244 5269])
+                    ("writeObjectMethod" variable
+                       (:typemodifiers ("private")
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [5335 5368])
+                    ("readObjectMethod" variable
+                       (:typemodifiers ("private")
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [5433 5465])
+                    ("readObjectNoDataMethod" variable
+                       (:typemodifiers ("private")
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [5536 5574])
+                    ("writeReplaceMethod" variable
+                       (:typemodifiers ("private")
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [5641 5675])
+                    ("readResolveMethod" variable
+                       (:typemodifiers ("private")
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [5741 5774])
+                    ("localDesc" variable
+                       (:typemodifiers ("private")
+                        :type "ObjectStreamClass")
+                        (reparse-symbol class_member_declaration) [5856 5892])
+                    ("superDesc" variable
+                       (:typemodifiers ("private")
+                        :type "ObjectStreamClass")
+                        (reparse-symbol class_member_declaration) [5950 5986])
+                    ("initNative" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6044 6084])
+                    ("lookup" function
+                       (:typemodifiers ("public" "static")
+                        :type "ObjectStreamClass")
+                        (reparse-symbol class_member_declaration) [6530 6616])
+                    ("lookupAny" function
+                       (:typemodifiers ("public" "static")
+                        :type "ObjectStreamClass")
+                        (reparse-symbol class_member_declaration) [6905 6993])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7269 7314])
+                    ("getSerialVersionUID" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [7717 8037])
+                    ("forClass" function (:constructor-flag t) (reparse-symbol class_member_declaration) [8300 8330])
+                    ("getFields" function
+                       (:typemodifiers ("public")
+                        :type "ObjectStreamField[]")
+                        (reparse-symbol class_member_declaration) [8607 8678])
+                    ("getField" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [8956 8967]))                          
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [8922 9006])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9086 9213])
+                    ("lookup" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [9577 9585])
+                            ("all" variable (:type "boolean") (reparse-symbol formal_parameters) [9587 9598]))                          
+                        :type "ObjectStreamClass")
+                        (reparse-symbol class_member_declaration) [9545 11528])
+                    ("EntryFuture" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("unset" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [12044 12093])
+                            ("owner" variable
+                               (:typemodifiers ("private" "final")
+                                :type "Thread")
+                                (reparse-symbol class_member_declaration) [12095 12147])
+                            ("entry" variable
+                               (:typemodifiers ("private")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [12149 12178])
+                            ("set" function
+                               (:typemodifiers ("synchronized")
+                                :arguments 
+                                  ( ("entry" variable (:type "Object") (reparse-symbol formal_parameters) [12546 12558]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [12521 12680])
+                            ("get" function
+                               (:typemodifiers ("synchronized")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [12795 13208])
+                            ("getOwner" function (:type "Thread") (reparse-symbol class_member_declaration) [13275 13316]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [12006 13322])
+                    ("ObjectStreamClass" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("cl" variable
+                               (:typemodifiers ("final")
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [13434 13448]))                          )
+                        (reparse-symbol class_member_declaration) [13408 15767])
+                    ("ObjectStreamClass" function (:constructor-flag t) (reparse-symbol class_member_declaration) [15934 15961])
+                    ("initProxy" function
+                       (:throws ("InvalidClassException")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [16066 16074])
+                            ("resolveEx" variable (:type "ClassNotFoundException") (reparse-symbol formal_parameters) [16082 16114])
+                            ("superDesc" variable (:type "ObjectStreamClass") (reparse-symbol formal_parameters) [16122 16149]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16051 16849])
+                    ("initNonProxy" function
+                       (:throws ("InvalidClassException")
+                        :arguments 
+                          ( ("model" variable (:type "ObjectStreamClass") (reparse-symbol formal_parameters) [16961 16984])
+                            ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [16995 17003])
+                            ("resolveEx" variable (:type "ClassNotFoundException") (reparse-symbol formal_parameters) [17014 17046])
+                            ("superDesc" variable (:type "ObjectStreamClass") (reparse-symbol formal_parameters) [17056 17083]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16943 19613])
+                    ("readNonProxy" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :arguments 
+                          ( ("in" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [19926 19946]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19908 21565])
+                    ("writeNonProxy" function
+                       (:throws ("IOException")
+                        :arguments 
+                          ( ("out" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [21683 21705]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21664 22573])
+                    ("getResolveException" function (:type "ClassNotFoundException") (reparse-symbol class_member_declaration) [22740 22811])
+                    ("checkDeserialize" function
+                       (:throws ("InvalidClassException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23044 23311])
+                    ("checkSerialize" function
+                       (:throws ("InvalidClassException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23547 23804])
+                    ("checkDefaultSerialize" function
+                       (:throws ("InvalidClassException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24197 24489])
+                    ("getSuperDesc" function (:type "ObjectStreamClass") (reparse-symbol class_member_declaration) [24714 24773])
+                    ("getLocalDesc" function (:type "ObjectStreamClass") (reparse-symbol class_member_declaration) [25042 25101])
+                    ("getFields" function
+                       (:arguments 
+                          ( ("copy" variable (:type "boolean") (reparse-symbol formal_parameters) [25399 25411]))                          
+                        :type "ObjectStreamField[]")
+                        (reparse-symbol class_member_declaration) [25369 25482])
+                    ("getField" function
+                       (:arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [25837 25848])
+                            ("type" variable (:type "Class") (reparse-symbol formal_parameters) [25850 25860]))                          
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [25810 26212])
+                    ("isProxy" function (:type "boolean") (reparse-symbol class_member_declaration) [26332 26374])
+                    ("isEnum" function (:type "boolean") (reparse-symbol class_member_declaration) [26489 26529])
+                    ("isExternalizable" function (:type "boolean") (reparse-symbol class_member_declaration) [26647 26705])
+                    ("isSerializable" function (:type "boolean") (reparse-symbol class_member_declaration) [26821 26875])
+                    ("hasBlockExternalData" function (:type "boolean") (reparse-symbol class_member_declaration) [27047 27115])
+                    ("hasWriteObjectData" function (:type "boolean") (reparse-symbol class_member_declaration) [27329 27393])
+                    ("isInstantiable" function (:type "boolean") (reparse-symbol class_member_declaration) [27786 27842])
+                    ("hasWriteObjectMethod" function (:type "boolean") (reparse-symbol class_member_declaration) [28036 28111])
+                    ("hasReadObjectMethod" function (:type "boolean") (reparse-symbol class_member_declaration) [28304 28377])
+                    ("hasReadObjectNoDataMethod" function (:type "boolean") (reparse-symbol class_member_declaration) [28575 28660])
+                    ("hasWriteReplaceMethod" function (:type "boolean") (reparse-symbol class_member_declaration) [28841 28918])
+                    ("hasReadResolveMethod" function (:type "boolean") (reparse-symbol class_member_declaration) [29098 29173])
+                    ("newInstance" function
+                       (:throws ("InstantiationException" "InvocationTargetException" "UnsupportedOperationException")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [29688 30079])
+                    ("invokeWriteObject" function
+                       (:throws ("IOException" "UnsupportedOperationException")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [30408 30418])
+                            ("out" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [30420 30442]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30385 31004])
+                    ("invokeReadObject" function
+                       (:throws ("ClassNotFoundException" "IOException" "UnsupportedOperationException")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [31326 31336])
+                            ("in" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [31338 31358]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [31304 32044])
+                    ("invokeReadObjectNoData" function
+                       (:throws ("IOException" "UnsupportedOperationException")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [32381 32391]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32353 32979])
+                    ("invokeWriteReplace" function
+                       (:throws ("IOException" "UnsupportedOperationException")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [33313 33323]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [33287 33960])
+                    ("invokeReadResolve" function
+                       (:throws ("IOException" "UnsupportedOperationException")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [34291 34301]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [34266 34936])
+                    ("ClassDataSlot" type
+                       (:typemodifiers ("static")
+                        :members 
+                          ( ("desc" variable
+                               (:typemodifiers ("final")
+                                :type "ObjectStreamClass")
+                                (reparse-symbol class_member_declaration) [35295 35324])
+                            ("hasData" variable
+                               (:typemodifiers ("final")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [35399 35421])
+                            ("ClassDataSlot" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("desc" variable (:type "ObjectStreamClass") (reparse-symbol formal_parameters) [35439 35461])
+                                    ("hasData" variable (:type "boolean") (reparse-symbol formal_parameters) [35463 35478]))                                  )
+                                (reparse-symbol class_member_declaration) [35425 35536]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [35217 35542])
+                    ("getClassDataLayout" function
+                       (:throws ("InvalidClassException")
+                        :type "ClassDataSlot[]")
+                        (reparse-symbol class_member_declaration) [35926 36146])
+                    ("getClassDataLayout0" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private")
+                        :type "ClassDataSlot[]")
+                        (reparse-symbol class_member_declaration) [36156 37583])
+                    ("getPrimDataSize" function (:type "int") (reparse-symbol class_member_declaration) [37717 37768])
+                    ("getNumObjFields" function (:type "int") (reparse-symbol class_member_declaration) [37882 37933])
+                    ("getPrimFieldValues" function
+                       (:arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [38227 38237])
+                            ("buf" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [38239 38249]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38203 38299])
+                    ("setPrimFieldValues" function
+                       (:arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [38588 38598])
+                            ("buf" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [38600 38610]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38564 38660])
+                    ("getObjFieldValues" function
+                       (:arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [38935 38945])
+                            ("vals" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [38947 38960]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38912 39010])
+                    ("setObjFieldValues" function
+                       (:arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [39275 39285])
+                            ("vals" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [39287 39300]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39252 39350])
+                    ("computeFieldOffsets" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39570 40523])
+                    ("getVariantFor" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [40808 40816]))                          
+                        :type "ObjectStreamClass")
+                        (reparse-symbol class_member_declaration) [40768 41091])
+                    ("getExternalizableConstructor" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [41378 41386]))                          
+                        :type "Constructor")
+                        (reparse-symbol class_member_declaration) [41322 41636])
+                    ("getSerializableConstructor" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [41907 41915]))                          
+                        :type "Constructor")
+                        (reparse-symbol class_member_declaration) [41853 42530])
+                    ("getInheritableMethod" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [42850 42858])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [42860 42871])
+                            ("argTypes" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [42885 42901])
+                            ("returnType" variable (:type "Class") (reparse-symbol formal_parameters) [42915 42931]))                          
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [42807 43625])
+                    ("getPrivateMethod" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [43870 43878])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [43880 43891])
+                            ("argTypes" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [43902 43918])
+                            ("returnType" variable (:type "Class") (reparse-symbol formal_parameters) [43928 43944]))                          
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [43831 44297])
+                    ("packageEquals" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl1" variable (:type "Class") (reparse-symbol formal_parameters) [44452 44461])
+                            ("cl2" variable (:type "Class") (reparse-symbol formal_parameters) [44463 44472]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [44415 44590])
+                    ("getPackageName" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [44693 44701]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [44656 44880])
+                    ("classNamesEqual" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("name1" variable (:type "String") (reparse-symbol formal_parameters) [45067 45079])
+                            ("name2" variable (:type "String") (reparse-symbol formal_parameters) [45081 45093]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [45028 45239])
+                    ("getClassSignature" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [45348 45356]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [45316 46169])
+                    ("getMethodSignature" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("paramTypes" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [46312 46330])
+                            ("retType" variable (:type "Class") (reparse-symbol formal_parameters) [46343 46356]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [46271 46620])
+                    ("throwMiscException" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("th" variable (:type "Throwable") (reparse-symbol formal_parameters) [46869 46881]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46830 47159])
+                    ("getSerialFields" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [47587 47595]))                          
+                        :type "ObjectStreamField[]")
+                        (reparse-symbol class_member_declaration) [47536 48011])
+                    ("getDeclaredSerialFields" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [48754 48762]))                          
+                        :type "ObjectStreamField[]")
+                        (reparse-symbol class_member_declaration) [48695 50203])
+                    ("getDefaultSerialFields" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [50567 50575]))                          
+                        :type "ObjectStreamField[]")
+                        (reparse-symbol class_member_declaration) [50509 51012])
+                    ("getDeclaredSUID" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [51168 51176]))                          
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [51132 51459])
+                    ("computeDefaultSUID" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [51594 51602]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [51555 56440])
+                    ("hasStaticInitializer" function
+                       (:typemodifiers ("private" "native" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [56613 56621]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [56562 56623])
+                    ("MemberSignature" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("member" variable
+                               (:typemodifiers ("public" "final")
+                                :type "Member")
+                                (reparse-symbol class_member_declaration) [56805 56832])
+                            ("name" variable
+                               (:typemodifiers ("public" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [56834 56859])
+                            ("signature" variable
+                               (:typemodifiers ("public" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [56861 56891])
+                            ("MemberSignature" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("field" variable (:type "Field") (reparse-symbol formal_parameters) [56918 56929]))                                  )
+                                (reparse-symbol class_member_declaration) [56895 57038])
+                            ("MemberSignature" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("cons" variable (:type "Constructor") (reparse-symbol formal_parameters) [57065 57081]))                                  )
+                                (reparse-symbol class_member_declaration) [57042 57212])
+                            ("MemberSignature" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("meth" variable (:type "Method") (reparse-symbol formal_parameters) [57239 57250]))                                  )
+                                (reparse-symbol class_member_declaration) [57216 57392]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [56764 57398])
+                    ("FieldReflector" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("unsafe" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "Unsafe")
+                                (reparse-symbol class_member_declaration) [57632 57688])
+                            ("fields" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "final")
+                                :type "ObjectStreamField")
+                                (reparse-symbol class_member_declaration) [57720 57761])
+                            ("numPrimFields" variable
+                               (:typemodifiers ("private" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [57798 57830])
+                            ("keys" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "final")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [57858 57884])
+                            ("offsets" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [57913 57941])
+                            ("typeCodes" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "final")
+                                :type "char")
+                                (reparse-symbol class_member_declaration) [57968 57999])
+                            ("types" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "final")
+                                :type "Class")
+                                (reparse-symbol class_member_declaration) [58021 58049])
+                            ("FieldReflector" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fields" variable
+                                       (:dereference 1
+                                        :type "ObjectStreamField")
+                                        (reparse-symbol formal_parameters) [58399 58425]))                                  )
+                                (reparse-symbol class_member_declaration) [58384 59115])
+                            ("getFields" function (:type "ObjectStreamField[]") (reparse-symbol class_member_declaration) [59383 59439])
+                            ("getPrimFieldValues" function
+                               (:arguments 
+                                  ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [59682 59692])
+                                    ("buf" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [59694 59704]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [59658 60807])
+                            ("setPrimFieldValues" function
+                               (:arguments 
+                                  ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [61049 61059])
+                                    ("buf" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [61061 61071]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [61025 62039])
+                            ("getObjFieldValues" function
+                               (:arguments 
+                                  ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [62270 62280])
+                                    ("vals" variable
+                                       (:dereference 1
+                                        :type "Object")
+                                        (reparse-symbol formal_parameters) [62282 62295]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [62247 62825])
+                            ("setObjFieldValues" function
+                               (:arguments 
+                                  ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [63166 63176])
+                                    ("vals" variable
+                                       (:dereference 1
+                                        :type "Object")
+                                        (reparse-symbol formal_parameters) [63178 63191]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [63143 64022]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [57543 64028])
+                    ("getReflector" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("fields" variable
+                               (:dereference 1
+                                :type "ObjectStreamField")
+                                (reparse-symbol formal_parameters) [64600 64626])
+                            ("localDesc" variable (:type "ObjectStreamClass") (reparse-symbol formal_parameters) [64640 64667]))                          
+                        :type "FieldReflector")
+                        (reparse-symbol class_member_declaration) [64557 66380])
+                    ("matchFields" function
+                       (:throws ("InvalidClassException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("fields" variable
+                               (:dereference 1
+                                :type "ObjectStreamField")
+                                (reparse-symbol formal_parameters) [68328 68354])
+                            ("localDesc" variable (:type "ObjectStreamClass") (reparse-symbol formal_parameters) [68365 68392]))                          
+                        :type "ObjectStreamField[]")
+                        (reparse-symbol class_member_declaration) [68281 69971])
+                    ("processQueue" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70105 70356]))                  
+                :type "class")
+                nil [1779 71530]))          
+    :file "ObjectStreamClass.java"
+    :pointmax 71531
+    :fsize 71530
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((RSHIFT 70477 . 70479) (QUESTION 70476 . 70477) (LT 70475 . 70476) (STATIC 70422 . 70428) (LT 70469 . 70470) (GT 70233 . 70234) (QUESTION 70232 . 70233) (COMMA 70230 . 70231) (RSHIFT 70228 . 70230) (QUESTION 70227 . 70228) (LT 70226 . 70227) (LT 70220 . 70221) (EXTENDS 70190 . 70197) (QUESTION 70188 . 70189) (LT 70187 . 70188) (COMMA 70160 . 70161) (RSHIFT 70152 . 70154) (QUESTION 70151 . 70152) (LT 70150 . 70151) (IDENTIFIER 70130 . 70144) (LT 70144 . 70145) (RSHIFT 66610 . 66612) (QUESTION 66609 . 66610) (LT 66608 . 66609) (PRIVATE 66542 . 66549) (LT 66602 . 66603) (GT 8298 . 8299) (QUESTION 8297 . 8298) (PUBLIC 8284 . 8290) (LT 8296 . 8297) (GT 6954 . 6955) (QUESTION 6953 . 6954) (IDENTIFIER 6947 . 6952) (LT 6952 . 6953) (GT 6576 . 6577) (QUESTION 6575 . 6576) (IDENTIFIER 6569 . 6574) (LT 6574 . 6575) (SEMICOLON 3128 . 3129) (PAREN_BLOCK 3126 . 3128) (RSHIFT 3124 . 3126) (QUESTION 3123 . 3124) (LT 3122 . 3123) (LT 3116 . 3117) (NEW 3098 . 3101) (EQ 3090 . 3091) (RSHIFT 3071 . 3073) (QUESTION 3070 . 3071) (LT 3069 . 3070) (LT 3063 . 3064) (SEMICOLON 2967 . 2968) (PAREN_BLOCK 2965 . 2967) (RSHIFT 2963 . 2965) (QUESTION 2962 . 2963) (LT 2961 . 2962) (LT 2955 . 2956) (NEW 2937 . 2940) (EQ 2929 . 2930) (RSHIFT 2910 . 2912) (QUESTION 2909 . 2910) (LT 2908 . 2909) (LT 2902 . 2903) (SEMICOLON 2813 . 2814) (PAREN_BLOCK 2811 . 2813) (RSHIFT 2809 . 2811) (QUESTION 2808 . 2809) (LT 2807 . 2808) (COMMA 2797 . 2798) (LT 2779 . 2780) (NEW 2758 . 2761) (EQ 2751 . 2752) (RSHIFT 2737 . 2739) (QUESTION 2736 . 2737) (LT 2735 . 2736) (COMMA 2725 . 2726) (LT 2707 . 2708) (SEMICOLON 2606 . 2607) (PAREN_BLOCK 2604 . 2606) (RSHIFT 2602 . 2604) (QUESTION 2601 . 2602) (LT 2600 . 2601) (COMMA 2590 . 2591) (LT 2577 . 2578) (NEW 2556 . 2559) (EQ 2549 . 2550) (RSHIFT 2535 . 2537) (QUESTION 2534 . 2535) (LT 2533 . 2534) (COMMA 2523 . 2524) (STATIC 2484 . 2490) (LT 2510 . 2511))
+    )
+   (semanticdb-table "ObjectStreamField.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [184 200])
+            ("java.lang.reflect.Field" include nil nil [202 233]))          
+    :file "ObjectStreamField.java"
+    :pointmax 7881
+    :fsize 7880
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax '((BRACE_BLOCK 582 . 7880) (GT 580 . 581) (IDENTIFIER 574 . 580) (PUBLIC 517 . 523) (LT 573 . 574))
+    )
+   (semanticdb-table "ByteArrayOutputStream.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [188 204])
+            ("java.util.Arrays" include nil nil [206 230])
+            ("ByteArrayOutputStream" type
+               (:typemodifiers ("public")
+                :superclasses "OutputStream"
+                :members 
+                  ( ("buf" variable
+                       (:dereference 1
+                        :typemodifiers ("protected")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [878 899])
+                    ("count" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [970 990])
+                    ("ByteArrayOutputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1151 1200])
+                    ("ByteArrayOutputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol formal_parameters) [1476 1484]))                          )
+                        (reparse-symbol class_member_declaration) [1447 1679])
+                    ("write" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("b" variable (:type "int") (reparse-symbol formal_parameters) [1851 1856]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1820 2042])
+                    ("write" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [2383 2391])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [2393 2400])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [2402 2409]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2352 2849])
+                    ("writeTo" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("out" variable (:type "OutputStream") (reparse-symbol formal_parameters) [3259 3275]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3226 3330])
+                    ("reset" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3677 3729])
+                    ("toByteArray" function
+                       (:dereference 1
+                        :type "byte"
+                        :typemodifiers ("public" "synchronized"))
+                        (reparse-symbol class_member_declaration) [4064 4154])
+                    ("size" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4415 4468])
+                    ("toString" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5168 5248])
+                    ("toString" function
+                       (:throws ("UnsupportedEncodingException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("charsetName" variable (:type "String") (reparse-symbol formal_parameters) [6203 6221]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6167 6319])
+                    ("toString" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("hibyte" variable (:type "int") (reparse-symbol formal_parameters) [7530 7540]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7494 7592])
+                    ("close" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7826 7872]))                  
+                :type "class")
+                nil [757 7875]))          
+    :file "ByteArrayOutputStream.java"
+    :pointmax 7876
+    :fsize 7875
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ByteArrayInputStream.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [187 203])
+            ("ByteArrayInputStream" type
+               (:typemodifiers ("public")
+                :superclasses "InputStream"
+                :members 
+                  ( ("buf" variable
+                       (:dereference 1
+                        :typemodifiers ("protected")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1118 1139])
+                    ("pos" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1445 1463])
+                    ("mark" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2018 2041])
+                    ("count" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2417 2437])
+                    ("ByteArrayInputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("buf" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [2859 2869]))                          )
+                        (reparse-symbol class_member_declaration) [2831 2943])
+                    ("ByteArrayInputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("buf" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [3605 3615])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [3617 3627])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [3629 3639]))                          )
+                        (reparse-symbol class_member_declaration) [3577 3773])
+                    ("read" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4292 4380])
+                    ("read" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [5886 5894])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [5896 5903])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [5905 5912]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5857 6279])
+                    ("skip" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("n" variable (:type "long") (reparse-symbol formal_parameters) [6843 6849]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6813 6961])
+                    ("available" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7391 7455])
+                    ("markSupported" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7697 7749])
+                    ("mark" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("readAheadLimit" variable (:type "int") (reparse-symbol formal_parameters) [8311 8329]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8294 8351])
+                    ("reset" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8544 8597])
+                    ("close" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8823 8869]))                  
+                :type "class")
+                nil [752 8872]))          
+    :file "ByteArrayInputStream.java"
+    :pointmax 8873
+    :fsize 8872
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DataInputStream.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [182 198])
+            ("DataInputStream" type
+               (:typemodifiers ("public")
+                :interfaces ("DataInput")
+                :superclasses "FilterInputStream"
+                :members 
+                  ( ("DataInputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [1002 1016]))                          )
+                        (reparse-symbol class_member_declaration) [979 1037])
+                    ("bytearr" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1114 1152])
+                    ("chararr" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [1157 1195])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [3273 3281]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3251 3342])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [5912 5920])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [5922 5929])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [5931 5938]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5890 5996])
+                    ("readFully" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [6667 6675]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6639 6731])
+                    ("readFully" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [7515 7523])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [7525 7532])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [7534 7541]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7487 7773])
+                    ("skipBytes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [8384 8389]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8357 8547])
+                    ("readBoolean" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9134 9279])
+                    ("readByte" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [9924 10064])
+                    ("readUnsignedByte" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10723 10862])
+                    ("readShort" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [11558 11789])
+                    ("readUnsignedShort" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12495 12723])
+                    ("readChar" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [13407 13635])
+                    ("readInt" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14328 14646])
+                    ("readBuffer" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [14652 14692])
+                    ("readLong" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [15388 15872])
+                    ("readFloat" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [16628 16726])
+                    ("readDouble" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [17491 17595])
+                    ("lineBuffer" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [17601 17627])
+                    ("readLine" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18782 19658])
+                    ("readUTF" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20433 20519])
+                    ("readUTF" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("in" variable (:type "DataInput") (reparse-symbol formal_parameters) [21605 21617]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [21570 24716]))                  
+                :type "class")
+                nil [738 24718]))          
+    :file "DataInputStream.java"
+    :pointmax 24719
+    :fsize 24718
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DataOutputStream.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [183 199])
+            ("DataOutputStream" type
+               (:typemodifiers ("public")
+                :interfaces ("DataOutput")
+                :superclasses "FilterOutputStream"
+                :members 
+                  ( ("written" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [761 783])
+                    ("bytearr" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [857 887])
+                    ("DataOutputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("out" variable (:type "OutputStream") (reparse-symbol formal_parameters) [1252 1268]))                          )
+                        (reparse-symbol class_member_declaration) [1228 1290])
+                    ("incCount" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol formal_parameters) [1437 1446]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1415 1587])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("b" variable (:type "int") (reparse-symbol formal_parameters) [2138 2143]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2107 2207])
+                    ("write" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [2774 2782])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [2784 2791])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [2793 2800]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2743 2874])
+                    ("flush" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3334 3394])
+                    ("writeBoolean" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "boolean") (reparse-symbol formal_parameters) [4006 4015]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3975 4080])
+                    ("writeByte" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [4506 4511]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4478 4575])
+                    ("writeShort" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [5005 5010]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4976 5133])
+                    ("writeChar" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [5572 5577]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5544 5700])
+                    ("writeInt" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [6127 6132]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6100 6333])
+                    ("writeBuffer" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [6339 6380])
+                    ("writeLong" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "long") (reparse-symbol formal_parameters) [6809 6815]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6781 7239])
+                    ("writeFloat" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "float") (reparse-symbol formal_parameters) [7906 7913]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7877 7977])
+                    ("writeDouble" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("v" variable (:type "double") (reparse-symbol formal_parameters) [8656 8664]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8626 8732])
+                    ("writeBytes" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [9270 9278]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9241 9418])
+                    ("writeChars" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [10033 10041]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10004 10295])
+                    ("writeUTF" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [11325 11335]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11298 11392])
+                    ("writeUTF" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [12486 12496])
+                            ("out" variable (:type "DataOutput") (reparse-symbol formal_parameters) [12498 12512]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12466 14246])
+                    ("size" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14600 14648]))                  
+                :type "class")
+                nil [515 14650]))          
+    :file "DataOutputStream.java"
+    :pointmax 14651
+    :fsize 14650
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FilterInputStream.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [184 200])
+            ("FilterInputStream" type
+               (:typemodifiers ("public")
+                :superclasses "InputStream"
+                :members 
+                  ( ("in" variable
+                       (:typemodifiers ("protected" "volatile")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [948 982])
+                    ("FilterInputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [1373 1387]))                          )
+                        (reparse-symbol class_member_declaration) [1345 1411])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2191 2254])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [3194 3202]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3178 3260])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4455 4463])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [4465 4472])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [4474 4481]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4439 4539])
+                    ("skip" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "long") (reparse-symbol formal_parameters) [4671 4677]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4654 4725])
+                    ("available" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5398 5471])
+                    ("close" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5774 5833])
+                    ("mark" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("readlimit" variable (:type "int") (reparse-symbol formal_parameters) [6606 6619]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6576 6649])
+                    ("reset" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7642 7714])
+                    ("markSupported" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8237 8303]))                  
+                :type "class")
+                nil [834 8305]))          
+    :file "FilterInputStream.java"
+    :pointmax 8306
+    :fsize 8305
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NotSerializableException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [191 207])
+            ("NotSerializableException" type
+               (:typemodifiers ("public")
+                :superclasses "ObjectStreamException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [570 636])
+                    ("NotSerializableException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("classname" variable (:type "String") (reparse-symbol formal_parameters) [849 865]))                          )
+                        (reparse-symbol class_member_declaration) [817 893])
+                    ("NotSerializableException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [969 1020]))                  
+                :type "class")
+                nil [495 1022]))          
+    :file "NotSerializableException.java"
+    :pointmax 1023
+    :fsize 1022
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ObjectStreamException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.io" package nil nil [188 204])
+            ("ObjectStreamException" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "IOException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [424 490])
+                    ("ObjectStreamException" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("classname" variable (:type "String") (reparse-symbol formal_parameters) [682 698]))                          )
+                        (reparse-symbol class_member_declaration) [650 726])
+                    ("ObjectStreamException" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [788 839]))                  
+                :type "class")
+                nil [353 841]))          
+    :file "ObjectStreamException.java"
+    :pointmax 842
+    :fsize 841
+    :lastmodtime '(19394 43700)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!io!semantic.cache"
   :semantic-tag-version "2.0"

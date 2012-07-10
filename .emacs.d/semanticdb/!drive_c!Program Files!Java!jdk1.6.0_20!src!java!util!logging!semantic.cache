@@ -1,0 +1,486 @@
+;; Object logging/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "logging/"
+  :tables (list 
+   (semanticdb-table "Logger.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.logging" package nil nil [174 200])
+            ("java.util.*" include nil nil [202 221])
+            ("java.security.*" include nil nil [222 245])
+            ("java.lang.ref.WeakReference" include nil nil [246 281])
+            ("Logger" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("emptyHandlers" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "Handler")
+                        (reparse-symbol class_member_declaration) [6927 6989])
+                    ("offValue" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6994 7051])
+                    ("manager" variable
+                       (:typemodifiers ("private")
+                        :type "LogManager")
+                        (reparse-symbol class_member_declaration) [7056 7083])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7088 7108])
+                    ("handlers" variable
+                       (:typemodifiers ("private")
+                        :type "ArrayList")
+                        (reparse-symbol class_member_declaration) [7113 7140])
+                    ("resourceBundleName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7145 7179])
+                    ("useParentHandlers" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7184 7225])
+                    ("filter" variable
+                       (:typemodifiers ("private")
+                        :type "Filter")
+                        (reparse-symbol class_member_declaration) [7230 7252])
+                    ("anonymous" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7257 7283])
+                    ("catalog" variable
+                       (:typemodifiers ("private")
+                        :type "ResourceBundle")
+                        (reparse-symbol class_member_declaration) [7289 7320])
+                    ("catalogName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7351 7378])
+                    ("catalogLocale" variable
+                       (:typemodifiers ("private")
+                        :type "Locale")
+                        (reparse-symbol class_member_declaration) [7419 7448])
+                    ("treeLock" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [7618 7664])
+                    ("parent" variable
+                       (:typemodifiers ("private")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [7781 7803])
+                    ("kids" variable
+                       (:typemodifiers ("private")
+                        :type "ArrayList")
+                        (reparse-symbol class_member_declaration) [7834 7857])
+                    ("levelObject" variable
+                       (:typemodifiers ("private")
+                        :type "Level")
+                        (reparse-symbol class_member_declaration) [7916 7942])
+                    ("levelValue" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7947 7979])
+                    ("GLOBAL_LOGGER_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8631 8688])
+                    ("global" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [9589 9656])
+                    ("Logger" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [10481 10492])
+                            ("resourceBundleName" variable (:type "String") (reparse-symbol formal_parameters) [10494 10519]))                          )
+                        (reparse-symbol class_member_declaration) [10464 10775])
+                    ("Logger" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [10991 11002]))                          )
+                        (reparse-symbol class_member_declaration) [10976 11121])
+                    ("setLogManager" function
+                       (:arguments 
+                          ( ("manager" variable (:type "LogManager") (reparse-symbol formal_parameters) [11251 11269]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11232 11303])
+                    ("checkAccess" function
+                       (:throws ("SecurityException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11309 11572])
+                    ("getLogger" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [12420 12431]))                          
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [12376 12533])
+                    ("getLogger" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [14087 14098])
+                            ("resourceBundleName" variable (:type "String") (reparse-symbol formal_parameters) [14100 14125]))                          
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [14043 14577])
+                    ("getAnonymousLogger" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [15506 15766])
+                    ("getAnonymousLogger" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("resourceBundleName" variable (:type "String") (reparse-symbol formal_parameters) [17019 17044]))                          
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [16966 17265])
+                    ("getResourceBundle" function
+                       (:typemodifiers ("public")
+                        :type "ResourceBundle")
+                        (reparse-symbol class_member_declaration) [17566 17668])
+                    ("getResourceBundleName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17945 18018])
+                    ("setFilter" function
+                       (:throws ("SecurityException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("newFilter" variable (:type "Filter") (reparse-symbol formal_parameters) [18487 18503]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18465 18574])
+                    ("getFilter" function
+                       (:typemodifiers ("public")
+                        :type "Filter")
+                        (reparse-symbol class_member_declaration) [18696 18745])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("record" variable (:type "LogRecord") (reparse-symbol formal_parameters) [19072 19088]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19056 19726])
+                    ("doLog" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("lr" variable (:type "LogRecord") (reparse-symbol formal_parameters) [19915 19927]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19896 20142])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [20766 20777])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [20779 20789]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20750 20933])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [21423 21434])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [21436 21446])
+                            ("param1" variable (:type "Object") (reparse-symbol formal_parameters) [21448 21461]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21407 21663])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [22171 22182])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [22184 22194])
+                            ("params" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [22196 22211]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22155 22382])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [23194 23205])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [23207 23217])
+                            ("thrown" variable (:type "Throwable") (reparse-symbol formal_parameters) [23219 23235]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23178 23402])
+                    ("logp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [24221 24232])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [24234 24252])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [24254 24273])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [24275 24285]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24204 24505])
+                    ("logp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [25227 25238])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [25240 25258])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [25260 25279])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [25287 25297])
+                            ("param1" variable (:type "Object") (reparse-symbol formal_parameters) [25299 25312]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25210 25590])
+                    ("logp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [26297 26308])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [26310 26328])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [26330 26349])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [26357 26367])
+                            ("params" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [26369 26384]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26280 26631])
+                    ("logp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [27642 27653])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [27655 27673])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [27675 27694])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [27703 27713])
+                            ("thrown" variable (:type "Throwable") (reparse-symbol formal_parameters) [27715 27731]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27625 27974])
+                    ("doLog" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("lr" variable (:type "LogRecord") (reparse-symbol formal_parameters) [28425 28437])
+                            ("rbname" variable (:type "String") (reparse-symbol formal_parameters) [28439 28452]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28406 28616])
+                    ("logrb" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [29565 29576])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [29578 29596])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [29598 29617])
+                            ("bundleName" variable (:type "String") (reparse-symbol formal_parameters) [29624 29641])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [29643 29653]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29547 29885])
+                    ("logrb" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [30945 30956])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [30958 30976])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [30978 30997])
+                            ("bundleName" variable (:type "String") (reparse-symbol formal_parameters) [31003 31020])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [31022 31032])
+                            ("param1" variable (:type "Object") (reparse-symbol formal_parameters) [31034 31047]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30927 31337])
+                    ("logrb" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [32383 32394])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [32396 32414])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [32416 32435])
+                            ("bundleName" variable (:type "String") (reparse-symbol formal_parameters) [32441 32458])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [32460 32470])
+                            ("params" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [32472 32487]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32365 32746])
+                    ("logrb" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [34095 34106])
+                            ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [34108 34126])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [34128 34147])
+                            ("bundleName" variable (:type "String") (reparse-symbol formal_parameters) [34154 34171])
+                            ("msg" variable (:type "String") (reparse-symbol formal_parameters) [34173 34183])
+                            ("thrown" variable (:type "Throwable") (reparse-symbol formal_parameters) [34185 34201]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34077 34456])
+                    ("entering" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [35124 35142])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [35144 35163]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [35103 35288])
+                    ("entering" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [35835 35853])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [35855 35874])
+                            ("param1" variable (:type "Object") (reparse-symbol formal_parameters) [35876 35889]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [35814 36057])
+                    ("entering" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [36705 36723])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [36725 36744])
+                            ("params" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [36746 36761]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [36684 37087])
+                    ("exiting" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [37513 37531])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [37533 37552]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [37493 37678])
+                    ("exiting" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [38206 38224])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [38226 38245])
+                            ("result" variable (:type "Object") (reparse-symbol formal_parameters) [38247 38260]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38186 38430])
+                    ("throwing" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sourceClass" variable (:type "String") (reparse-symbol formal_parameters) [39418 39436])
+                            ("sourceMethod" variable (:type "String") (reparse-symbol formal_parameters) [39438 39457])
+                            ("thrown" variable (:type "Throwable") (reparse-symbol formal_parameters) [39459 39475]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39397 39735])
+                    ("severe" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [40302 40312]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40283 40407])
+                    ("warning" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [40743 40753]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40723 40850])
+                    ("info" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [41178 41188]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41161 41279])
+                    ("config" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [41612 41622]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41593 41717])
+                    ("fine" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [42044 42054]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42027 42145])
+                    ("finer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [42475 42485]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42457 42578])
+                    ("finest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [42911 42921]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42892 43016])
+                    ("setLevel" function
+                       (:throws ("SecurityException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("newLevel" variable (:type "Level") (reparse-symbol formal_parameters) [43863 43877]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43842 44015])
+                    ("getLevel" function
+                       (:typemodifiers ("public")
+                        :type "Level")
+                        (reparse-symbol class_member_declaration) [44265 44317])
+                    ("isLoggable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("level" variable (:type "Level") (reparse-symbol formal_parameters) [44683 44694]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [44657 44803])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [44927 44972])
+                    ("addHandler" function
+                       (:throws ("SecurityException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("handler" variable (:type "Handler") (reparse-symbol formal_parameters) [45499 45514]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45463 45697])
+                    ("removeHandler" function
+                       (:throws ("SecurityException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("handler" variable (:type "Handler") (reparse-symbol formal_parameters) [46063 46078]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46024 46236])
+                    ("getHandlers" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "Handler[]")
+                        (reparse-symbol class_member_declaration) [46374 46594])
+                    ("setUseParentHandlers" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("useParentHandlers" variable (:type "boolean") (reparse-symbol formal_parameters) [47161 47186]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47115 47256])
+                    ("getUseParentHandlers" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [47447 47532])
+                    ("findResourceBundle" function
+                       (:typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [47880 47891]))                          
+                        :type "ResourceBundle")
+                        (reparse-symbol class_member_declaration) [47825 49652])
+                    ("setupResourceInfo" function
+                       (:typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [49943 49954]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49899 50247])
+                    ("getParent" function
+                       (:typemodifiers ("public")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [50761 50844])
+                    ("setParent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("parent" variable (:type "Logger") (reparse-symbol formal_parameters) [51290 51303]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [51268 51425])
+                    ("doSetParent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("newParent" variable (:type "Logger") (reparse-symbol formal_parameters) [51551 51567]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [51526 52439])
+                    ("updateEffectiveLevel" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [52540 53447])
+                    ("getEffectiveResourceBundleName" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [53577 53828]))                  
+                :type "class")
+                nil [6901 53832]))          
+    :file "Logger.java"
+    :pointmax 53835
+    :fsize 53834
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!logging!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

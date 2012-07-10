@@ -42,6 +42,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/DotEmacs/"
  "D:/EmacsDir/"
  "d:/DotEmacs/.emacs.d/csophys/"
  "d:/DotEmacs/.emacs.d/el-get/"
@@ -59,7 +60,6 @@
  "c:/DotEmacs/.emacs.d/"
  "c:/emacs-backup/dotemacs/plugin/ecb/"
  "c:/EmacsDir/"
- "c:/DotEmacs/"
  "e:/kuaipan/dotemacs/csophys/programeExpand/"
  "e:/kuaipan/dotemacs/csophys/"
  "e:/kuaipan/文档/mine/English/"
@@ -92,17 +92,6 @@
  "symfoware.properties"
  "symfoware(LE).properties"
  "task.org"
- "NEWS"
- "test.dot"
- "csophys_writingStyle.el"
- ".status.el"
- "dired+.el"
- "csophys_programmingExpand.el"
- "Learning_and_Earning.txt"
- "ac-comphist.dat"
- "a"
- "test.org"
- "csophys_ecb.el"
 )
 
 ;; ----- ido-dir-file-cache -----

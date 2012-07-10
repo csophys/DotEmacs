@@ -1,0 +1,66 @@
+;; Object annotation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "annotation/"
+  :tables (list 
+   (semanticdb-table "Annotation.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.annotation" package nil nil [177 206])
+            ("Annotation" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("equals" function
+                       (:arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [2497 2507]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2482 2509])
+                    ("hashCode" function (:type "int") (reparse-symbol interface_member_declaration) [4139 4154])
+                    ("toString" function (:type "String") (reparse-symbol interface_member_declaration) [4524 4542]))                  
+                :type "interface")
+                nil [497 4666]))          
+    :file "Annotation.java"
+    :pointmax 4667
+    :fsize 4666
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((SEMICOLON 4663 . 4664) (PAREN_BLOCK 4661 . 4663) (GT 4645 . 4646) (EXTENDS 4627 . 4634) (QUESTION 4625 . 4626) (IDENTIFIER 4619 . 4624) (LT 4624 . 4625))
+    )
+   (semanticdb-table "AnnotationFormatError.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.annotation" package nil nil [187 216])
+            ("AnnotationFormatError" type
+               (:typemodifiers ("public")
+                :superclasses "Error"
+                :members 
+                  ( ("AnnotationFormatError" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [657 671]))                          )
+                        (reparse-symbol class_member_declaration) [628 697])
+                    ("AnnotationFormatError" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [1193 1207])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [1209 1224]))                          )
+                        (reparse-symbol class_member_declaration) [1164 1264])
+                    ("AnnotationFormatError" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [1710 1725]))                          )
+                        (reparse-symbol class_member_declaration) [1681 1756]))                  
+                :type "class")
+                nil [406 1758]))          
+    :file "AnnotationFormatError.java"
+    :pointmax 1759
+    :fsize 1758
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!lang!annotation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

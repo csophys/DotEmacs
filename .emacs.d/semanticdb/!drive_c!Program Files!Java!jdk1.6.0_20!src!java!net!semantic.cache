@@ -948,6 +948,760 @@
     :lastmodtime '(19394 43702)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "SocketPermission.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [184 201])
+            ("java.util.Enumeration" include nil nil [203 232])
+            ("java.util.Vector" include nil nil [233 257])
+            ("java.util.List" include nil nil [258 280])
+            ("java.util.ArrayList" include nil nil [281 308])
+            ("java.util.Collections" include nil nil [309 338])
+            ("java.util.StringTokenizer" include nil nil [339 372])
+            ("java.net.InetAddress" include nil nil [373 401])
+            ("java.security.Permission" include nil nil [402 434])
+            ("java.security.PermissionCollection" include nil nil [435 477])
+            ("java.security.Policy" include nil nil [478 506])
+            ("java.io.Serializable" include nil nil [507 535])
+            ("java.io.ObjectStreamField" include nil nil [536 569])
+            ("java.io.ObjectOutputStream" include nil nil [570 604])
+            ("java.io.ObjectInputStream" include nil nil [605 638])
+            ("java.io.IOException" include nil nil [639 666])
+            ("sun.net.util.IPAddressUtil" include nil nil [667 701])
+            ("sun.security.util.SecurityConstants" include nil nil [702 745])
+            ("sun.security.util.Debug" include nil nil [746 777])
+            ("SocketPermission" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("java.io.Serializable")
+                :superclasses "Permission"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4175 4242])
+                    ("CONNECT" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4292 4331])
+                    ("LISTEN" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4380 4418])
+                    ("ACCEPT" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4482 4520])
+                    ("RESOLVE" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4569 4608])
+                    ("NONE" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4648 4685])
+                    ("ALL" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4727 4788])
+                    ("PORT_MIN" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4824 4862])
+                    ("PORT_MAX" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4867 4909])
+                    ("PRIV_PORT_MAX" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4914 4960])
+                    ("mask" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4990 5017])
+                    ("actions" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5090 5113])
+                    ("hostname" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5273 5307])
+                    ("cname" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5412 5443])
+                    ("addresses" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [5490 5532])
+                    ("wildcard" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5599 5634])
+                    ("init_with_ip" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5708 5747])
+                    ("invalid" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5892 5926])
+                    ("portrange" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5958 5992])
+                    ("defaultDeny" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5999 6045])
+                    ("untrusted" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6164 6200])
+                    ("trusted" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6205 6239])
+                    ("trustProxy" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6298 6332])
+                    ("trustNameService" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6405 6445])
+                    ("debug" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Debug")
+                        (reparse-symbol class_member_declaration) [6451 6485])
+                    ("debugInit" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6490 6531])
+                    ("getDebug" function
+                       (:typemodifiers ("private" "static" "synchronized")
+                        :type "Debug")
+                        (reparse-symbol class_member_declaration) [6923 7116])
+                    ("SocketPermission" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [8683 8694])
+                            ("action" variable (:type "String") (reparse-symbol formal_parameters) [8696 8709]))                          )
+                        (reparse-symbol class_member_declaration) [8659 8841])
+                    ("SocketPermission" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [8865 8876])
+                            ("mask" variable (:type "int") (reparse-symbol formal_parameters) [8878 8886]))                          )
+                        (reparse-symbol class_member_declaration) [8848 9007])
+                    ("setDeny" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9013 9064])
+                    ("getHost" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [9100 9111]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9070 10177])
+                    ("parsePort" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("port" variable (:type "String") (reparse-symbol formal_parameters) [10207 10218]))                          
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [10183 10904])
+                    ("init" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [11104 11115])
+                            ("mask" variable (:type "int") (reparse-symbol formal_parameters) [11117 11125]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11086 13668])
+                    ("getMask" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("action" variable (:type "String") (reparse-symbol formal_parameters) [13855 13868]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [13828 16891])
+                    ("isUntrusted" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16897 17802])
+                    ("getCanonName" function
+                       (:throws ("UnknownHostException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17885 18662])
+                    ("match" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cname" variable (:type "String") (reparse-symbol formal_parameters) [18690 18702])
+                            ("hname" variable (:type "String") (reparse-symbol formal_parameters) [18704 18716]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [18668 19114])
+                    ("fragment" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cname" variable (:type "String") (reparse-symbol formal_parameters) [19246 19258]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19222 20254])
+                    ("authorized" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cname" variable (:type "String") (reparse-symbol formal_parameters) [20288 20300])
+                            ("addr" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [20302 20313]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [20261 20481])
+                    ("authorizedIPv4" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cname" variable (:type "String") (reparse-symbol formal_parameters) [20518 20530])
+                            ("addr" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [20532 20543]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [20487 21461])
+                    ("authorizedIPv6" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cname" variable (:type "String") (reparse-symbol formal_parameters) [21498 21510])
+                            ("addr" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [21512 21523]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [21467 22663])
+                    ("getIP" function
+                       (:throws ("UnknownHostException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22761 23479])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Permission") (reparse-symbol formal_parameters) [25133 25145]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [25110 25381])
+                    ("impliesIgnoreMask" function
+                       (:arguments 
+                          ( ("that" variable (:type "SocketPermission") (reparse-symbol formal_parameters) [26495 26516]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [26469 29062])
+                    ("inProxyWeTrust" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("that" variable (:type "SocketPermission") (reparse-symbol formal_parameters) [29099 29120]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [29068 29380])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [29838 29848]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [29816 31005])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [31137 31658])
+                    ("getMask" function (:type "int") (reparse-symbol class_member_declaration) [31760 31795])
+                    ("getActions" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("mask" variable (:type "int") (reparse-symbol formal_parameters) [32204 32212]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [32171 32783])
+                    ("getActions" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [33052 33168])
+                    ("newPermissionCollection" function
+                       (:typemodifiers ("public")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [33675 33778])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectOutputStream") (reparse-symbol formal_parameters) [34008 34036]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33970 34269])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectInputStream") (reparse-symbol formal_parameters) [34423 34450]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34386 34623]))                  
+                :type "class")
+                nil [4080 35913])
+            ("SocketPermissionCollection" type
+               (:typemodifiers ("final")
+                :interfaces ("Serializable")
+                :superclasses "PermissionCollection"
+                :members 
+                  ( ("perms" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "List")
+                        (reparse-symbol class_member_declaration) [36376 36405])
+                    ("SocketPermissionCollection" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [36484 36553])
+                    ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [37087 37108]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [37071 37525])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [37860 37881]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [37837 38544])
+                    ("elements" function
+                       (:typemodifiers ("public")
+                        :type "Enumeration")
+                        (reparse-symbol class_member_declaration) [38733 38885])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [38891 38957])
+                    ("serialPersistentFields" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [39315 39449])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("out" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [39719 39741]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39694 40078])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("in" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [40204 40224]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40180 40566]))                  
+                :type "class")
+                nil [36212 40568]))          
+    :file "SocketPermission.java"
+    :pointmax 40569
+    :fsize 40568
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "InetAddress.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.net" package nil nil [179 196])
+            ("java.util.HashMap" include nil nil [198 223])
+            ("java.util.LinkedHashMap" include nil nil [224 255])
+            ("java.util.Random" include nil nil [256 280])
+            ("java.util.Iterator" include nil nil [281 307])
+            ("java.util.LinkedList" include nil nil [308 336])
+            ("java.security.AccessController" include nil nil [337 375])
+            ("java.io.ObjectStreamException" include nil nil [376 413])
+            ("java.io.IOException" include nil nil [414 441])
+            ("java.io.ObjectInputStream" include nil nil [442 475])
+            ("sun.security.action.*" include nil nil [476 505])
+            ("sun.net.InetAddressCachePolicy" include nil nil [506 544])
+            ("sun.net.util.IPAddressUtil" include nil nil [545 579])
+            ("sun.misc.Service" include nil nil [580 604])
+            ("sun.net.spi.nameservice.*" include nil nil [605 638])
+            ("InetAddress" type
+               (:typemodifiers ("public")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("IPv4" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6869 6895])
+                    ("IPv6" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7000 7026])
+                    ("preferIPv6Address" variable
+                       (:typemodifiers ("static" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7076 7127])
+                    ("hostName" variable (:type "String") (reparse-symbol class_member_declaration) [7164 7180])
+                    ("address" variable (:type "int") (reparse-symbol class_member_declaration) [7260 7272])
+                    ("family" variable (:type "int") (reparse-symbol class_member_declaration) [7431 7442])
+                    ("nameService" variable
+                       (:typemodifiers ("private" "static")
+                        :type "NameService")
+                        (reparse-symbol class_member_declaration) [7498 7544])
+                    ("canonicalHostName" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7603 7653])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [7727 7793])
+                    ("InetAddress" function (:constructor-flag t) (reparse-symbol class_member_declaration) [8395 8416])
+                    ("readResolve" function
+                       (:throws ("ObjectStreamException")
+                        :typemodifiers ("private")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [8690 8859])
+                    ("isMulticastAddress" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9093 9151])
+                    ("isAnyLocalAddress" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9375 9432])
+                    ("isLoopbackAddress" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9673 9730])
+                    ("isLinkLocalAddress" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10013 10071])
+                    ("isSiteLocalAddress" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10353 10411])
+                    ("isMCGlobal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10741 10791])
+                    ("isMCNodeLocal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11127 11180])
+                    ("isMCLinkLocal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11516 11569])
+                    ("isMCSiteLocal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11905 11958])
+                    ("isMCOrgLocal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12334 12386])
+                    ("isReachable" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("timeout" variable (:type "int") (reparse-symbol formal_parameters) [13509 13520]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13482 13588])
+                    ("isReachable" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("netif" variable (:type "NetworkInterface") (reparse-symbol formal_parameters) [15293 15315])
+                            ("ttl" variable (:type "int") (reparse-symbol formal_parameters) [15317 15324])
+                            ("timeout" variable (:type "int") (reparse-symbol formal_parameters) [15337 15348]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [15266 15598])
+                    ("getHostName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [16666 16728])
+                    ("getHostName" function
+                       (:arguments 
+                          ( ("check" variable (:type "boolean") (reparse-symbol formal_parameters) [17753 17766]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17734 17886])
+                    ("getCanonicalHostName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18791 18975])
+                    ("getHostFromNameService" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("addr" variable (:type "InetAddress") (reparse-symbol formal_parameters) [19789 19805])
+                            ("check" variable (:type "boolean") (reparse-symbol formal_parameters) [19807 19820]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19744 20887])
+                    ("getAddress" function
+                       (:typemodifiers ("public")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [21167 21215])
+                    ("getHostAddress" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [21386 21439])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [21574 21615])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [22367 22377]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [22345 22401])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [22787 22896])
+                    ("addressCache" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Cache")
+                        (reparse-symbol class_member_declaration) [22967 23034])
+                    ("negativeCache" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Cache")
+                        (reparse-symbol class_member_declaration) [23040 23108])
+                    ("addressCacheInit" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23114 23162])
+                    ("unknown_array" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [23168 23206])
+                    ("impl" variable
+                       (:typemodifiers ("static")
+                        :type "InetAddressImpl")
+                        (reparse-symbol class_member_declaration) [23233 23262])
+                    ("lookupTable" variable
+                       (:typemodifiers ("private" "static")
+                        :type "HashMap")
+                        (reparse-symbol class_member_declaration) [23268 23328])
+                    ("CacheEntry" type
+                       (:typemodifiers ("static" "final")
+                        :members 
+                          ( ("CacheEntry" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("address" variable (:type "Object") (reparse-symbol formal_parameters) [23435 23449])
+                                    ("expiration" variable (:type "long") (reparse-symbol formal_parameters) [23451 23466]))                                  )
+                                (reparse-symbol class_member_declaration) [23424 23557])
+                            ("address" variable (:type "Object") (reparse-symbol class_member_declaration) [23567 23582])
+                            ("expiration" variable (:type "long") (reparse-symbol class_member_declaration) [23591 23607]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [23383 23613])
+                    ("Cache" type
+                       (:typemodifiers ("static" "final")
+                        :members 
+                          ( ("cache" variable
+                               (:typemodifiers ("private")
+                                :type "LinkedHashMap")
+                                (reparse-symbol class_member_declaration) [23752 23780])
+                            ("type" variable
+                               (:typemodifiers ("private")
+                                :type "Type")
+                                (reparse-symbol class_member_declaration) [23783 23801])
+                            ("Cache" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("type" variable (:type "Type") (reparse-symbol formal_parameters) [23879 23888]))                                  )
+                                (reparse-symbol class_member_declaration) [23866 23951])
+                            ("getPolicy" function
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [23954 24123])
+                            ("put" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [24273 24284])
+                                    ("address" variable (:type "Object") (reparse-symbol formal_parameters) [24286 24300]))                                  
+                                :type "Cache")
+                                (reparse-symbol class_member_declaration) [24256 25763])
+                            ("get" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [25904 25915]))                                  
+                                :type "CacheEntry")
+                                (reparse-symbol class_member_declaration) [25882 26348]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [23724 26354])
+                    ("cacheInitIfNeeded" function
+                       (:typemodifiers ("private" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26472 26849])
+                    ("cacheAddress" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("hostname" variable (:type "String") (reparse-symbol formal_parameters) [26948 26963])
+                            ("address" variable (:type "Object") (reparse-symbol formal_parameters) [26965 26979])
+                            ("success" variable (:type "boolean") (reparse-symbol formal_parameters) [26990 27005]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26915 27230])
+                    ("getCachedAddress" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("hostname" variable (:type "String") (reparse-symbol formal_parameters) [27402 27417]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [27363 27832])
+                    ("getByAddress" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [30521 30532])
+                            ("addr" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [30534 30545]))                          
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [30482 31200])
+                    ("getByName" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [32732 32743]))                          
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [32696 32824])
+                    ("getByName" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [32911 32922])
+                            ("reqAddr" variable (:type "InetAddress") (reparse-symbol formal_parameters) [32924 32943]))                          
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [32874 33033])
+                    ("getAllByName" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [35121 35132]))                          
+                        :type "InetAddress[]")
+                        (reparse-symbol class_member_declaration) [35080 35204])
+                    ("getAllByName" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [35252 35263])
+                            ("reqAddr" variable (:type "InetAddress") (reparse-symbol formal_parameters) [35265 35284]))                          
+                        :type "InetAddress[]")
+                        (reparse-symbol class_member_declaration) [35210 37219])
+                    ("checkNumericZone" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [37519 37527]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [37482 37981])
+                    ("getAllByName0" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [38031 38042]))                          
+                        :type "InetAddress[]")
+                        (reparse-symbol class_member_declaration) [37987 38119])
+                    ("getAllByName0" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [38232 38243])
+                            ("check" variable (:type "boolean") (reparse-symbol formal_parameters) [38245 38258]))                          
+                        :type "InetAddress[]")
+                        (reparse-symbol class_member_declaration) [38196 38340])
+                    ("getAllByName0" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [38390 38401])
+                            ("reqAddr" variable (:type "InetAddress") (reparse-symbol formal_parameters) [38403 38422])
+                            ("check" variable (:type "boolean") (reparse-symbol formal_parameters) [38424 38437]))                          
+                        :type "InetAddress[]")
+                        (reparse-symbol class_member_declaration) [38346 39248])
+                    ("getAddressFromNameService" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [39302 39313])
+                            ("reqAddr" variable (:type "InetAddress") (reparse-symbol formal_parameters) [39315 39334]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [39254 41747])
+                    ("checkLookupTable" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [41796 41807]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [41757 42810])
+                    ("updateLookupTable" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("host" variable (:type "String") (reparse-symbol formal_parameters) [42854 42865]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42816 42968])
+                    ("getByAddress" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("addr" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [43681 43692]))                          
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [43642 43765])
+                    ("getLocalHost" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("public" "static")
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [44382 45183])
+                    ("init" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45254 45288])
+                    ("anyLocalAddress" function
+                       (:typemodifiers ("static")
+                        :type "InetAddress")
+                        (reparse-symbol class_member_declaration) [45404 45487])
+                    ("loadImpl" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("implName" variable (:type "String") (reparse-symbol formal_parameters) [45584 45599]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [45561 47248])
+                    ("readObjectNoData" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [47286 47305]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47255 47514])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("s" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [47547 47566]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47522 47864]))                  
+                :type "class")
+                nil [6707 47866])
+            ("InetAddressImplFactory" type
+               (:members 
+                  ( ("create" function
+                       (:typemodifiers ("static")
+                        :type "InetAddressImpl")
+                        (reparse-symbol class_member_declaration) [47948 48167])
+                    ("isIPv6Supported" function
+                       (:typemodifiers ("static" "native")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [48173 48213]))                  
+                :type "class")
+                nil [47912 48215]))          
+    :file "InetAddress.java"
+    :pointmax 48216
+    :fsize 48215
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((IDENTIFIER 23804 . 23808) (BRACE_BLOCK 23814 . 23834) (SEMICOLON 23834 . 23835))
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!net!semantic.cache"
   :semantic-tag-version "2.0"

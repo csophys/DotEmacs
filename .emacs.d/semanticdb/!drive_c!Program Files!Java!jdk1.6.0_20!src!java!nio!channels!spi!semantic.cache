@@ -1,0 +1,83 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "AbstractInterruptibleChannel.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.channels.spi" package nil nil [200 230])
+            ("java.io.IOException" include nil nil [232 259])
+            ("java.lang.reflect.Method" include nil nil [260 292])
+            ("java.lang.reflect.InvocationTargetException" include nil nil [293 344])
+            ("java.nio.channels.*" include nil nil [345 372])
+            ("java.security.AccessController" include nil nil [373 411])
+            ("java.security.PrivilegedAction" include nil nil [412 450])
+            ("sun.nio.ch.Interruptible" include nil nil [451 483])
+            ("AbstractInterruptibleChannel" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("Channel" "InterruptibleChannel")
+                :members 
+                  ( ("closeLock" variable
+                       (:typemodifiers ("private")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [2738 2778])
+                    ("open" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2783 2820])
+                    ("AbstractInterruptibleChannel" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [2891 2935])
+                    ("close" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3336 3489])
+                    ("implCloseChannel" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected" "abstract")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4151 4213])
+                    ("isOpen" function
+                       (:typemodifiers ("public" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4219 4270])
+                    ("interruptor" variable
+                       (:typemodifiers ("private")
+                        :type "Interruptible")
+                        (reparse-symbol class_member_declaration) [4315 4349])
+                    ("interrupted" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4354 4399])
+                    ("begin" function
+                       (:typemodifiers ("protected" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4788 5257])
+                    ("end" function
+                       (:throws ("AsynchronousCloseException")
+                        :typemodifiers ("protected" "final")
+                        :arguments 
+                          ( ("completed" variable (:type "boolean") (reparse-symbol formal_parameters) [6125 6142]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6100 6378])
+                    ("blockedOn" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("intr" variable (:type "Interruptible") (reparse-symbol formal_parameters) [6444 6462]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6422 6595]))                  
+                :type "class")
+                nil [2635 6597]))          
+    :file "AbstractInterruptibleChannel.java"
+    :pointmax 6598
+    :fsize 6597
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!nio!channels!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

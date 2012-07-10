@@ -4923,24 +4923,683 @@
     :unmatched-syntax '((BRACE_BLOCK 5860 . 33088) (GT 5858 . 5859) (IDENTIFIER 5857 . 5858) (COMMA 5856 . 5857) (IDENTIFIER 5855 . 5856) (LT 5854 . 5855) (IDENTIFIER 5851 . 5854) (IMPLEMENTS 5840 . 5850) (GT 5834 . 5835) (IDENTIFIER 5833 . 5834) (COMMA 5832 . 5833) (IDENTIFIER 5831 . 5832) (LT 5830 . 5831) (IDENTIFIER 5819 . 5830) (EXTENDS 5811 . 5818) (GT 5805 . 5806) (IDENTIFIER 5804 . 5805) (COMMA 5803 . 5804) (IDENTIFIER 5802 . 5803) (PUBLIC 5777 . 5783) (LT 5801 . 5802))
     )
    (semanticdb-table "LinkedList.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [177 195]))          
     :file "LinkedList.java"
+    :pointmax 30979
     :fsize 30978
     :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 3524 . 30978) (IDENTIFIER 3511 . 3523) (DOT 3510 . 3511) (IDENTIFIER 3508 . 3510) (DOT 3507 . 3508) (IDENTIFIER 3503 . 3507) (COMMA 3501 . 3502) (IDENTIFIER 3492 . 3501) (COMMA 3490 . 3491) (GT 3489 . 3490) (IDENTIFIER 3488 . 3489) (LT 3487 . 3488) (IDENTIFIER 3482 . 3487) (COMMA 3480 . 3481) (GT 3479 . 3480) (IDENTIFIER 3478 . 3479) (LT 3477 . 3478) (IDENTIFIER 3473 . 3477) (IMPLEMENTS 3462 . 3472) (GT 3456 . 3457) (IDENTIFIER 3455 . 3456) (LT 3454 . 3455) (IDENTIFIER 3432 . 3454) (EXTENDS 3424 . 3431) (GT 3418 . 3419) (IDENTIFIER 3417 . 3418) (PUBLIC 3393 . 3399) (LT 3416 . 3417))
     )
    (semanticdb-table "GregorianCalendar.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [754 772])
+            ("java.io.IOException" include nil nil [774 801])
+            ("java.io.ObjectInputStream" include nil nil [802 835])
+            ("sun.util.calendar.BaseCalendar" include nil nil [836 874])
+            ("sun.util.calendar.CalendarDate" include nil nil [875 913])
+            ("sun.util.calendar.CalendarSystem" include nil nil [914 954])
+            ("sun.util.calendar.CalendarUtils" include nil nil [955 994])
+            ("sun.util.calendar.Era" include nil nil [995 1024])
+            ("sun.util.calendar.Gregorian" include nil nil [1025 1060])
+            ("sun.util.calendar.JulianCalendar" include nil nil [1061 1101])
+            ("sun.util.calendar.ZoneInfo" include nil nil [1102 1136])
+            ("GregorianCalendar" type
+               (:typemodifiers ("public")
+                :superclasses "Calendar"
+                :members 
+                  ( ("BC" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14147 14178])
+                    ("BCE" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14345 14370])
+                    ("AD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14654 14685])
+                    ("CE" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14835 14859])
+                    ("EPOCH_OFFSET" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14865 14914])
+                    ("EPOCH_YEAR" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14964 15011])
+                    ("MONTH_LENGTH" variable
+                       (:dereference 1
+                        :typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15017 15097])
+                    ("LEAP_MONTH_LENGTH" variable
+                       (:dereference 1
+                        :typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15113 15198])
+                    ("ONE_SECOND" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15406 15450])
+                    ("ONE_MINUTE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15455 15508])
+                    ("ONE_HOUR" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15513 15566])
+                    ("ONE_DAY" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [15571 15622])
+                    ("ONE_WEEK" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [15627 15676])
+                    ("MIN_VALUES" variable
+                       (:dereference 1
+                        :typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17100 17498])
+                    ("LEAST_MAX_VALUES" variable
+                       (:dereference 1
+                        :typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17503 17935])
+                    ("MAX_VALUES" variable
+                       (:dereference 1
+                        :typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17940 18357])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [18420 18479])
+                    ("gcal" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Gregorian")
+                        (reparse-symbol class_member_declaration) [18559 18639])
+                    ("jcal" variable
+                       (:typemodifiers ("private" "static")
+                        :type "JulianCalendar")
+                        (reparse-symbol class_member_declaration) [18759 18794])
+                    ("jeras" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "Era")
+                        (reparse-symbol class_member_declaration) [18859 18886])
+                    ("DEFAULT_GREGORIAN_CUTOVER" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [18938 19001])
+                    ("gregorianCutover" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19458 19516])
+                    ("gregorianCutoverDate" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [19585 19699])
+                    ("gregorianCutoverYear" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [19861 19911])
+                    ("gregorianCutoverYearJulian" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [20057 20113])
+                    ("gdate" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "BaseCalendar.Date")
+                        (reparse-symbol class_member_declaration) [20340 20382])
+                    ("cdate" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "BaseCalendar.Date")
+                        (reparse-symbol class_member_declaration) [20548 20590])
+                    ("calsys" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "BaseCalendar")
+                        (reparse-symbol class_member_declaration) [20787 20825])
+                    ("zoneOffsets" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [20998 21034])
+                    ("originalFields" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [21145 21184])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [21394 21511])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("zone" variable (:type "TimeZone") (reparse-symbol formal_parameters) [21737 21750]))                          )
+                        (reparse-symbol class_member_declaration) [21712 21800])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("aLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [22026 22040]))                          )
+                        (reparse-symbol class_member_declaration) [22001 22120])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("zone" variable (:type "TimeZone") (reparse-symbol formal_parameters) [22384 22397])
+                            ("aLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [22399 22413]))                          )
+                        (reparse-symbol class_member_declaration) [22359 22562])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [23101 23109])
+                            ("month" variable (:type "int") (reparse-symbol formal_parameters) [23111 23120])
+                            ("dayOfMonth" variable (:type "int") (reparse-symbol formal_parameters) [23122 23136]))                          )
+                        (reparse-symbol class_member_declaration) [23076 23189])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [23958 23966])
+                            ("month" variable (:type "int") (reparse-symbol formal_parameters) [23968 23977])
+                            ("dayOfMonth" variable (:type "int") (reparse-symbol formal_parameters) [23979 23993])
+                            ("hourOfDay" variable (:type "int") (reparse-symbol formal_parameters) [23995 24008])
+                            ("minute" variable (:type "int") (reparse-symbol formal_parameters) [24039 24049]))                          )
+                        (reparse-symbol class_member_declaration) [23933 24115])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [24977 24985])
+                            ("month" variable (:type "int") (reparse-symbol formal_parameters) [24987 24996])
+                            ("dayOfMonth" variable (:type "int") (reparse-symbol formal_parameters) [24998 25012])
+                            ("hourOfDay" variable (:type "int") (reparse-symbol formal_parameters) [25014 25027])
+                            ("minute" variable (:type "int") (reparse-symbol formal_parameters) [25058 25068])
+                            ("second" variable (:type "int") (reparse-symbol formal_parameters) [25070 25080]))                          )
+                        (reparse-symbol class_member_declaration) [24952 25151])
+                    ("GregorianCalendar" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [26106 26114])
+                            ("month" variable (:type "int") (reparse-symbol formal_parameters) [26116 26125])
+                            ("dayOfMonth" variable (:type "int") (reparse-symbol formal_parameters) [26127 26141])
+                            ("hourOfDay" variable (:type "int") (reparse-symbol formal_parameters) [26151 26164])
+                            ("minute" variable (:type "int") (reparse-symbol formal_parameters) [26166 26176])
+                            ("second" variable (:type "int") (reparse-symbol formal_parameters) [26178 26188])
+                            ("millis" variable (:type "int") (reparse-symbol formal_parameters) [26190 26200]))                          )
+                        (reparse-symbol class_member_declaration) [26088 27264])
+                    ("setGregorianChange" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("date" variable (:type "Date") (reparse-symbol formal_parameters) [27905 27914]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27874 28149])
+                    ("setGregorianChange" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cutoverTime" variable (:type "long") (reparse-symbol formal_parameters) [28187 28203]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28155 29236])
+                    ("getGregorianChange" function
+                       (:typemodifiers ("public" "final")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [29603 29692])
+                    ("isLeapYear" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [30127 30135]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [30101 30857])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [31541 31551]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [31519 31712])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [31817 31907])
+                    ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [33482 33491])
+                            ("amount" variable (:type "int") (reparse-symbol formal_parameters) [33493 33503]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33466 38765])
+                    ("roll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [39726 39735])
+                            ("up" variable (:type "boolean") (reparse-symbol formal_parameters) [39737 39747]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39709 39791])
+                    ("roll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [42230 42239])
+                            ("amount" variable (:type "int") (reparse-symbol formal_parameters) [42241 42251]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42213 52539])
+                    ("getMinimum" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [53448 53457]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [53426 53500])
+                    ("getMaximum" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [54408 54417]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [54386 55215])
+                    ("getGreatestMinimum" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [56137 56146]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [56107 56430])
+                    ("getLeastMaximum" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [57349 57358]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [57322 57909])
+                    ("getActualMinimum" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [59138 59147]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [59110 59565])
+                    ("getActualMaximum" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("field" variable (:type "int") (reparse-symbol formal_parameters) [60629 60638]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60601 68122])
+                    ("getYearOffsetInMillis" function
+                       (:typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [68270 68583])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [68589 68960])
+                    ("getTimeZone" function
+                       (:typemodifiers ("public")
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [68966 69185])
+                    ("setTimeZone" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("zone" variable (:type "TimeZone") (reparse-symbol formal_parameters) [69215 69228]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [69191 69393])
+                    ("cachedFixedDate" variable
+                       (:typemodifiers ("transient" "private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [71003 71059])
+                    ("computeFields" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [71395 72058])
+                    ("computeFields" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("fieldMask" variable (:type "int") (reparse-symbol formal_parameters) [72726 72739])
+                            ("tzMask" variable (:type "int") (reparse-symbol formal_parameters) [72741 72751]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [72700 81227])
+                    ("getWeekNumber" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("fixedDay1" variable (:type "long") (reparse-symbol formal_parameters) [81674 81688])
+                            ("fixedDate" variable (:type "long") (reparse-symbol formal_parameters) [81690 81704]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [81642 82256])
+                    ("computeTime" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [82498 89109])
+                    ("getFixedDate" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cal" variable (:type "BaseCalendar") (reparse-symbol formal_parameters) [89640 89656])
+                            ("year" variable (:type "int") (reparse-symbol formal_parameters) [89658 89666])
+                            ("fieldMask" variable (:type "int") (reparse-symbol formal_parameters) [89668 89681]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [89614 94129])
+                    ("getNormalizedCalendar" function
+                       (:typemodifiers ("private" "final")
+                        :type "GregorianCalendar")
+                        (reparse-symbol class_member_declaration) [94327 94629])
+                    ("getJulianCalendarSystem" function
+                       (:typemodifiers ("synchronized" "private" "static" "final")
+                        :type "BaseCalendar")
+                        (reparse-symbol class_member_declaration) [94766 94976])
+                    ("getCutoverCalendarSystem" function
+                       (:typemodifiers ("private")
+                        :type "BaseCalendar")
+                        (reparse-symbol class_member_declaration) [95185 95426])
+                    ("isCutoverYear" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("normalizedYear" variable (:type "int") (reparse-symbol formal_parameters) [95614 95632]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [95578 95769])
+                    ("getFixedDateJan1" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("date" variable (:type "BaseCalendar.Date") (reparse-symbol formal_parameters) [96169 96191])
+                            ("fixedDate" variable (:type "long") (reparse-symbol formal_parameters) [96193 96207]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [96133 96846])
+                    ("getFixedDateMonth1" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("date" variable (:type "BaseCalendar.Date") (reparse-symbol formal_parameters) [97262 97284])
+                            ("fixedDate" variable (:type "long") (reparse-symbol formal_parameters) [97286 97300]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [97224 98433])
+                    ("getCalendarDate" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("fd" variable (:type "long") (reparse-symbol formal_parameters) [98612 98619]))                          
+                        :type "BaseCalendar.Date")
+                        (reparse-symbol class_member_declaration) [98564 98852])
+                    ("getGregorianCutoverDate" function
+                       (:typemodifiers ("private" "final")
+                        :type "BaseCalendar.Date")
+                        (reparse-symbol class_member_declaration) [98977 99089])
+                    ("getLastJulianDate" function
+                       (:typemodifiers ("private" "final")
+                        :type "BaseCalendar.Date")
+                        (reparse-symbol class_member_declaration) [99226 99336])
+                    ("monthLength" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("month" variable (:type "int") (reparse-symbol formal_parameters) [99539 99548])
+                            ("year" variable (:type "int") (reparse-symbol formal_parameters) [99550 99558]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [99509 99649])
+                    ("monthLength" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("month" variable (:type "int") (reparse-symbol formal_parameters) [99836 99845]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [99806 100011])
+                    ("actualMonthLength" function
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [100017 100723])
+                    ("yearLength" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("year" variable (:type "int") (reparse-symbol formal_parameters) [100869 100877]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [100840 100931])
+                    ("yearLength" function
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [101039 101226])
+                    ("pinDayOfMonth" function
+                       (:typemodifiers ("private" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [101539 101964])
+                    ("getCurrentFixedDate" function
+                       (:typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [102098 102219])
+                    ("getRolledValue" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol formal_parameters) [102358 102367])
+                            ("amount" variable (:type "int") (reparse-symbol formal_parameters) [102369 102379])
+                            ("min" variable (:type "int") (reparse-symbol formal_parameters) [102381 102388])
+                            ("max" variable (:type "int") (reparse-symbol formal_parameters) [102390 102397]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [102318 102632])
+                    ("internalGetEra" function
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [102782 102875])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("stream" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [102952 102976]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [102928 103231]))                  
+                :type "class")
+                nil [12413 103233]))          
     :file "GregorianCalendar.java"
+    :pointmax 103234
     :fsize 103233
     :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
     )
    (semanticdb-table "AbstractSet.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [178 196]))          
     :file "AbstractSet.java"
+    :pointmax 6296
     :fsize 6295
     :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 1408 . 6295) (GT 1406 . 1407) (IDENTIFIER 1405 . 1406) (LT 1404 . 1405) (IDENTIFIER 1401 . 1404) (IMPLEMENTS 1390 . 1400) (GT 1388 . 1389) (IDENTIFIER 1387 . 1388) (LT 1386 . 1387) (IDENTIFIER 1368 . 1386) (EXTENDS 1360 . 1367) (GT 1358 . 1359) (IDENTIFIER 1357 . 1358) (PUBLIC 1323 . 1329) (LT 1356 . 1357))
     )
    (semanticdb-table "Comparator.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [177 195]))          
     :file "Comparator.java"
+    :pointmax 6994
     :fsize 6993
     :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 3815 . 6993) (GT 3813 . 3814) (IDENTIFIER 3812 . 3813) (PUBLIC 3784 . 3790) (LT 3811 . 3812))
+    )
+   (semanticdb-table "LinkedHashMap.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [180 198])
+            ("java.io.*" include nil nil [199 216]))          
+    :file "LinkedHashMap.java"
+    :pointmax 18849
+    :fsize 18848
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax '((BRACE_BLOCK 6608 . 18848) (GT 6606 . 6607) (IDENTIFIER 6605 . 6606) (COMMA 6604 . 6605) (IDENTIFIER 6603 . 6604) (LT 6602 . 6603) (IDENTIFIER 6599 . 6602) (IMPLEMENTS 6588 . 6598) (GT 6582 . 6583) (IDENTIFIER 6581 . 6582) (COMMA 6580 . 6581) (IDENTIFIER 6579 . 6580) (LT 6578 . 6579) (IDENTIFIER 6571 . 6578) (EXTENDS 6563 . 6570) (GT 6557 . 6558) (IDENTIFIER 6556 . 6557) (COMMA 6555 . 6556) (IDENTIFIER 6554 . 6555) (PUBLIC 6527 . 6533) (LT 6553 . 6554))
+    )
+   (semanticdb-table "PropertyPermission.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util" package nil nil [185 203])
+            ("java.io.Serializable" include nil nil [205 233])
+            ("java.io.IOException" include nil nil [234 261])
+            ("java.security.*" include nil nil [262 285])
+            ("java.util.Map" include nil nil [286 307])
+            ("java.util.HashMap" include nil nil [308 333])
+            ("java.util.Enumeration" include nil nil [334 363])
+            ("java.util.Hashtable" include nil nil [364 391])
+            ("java.util.Collections" include nil nil [392 421])
+            ("java.io.ObjectStreamField" include nil nil [422 455])
+            ("java.io.ObjectOutputStream" include nil nil [456 490])
+            ("java.io.ObjectInputStream" include nil nil [491 524])
+            ("java.io.IOException" include nil nil [525 552])
+            ("sun.security.util.SecurityConstants" include nil nil [553 596])
+            ("PropertyPermission" type
+               (:typemodifiers ("public" "final")
+                :superclasses "BasicPermission"
+                :members 
+                  ( ("READ" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2476 2515])
+                    ("WRITE" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2558 2597])
+                    ("ALL" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2651 2697])
+                    ("NONE" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2737 2776])
+                    ("mask" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2830 2857])
+                    ("actions" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2929 2952])
+                    ("init" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("mask" variable (:type "int") (reparse-symbol formal_parameters) [3287 3295]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3269 3581])
+                    ("PropertyPermission" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [4221 4232])
+                            ("actions" variable (:type "String") (reparse-symbol formal_parameters) [4234 4248]))                          )
+                        (reparse-symbol class_member_declaration) [4195 4308])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Permission") (reparse-symbol formal_parameters) [4953 4965]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4930 5288])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [5711 5721]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5689 5967])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6288 6352])
+                    ("getMask" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("actions" variable (:type "String") (reparse-symbol formal_parameters) [6536 6550]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6509 8432])
+                    ("getActions" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("mask" variable (:type "int") (reparse-symbol formal_parameters) [8702 8710]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8677 9016])
+                    ("getActions" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9452 9568])
+                    ("getMask" function (:type "int") (reparse-symbol class_member_declaration) [9718 9753])
+                    ("newPermissionCollection" function
+                       (:typemodifiers ("public")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [9988 10093])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [10100 10165])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectOutputStream") (reparse-symbol formal_parameters) [10396 10424]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10358 10657])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("s" variable (:type "java.io.ObjectInputStream") (reparse-symbol formal_parameters) [10813 10840]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10776 11003]))                  
+                :type "class")
+                nil [2371 11005])
+            ("PropertyPermissionCollection" type
+               (:typemodifiers ("final")
+                :interfaces ("Serializable")
+                :superclasses "PermissionCollection"
+                :members 
+                  ( ("perms" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [11536 11564])
+                    ("all_allowed" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11728 11756])
+                    ("PropertyPermissionCollection" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [11837 11965])
+                    ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [12455 12476]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12439 13392])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [13711 13732]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13688 15184])
+                    ("elements" function
+                       (:typemodifiers ("public")
+                        :type "Enumeration")
+                        (reparse-symbol class_member_declaration) [15376 15554])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [15560 15626])
+                    ("serialPersistentFields" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "ObjectStreamField")
+                        (reparse-symbol class_member_declaration) [16064 16254])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("out" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [16508 16530]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16483 16961])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("in" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [17122 17142]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17098 17554]))                  
+                :type "class")
+                nil [11295 17556]))          
+    :file "PropertyPermission.java"
+    :pointmax 17557
+    :fsize 17556
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
     )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!semantic.cache"
