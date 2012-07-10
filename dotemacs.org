@@ -1,3 +1,5 @@
 - 用el-get使用插件前，最好都el-get-init处理下
 - 脚本subgit.bat是用来检查是否所有的子github项目都已经成功下载
   注：需要改进下脚本。当前脚本运行完一个git clone 就会自动退出
+- subgit.bat中增加关于undo-tree.el的脚本
+- 配置文件和el-get的配置文件中去除了关于undo-tree的配置

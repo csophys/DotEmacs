@@ -3,7 +3,7 @@
 (el-get-init "color-theme")
 (el-get-init "dired+")
 (color-theme-gnome2);设置darkskategrey灰色
-(global-undo-tree-mode t);启用undotree
+;;(global-undo-tree-mode t);启用undotree
 (setq default-major-mode 'text-mode);设置默认主属性为text模式。
 ;(setq-default ispell-program-name "aspell") ;;启用拼写检查
 (delete-selection-mode); 操作region区域和其他程序

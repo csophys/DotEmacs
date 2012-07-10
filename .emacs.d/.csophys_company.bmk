@@ -39,7 +39,7 @@
  (position . 745))
 ("org-remember-last-stored"
  (filename . "~/study.org")
- (front-context-string . "** 基本概念 指针和引用的区别")
- (rear-context-string . "      \n\n\n* 基本概念\n")
- (position . 4953))
+ (front-context-string . "** 算法 求整数数组中最大和的")
+ (rear-context-string . "%E6%B3%95][算法]]\n")
+ (position . 6376))
 )
