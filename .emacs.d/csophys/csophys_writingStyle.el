@@ -64,6 +64,7 @@
 (require 'w32-browser);;;;w32-brower
 (el-get-init "autopair")
 (autopair-global-mode t);;;启动autopair mode
+(setq graphviz-dot-mode-syntax-table (syntax-table));;;是autopair可以用于dot-mode
 ;------------------------------------------------------------------------------
 (require 'epa-file);;用easypg来进行文件的加密
 (epa-file-enable)
@@ -233,6 +234,19 @@
   (goto-char (- (point-max) 1))
   (yas/expand)
 	)
+;-----------------------------------------------------------------------------
+(add-to-list 'load-path "~/.emacs.d/el-get/dos/")
+(require 'dos);;使用dos,修改了原文件中的配色(line:127)
+(require 'dos-indent);;用于dos缩进
+(setq auto-mode-alist  
+	  (append  
+	   '(("\\.bat\\'" . dos-mode))  
+	   auto-mode-alist))
+(defun run-current-bat()
+  (interactive)
+  (w32-browser buffer-file-name)
+ )
+(define-key dos-mode-map (kbd "M-RET") 'run-current-bat)
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember
