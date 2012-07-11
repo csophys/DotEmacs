@@ -38,8 +38,8 @@
  (rear-context-string . "ys_company.bmk\")")
  (position . 745))
 ("org-remember-last-stored"
- (filename . "~/study.org")
- (front-context-string . "** 算法 求整数数组中最大和的")
- (rear-context-string . "%E6%B3%95][算法]]\n")
- (position . 6376))
+ (filename . "~/schedule.org.gpg")
+ (front-context-string . "** TODO 数据库范式理解\n")
+ (rear-context-string . "alled\" recipe]]\n")
+ (position . 4445))
 )

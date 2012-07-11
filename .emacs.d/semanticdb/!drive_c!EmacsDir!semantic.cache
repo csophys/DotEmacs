@@ -33,8 +33,8 @@
                 nil [165 350]))          
     :file "test.java"
     :pointmax 354
-    :fsize 446
-    :lastmodtime '(20475 54289)
+    :fsize 419
+    :lastmodtime '(20476 56370)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "Test.java"
@@ -61,14 +61,14 @@
                                 :type "String")
                                 (reparse-symbol formal_parameters) [252 265]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [228 411]))                  
+                        (reparse-symbol class_member_declaration) [228 385]))                  
                 :type "class")
-                nil [135 413]))          
+                nil [135 387]))          
     :file "Test.java"
     :pointmax 415
-    :fsize 446
-    :lastmodtime '(20475 54289)
-    :unmatched-syntax '((IDENTIFIER 19 . 27) (DOT 18 . 19) (IDENTIFIER 14 . 18) (DOT 13 . 14) (IDENTIFIER 19 . 27) (DOT 18 . 19) (IDENTIFIER 14 . 18) (DOT 13 . 14))
+    :fsize 419
+    :lastmodtime '(20476 56370)
+    :unmatched-syntax 'nil
     )
    )
   :file "!drive_c!EmacsDir!semantic.cache"
