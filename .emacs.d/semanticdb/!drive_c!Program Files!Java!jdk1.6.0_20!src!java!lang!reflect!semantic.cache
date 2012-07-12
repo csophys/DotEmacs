@@ -542,6 +542,619 @@
     :lastmodtime '(19394 43702)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "Constructor.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [178 204])
+            ("sun.reflect.ConstructorAccessor" include nil nil [206 245])
+            ("sun.reflect.Reflection" include nil nil [246 276])
+            ("sun.reflect.generics.repository.ConstructorRepository" include nil nil [277 338])
+            ("sun.reflect.generics.factory.CoreReflectionFactory" include nil nil [339 397])
+            ("sun.reflect.generics.factory.GenericsFactory" include nil nil [398 450])
+            ("sun.reflect.generics.scope.ConstructorScope" include nil nil [451 502])
+            ("java.lang.annotation.Annotation" include nil nil [503 542])
+            ("java.util.Map" include nil nil [543 564])
+            ("sun.reflect.annotation.AnnotationParser" include nil nil [565 612])
+            ("java.lang.annotation.AnnotationFormatError" include nil nil [613 663])
+            ("java.lang.reflect.Modifier" include nil nil [664 698]))          
+    :file "Constructor.java"
+    :pointmax 25679
+    :fsize 25678
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 1603 . 25678) (IDENTIFIER 1596 . 1602) (COMMA 1541 . 1542) (IDENTIFIER 1523 . 1541) (IMPLEMENTS 1459 . 1469) (IDENTIFIER 1442 . 1458) (EXTENDS 1434 . 1441) (GT 1432 . 1433) (IDENTIFIER 1431 . 1432) (PUBLIC 1396 . 1402) (LT 1430 . 1431))
+    )
+   (semanticdb-table "Field.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [172 198])
+            ("sun.reflect.FieldAccessor" include nil nil [200 233])
+            ("sun.reflect.Reflection" include nil nil [234 264])
+            ("sun.reflect.generics.repository.FieldRepository" include nil nil [265 320])
+            ("sun.reflect.generics.factory.CoreReflectionFactory" include nil nil [321 379])
+            ("sun.reflect.generics.factory.GenericsFactory" include nil nil [380 432])
+            ("sun.reflect.generics.scope.ClassScope" include nil nil [433 478])
+            ("java.lang.annotation.Annotation" include nil nil [479 518])
+            ("java.util.Map" include nil nil [519 540])
+            ("sun.reflect.annotation.AnnotationParser" include nil nil [541 588])
+            ("Field" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("Member")
+                :superclasses "AccessibleObject"
+                :members 
+                  ( ("clazz" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1341 1362])
+                    ("slot" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1367 1386])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1486 1507])
+                    ("type" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1512 1532])
+                    ("modifiers" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1537 1561])
+                    ("signature" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1606 1644])
+                    ("genericInfo" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "FieldRepository")
+                        (reparse-symbol class_member_declaration) [1700 1746])
+                    ("annotations" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1751 1791])
+                    ("fieldAccessor" variable
+                       (:typemodifiers ("private")
+                        :type "FieldAccessor")
+                        (reparse-symbol class_member_declaration) [1850 1886])
+                    ("overrideFieldAccessor" variable
+                       (:typemodifiers ("private")
+                        :type "FieldAccessor")
+                        (reparse-symbol class_member_declaration) [1942 1986])
+                    ("root" variable
+                       (:typemodifiers ("private")
+                        :type "Field")
+                        (reparse-symbol class_member_declaration) [2180 2213])
+                    ("securityCheckCache" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2342 2375])
+                    ("securityCheckTargetClassCache" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2380 2424])
+                    ("getGenericSignature" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2462 2518])
+                    ("getFactory" function
+                       (:typemodifiers ("private")
+                        :type "GenericsFactory")
+                        (reparse-symbol class_member_declaration) [2552 2720])
+                    ("getGenericInfo" function
+                       (:typemodifiers ("private")
+                        :type "FieldRepository")
+                        (reparse-symbol class_member_declaration) [2770 3083])
+                    ("Field" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("declaringClass" variable (:type "Class") (reparse-symbol formal_parameters) [3299 3319])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [3331 3342])
+                            ("type" variable (:type "Class") (reparse-symbol formal_parameters) [3354 3364])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [3376 3389])
+                            ("slot" variable (:type "int") (reparse-symbol formal_parameters) [3401 3409])
+                            ("signature" variable (:type "String") (reparse-symbol formal_parameters) [3421 3437])
+                            ("annotations" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [3449 3467]))                          )
+                        (reparse-symbol class_member_declaration) [3293 3707])
+                    ("copy" function (:type "Field") (reparse-symbol class_member_declaration) [3903 4649])
+                    ("getDeclaringClass" function (:constructor-flag t) (reparse-symbol class_member_declaration) [4846 4888])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4994 5039])
+                    ("getModifiers" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5294 5346])
+                    ("isEnumConstant" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5629 5722])
+                    ("isSynthetic" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5996 6085])
+                    ("getType" function (:constructor-flag t) (reparse-symbol class_member_declaration) [6402 6433])
+                    ("getGenericType" function
+                       (:typemodifiers ("public")
+                        :type "Type")
+                        (reparse-symbol class_member_declaration) [7635 7783])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [8080 8090]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8058 8342])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8550 8652])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9490 9710])
+                    ("toGenericString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10558 10885])
+                    ("get" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [13261 13271]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [13243 13395])
+                    ("getBoolean" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [14445 14455]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14419 14579])
+                    ("getByte" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [15611 15621]))                          
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [15591 15742])
+                    ("getChar" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [16901 16911]))                          
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [16881 17032])
+                    ("getShort" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [18204 18214]))                          
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [18182 18336])
+                    ("getInt" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [19494 19504]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [19476 19624])
+                    ("getLong" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [20789 20799]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [20769 20920])
+                    ("getFloat" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [22086 22096]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [22064 22218])
+                    ("getDouble" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [23397 23407]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [23373 23530])
+                    ("set" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [26863 26873])
+                            ("value" variable (:type "Object") (reparse-symbol formal_parameters) [26875 26887]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26847 27004])
+                    ("setBoolean" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [28150 28160])
+                            ("z" variable (:type "boolean") (reparse-symbol formal_parameters) [28162 28171]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28127 28291])
+                    ("setByte" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [29425 29435])
+                            ("b" variable (:type "byte") (reparse-symbol formal_parameters) [29437 29443]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29405 29560])
+                    ("setChar" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [30699 30709])
+                            ("c" variable (:type "char") (reparse-symbol formal_parameters) [30711 30717]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30679 30834])
+                    ("setShort" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [31972 31982])
+                            ("s" variable (:type "short") (reparse-symbol formal_parameters) [31984 31991]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [31951 32109])
+                    ("setInt" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [33244 33254])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [33256 33261]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33225 33377])
+                    ("setLong" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [34511 34521])
+                            ("l" variable (:type "long") (reparse-symbol formal_parameters) [34523 34529]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34491 34646])
+                    ("setFloat" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [35784 35794])
+                            ("f" variable (:type "float") (reparse-symbol formal_parameters) [35796 35803]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [35763 35921])
+                    ("setDouble" function
+                       (:throws ("IllegalArgumentException" "IllegalAccessException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [37063 37073])
+                            ("d" variable (:type "double") (reparse-symbol formal_parameters) [37075 37083]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [37041 37202])
+                    ("getFieldAccessor" function
+                       (:throws ("IllegalAccessException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [37305 37315]))                          
+                        :type "FieldAccessor")
+                        (reparse-symbol class_member_declaration) [37266 37556])
+                    ("acquireFieldAccessor" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("overrideFinalCheck" variable (:type "boolean") (reparse-symbol formal_parameters) [37865 37891]))                          
+                        :type "FieldAccessor")
+                        (reparse-symbol class_member_declaration) [37822 38512])
+                    ("getFieldAccessor" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("overrideFinalCheck" variable (:type "boolean") (reparse-symbol formal_parameters) [38653 38679]))                          
+                        :type "FieldAccessor")
+                        (reparse-symbol class_member_declaration) [38614 38764])
+                    ("setFieldAccessor" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("accessor" variable (:type "FieldAccessor") (reparse-symbol formal_parameters) [38886 38908])
+                            ("overrideFinalCheck" variable (:type "boolean") (reparse-symbol formal_parameters) [38910 38936]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38856 39201])
+                    ("doSecurityCheck" function
+                       (:throws ("IllegalAccessException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [39445 39455]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39416 40191])
+                    ("getTypeName" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("type" variable (:type "Class") (reparse-symbol formal_parameters) [40292 40302]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [40266 40699])
+                    ("getAnnotation" function (:type "T") (reparse-symbol class_member_declaration) [40819 41015])
+                    ("getDeclaredAnnotations" function
+                       (:typemodifiers ("public")
+                        :type "Annotation[]")
+                        (reparse-symbol class_member_declaration) [41055 41172])
+                    ("declaredAnnotations" function (:constructor-flag t) (reparse-symbol class_member_declaration) [41290 41642]))                  
+                :type "class")
+                nil [1266 41644]))          
+    :file "Field.java"
+    :pointmax 41645
+    :fsize 41644
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((GT 41288 . 41289) (COMMA 41276 . 41277) (LT 41270 . 41271) (SEMICOLON 41238 . 41239) (GT 41217 . 41218) (COMMA 41205 . 41206) (PRIVATE 41178 . 41185) (LT 41199 . 41200) (GT 40842 . 40843) (IDENTIFIER 40835 . 40840) (LT 40840 . 40841) (GT 40817 . 40818) (EXTENDS 40799 . 40806) (PUBLIC 40789 . 40795) (LT 40796 . 40797) (GT 6400 . 6401) (QUESTION 6399 . 6400) (PUBLIC 6386 . 6392) (LT 6398 . 6399) (GT 4844 . 4845) (QUESTION 4843 . 4844) (PUBLIC 4830 . 4836) (LT 4842 . 4843))
+    )
+   (semanticdb-table "Member.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [173 199])
+            ("Member" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("PUBLIC" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [654 689])
+                    ("DECLARED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [881 918])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [1408 1432])
+                    ("getModifiers" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [1764 1790])
+                    ("isSynthetic" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2040 2069]))                  
+                :type "interface")
+                nil [442 2071]))          
+    :file "Member.java"
+    :pointmax 2072
+    :fsize 2071
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((SEMICOLON 1215 . 1216) (PAREN_BLOCK 1213 . 1215) (GT 1194 . 1195) (QUESTION 1193 . 1194) (PUBLIC 1180 . 1186) (LT 1192 . 1193))
+    )
+   (semanticdb-table "Method.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang.reflect" package nil nil [173 199])
+            ("sun.reflect.MethodAccessor" include nil nil [201 235])
+            ("sun.reflect.Reflection" include nil nil [236 266])
+            ("sun.reflect.generics.repository.MethodRepository" include nil nil [267 323])
+            ("sun.reflect.generics.factory.CoreReflectionFactory" include nil nil [324 382])
+            ("sun.reflect.generics.factory.GenericsFactory" include nil nil [383 435])
+            ("sun.reflect.generics.scope.MethodScope" include nil nil [436 482])
+            ("sun.reflect.annotation.AnnotationType" include nil nil [483 528])
+            ("sun.reflect.annotation.AnnotationParser" include nil nil [529 576])
+            ("java.lang.annotation.Annotation" include nil nil [577 616])
+            ("java.lang.annotation.AnnotationFormatError" include nil nil [617 667])
+            ("java.nio.ByteBuffer" include nil nil [668 695])
+            ("java.util.Map" include nil nil [696 717])
+            ("Method" type
+               (:typemodifiers ("public" "final")
+                :interfaces ("GenericDeclaration" "Member")
+                :superclasses "AccessibleObject"
+                :members 
+                  ( ("clazz" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1606 1627])
+                    ("slot" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1632 1651])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1751 1772])
+                    ("returnType" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1777 1803])
+                    ("parameterTypes" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1808 1840])
+                    ("exceptionTypes" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [1845 1877])
+                    ("modifiers" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1882 1906])
+                    ("signature" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1951 1999])
+                    ("genericInfo" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "MethodRepository")
+                        (reparse-symbol class_member_declaration) [2055 2102])
+                    ("annotations" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2107 2147])
+                    ("parameterAnnotations" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2152 2201])
+                    ("annotationDefault" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2206 2252])
+                    ("methodAccessor" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "MethodAccessor")
+                        (reparse-symbol class_member_declaration) [2257 2304])
+                    ("root" variable
+                       (:typemodifiers ("private")
+                        :type "Method")
+                        (reparse-symbol class_member_declaration) [2497 2530])
+                    ("securityCheckCache" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2659 2692])
+                    ("securityCheckTargetClassCache" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [2697 2741])
+                    ("LANGUAGE_MODIFIERS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2811 3020])
+                    ("getGenericSignature" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3057 3113])
+                    ("getFactory" function
+                       (:typemodifiers ("private")
+                        :type "GenericsFactory")
+                        (reparse-symbol class_member_declaration) [3147 3287])
+                    ("getGenericInfo" function
+                       (:typemodifiers ("private")
+                        :type "MethodRepository")
+                        (reparse-symbol class_member_declaration) [3337 3646])
+                    ("Method" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("declaringClass" variable (:type "Class") (reparse-symbol formal_parameters) [3862 3882])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [3895 3906])
+                            ("parameterTypes" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [3919 3941])
+                            ("returnType" variable (:type "Class") (reparse-symbol formal_parameters) [3954 3970])
+                            ("checkedExceptions" variable
+                               (:dereference 1
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [3983 4008])
+                            ("modifiers" variable (:type "int") (reparse-symbol formal_parameters) [4021 4034])
+                            ("slot" variable (:type "int") (reparse-symbol formal_parameters) [4047 4055])
+                            ("signature" variable (:type "String") (reparse-symbol formal_parameters) [4068 4084])
+                            ("annotations" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4097 4115])
+                            ("parameterAnnotations" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4128 4155])
+                            ("annotationDefault" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4168 4192]))                          )
+                        (reparse-symbol class_member_declaration) [3855 4649])
+                    ("copy" function (:type "Method") (reparse-symbol class_member_declaration) [4847 5684])
+                    ("getDeclaringClass" function (:constructor-flag t) (reparse-symbol class_member_declaration) [5883 5925])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6067 6112])
+                    ("getModifiers" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6369 6421])
+                    ("getTypeParameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [7191 7391])
+                    ("getReturnType" function (:constructor-flag t) (reparse-symbol class_member_declaration) [7657 7700])
+                    ("getGenericReturnType" function
+                       (:typemodifiers ("public")
+                        :type "Type")
+                        (reparse-symbol class_member_declaration) [8833 9000])
+                    ("getParameterTypes" function (:constructor-flag t) (reparse-symbol class_member_declaration) [9407 9479])
+                    ("getGenericParameterTypes" function
+                       (:typemodifiers ("public")
+                        :type "Type[]")
+                        (reparse-symbol class_member_declaration) [10813 10986])
+                    ("getExceptionTypes" function (:constructor-flag t) (reparse-symbol class_member_declaration) [11462 11534])
+                    ("getGenericExceptionTypes" function
+                       (:typemodifiers ("public")
+                        :type "Type[]")
+                        (reparse-symbol class_member_declaration) [12819 13061])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [13386 13396]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13364 13964])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14191 14293])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15398 16337])
+                    ("toGenericString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17998 19576])
+                    ("invoke" function
+                       (:throws ("IllegalAccessException" "IllegalArgumentException" "InvocationTargetException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [22748 22758]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [22727 23718])
+                    ("isBridge" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23990 24079])
+                    ("isVarArgs" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24386 24477])
+                    ("isSynthetic" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24755 24844])
+                    ("acquireMethodAccessor" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25112 25584])
+                    ("getMethodAccessor" function (:type "MethodAccessor") (reparse-symbol class_member_declaration) [25688 25761])
+                    ("setMethodAccessor" function
+                       (:arguments 
+                          ( ("accessor" variable (:type "MethodAccessor") (reparse-symbol formal_parameters) [25878 25901]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25855 26053])
+                    ("getAnnotation" function (:type "T") (reparse-symbol class_member_declaration) [26173 26369])
+                    ("getDeclaredAnnotations" function
+                       (:typemodifiers ("public")
+                        :type "Annotation[]")
+                        (reparse-symbol class_member_declaration) [26409 26526])
+                    ("declaredAnnotations" function (:constructor-flag t) (reparse-symbol class_member_declaration) [26644 26996])
+                    ("getDefaultValue" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [27699 28332])
+                    ("getParameterAnnotations" function
+                       (:typemodifiers ("public")
+                        :type "Annotation[][]")
+                        (reparse-symbol class_member_declaration) [29193 29857]))                  
+                :type "class")
+                nil [1495 29859]))          
+    :file "Method.java"
+    :pointmax 29860
+    :fsize 29859
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((GT 26642 . 26643) (COMMA 26630 . 26631) (LT 26624 . 26625) (SEMICOLON 26592 . 26593) (GT 26571 . 26572) (COMMA 26559 . 26560) (PRIVATE 26532 . 26539) (LT 26553 . 26554) (GT 26196 . 26197) (IDENTIFIER 26189 . 26194) (LT 26194 . 26195) (GT 26171 . 26172) (EXTENDS 26153 . 26160) (PUBLIC 26143 . 26149) (LT 26150 . 26151) (DOT 22768 . 22769) (IDENTIFIER 22760 . 22766) (DOT 22767 . 22768) (BRACK_BLOCK 11459 . 11461) (GT 11458 . 11459) (QUESTION 11457 . 11458) (PUBLIC 11444 . 11450) (LT 11456 . 11457) (BRACK_BLOCK 9404 . 9406) (GT 9403 . 9404) (QUESTION 9402 . 9403) (PUBLIC 9389 . 9395) (LT 9401 . 9402) (GT 7655 . 7656) (QUESTION 7654 . 7655) (PUBLIC 7641 . 7647) (LT 7653 . 7654) (BRACK_BLOCK 7188 . 7190) (GT 7187 . 7188) (PUBLIC 7161 . 7167) (LT 7180 . 7181) (GT 5881 . 5882) (QUESTION 5880 . 5881) (PUBLIC 5867 . 5873) (LT 5879 . 5880))
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!lang!reflect!semantic.cache"
   :semantic-tag-version "2.0"

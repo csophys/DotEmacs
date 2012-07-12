@@ -2196,6 +2196,63 @@
     :lastmodtime '(19394 43704)
     :unmatched-syntax '((SEMICOLON 179721 . 179722) (PAREN_BLOCK 179719 . 179721) (GT 179718 . 179719) (COMMA 179697 . 179698) (LT 179690 . 179691) (NEW 179679 . 179682) (EQ 179677 . 179678) (GT 179666 . 179667) (COMMA 179645 . 179646) (PRIVATE 179610 . 179617) (LT 179638 . 179639) (SEMICOLON 142050 . 142051))
     )
+   (semanticdb-table "PatternSyntaxException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.regex" package nil nil [189 213])
+            ("sun.security.action.GetPropertyAction" include nil nil [215 260])
+            ("PatternSyntaxException" type
+               (:typemodifiers ("public")
+                :superclasses "IllegalArgumentException"
+                :members 
+                  ( ("desc" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [528 554])
+                    ("pattern" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [559 588])
+                    ("index" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [593 617])
+                    ("PatternSyntaxException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("desc" variable (:type "String") (reparse-symbol formal_parameters) [1001 1012])
+                            ("regex" variable (:type "String") (reparse-symbol formal_parameters) [1014 1026])
+                            ("index" variable (:type "int") (reparse-symbol formal_parameters) [1028 1037]))                          )
+                        (reparse-symbol class_member_declaration) [971 1109])
+                    ("getIndex" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1295 1339])
+                    ("getDescription" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1460 1512])
+                    ("getPattern" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1638 1689])
+                    ("nl" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1695 1820])
+                    ("getMessage" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2105 2484]))                  
+                :type "class")
+                nil [448 2487]))          
+    :file "PatternSyntaxException.java"
+    :pointmax 2488
+    :fsize 2487
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!regex!semantic.cache"
   :semantic-tag-version "2.0"

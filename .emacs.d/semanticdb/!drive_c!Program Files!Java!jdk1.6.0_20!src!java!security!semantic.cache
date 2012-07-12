@@ -773,6 +773,806 @@
     :lastmodtime '(19394 43702)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "MessageDigest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [185 207])
+            ("java.util.*" include nil nil [209 228])
+            ("java.lang.*" include nil nil [229 248])
+            ("java.io.IOException" include nil nil [249 276])
+            ("java.io.ByteArrayOutputStream" include nil nil [277 314])
+            ("java.io.PrintStream" include nil nil [315 342])
+            ("java.io.InputStream" include nil nil [343 370])
+            ("java.io.ByteArrayInputStream" include nil nil [371 407])
+            ("java.nio.ByteBuffer" include nil nil [409 436])
+            ("MessageDigest" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "MessageDigestSpi"
+                :members 
+                  ( ("algorithm" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2613 2638])
+                    ("INITIAL" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2676 2713])
+                    ("IN_PROGRESS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2718 2759])
+                    ("state" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2764 2792])
+                    ("provider" variable
+                       (:typemodifiers ("private")
+                        :type "Provider")
+                        (reparse-symbol class_member_declaration) [2818 2844])
+                    ("MessageDigest" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [3277 3293]))                          )
+                        (reparse-symbol class_member_declaration) [3253 3331])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [4530 4546]))                          
+                        :type "MessageDigest")
+                        (reparse-symbol class_member_declaration) [4490 5103])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException" "NoSuchProviderException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [6536 6552])
+                            ("provider" variable (:type "String") (reparse-symbol formal_parameters) [6554 6569]))                          
+                        :type "MessageDigest")
+                        (reparse-symbol class_member_declaration) [6496 7129])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [8307 8323])
+                            ("provider" variable (:type "Provider") (reparse-symbol formal_parameters) [8334 8351]))                          
+                        :type "MessageDigest")
+                        (reparse-symbol class_member_declaration) [8267 8860])
+                    ("getProvider" function
+                       (:typemodifiers ("public" "final")
+                        :type "Provider")
+                        (reparse-symbol class_member_declaration) [9008 9074])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "byte") (reparse-symbol formal_parameters) [9241 9251]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9222 9304])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9668 9680])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [9682 9692])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [9694 9701]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9649 9964])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [10115 10127]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10096 10197])
+                    ("update" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("input" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [10597 10613]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10572 10730])
+                    ("digest" function
+                       (:typemodifiers ("public")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [10963 11116])
+                    ("digest" function
+                       (:throws ("DigestException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("buf" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [11652 11662])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [11664 11674])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [11676 11683]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11634 12029])
+                    ("digest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [12561 12573]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [12540 12616])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12710 13092])
+                    ("isEqual" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("digesta" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [13408 13422])
+                            ("digestb" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [13424 13438]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13378 13707])
+                    ("reset" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13771 13832])
+                    ("getAlgorithm" function
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [14340 14406])
+                    ("getDigestLength" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [14763 15076])
+                    ("clone" function
+                       (:throws ("CloneNotSupportedException")
+                        :typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [15376 15558])
+                    ("Delegate" type
+                       (:typemodifiers ("static")
+                        :superclasses "MessageDigest"
+                        :members 
+                          ( ("digestSpi" variable
+                               (:typemodifiers ("private")
+                                :type "MessageDigestSpi")
+                                (reparse-symbol class_member_declaration) [16367 16402])
+                            ("Delegate" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("digestSpi" variable (:type "MessageDigestSpi") (reparse-symbol formal_parameters) [16437 16463])
+                                    ("algorithm" variable (:type "String") (reparse-symbol formal_parameters) [16465 16481]))                                  )
+                                (reparse-symbol class_member_declaration) [16421 16543])
+                            ("clone" function
+                               (:throws ("CloneNotSupportedException")
+                                :typemodifiers ("public")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [16793 17382])
+                            ("engineGetDigestLength" function
+                               (:typemodifiers ("protected")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [17385 17474])
+                            ("engineUpdate" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("input" variable (:type "byte") (reparse-symbol formal_parameters) [17505 17515]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [17477 17557])
+                            ("engineUpdate" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("input" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [17588 17600])
+                                    ("offset" variable (:type "int") (reparse-symbol formal_parameters) [17602 17612])
+                                    ("len" variable (:type "int") (reparse-symbol formal_parameters) [17614 17621]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [17560 17676])
+                            ("engineUpdate" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("input" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [17707 17723]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [17679 17765])
+                            ("engineDigest" function
+                               (:typemodifiers ("protected")
+                                :type "byte[]")
+                                (reparse-symbol class_member_declaration) [17768 17842])
+                            ("engineDigest" function
+                               (:throws ("DigestException")
+                                :typemodifiers ("protected")
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [17872 17882])
+                                    ("offset" variable (:type "int") (reparse-symbol formal_parameters) [17884 17894])
+                                    ("len" variable (:type "int") (reparse-symbol formal_parameters) [17896 17903]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [17845 17988])
+                            ("engineReset" function
+                               (:typemodifiers ("protected")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [17991 18054]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [16276 18060]))                  
+                :type "class")
+                nil [2545 18062]))          
+    :file "MessageDigest.java"
+    :pointmax 18063
+    :fsize 18062
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NoSuchAlgorithmException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [191 213])
+            ("NoSuchAlgorithmException" type
+               (:typemodifiers ("public")
+                :superclasses "GeneralSecurityException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [488 555])
+                    ("NoSuchAlgorithmException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [732 783])
+                    ("NoSuchAlgorithmException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [1124 1134]))                          )
+                        (reparse-symbol class_member_declaration) [1092 1156])
+                    ("NoSuchAlgorithmException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [1696 1710])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [1712 1727]))                          )
+                        (reparse-symbol class_member_declaration) [1664 1767])
+                    ("NoSuchAlgorithmException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [2320 2335]))                          )
+                        (reparse-symbol class_member_declaration) [2288 2366]))                  
+                :type "class")
+                nil [410 2368]))          
+    :file "NoSuchAlgorithmException.java"
+    :pointmax 2369
+    :fsize 2368
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CodeSource.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [178 200])
+            ("java.net.URL" include nil nil [203 223])
+            ("java.net.SocketPermission" include nil nil [224 257])
+            ("java.util.ArrayList" include nil nil [258 285])
+            ("java.util.List" include nil nil [286 308])
+            ("java.util.Hashtable" include nil nil [309 336])
+            ("java.io.ByteArrayInputStream" include nil nil [337 373])
+            ("java.io.IOException" include nil nil [374 401])
+            ("java.security.cert.*" include nil nil [402 430])
+            ("CodeSource" type
+               (:typemodifiers ("public")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [786 852])
+                    ("location" variable
+                       (:typemodifiers ("private")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [922 943])
+                    ("signers" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "CodeSigner")
+                        (reparse-symbol class_member_declaration) [989 1035])
+                    ("certs" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "java.security.cert.Certificate")
+                        (reparse-symbol class_member_declaration) [1118 1182])
+                    ("sp" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "SocketPermission")
+                        (reparse-symbol class_member_declaration) [1242 1280])
+                    ("factory" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "CertificateFactory")
+                        (reparse-symbol class_member_declaration) [1319 1371])
+                    ("CodeSource" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [1720 1727])
+                            ("certs" variable
+                               (:dereference 1
+                                :type "java.security.cert.Certificate")
+                                (reparse-symbol formal_parameters) [1729 1767]))                          )
+                        (reparse-symbol class_member_declaration) [1702 1920])
+                    ("CodeSource" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [2286 2293])
+                            ("signers" variable
+                               (:dereference 1
+                                :type "CodeSigner")
+                                (reparse-symbol formal_parameters) [2295 2315]))                          )
+                        (reparse-symbol class_member_declaration) [2268 2455])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2587 2694])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [3215 3225]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3193 3734])
+                    ("getLocation" function
+                       (:typemodifiers ("public" "final")
+                        :type "URL")
+                        (reparse-symbol class_member_declaration) [3860 4018])
+                    ("getCertificates" function
+                       (:typemodifiers ("public" "final")
+                        :type "java.security.cert.Certificate[]")
+                        (reparse-symbol class_member_declaration) [4731 5364])
+                    ("getCodeSigners" function
+                       (:typemodifiers ("public" "final")
+                        :type "CodeSigner[]")
+                        (reparse-symbol class_member_declaration) [5897 6221])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("codesource" variable (:type "CodeSource") (reparse-symbol formal_parameters) [9367 9388]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9344 9514])
+                    ("matchCerts" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("that" variable (:type "CodeSource") (reparse-symbol formal_parameters) [9843 9858])
+                            ("strict" variable (:type "boolean") (reparse-symbol formal_parameters) [9860 9874]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9816 10905])
+                    ("matchLocation" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("that" variable (:type "CodeSource") (reparse-symbol formal_parameters) [11081 11096]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11051 13492])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13665 14187])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("oos" variable (:type "java.io.ObjectOutputStream") (reparse-symbol formal_parameters) [14965 14995]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14940 15790])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("ois" variable (:type "java.io.ObjectInputStream") (reparse-symbol formal_parameters) [15903 15932]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15879 17694])
+                    ("convertCertArrayToSignerArray" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("certs" variable
+                               (:dereference 1
+                                :type "java.security.cert.Certificate")
+                                (reparse-symbol formal_parameters) [18065 18103]))                          
+                        :type "CodeSigner[]")
+                        (reparse-symbol class_member_declaration) [18011 19179]))                  
+                :type "class")
+                nil [723 19181]))          
+    :file "CodeSource.java"
+    :pointmax 19183
+    :fsize 19182
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PublicKey.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [176 198])
+            ("PublicKey" type
+               (:typemodifiers ("public")
+                :interfaces ("Key")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol interface_member_declaration) [986 1044]))                  
+                :type "interface")
+                nil [737 1046]))          
+    :file "PublicKey.java"
+    :pointmax 1047
+    :fsize 1046
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NoSuchProviderException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [190 212])
+            ("NoSuchProviderException" type
+               (:typemodifiers ("public")
+                :superclasses "GeneralSecurityException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [478 544])
+                    ("NoSuchProviderException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [719 769])
+                    ("NoSuchProviderException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [1035 1045]))                          )
+                        (reparse-symbol class_member_declaration) [1004 1067]))                  
+                :type "class")
+                nil [401 1069]))          
+    :file "NoSuchProviderException.java"
+    :pointmax 1070
+    :fsize 1069
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "InvalidKeyException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [187 209])
+            ("InvalidKeyException" type
+               (:typemodifiers ("public")
+                :superclasses "KeyException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [438 504])
+                    ("InvalidKeyException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [676 722])
+                    ("InvalidKeyException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [981 991]))                          )
+                        (reparse-symbol class_member_declaration) [954 1013])
+                    ("InvalidKeyException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [1543 1557])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [1559 1574]))                          )
+                        (reparse-symbol class_member_declaration) [1516 1614])
+                    ("InvalidKeyException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [2157 2172]))                          )
+                        (reparse-symbol class_member_declaration) [2130 2203]))                  
+                :type "class")
+                nil [377 2205]))          
+    :file "InvalidKeyException.java"
+    :pointmax 2206
+    :fsize 2205
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SignatureException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [185 207])
+            ("SignatureException" type
+               (:typemodifiers ("public")
+                :superclasses "GeneralSecurityException"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [393 459])
+                    ("SignatureException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [629 674])
+                    ("SignatureException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [929 939]))                          )
+                        (reparse-symbol class_member_declaration) [903 961])
+                    ("SignatureException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [1489 1503])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [1505 1520]))                          )
+                        (reparse-symbol class_member_declaration) [1463 1560])
+                    ("SignatureException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [2101 2116]))                          )
+                        (reparse-symbol class_member_declaration) [2075 2147]))                  
+                :type "class")
+                nil [321 2149]))          
+    :file "SignatureException.java"
+    :pointmax 2150
+    :fsize 2149
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Policy.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security" package nil nil [174 196])
+            ("java.io.*" include nil nil [198 215])
+            ("java.lang.RuntimePermission" include nil nil [216 251])
+            ("java.lang.reflect.*" include nil nil [252 279])
+            ("java.net.MalformedURLException" include nil nil [280 318])
+            ("java.net.URL" include nil nil [319 339])
+            ("java.util.Enumeration" include nil nil [340 369])
+            ("java.util.Hashtable" include nil nil [370 397])
+            ("java.util.PropertyPermission" include nil nil [398 434])
+            ("java.util.StringTokenizer" include nil nil [435 468])
+            ("java.util.Vector" include nil nil [469 493])
+            ("java.util.WeakHashMap" include nil nil [494 523])
+            ("sun.security.jca.GetInstance" include nil nil [524 560])
+            ("sun.security.util.Debug" include nil nil [561 592])
+            ("sun.security.util.SecurityConstants" include nil nil [593 636])
+            ("Policy" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("UNSUPPORTED_EMPTY_COLLECTION" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [3777 3885])
+                    ("policy" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [3926 3955])
+                    ("debug" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Debug")
+                        (reparse-symbol class_member_declaration) [4005 4068])
+                    ("isSet" function
+                       (:typemodifiers ("static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4272 4330])
+                    ("checkPermission" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("type" variable (:type "String") (reparse-symbol formal_parameters) [4372 4383]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4336 4538])
+                    ("getPolicy" function
+                       (:typemodifiers ("public" "static")
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [5255 5475])
+                    ("getPolicyNoCheck" function
+                       (:typemodifiers ("static" "synchronized")
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [5669 7514])
+                    ("setPolicy" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("p" variable (:type "Policy") (reparse-symbol formal_parameters) [8135 8143]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8106 8386])
+                    ("initPolicy" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("p" variable
+                               (:typemodifiers ("final")
+                                :type "Policy")
+                                (reparse-symbol formal_parameters) [8566 8580]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8534 10465])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("type" variable (:type "String") (reparse-symbol formal_parameters) [11995 12006])
+                            ("params" variable (:type "Policy.Parameters") (reparse-symbol formal_parameters) [12008 12032]))                          
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [11962 12424])
+                    ("getInstance" function
+                       (:throws ("NoSuchProviderException" "NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("type" variable (:type "String") (reparse-symbol formal_parameters) [14130 14141])
+                            ("params" variable (:type "Policy.Parameters") (reparse-symbol formal_parameters) [14147 14171])
+                            ("provider" variable (:type "String") (reparse-symbol formal_parameters) [14177 14192]))                          
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [14097 14743])
+                    ("getInstance" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("type" variable (:type "String") (reparse-symbol formal_parameters) [16172 16183])
+                            ("params" variable (:type "Policy.Parameters") (reparse-symbol formal_parameters) [16189 16213])
+                            ("provider" variable (:type "Provider") (reparse-symbol formal_parameters) [16219 16236]))                          
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [16139 16736])
+                    ("handleException" function
+                       (:throws ("NoSuchAlgorithmException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("nsae" variable (:type "NoSuchAlgorithmException") (reparse-symbol formal_parameters) [16780 16809]))                          
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [16742 17033])
+                    ("getProvider" function
+                       (:typemodifiers ("public")
+                        :type "Provider")
+                        (reparse-symbol class_member_declaration) [17364 17415])
+                    ("getType" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17734 17779])
+                    ("getParameters" function
+                       (:typemodifiers ("public")
+                        :type "Policy.Parameters")
+                        (reparse-symbol class_member_declaration) [18094 18156])
+                    ("getPermissions" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("codesource" variable (:type "CodeSource") (reparse-symbol formal_parameters) [19459 19480]))                          
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [19416 19534])
+                    ("getPermissions" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("domain" variable (:type "ProtectionDomain") (reparse-symbol formal_parameters) [21283 21306]))                          
+                        :type "PermissionCollection")
+                        (reparse-symbol class_member_declaration) [21240 21950])
+                    ("addStaticPerms" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("perms" variable (:type "PermissionCollection") (reparse-symbol formal_parameters) [22064 22090])
+                            ("statics" variable (:type "PermissionCollection") (reparse-symbol formal_parameters) [22096 22124]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22036 22317])
+                    ("implies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("domain" variable (:type "ProtectionDomain") (reparse-symbol formal_parameters) [22830 22853])
+                            ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [22855 22876]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [22807 23286])
+                    ("refresh" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23719 23744])
+                    ("PolicyDelegate" type
+                       (:typemodifiers ("private" "static")
+                        :superclasses "Policy"
+                        :members 
+                          ( ("spi" variable
+                               (:typemodifiers ("private")
+                                :type "PolicySpi")
+                                (reparse-symbol class_member_declaration) [23948 23970])
+                            ("p" variable
+                               (:typemodifiers ("private")
+                                :type "Provider")
+                                (reparse-symbol class_member_declaration) [23972 23991])
+                            ("type" variable
+                               (:typemodifiers ("private")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [23993 24013])
+                            ("params" variable
+                               (:typemodifiers ("private")
+                                :type "Policy.Parameters")
+                                (reparse-symbol class_member_declaration) [24015 24048])
+                            ("PolicyDelegate" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("spi" variable (:type "PolicySpi") (reparse-symbol formal_parameters) [24074 24087])
+                                    ("p" variable (:type "Provider") (reparse-symbol formal_parameters) [24089 24099])
+                                    ("type" variable (:type "String") (reparse-symbol formal_parameters) [24104 24115])
+                                    ("params" variable (:type "Policy.Parameters") (reparse-symbol formal_parameters) [24117 24141]))                                  )
+                                (reparse-symbol class_member_declaration) [24051 24235])
+                            ("getType" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [24248 24288])
+                            ("getParameters" function
+                               (:typemodifiers ("public")
+                                :type "Policy.Parameters")
+                                (reparse-symbol class_member_declaration) [24301 24360])
+                            ("getProvider" function
+                               (:typemodifiers ("public")
+                                :type "Provider")
+                                (reparse-symbol class_member_declaration) [24373 24416])
+                            ("getPermissions" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("codesource" variable (:type "CodeSource") (reparse-symbol formal_parameters) [24480 24501]))                                  
+                                :type "PermissionCollection")
+                                (reparse-symbol class_member_declaration) [24437 24557])
+                            ("getPermissions" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("domain" variable (:type "ProtectionDomain") (reparse-symbol formal_parameters) [24620 24643]))                                  
+                                :type "PermissionCollection")
+                                (reparse-symbol class_member_declaration) [24577 24695])
+                            ("implies" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("domain" variable (:type "ProtectionDomain") (reparse-symbol formal_parameters) [24738 24761])
+                                    ("perm" variable (:type "Permission") (reparse-symbol formal_parameters) [24763 24778]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [24715 24829])
+                            ("refresh" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [24849 24901]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [23893 24908])
+                    ("Parameters" type
+                       (:typemodifiers ("public" "static")
+                        :type "interface")
+                        (reparse-symbol class_member_declaration) [25020 25058])
+                    ("UnsupportedEmptyCollection" type
+                       (:typemodifiers ("private" "static")
+                        :superclasses "PermissionCollection"
+                        :members 
+                          ( ("perms" variable
+                               (:typemodifiers ("private")
+                                :type "Permissions")
+                                (reparse-symbol class_member_declaration) [25479 25505])
+                            ("UnsupportedEmptyCollection" function
+                               (:constructor-flag t
+                                :typemodifiers ("public"))
+                                (reparse-symbol class_member_declaration) [25576 25679])
+                            ("add" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [25991 26012]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [25975 26046])
+                            ("implies" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("permission" variable (:type "Permission") (reparse-symbol formal_parameters) [26393 26414]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [26370 26459])
+                            ("elements" function (:constructor-flag t) (reparse-symbol class_member_declaration) [26648 26693]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [25397 26699]))                  
+                :type "class")
+                nil [3651 26701]))          
+    :file "Policy.java"
+    :pointmax 26702
+    :fsize 26701
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((GT 26646 . 26647) (IDENTIFIER 26607 . 26616) (PUBLIC 26617 . 26623) (LT 26635 . 26636) (SEMICOLON 4213 . 4214) (GT 4202 . 4203) (COMMA 4180 . 4181) (PRIVATE 4140 . 4147) (LT 4159 . 4160))
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!security!semantic.cache"
   :semantic-tag-version "2.0"

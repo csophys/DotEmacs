@@ -1,0 +1,646 @@
+;; Object lang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lang/"
+  :tables (list 
+   (semanticdb-table "Thread.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [174 192])
+            ("java.security.AccessController" include nil nil [194 232])
+            ("java.security.AccessControlContext" include nil nil [233 275])
+            ("java.security.PrivilegedAction" include nil nil [276 314])
+            ("java.util.Map" include nil nil [315 336])
+            ("java.util.HashMap" include nil nil [337 362])
+            ("java.util.Collections" include nil nil [363 392])
+            ("java.util.concurrent.locks.LockSupport" include nil nil [393 439])
+            ("sun.misc.SoftCache" include nil nil [440 466])
+            ("sun.nio.ch.Interruptible" include nil nil [467 499])
+            ("sun.security.util.SecurityConstants" include nil nil [500 543])
+            ("Thread" type
+               (:typemodifiers ("public")
+                :interfaces ("Runnable")
+                :members 
+                  ( ("registerNatives" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4249 4294])
+                    ("name" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [4346 4366])
+                    ("priority" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4371 4400])
+                    ("threadQ" variable
+                       (:typemodifiers ("private")
+                        :type "Thread")
+                        (reparse-symbol class_member_declaration) [4405 4428])
+                    ("eetop" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4433 4452])
+                    ("single_step" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4511 4539])
+                    ("daemon" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4601 4632])
+                    ("stillborn" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4658 4692])
+                    ("target" variable
+                       (:typemodifiers ("private")
+                        :type "Runnable")
+                        (reparse-symbol class_member_declaration) [4726 4750])
+                    ("group" variable
+                       (:typemodifiers ("private")
+                        :type "ThreadGroup")
+                        (reparse-symbol class_member_declaration) [4791 4817])
+                    ("contextClassLoader" variable
+                       (:typemodifiers ("private")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [4873 4912])
+                    ("inheritedAccessControlContext" variable
+                       (:typemodifiers ("private")
+                        :type "AccessControlContext")
+                        (reparse-symbol class_member_declaration) [4978 5037])
+                    ("threadInitNumber" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5090 5126])
+                    ("nextThreadNum" function
+                       (:typemodifiers ("private" "static" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5131 5214])
+                    ("threadLocals" variable (:type "ThreadLocal.ThreadLocalMap") (reparse-symbol class_member_declaration) [5332 5379])
+                    ("inheritableThreadLocals" variable (:type "ThreadLocal.ThreadLocalMap") (reparse-symbol class_member_declaration) [5534 5592])
+                    ("stackSize" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5813 5836])
+                    ("nativeParkEventPointer" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5929 5965])
+                    ("tid" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6003 6020])
+                    ("threadSeqNumber" variable
+                       (:typemodifiers ("private" "static")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6061 6097])
+                    ("threadStatus" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6206 6235])
+                    ("nextThreadID" function
+                       (:typemodifiers ("private" "static" "synchronized")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6242 6324])
+                    ("parkBlocker" variable
+                       (:typemodifiers ("volatile")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [6597 6625])
+                    ("blocker" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "Interruptible")
+                        (reparse-symbol class_member_declaration) [6842 6881])
+                    ("blockerLock" variable
+                       (:typemodifiers ("private")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [6886 6928])
+                    ("blockedOn" function
+                       (:arguments 
+                          ( ("b" variable (:type "Interruptible") (reparse-symbol formal_parameters) [7041 7056]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7026 7116])
+                    ("MIN_PRIORITY" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7191 7232])
+                    ("NORM_PRIORITY" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7312 7354])
+                    ("MAX_PRIORITY" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7429 7471])
+                    ("stopBeforeStart" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7519 7551])
+                    ("throwableFromStop" variable
+                       (:typemodifiers ("private")
+                        :type "Throwable")
+                        (reparse-symbol class_member_declaration) [7611 7647])
+                    ("currentThread" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "Thread")
+                        (reparse-symbol class_member_declaration) [7793 7837])
+                    ("yield" function
+                       (:typemodifiers ("public" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7977 8011])
+                    ("sleep" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("millis" variable (:type "long") (reparse-symbol formal_parameters) [8677 8688]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8645 8718])
+                    ("sleep" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("millis" variable (:type "long") (reparse-symbol formal_parameters) [9655 9666])
+                            ("nanos" variable (:type "int") (reparse-symbol formal_parameters) [9668 9677]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9630 10043])
+                    ("init" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("g" variable (:type "ThreadGroup") (reparse-symbol formal_parameters) [10400 10413])
+                            ("target" variable (:type "Runnable") (reparse-symbol formal_parameters) [10415 10430])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [10432 10443])
+                            ("stackSize" variable (:type "long") (reparse-symbol formal_parameters) [10467 10481]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10382 12063])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [12491 12565])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("target" variable (:type "Runnable") (reparse-symbol formal_parameters) [13080 13095]))                          )
+                        (reparse-symbol class_member_declaration) [13066 13157])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "ThreadGroup") (reparse-symbol formal_parameters) [13858 13875])
+                            ("target" variable (:type "Runnable") (reparse-symbol formal_parameters) [13877 13892]))                          )
+                        (reparse-symbol class_member_declaration) [13844 13955])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [14243 14254]))                          )
+                        (reparse-symbol class_member_declaration) [14229 14291])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "ThreadGroup") (reparse-symbol formal_parameters) [14766 14783])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [14785 14796]))                          )
+                        (reparse-symbol class_member_declaration) [14752 14834])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("target" variable (:type "Runnable") (reparse-symbol formal_parameters) [15203 15218])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [15220 15231]))                          )
+                        (reparse-symbol class_member_declaration) [15189 15270])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "ThreadGroup") (reparse-symbol formal_parameters) [18098 18115])
+                            ("target" variable (:type "Runnable") (reparse-symbol formal_parameters) [18117 18132])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [18134 18145]))                          )
+                        (reparse-symbol class_member_declaration) [18084 18185])
+                    ("Thread" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("group" variable (:type "ThreadGroup") (reparse-symbol formal_parameters) [21545 21562])
+                            ("target" variable (:type "Runnable") (reparse-symbol formal_parameters) [21564 21579])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [21581 21592])
+                            ("stackSize" variable (:type "long") (reparse-symbol formal_parameters) [21612 21626]))                          )
+                        (reparse-symbol class_member_declaration) [21531 21674])
+                    ("start" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22401 22926])
+                    ("start0" function
+                       (:typemodifiers ("private" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22932 22961])
+                    ("run" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23415 23485])
+                    ("exit" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23621 24032])
+                    ("stop" function
+                       (:typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27690 27903])
+                    ("stop" function
+                       (:typemodifiers ("public" "final" "synchronized")
+                        :arguments 
+                          ( ("obj" variable (:type "Throwable") (reparse-symbol formal_parameters) [30491 30504]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30455 30526])
+                    ("stop1" function
+                       (:typemodifiers ("private" "final" "synchronized")
+                        :arguments 
+                          ( ("th" variable (:type "Throwable") (reparse-symbol formal_parameters) [30637 30649]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30599 31374])
+                    ("interrupt" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33230 33506])
+                    ("interrupted" function
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [34308 34396])
+                    ("isInterrupted" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [34903 34971])
+                    ("isInterrupted" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("ClearInterrupted" variable (:type "boolean") (reparse-symbol formal_parameters) [35188 35212]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [35151 35214])
+                    ("destroy" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [36222 36283])
+                    ("isAlive" function
+                       (:typemodifiers ("public" "final" "native")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [36527 36565])
+                    ("suspend" function
+                       (:typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [37850 37914])
+                    ("resume" function
+                       (:typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38863 38925])
+                    ("setPriority" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newPriority" variable (:type "int") (reparse-symbol formal_parameters) [39976 39991]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39946 40329])
+                    ("getPriority" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [40466 40522])
+                    ("setName" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [41081 41092]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41055 41150])
+                    ("getName" function
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [41283 41350])
+                    ("getThreadGroup" function
+                       (:typemodifiers ("public" "final")
+                        :type "ThreadGroup")
+                        (reparse-symbol class_member_declaration) [41565 41629])
+                    ("activeCount" function
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [41846 41941])
+                    ("enumerate" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("tarray" variable
+                               (:dereference 1
+                                :type "Thread")
+                                (reparse-symbol formal_parameters) [42922 42937]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [42894 43006])
+                    ("countStackFrames" function
+                       (:typemodifiers ("public" "native")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [43488 43525])
+                    ("join" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public" "final" "synchronized")
+                        :arguments 
+                          ( ("millis" variable (:type "long") (reparse-symbol formal_parameters) [44013 44024]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43977 44455])
+                    ("join" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public" "final" "synchronized")
+                        :arguments 
+                          ( ("millis" variable (:type "long") (reparse-symbol formal_parameters) [45147 45158])
+                            ("nanos" variable (:type "int") (reparse-symbol formal_parameters) [45160 45169]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45111 45535])
+                    ("join" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45825 45895])
+                    ("dumpStack" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46096 46183])
+                    ("setDaemon" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("on" variable (:type "boolean") (reparse-symbol formal_parameters) [47063 47073]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47035 47179])
+                    ("isDaemon" function
+                       (:typemodifiers ("public" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [47407 47462])
+                    ("checkAccess" function
+                       (:typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47971 48128])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [48333 48636])
+                    ("getContextClassLoader" function
+                       (:typemodifiers ("public")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [49980 50429])
+                    ("setContextClassLoader" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("cl" variable (:type "ClassLoader") (reparse-symbol formal_parameters) [51334 51348]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [51300 51529])
+                    ("holdsLock" function
+                       (:typemodifiers ("public" "static" "native")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [52170 52180]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [52131 52182])
+                    ("EMPTY_STACK_TRACE" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "StackTraceElement")
+                        (reparse-symbol class_member_declaration) [52188 52282])
+                    ("getStackTrace" function
+                       (:typemodifiers ("public")
+                        :type "StackTraceElement[]")
+                        (reparse-symbol class_member_declaration) [53894 55029])
+                    ("getAllStackTraces" function (:constructor-flag t) (reparse-symbol class_member_declaration) [56678 57631])
+                    ("SUBCLASS_IMPLEMENTATION_PERMISSION" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "RuntimePermission")
+                        (reparse-symbol class_member_declaration) [57638 57792])
+                    ("subclassAudits" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "SoftCache")
+                        (reparse-symbol class_member_declaration) [57850 57916])
+                    ("isCCLOverridden" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cl" variable (:type "Class") (reparse-symbol formal_parameters) [58259 58267]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [58220 58750])
+                    ("auditSubclass" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("subcl" variable
+                               (:typemodifiers ("final")
+                                :type "Class")
+                                (reparse-symbol formal_parameters) [59025 59042]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [58988 59675])
+                    ("dumpThreads" function
+                       (:typemodifiers ("private" "native" "static")
+                        :arguments 
+                          ( ("threads" variable
+                               (:dereference 1
+                                :type "Thread")
+                                (reparse-symbol formal_parameters) [59737 59753]))                          
+                        :type "StackTraceElement[][]")
+                        (reparse-symbol class_member_declaration) [59681 59755])
+                    ("getThreads" function
+                       (:typemodifiers ("private" "native" "static")
+                        :type "Thread[]")
+                        (reparse-symbol class_member_declaration) [59760 59804])
+                    ("getId" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [60171 60218])
+                    ("getState" function
+                       (:typemodifiers ("public")
+                        :type "State")
+                        (reparse-symbol class_member_declaration) [64156 64279])
+                    ("UncaughtExceptionHandler" type
+                       (:typemodifiers ("public")
+                        :members 
+                          ( ("uncaughtException" function
+                               (:arguments 
+                                  ( ("t" variable (:type "Thread") (reparse-symbol formal_parameters) [65770 65778])
+                                    ("e" variable (:type "Throwable") (reparse-symbol formal_parameters) [65780 65791]))                                  
+                                :type "void")
+                                (reparse-symbol interface_member_declaration) [65747 65793]))                          
+                        :type "interface")
+                        (reparse-symbol class_member_declaration) [65391 65799])
+                    ("uncaughtExceptionHandler" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "UncaughtExceptionHandler")
+                        (reparse-symbol class_member_declaration) [65839 65906])
+                    ("defaultUncaughtExceptionHandler" variable
+                       (:typemodifiers ("private" "static" "volatile")
+                        :type "UncaughtExceptionHandler")
+                        (reparse-symbol class_member_declaration) [65946 66027])
+                    ("setDefaultUncaughtExceptionHandler" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("eh" variable (:type "UncaughtExceptionHandler") (reparse-symbol formal_parameters) [67773 67800]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67719 68083])
+                    ("getDefaultUncaughtExceptionHandler" function
+                       (:typemodifiers ("public" "static")
+                        :type "UncaughtExceptionHandler")
+                        (reparse-symbol class_member_declaration) [68353 68483])
+                    ("getUncaughtExceptionHandler" function
+                       (:typemodifiers ("public")
+                        :type "UncaughtExceptionHandler")
+                        (reparse-symbol class_member_declaration) [68861 69027])
+                    ("setUncaughtExceptionHandler" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("eh" variable (:type "UncaughtExceptionHandler") (reparse-symbol formal_parameters) [69814 69841]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [69774 69913])
+                    ("dispatchUncaughtException" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("e" variable (:type "Throwable") (reparse-symbol formal_parameters) [70090 70101]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70051 70176])
+                    ("setPriority0" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("newPriority" variable (:type "int") (reparse-symbol formal_parameters) [70253 70268]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70220 70270])
+                    ("stop0" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [70301 70309]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70275 70311])
+                    ("suspend0" function
+                       (:typemodifiers ("private" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70316 70347])
+                    ("resume0" function
+                       (:typemodifiers ("private" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70352 70382])
+                    ("interrupt0" function
+                       (:typemodifiers ("private" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [70387 70420]))                  
+                :type "class")
+                nil [4133 70422]))          
+    :file "Thread.java"
+    :pointmax 70423
+    :fsize 70422
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((GT 56676 . 56677) (COMMA 56655 . 56656) (PUBLIC 56631 . 56637) (LT 56648 . 56649))
+    )
+   (semanticdb-table "Runnable.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [175 193])
+            ("Runnable" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("run" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1983 2010]))                  
+                :type "interface")
+                nil [1534 2012]))          
+    :file "Runnable.java"
+    :pointmax 2013
+    :fsize 2012
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "String.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [174 192])
+            ("java.io.ObjectStreamClass" include nil nil [194 227])
+            ("java.io.ObjectStreamField" include nil nil [228 261])
+            ("java.io.UnsupportedEncodingException" include nil nil [262 306])
+            ("java.nio.charset.Charset" include nil nil [307 339])
+            ("java.util.ArrayList" include nil nil [340 367])
+            ("java.util.Arrays" include nil nil [368 392])
+            ("java.util.Comparator" include nil nil [393 421])
+            ("java.util.Formatter" include nil nil [422 449])
+            ("java.util.Locale" include nil nil [450 474])
+            ("java.util.regex.Matcher" include nil nil [475 506])
+            ("java.util.regex.Pattern" include nil nil [507 538])
+            ("java.util.regex.PatternSyntaxException" include nil nil [539 585]))          
+    :file "String.java"
+    :pointmax 115571
+    :fsize 115570
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 3686 . 115570) (IDENTIFIER 3673 . 3685) (COMMA 3671 . 3672) (GT 3670 . 3671) (IDENTIFIER 3664 . 3670) (PUBLIC 3590 . 3596) (LT 3663 . 3664))
+    )
+   (semanticdb-table "Character.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [176 194])
+            ("java.util.Map" include nil nil [195 216])
+            ("java.util.HashMap" include nil nil [217 242])
+            ("java.util.Locale" include nil nil [243 267]))          
+    :file "Character.java"
+    :pointmax 217191
+    :fsize 217190
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax '((BRACE_BLOCK 4587 . 217190) (GT 4585 . 4586) (IDENTIFIER 4576 . 4585) (PUBLIC 4488 . 4494) (LT 4575 . 4576))
+    )
+   (semanticdb-table "NullPointerException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [187 205])
+            ("NullPointerException" type
+               (:typemodifiers ("public")
+                :superclasses "RuntimeException"
+                :members 
+                  ( ("NullPointerException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1108 1155])
+                    ("NullPointerException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [1350 1358]))                          )
+                        (reparse-symbol class_member_declaration) [1322 1378]))                  
+                :type "class")
+                nil [949 1380]))          
+    :file "NullPointerException.java"
+    :pointmax 1381
+    :fsize 1380
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "RuntimePermission.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [184 202])
+            ("java.security.*" include nil nil [204 227])
+            ("java.util.Enumeration" include nil nil [228 257])
+            ("java.util.Hashtable" include nil nil [258 285])
+            ("java.util.StringTokenizer" include nil nil [286 319])
+            ("RuntimePermission" type
+               (:typemodifiers ("public" "final")
+                :superclasses "BasicPermission"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [12610 12676])
+                    ("RuntimePermission" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [13232 13243]))                          )
+                        (reparse-symbol class_member_declaration) [13207 13270])
+                    ("RuntimePermission" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [13778 13789])
+                            ("actions" variable (:type "String") (reparse-symbol formal_parameters) [13791 13805]))                          )
+                        (reparse-symbol class_member_declaration) [13753 13841]))                  
+                :type "class")
+                nil [12542 13843]))          
+    :file "RuntimePermission.java"
+    :pointmax 13844
+    :fsize 13843
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!lang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

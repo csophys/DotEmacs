@@ -68,6 +68,35 @@
     :lastmodtime '(19394 43704)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "CurrencyNameProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.spi" package nil nil [186 208])
+            ("java.util.Currency" include nil nil [210 236])
+            ("java.util.Locale" include nil nil [237 261])
+            ("CurrencyNameProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("CurrencyNameProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [876 916])
+                    ("getSymbol" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("currencyCode" variable (:type "String") (reparse-symbol formal_parameters) [2093 2112])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [2114 2127]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2060 2129]))                  
+                :type "class")
+                nil [684 2131]))          
+    :file "CurrencyNameProvider.java"
+    :pointmax 2132
+    :fsize 2131
+    :lastmodtime '(19394 43704)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!util!spi!semantic.cache"
   :semantic-tag-version "2.0"

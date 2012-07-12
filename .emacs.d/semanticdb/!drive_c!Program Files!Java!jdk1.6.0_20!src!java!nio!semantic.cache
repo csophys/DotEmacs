@@ -220,6 +220,86 @@
     :lastmodtime '(19394 46916)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "MappedByteBuffer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio" package nil nil [183 200])
+            ("MappedByteBuffer" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "ByteBuffer"
+                :members 
+                  ( ("isAMappedBuffer" variable
+                       (:typemodifiers ("volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2307 2340])
+                    ("MappedByteBuffer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("mark" variable (:type "int") (reparse-symbol formal_parameters) [2463 2471])
+                            ("pos" variable (:type "int") (reparse-symbol formal_parameters) [2473 2480])
+                            ("lim" variable (:type "int") (reparse-symbol formal_parameters) [2482 2489])
+                            ("cap" variable (:type "int") (reparse-symbol formal_parameters) [2491 2498])
+                            ("mapped" variable (:type "boolean") (reparse-symbol formal_parameters) [2526 2540]))                          )
+                        (reparse-symbol class_member_declaration) [2446 2609])
+                    ("MappedByteBuffer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("mark" variable (:type "int") (reparse-symbol formal_parameters) [2632 2640])
+                            ("pos" variable (:type "int") (reparse-symbol formal_parameters) [2642 2649])
+                            ("lim" variable (:type "int") (reparse-symbol formal_parameters) [2651 2658])
+                            ("cap" variable (:type "int") (reparse-symbol formal_parameters) [2660 2667]))                          )
+                        (reparse-symbol class_member_declaration) [2615 2750])
+                    ("checkMapped" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2756 2934])
+                    ("pagePosition" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2940 3137])
+                    ("isLoaded" function
+                       (:typemodifiers ("public" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4014 4274])
+                    ("load" function
+                       (:typemodifiers ("public" "final")
+                        :type "MappedByteBuffer")
+                        (reparse-symbol class_member_declaration) [4639 4907])
+                    ("force" function
+                       (:typemodifiers ("public" "final")
+                        :type "MappedByteBuffer")
+                        (reparse-symbol class_member_declaration) [5672 5925])
+                    ("isLoaded0" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("address" variable (:type "long") (reparse-symbol formal_parameters) [5964 5976])
+                            ("length" variable (:type "long") (reparse-symbol formal_parameters) [5978 5989])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [5991 6003]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5931 6005])
+                    ("load0" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("address" variable (:type "long") (reparse-symbol formal_parameters) [6035 6047])
+                            ("length" variable (:type "long") (reparse-symbol formal_parameters) [6049 6060])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [6062 6074]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6010 6076])
+                    ("force0" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("address" variable (:type "long") (reparse-symbol formal_parameters) [6108 6120])
+                            ("length" variable (:type "long") (reparse-symbol formal_parameters) [6122 6133]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6081 6135]))                  
+                :type "class")
+                nil [1776 6138]))          
+    :file "MappedByteBuffer.java"
+    :pointmax 6139
+    :fsize 6138
+    :lastmodtime '(19394 43702)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_c!Program Files!Java!jdk1.6.0_20!src!java!nio!semantic.cache"
   :semantic-tag-version "2.0"

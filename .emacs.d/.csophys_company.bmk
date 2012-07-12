@@ -38,8 +38,8 @@
  (rear-context-string . "ys_company.bmk\")")
  (position . 745))
 ("org-remember-last-stored"
- (filename . "~/study.org")
- (front-context-string . "** 基本概念 指针和引用的区别")
- (rear-context-string . "      \n\n\n* 基本概念\n")
- (position . 4953))
+ (filename . "~/schedule.org.gpg")
+ (front-context-string . "** TODO 数据库范式理解\n")
+ (rear-context-string . "alled\" recipe]]\n")
+ (position . 4445))
 )

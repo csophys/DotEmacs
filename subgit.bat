@@ -7,7 +7,7 @@ echo "magit已经存在"
 ) else (
 echo "magit不存在"
 rm -r -f magit
-git clone git://github.com/magit/magit.git
+REM git clone git://github.com/magit/magit.git
 ) 
 
 echo "==============================git ecb=============================="
@@ -26,8 +26,9 @@ echo "undo-tree已经存在"
 ) else (
 echo "undo-tree不存在"
 rm -r -f undo-tree
-git clone http://www.dr-qubit.org/git/undo-tree.git
-) 
+git clone git://www.dr-qubit.org/git/undo-tree.git
+)
+
 
 echo "==============================git yasnippet=============================="
 if exist yasnippet\yasnippet.el (
