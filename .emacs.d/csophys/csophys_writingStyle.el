@@ -133,7 +133,7 @@
     result))
 
 (ac-config-default)
-(setq ac-auto-start t);;设定输入几个字符后提示
+(setq ac-auto-start 4);;设定输入几个字符后提示
 
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
