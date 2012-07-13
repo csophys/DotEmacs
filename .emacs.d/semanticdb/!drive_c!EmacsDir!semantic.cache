@@ -70,6 +70,41 @@
     :lastmodtime '(20476 56370)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "blog.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("使用elisp脚本编程" section nil nil [238 2356])
+            ("*///-->" section nil nil [2356 2976])
+            ("使用elisp脚本编程" section (:members 
+              ( ("使用elisp脚本编程" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 引言" anchor nil nil [3168 3171])
+                        ("2 目的" anchor nil nil [3203 3206])
+                        ("3 elisp 能够编程的理由以及优势" anchor nil nil [3238 3241])
+                        ("4 自我文档化" anchor nil nil [3288 3291])
+                        ("4.1 Elisp" anchor nil nil [3326 3329])
+                        ("4.2 Emacs Lisp Intro" anchor nil nil [3368 3371])
+                        ("4.3 emacs的elisp帮助系统" anchor nil nil [3421 3424])
+                        ("5 几个简单的示例" anchor nil nil [3485 3488])
+                        ("5.1 示例1" anchor nil nil [3525 3528])
+                        ("5.2 示例2" anchor nil nil [3565 3568]))                      ) nil [3098 3683])
+                    ("1" section nil nil [3683 4142])
+                    ("2" section nil nil [4142 4464])
+                    ("3" section nil nil [4464 5352])
+                    ("4" section (:members 
+                      ( ("4.1" section nil nil [5667 5887])
+                        ("4.2" section nil nil [5887 6136])
+                        ("4.3" section nil nil [6136 6463]))                      ) nil [5352 6463])
+                    ("5" section (:members 
+                      ( ("5.1" section nil nil [7930 12373])
+                        ("5.2" section (:members 
+                          ( ("Validate XHTML 1.0" anchor nil nil [14637 14640]))                          ) nil [12373 14736]))                      ) nil [6463 14736]))                  ) nil [3032 14736]))              ) nil [2976 14736]))          
+    :file "blog.html"
+    :pointmax 14736
+    :fsize 16266
+    :lastmodtime '(20478 35742)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_c!EmacsDir!semantic.cache"
   :semantic-tag-version "2.0"

@@ -2,7 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
+<<<<<<< HEAD
  ("d:/EmacsDir/" . "Java/")
+=======
+ ("c:/swank-clojure/" . "src/")
+ ("c:/Documents and Settings/Administrator/" . "デスクトップ/")
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
  ("c:/emacs-backup/dotemacs/csophys/" . "programeExpand/")
  ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/" . "common/")
  ("/plink:isdev@10.124.174.224:/export/home/TestSet/APP/" . "JavaEE/")
@@ -19,8 +24,8 @@
  ("c:/emacs-backup/dotemacs/plugin/" . "ecb/")
  ("c:/emacs-backup/dotemacs/" . "csophys/")
  ("c:/emacs-backup/" . "dotemacs/")
- ("c:/DotEmacs/.emacs.d/el-get/" . "auto-complete/")
- ("C:/EmacsDir/" . "C/")
+ ("c:/DotEmacs/.emacs.d/el-get/" . "el-get/")
+ ("C:/EmacsDir/" . "Clojure/")
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/" . "connector/")
  ("c:/task/database/" . "linux/")
  ("c:/task/" . "database/")
@@ -35,26 +40,46 @@
  ("d:/DotEmacs/.emacs.d/el-get/" . "auto-complete/")
  ("d:/DotEmacs/" . ".emacs.d/")
  ("d:/DotEmacs/.emacs.d/" . "el-get/")
+<<<<<<< HEAD
  ("c:/" . "emacs-backup/")
  ("c:/DotEmacs/.emacs.d/" . "csophys/")
+=======
+ ("d:/DotEmacs/.emacs.d/" . "csophys/")
+ ("c:/" . "swank-clojure/")
+ ("c:/DotEmacs/.emacs.d/" . "auto-insert/")
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
  ("c:/DotEmacs/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+<<<<<<< HEAD
  "d:/EmacsDir/Java/"
  "D:/EmacsDir/Java/"
+=======
+ "C:/EmacsDir/Clojure/"
+ "c:/"
+ "C:/EmacsDir/"
+ "c:/DotEmacs/.emacs.d/el-get/"
+ "c:/EmacsDir/GitDocument/MyDocument/"
+ "c:/EmacsDir/"
+ "c:/DotEmacs/.emacs.d/auto-insert/"
+ "c:/Documents and Settings/Administrator/デスクトップ/"
+ "c:/DotEmacs/"
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
  "D:/EmacsDir/"
  "d:/DotEmacs/"
+<<<<<<< HEAD
  "d:/DotEmacs/.emacs.d/el-get/"
  "d:/DotEmacs/.emacs.d/csophys/"
  "c:/EmacsDir/GitDocument/MyDocument/"
  "C:/EmacsDir/"
+=======
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
  "c:/Documents and Settings/Administrator/"
  "c:/DotEmacs/.emacs.d/csophys/"
  "c:/emacs-backup/dotemacs/csophys/programeExpand/"
  "c:/task/"
- "c:/"
  "/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/"
  "c:/task/database/linux/"
  "c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/"
@@ -85,6 +110,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+<<<<<<< HEAD
  "Test.java"
  "NewComplete.java"
  "test.java"
@@ -94,10 +120,22 @@
  "test.bat"
  "dos"
  "test.dot"
+=======
+ "project.clj"
+ "test.clj"
+ ".status.el"
+ "patent.org"
+ "test.el"
+ "test.dot"
+ "test.bat"
+ "insert.el"
+ "schedule.org"
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+<<<<<<< HEAD
  ("d:/EmacsDir/Java/" (20476 13581) "../" "./")
 
  ("D:/EmacsDir/Java/" (20476 13239) "test.java" "test.class" "NewComplete.java" "../" "./")
@@ -113,6 +151,43 @@
  ("d:/DotEmacs/.emacs.d/csophys/" (20474 65476) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("c:/Users/" (19937 44666) "Public/" "desktop.ini" "Default User/" "Default/" "csophys/" "All Users/" "Administrator/" "../" "./")
+=======
+ ("c:/emacs-backup/dotemacs/csophys/programeExpand/" (20478 33821) "w32-browser.el" "unicad.elc" "unicad.el" "socks.el" "org-html5presentation.el" "htmlize.el" "dos.el" "dos-indent.el" "dired+.el" "csophys_yasnippet.el" "csophys_undotree.el" "csophys_nxhtml.el" "csophys_jde.el" "csophys_graphviz.el" "csophys_ecb.el" "csophys_cedet.el" "csophys_autoComplete.el" "csophys_ajc.el" "autopair.el" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/csophys/" (20479 34578) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+
+ ("c:/DotEmacs/" (20479 59050) "subgit.bat" "study.org" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".git/" ".emacs.d/" "../" "./")
+
+ ("c:/Documents and Settings/Administrator/デスクトップ/" (20479 37866) "笔试题目/" "测试集手顺.txt" "已整理log/" "专利模板/" "专利撰写/" "【TECH SHOW】内存計算 .pdf" "WinSCP.lnk" "ttermpro.exe へのショートカット.lnk" "Think_In_Java_4(完美高清中文版) (1).pdf" "TestSet.zip" "SunOS-jpa-tablegeneration-2012-07-03-16-32-08/" "SunOS-jpa-tablegeneration-2012-07-03-15-31-33/" "runemacs.exe へのショートカット.lnk" "putty.exe へのショートカット.lnk" "MKReview/" "JDK_API_1_6_zh_CN.CHM" "jd-gui.exe" "jd-gui.cfg" "htmlcol.exe" "Google Chrome.lnk" "gitpng.png" "Git Bash.lnk" "FreeMind.lnk" "FeiQ へのショートカット.lnk" "feiq/" "ExecuteSQL.war" "eclipse-jee-helios-SR1-win32/" "eclipse へのショートカット.lnk" "CT_SET.zip" "CT_SET/" "csophys-DotEmacs-d015636/" "AppLocale.lnk" "an example/" "../" "./")
+
+ ("c:/EmacsDir/" (20479 59796) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "blog.org~" "blog.org" "blog.html" "#test.clj#" "../" "./")
+
+ ("c:/EmacsDir/GitDocument/MyDocument/" (20479 37863) "轮询资料.zip.gpg" "脗脰询脳脢脕脧.zip.gpg" "README.md" "patent.org" "myPaper.org.html" "myPaper.org.gpg" "an example.7z" "a method.zip" ".git/" "(chrome)bookmarks_12_07_06.html" "../" "./")
+
+ ("C:/EmacsDir/Clojure/" (20479 59796) "../" "./")
+
+ ("C:/EmacsDir/" (20479 59796) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "blog.org~" "blog.org" "blog.html" "#test.clj#" "../" "./")
+
+ ("c:/swank-clojure/src/" (20479 59388) "swank/" "leiningen/" "../" "./")
+
+ ("c:/swank-clojure/" (20479 59389) "TODO.org" "test/" "swank-clojure.el" "src/" "README.md" "project.clj" "NEWS" "COPYING" ".gitignore" ".git/" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/el-get/el-get/" (20447 54586) "test/" "recipes/" "README.asciidoc" "methods/" "el-get.el" "el-get-status.el" "el-get-recipes.el" "el-get-notify.el" "el-get-methods.el" "el-get-list-packages.el" "el-get-install.el" "el-get-dependencies.el" "el-get-custom.el" "el-get-core.el" "el-get-byte-compile.el" "el-get-build.el" "el-get-autoloads.el" ".gitignore" ".git/" ".dir-locals.el" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/el-get/" (20479 46982) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "org-html5presentation/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
+ ("c:/EmacsDir/GitDocument/" (20474 15160) "MyDocument/" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/auto-insert/" (20478 14176) "insert.java" "insert.el" "../" "./")
+
+ ("c:/task/" (20465 13923) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
+
+ ("c:/Documents and Settings/Administrator/スタート メニュー/" (20364 51286) "プログラム/" "FreeMind.lnk" "desktop.ini" "../" "./")
+
+ ("c:/Documents and Settings/Administrator/" (20465 6074) "デスクトップ/" "スタート メニュー/" "_viminfo" "xen/" "workspace/" "WINDOWS/" "UserData/" "Templates/" "SendTo/" "Recent/" "PrintHood/" "ntuser.ini" "NTUSER.DAT.LOG" "NTUSER.DAT" "NetHood/" "My Documents/" "magit/" "Local Settings/" "grizzly~git.zip" "grizzly~git/" "Favorites/" "Cookies/" "chensheng/" "Application Data/" ".subversion/" ".ssh/" ".m2/" ".itaf/" ".gitk" ".gitconfig" ".gem/" ".freemind/" ".bash_history" ".astah/" ".asadmintruststore" ".asadminpass" "../" "./")
+
+ ("c:/Documents and Settings/" (19562 17808) "NetworkService/" "LocalService/" "Default User/" "All Users/" "Administrator/" "../" "./")
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
 
  ("d:/DotEmacs/.emacs.d/el-get/auto-complete/dict/" (20472 22487) "tuareg-mode" "ts-mode" "tcl-mode" "sh-mode" "scheme-mode" "ruby-mode" "python-mode" "php-mode" "lua-mode" "javascript-mode" "java-mode" "erlang-mode" "css-mode" "coq-mode" "clojurescript-mode" "clojure-mode" "caml-mode" "c-mode" "c++-mode" "ada-mode" "../" "./")
 
@@ -134,8 +209,6 @@
 
  ("d:/DotEmacs/.emacs.d/ecb/" (20449 45510) "../" "./")
 
- ("c:/DotEmacs/.emacs.d/csophys/" (20449 12388) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
-
  ("d:/DotEmacs/.emacs.d/" (20471 58312) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
  ("d:/DotEmacs/" (20471 58267) "subgit.bat" "study.org" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
@@ -150,14 +223,15 @@
 
  ("c:/DotEmacs/.emacs.d/" (20449 30956) "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
- ("c:/task/" (20449 33201) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
-
  ("c:/DotEmacs/.emacs.d/csophys/" (20449 12388) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
+<<<<<<< HEAD
  ("c:/Documents and Settings/Administrator/" (20446 32728) "デスクトップ/" "スタート メニュー/" "_viminfo" "xen/" "workspace/" "WINDOWS/" "UserData/" "Templates/" "SendTo/" "Recent/" "PrintHood/" "ntuser.ini" "NTUSER.DAT.LOG" "NTUSER.DAT" "NetHood/" "My Documents/" "magit/" "Local Settings/" "grizzly~git/" "Favorites/" "Cookies/" "chensheng/" "Application Data/" ".subversion/" ".ssh/" ".m2/" ".gitk" ".gitconfig" ".freemind/" ".bash_history" ".astah/" ".asadmintruststore" ".asadminpass" "../" "./")
 
  ("c:/emacs-backup/dotemacs/csophys/programeExpand/" (20441 27268) "w32-browser.el" "unicad.elc" "unicad.el" "socks.el" "org-html5presentation.el" "htmlize.el" "dos.el" "dos-indent.el" "dired+.el" "csophys_yasnippet.el" "csophys_undotree.el" "csophys_nxhtml.el" "csophys_jde.el" "csophys_graphviz.el" "csophys_ecb.el" "csophys_cedet.el" "csophys_autoComplete.el" "csophys_ajc.el" "autopair.el" ".emacs.desktop" "#csophys_autoComplete.el#" "../" "./")
 
+=======
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
  ("c:/emacs-backup/dotemacs/csophys/" (20433 46353) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" "../" "./")
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/Test/src/acc/" (20300 25552) "PrimaryAccClient.java" "NumberAccClient.java" "DateAccClient.java" "CharAccClient.java" "BlobAccClient.java" ".svn/" "../" "./")
@@ -172,12 +246,15 @@
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/testdriver/src/" (20418 59344) "SmokeTestSuite.java" "SmokeTest.java" "CharTest.java" "AllTestSuite.java" "AllTest.java" ".svn/" "../" "./")
 
+<<<<<<< HEAD
  ("c:/DotEmacs/" (20447 53386) "study.org" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
 
  ("c:/EmacsDir/GitDocument/" (20412 43468) "MyDocument/" "../" "./")
 
  ("C:/EmacsDir/" (20446 57086) "test.java" "test.class" "test.c" "schedule.org" "GitDocument/" "C/" "blog.org~" "blog.org" "blog.html" "../" "./")
 
+=======
+>>>>>>> 19ddceb03fb2e4881e59b0cfc3abe32eabd6f735
  ("c:/DotEmacs/.emacs.d/el-get/el-get/methods/" (20447 54586) "el-get-svn.el" "el-get-pacman.el" "el-get-http.el" "el-get-http-zip.el" "el-get-http-tar.el" "el-get-hg.el" "el-get-github.el" "el-get-github-zip.el" "el-get-github-tar.el" "el-get-git.el" "el-get-git-svn.el" "el-get-fossil.el" "el-get-fink.el" "el-get-emacswiki.el" "el-get-emacsmirror.el" "el-get-elpa.el" "el-get-darcs.el" "el-get-cvs.el" "el-get-bzr.el" "el-get-builtin.el" "el-get-brew.el" "el-get-apt-get.el" "../" "./")
 
  ("c:/emacs-backup/dotemacs/plugin/ecb/" (20352 62526) "tree-buffer.el" "silentcomp.el" "RELEASE_NOTES" "README" "NEWS" "Makefile" "make.bat" "ecb.texi" "ecb.el" "ecb-winman-support.el" "ecb-util.el" "ecb-upgrade.el" "ecb-tod.el" "ecb-symboldef.el" "ecb-speedbar.el" "ecb-semantic.el" "ecb-navigate.el" "ecb-mode-line.el" "ecb-method-browser.el" "ecb-makedef.mk" "ecb-layout.el" "ecb-layout-defs.el" "ecb-jde.el" "ecb-images/" "ecb-help.el" "ecb-file-browser.el" "ecb-face.el" "ecb-examples.el" "ecb-eshell.el" "ecb-cycle.el" "ecb-create-layout.el" "ecb-compilation.el" "ecb-compatibility.el" "ecb-common-browser.el" "ecb-cedet-wrapper.el" "ecb-autoloads.el" "ecb-autogen.el" "ecb-analyse.el" "ecb-advice-test.el" "../" "./")
@@ -234,8 +311,6 @@
 
  ("e:/kuaipan/" (20371 33111) "软件/" "照片/" "文档/" "备份/" "其他/" "书籍/" "临时/" "dotemacs/" "document/" "Desktop.ini" ".klive/" ".emacs.d/" "../" "./")
 
- ("c:/DotEmacs/.emacs.d/el-get/" (20441 14737) "yasnippet/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
-
  ("c:/task/database/linux/" (20442 45043) "symfoware.properties" "symfoware(LE).properties" "sqlserver.properties" "oracle.properties" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/csophys/" (20442 63781) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
@@ -263,10 +338,6 @@
  ("d:/emacs-24.1-rc-bin-i386/emacs-24.1/" (20424 46166) "site-lisp/" "README.W32" "README" "lisp/" "leim/" "info/" "etc/" "COPYING" "BUGS" "bin/" "../" "./")
 
  ("d:/emacs-24.1-rc-bin-i386/emacs-24.1/lisp/" (20424 46162) "xt-mouse.elc" "xt-mouse.el" "xml.elc" "xml.el" "x-dnd.elc" "x-dnd.el" "woman.elc" "woman.el" "winner.elc" "winner.el" "window.elc" "window.el" "windmove.elc" "windmove.el" "widget.elc" "widget.el" "wid-edit.elc" "wid-edit.el" "wid-browse.elc" "wid-browse.el" "whitespace.elc" "whitespace.el" "wdired.elc" "wdired.el" "w32-vars.elc" "w32-vars.el" "w32-fns.elc" "w32-fns.el" "vt100-led.elc" "vt100-led.el" "vt-control.elc" "vt-control.el" "view.elc" "view.el" "version.el" "vcursor.elc" "vcursor.el" "vc/" "userlock.elc" "userlock.el" "url/" "uniquify.elc" "uniquify.el" "type-break.elc" "type-break.el" "tutorial.elc" "tutorial.el" "tree-widget.elc" "tree-widget.el" "tooltip.elc" "tooltip.el" "tool-bar.elc" "tool-bar.el" "tmm.elc" "tmm.el" "timezone.elc" "timezone.el" "time.elc" "time.el" "time-stamp.elc" "time-stamp.el" "thumbs.elc" "thumbs.el" "thingatpt.elc" "thingatpt.el" "textmodes/" "terminal.elc" "terminal.el" "term.elc" "term.el" "term/" "tempo.elc" "tempo.el" "tar-mode.elc" "tar-mode.el" "talk.elc" "talk.el" "tabify.elc" "tabify.el" "t-mouse.elc" "t-mouse.el" "subr.elc" "subr.el" "subdirs.el" "strokes.elc" "strokes.el" "startup.elc" "startup.el" "speedbar.elc" "speedbar.el" "soundex.elc" "soundex.el" "sort.elc" "sort.el" "skeleton.elc" "skeleton.el" "simple.elc" "simple.el" "shell.elc" "shell.el" "shadowfile.elc" "shadowfile.el" "ses.elc" "ses.el" "server.elc" "server.el" "select.elc" "select.el" "scroll-lock.elc" "scroll-lock.el" "scroll-bar.elc" "scroll-bar.el" "scroll-all.elc" "scroll-all.el" "sb-image.elc" "sb-image.el" "saveplace.elc" "saveplace.el" "savehist.elc" "savehist.el" "ruler-mode.elc" "ruler-mode.el" "rot13.elc" "rot13.el" "rfn-eshadow.elc" "rfn-eshadow.el" "reveal.elc" "reveal.el" "reposition.elc" "reposition.el" "replace.elc" "replace.el" "repeat.elc" "repeat.el" "register.elc" "register.el" "rect.elc" "rect.el" "recentf.elc" "recentf.el" "README" "ps-samp.elc" "ps-samp.el" "ps-print.elc" "ps-print.el" "ps-mule.elc" "ps-mule.el" "ps-def.elc" "ps-def.el" "ps-bdf.elc" "ps-bdf.el" "progmodes/" "proced.elc" "proced.el" "printing.elc" "printing.el" "play/" "pcomplete.elc" "pcomplete.el" "pcmpl-unix.elc" "pcmpl-unix.el" "pcmpl-rpm.elc" "pcmpl-rpm.el" "pcmpl-linux.elc" "pcmpl-linux.el" "pcmpl-gnu.elc" "pcmpl-gnu.el" "pcmpl-cvs.elc" "pcmpl-cvs.el" "paths.el" "patcomp.el" "password-cache.elc" "password-cache.el" "paren.elc" "paren.el" "outline.elc" "outline.el" "org/" "obsolete/" "nxml/" "novice.elc" "novice.el" "notifications.elc" "notifications.el" "newcomment.elc" "newcomment.el" "net/" "mwheel.elc" "mwheel.el" "msb.elc" "msb.el" "mpc.elc" "mpc.el" "mouse.elc" "mouse.el" "mouse-sel.elc" "mouse-sel.el" "mouse-drag.elc" "mouse-drag.el" "mouse-copy.elc" "mouse-copy.el" "misearch.elc" "misearch.el" "misc.elc" "misc.el" "minibuffer.elc" "minibuffer.el" "minibuf-eldef.elc" "minibuf-eldef.el" "midnight.elc" "midnight.el" "mh-e/" "menu-bar.elc" "menu-bar.el" "md4.elc" "md4.el" "mb-depth.elc" "mb-depth.el" "master.elc" "master.el" "man.elc" "man.el" "makesum.elc" "makesum.el" "makefile.w32-in" "Makefile.in" "makefile" "mail/" "macros.elc" "macros.el" "ls-lisp.elc" "ls-lisp.el" "lpr.elc" "lpr.el" "longlines.elc" "longlines.el" "locate.elc" "locate.el" "loadup.el" "loadhist.elc" "loadhist.el" "loaddefs.el" "linum.elc" "linum.el" "ledit.elc" "ledit.el" "ldefs-boot.el" "language/" "kmacro.elc" "kmacro.el" "kermit.elc" "kermit.el" "json.elc" "json.el" "jka-compr.elc" "jka-compr.el" "jka-cmpr-hook.elc" "jka-cmpr-hook.el" "jit-lock.elc" "jit-lock.el" "iswitchb.elc" "iswitchb.el" "isearchb.elc" "isearchb.el" "isearch.elc" "isearch.el" "international/" "informat.elc" "informat.el" "info.elc" "info.el" "info-xref.elc" "info-xref.el" "info-look.elc" "info-look.el" "indent.elc" "indent.el" "imenu.elc" "imenu.el" "image.elc" "image.el" "image-mode.elc" "image-mode.el" "image-file.elc" "image-file.el" "image-dired.elc" "image-dired.el" "iimage.elc" "iimage.el" "ielm.elc" "ielm.el" "ido.elc" "ido.el" "icomplete.elc" "icomplete.el" "ibuffer.elc" "ibuffer.el" "ibuf-macs.elc" "ibuf-macs.el" "ibuf-ext.elc" "ibuf-ext.el" "htmlfontify.elc" "htmlfontify.el" "hl-line.elc" "hl-line.el" "hippie-exp.elc" "hippie-exp.el" "hilit-chg.elc" "hilit-chg.el" "hi-lock.elc" "hi-lock.el" "hfy-cmap.elc" "hfy-cmap.el" "hexl.elc" "hexl.el" "hex-util.elc" "hex-util.el" "help.elc" "help.el" "help-mode.elc" "help-mode.el" "help-macro.elc" "help-macro.el" "help-fns.elc" "help-fns.el" "help-at-pt.elc" "help-at-pt.el" "gs.elc" "gs.el" "gnus/" "generic-x.elc" "generic-x.el" "fringe.elc" "fringe.el" "frame.elc" "frame.el" "forms.elc" "forms.el" "forms-pass.el" "forms-d2.el" "format.elc" "format.el" "format-spec.elc" "format-spec.el" "font-lock.elc" "font-lock.el" "font-core.elc" "font-core.el" "follow.elc" "follow.el" "foldout.elc" "foldout.el" "flow-ctrl.elc" "flow-ctrl.el" "finder.elc" "finder.el" "finder-inf.el" "find-lisp.elc" "find-lisp.el" "find-file.elc" "find-file.el" "find-dired.elc" "find-dired.el" "find-cmd.elc" "find-cmd.el" "filesets.elc" "filesets.el" "files.elc" "files.el" "files-x.elc" "files-x.el" "filecache.elc" "filecache.el" "ffap.elc" "ffap.el" "faces.elc" "faces.el" "facemenu.elc" "facemenu.el" "face-remap.elc" "face-remap.el" "ezimage.elc" "ezimage.el" "expand.elc" "expand.el" "eshell/" "erc/" "epg.elc" "epg.el" "epg-config.elc" "epg-config.el" "epa.elc" "epa.el" "epa-mail.elc" "epa-mail.el" "epa-hook.elc" "epa-hook.el" "epa-file.elc" "epa-file.el" "epa-dired.elc" "epa-dired.el" "env.elc" "env.el" "emulation/" "emacs-lock.elc" "emacs-lock.el" "emacs-lisp/" "elide-head.elc" "elide-head.el" "electric.elc" "electric.el" "ehelp.elc" "ehelp.el" "edmacro.elc" "edmacro.el" "echistory.elc" "echistory.el" "ebuff-menu.elc" "ebuff-menu.el" "dynamic-setting.elc" "dynamic-setting.el" "double.elc" "double.el" "dos-w32.elc" "dos-w32.el" "dos-vars.elc" "dos-vars.el" "dos-fns.elc" "dos-fns.el" "doc-view.elc" "doc-view.el" "dnd.elc" "dnd.el" "disp-table.elc" "disp-table.el" "dirtrack.elc" "dirtrack.el" "dired.elc" "dired.el" "dired-x.elc" "dired-x.el" "dired-aux.elc" "dired-aux.el" "dframe.elc" "dframe.el" "desktop.elc" "desktop.el" "descr-text.elc" "descr-text.el" "delsel.elc" "delsel.el" "delim-col.elc" "delim-col.el" "dabbrev.elc" "dabbrev.el" "custom.elc" "custom.el" "cus-theme.elc" "cus-theme.el" "cus-start.elc" "cus-start.el" "cus-load.el" "cus-face.elc" "cus-face.el" "cus-edit.elc" "cus-edit.el" "cus-dep.elc" "cus-dep.el" "COPYING" "composite.elc" "composite.el" "completion.elc" "completion.el" "comint.elc" "comint.el" "color.elc" "color.el" "cmuscheme.elc" "cmuscheme.el" "chistory.elc" "chistory.el" "ChangeLog.9" "ChangeLog.8" "ChangeLog.7" "ChangeLog.6" "ChangeLog.5" "ChangeLog.4" "ChangeLog.3" "ChangeLog.2" "ChangeLog.15" "ChangeLog.14" "ChangeLog.13" "ChangeLog.12" "ChangeLog.11" "ChangeLog.10" "ChangeLog.1" "ChangeLog" "cedet/" "cdl.elc" "cdl.el" "case-table.elc" "case-table.el" "calendar/" "calculator.elc" "calculator.el" "calc/" "button.elc" "button.el" "buff-menu.elc" "buff-menu.el" "bs.elc" "bs.el" "bookmark.elc" "bookmark.el" "bindings.elc" "bindings.el" "battery.elc" "battery.el" "avoid.elc" "avoid.el" "autorevert.elc" "autorevert.el" "autoinsert.elc" "autoinsert.el" "autoarg.elc" "autoarg.el" "array.elc" "array.el" "arc-mode.elc" "arc-mode.el" "apropos.elc" "apropos.el" "ansi-color.elc" "ansi-color.el" "allout.elc" "allout.el" "allout-widgets.elc" "allout-widgets.el" "align.elc" "align.el" "abbrev.elc" "abbrev.el" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/auto-save-list/" (20431 31036) ".saves-4268-CSOPHYS-PC~" "../" "./")
-
- ("c:/emacs-24.1/lisp/international/" (20430 64296) "utf-7.elc" "utf-7.el" "uni-uppercase.el" "uni-titlecase.el" "uni-old-name.el" "uni-numeric.el" "uni-name.el" "uni-mirrored.el" "uni-lowercase.el" "uni-digit.el" "uni-decomposition.el" "uni-decimal.el" "uni-comment.el" "uni-combining.el" "uni-category.el" "uni-bidi.el" "ucs-normalize.elc" "ucs-normalize.el" "titdic-cnv.elc" "titdic-cnv.el" "robin.elc" "robin.el" "README" "quail.elc" "quail.el" "ogonek.elc" "ogonek.el" "mule.elc" "mule.el" "mule-util.elc" "mule-util.el" "mule-diag.elc" "mule-diag.el" "mule-conf.elc" "mule-conf.el" "mule-cmds.elc" "mule-cmds.el" "latin1-disp.elc" "latin1-disp.el" "latexenc.elc" "latexenc.el" "kkc.elc" "kkc.el" "kinsoku.elc" "kinsoku.el" "ja-dic-utl.elc" "ja-dic-utl.el" "ja-dic-cnv.elc" "ja-dic-cnv.el" "iso-transl.elc" "iso-transl.el" "iso-cvt.elc" "iso-cvt.el" "iso-ascii.elc" "iso-ascii.el" "isearch-x.elc" "isearch-x.el" "fontset.elc" "fontset.el" "eucjp-ms.el" "cp51932.el" "charprop.el" "characters.elc" "characters.el" "ccl.elc" "ccl.el" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

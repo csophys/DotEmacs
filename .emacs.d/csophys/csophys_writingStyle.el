@@ -11,7 +11,8 @@
 (fset 'yes-or-no-p 'y-or-n-p);简化yes or no 选择
 (column-number-mode t);显示列号
 (setq default-fill-column 80);默认列数为80列
-
+(setq user-full-name "csophys");
+(setq user-mail-address "zjsy_cs@163.com")
 ;日期和时间显示
 (display-time-mode 1);打开时间x显示模式
 (setq display-time-24hr-format t) ;显示24小时制时间
@@ -132,7 +133,7 @@
     result))
 
 (ac-config-default)
-(setq ac-auto-start t);;设定输入几个字符后提示
+(setq ac-auto-start 4);;设定输入几个字符后提示
 
 (define-key ac-completing-map (kbd "<return>") 'ac-complete)
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
@@ -226,11 +227,16 @@
 (setq auto-insert-alist
       '(
         ("\\.java$" . ["insert.java"  auto-update-java-source-file])
+		("\\.el$" . ["insert.el" default-autoinsert])
         ))
+
+(defun default-autoinsert ()
+  "default function when open the insert templete"
+  (goto-char (point-max))
+	)
 
 (defun auto-update-java-source-file ()
   "do something when open an java source"
-  (interactive)
   (goto-char (- (point-max) 1))
   (yas/expand)
 	)
