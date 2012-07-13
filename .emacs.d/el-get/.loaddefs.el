@@ -3,6 +3,85 @@
 ;;; Code:
 
 
+;;;### (autoloads (clojure-enable-slime-on-existing-buffers clojure-jack-in
+;;;;;;  clojure-mode) "clojure-mode/clojure-mode" "clojure-mode/clojure-mode.el"
+;;;;;;  (20480 13393))
+;;; Generated autoloads from clojure-mode/clojure-mode.el
+
+(autoload 'clojure-mode "clojure-mode/clojure-mode" "\
+Major mode for editing Clojure code - similar to Lisp mode.
+Commands:
+Delete converts tabs to spaces as it moves back.
+Blank lines separate paragraphs.  Semicolons start comments.
+\\{clojure-mode-map}
+Note that `run-lisp' may be used either to start an inferior Lisp job
+or to switch back to an existing one.
+
+Entry to this mode calls the value of `clojure-mode-hook'
+if that value is non-nil.
+
+\(fn)" t nil)
+
+(autoload 'clojure-jack-in "clojure-mode/clojure-mode" "\
+
+
+\(fn)" t nil)
+
+(autoload 'clojure-enable-slime-on-existing-buffers "clojure-mode/clojure-mode" "\
+
+
+\(fn)" t nil)
+
+(add-hook 'slime-connected-hook 'clojure-enable-slime-on-existing-buffers)
+
+(put 'clojure-test-ns-segment-position 'safe-local-variable 'integerp)
+
+(put 'clojure-mode-load-command 'safe-local-variable 'stringp)
+
+(put 'clojure-swank-command 'safe-local-variable 'stringp)
+
+(add-hook 'slime-connected-hook 'clojure-enable-slime-on-existing-buffers)
+
+(add-hook 'slime-indentation-update-hooks 'put-clojure-indent)
+
+(add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+
+(add-to-list 'interpreter-mode-alist '("jark" . clojure-mode))
+
+(add-to-list 'interpreter-mode-alist '("cake" . clojure-mode))
+
+;;;***
+
+;;;### (autoloads (clojure-test-mode) "clojure-mode/clojure-test-mode"
+;;;;;;  "clojure-mode/clojure-test-mode.el" (20480 13393))
+;;; Generated autoloads from clojure-mode/clojure-test-mode.el
+
+(autoload 'clojure-test-mode "clojure-mode/clojure-test-mode" "\
+A minor mode for running Clojure tests.
+
+\(fn &optional ARG)" t nil)
+
+(defun clojure-test-maybe-enable nil "\
+Enable clojure-test-mode if the current buffer contains a namespace
+with a \"test.\" bit on it." (let ((ns (clojure-find-package))) (when (and ns (string-match "test\\(\\.\\|$\\)" ns)) (save-window-excursion (clojure-test-mode t)))))
+
+(add-hook 'clojure-mode-hook 'clojure-test-maybe-enable)
+
+;;;***
+
+;;;### (autoloads (clojurescript-mode) "clojure-mode/clojurescript-mode"
+;;;;;;  "clojure-mode/clojurescript-mode.el" (20480 13393))
+;;; Generated autoloads from clojure-mode/clojurescript-mode.el
+
+(autoload 'clojurescript-mode "clojure-mode/clojurescript-mode" "\
+Major mode for ClojureScript
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.cljs$" . clojurescript-mode))
+
+;;;***
+
 ;;;### (autoloads (color-theme-initialize color-theme-submit color-theme-install
 ;;;;;;  color-theme-compare color-theme-make-snapshot color-theme-analyze-defun
 ;;;;;;  color-theme-print color-theme-install-at-point-for-current-frame
@@ -1671,6 +1750,73 @@ Turning on Graphviz Dot mode calls the value of the variable
 
 ;;;***
 
+;;;### (autoloads (htmlize-many-files-dired htmlize-many-files htmlize-file
+;;;;;;  htmlize-region htmlize-buffer) "htmlize/htmlize" "htmlize/htmlize.el"
+;;;;;;  (20480 12637))
+;;; Generated autoloads from htmlize/htmlize.el
+
+(autoload 'htmlize-buffer "htmlize/htmlize" "\
+Convert BUFFER to HTML, preserving colors and decorations.
+
+The generated HTML is available in a new buffer, which is returned.
+When invoked interactively, the new buffer is selected in the current
+window.  The title of the generated document will be set to the buffer's
+file name or, if that's not available, to the buffer's name.
+
+Note that htmlize doesn't fontify your buffers, it only uses the
+decorations that are already present.  If you don't set up font-lock or
+something else to fontify your buffers, the resulting HTML will be
+plain.  Likewise, if you don't like the choice of colors, fix the mode
+that created them, or simply alter the faces it uses.
+
+\(fn &optional BUFFER)" t nil)
+
+(autoload 'htmlize-region "htmlize/htmlize" "\
+Convert the region to HTML, preserving colors and decorations.
+See `htmlize-buffer' for details.
+
+\(fn BEG END)" t nil)
+
+(autoload 'htmlize-file "htmlize/htmlize" "\
+Load FILE, fontify it, convert it to HTML, and save the result.
+
+Contents of FILE are inserted into a temporary buffer, whose major mode
+is set with `normal-mode' as appropriate for the file type.  The buffer
+is subsequently fontified with `font-lock' and converted to HTML.  Note
+that, unlike `htmlize-buffer', this function explicitly turns on
+font-lock.  If a form of highlighting other than font-lock is desired,
+please use `htmlize-buffer' directly on buffers so highlighted.
+
+Buffers currently visiting FILE are unaffected by this function.  The
+function does not change current buffer or move the point.
+
+If TARGET is specified and names a directory, the resulting file will be
+saved there instead of to FILE's directory.  If TARGET is specified and
+does not name a directory, it will be used as output file name.
+
+\(fn FILE &optional TARGET)" t nil)
+
+(autoload 'htmlize-many-files "htmlize/htmlize" "\
+Convert FILES to HTML and save the corresponding HTML versions.
+
+FILES should be a list of file names to convert.  This function calls
+`htmlize-file' on each file; see that function for details.  When
+invoked interactively, you are prompted for a list of files to convert,
+terminated with RET.
+
+If TARGET-DIRECTORY is specified, the HTML files will be saved to that
+directory.  Normally, each HTML file is saved to the directory of the
+corresponding source file.
+
+\(fn FILES &optional TARGET-DIRECTORY)" t nil)
+
+(autoload 'htmlize-many-files-dired "htmlize/htmlize" "\
+HTMLize dired-marked files.
+
+\(fn ARG &optional TARGET-DIRECTORY)" t nil)
+
+;;;***
+
 ;;;### (autoloads (org-export-html5presentationize-generate-css org-export-as-html5presentation
 ;;;;;;  org-export-region-as-html5presentation org-replace-region-by-html5presentation
 ;;;;;;  org-export-as-html5presentation-to-buffer org-export-as-html5presentation-batch
@@ -1767,6 +1913,23 @@ that uses these same face definitions.
 
 ;;;***
 
+;;;### (autoloads (paredit-mode) "paredit/paredit" "paredit/paredit.el"
+;;;;;;  (20480 13011))
+;;; Generated autoloads from paredit/paredit.el
+
+(autoload 'paredit-mode "paredit/paredit" "\
+Minor mode for pseudo-structurally editing Lisp code.
+With a prefix argument, enable Paredit Mode even if there are
+  imbalanced parentheses in the buffer.
+Paredit behaves badly if parentheses are imbalanced, so exercise
+  caution when forcing Paredit Mode to be enabled, and consider
+  fixing imbalanced parentheses instead.
+\\<paredit-mode-map>
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
 ;;;### (autoloads (global-undo-tree-mode undo-tree-mode) "undo-tree/undo-tree"
 ;;;;;;  "undo-tree/undo-tree.el" (20474 63693))
 ;;; Generated autoloads from undo-tree/undo-tree.el
@@ -1815,7 +1978,7 @@ See `undo-tree-mode' for more information on Undo-Tree mode.
 ;;;***
 
 ;;;### (autoloads nil nil ("el-get/el-get-install.el" "el-get/el-get.el")
-;;;;;;  (20474 63903 687000))
+;;;;;;  (20480 13398 313000))
 
 ;;;***
 
