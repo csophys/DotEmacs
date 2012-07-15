@@ -29,6 +29,7 @@
 		  (:name paredit :description "Minor mode for editing parentheses" :type http :url "http://mumble.net/~campbell/emacs/paredit.el" :features "paredit"))
  (popup status "installed" recipe
 		(:name popup :website "https://github.com/m2ym/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :pkgname "m2ym/popup-el"))
+ (swank-clojure status "removed" recipe nil)
  (w32-browser status "installed" recipe
 			  (:name w32-browser :type emacswiki :description "Run Windows application associated with a file." :load-path "."))
  (yasnippet status "installed" recipe
