@@ -48,8 +48,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "d:/DotEmacs/"
  "d:/clojure1.4/"
+ "d:/EmacsDir/"
+ "d:/DotEmacs/"
  "D:/EmacsDir/"
  "d:/DotEmacs/.emacs.d/el-get/"
  "d:/DotEmacs/.emacs.d/"
@@ -96,6 +97,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "entry.bat"
+ "build.xml"
  "test.clj"
  ".loaddefs.el"
  ".status.el"
@@ -103,31 +106,29 @@
  "Test.java"
  "NewComplete.java"
  "test.java"
- "1.java"
- "c.bat"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/DotEmacs/" (20480 15816) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".git/" ".emacs.d/" "../" "./")
+ ("d:/clojure1.4/" (20482 57709) "test.clj" "test/" "target/" "src/" "readme.txt" "pom.xml" "epl-v10.html" "entry.bat" "doc/" "clojure.jar" "clojure.iml" "clojure-1.4.0.jar" "changes.md" "build.xml" ".gitignore" "../" "./")
 
- ("d:/clojure1.4/" (20480 15053) "test/" "target/" "src/" "readme.txt" "pom.xml" "epl-v10.html" "doc/" "clojure.jar" "clojure.iml" "clojure-1.4.0.jar" "changes.md" "build.xml" ".gitignore" "../" "./")
+ ("d:/EmacsDir/" (20482 43260) "test.xml" "test.dot" "test.bat" "src/" "Project/" "Java/" "classes/" "c.bat" "C/" "1.java" "../" "./")
+
+ ("D:/EmacsDir/" (20482 43260) "test.xml" "test.dot" "test.bat" "src/" "Project/" "Java/" "classes/" "c.bat" "C/" "1.java" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/csophys/" (20480 11892) "htmlize.el" "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+
+ ("d:/EmacsDir/Java/" (20476 13597) "Test.java" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/" (20480 60541) "snippets/" "semanticdb/" "magit/" "init.el" "eshell/" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "auto-insert/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/el-get/" (20480 60246) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "paredit/" "org-html5presentation/" "htmlize/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "clojure-mode/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
+ ("d:/DotEmacs/" (20480 60230) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".git/" ".emacs.d/" "../" "./")
 
  ("D:/EmacsDir/Java/" (20476 13597) "Test.java" "../" "./")
 
- ("D:/EmacsDir/" (20480 13728) "test.xml" "test.dot" "test.bat" "Project/" "Java/" "c.bat" "C/" "1.java" "#1.java#" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/el-get/" (20480 13018) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "paredit/" "org-html5presentation/" "htmlize/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/" (20480 11893) "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "auto-insert/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
-
- ("d:/EmacsDir/Java/" (20476 13581) "../" "./")
-
  ("e:/kuaipan/dotemacs/csophys/" (20475 326) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" "../" "./")
-
- ("d:/EmacsDir/" (20475 276) "test.xml" "test.dot" "test.bat" "Project/" "Java/" "c.bat" "C/" "1.java" "#1.java#" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/csophys/" (20474 65476) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("c:/Users/" (19937 44666) "Public/" "desktop.ini" "Default User/" "Default/" "csophys/" "All Users/" "Administrator/" "../" "./")
 
