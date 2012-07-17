@@ -1,0 +1,23 @@
+;; Object DotEmacs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DotEmacs/"
+  :tables (list 
+    (semanticdb-table "schedule.org.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("tests" section nil nil [238 2247])
+            ("*///-->" section nil nil [2247 2867])
+            ("tests" section (:members 
+              ( ("tests" section (:members 
+                  ( ("Validate XHTML 1.0" anchor nil nil [3776 3779]))                  ) nil [2923 3875]))              ) nil [2867 3875]))          
+    :file "schedule.org.html"
+    :pointmax 3875
+    :fsize 4002
+    :lastmodtime '(20480 12903)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!DotEmacs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

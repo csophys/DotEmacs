@@ -39,7 +39,7 @@
  (position . 745))
 ("org-remember-last-stored"
  (filename . "~/schedule.org.gpg")
- (front-context-string . "** TODO 数据库范式理解\n")
- (rear-context-string . "alled\" recipe]]\n")
- (position . 4445))
+ (front-context-string . "** TODO 学习clojur")
+ (rear-context-string . "4%BE%8B2][示例2]]\n")
+ (position . 5041))
 )

@@ -1,0 +1,137 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "AccessJavaTypeBoundaryBeanTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.javatype.boundary" package nil nil [1 31])
+            ("java.util.Arrays" include nil nil [159 183])
+            ("java.util.Collection" include nil nil [184 212])
+            ("javax.naming.InitialContext" include nil nil [214 249])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [251 297])
+            ("jpa.common.util.CommonUtils" include nil nil [298 333])
+            ("jpa.javatype.boundary.AllTest" include nil nil [334 371])
+            ("jpa.javatype.boundary.SmokeTest" include nil nil [372 411])
+            ("org.junit.AfterClass" include nil nil [413 441])
+            ("org.junit.BeforeClass" include nil nil [442 471])
+            ("org.junit.Test" include nil nil [472 494])
+            ("org.junit.experimental.categories.Category" include nil nil [495 545])
+            ("org.junit.runner.RunWith" include nil nil [546 578])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [579 629])
+            ("org.junit.After" include nil nil [631 654])
+            ("org.junit.Before" include nil nil [655 679])
+            ("jpa.common.util.CollectLogPerMethod" include nil nil [680 723])
+            ("AccessJavaTypeBoundaryBeanTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [863 1830])
+                    ("AccessJavaTypeBoundaryBeanTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [1891 1897])
+                            ("expResult" variable (:type "String") (reparse-symbol formal_parameters) [1911 1927])
+                            ("message" variable (:type "String") (reparse-symbol formal_parameters) [1941 1955]))                          )
+                        (reparse-symbol class_member_declaration) [1840 2082])
+                    ("bean" variable (:type "AccessJavaTypeBoundary") (reparse-symbol class_member_declaration) [2102 2130])
+                    ("data" variable (:type "JavaTypeBoundaryEntity") (reparse-symbol class_member_declaration) [2132 2191])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [2193 2200])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [2202 2219])
+                    ("message" variable (:type "String") (reparse-symbol class_member_declaration) [2224 2239])
+                    ("testName" variable (:type "String") (reparse-symbol class_member_declaration) [2244 2260])
+                    ("appName" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2266 2310])
+                    ("collectLogPerMethod" variable
+                       (:typemodifiers ("static")
+                        :type "CollectLogPerMethod")
+                        (reparse-symbol class_member_declaration) [2314 2369])
+                    ("beforeMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2396 2485])
+                    ("afterMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2506 2598])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2602 2837])
+                    ("deploy" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2854 2986])
+                    ("testall" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3023 3574])
+                    ("smokeall" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3616 4195])
+                    ("testBooleanBoundaryCRUD" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4199 4748])
+                    ("testIntBoundaryCRUD" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4752 5263])
+                    ("testLongBoundaryCRUD" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5267 5781])
+                    ("testDoubleBoundary" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5785 6359])
+                    ("testNullInStringArray" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6363 6922])
+                    ("testStringCRUD" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6926 7441])
+                    ("testString4KSize" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7445 8126])
+                    ("testStringOver4KSize" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8130 8735])
+                    ("testStringNullToSqlNotNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8739 9204])
+                    ("undeploy" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9222 9308]))                  
+                :type "class")
+                nil [761 9311]))          
+    :file "AccessJavaTypeBoundaryBeanTest.java"
+    :pointmax 9312
+    :fsize 9747
+    :lastmodtime '(20301 60104)
+    :unmatched-syntax '((IDENTIFIER 3595 . 3604) (CLASS 3605 . 3610) (IDENTIFIER 3007 . 3014) (CLASS 3015 . 3020) (GT 861 . 862) (IDENTIFIER 812 . 823) (PUBLIC 828 . 834) (LT 852 . 853) (PAREN_BLOCK 733 . 760) (IDENTIFIER 725 . 733) (IDENTIFIER 152 . 156) (DOT 151 . 152) (IDENTIFIER 145 . 151) (DOT 144 . 145) (IDENTIFIER 139 . 144) (DOT 138 . 139) (IMPORT 121 . 127) (STATIC 128 . 134) (IDENTIFIER 135 . 138) (IDENTIFIER 109 . 119) (DOT 108 . 109) (IDENTIFIER 102 . 108) (DOT 101 . 102) (IDENTIFIER 96 . 101) (DOT 95 . 96) (IMPORT 78 . 84) (STATIC 85 . 91) (IDENTIFIER 92 . 95) (IDENTIFIER 64 . 76) (DOT 63 . 64) (IDENTIFIER 57 . 63) (DOT 56 . 57) (IDENTIFIER 51 . 56) (DOT 50 . 51) (IMPORT 33 . 39) (STATIC 40 . 46) (IDENTIFIER 47 . 50))
+    )
+   (semanticdb-table "AllTest.java"
+    :file "AllTest.java"
+    :fsize 71
+    :lastmodtime '(20301 60104)
+    )
+   (semanticdb-table "SmokeTest.java"
+    :file "SmokeTest.java"
+    :fsize 75
+    :lastmodtime '(20301 60104)
+    )
+   )
+  :file "!!10.167.157.159!TestSet!TestSet!APP!JavaEE!jpa!javatype!boundary_sql!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

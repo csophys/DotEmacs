@@ -56,3 +56,9 @@
 	)
 	)
 )
+
+;;;;;;;;;;;;定义启用paredit的函数
+
+(defun paredit-mode-enable ()
+  (paredit-mode)
+	)
