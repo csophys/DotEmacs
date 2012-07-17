@@ -1,0 +1,34 @@
+;; Object first/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "first/"
+  :tables (list 
+   (semanticdb-table "MyCapability.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.apache.ws.muse.test.simple.first" package nil nil [115 160])
+            ("org.apache.muse.core.AbstractCapability" include nil nil [162 209])
+            ("MyCapability" type
+               (:typemodifiers ("public")
+                :interfaces ("IMyCapability")
+                :superclasses "AbstractCapability"
+                :members 
+                  ( ("firstOperation" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("Param1" variable (:type "String") (reparse-symbol formal_parameters) [324 337]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [295 477]))                  
+                :type "class")
+                nil [211 480]))          
+    :file "MyCapability.java"
+    :pointmax 481
+    :fsize 480
+    :lastmodtime '(20484 3209)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!WSDM-example!JavaSource!org!apache!ws!muse!test!simple!first!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

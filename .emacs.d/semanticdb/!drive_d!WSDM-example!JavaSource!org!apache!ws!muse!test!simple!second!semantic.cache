@@ -1,0 +1,36 @@
+;; Object second/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "second/"
+  :tables (list 
+   (semanticdb-table "MyCapability.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.apache.ws.muse.test.simple.second" package nil nil [115 161])
+            ("org.apache.muse.core.AbstractCapability" include nil nil [163 210])
+            ("javax.xml.namespace.QName" include nil nil [211 244])
+            ("MyCapability" type
+               (:typemodifiers ("public")
+                :interfaces ("IMyCapability")
+                :superclasses "AbstractCapability"
+                :members 
+                  ( ("secondOperation" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("Param1" variable (:type "int") (reparse-symbol formal_parameters) [361 371])
+                            ("Param2" variable (:type "QName") (reparse-symbol formal_parameters) [373 385]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [330 523]))                  
+                :type "class")
+                nil [246 526]))          
+    :file "MyCapability.java"
+    :pointmax 527
+    :fsize 526
+    :lastmodtime '(20484 3351)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!WSDM-example!JavaSource!org!apache!ws!muse!test!simple!second!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
