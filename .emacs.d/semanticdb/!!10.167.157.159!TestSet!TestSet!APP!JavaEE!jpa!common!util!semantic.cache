@@ -1,0 +1,617 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "ThreadRunnerSingle.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.common.util" package nil nil [1 25])
+            ("ThreadRunnerSingle" type
+               (:typemodifiers ("public")
+                :superclasses "Thread"
+                :members 
+                  ( ("executeString" variable (:type "String") (reparse-symbol class_member_declaration) [83 109])
+                    ("methodName" variable (:type "MethodName") (reparse-symbol class_member_declaration) [119 141])
+                    ("sleepTime" variable (:type "int") (reparse-symbol class_member_declaration) [146 164])
+                    ("getSleepTime" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [176 226])
+                    ("setSleepTime" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [254 267]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [229 303])
+                    ("getMethodName" function
+                       (:typemodifiers ("public")
+                        :type "MethodName")
+                        (reparse-symbol class_member_declaration) [306 365])
+                    ("setMethodName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("methodName" variable (:type "MethodName") (reparse-symbol formal_parameters) [394 415]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [368 453])
+                    ("getExecuteString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [457 518])
+                    ("setExecuteString" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("executeString" variable (:type "String") (reparse-symbol formal_parameters) [550 570]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [521 614])
+                    ("run" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [617 1021]))                  
+                :type "class")
+                nil [29 1024]))          
+    :file "ThreadRunnerSingle.java"
+    :pointmax 1026
+    :fsize 1080
+    :lastmodtime '(20289 59438)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DatabaseUtilClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.common.util" package nil nil [1 25])
+            ("java.sql.SQLException" include nil nil [27 56])
+            ("javax.naming.InitialContext" include nil nil [58 93])
+            ("DatabaseUtilClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("bean" variable (:type "DatabaseUtil") (reparse-symbol class_member_declaration) [131 149])
+                    ("DatabaseUtilClient" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [152 206])
+                    ("getInstance" function
+                       (:typemodifiers ("static" "public")
+                        :type "DatabaseUtilClient")
+                        (reparse-symbol class_member_declaration) [209 295])
+                    ("runSqlStatement" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sql" variable (:type "String") (reparse-symbol formal_parameters) [326 336])
+                            ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [338 351]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [298 544])
+                    ("dropTable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [569 585]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [547 686])
+                    ("dropSequence" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("seqName" variable (:type "String") (reparse-symbol formal_parameters) [714 728]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [689 830])
+                    ("tableExists" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [860 876]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [833 1003])
+                    ("sequenceExists" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("seqName" variable (:type "String") (reparse-symbol formal_parameters) [1036 1050]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1006 1179])
+                    ("indentityExists" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [1213 1229])
+                            ("columnName" variable (:type "String") (reparse-symbol formal_parameters) [1231 1248]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1182 1391])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1394 1649]))                  
+                :type "class")
+                nil [95 1652]))          
+    :file "DatabaseUtilClient.java"
+    :pointmax 1533
+    :fsize 1734
+    :lastmodtime '(20485 128)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DatabaseUtil.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.common.util" package nil nil [1 25])
+            ("java.sql.SQLException" include nil nil [27 56])
+            ("javax.ejb.Remote" include nil nil [58 82])
+            ("DatabaseUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("runSqlStatement" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("sql" variable (:type "String") (reparse-symbol formal_parameters) [155 165])
+                            ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [166 179]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [127 201])
+                    ("dropTable" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [225 241]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [203 263])
+                    ("dropSequence" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("seqName" variable (:type "String") (reparse-symbol formal_parameters) [290 304]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [265 327])
+                    ("tableExists" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [356 372]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [329 394])
+                    ("sequenceExists" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("seqName" variable (:type "String") (reparse-symbol formal_parameters) [426 440]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [396 462])
+                    ("indentityExists" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [495 511])
+                            ("columnName" variable (:type "String") (reparse-symbol formal_parameters) [513 530]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [464 552]))                  
+                :type "interface")
+                nil [93 555]))          
+    :file "DatabaseUtil.java"
+    :pointmax 556
+    :fsize 572
+    :lastmodtime '(20289 59438)
+    :unmatched-syntax '((IDENTIFIER 84 . 91))
+    )
+   (semanticdb-table "DatabaseUtilBean.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.common.util" package nil nil [1 25])
+            ("java.sql.Connection" include nil nil [27 54])
+            ("java.sql.PreparedStatement" include nil nil [55 89])
+            ("java.sql.ResultSet" include nil nil [90 116])
+            ("java.sql.SQLException" include nil nil [117 146])
+            ("javax.annotation.PostConstruct" include nil nil [148 186])
+            ("javax.annotation.PreDestroy" include nil nil [187 222])
+            ("javax.annotation.Resource" include nil nil [223 256])
+            ("javax.ejb.Stateless" include nil nil [257 284])
+            ("javax.ejb.TransactionManagement" include nil nil [285 324])
+            ("javax.ejb.TransactionManagementType" include nil nil [325 368])
+            ("javax.sql.DataSource" include nil nil [369 397])
+            ("DatabaseUtilBean" type
+               (:typemodifiers ("public")
+                :interfaces ("DatabaseUtil")
+                :members 
+                  ( ("ds" variable
+                       (:typemodifiers ("private")
+                        :type "DataSource")
+                        (reparse-symbol class_member_declaration) [559 581])
+                    ("conn" variable
+                       (:typemodifiers ("private")
+                        :type "Connection")
+                        (reparse-symbol class_member_declaration) [583 607])
+                    ("stmt" variable (:type "PreparedStatement") (reparse-symbol class_member_declaration) [610 640])
+                    ("results" variable (:type "ResultSet") (reparse-symbol class_member_declaration) [642 667])
+                    ("initialize" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [686 846])
+                    ("cleanup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [862 1005])
+                    ("runSqlStatement" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("sql" variable (:type "String") (reparse-symbol formal_parameters) [1036 1046])
+                            ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [1048 1061]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1008 1466])
+                    ("dropTable" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [1491 1507]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1469 1705])
+                    ("dropSequence" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("seqName" variable (:type "String") (reparse-symbol formal_parameters) [1733 1747]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1708 1939])
+                    ("tableExists" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [1969 1985]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1942 2247])
+                    ("indentityExists" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tableName" variable (:type "String") (reparse-symbol formal_parameters) [2300 2316])
+                            ("columnName" variable (:type "String") (reparse-symbol formal_parameters) [2318 2335]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2269 2699])
+                    ("sequenceExists" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("seqName" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2747 2767]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2717 3073])
+                    ("cleanStmtResult" function
+                       (:throws ("SQLException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3076 3257]))                  
+                :type "class")
+                nil [465 3259]))          
+    :file "DatabaseUtilBean.java"
+    :pointmax 3260
+    :fsize 3398
+    :lastmodtime '(20289 59438)
+    :unmatched-syntax '((STRING_LITERAL 540 . 556) (IDENTIFIER 533 . 537) (EQ 538 . 539) (PAREN_BLOCK 432 . 464) (IDENTIFIER 410 . 432) (IDENTIFIER 399 . 409))
+    )
+   (semanticdb-table "CommonUtils.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.common.util" package nil nil [1 25])
+            ("java.io.BufferedReader" include nil nil [27 57])
+            ("java.io.File" include nil nil [58 78])
+            ("java.io.FileReader" include nil nil [79 105])
+            ("java.io.IOException" include nil nil [106 133])
+            ("java.sql.Connection" include nil nil [134 161])
+            ("java.text.MessageFormat" include nil nil [162 193])
+            ("java.util.Properties" include nil nil [194 222])
+            ("javax.naming.InitialContext" include nil nil [224 259])
+            ("javax.naming.NamingException" include nil nil [260 296])
+            ("CommonUtils" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("CommonUtils" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [329 357])
+                    ("adminUser" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [360 419])
+                    ("adminPasswordFile" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [421 496])
+                    ("adminCmd" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [500 560])
+                    ("appclientCmd" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [562 628])
+                    ("ijdasstart" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [788 856])
+                    ("ijdasstop" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [858 924])
+                    ("distDir" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [930 985])
+                    ("libDir" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [987 1040])
+                    ("confDir" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1042 1097])
+                    ("appGenDir" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1099 1158])
+                    ("javaeeHome" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1160 1221])
+                    ("prjClsPath" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1223 1290])
+                    ("driverjar" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1292 1353])
+                    ("driverclass" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1355 1415])
+                    ("testNo" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1417 1469])
+                    ("testLevel" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1471 1529])
+                    ("ddlDir" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1533 1726])
+                    ("iiopPort" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1730 1787])
+                    ("ijserverName" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1789 1852])
+                    ("outputBuffer" variable
+                       (:typemodifiers ("static")
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [1855 1909])
+                    ("getOutputBuffer" function
+                       (:typemodifiers ("public" "static")
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [1912 1986])
+                    ("getInitialContext" function
+                       (:throws ("NamingException")
+                        :typemodifiers ("public" "static")
+                        :type "InitialContext")
+                        (reparse-symbol class_member_declaration) [1989 2909])
+                    ("clearOutputBuffer" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2912 2992])
+                    ("getCommonUtils" function
+                       (:typemodifiers ("public" "static")
+                        :type "CommonUtils")
+                        (reparse-symbol class_member_declaration) [2995 3070])
+                    ("undeploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [3093 3107]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3073 3429])
+                    ("undeploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [3452 3466])
+                            ("dropTable" variable (:type "boolean") (reparse-symbol formal_parameters) [3468 3485]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3432 3876])
+                    ("deploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [3897 3911]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3879 4282])
+                    ("deploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [4303 4317])
+                            ("type" variable (:type "String") (reparse-symbol formal_parameters) [4319 4330]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4285 4693])
+                    ("deploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [4714 4728])
+                            ("user" variable (:type "String") (reparse-symbol formal_parameters) [4730 4741])
+                            ("passwordFile" variable (:type "String") (reparse-symbol formal_parameters) [4743 4762]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4696 5122])
+                    ("deploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [5143 5157])
+                            ("createTable" variable (:type "boolean") (reparse-symbol formal_parameters) [5159 5178]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5125 5623])
+                    ("deploy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [5644 5658])
+                            ("dropAndCreateTable" variable (:type "boolean") (reparse-symbol formal_parameters) [5660 5686])
+                            ("dummy" variable (:type "boolean") (reparse-symbol formal_parameters) [5688 5701]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5626 6178])
+                    ("startIJserver" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6181 6497])
+                    ("stopIJserver" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6500 6811])
+                    ("startDomain" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6815 7016])
+                    ("stopDomain" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7020 7218])
+                    ("setIsolation" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("connectionPool" variable (:type "String") (reparse-symbol formal_parameters) [7246 7267])
+                            ("isolationLevel" variable (:type "String") (reparse-symbol formal_parameters) [7268 7289]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7222 7733])
+                    ("runAppclient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [7761 7775]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7737 10085])
+                    ("runJavaSEclient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("jvmOption" variable (:type "String") (reparse-symbol formal_parameters) [10115 10131])
+                            ("appJAR" variable (:type "String") (reparse-symbol formal_parameters) [10132 10145]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10088 10417])
+                    ("runSystemCommand" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("cmdline" variable (:type "String") (reparse-symbol formal_parameters) [10452 10466]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10421 12363])
+                    ("isOracle" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12367 12542])
+                    ("isSql" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12552 12741])
+                    ("isSym" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12751 12931])
+                    ("getTestNo" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12938 12996])
+                    ("getTestLevel" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13006 13067])
+                    ("hasAutoGenTable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("moduleName" variable (:type "String") (reparse-symbol formal_parameters) [13103 13120])
+                            ("puName" variable (:type "String") (reparse-symbol formal_parameters) [13122 13135])
+                            ("tablename" variable (:type "String") (reparse-symbol formal_parameters) [13137 13153])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [13155 13174])
+                            ("valueColumnName" variable (:type "String") (reparse-symbol formal_parameters) [13176 13198])
+                            ("pkColumnValue" variable (:type "String") (reparse-symbol formal_parameters) [13200 13220])
+                            ("valueColumnValue" variable (:type "int") (reparse-symbol formal_parameters) [13222 13242]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13072 15695])
+                    ("hasAutoGenSequence" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("moduleName" variable (:type "String") (reparse-symbol formal_parameters) [15739 15756])
+                            ("puName" variable (:type "String") (reparse-symbol formal_parameters) [15758 15771])
+                            ("sequencename" variable (:type "String") (reparse-symbol formal_parameters) [15773 15792])
+                            ("initialValue" variable (:type "int") (reparse-symbol formal_parameters) [15794 15810])
+                            ("allocationSize" variable (:type "int") (reparse-symbol formal_parameters) [15812 15830]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [15705 17875])
+                    ("getCreateDDL" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("moduleName" variable (:type "String") (reparse-symbol formal_parameters) [17910 17927])
+                            ("puName" variable (:type "String") (reparse-symbol formal_parameters) [17929 17942]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [17885 18334])
+                    ("getDropDDL" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("moduleName" variable (:type "String") (reparse-symbol formal_parameters) [18367 18384])
+                            ("puName" variable (:type "String") (reparse-symbol formal_parameters) [18386 18399]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [18344 18649])
+                    ("getCreateTable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tablename" variable (:type "String") (reparse-symbol formal_parameters) [18688 18704])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [18706 18725])
+                            ("valueColumnName" variable (:type "String") (reparse-symbol formal_parameters) [18727 18749]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18659 18921])
+                    ("getInsertTable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tablename" variable (:type "String") (reparse-symbol formal_parameters) [18960 18976])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [18978 18997])
+                            ("valueColumnName" variable (:type "String") (reparse-symbol formal_parameters) [18999 19021])
+                            ("pkColumnValue" variable (:type "String") (reparse-symbol formal_parameters) [19023 19043])
+                            ("valueColumnValue" variable (:type "int") (reparse-symbol formal_parameters) [19045 19065]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18931 19238])
+                    ("getDeleteFromTable" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tablename" variable (:type "String") (reparse-symbol formal_parameters) [19281 19297])
+                            ("pkColumnName" variable (:type "String") (reparse-symbol formal_parameters) [19299 19318])
+                            ("pkColumnValue" variable (:type "String") (reparse-symbol formal_parameters) [19320 19340]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19248 19466])
+                    ("getCreateSequence" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sequencename" variable (:type "String") (reparse-symbol formal_parameters) [19508 19527])
+                            ("initialValue" variable (:type "int") (reparse-symbol formal_parameters) [19529 19545])
+                            ("allocationSize" variable (:type "int") (reparse-symbol formal_parameters) [19547 19565]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19476 19926])
+                    ("getDropSequence" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sequencename" variable (:type "String") (reparse-symbol formal_parameters) [19966 19985]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19936 20066])
+                    ("runAppclient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("appName" variable (:type "String") (reparse-symbol formal_parameters) [20100 20114])
+                            ("argsLine" variable (:type "String") (reparse-symbol formal_parameters) [20116 20131]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [20076 21809])
+                    ("setIsolation" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("isolationLevel" variable (:type "int") (reparse-symbol formal_parameters) [21839 21857]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21814 22463])
+                    ("restart" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22473 23055]))                  
+                :type "class")
+                nil [299 23057]))          
+    :file "CommonUtils.java"
+    :pointmax 23058
+    :fsize 23712
+    :lastmodtime '(20301 46306)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!!10.167.157.159!TestSet!TestSet!APP!JavaEE!jpa!common!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,91 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Repeatable_ReadTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.rowlock.repeatable_read" package nil nil [1 37])
+            ("java.util.Arrays" include nil nil [39 63])
+            ("java.util.Collection" include nil nil [64 92])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [94 140])
+            ("jpa.common.util.CommonUtils" include nil nil [141 176])
+            ("jpa.rowlock.repeatable_read.AllTest" include nil nil [177 220])
+            ("jpa.rowlock.repeatable_read.SmokeTest" include nil nil [221 266])
+            ("org.junit.Assert" include nil nil [268 292])
+            ("org.junit.Test" include nil nil [293 315])
+            ("org.junit.experimental.categories.Category" include nil nil [316 366])
+            ("org.junit.runner.RunWith" include nil nil [367 399])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [400 450])
+            ("org.junit.After" include nil nil [451 474])
+            ("org.junit.AfterClass" include nil nil [475 503])
+            ("org.junit.Before" include nil nil [504 528])
+            ("org.junit.BeforeClass" include nil nil [529 558])
+            ("jpa.common.util.CollectLogPerMethod" include nil nil [559 602])
+            ("Repeatable_ReadTest" type
+               (:typemodifiers ("public")
+                :superclasses "IsolationChanger"
+                :members 
+                  ( ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [754 1494])
+                    ("Repeatable_ReadTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [1539 1545])
+                            ("expResult" variable (:type "String") (reparse-symbol formal_parameters) [1559 1575])
+                            ("message" variable (:type "String") (reparse-symbol formal_parameters) [1589 1603]))                          )
+                        (reparse-symbol class_member_declaration) [1499 1730])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [1736 1743])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [1748 1765])
+                    ("message" variable (:type "String") (reparse-symbol class_member_declaration) [1770 1785])
+                    ("collectLogPerMethod" variable
+                       (:typemodifiers ("static")
+                        :type "CollectLogPerMethod")
+                        (reparse-symbol class_member_declaration) [1790 1845])
+                    ("beforeMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1866 1938])
+                    ("afterMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1959 2051])
+                    ("beforeClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2073 2159])
+                    ("testall" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2252 2335])
+                    ("smokeall" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2386 2470])
+                    ("testDeploy" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2477 2687]))                  
+                :type "class")
+                nil [639 2689]))          
+    :file "Repeatable_ReadTest.java"
+    :pointmax 2700
+    :fsize 2794
+    :lastmodtime '(20300 35640)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AllTest.java"
+    :file "AllTest.java"
+    :fsize 77
+    :lastmodtime '(20289 58984)
+    )
+   (semanticdb-table "SmokeTest.java"
+    :file "SmokeTest.java"
+    :fsize 81
+    :lastmodtime '(20289 58984)
+    )
+   )
+  :file "!!10.167.157.159!TestSet!TestSet!APP!JavaEE!jpa!rowlock!repeatable_read!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,96 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "AccessOtherGenBeanTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.pkgenerator.other" package nil nil [1 31])
+            ("java.util.Arrays" include nil nil [115 139])
+            ("java.util.Collection" include nil nil [140 168])
+            ("javax.naming.InitialContext" include nil nil [170 205])
+            ("jpa.common.runners.ParameterizedOfFnst" include nil nil [207 253])
+            ("jpa.common.util.CommonUtils" include nil nil [254 289])
+            ("jpa.common.util.DatabaseUtilClient" include nil nil [290 332])
+            ("jpa.pkgenerator.other.AllTest" include nil nil [333 370])
+            ("jpa.pkgenerator.other.SmokeTest" include nil nil [371 410])
+            ("org.junit.Test" include nil nil [412 434])
+            ("org.junit.experimental.categories.Category" include nil nil [435 485])
+            ("org.junit.runner.RunWith" include nil nil [486 518])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [519 569])
+            ("org.junit.After" include nil nil [570 593])
+            ("org.junit.AfterClass" include nil nil [594 622])
+            ("org.junit.Before" include nil nil [623 647])
+            ("org.junit.BeforeClass" include nil nil [648 677])
+            ("jpa.common.util.CollectLogPerMethod" include nil nil [678 721])
+            ("AccessOtherGenBeanTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [846 1599])
+                    ("AccessOtherGenBeanTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [1632 1638])
+                            ("expGenType" variable (:type "String") (reparse-symbol formal_parameters) [1640 1657])
+                            ("expGenName" variable (:type "String") (reparse-symbol formal_parameters) [1659 1676])
+                            ("expResult" variable (:type "String") (reparse-symbol formal_parameters) [1678 1694]))                          )
+                        (reparse-symbol class_member_declaration) [1602 1819])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [1824 1832])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [1834 1851])
+                    ("name" variable (:type "String") (reparse-symbol class_member_declaration) [1853 1865])
+                    ("expGenType" variable (:type "String") (reparse-symbol class_member_declaration) [1869 1887])
+                    ("expGenName" variable (:type "String") (reparse-symbol class_member_declaration) [1889 1907])
+                    ("data" variable (:type "OtherGenEntity") (reparse-symbol class_member_declaration) [1911 1932])
+                    ("bean" variable (:type "AccessOtherGen") (reparse-symbol class_member_declaration) [1934 1954])
+                    ("collectLogPerMethod" variable
+                       (:typemodifiers ("static")
+                        :type "CollectLogPerMethod")
+                        (reparse-symbol class_member_declaration) [1957 2012])
+                    ("beforeMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2035 2109])
+                    ("afterMethod" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2133 2227])
+                    ("beforeClass" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2251 2339])
+                    ("testCreateTwoEntityWithoutPK" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2374 4552])
+                    ("testCreateTwoEntityWithoutPK1" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4594 7250])
+                    ("lookupBean" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7254 7477]))                  
+                :type "class")
+                nil [759 7481]))          
+    :file "AccessOtherGenBeanTest.java"
+    :pointmax 7482
+    :fsize 7727
+    :lastmodtime '(20300 35196)
+    :unmatched-syntax '((IDENTIFIER 4573 . 4582) (CLASS 4583 . 4588) (IDENTIFIER 2358 . 2365) (CLASS 2366 . 2371) (GT 844 . 845) (IDENTIFIER 798 . 809) (PUBLIC 811 . 817) (LT 835 . 836) (PAREN_BLOCK 731 . 758) (IDENTIFIER 723 . 731) (IDENTIFIER 108 . 112) (DOT 107 . 108) (IDENTIFIER 101 . 107) (DOT 100 . 101) (IDENTIFIER 95 . 100) (DOT 94 . 95) (IMPORT 77 . 83) (STATIC 84 . 90) (IDENTIFIER 91 . 94) (IDENTIFIER 65 . 75) (DOT 64 . 65) (IDENTIFIER 58 . 64) (DOT 57 . 58) (IDENTIFIER 52 . 57) (DOT 51 . 52) (IMPORT 34 . 40) (STATIC 41 . 47) (IDENTIFIER 48 . 51))
+    )
+   (semanticdb-table "AllTest.java"
+    :file "AllTest.java"
+    :fsize 71
+    :lastmodtime '(20289 59180)
+    )
+   (semanticdb-table "SmokeTest.java"
+    :file "SmokeTest.java"
+    :fsize 75
+    :lastmodtime '(20289 59180)
+    )
+   )
+  :file "!!10.167.157.159!TestSet!TestSet!APP!JavaEE!jpa!pkgenerator!other!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
