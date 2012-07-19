@@ -1978,7 +1978,7 @@ See `undo-tree-mode' for more information on Undo-Tree mode.
 ;;;***
 
 ;;;### (autoloads nil nil ("el-get/el-get-install.el" "el-get/el-get.el"
-;;;;;;  "swank-clojure/swank-clojure.el") (20480 60244 562000))
+;;;;;;  "hideshow-org/hideshow-org.el") (20488 7673 342000))
 
 ;;;***
 

@@ -256,6 +256,10 @@
  )
 (define-key dos-mode-map (kbd "M-RET") 'run-current-bat)
 ;-----------------------------------------------------------------------------
+(add-to-list 'load-path "~/.emacs.d/default")
+
+(require 'hideshow-org)
+(global-set-key "\C-ch" 'hs-org/minor-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)

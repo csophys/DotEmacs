@@ -4,11 +4,12 @@
   :tables (list 
    (semanticdb-table "test.c"
     :major-mode 'c-mode
-    :tags nil
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 20]))          
     :file "test.c"
-    :pointmax 1
-    :fsize 0
-    :lastmodtime '(20325 55700)
+    :pointmax 21
+    :fsize 21
+    :lastmodtime '(20445 59261)
     :unmatched-syntax 'nil
     )
    )
