@@ -1,0 +1,94 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "TestBase.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "TestBase.java"
+    :pointmax 11985
+    :fsize 12451
+    :lastmodtime '(20298 58148)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AccessRowLock.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.rowlock.read_uncommit" package nil nil [1 35])
+            ("javax.ejb.Remote" include nil nil [37 61])
+            ("AccessRowLock" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("create" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("data" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [127 145]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [108 147])
+                    ("retrieve" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [180 186]))                          
+                        :type "RowLockEntity")
+                        (reparse-symbol interface_member_declaration) [150 188])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [211 226]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [192 229])
+                    ("updateWithResult" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [263 278]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [232 281])
+                    ("retrieveWithPessimisticLock" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [336 342])
+                            ("lockType" variable (:type "String") (reparse-symbol formal_parameters) [344 359])
+                            ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [361 374]))                          
+                        :type "RowLockPesEntity")
+                        (reparse-symbol interface_member_declaration) [284 376])
+                    ("retrieveWithPessimisticLockByNativeQuery" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [444 450])
+                            ("lockType" variable (:type "String") (reparse-symbol formal_parameters) [452 467])
+                            ("sleepAfter" variable (:type "int") (reparse-symbol formal_parameters) [469 483]))                          
+                        :type "RowLockPesEntity")
+                        (reparse-symbol interface_member_declaration) [379 486])
+                    ("retrieveWithOptimisticLock" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [541 547])
+                            ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [549 562]))                          
+                        :type "RowLockOptEntity")
+                        (reparse-symbol interface_member_declaration) [490 564])
+                    ("retrieveWithOptimisticLockByNativeQuery" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [632 638])
+                            ("sleepTime" variable (:type "int") (reparse-symbol formal_parameters) [640 653]))                          
+                        :type "RowLockOptEntity")
+                        (reparse-symbol interface_member_declaration) [568 655])
+                    ("delete" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [677 692]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [658 695]))                  
+                :type "interface")
+                nil [72 699]))          
+    :file "AccessRowLock.java"
+    :pointmax 700
+    :fsize 725
+    :lastmodtime '(20289 58998)
+    :unmatched-syntax '((IDENTIFIER 63 . 70))
+    )
+   )
+  :file "!!10.167.157.159!TestSet!TestSet!APP!JavaEE!jpa!rowlock!read_uncommitsql!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

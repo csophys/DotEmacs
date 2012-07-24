@@ -2,7 +2,55 @@
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "task/"
   :tables (list 
+    (semanticdb-table "task.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("JavaEE 6 TestSet 修改部分" section nil nil [240 2380])
+            ("><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2380 3000])
+            ("JavaEE 6 TestSet 修改部分" section (:members 
+              ( ("JavaEE 6 TestSet 修改部分" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 oracle部分" anchor nil nil [3202 3205])
+                        ("1.1 rowlock.repeatable<sub>read" anchor nil nil [3243 3246])
+                        ("1.1.1 原因" anchor nil nil [3318 3321])
+                        ("1.1.2 测试集更改" anchor nil nil [3361 3364])
+                        ("2 sqlserver部分" anchor nil nil [3430 3433])
+                        ("2.1 rowlock部分的锁时间问题" anchor nil nil [3474 3477])
+                        ("2.1.1 原因" anchor nil nil [3526 3529]))                      ) nil [3132 3659])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [4066 4701])
+                            ("1.1.2" section nil nil [4701 6011]))                          ) nil [3830 6011]))                      ) nil [3659 6011])
+                    ("2" section (:members 
+                      ( ("2.1" section (:members 
+                          ( ("2.1.1" section (:members 
+                              ( ("Validate XHTML 1.0" anchor nil nil [9145 9148]))                              ) nil [6371 9248]))                          ) nil [6185 9248]))                      ) nil [6011 9248]))                  ) nil [3056 9248]))              ) nil [3000 9248]))          
+    :file "task.html"
+    :pointmax 9248
+    :fsize 9926
+    :lastmodtime '(20489 10068)
+    :unmatched-syntax 'nil
     )
+   )
   :file "!drive_c!task!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.0"

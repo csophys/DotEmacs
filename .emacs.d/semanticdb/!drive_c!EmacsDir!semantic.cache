@@ -33,8 +33,8 @@
                 nil [165 350]))          
     :file "test.java"
     :pointmax 354
-    :fsize 419
-    :lastmodtime '(20476 56370)
+    :fsize 420
+    :lastmodtime '(20493 64732)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "Test.java"
@@ -59,15 +59,15 @@
                           ( ("args" variable
                                (:dereference 1
                                 :type "String")
-                                (reparse-symbol formal_parameters) [252 265]))                          
+                                (reparse-symbol formal_parameters) [250 263]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [228 385]))                  
+                        (reparse-symbol class_member_declaration) [226 397]))                  
                 :type "class")
-                nil [135 387]))          
+                nil [135 399]))          
     :file "Test.java"
-    :pointmax 415
-    :fsize 419
-    :lastmodtime '(20476 56370)
+    :pointmax 391
+    :fsize 420
+    :lastmodtime '(20493 64732)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "blog.html"

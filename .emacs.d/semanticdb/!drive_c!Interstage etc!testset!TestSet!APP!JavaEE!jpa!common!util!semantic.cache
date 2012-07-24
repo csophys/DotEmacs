@@ -331,6 +331,15 @@
     :lastmodtime '(20441 36965)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "ThreadRunnerSingle.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "ThreadRunnerSingle.java"
+    :pointmax 1028
+    :fsize 1083
+    :lastmodtime '(20422 56498)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_c!Interstage etc!testset!TestSet!APP!JavaEE!jpa!common!util!semantic.cache"
   :semantic-tag-version "2.0"

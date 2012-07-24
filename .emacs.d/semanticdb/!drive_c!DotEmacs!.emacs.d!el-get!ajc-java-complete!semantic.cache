@@ -1,0 +1,18 @@
+;; Object ajc-java-complete/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ajc-java-complete/"
+  :tables (list 
+   (semanticdb-table "Tags.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "Tags.java"
+    :pointmax 27038
+    :fsize 27041
+    :lastmodtime '(19770 12600)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!DotEmacs!.emacs.d!el-get!ajc-java-complete!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -95,6 +95,10 @@ j=temp; //赋值
 - 线程太多会导致控制太复杂，最终可能造成很多BUG，一个线程的瘫痪很容易导致整个进程的崩溃
  
  [[file:c:/EmacsDir/Test.java]]
+** 基本概念 graphviz 间距
+  circo一般用于需要散开的情况。
+  dot中可以用rankdir来决定布局，nodesep来决定node间距，ranksep来决定左右间距
+ [[file:c:/EmacsDir/GitDocument/MyDocument/why.dot::rankdir%3DLR%3B][file:c:/EmacsDir/GitDocument/MyDocument/why.dot::rankdir=LR;]]
 * 算法
 ** 算法 判断一个数是否是2的阶次方数
 - 基本算法：设计一个递归函数，判断是否是1，返回true.不是，是否是偶数，是就整除2，继续调用当前函数。不然就返回false.

@@ -1,0 +1,130 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "TestBase.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jpa.rowlock.read_uncommit" package nil nil [1 35])
+            ("java.util.Arrays" include nil nil [163 187])
+            ("java.util.Collection" include nil nil [188 216])
+            ("java.util.Date" include nil nil [217 239])
+            ("javax.naming.InitialContext" include nil nil [241 276])
+            ("jpa.common.util.CommonUtils" include nil nil [278 313])
+            ("jpa.common.util.MethodName" include nil nil [314 348])
+            ("jpa.common.util.ThreadRunnerSingle" include nil nil [349 391])
+            ("jpa.rowlock.read_uncommit.AllTest" include nil nil [392 433])
+            ("jpa.rowlock.read_uncommit.SmokeTest" include nil nil [434 477])
+            ("org.eclipse.persistence.config.PessimisticLock" include nil nil [479 533])
+            ("org.junit.AfterClass" include nil nil [535 563])
+            ("org.junit.Before" include nil nil [564 588])
+            ("org.junit.BeforeClass" include nil nil [589 618])
+            ("org.junit.Test" include nil nil [619 641])
+            ("org.junit.experimental.categories.Category" include nil nil [642 692])
+            ("org.junit.runners.Parameterized.Parameters" include nil nil [693 743])
+            ("TestBase" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "IsolationChanger"
+                :members 
+                  ( ("parameters" function (:constructor-flag t) (reparse-symbol class_member_declaration) [859 1822])
+                    ("TestBase" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [1861 1867])
+                            ("expResult" variable (:type "String") (reparse-symbol formal_parameters) [1881 1897])
+                            ("message" variable (:type "String") (reparse-symbol formal_parameters) [1911 1925]))                          )
+                        (reparse-symbol class_member_declaration) [1832 2052])
+                    ("id" variable (:type "int") (reparse-symbol class_member_declaration) [2058 2065])
+                    ("expResult" variable (:type "String") (reparse-symbol class_member_declaration) [2070 2087])
+                    ("message" variable (:type "String") (reparse-symbol class_member_declaration) [2092 2107])
+                    ("name" variable (:type "String") (reparse-symbol class_member_declaration) [2109 2121])
+                    ("sleepAfter" variable
+                       (:typemodifiers ("final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2124 2152])
+                    ("bean" variable (:type "AccessRowLock") (reparse-symbol class_member_declaration) [2155 2174])
+                    ("deploy" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2191 2272])
+                    ("undeploy" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2289 2374])
+                    ("lookupBean" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2388 2605])
+                    ("testall" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2648 3241])
+                    ("smokeall" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3292 3886])
+                    ("testOptimisticLock" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3890 4697])
+                    ("testPessimisticLock" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4700 5635])
+                    ("testPessimisticLockNoWait" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5638 6731])
+                    ("testPessimisticNoLock" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6734 7626])
+                    ("testPessimisticWrongValue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7629 8503])
+                    ("testPessimisticFind" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8506 9114])
+                    ("testNativeQueryLock" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9117 9837])
+                    ("testNativeQueryLockNoWait" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9840 10589])
+                    ("testNativeQueryNoLock" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10592 11325])
+                    ("checkResults" function
+                       (:arguments 
+                          ( ("p" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [11346 11361]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11328 11476])
+                    ("lockBySQL" function
+                       (:arguments 
+                          ( ("times" variable (:type "int") (reparse-symbol formal_parameters) [11494 11503]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11479 11834])
+                    ("sleep" function
+                       (:arguments 
+                          ( ("times" variable (:type "int") (reparse-symbol formal_parameters) [11848 11857]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11837 11985]))                  
+                :type "class")
+                nil [745 11988]))          
+    :file "TestBase.java"
+    :pointmax 11989
+    :fsize 12455
+    :lastmodtime '(20488 59259)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Interstage etc!testset!TestSet!APP!JavaEE!jpa!rowlock!read_uncommitsql!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
