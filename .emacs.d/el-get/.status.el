@@ -16,7 +16,7 @@
  (dired+ status "installed" recipe
 		 (:name dired+ :description "Extensions to Dired" :type emacswiki :features dired+))
  (el-get status "installed" recipe
-		 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "3.stable" :pkgname "dimitri/el-get" :features el-get :load "el-get.el"))
+		 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "3.stable" :pkgname "dimitri/el-get" :features el-get :load "el-get.el" :info "el-get.info"))
  (fuzzy status "installed" recipe
 		(:name fuzzy :website "https://github.com/m2ym/fuzzy-el" :description "Fuzzy matching utilities for GNU Emacs" :type github :pkgname "m2ym/fuzzy-el"))
  (graphviz-dot-mode status "installed" recipe

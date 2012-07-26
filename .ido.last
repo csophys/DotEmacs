@@ -34,7 +34,7 @@
  ("e:/kuaipan/" . "dotemacs/")
  ("e:/" . "kuaipan/")
  ("d:/DotEmacs/.emacs.d/el-get/auto-complete/" . "dict/")
- ("d:/DotEmacs/.emacs.d/el-get/" . "auto-complete/")
+ ("d:/DotEmacs/.emacs.d/el-get/" . "hideshow-org/")
  ("d:/DotEmacs/" . ".emacs.d/")
  ("d:/DotEmacs/.emacs.d/" . "el-get/")
  ("d:/DotEmacs/.emacs.d/" . "csophys/")
@@ -45,9 +45,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "d:/DotEmacs/.emacs.d/el-get/hideshow-org/"
+ "d:/DotEmacs/"
  "d:/clojure1.4/"
  "d:/EmacsDir/"
- "d:/DotEmacs/"
  "D:/EmacsDir/"
  "d:/DotEmacs/.emacs.d/el-get/"
  "d:/DotEmacs/.emacs.d/"
@@ -95,6 +96,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "subgit.bat"
  "entry.bat"
  "build.xml"
  "test.el"
@@ -103,18 +105,20 @@
  "test1.el"
  "test.clj"
  ".status.el"
- "test.el"
- "Test.java"
- "NewComplete.java"
- "test.java"
- "patent.org"
- "test.dot"
- "test.bat"
- "insert.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("d:/DotEmacs/.emacs.d/el-get/hideshow-org/" (20489 20152) "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/el-get/" (20489 20152) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "paredit/" "org-html5presentation/" "htmlize/" "hideshow-org/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "clojure-mode/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/" (20489 20152) "snippets/" "semanticdb/" "magit/" "init.el" "eshell/" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "auto-insert/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("d:/DotEmacs/" (20489 20152) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".history" ".gitignore" ".git/" ".emacs.d/" "../" "./")
+
+ ("c:/Users/csophys/" (20484 599) "「开始」菜单/" "Workspaces/" "Videos/" "Templates/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "ntuser.ini" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "filenamesec.asc" "filenamepub.asc" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "build.xml" "Application Data/" "AppData/" ".ssh/" ".pulse2.locator" ".overwrite" ".myeclipse-blue.properties" ".myeclipse/" ".m2/" ".idlerc/" ".freemind/" ".emacs.d/" ".bash_history" ".asadminpass" "../" "./")
+
  ("d:/clojure1.4/" (20482 57709) "test.clj" "test/" "target/" "src/" "readme.txt" "pom.xml" "epl-v10.html" "entry.bat" "doc/" "clojure.jar" "clojure.iml" "clojure-1.4.0.jar" "changes.md" "build.xml" ".gitignore" "../" "./")
 
  ("d:/EmacsDir/" (20482 43260) "test.xml" "test.dot" "test.bat" "src/" "Project/" "Java/" "classes/" "c.bat" "C/" "1.java" "../" "./")
@@ -124,12 +128,6 @@
  ("d:/DotEmacs/.emacs.d/csophys/" (20480 11892) "htmlize.el" "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("d:/EmacsDir/Java/" (20476 13597) "Test.java" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/" (20480 60541) "snippets/" "semanticdb/" "magit/" "init.el" "eshell/" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "auto-insert/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/el-get/" (20480 60246) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "paredit/" "org-html5presentation/" "htmlize/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "clojure-mode/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
-
- ("d:/DotEmacs/" (20480 60230) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".git/" ".emacs.d/" "../" "./")
 
  ("D:/EmacsDir/Java/" (20476 13597) "Test.java" "../" "./")
 
@@ -310,46 +308,6 @@
  ("e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/" (20352 23320) "tcl-mode" "scheme-mode" "ruby-mode" "python-mode" "php-mode" "javascript-mode" "java-mode" "graphviz-dot-mode" "css-mode" "clojure-mode" "c-mode" "c++-mode" "../" "./")
 
  ("e:/kuaipan/dotemacs/plugin/auto-complete/" (20352 23320) "popup.elc" "popup.el" "fuzzy.elc" "fuzzy.el" "auto-complete.elc" "auto-complete.el" "auto-complete-config.elc" "auto-complete-config.el" "ac-dict/" "../" "./")
-
- ("e:/kuaipan/dotemacs/plugin/" (20422 3031) "yasnippet.rar" "yasnippet/" "w32fullscreen/" "w32-expand/" "undotree/" "theme/" "script/" "python/" "org/" "nxhtml/" "magit/" "jdibug-0.5/" "jdee/" "jde/" "graphviz/" "elib/" "ecb/" "cedet/" "bookmark+/" "auto-complete/" "ajc-java-complete/" "../" "./")
-
- ("e:/kuaipan/dotemacs/csophys/" (20431 20364) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" "../" "./")
-
- ("e:/kuaipan/dotemacs/" (20438 3583) "_emacs.before_ecb_2.40" "_emacs" "runemacs.bat" "plugin/" "Mail/" "emacs.bmk" "csophys/" "backup/" ".semanticdb/" ".ido.last" ".history" ".eshell/" ".emacs.desktop" ".emacs.d/" "../" "./")
-
- ("e:/kuaipan/" (20371 33111) "软件/" "照片/" "文档/" "备份/" "其他/" "书籍/" "临时/" "dotemacs/" "document/" "Desktop.ini" ".klive/" ".emacs.d/" "../" "./")
-
- ("c:/task/database/linux/" (20442 45043) "symfoware.properties" "symfoware(LE).properties" "sqlserver.properties" "oracle.properties" "../" "./")
-
- ("c:/DotEmacs/.emacs.d/csophys/" (20442 63781) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
-
- ("c:/DotEmacs/.emacs.d/el-get/auto-complete/" (20442 60478) "TODO.md" "README.md" "Makefile" "etc/" "doc/" "dict/" "COPYING.GPLv3" "COPYING.FDL" "auto-complete.elc" "auto-complete.el" "auto-complete-pkg.elc" "auto-complete-pkg.el" "auto-complete-config.elc" "auto-complete-config.el" ".gitignore" ".git/" "../" "./")
-
- ("c:/Interstage etc/testset/TestSet/APP/JavaEE/connector/" (20300 24064) "要因表/" "security/" "connectionpoolvalidation/" "connectionpoolmonitoring/" "connectionpool/" "common/" "build.xml" ".svn/" "../" "./")
-
- ("c:/Interstage etc/testset/TestSet/APP/JavaEE/" (20415 19745) "transaction/" "tools/" "resources/" "jpa/" "jndi/" "db_cooperation/" "connector/" "common/" "build.xml" ".svn/" "../" "./")
-
- ("c:/DotEmacs/.emacs.d/el-get/auto-complete/dict/" (20441 22545) "tuareg-mode" "ts-mode" "tcl-mode" "sh-mode" "scheme-mode" "ruby-mode" "python-mode" "php-mode" "lua-mode" "javascript-mode" "java-mode" "erlang-mode" "css-mode" "coq-mode" "clojurescript-mode" "clojure-mode" "caml-mode" "c-mode" "c++-mode" "ada-mode" "../" "./")
-
- ("c:/DotEmacs/.emacs.d/el-get/auto-complete/doc/" (20441 22545) "style.css" "manual.txt" "manual.ja.txt" "index.txt" "index.ja.txt" "demo.txt" "changes.txt" "changes.ja.txt" "ac.png" "ac-isearch.png" "ac-fuzzy.png" "../" "./")
-
- ("c:/task/database/" (20429 52103) "windows/" "linux/" "../" "./")
-
- ("c:/emacs-24.1/bin/" (20432 34728) "zlib1.dll" "xpm4.dll" "runemacs.exe" "movemail.exe" "libXpm.dll" "libungif4.dll" "libtiff3.dll" "librle3.dll" "libpng3.dll" "libpng13.dll" "libpng12.dll" "libimage.dll" "jpeg62.dll" "hexl.exe" "glut32.dll" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "ebrowse.exe" "ddeclient.exe" "ctags.exe" "COPYING" "cmdproxy.exe" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/el-get/auto-complete/dict/" (20439 26386) "tuareg-mode" "ts-mode" "tcl-mode" "sh-mode" "scheme-mode" "ruby-mode" "python-mode" "php-mode" "lua-mode" "javascript-mode" "java-mode" "erlang-mode" "css-mode" "coq-mode" "clojurescript-mode" "clojure-mode" "caml-mode" "c-mode" "c++-mode" "ada-mode" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/el-get/auto-complete/" (20439 26399) "TODO.md" "README.md" "Makefile" "etc/" "doc/" "dict/" "COPYING.GPLv3" "COPYING.FDL" "auto-complete.elc" "auto-complete.el" "auto-complete-pkg.elc" "auto-complete-pkg.el" "auto-complete-config.elc" "auto-complete-config.el" ".gitignore" ".git/" "../" "./")
-
- ("c:/Users/csophys/" (20439 29012) "陈雷在全国水利厅局长会议上的讲话.docx" "陈雷—在全国水利系统贯彻落实中央水利工作会议精神动员大会上的讲话.docx" "「开始」菜单/" "_viminfo" "workspace/" "Videos/" "test1.gif" "Templates/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "ntuser.ini" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "gsview32.ini" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" ".ssh/" ".pulse2.locator" ".myeclipse/" ".m2/" ".kde/" ".gitk" ".gitconfig" ".freemind/" ".emacs.d/" ".bash_history" ".android/" "../" "./")
-
- ("d:/emacs-24.1-rc-bin-i386/emacs-24.1/bin/" (20438 4970) "zlib1.dll" "xpm4.dll" "runemacs.exe" "movemail.exe" "libXpm.dll" "libungif4.dll" "libtiff3.dll" "librle3.dll" "libpng3.dll" "libpng13.dll" "libpng12.dll" "libimage.dll" "jpeg62.dll" "hexl.exe" "glut32.dll" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "ebrowse.exe" "ddeclient.exe" "ctags.exe" "COPYING" "cmdproxy.exe" "../" "./")
-
- ("~/.emacs.d/" (20438 3112) "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
-
- ("c:/Users/" (19937 44666) "Public/" "desktop.ini" "Default User/" "Default/" "csophys/" "All Users/" "Administrator/" "../" "./")
-
- ("d:/emacs-24.1-rc-bin-i386/emacs-24.1/" (20424 46166) "site-lisp/" "README.W32" "README" "lisp/" "leim/" "info/" "etc/" "COPYING" "BUGS" "bin/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

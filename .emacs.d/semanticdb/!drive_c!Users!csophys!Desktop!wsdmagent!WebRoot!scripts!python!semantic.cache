@@ -1,0 +1,45 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+   (semanticdb-table "cpu.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("wmi" include nil nil [29 39])
+            ("sys" include nil nil [40 50])
+            ("getInfoByWql" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [141 142])
+                ("wql" variable nil (reparse-symbol function_parameters) [144 147]))              ) nil [124 327])
+            ("main" function nil nil [329 883])
+            ("if" code nil nil [888 925]))          
+    :file "cpu.py"
+    :pointmax 925
+    :fsize 975
+    :lastmodtime '(20175 12639)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "disk.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("wmi" include nil nil [31 41])
+            ("sys" include nil nil [42 52])
+            ("getInfoByWql" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [144 145])
+                ("wql" variable nil (reparse-symbol function_parameters) [147 150]))              ) nil [127 330])
+            ("getTotalSize" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [420 424]))              ) nil [403 536])
+            ("getFreeSize" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [625 629]))              ) nil [609 746])
+            ("main" function nil nil [748 1786])
+            ("if" code nil nil [1791 1828]))          
+    :file "disk.py"
+    :pointmax 1828
+    :fsize 1897
+    :lastmodtime '(20194 60905)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Users!csophys!Desktop!wsdmagent!WebRoot!scripts!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
