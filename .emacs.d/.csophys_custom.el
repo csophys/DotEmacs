@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(c-basic-offset 4)
  '(custom-enabled-themes nil)
  '(ecb-options-version "2.40")
  '(ecb-source-path (quote (("//10.167.157.159/TestSet" "//10.167.157.159/TestSet") ("c:" "c:") ("//10.167.157.159/TestSet" "//10.167.157.159/TestSet") ("//10.167.157.159/TestSet" "//10.167.157.159/TestSet") ("//10.167.157.159/TestSet" "//10.167.157.159/TestSet") ("//10.167.157.159/TestSet" "//10.167.157.159/TestSet") ("//10.167.157.159/TestSet" "//10.167.157.159/TestSet") ("//10.167.157.159/TestSet" "//10.167.157.159/TestSet"))))

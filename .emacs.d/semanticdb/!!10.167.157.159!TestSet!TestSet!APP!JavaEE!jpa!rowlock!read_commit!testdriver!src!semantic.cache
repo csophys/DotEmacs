@@ -89,53 +89,53 @@
                     ("testPessimisticLockNoWait" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [6277 7588])
+                        (reparse-symbol class_member_declaration) [6277 7519])
                     ("testPessimisticNoLock" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [7591 8483])
+                        (reparse-symbol class_member_declaration) [7522 8414])
                     ("testPessimisticWrongValue" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [8486 9513])
+                        (reparse-symbol class_member_declaration) [8418 9373])
                     ("testPessimisticFind" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [9516 10124])
+                        (reparse-symbol class_member_declaration) [9376 9984])
                     ("testNativeQueryLock" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [10127 10847])
+                        (reparse-symbol class_member_declaration) [9987 10707])
                     ("testNativeQueryLockNoWait" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [10850 11599])
+                        (reparse-symbol class_member_declaration) [10710 11459])
                     ("testNativeQueryNoLock" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [11602 12335])
+                        (reparse-symbol class_member_declaration) [11462 12195])
                     ("checkResults" function
                        (:arguments 
-                          ( ("p" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [12356 12371]))                          
+                          ( ("p" variable (:type "RowLockEntity") (reparse-symbol formal_parameters) [12216 12231]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [12338 12486])
+                        (reparse-symbol class_member_declaration) [12198 12346])
                     ("lockBySQL" function
                        (:arguments 
-                          ( ("times" variable (:type "int") (reparse-symbol formal_parameters) [12504 12513]))                          
+                          ( ("times" variable (:type "int") (reparse-symbol formal_parameters) [12364 12373]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [12489 12844])
+                        (reparse-symbol class_member_declaration) [12349 12704])
                     ("sleep" function
                        (:arguments 
-                          ( ("times" variable (:type "int") (reparse-symbol formal_parameters) [12858 12867]))                          
+                          ( ("times" variable (:type "int") (reparse-symbol formal_parameters) [12718 12727]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [12847 12995]))                  
+                        (reparse-symbol class_member_declaration) [12707 12855]))                  
                 :type "class")
-                nil [806 12998]))          
+                nil [806 12858]))          
     :file "TestBase.java"
-    :pointmax 12999
-    :fsize 13484
-    :lastmodtime '(20492 63911)
-    :unmatched-syntax '((IDENTIFIER 3645 . 3654) (CLASS 3655 . 3660) (IDENTIFIER 3003 . 3010) (CLASS 3011 . 3016) (GT 918 . 919) (IDENTIFIER 869 . 880) (PUBLIC 885 . 891) (LT 909 . 910) (IDENTIFIER 154 . 158) (DOT 153 . 154) (IDENTIFIER 147 . 153) (DOT 146 . 147) (IDENTIFIER 141 . 146) (DOT 140 . 141) (IMPORT 123 . 129) (STATIC 130 . 136) (IDENTIFIER 137 . 140) (IDENTIFIER 111 . 121) (DOT 110 . 111) (IDENTIFIER 104 . 110) (DOT 103 . 104) (IDENTIFIER 98 . 103) (DOT 97 . 98) (IMPORT 80 . 86) (STATIC 87 . 93) (IDENTIFIER 94 . 97) (IDENTIFIER 66 . 78) (DOT 65 . 66) (IDENTIFIER 59 . 65) (DOT 58 . 59) (IDENTIFIER 53 . 58) (DOT 52 . 53) (IMPORT 35 . 41) (STATIC 42 . 48) (IDENTIFIER 49 . 52))
+    :pointmax 12859
+    :fsize 13353
+    :lastmodtime '(20495 19618)
+    :unmatched-syntax 'nil
     )
    (semanticdb-table "AllTest.java"
     :file "AllTest.java"

@@ -1,0 +1,241 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables (list 
+   (semanticdb-table "LinkList_util.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include nil nil [1 19])
+            ("LNode" type
+               (:typedef ("LNode" type (:type "struct") nil nil)
+                :superclasses "LNode"
+                :type "typedef")
+                nil [21 96])
+            ("LinkList" type
+               (:typedef ("LNode" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "LNode"
+                :type "typedef")
+                nil [21 96])
+            ("LNode" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [48 57])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("LNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [59 78]))                  
+                :type "struct")
+                nil [21 96])
+            ("LinkList_create_head" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124 135])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [135 144]))                  
+                :type "void")
+                nil [98 145])
+            ("LinkList_create_tail" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172 183])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [183 192]))                  
+                :type "void")
+                nil [146 193])
+            ("LinkList_sort_Bubble" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [220 231]))                  
+                :type "void")
+                nil [194 232])
+            ("LinkList_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253 264]))                  
+                :type "void")
+                nil [233 265])
+            ("LinkList_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [285 296]))                  
+                :type "void")
+                nil [266 297])
+            ("swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [308 315])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [315 322]))                  
+                :type "void")
+                nil [298 323])
+            ("b" variable (:type ("LinkList" type (:type "class") nil nil)) nil [325 338])
+            ("a" variable (:type ("LinkList" type (:type "class") nil nil)) nil [325 338])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [349 358])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [359 372]))                  
+                :type "int")
+                nil [340 910])
+            ("LinkList_create_head" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [948 959])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [959 968]))                  
+                :type "void")
+                nil [922 1119])
+            ("LinkList_create_tail" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1157 1168])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1168 1177]))                  
+                :type "void")
+                nil [1131 1358])
+            ("LinkList_print" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1387 1398]))                  
+                :type "void")
+                nil [1367 1529])
+            ("LinkList_free" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1558 1569]))                  
+                :type "void")
+                nil [1539 1695])
+            ("LinkList_sort_Bubble" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1753 1764]))                  
+                :type "void")
+                nil [1727 1955])
+            ("swap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1967 1974])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1974 1981]))                  
+                :type "void")
+                nil [1957 2023]))          
+    :file "LinkList_util.c"
+    :pointmax 2026
+    :fsize 2205
+    :lastmodtime '(20498 18576)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "LinkList_util.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "LinkList_util.h"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(20498 8442)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "array_util.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "array_util.c"
+    :pointmax 232
+    :fsize 1027
+    :lastmodtime '(20496 59993)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "array_util.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MAX_LENGTH" variable (:type "int") nil [1 19])
+            ("a" variable
+               (:dereference 1
+                :type "int")
+                nil [20 30])
+            ("b" variable
+               (:dereference 1
+                :type "int")
+                nil [31 41])
+            ("c" variable
+               (:dereference 1
+                :type "int")
+                nil [42 52])
+            ("bubble_sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [70 78]))                  
+                :type "void")
+                nil [53 79])
+            ("swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [90 97])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [97 104]))                  
+                :type "void")
+                nil [80 105])
+            ("print_sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [122 130]))                  
+                :type "void")
+                nil [106 131])
+            ("array_merge" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [149 157])
+                    ("b" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [157 165]))                  
+                :type "void")
+                nil [132 166]))          
+    :file "array_util.h"
+    :pointmax 169
+    :fsize 177
+    :lastmodtime '(20496 57492)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10 19])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20 33]))                  
+                :type "int")
+                nil [1 171]))          
+    :file "test.c"
+    :pointmax 172
+    :fsize 185
+    :lastmodtime '(20498 8334)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!DotEmacs!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

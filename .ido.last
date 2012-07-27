@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("C:/EmacsDir/GitDocument/" . "MyDocument/")
  ("e:/emacs-23.4/" . "etc/")
  ("c:/swank-clojure/" . "src/")
  ("c:/Documents and Settings/Administrator/" . "デスクトップ/")
@@ -13,7 +14,7 @@
  ("/plink:isdev@10.124.174.224:/export/" . "home/")
  ("/plink:isdev@10.124.174.224:/" . "export/")
  ("c:/EmacsDir/GitDocument/" . "MyDocument/")
- ("c:/EmacsDir/" . "Clojure/")
+ ("c:/EmacsDir/" . "GitDocument/")
  ("e:/kuaipan/文档/mine/" . "English/")
  ("e:/kuaipan/文档/" . "mine/")
  ("c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/" . "text-mode/")
@@ -22,7 +23,7 @@
  ("c:/emacs-backup/dotemacs/" . "csophys/")
  ("c:/emacs-backup/" . "dotemacs/")
  ("c:/DotEmacs/.emacs.d/el-get/" . "ajc-java-complete/")
- ("C:/EmacsDir/" . "Clojure/")
+ ("C:/EmacsDir/" . "C/")
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/" . "connector/")
  ("c:/task/database/" . "linux/")
  ("c:/task/" . "database/")
@@ -45,12 +46,16 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "C:/EmacsDir/"
+ "C:/EmacsDir/C/"
+ "c:/DotEmacs/c/"
+ "c:/DotEmacs/.emacs.d/"
  "c:/DotEmacs/"
+ "c:/EmacsDir/GitDocument/MyDocument/"
+ "C:/EmacsDir/GitDocument/MyDocument/"
+ "C:/EmacsDir/"
  "c:/DotEmacs/.emacs.d/el-get/ajc-java-complete/"
  "C:/EmacsDir/Clojure/"
  "c:/DotEmacs/.emacs.d/el-get/"
- "c:/EmacsDir/GitDocument/MyDocument/"
  "d:/clojure1.4/"
  "d:/EmacsDir/"
  "d:/DotEmacs/"
@@ -72,14 +77,12 @@
  "/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/"
  "c:/task/database/linux/"
  "c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/"
- "c:/DotEmacs/.emacs.d/"
  "c:/emacs-backup/dotemacs/plugin/ecb/"
  "e:/kuaipan/dotemacs/csophys/programeExpand/"
  "e:/kuaipan/dotemacs/csophys/"
  "e:/kuaipan/文档/mine/English/"
  "e:/kuaipan/文档/mine/"
  "c:/DotEmacs/.emacs.d/snippets/"
- "C:/EmacsDir/C/"
  "c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/text-mode/"
  "c:/DotEmacs/.emacs.d/el-get/auto-complete/"
  "D:/EmacsDir/C/"
@@ -96,24 +99,42 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "test.c"
+ "array_util.h"
+ "array_util.c"
+ "array.c"
+ "LinkList_util.h"
+ "LinkList_util.c"
+ "myPaper.org.gpg"
  "Test.java"
  ".ido.last"
- "test.java"
- "WSDMIBMemail.txt"
- "entry.bat"
- "build.xml"
- "test.el"
- "csophys_function.el"
- "project.clj"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/DotEmacs/" (20493 64125) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".history" ".gitignore" ".git/" ".emacs.d/" "#.ido.last#" "../" "./")
+ ("c:/DotEmacs/" (20495 43055) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" "c/" ".ido.last" ".history" ".gitignore" ".git/" ".emacs.d/" "#.ido.last#" "../" "./")
 
- ("c:/EmacsDir/" (20493 63712) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "Business Social Network（修改）.doc" "Business Social Network.doc" "blog.org~" "blog.org" "blog.html" "../" "./")
+ ("c:/Documents and Settings/Administrator/デスクトップ/" (20495 38844) "笔试题目/" "社交.doc" "测试集手顺.txt" "已整理log/" "デスクトップ.zip" "【TECH SHOW】内存計算 .pdf" "yaheiFont_CHS.zip" "yaheiFont_CHS/" "WinSCP.lnk" "Windows Server 2008-jpa(sql_server)/" "ttermpro.exe へのショートカット.lnk" "Think_In_Java_4(完美高清中文版) (1).pdf" "TestSet.zip" "Test1.java" "Test.java" "test.doc" "SunOS-jpa-tablegeneration-2012-07-03-16-32-08/" "SunOS-jpa-tablegeneration-2012-07-03-15-31-33/" "runemacs.exe へのショートカット.lnk" "putty.exe へのショートカット.lnk" "MKReview/" "JDK_API_1_6_zh_CN.CHM" "jd-gui.exe" "jd-gui.cfg" "htmlcol.exe" "Google Chrome.lnk" "gitpng.png" "Git Bash.lnk" "FreeMind.lnk" "FeiQ へのショートカット.lnk" "feiq/" "ExecuteSQL.war" "EJBTest/" "ejb.rar" "eclipse-jee-helios-SR1-win32/" "eclipse へのショートカット.lnk" "CT_SET.zip" "CT_SET/" "cluster.jpg" "AppLocale.lnk" "../" "./")
 
- ("C:/EmacsDir/" (20493 63712) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "Business Social Network（修改）.doc" "Business Social Network.doc" "blog.org~" "blog.org" "blog.html" "../" "./")
+ ("c:/DotEmacs/c/" (20495 39138) "LinkList_util.c" "a.exe" "../" "./")
+
+ ("c:/task/" (20494 22935) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
+
+ ("C:/EmacsDir/GitDocument/MyDocument/" (20495 23509) "轮询资料.zip.gpg" "脗脰询脳脢脕脧.zip.gpg" "绀句氦缃戠粶娆茬舰涓嶈兘.pdf" "社会网络 年龄趋势.jpg" "瓒呰秺绀句氦缃戠粶鎴愬氨绀句氦鍟嗗姟浼佷笟.pdf" "璋锋瓕姝ｆ姠婕旂ぞ浜ょ綉缁滅����浜屽����.pdf" "各种形式的交互性和媒体性.jpg" "WSDMIBMemail.txt" "why.png" "why.dot" "what.png" "what.dot" "social network.jpg" "shareing something.jpg" "README.md" "patent.org" "myPaper.org.gpg" "company.org.gpg" "cluster.jpg" "an example.7z" "a method.zip" ".git/" "(chrome)bookmarks_12_07_06.html" "../" "./")
+
+ ("c:/EmacsDir/GitDocument/MyDocument/" (20495 23509) "轮询资料.zip.gpg" "脗脰询脳脢脕脧.zip.gpg" "绀句氦缃戠粶娆茬舰涓嶈兘.pdf" "社会网络 年龄趋势.jpg" "瓒呰秺绀句氦缃戠粶鎴愬氨绀句氦鍟嗗姟浼佷笟.pdf" "璋锋瓕姝ｆ姠婕旂ぞ浜ょ綉缁滅����浜屽����.pdf" "各种形式的交互性和媒体性.jpg" "WSDMIBMemail.txt" "why.png" "why.dot" "what.png" "what.dot" "social network.jpg" "shareing something.jpg" "README.md" "patent.org" "myPaper.org.gpg" "company.org.gpg" "cluster.jpg" "an example.7z" "a method.zip" ".git/" "(chrome)bookmarks_12_07_06.html" "../" "./")
+
+ ("C:/EmacsDir/C/" (20495 36931) "test.c" "a.exe" "../" "./")
+
+ ("c:/EmacsDir/C/" (20495 36931) "test.c" "a.exe" "../" "./")
+
+ ("C:/EmacsDir/GitDocument/" (20474 15160) "MyDocument/" "../" "./")
+
+ ("c:/EmacsDir/" (20493 64916) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "Business Social Network（修改）.doc" "Business Social Network.doc" "blog.org~" "blog.org" "blog.html" "#Test.java#" "../" "./")
+
+ ("C:/EmacsDir/" (20493 64916) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "Business Social Network（修改）.doc" "Business Social Network.doc" "blog.org~" "blog.org" "blog.html" "#Test.java#" "../" "./")
+
+ ("//10.167.157.159/TestSet/TestSet/APP/JavaEE/jpa/rowlock/read_commit/testdriver/src/" (20495 17599) "TestBase.java" "SmokeTestSuite.java" "SmokeTest.java" "RowLockPesEntity.java" "RowLockOptEntity.java" "RowLockEntity.java" "Read_CommittedTest.java" "IsolationChanger.java" "AllTestSuite.java" "AllTest.java" "AccessRowLock.java" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/el-get/ajc-java-complete/" (20493 63072) "Tags.java" "README.txt" "popup.el" "popup-patch.diff" "java_base.tag.bz2" "java_base.tag" "ajc-java-complete.el" "ajc-java-complete-config.el" "../" "./")
 
@@ -131,17 +152,11 @@
 
  ("c:/task/database/linux/" (20442 45043) "symfoware.properties" "symfoware(LE).properties" "sqlserver.properties" "oracle.properties" "../" "./")
 
- ("c:/task/" (20488 53083) "日本語入門 李青.ppt" "富士通：以制度.doc" "task.org~" "task.org" "task.html" "record.org" "PEAccesslog no log()/" "grizzly学习总结/" "git socks document.rar" "dot/" "database/" "command.txt~" "command.txt" "../" "./")
-
- ("c:/Documents and Settings/Administrator/デスクトップ/" (20488 59858) "笔试题目/" "社交.doc" "测试集手顺.txt" "已整理log/" "デスクトップ.zip" "【TECH SHOW】内存計算 .pdf" "yaheiFont_CHS.zip" "yaheiFont_CHS/" "WinSCP.lnk" "Windows Server 2008-jpa(sql_server)/" "ttermpro.exe へのショートカット.lnk" "Think_In_Java_4(完美高清中文版) (1).pdf" "TestSet.zip" "test.doc" "SunOS-jpa-tablegeneration-2012-07-03-16-32-08/" "SunOS-jpa-tablegeneration-2012-07-03-15-31-33/" "runemacs.exe へのショートカット.lnk" "putty.exe へのショートカット.lnk" "MKReview/" "JDK_API_1_6_zh_CN.CHM" "jd-gui.exe" "jd-gui.cfg" "htmlcol.exe" "Google Chrome.lnk" "gitpng.png" "Git Bash.lnk" "FreeMind.lnk" "FeiQ へのショートカット.lnk" "feiq/" "ExecuteSQL.war" "eclipse-jee-helios-SR1-win32/" "eclipse へのショートカット.lnk" "CT_SET.zip" "CT_SET/" "AppLocale.lnk" "../" "./")
-
  ("c:/EmacsDir/Clojure/" (20483 33832) "project.clj" "../" "./")
 
  ("C:/EmacsDir/Clojure/" (20483 33832) "project.clj" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/csophys/" (20488 44502) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
-
- ("c:/EmacsDir/GitDocument/MyDocument/" (20492 65512) "轮询资料.zip.gpg" "脗脰询脳脢脕脧.zip.gpg" "绀句氦缃戠粶娆茬舰涓嶈兘.pdf" "社会网络 年龄趋势.jpg" "瓒呰秺绀句氦缃戠粶鎴愬氨绀句氦鍟嗗姟浼佷笟.pdf" "璋锋瓕姝ｆ姠婕旂ぞ浜ょ綉缁滅����浜屽����.pdf" "各种形式的交互性和媒体性.jpg" "why.png" "why.dot" "what.png" "what.dot" "social network.jpg" "shareing something.jpg" "README.md" "patent.org" "myPaper.org.gpg" "company.org.gpg" "an example.7z" "a method.zip" ".git/" "(chrome)bookmarks_12_07_06.html" "../" "./")
 
  ("d:/clojure1.4/" (20482 57709) "test.clj" "test/" "target/" "src/" "readme.txt" "pom.xml" "epl-v10.html" "entry.bat" "doc/" "clojure.jar" "clojure.iml" "clojure-1.4.0.jar" "changes.md" "build.xml" ".gitignore" "../" "./")
 
@@ -247,8 +262,6 @@
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/dbaccess/" (20418 59023) "servlet/" "jpaandweb/" "jpa/" "initsyfdb.xml" "initdb.xml" "common/" "cmp/" "build.xml" ".svn/" "../" "./")
 
- ("C:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
-
  ("c:/Program Files/Java/jdk1.6.0_20/lib/" (20293 58473) "visualvm/" "tools.jar" "orb.idl" "jvm.lib" "jconsole.jar" "jawt.lib" "ir.idl" "htmlconverter.jar" "dt.jar" "ct.sym" "../" "./")
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/testdriver/src/" (20418 59344) "SmokeTestSuite.java" "SmokeTest.java" "CharTest.java" "AllTestSuite.java" "AllTest.java" ".svn/" "../" "./")
@@ -283,8 +296,6 @@
 
  ("c:/DotEmacs/.emacs.d/snippets/" (20446 42581) "org-mode/" "java-mode/" "graphviz-dot-mode/" "../" "./")
 
- ("c:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
-
  ("c:/DotEmacs/.emacs.d/snippets/" (20446 42581) "org-mode/" "java-mode/" "graphviz-dot-mode/" "../" "./")
 
  ("c:/DotEmacs/.emacs.d/el-get/yasnippet/" (20441 22647) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
@@ -300,14 +311,6 @@
  ("c:/emacs-backup/dotemacs/" (20442 62744) "_viminfo" "_emacs.before_ecb_2.40" "_emacs" "test.org" "test.html" "plugin/" "notes.org" "notes.html" "Mail/" "insert/" "emacs.bmk" "csophys/" "blog.org~" "blog.org" "blog.mm" "blog.html" ".ssh/" ".semanticdb/" ".ido.last" ".history" ".gitconfig" ".eshell/" ".emacs.desktop" ".emacs.d/" ".bash_history" "../" "./")
 
  ("c:/emacs-backup/" (20433 30073) "图片支持dll.rar" "WSDM/" "usages/" "undo-tree.rar" "undo-tree.el" "ThinkinJava.pdf" "socat-2.0.0-b4.rar" "socat-2.0.0-b4/" "paper/" "org-7.8.09.zip" "org-7.8.09/" "muse-2.2.0-src/" "HjDict(ALL)/" "grep-2.5.1-2-bin.exe" "graphviz-dot-mode" "graphviz-2.28.0.msi" "git-emacs/" "gcc3.4.5/" "gcc-core-4.5.0_20100311-2-mingw32-bin/" "FreeMind-Windows-Installer-0.9.0-max.exe" "findutils-4.2.20-2.exe" "Emacsplus_Eclipse_Plug-in.maff.zip" "Emacsplus_Eclipse_Plug-in.maff/" "emacsplus/" "emacs.reg" "emacs.d.rar" "emacs-23.4-bin-i386.zip" "el-get/" "dotemacs.rar" "dotemacs/" "diffutils-2.8.7-1.exe" "C程序设计语言_第2版(高清).pdf" "Consolas/" "com.mulgasoft.emacsplus_3.6.2.zip" "bash4.0-中文文档.pdf" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/csophys/" (20445 49057) "csophys_writingStyle.elc" "csophys_writingStyle.el" "csophys_function.elc" "csophys_function.el" "../" "./")
-
- ("d:/DotEmacs/.emacs.d/" (20445 52943) "tramp" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
-
- ("c:/DotEmacs/" (20446 32745) "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
-
- ("D:/EmacsDir/C/" (20445 47101) "test.c" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
