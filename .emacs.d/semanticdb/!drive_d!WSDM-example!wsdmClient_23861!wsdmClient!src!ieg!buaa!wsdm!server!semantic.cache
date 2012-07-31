@@ -1,0 +1,250 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables (list 
+   (semanticdb-table "Client.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("ieg.buaa.wsdm.server" package nil nil [1 30])
+            ("ieg.buaa.wsdm.remote.ServerClient" include nil nil [32 73])
+            ("java.io.StringReader" include nil nil [75 103])
+            ("java.net.URI" include nil nil [104 124])
+            ("javax.xml.namespace.QName" include nil nil [126 159])
+            ("org.apache.muse.util.xml.XmlUtils" include nil nil [161 202])
+            ("org.apache.muse.ws.addressing.EndpointReference" include nil nil [203 258])
+            ("org.apache.muse.ws.addressing.soap.SoapFault" include nil nil [259 311])
+            ("org.apache.muse.ws.metadata.remote.MetadataExchangeClient" include nil nil [312 377])
+            ("org.dom4j.Document" include nil nil [378 404])
+            ("org.dom4j.DocumentException" include nil nil [405 440])
+            ("org.dom4j.Element" include nil nil [441 466])
+            ("org.dom4j.io.SAXReader" include nil nil [467 497])
+            ("Client" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("PROPERTIES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [523 955])
+                    ("_METHOD_NAMES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [969 1293])
+                    ("_REQUEST_NAMES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [1297 1741])
+                    ("PARAM" variable
+                       (:dereference 2
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1743 1854])
+                    ("PARAM_QNAME" variable
+                       (:dereference 2
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [1858 2298])
+                    ("contextPath" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2304 2369])
+                    ("port" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2371 2395])
+                    ("ip" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2397 2431])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2459 2472]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2435 4334])
+                    ("getLocalAddress" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ip" variable (:type "String") (reparse-symbol formal_parameters) [4373 4382])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [4383 4391])
+                            ("contextPath" variable (:type "String") (reparse-symbol formal_parameters) [4392 4410]))                          
+                        :type "URI")
+                        (reparse-symbol class_member_declaration) [4339 4809]))                  
+                :type "class")
+                nil [499 4813]))          
+    :file "Client.java"
+    :pointmax 4814
+    :fsize 4939
+    :lastmodtime '(20029 16617)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Windows.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("ieg.buaa.wsdm.server" package nil nil [1 30])
+            ("ieg.buaa.wsdm.remote.ServerClient" include nil nil [32 73])
+            ("java.io.StringReader" include nil nil [75 103])
+            ("java.net.URI" include nil nil [104 124])
+            ("java.util.Date" include nil nil [125 147])
+            ("javax.xml.namespace.QName" include nil nil [150 183])
+            ("org.apache.muse.util.xml.XmlUtils" include nil nil [185 226])
+            ("org.apache.muse.ws.addressing.EndpointReference" include nil nil [227 282])
+            ("org.apache.muse.ws.addressing.soap.SoapFault" include nil nil [283 335])
+            ("org.apache.muse.ws.metadata.remote.MetadataExchangeClient" include nil nil [336 401])
+            ("org.dom4j.Document" include nil nil [402 428])
+            ("org.dom4j.DocumentException" include nil nil [429 464])
+            ("org.dom4j.Element" include nil nil [465 490])
+            ("org.dom4j.io.SAXReader" include nil nil [491 521])
+            ("Windows" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("_METHOD_NAMES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [549 635])
+                    ("_REQUEST_NAMES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [639 752])
+                    ("PARAM" variable
+                       (:dereference 2
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [754 821])
+                    ("PARAM_QNAME" variable
+                       (:dereference 2
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [825 1017])
+                    ("contextPath" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1023 1081])
+                    ("port" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1083 1107])
+                    ("ip" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1109 1143])
+                    ("main" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1174 1187]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1150 3041])
+                    ("getLocalAddress" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ip" variable (:type "String") (reparse-symbol formal_parameters) [3080 3089])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [3090 3098])
+                            ("contextPath" variable (:type "String") (reparse-symbol formal_parameters) [3099 3117]))                          
+                        :type "URI")
+                        (reparse-symbol class_member_declaration) [3046 3516]))                  
+                :type "class")
+                nil [523 3520]))          
+    :file "Windows.java"
+    :pointmax 3521
+    :fsize 3629
+    :lastmodtime '(20194 15211)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "TomcatClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("ieg.buaa.wsdm.server" package nil nil [1 30])
+            ("ieg.buaa.wsdm.remote.ServerClient" include nil nil [32 73])
+            ("java.io.StringReader" include nil nil [75 103])
+            ("java.net.URI" include nil nil [104 124])
+            ("javax.xml.namespace.QName" include nil nil [126 159])
+            ("org.apache.muse.util.xml.XmlUtils" include nil nil [161 202])
+            ("org.apache.muse.ws.addressing.EndpointReference" include nil nil [203 258])
+            ("org.apache.muse.ws.addressing.soap.SoapFault" include nil nil [259 311])
+            ("org.apache.muse.ws.metadata.remote.MetadataExchangeClient" include nil nil [312 377])
+            ("org.dom4j.Document" include nil nil [378 404])
+            ("org.dom4j.DocumentException" include nil nil [405 440])
+            ("org.dom4j.Element" include nil nil [441 466])
+            ("org.dom4j.io.SAXReader" include nil nil [467 497])
+            ("TomcatClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("PROPERTIES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [529 788])
+                    ("_METHOD_NAMES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [792 915])
+                    ("_REQUEST_NAMES" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [919 1094])
+                    ("PARAM" variable
+                       (:dereference 2
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1096 1132])
+                    ("PARAM_QNAME" variable
+                       (:dereference 2
+                        :typemodifiers ("public")
+                        :type "QName")
+                        (reparse-symbol class_member_declaration) [1136 1201])
+                    ("contextPath" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1207 1271])
+                    ("port" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1273 1297])
+                    ("ip" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1299 1333])
+                    ("main" function
+                       (:throws ("SoapFault")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1361 1374]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1337 3203])
+                    ("getLocalAddress" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ip" variable (:type "String") (reparse-symbol formal_parameters) [3242 3251])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [3252 3260])
+                            ("contextPath" variable (:type "String") (reparse-symbol formal_parameters) [3261 3279]))                          
+                        :type "URI")
+                        (reparse-symbol class_member_declaration) [3208 3678]))                  
+                :type "class")
+                nil [499 3682]))          
+    :file "TomcatClient.java"
+    :pointmax 3683
+    :fsize 3793
+    :lastmodtime '(20087 30600)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!WSDM-example!wsdmClient_23861!wsdmClient!src!ieg!buaa!wsdm!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
