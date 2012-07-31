@@ -66,6 +66,16 @@ rm -r -f auto-complete
 git clone git://github.com/m2ym/auto-complete.git
 ) 
 
+echo "==============================git hideshow-org=============================="
+if exist hideshow-org\hideshow-org.el (
+echo "hideshow-org已存在"
+) else (
+echo "hideshow-org不存在"
+rm -r -f hideshow-org
+git clone git://github.com/secelis/hideshow-org.git
+) 
+
+
 
 echo "git all successfully!"
 pause

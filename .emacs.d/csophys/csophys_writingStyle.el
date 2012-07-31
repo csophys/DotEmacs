@@ -81,9 +81,9 @@
 ;------------------------------------------------------------------------------
 (semantic-mode 1)
 (global-semantic-idle-scheduler-mode t)
-(global-semanticdb-minor-mode t)
+;(global-semanticdb-minor-mode t)
 (global-semantic-idle-summary-mode t)
-(global-semantic-idle-completions-mode t)
+;(global-semantic-idle-completions-mode t)
 (global-semantic-highlight-func-mode t)
 (global-semantic-decoration-mode t)
 ;------------------------------------------------------------------------------
@@ -109,7 +109,7 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 ;;;;增加ac-modes的
 (setq ac-modes
-      (append ac-modes '(org-mode objc-mode jde-mode sql-mode
+      (append ac-modes '( objc-mode jde-mode sql-mode
 								  eshell-mode shell-mode
                                   change-log-mode text-mode
                                   makefile-gmake-mode makefile-bsdmake-mo
@@ -261,6 +261,11 @@
 (require 'hideshow-org)
 (global-set-key "\C-ch" 'hs-org/minor-mode)
 
+;ajc--------------------------------------------------------------------------
+(add-to-list 'load-path  "~/.emacs.d/el-get/ajc-java-complete/")
+ (require 'ajc-java-complete-config)
+(add-hook 'java-mode-hook 'ajc-java-complete-mode)
+(setq ajc-tag-file "~/.emacs.d/el-get/ajc-java-complete/java_base.tag") 
 ;;;;;;;;;;;;;;;;;;;;;;;;一些常用按键的绑定;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key [(f9)] 'quick-compile)
 (define-key global-map [f12] 'org-remember);设置f12绑定org-remember

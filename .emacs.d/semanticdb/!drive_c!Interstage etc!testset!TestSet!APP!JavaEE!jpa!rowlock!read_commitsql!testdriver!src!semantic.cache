@@ -1,0 +1,28 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "TestBase.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "TestBase.java"
+    :pointmax 12950
+    :fsize 13003
+    :lastmodtime '(20495 20806)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AllTest.java"
+    :file "AllTest.java"
+    :fsize 73
+    :lastmodtime '(20300 24089)
+    )
+   (semanticdb-table "SmokeTest.java"
+    :file "SmokeTest.java"
+    :fsize 77
+    :lastmodtime '(20300 24089)
+    )
+   )
+  :file "!drive_c!Interstage etc!testset!TestSet!APP!JavaEE!jpa!rowlock!read_commitsql!testdriver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

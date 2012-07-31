@@ -1,0 +1,140 @@
+;; Object デスクトップ/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "デスクトップ/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include nil nil [1 19])
+            ("LNode" type
+               (:typedef ("LNode" type (:type "struct") nil nil)
+                :superclasses "LNode"
+                :type "typedef")
+                nil [23 98])
+            ("LinkList" type
+               (:typedef ("LNode" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "LNode"
+                :type "typedef")
+                nil [23 98])
+            ("LNode" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [50 59])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("LNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [61 80]))                  
+                :type "struct")
+                nil [23 98])
+            ("LinkList_create_head" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126 137])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [137 146]))                  
+                :type "void")
+                nil [100 147])
+            ("LinkList_create_tail" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174 185])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [185 194]))                  
+                :type "void")
+                nil [148 195])
+            ("LinkList_sort_Bubble" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [222 233]))                  
+                :type "void")
+                nil [196 234])
+            ("LinkList_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [255 266]))                  
+                :type "void")
+                nil [235 267])
+            ("LinkList_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [287 298]))                  
+                :type "void")
+                nil [268 299])
+            ("swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [310 317])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [317 324]))                  
+                :type "void")
+                nil [300 325])
+            ("a2" variable (:type ("LinkList" type (:type "class") nil nil)) nil [327 346])
+            ("a1" variable (:type ("LinkList" type (:type "class") nil nil)) nil [327 346])
+            ("b" variable (:type ("LinkList" type (:type "class") nil nil)) nil [327 346])
+            ("a" variable (:type ("LinkList" type (:type "class") nil nil)) nil [327 346])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [357 366])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [367 380]))                  
+                :type "int")
+                nil [348 921])
+            ("LinkList_create_head" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [959 970])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [970 979]))                  
+                :type "void")
+                nil [933 1130])
+            ("LinkList_create_tail" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1168 1179])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1179 1188]))                  
+                :type "void")
+                nil [1142 1369])
+            ("LinkList_print" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1398 1409]))                  
+                :type "void")
+                nil [1378 1540])
+            ("LinkList_free" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1569 1580]))                  
+                :type "void")
+                nil [1550 1706])
+            ("LinkList_sort_Bubble" function
+               (:arguments 
+                  ( ("a" variable (:type ("LinkList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1764 1775]))                  
+                :type "void")
+                nil [1738 1972])
+            ("swap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1984 1991])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1991 1998]))                  
+                :type "void")
+                nil [1974 2040]))          
+    :file "test.c"
+    :pointmax 2041
+    :fsize 2227
+    :lastmodtime '(20498 17523)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Documents and Settings!Administrator!デスクトップ!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

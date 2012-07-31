@@ -4,21 +4,11 @@
   :tables (list 
    (semanticdb-table "test.c"
     :major-mode 'c-mode
-    :tags 
-        '( ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10 19])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [20 33]))                  
-                :type "int")
-                nil [1 230]))          
+    :tags nil
     :file "test.c"
-    :pointmax 53
-    :fsize 244
-    :lastmodtime '(20446 49628)
+    :pointmax 317
+    :fsize 325
+    :lastmodtime '(20495 43178)
     :unmatched-syntax 'nil
     )
    )

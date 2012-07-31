@@ -33,8 +33,8 @@
                 nil [165 350]))          
     :file "test.java"
     :pointmax 354
-    :fsize 419
-    :lastmodtime '(20476 56370)
+    :fsize 420
+    :lastmodtime '(20493 64732)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "Test.java"
@@ -59,15 +59,15 @@
                           ( ("args" variable
                                (:dereference 1
                                 :type "String")
-                                (reparse-symbol formal_parameters) [252 265]))                          
+                                (reparse-symbol formal_parameters) [250 263]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [228 385]))                  
+                        (reparse-symbol class_member_declaration) [226 397]))                  
                 :type "class")
-                nil [135 387]))          
+                nil [135 399]))          
     :file "Test.java"
-    :pointmax 415
-    :fsize 419
-    :lastmodtime '(20476 56370)
+    :pointmax 391
+    :fsize 420
+    :lastmodtime '(20493 64732)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "blog.html"
@@ -104,6 +104,50 @@
     :fsize 16266
     :lastmodtime '(20478 35742)
     :unmatched-syntax 'nil
+    )
+   (semanticdb-table "a.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 37])
+            ("list_entry" variable (:constant-flag t) nil [259 269])
+            ("list_head" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [376 399])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [404 427]))                  
+                :type "struct")
+                nil [353 430])
+            ("test_list" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [450 459])
+                    ("list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [461 483]))                  
+                :type "struct")
+                nil [431 486])
+            ("main" function (:type "int") nil [487 645]))          
+    :file "a.c"
+    :pointmax 646
+    :fsize 674
+    :lastmodtime '(20497 62483)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("list_entry" (spp-arg-list ("ptr" "type" "member") 269 . 288) . ((semantic-list "((type *)((char *)(ptr)-(unsigned long)(&((type *)0)->member)))" 289 . 352)))
+          )
+
     )
    )
   :file "!drive_c!EmacsDir!semantic.cache"

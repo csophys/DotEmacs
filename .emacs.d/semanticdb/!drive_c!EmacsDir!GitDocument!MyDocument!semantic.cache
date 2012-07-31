@@ -1,0 +1,9 @@
+;; Object MyDocument/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MyDocument/"
+  :tables (list 
+    )
+  :file "!drive_c!EmacsDir!GitDocument!MyDocument!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

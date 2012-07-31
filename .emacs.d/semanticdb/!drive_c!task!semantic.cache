@@ -2,6 +2,35 @@
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "task/"
   :tables (list 
+   (semanticdb-table "task.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("connection测试情况" section nil nil [240 2366])
+            ("*///-->" section nil nil [2366 2986])
+            ("connection测试情况" section (:members 
+              ( ("connection测试情况" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 文のタイムアウト时间" anchor nil nil [3181 3184])
+                        ("1.1 测试程序" anchor nil nil [3224 3227])
+                        ("1.1.1 手顺" anchor nil nil [3265 3268])
+                        ("1.2 server.log出错信息" anchor nil nil [3320 3323])
+                        ("2 connection プーリングコネクションのアイドルタイムアウト時間" anchor nil nil [3383 3386])
+                        ("2.1 测试程序" anchor nil nil [3451 3454])
+                        ("2.2 测试结果" anchor nil nil [3492 3495]))                      ) nil [3111 3611])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [6445 6689]))                          ) nil [3784 6689])
+                        ("1.2" section nil nil [6689 11967]))                      ) nil [3611 11967])
+                    ("2" section (:members 
+                      ( ("2.1" section nil nil [12165 13885])
+                        ("2.2" section (:members 
+                          ( ("Validate XHTML 1.0" anchor nil nil [14359 14362]))                          ) nil [13885 14458]))                      ) nil [11967 14458]))                  ) nil [3042 14458]))              ) nil [2986 14458]))          
+    :file "task.html"
+    :pointmax 14458
+    :fsize 15287
+    :lastmodtime '(20494 22975)
+    :unmatched-syntax 'nil
+    )
     )
   :file "!drive_c!task!semantic.cache"
   :semantic-tag-version "2.0"
