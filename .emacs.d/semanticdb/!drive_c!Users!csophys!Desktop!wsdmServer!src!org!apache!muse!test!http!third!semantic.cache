@@ -1,0 +1,44 @@
+;; Object third/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "third/"
+  :tables (list 
+   (semanticdb-table "ThirdCapabilityImpl.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.apache.muse.test.http.third" package nil nil [782 822])
+            ("java.io.BufferedReader" include nil nil [824 854])
+            ("java.io.FileReader" include nil nil [855 881])
+            ("java.io.IOException" include nil nil [882 909])
+            ("java.util.Collection" include nil nil [910 938])
+            ("java.util.Iterator" include nil nil [939 965])
+            ("javax.xml.namespace.QName" include nil nil [967 1000])
+            ("org.apache.muse.util.MultiMap" include nil nil [1002 1039])
+            ("org.apache.muse.ws.addressing.soap.SoapFault" include nil nil [1040 1092])
+            ("org.apache.muse.ws.resource.impl.AbstractWsResourceCapability" include nil nil [1093 1162])
+            ("org.apache.muse.test.http.HttpServer" include nil nil [1164 1208])
+            ("org.apache.muse.ws.resource.basefaults.BaseFault" include nil nil [1209 1265])
+            ("ThirdCapabilityImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("ThirdCapability")
+                :superclasses "AbstractWsResourceCapability"
+                :members 
+                  ( ("thirdOperation" function
+                       (:throws ("BaseFault")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("Param1" variable (:type "String") (reparse-symbol formal_parameters) [1412 1425]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1383 1493]))                  
+                :type "class")
+                nil [1267 1503]))          
+    :file "ThirdCapabilityImpl.java"
+    :pointmax 1504
+    :fsize 1503
+    :lastmodtime '(20027 64468)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Users!csophys!Desktop!wsdmServer!src!org!apache!muse!test!http!third!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

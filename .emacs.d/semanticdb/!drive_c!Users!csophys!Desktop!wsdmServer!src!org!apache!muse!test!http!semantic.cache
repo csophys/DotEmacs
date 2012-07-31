@@ -1,0 +1,63 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables (list 
+   (semanticdb-table "HttpServer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.apache.muse.test.http" package nil nil [782 816])
+            ("javax.xml.namespace.QName" include nil nil [818 851])
+            ("org.apache.muse.ws.resource.WsResourceCapability" include nil nil [853 909])
+            ("org.apache.muse.ws.resource.basefaults.BaseFault" include nil nil [910 966])
+            ("HttpServer" type
+               (:typemodifiers ("public")
+                :interfaces ("WsResourceCapability")
+                :members 
+                  ( ("NAMESPACE_URI" variable (:type "String") (reparse-symbol interface_member_declaration) [1031 1099])
+                    ("PREFIX" variable (:type "String") (reparse-symbol interface_member_declaration) [1104 1126])
+                    ("PROPERTIES" variable
+                       (:dereference 1
+                        :type "QName")
+                        (reparse-symbol interface_member_declaration) [1132 1259])
+                    ("getName" function
+                       (:throws ("BaseFault")
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [1274 1316])
+                    ("getPort" function
+                       (:throws ("BaseFault")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [1326 1365])
+                    ("start" function
+                       (:throws ("BaseFault")
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1375 1413])
+                    ("stop" function
+                       (:throws ("BaseFault")
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1423 1460])
+                    ("firstOperation" function
+                       (:throws ("BaseFault")
+                        :arguments 
+                          ( ("param1" variable (:type "String") (reparse-symbol formal_parameters) [1485 1498]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [1463 1517])
+                    ("secondOperation" function
+                       (:throws ("BaseFault")
+                        :arguments 
+                          ( ("param1" variable (:type "String") (reparse-symbol formal_parameters) [1543 1556])
+                            ("param2" variable (:type "String") (reparse-symbol formal_parameters) [1557 1570]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [1520 1589]))                  
+                :type "interface")
+                nil [968 1591]))          
+    :file "HttpServer.java"
+    :pointmax 1592
+    :fsize 1591
+    :lastmodtime '(20027 64361)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Users!csophys!Desktop!wsdmServer!src!org!apache!muse!test!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,57 @@
+;; Object simple/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "simple/"
+  :tables (list 
+   (semanticdb-table "SimpleTestClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.apache.muse.test.simple" package nil nil [782 818])
+            ("java.net.InetAddress" include nil nil [820 848])
+            ("java.net.URI" include nil nil [849 869])
+            ("java.net.UnknownHostException" include nil nil [870 907])
+            ("javax.wsdl.factory.WSDLFactory" include nil nil [909 947])
+            ("javax.xml.namespace.QName" include nil nil [948 981])
+            ("org.w3c.dom.Element" include nil nil [983 1010])
+            ("org.apache.muse.core.routing.CounterResourceIdFactory" include nil nil [1012 1073])
+            ("org.apache.muse.core.routing.ResourceIdFactory" include nil nil [1074 1128])
+            ("org.apache.muse.ws.addressing.EndpointReference" include nil nil [1129 1184])
+            ("org.apache.muse.ws.metadata.remote.MetadataExchangeClient" include nil nil [1185 1250])
+            ("SimpleTestClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("addReferenceParameter" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("epr" variable (:type "EndpointReference") (reparse-symbol formal_parameters) [1706 1727]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1665 1949])
+                    ("getLocalAddress" function
+                       (:throws ("UnknownHostException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("contextPath" variable (:type "String") (reparse-symbol formal_parameters) [1993 2011])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [2013 2021]))                          
+                        :type "URI")
+                        (reparse-symbol class_member_declaration) [1959 2508])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2542 2555]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2518 4152]))                  
+                :type "class")
+                nil [1629 4154]))          
+    :file "SimpleTestClient.java"
+    :pointmax 4155
+    :fsize 4279
+    :lastmodtime '(17924 29796)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!muse-2.2.0-bin!samples!j2ee!simple!src!org!apache!muse!test!simple!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
