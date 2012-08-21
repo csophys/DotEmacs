@@ -43,7 +43,7 @@
 (defun quick-compile ()  
 "A quick compile funciton for C++"  
 (interactive)  
-(compile (concat "gcc " (buffer-name (current-buffer))))
+(compile (concat "gcc -std=c99 " (buffer-name (current-buffer))))
 (switch-to-buffer-other-window "*compilation*")
 (sleep-for 0 1000)
 
