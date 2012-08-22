@@ -23,6 +23,26 @@
     :lastmodtime '(20503 52241)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "CPU.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 137]))          
+    :file "CPU.c"
+    :pointmax 138
+    :fsize 147
+    :lastmodtime '(20530 57159)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!drive_d!DotEmacs!c!semantic.cache"
   :semantic-tag-version "2.0"

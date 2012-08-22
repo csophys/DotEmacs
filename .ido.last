@@ -2,9 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
+<<<<<<< HEAD
  ("d:/EmacsDir/" . "C/")
  ("d:/" . "DotEmacs/")
  ("C:/EmacsDir/GitDocument/" . "MyDocument/")
+=======
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
  ("e:/emacs-23.4/" . "etc/")
  ("c:/swank-clojure/" . "src/")
  ("c:/Documents and Settings/Administrator/" . "デスクトップ/")
@@ -16,7 +19,7 @@
  ("/plink:isdev@10.124.174.224:/export/" . "home/")
  ("/plink:isdev@10.124.174.224:/" . "export/")
  ("c:/EmacsDir/GitDocument/" . "MyDocument/")
- ("c:/EmacsDir/" . "GitDocument/")
+ ("c:/EmacsDir/" . "Clojure/")
  ("e:/kuaipan/文档/mine/" . "English/")
  ("e:/kuaipan/文档/" . "mine/")
  ("c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/" . "text-mode/")
@@ -26,8 +29,11 @@
  ("c:/emacs-backup/" . "dotemacs/")
  ("c:/DotEmacs/.emacs.d/el-get/" . "el-get/")
  ("C:/EmacsDir/" . "Clojure/")
+<<<<<<< HEAD
  ("c:/DotEmacs/.emacs.d/el-get/" . "ajc-java-complete/")
  ("C:/EmacsDir/" . "C/")
+=======
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/" . "connector/")
  ("c:/task/database/" . "linux/")
  ("c:/task/" . "database/")
@@ -40,7 +46,7 @@
  ("e:/" . "kuaipan/")
  ("d:/DotEmacs/.emacs.d/el-get/auto-complete/" . "dict/")
  ("d:/DotEmacs/.emacs.d/el-get/" . "hideshow-org/")
- ("d:/DotEmacs/" . ".emacs.d/")
+ ("d:/DotEmacs/" . "c/")
  ("d:/DotEmacs/.emacs.d/" . "el-get/")
  ("d:/DotEmacs/.emacs.d/" . "csophys/")
  ("c:/" . "EmacsDir/")
@@ -51,6 +57,7 @@
 ;; ----- ido-work-directory-list -----
 (
  "d:/DotEmacs/"
+<<<<<<< HEAD
  "d:/EmacsDir/C/"
  "D:/EmacsDir/C/"
  "d:/EmacsDir/Java/"
@@ -67,17 +74,31 @@
  "c:/DotEmacs/.emacs.d/el-get/ajc-java-complete/"
  "C:/EmacsDir/Clojure/"
  "c:/DotEmacs/.emacs.d/el-get/"
+=======
+ "d:/DotEmacs/c/"
+ "d:/DotEmacs/.emacs.d/el-get/hideshow-org/"
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
  "d:/clojure1.4/"
  "d:/EmacsDir/"
  "D:/EmacsDir/"
  "d:/DotEmacs/.emacs.d/el-get/"
  "d:/DotEmacs/.emacs.d/"
+<<<<<<< HEAD
+=======
+ "d:/EmacsDir/Java/"
+ "D:/EmacsDir/Java/"
+ "C:/EmacsDir/"
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
  "c:/DotEmacs/.emacs.d/csophys/"
+ "C:/EmacsDir/Clojure/"
  "c:/EmacsDir/Clojure/"
  "c:/"
+ "c:/DotEmacs/.emacs.d/el-get/"
+ "c:/EmacsDir/GitDocument/MyDocument/"
  "c:/EmacsDir/"
  "c:/DotEmacs/.emacs.d/auto-insert/"
  "c:/Documents and Settings/Administrator/デスクトップ/"
+ "c:/DotEmacs/"
  "d:/DotEmacs/.emacs.d/csophys/"
  "c:/Documents and Settings/Administrator/"
  "c:/emacs-backup/dotemacs/csophys/programeExpand/"
@@ -85,12 +106,14 @@
  "/plink:isdev@10.124.174.224:/export/home/TestSet/APP/JavaEE/common/"
  "c:/task/database/linux/"
  "c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/"
+ "c:/DotEmacs/.emacs.d/"
  "c:/emacs-backup/dotemacs/plugin/ecb/"
  "e:/kuaipan/dotemacs/csophys/programeExpand/"
  "e:/kuaipan/dotemacs/csophys/"
  "e:/kuaipan/文档/mine/English/"
  "e:/kuaipan/文档/mine/"
  "c:/DotEmacs/.emacs.d/snippets/"
+ "C:/EmacsDir/C/"
  "c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/text-mode/"
  "c:/DotEmacs/.emacs.d/el-get/auto-complete/"
  "e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/"
@@ -105,6 +128,7 @@
 ;; ----- ido-work-file-list -----
 (
  "study.org"
+<<<<<<< HEAD
  "test.c"
  "atoi.c"
  "fibonacci.c"
@@ -114,10 +138,21 @@
  "test.java"
  "myPaper.org.gpg"
  "subgit.bat"
+=======
+ "subgit.bat"
+ "entry.bat"
+ "build.xml"
+ "test.el"
+ "csophys_function.el"
+ "project.clj"
+ "test1.el"
+ "test.clj"
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+<<<<<<< HEAD
  ("e:/本科毕业设计/毕业设计（集成）/" (19476 25046) "链接回填.txt" "简单c语言的编译器.jar" "简单c语言的编译器.exe" "毕业设计文档/" "毕 业 设 计.doc" "syn.txt" "stringStack.h" "stringStack.c" "Scaner.txt" "scan.h" "scan.c" "outlook.java" "outlook.class" "outlook$3.class" "outlook$2.class" "outlook$1.class" "outlook$1$1.class" "out3.txt" "out2.txt" "out1.txt" "My_Compiler.plg" "My_Compiler.opt" "My_Compiler.ncb" "My_Compiler.exe" "My_Compiler.dsw" "My_Compiler.dsp" "My_Compiler.c" "fin.txt" "error.txt" "Debug/" "backup/" "../" "./")
 
  ("D:/EmacsDir/C/" (20518 19947) "test.c" "sonyoutput.c" "fibonacci.c" "BubbleSort.c" "a.exe" "../" "./")
@@ -167,13 +202,17 @@
  ("c:/EmacsDir/GitDocument/MyDocument/" (20495 23509) "轮询资料.zip.gpg" "脗脰询脳脢脕脧.zip.gpg" "绀句氦缃戠粶娆茬舰涓嶈兘.pdf" "社会网络 年龄趋势.jpg" "瓒呰秺绀句氦缃戠粶鎴愬氨绀句氦鍟嗗姟浼佷笟.pdf" "璋锋瓕姝ｆ姠婕旂ぞ浜ょ綉缁滅����浜屽����.pdf" "各种形式的交互性和媒体性.jpg" "WSDMIBMemail.txt" "why.png" "why.dot" "what.png" "what.dot" "social network.jpg" "shareing something.jpg" "README.md" "patent.org" "myPaper.org.gpg" "company.org.gpg" "cluster.jpg" "an example.7z" "a method.zip" ".git/" "(chrome)bookmarks_12_07_06.html" "../" "./")
 
  ("C:/EmacsDir/C/" (20495 36931) "test.c" "a.exe" "../" "./")
+=======
+ ("d:/DotEmacs/c/" (20503 52243) "test.c" "LinkList_util.h" "LinkList_util.c" "array_util.h" "array_util.exe" "array_util.c" "a.exe" "../" "./")
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
 
- ("c:/EmacsDir/C/" (20495 36931) "test.c" "a.exe" "../" "./")
+ ("d:/DotEmacs/" (20503 50310) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" "c/" ".ido.last" ".history" ".gitignore" ".git/" ".emacs.d/" "../" "./")
 
- ("C:/EmacsDir/GitDocument/" (20474 15160) "MyDocument/" "../" "./")
+ ("e:/kuaipan/文档/mine/" (20473 10134) "论文/" "记忆性内容/" "简历/" "程序/" "目标方案.dot" "用户管理修改.txt~" "用户管理修改.txt.txt~" "用户管理修改.txt" "班级资料/" "校办资料/" "修改(陈胜).txt" "个人计算机知识鸟瞰.png" "个人计算机知识鸟瞰.mm" "专利/" "test1.gif" "test.mm" "org帮助.org" "orgstyleworg.css" "orgstyle.css" "notes.org" "notes.mm" "notes.html" "English/" "document.org" "document.mm" "document.html" "../" "./")
 
- ("c:/EmacsDir/" (20493 64916) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "Business Social Network（修改）.doc" "Business Social Network.doc" "blog.org~" "blog.org" "blog.html" "#Test.java#" "../" "./")
+ ("D:/EmacsDir/" (20484 2176) "test.bat" "ProjectTest/" "Project/" "Java/" "C/" "../" "./")
 
+<<<<<<< HEAD
  ("C:/EmacsDir/" (20493 64916) "test1.el" "test.png" "Test.java" "test.el" "test.dot" "test.clj" "Test.class" "test.c" "test.bat" "supertest.class" "schedule.org" "GitDocument/" "Clojure/" "C/" "Business Social Network（修改）.doc" "Business Social Network.doc" "blog.org~" "blog.org" "blog.html" "#Test.java#" "../" "./")
 
  ("//10.167.157.159/TestSet/TestSet/APP/JavaEE/jpa/rowlock/read_commit/testdriver/src/" (20495 17599) "TestBase.java" "SmokeTestSuite.java" "SmokeTest.java" "RowLockPesEntity.java" "RowLockOptEntity.java" "RowLockEntity.java" "Read_CommittedTest.java" "IsolationChanger.java" "AllTestSuite.java" "AllTest.java" "AccessRowLock.java" "../" "./")
@@ -195,11 +234,15 @@
  ("d:/DotEmacs/" (20495 61556) "subgit.bat" "study.org" "schedule.org.html" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" "dotemacs.org" ".ido.last" ".history" ".gitignore" ".git/" ".emacs.d/" "../" "./")
 
  ("d:/MyDocument/" (20495 61669) "超越社交网络成就社交商务企业.pdf" "谷歌正抢演社交网络第二季.pdf" "社交网络欲罢不能.pdf" "éáí~1.jpg" "×êá~1.gpg" "÷dμ~1.jpg" "WSDMIBMemail.txt" "why.png" "why.dot" "what.png" "what.dot" "social network.jpg" "shareing something.jpg" "README.md" "patent.org" "myPaper.org.html" "myPaper.org.gpg" "company.org.gpg" "cluster.jpg" "an example.7z" "an example/" "a method.zip" "1342495255226.jpg" ".git/" "(chrome)bookmarks_12_07_06.html" "#company.org.gpg#" "../" "./")
+=======
+ ("d:/DotEmacs/.emacs.d/el-get/hideshow-org/" (20489 20152) "../" "./")
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
 
- ("c:/EmacsDir/Clojure/" (20483 33832) "project.clj" "../" "./")
+ ("d:/DotEmacs/.emacs.d/el-get/" (20489 20152) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "paredit/" "org-html5presentation/" "htmlize/" "hideshow-org/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "clojure-mode/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
 
- ("C:/EmacsDir/Clojure/" (20483 33832) "project.clj" "../" "./")
+ ("d:/DotEmacs/.emacs.d/" (20489 20152) "snippets/" "semanticdb/" "magit/" "init.el" "eshell/" "elpa/" "el-get/" "ecb/" "csophys/" "auto-save-list/" "auto-insert/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el.before_ecb_2.40" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
 
+<<<<<<< HEAD
  ("c:/DotEmacs/.emacs.d/csophys/" (20488 44502) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
  ("d:/EmacsDir/" (20482 43260) "test.xml" "test.dot" "test.bat" "src/" "Project/" "Java/" "classes/" "c.bat" "C/" "1.java" "../" "./")
@@ -207,6 +250,19 @@
  ("D:/EmacsDir/" (20482 43260) "test.xml" "test.dot" "test.bat" "src/" "Project/" "Java/" "classes/" "c.bat" "C/" "1.java" "../" "./")
 
  ("d:/DotEmacs/.emacs.d/el-get/" (20480 60246) "yasnippet/" "w32-browser/" "undo-tree/" "popup/" "paredit/" "org-html5presentation/" "htmlize/" "graphviz-dot-mode/" "fuzzy/" "el-get/" "dos/" "dired+/" "color-theme/" "clojure-mode/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+=======
+ ("c:/Users/csophys/" (20484 599) "「开始」菜单/" "Workspaces/" "Videos/" "Templates/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "ntuser.ini" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "filenamesec.asc" "filenamepub.asc" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "build.xml" "Application Data/" "AppData/" ".ssh/" ".pulse2.locator" ".overwrite" ".myeclipse-blue.properties" ".myeclipse/" ".m2/" ".idlerc/" ".freemind/" ".emacs.d/" ".bash_history" ".asadminpass" "../" "./")
+
+ ("d:/clojure1.4/" (20482 57709) "test.clj" "test/" "target/" "src/" "readme.txt" "pom.xml" "epl-v10.html" "entry.bat" "doc/" "clojure.jar" "clojure.iml" "clojure-1.4.0.jar" "changes.md" "build.xml" ".gitignore" "../" "./")
+
+ ("d:/EmacsDir/" (20482 43260) "test.xml" "test.dot" "test.bat" "src/" "Project/" "Java/" "classes/" "c.bat" "C/" "1.java" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/csophys/" (20480 11892) "htmlize.el" "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+
+ ("d:/EmacsDir/Java/" (20476 13597) "Test.java" "../" "./")
+
+ ("D:/EmacsDir/Java/" (20476 13597) "Test.java" "../" "./")
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
 
  ("e:/kuaipan/dotemacs/csophys/" (20475 326) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" "../" "./")
 
@@ -288,6 +344,13 @@
 
  ("d:/DotEmacs/.emacs.d/csophys/" (20471 55859) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
 
+<<<<<<< HEAD
+=======
+ ("D:/EmacsDir/C/" (20325 55847) "test.c" "#test.c#" "../" "./")
+
+ ("e:/kuaipan/文档/mine/English/" (20451 4239) "英语作文_4（改）.doc" "What_lead_to_a_desperate_man_to_commit_suicide.txt" "Love is the only reason why we get married.docx" "Learning_and_Earning.txt" "academic corruption_in_china.txt~" "academic corruption_in_china.txt" "../" "./")
+
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
  ("d:/DotEmacs/.emacs.d/el-get/" (20471 56017) "yasnippet/" "w32-browser/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
 
  ("e:/kuaipan/dotemacs/csophys/" (20433 60651) "programeExpand/" "csophys_writingStyle.el" "csophys_programmingExpand.el" ".emacs.desktop" "../" "./")
@@ -304,6 +367,8 @@
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/db_cooperation/dbaccess/" (20418 59023) "servlet/" "jpaandweb/" "jpa/" "initsyfdb.xml" "initdb.xml" "common/" "cmp/" "build.xml" ".svn/" "../" "./")
 
+ ("C:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
+
  ("c:/Program Files/Java/jdk1.6.0_20/lib/" (20293 58473) "visualvm/" "tools.jar" "orb.idl" "jvm.lib" "jconsole.jar" "jawt.lib" "ir.idl" "htmlconverter.jar" "dt.jar" "ct.sym" "../" "./")
 
  ("c:/Interstage etc/testset/TestSet/APP/JavaEE/jpa/javatype/Char/testdriver/src/" (20418 59344) "SmokeTestSuite.java" "SmokeTest.java" "CharTest.java" "AllTestSuite.java" "AllTest.java" ".svn/" "../" "./")
@@ -315,6 +380,63 @@
  ("e:/kuaipan/dotemacs/csophys/programeExpand/" (20445 37758) "w32-browser.el" "unicad.el" "org-html5presentation.el" "htmlize.el" "dos.el" "dos-indent.el" "dired+.el" "csophys_yasnippet.el" "csophys_undotree.el" "csophys_nxhtml.el" "csophys_jde.el" "csophys_graphviz.el" "csophys_ecb.el" "csophys_cedet.el" "csophys_autoComplete.el" "csophys_ajc.el" "cmd-mode.el" "autopair.el" ".emacs.desktop" "#1.dot#" "../" "./")
 
  ("e:/kuaipan/document/" (20411 36288) "secret.org.gpg" "schedule.org" "../" "./")
+<<<<<<< HEAD
+=======
+
+ ("d:/DotEmacs/.emacs.d/el-get/" (20447 20073) "yasnippet/" "popup/" "org-html5presentation/" "fuzzy/" "el-get/" "ecb/" "dired+/" "color-theme/" "autopair/" "auto-complete/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/csophys/" (20447 19781) "csophys_writingStyle.el" "csophys_function.el" "../" "./")
+
+ ("e:/kuaipan/文档/mine/English/" (20353 28178) "英语作文_4（改）.doc" "What_lead_to_a_desperate_man_to_commit_suicide.txt" "Love is the only reason why we get married.docx" "Learning_and_Earning.txt" "academic corruption_in_china.txt~" "academic corruption_in_china.txt" "../" "./")
+
+ ("e:/kuaipan/文档/mine/" (20447 10457) "论文/" "记忆性内容/" "简历/" "程序/" "目标方案.dot" "用户管理修改.txt~" "用户管理修改.txt.txt~" "用户管理修改.txt" "班级资料/" "校办资料/" "修改(陈胜).txt" "个人计算机知识鸟瞰.png" "个人计算机知识鸟瞰.mm" "专利/" "test1.gif" "test.mm" "org帮助.org" "orgstyleworg.css" "orgstyle.css" "notes.org" "notes.mm" "notes.html" "English/" "document.org" "document.mm" "document.html" "#document.org#" "../" "./")
+
+ ("e:/kuaipan/文档/" (20352 23398) "others/" "mine/" "../" "./")
+
+ ("D:/EmacsDir/" (20445 63703) "Project/" "Java/" "C/" "1.java" "../" "./")
+
+ ("e:/kuaipan/文档/" (20352 23398) "others/" "mine/" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/" (20447 6521) "tramp" "snippets/" "semanticdb/" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("d:/DotEmacs/" (20447 6521) "study.org" "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
+
+ ("D:/EmacsDir/" (20445 63703) "Project/" "Java/" "C/" "1.java" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/snippets/" (20446 42581) "org-mode/" "java-mode/" "graphviz-dot-mode/" "../" "./")
+
+ ("c:/EmacsDir/C/" (20446 49633) "test.c" "a.exe" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/snippets/" (20446 42581) "org-mode/" "java-mode/" "graphviz-dot-mode/" "../" "./")
+
+ ("c:/DotEmacs/.emacs.d/el-get/yasnippet/" (20441 22647) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/text-mode/" (20356 55258) "time" "sql-mode/" "snippet-mode/" "shell-script-mode/" "sgml-mode/" "scala-mode/" "ruby-mode/" "rst-mode/" "python-mode/" "perl-mode/" "pascal-mode/" "org-mode/" "nxml-mode/" "markdown-mode/" "Lorem ipsum.yasnippet" "lisp-mode/" "latex-mode/" "javascript-mode/" "Insert ISO date.yasnippet" "html-mode/" "haskell-mode/" "graphviz-dot-mode/" "f90-mode/" "erlang-mode/" "email" "emacs-lisp-mode/" "css-mode/" "Conitnue star bullet.yasnippet" "cc-mode/" "010 Copyright.yasnippet" "../" "./")
+
+ ("c:/emacs-backup/dotemacs/plugin/yasnippet/snippets/" (20355 63425) "text-mode/" "../" "./")
+
+ ("c:/emacs-backup/dotemacs/plugin/yasnippet/" (20352 62545) "yasnippet.el" "snippets/" "dropdown-list.el" "doc/" "../" "./")
+
+ ("c:/emacs-backup/dotemacs/plugin/" (20395 36131) "yasnippet/" "w32fullscreen/" "w32-expand/" "undotree/" "theme/" "script/" "plugin/" "org-7.8.09/" "nxhtml/" "magit/" "jdibug-0.5/" "jdee/" "jde/" "graphviz/" "git-emacs/" "elib/" "ecb/" "cedet/" "auto-complete/" "ajc-java-complete/" "../" "./")
+
+ ("c:/emacs-backup/dotemacs/" (20442 62744) "_viminfo" "_emacs.before_ecb_2.40" "_emacs" "test.org" "test.html" "plugin/" "notes.org" "notes.html" "Mail/" "insert/" "emacs.bmk" "csophys/" "blog.org~" "blog.org" "blog.mm" "blog.html" ".ssh/" ".semanticdb/" ".ido.last" ".history" ".gitconfig" ".eshell/" ".emacs.desktop" ".emacs.d/" ".bash_history" "../" "./")
+
+ ("c:/emacs-backup/" (20433 30073) "图片支持dll.rar" "WSDM/" "usages/" "undo-tree.rar" "undo-tree.el" "ThinkinJava.pdf" "socat-2.0.0-b4.rar" "socat-2.0.0-b4/" "paper/" "org-7.8.09.zip" "org-7.8.09/" "muse-2.2.0-src/" "HjDict(ALL)/" "grep-2.5.1-2-bin.exe" "graphviz-dot-mode" "graphviz-2.28.0.msi" "git-emacs/" "gcc3.4.5/" "gcc-core-4.5.0_20100311-2-mingw32-bin/" "FreeMind-Windows-Installer-0.9.0-max.exe" "findutils-4.2.20-2.exe" "Emacsplus_Eclipse_Plug-in.maff.zip" "Emacsplus_Eclipse_Plug-in.maff/" "emacsplus/" "emacs.reg" "emacs.d.rar" "emacs-23.4-bin-i386.zip" "el-get/" "dotemacs.rar" "dotemacs/" "diffutils-2.8.7-1.exe" "C程序设计语言_第2版(高清).pdf" "Consolas/" "com.mulgasoft.emacsplus_3.6.2.zip" "bash4.0-中文文档.pdf" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/csophys/" (20445 49057) "csophys_writingStyle.elc" "csophys_writingStyle.el" "csophys_function.elc" "csophys_function.el" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/" (20445 52943) "tramp" "magit/" "init.el" "elpa/" "el-get/" "csophys/" "auto-save-list/" "ac-dict/" "ac-comphist.dat" ".csophys_person.bmk" ".csophys_custom.el" ".csophys_company.bmk" "../" "./")
+
+ ("c:/DotEmacs/" (20446 32745) "schedule.org.gpg" "README.md" "emacs_c.reg" "emacs.reg" ".ido.last" ".git/" ".emacs.d/" "../" "./")
+
+ ("D:/EmacsDir/C/" (20445 47101) "test.c" "../" "./")
+
+ ("d:/EmacsDir/C/" (20445 43565) "test.c" "#test.c#" "../" "./")
+
+ ("d:/DotEmacs/.emacs.d/el-get/yasnippet/" (20439 27758) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("e:/kuaipan/dotemacs/plugin/auto-complete/ac-dict/" (20352 23320) "tcl-mode" "scheme-mode" "ruby-mode" "python-mode" "php-mode" "javascript-mode" "java-mode" "graphviz-dot-mode" "css-mode" "clojure-mode" "c-mode" "c++-mode" "../" "./")
+>>>>>>> 9c9cb32913e8fc1f2543983884aa9774fcd069d4
 )
 
 ;; ----- ido-unc-hosts-cache -----
