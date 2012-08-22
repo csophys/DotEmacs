@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sim_printf 
+# contributor: csophys
+# key: printf
+# --
+printf ("${1:%s}${2:\\n}",$3);
+$0

@@ -4,11 +4,161 @@
   :tables (list 
    (semanticdb-table "test.c"
     :major-mode 'c-mode
-    :tags nil
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [48 57])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58 71]))                  
+                :type "int")
+                nil [39 125]))          
     :file "test.c"
-    :pointmax 1
-    :fsize 0
-    :lastmodtime '(20495 64008)
+    :pointmax 104
+    :fsize 134
+    :lastmodtime '(20519 2670)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sonyoutput.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 229]))          
+    :file "sonyoutput.c"
+    :pointmax 222
+    :fsize 245
+    :lastmodtime '(20518 16826)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BubbleSort.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("array" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31 43]))                  
+                :type "void")
+                nil [21 44])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [54 63])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64 77]))                  
+                :type "int")
+                nil [45 211])
+            ("sort" function
+               (:arguments 
+                  ( ("array" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [223 235]))                  
+                :type "void")
+                nil [213 417]))          
+    :file "BubbleSort.c"
+    :pointmax 332
+    :fsize 444
+    :lastmodtime '(20518 17799)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fibonacci.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("fibonacci" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [35 41]))                  
+                :type "int")
+                nil [21 42])
+            ("fibonacci1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [58 64]))                  
+                :type "int")
+                nil [43 65])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [76 85])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86 99]))                  
+                :type "int")
+                nil [67 275])
+            ("fibonacci" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [292 298]))                  
+                :type "int")
+                nil [278 371])
+            ("fibonacci1" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [389 395]))                  
+                :type "int")
+                nil [374 539]))          
+    :file "fibonacci.c"
+    :pointmax 493
+    :fsize 581
+    :lastmodtime '(20518 19945)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "atoi.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("atoi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68 76]))                  
+                :type "int")
+                nil [59 77])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [88 97])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [98 111]))                  
+                :type "int")
+                nil [79 165])
+            ("atoi" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [177 185]))                  
+                :type "int")
+                nil [168 312]))          
+    :file "atoi.c"
+    :pointmax 173
+    :fsize 334
+    :lastmodtime '(20519 3677)
     :unmatched-syntax 'nil
     )
    )

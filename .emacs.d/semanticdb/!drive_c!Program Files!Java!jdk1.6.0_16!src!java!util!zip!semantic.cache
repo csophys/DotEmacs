@@ -1,0 +1,183 @@
+;; Object zip/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zip/"
+  :tables (list 
+   (semanticdb-table "ZipEntry.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.zip" package nil nil [175 197])
+            ("java.util.Date" include nil nil [199 221])
+            ("ZipEntry" type
+               (:typemodifiers ("public")
+                :interfaces ("ZipConstants" "Cloneable")
+                :members 
+                  ( ("name" variable (:type "String") (reparse-symbol class_member_declaration) [403 415])
+                    ("time" variable (:type "long") (reparse-symbol class_member_declaration) [434 449])
+                    ("crc" variable (:type "long") (reparse-symbol class_member_declaration) [489 503])
+                    ("size" variable (:type "long") (reparse-symbol class_member_declaration) [532 547])
+                    ("csize" variable (:type "long") (reparse-symbol class_member_declaration) [587 603])
+                    ("method" variable (:type "int") (reparse-symbol class_member_declaration) [644 660])
+                    ("extra" variable
+                       (:dereference 1
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [687 700])
+                    ("comment" variable (:type "String") (reparse-symbol class_member_declaration) [750 765])
+                    ("STORED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [880 915])
+                    ("DEFLATED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [998 1035])
+                    ("initIDs" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1136 1173])
+                    ("ZipEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1472 1483]))                          )
+                        (reparse-symbol class_member_declaration) [1456 1672])
+                    ("ZipEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "ZipEntry") (reparse-symbol formal_parameters) [1831 1841]))                          )
+                        (reparse-symbol class_member_declaration) [1815 1990])
+                    ("ZipEntry" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2134 2145])
+                            ("jzentry" variable (:type "long") (reparse-symbol formal_parameters) [2147 2159]))                          )
+                        (reparse-symbol class_member_declaration) [2125 2209])
+                    ("initFields" function
+                       (:typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("jzentry" variable (:type "long") (reparse-symbol formal_parameters) [2246 2258]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2215 2260])
+                    ("ZipEntry" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("jzentry" variable (:type "long") (reparse-symbol formal_parameters) [2385 2397]))                          )
+                        (reparse-symbol class_member_declaration) [2376 2428])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2525 2570])
+                    ("setTime" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [2783 2792]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2763 3223])
+                    ("getTime" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3421 3497])
+                    ("setSize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("size" variable (:type "long") (reparse-symbol formal_parameters) [3788 3797]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3768 3930])
+                    ("getSize" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4130 4173])
+                    ("getCompressedSize" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4500 4554])
+                    ("setCompressedSize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("csize" variable (:type "long") (reparse-symbol formal_parameters) [4740 4750]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4710 4780])
+                    ("setCrc" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("crc" variable (:type "long") (reparse-symbol formal_parameters) [5067 5075]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5048 5206])
+                    ("getCrc" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5441 5482])
+                    ("setMethod" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("method" variable (:type "int") (reparse-symbol formal_parameters) [5772 5782]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5750 5935])
+                    ("getMethod" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6136 6182])
+                    ("setExtra" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("extra" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [6483 6495]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6462 6646])
+                    ("getExtra" function
+                       (:typemodifiers ("public")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [6833 6880])
+                    ("setComment" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("comment" variable (:type "String") (reparse-symbol formal_parameters) [7175 7189]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7152 7425])
+                    ("getComment" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7610 7661])
+                    ("isDirectory" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7856 7920])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7999 8050])
+                    ("dosToJavaTime" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("dtime" variable (:type "long") (reparse-symbol formal_parameters) [8181 8191]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [8147 8451])
+                    ("javaToDosTime" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [8545 8554]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [8511 8850])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8923 8977])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [9036 9327]))                  
+                :type "class")
+                nil [340 9329]))          
+    :file "ZipEntry.java"
+    :pointmax 9330
+    :fsize 9329
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!util!zip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

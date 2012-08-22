@@ -1,0 +1,104 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "LocaleServiceProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.spi" package nil nil [187 209])
+            ("java.util.Locale" include nil nil [211 235])
+            ("LocaleServiceProvider" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("LocaleServiceProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [5457 5498])
+                    ("getAvailableLocales" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "Locale[]")
+                        (reparse-symbol class_member_declaration) [5779 5826]))                  
+                :type "class")
+                nil [5294 5828]))          
+    :file "LocaleServiceProvider.java"
+    :pointmax 5829
+    :fsize 5828
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "LocaleNameProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.spi" package nil nil [184 206])
+            ("java.util.Locale" include nil nil [208 232])
+            ("LocaleNameProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("LocaleNameProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [640 678])
+                    ("getDisplayLanguage" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("languageCode" variable (:type "String") (reparse-symbol formal_parameters) [2120 2139])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [2141 2154]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2078 2156])
+                    ("getDisplayCountry" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("countryCode" variable (:type "String") (reparse-symbol formal_parameters) [3590 3608])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [3610 3623]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3549 3625])
+                    ("getDisplayVariant" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("variant" variable (:type "String") (reparse-symbol formal_parameters) [4525 4539])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [4541 4554]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4484 4556]))                  
+                :type "class")
+                nil [450 4558]))          
+    :file "LocaleNameProvider.java"
+    :pointmax 4559
+    :fsize 4558
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CurrencyNameProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.spi" package nil nil [186 208])
+            ("java.util.Currency" include nil nil [210 236])
+            ("java.util.Locale" include nil nil [237 261])
+            ("CurrencyNameProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("CurrencyNameProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [876 916])
+                    ("getSymbol" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("currencyCode" variable (:type "String") (reparse-symbol formal_parameters) [2093 2112])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [2114 2127]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2060 2129]))                  
+                :type "class")
+                nil [684 2131]))          
+    :file "CurrencyNameProvider.java"
+    :pointmax 2132
+    :fsize 2131
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!util!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

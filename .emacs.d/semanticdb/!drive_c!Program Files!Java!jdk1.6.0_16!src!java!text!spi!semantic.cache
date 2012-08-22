@@ -1,0 +1,83 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "DateFormatProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text.spi" package nil nil [184 206])
+            ("java.text.DateFormat" include nil nil [208 236])
+            ("java.util.Locale" include nil nil [237 261])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [262 305])
+            ("DateFormatProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("DateFormatProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [730 768])
+                    ("getTimeInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("style" variable (:type "int") (reparse-symbol formal_parameters) [1787 1796])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [1798 1811]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [1744 1813])
+                    ("getDateInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("style" variable (:type "int") (reparse-symbol formal_parameters) [2831 2840])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [2842 2855]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [2788 2857])
+                    ("getDateTimeInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("dateStyle" variable (:type "int") (reparse-symbol formal_parameters) [4291 4304])
+                            ("timeStyle" variable (:type "int") (reparse-symbol formal_parameters) [4306 4319])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [4321 4334]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [4236 4336]))                  
+                :type "class")
+                nil [540 4338]))          
+    :file "DateFormatProvider.java"
+    :pointmax 4339
+    :fsize 4338
+    :lastmodtime '(19058 1794)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DateFormatSymbolsProvider.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text.spi" package nil nil [191 213])
+            ("java.text.DateFormatSymbols" include nil nil [215 250])
+            ("java.util.Locale" include nil nil [251 275])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [276 319])
+            ("DateFormatSymbolsProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "LocaleServiceProvider"
+                :members 
+                  ( ("DateFormatSymbolsProvider" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [757 802])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [1439 1452]))                          
+                        :type "DateFormatSymbols")
+                        (reparse-symbol class_member_declaration) [1393 1454]))                  
+                :type "class")
+                nil [560 1456]))          
+    :file "DateFormatSymbolsProvider.java"
+    :pointmax 1457
+    :fsize 1456
+    :lastmodtime '(19058 1796)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!text!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

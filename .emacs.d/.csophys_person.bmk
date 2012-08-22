@@ -18,8 +18,8 @@
  (rear-context-string . "ys_company.bmk\")")
  (position . 745))
 ("org-remember-last-stored"
- (filename . "~/schedule.org.gpg")
- (front-context-string . "** TODO 电视剧金太郎34")
- (rear-context-string . "\",sizeof(x));]]\n")
- (position . 4272))
+ (filename . "~/study.org")
+ (front-context-string . "** 编程语言 java 中内部")
+ (rear-context-string . "可以继承别的类和实现别的接口。\n")
+ (position . 3613))
 )

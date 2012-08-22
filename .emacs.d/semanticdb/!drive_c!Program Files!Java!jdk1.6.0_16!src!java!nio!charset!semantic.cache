@@ -1,0 +1,680 @@
+;; Object charset/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "charset/"
+  :tables (list 
+   (semanticdb-table "CharsetDecoder.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset" package nil nil [246 271])
+            ("java.nio.Buffer" include nil nil [273 296])
+            ("java.nio.ByteBuffer" include nil nil [297 324])
+            ("java.nio.CharBuffer" include nil nil [325 352])
+            ("java.nio.BufferOverflowException" include nil nil [353 393])
+            ("java.nio.BufferUnderflowException" include nil nil [394 435])
+            ("java.lang.ref.WeakReference" include nil nil [436 471])
+            ("java.nio.charset.CoderMalfunctionError" include nil nil [472 518])
+            ("CharsetDecoder" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("charset" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Charset")
+                        (reparse-symbol class_member_declaration) [4716 4746])
+                    ("averageCharsPerByte" variable
+                       (:typemodifiers ("private" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [4751 4791])
+                    ("maxCharsPerByte" variable
+                       (:typemodifiers ("private" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [4796 4832])
+                    ("replacement" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4838 4865])
+                    ("malformedInputAction" variable
+                       (:typemodifiers ("private")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [4870 4945])
+                    ("unmappableCharacterAction" variable
+                       (:typemodifiers ("private")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [4950 5030])
+                    ("ST_RESET" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5066 5106])
+                    ("ST_CODING" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5111 5151])
+                    ("ST_END" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5156 5196])
+                    ("ST_FLUSHED" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5201 5241])
+                    ("state" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5247 5276])
+                    ("stateNames" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5282 5367])
+                    ("CharsetDecoder" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("cs" variable (:type "Charset") (reparse-symbol formal_parameters) [6271 6281])
+                            ("averageCharsPerByte" variable (:type "float") (reparse-symbol formal_parameters) [6288 6313])
+                            ("maxCharsPerByte" variable (:type "float") (reparse-symbol formal_parameters) [6320 6341])
+                            ("replacement" variable (:type "String") (reparse-symbol formal_parameters) [6348 6366]))                          )
+                        (reparse-symbol class_member_declaration) [6244 6996])
+                    ("CharsetDecoder" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cs" variable (:type "Charset") (reparse-symbol formal_parameters) [7691 7701])
+                            ("averageCharsPerByte" variable (:type "float") (reparse-symbol formal_parameters) [7711 7736])
+                            ("maxCharsPerByte" variable (:type "float") (reparse-symbol formal_parameters) [7746 7767]))                          )
+                        (reparse-symbol class_member_declaration) [7666 7851])
+                    ("charset" function
+                       (:typemodifiers ("public" "final")
+                        :type "Charset")
+                        (reparse-symbol class_member_declaration) [7979 8034])
+                    ("replacement" function
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8233 8295])
+                    ("replaceWith" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newReplacement" variable (:type "String") (reparse-symbol formal_parameters) [8910 8931]))                          
+                        :type "CharsetDecoder")
+                        (reparse-symbol class_member_declaration) [8870 9324])
+                    ("implReplaceWith" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("newReplacement" variable (:type "String") (reparse-symbol formal_parameters) [9672 9693]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9641 9702])
+                    ("malformedInputAction" function
+                       (:typemodifiers ("public")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [9930 10015])
+                    ("onMalformedInput" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [10515 10542]))                          
+                        :type "CharsetDecoder")
+                        (reparse-symbol class_member_declaration) [10470 10714])
+                    ("implOnMalformedInput" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [11046 11073]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11010 11078])
+                    ("unmappableCharacterAction" function
+                       (:typemodifiers ("public")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [11297 11392])
+                    ("onUnmappableCharacter" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [11906 11945]))                          
+                        :type "CharsetDecoder")
+                        (reparse-symbol class_member_declaration) [11856 12131])
+                    ("implOnUnmappableCharacter" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [12478 12505]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12437 12510])
+                    ("averageCharsPerByte" function
+                       (:typemodifiers ("public" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [12857 12934])
+                    ("maxCharsPerByte" function
+                       (:typemodifiers ("public" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [13294 13363])
+                    ("decode" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("in" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [18678 18691])
+                            ("out" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [18693 18707])
+                            ("endOfInput" variable (:type "boolean") (reparse-symbol formal_parameters) [18717 18735]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [18646 20107])
+                    ("flush" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("out" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [21938 21952]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [21907 22221])
+                    ("implFlush" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("out" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [22807 22821]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [22775 22861])
+                    ("reset" function
+                       (:typemodifiers ("public" "final")
+                        :type "CharsetDecoder")
+                        (reparse-symbol class_member_declaration) [23181 23271])
+                    ("implReset" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23530 23560])
+                    ("decodeLoop" function
+                       (:typemodifiers ("protected" "abstract")
+                        :arguments 
+                          ( ("in" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [25336 25349])
+                            ("out" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [25362 25376]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [25294 25378])
+                    ("decode" function
+                       (:throws ("CharacterCodingException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("in" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [26894 26907]))                          
+                        :type "CharBuffer")
+                        (reparse-symbol class_member_declaration) [26863 27536])
+                    ("isAutoDetecting" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [27946 28001])
+                    ("isCharsetDetected" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [29313 29399])
+                    ("detectedCharset" function
+                       (:typemodifiers ("public")
+                        :type "Charset")
+                        (reparse-symbol class_member_declaration) [30573 30657])
+                    ("throwIllegalStateException" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("from" variable (:type "int") (reparse-symbol formal_parameters) [30792 30800])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [30802 30808]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30752 30931]))                  
+                :type "class")
+                nil [4672 30934]))          
+    :file "CharsetDecoder.java"
+    :pointmax 30935
+    :fsize 31889
+    :lastmodtime '(19058 26200)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CharsetEncoder.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset" package nil nil [246 271])
+            ("java.nio.Buffer" include nil nil [273 296])
+            ("java.nio.ByteBuffer" include nil nil [297 324])
+            ("java.nio.CharBuffer" include nil nil [325 352])
+            ("java.nio.BufferOverflowException" include nil nil [353 393])
+            ("java.nio.BufferUnderflowException" include nil nil [394 435])
+            ("java.lang.ref.WeakReference" include nil nil [436 471])
+            ("java.nio.charset.CoderMalfunctionError" include nil nil [472 518])
+            ("CharsetEncoder" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("charset" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Charset")
+                        (reparse-symbol class_member_declaration) [4877 4907])
+                    ("averageBytesPerChar" variable
+                       (:typemodifiers ("private" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [4912 4952])
+                    ("maxBytesPerChar" variable
+                       (:typemodifiers ("private" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [4957 4993])
+                    ("replacement" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [4999 5026])
+                    ("malformedInputAction" variable
+                       (:typemodifiers ("private")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [5031 5106])
+                    ("unmappableCharacterAction" variable
+                       (:typemodifiers ("private")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [5111 5191])
+                    ("ST_RESET" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5227 5267])
+                    ("ST_CODING" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5272 5312])
+                    ("ST_END" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5317 5357])
+                    ("ST_FLUSHED" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5362 5402])
+                    ("state" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5408 5437])
+                    ("stateNames" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5443 5528])
+                    ("CharsetEncoder" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cs" variable (:type "Charset") (reparse-symbol formal_parameters) [6434 6444])
+                            ("averageBytesPerChar" variable (:type "float") (reparse-symbol formal_parameters) [6451 6476])
+                            ("maxBytesPerChar" variable (:type "float") (reparse-symbol formal_parameters) [6483 6504])
+                            ("replacement" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [6511 6529]))                          )
+                        (reparse-symbol class_member_declaration) [6405 7159])
+                    ("CharsetEncoder" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cs" variable (:type "Charset") (reparse-symbol formal_parameters) [7887 7897])
+                            ("averageBytesPerChar" variable (:type "float") (reparse-symbol formal_parameters) [7907 7932])
+                            ("maxBytesPerChar" variable (:type "float") (reparse-symbol formal_parameters) [7942 7963]))                          )
+                        (reparse-symbol class_member_declaration) [7862 8063])
+                    ("charset" function
+                       (:typemodifiers ("public" "final")
+                        :type "Charset")
+                        (reparse-symbol class_member_declaration) [8191 8246])
+                    ("replacement" function
+                       (:typemodifiers ("public" "final")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [8445 8507])
+                    ("replaceWith" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newReplacement" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9308 9329]))                          
+                        :type "CharsetEncoder")
+                        (reparse-symbol class_member_declaration) [9268 9824])
+                    ("implReplaceWith" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("newReplacement" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [10172 10193]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10141 10202])
+                    ("cachedDecoder" variable
+                       (:typemodifiers ("private")
+                        :type "WeakReference")
+                        (reparse-symbol class_member_declaration) [10210 10253])
+                    ("isLegalReplacement" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("repl" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [10994 11005]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10960 11566])
+                    ("malformedInputAction" function
+                       (:typemodifiers ("public")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [11756 11841])
+                    ("onMalformedInput" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [12341 12368]))                          
+                        :type "CharsetEncoder")
+                        (reparse-symbol class_member_declaration) [12296 12540])
+                    ("implOnMalformedInput" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [12872 12899]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12836 12904])
+                    ("unmappableCharacterAction" function
+                       (:typemodifiers ("public")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [13123 13218])
+                    ("onUnmappableCharacter" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [13732 13771]))                          
+                        :type "CharsetEncoder")
+                        (reparse-symbol class_member_declaration) [13682 13957])
+                    ("implOnUnmappableCharacter" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("newAction" variable (:type "CodingErrorAction") (reparse-symbol formal_parameters) [14304 14331]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14263 14336])
+                    ("averageBytesPerChar" function
+                       (:typemodifiers ("public" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [14683 14760])
+                    ("maxBytesPerChar" function
+                       (:typemodifiers ("public" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [15120 15189])
+                    ("encode" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("in" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [20535 20548])
+                            ("out" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [20550 20564])
+                            ("endOfInput" variable (:type "boolean") (reparse-symbol formal_parameters) [20574 20592]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [20503 21962])
+                    ("flush" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("out" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [23778 23792]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [23747 24061])
+                    ("implFlush" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("out" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [24637 24651]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [24605 24691])
+                    ("reset" function
+                       (:typemodifiers ("public" "final")
+                        :type "CharsetEncoder")
+                        (reparse-symbol class_member_declaration) [25011 25101])
+                    ("implReset" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25360 25390])
+                    ("encodeLoop" function
+                       (:typemodifiers ("protected" "abstract")
+                        :arguments 
+                          ( ("in" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [27172 27185])
+                            ("out" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [27198 27212]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [27130 27214])
+                    ("encode" function
+                       (:throws ("CharacterCodingException")
+                        :typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("in" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [28756 28769]))                          
+                        :type "ByteBuffer")
+                        (reparse-symbol class_member_declaration) [28725 29398])
+                    ("canEncode" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cb" variable (:type "CharBuffer") (reparse-symbol formal_parameters) [29508 29521]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [29482 30040])
+                    ("canEncode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "char") (reparse-symbol formal_parameters) [31139 31145]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [31114 31242])
+                    ("canEncode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("cs" variable (:type "CharSequence") (reparse-symbol formal_parameters) [32251 32266]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [32226 32433])
+                    ("throwIllegalStateException" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("from" variable (:type "int") (reparse-symbol formal_parameters) [32482 32490])
+                            ("to" variable (:type "int") (reparse-symbol formal_parameters) [32492 32498]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32442 32621]))                  
+                :type "class")
+                nil [4833 32624]))          
+    :file "CharsetEncoder.java"
+    :pointmax 32625
+    :fsize 33579
+    :lastmodtime '(19058 26202)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CoderResult.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset" package nil nil [177 202])
+            ("java.lang.ref.WeakReference" include nil nil [204 239])
+            ("java.nio.*" include nil nil [240 258])
+            ("java.util.Map" include nil nil [259 280])
+            ("java.util.HashMap" include nil nil [281 306])
+            ("CoderResult" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("CR_UNDERFLOW" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2737 2780])
+                    ("CR_OVERFLOW" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2785 2828])
+                    ("CR_ERROR_MIN" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2833 2876])
+                    ("CR_MALFORMED" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2881 2924])
+                    ("CR_UNMAPPABLE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2929 2972])
+                    ("names" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2978 3072])
+                    ("type" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3078 3101])
+                    ("length" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3106 3131])
+                    ("CoderResult" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("type" variable (:type "int") (reparse-symbol formal_parameters) [3157 3165])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [3167 3177]))                          )
+                        (reparse-symbol class_member_declaration) [3137 3228])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3348 3456])
+                    ("isUnderflow" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3642 3710])
+                    ("isOverflow" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3894 3960])
+                    ("isError" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4212 4276])
+                    ("isMalformed" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4499 4567])
+                    ("isUnmappable" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4803 4873])
+                    ("length" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5310 5418])
+                    ("UNDERFLOW" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [5646 5724])
+                    ("OVERFLOW" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [5863 5939])
+                    ("Cache" type
+                       (:typemodifiers ("private" "static" "abstract")
+                        :members 
+                          ( ("cache" variable
+                               (:typemodifiers ("private")
+                                :type "Map")
+                                (reparse-symbol class_member_declaration) [5985 6010])
+                            ("create" function
+                               (:typemodifiers ("protected" "abstract")
+                                :arguments 
+                                  ( ("len" variable (:type "int") (reparse-symbol formal_parameters) [6051 6058]))                                  
+                                :type "CoderResult")
+                                (reparse-symbol class_member_declaration) [6013 6060])
+                            ("get" function
+                               (:typemodifiers ("private" "synchronized")
+                                :arguments 
+                                  ( ("len" variable (:type "int") (reparse-symbol formal_parameters) [6100 6107]))                                  
+                                :type "CoderResult")
+                                (reparse-symbol class_member_declaration) [6063 6525]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [5945 6532])
+                    ("malformedCache" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Cache")
+                        (reparse-symbol class_member_declaration) [6538 6684])
+                    ("malformedForLength" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("length" variable (:type "int") (reparse-symbol formal_parameters) [6937 6947]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [6892 6992])
+                    ("unmappableCache" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Cache")
+                        (reparse-symbol class_member_declaration) [6998 7146])
+                    ("unmappableForLength" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("length" variable (:type "int") (reparse-symbol formal_parameters) [7413 7423]))                          
+                        :type "CoderResult")
+                        (reparse-symbol class_member_declaration) [7367 7469])
+                    ("throwException" function
+                       (:throws ("CharacterCodingException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8166 8542]))                  
+                :type "class")
+                nil [2705 8545]))          
+    :file "CoderResult.java"
+    :pointmax 8546
+    :fsize 8545
+    :lastmodtime '(19058 1788)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CodingErrorAction.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset" package nil nil [183 208])
+            ("CodingErrorAction" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [661 681])
+                    ("CodingErrorAction" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [713 724]))                          )
+                        (reparse-symbol class_member_declaration) [687 752])
+                    ("IGNORE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [916 996])
+                    ("REPLACE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [1230 1312])
+                    ("REPORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "CodingErrorAction")
+                        (reparse-symbol class_member_declaration) [1592 1672])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1792 1838]))                  
+                :type "class")
+                nil [623 1841]))          
+    :file "CodingErrorAction.java"
+    :pointmax 1842
+    :fsize 1841
+    :lastmodtime '(19058 1788)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CharacterCodingException.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset" package nil nil [308 333])
+            ("CharacterCodingException" type
+               (:typemodifiers ("public")
+                :superclasses "java.io.IOException"
+                :members 
+                  ( ("CharacterCodingException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [609 646]))                  
+                :type "class")
+                nil [471 649]))          
+    :file "CharacterCodingException.java"
+    :pointmax 650
+    :fsize 681
+    :lastmodtime '(19058 26316)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CoderMalfunctionError.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.nio.charset" package nil nil [187 212])
+            ("CoderMalfunctionError" type
+               (:typemodifiers ("public")
+                :superclasses "Error"
+                :members 
+                  ( ("CoderMalfunctionError" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Exception") (reparse-symbol formal_parameters) [737 752]))                          )
+                        (reparse-symbol class_member_declaration) [708 776]))                  
+                :type "class")
+                nil [502 779]))          
+    :file "CoderMalfunctionError.java"
+    :pointmax 780
+    :fsize 779
+    :lastmodtime '(19058 1788)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!nio!charset!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

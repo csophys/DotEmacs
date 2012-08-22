@@ -1,0 +1,30 @@
+;; Object math/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "math/"
+  :tables (list 
+   (semanticdb-table "BigDecimal.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.math" package nil nil [474 492])
+            ("java.util.Arrays" include nil nil [494 518]))          
+    :file "BigDecimal.java"
+    :pointmax 157836
+    :fsize 157835
+    :lastmodtime '(19058 1786)
+    :unmatched-syntax '((BRACE_BLOCK 10229 . 157835) (GT 10227 . 10228) (IDENTIFIER 10217 . 10227) (PUBLIC 10156 . 10162) (LT 10216 . 10217) (IDENTIFIER 554 . 563) (DOT 553 . 554) (IDENTIFIER 543 . 553) (DOT 542 . 543) (IDENTIFIER 538 . 542) (DOT 537 . 538) (IMPORT 519 . 525) (STATIC 526 . 532) (IDENTIFIER 533 . 537))
+    )
+   (semanticdb-table "RoundingMode.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.math" package nil nil [471 489]))          
+    :file "RoundingMode.java"
+    :pointmax 14360
+    :fsize 14359
+    :lastmodtime '(19058 1788)
+    :unmatched-syntax '((BRACE_BLOCK 5108 . 14359) (IDENTIFIER 5095 . 5107) (PUBLIC 5083 . 5089) (IDENTIFIER 5090 . 5094))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!math!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

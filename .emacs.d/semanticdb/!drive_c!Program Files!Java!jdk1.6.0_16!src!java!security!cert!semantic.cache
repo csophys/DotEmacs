@@ -1,0 +1,127 @@
+;; Object cert/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cert/"
+  :tables (list 
+   (semanticdb-table "Certificate.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.security.cert" package nil nil [178 205])
+            ("java.util.Arrays" include nil nil [207 231])
+            ("java.security.PublicKey" include nil nil [233 264])
+            ("java.security.NoSuchAlgorithmException" include nil nil [265 311])
+            ("java.security.NoSuchProviderException" include nil nil [312 357])
+            ("java.security.InvalidKeyException" include nil nil [358 399])
+            ("java.security.SignatureException" include nil nil [400 440])
+            ("sun.security.x509.X509CertImpl" include nil nil [442 480])
+            ("Certificate" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1507 1574])
+                    ("type" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1608 1634])
+                    ("Certificate" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("type" variable (:type "String") (reparse-symbol formal_parameters) [2047 2058]))                          )
+                        (reparse-symbol class_member_declaration) [2025 2086])
+                    ("getType" function
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2205 2261])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("other" variable (:type "Object") (reparse-symbol formal_parameters) [2769 2781]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2747 3216])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3363 3720])
+                    ("getEncoded" function
+                       (:throws ("CertificateEncodingException")
+                        :typemodifiers ("public" "abstract")
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [4105 4185])
+                    ("verify" function
+                       (:throws ("CertificateException" "NoSuchAlgorithmException" "InvalidKeyException" "NoSuchProviderException" "SignatureException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("key" variable (:type "PublicKey") (reparse-symbol formal_parameters) [4775 4788]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4747 4934])
+                    ("verify" function
+                       (:throws ("CertificateException" "NoSuchAlgorithmException" "InvalidKeyException" "NoSuchProviderException" "SignatureException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("key" variable (:type "PublicKey") (reparse-symbol formal_parameters) [5678 5691])
+                            ("sigProvider" variable (:type "String") (reparse-symbol formal_parameters) [5693 5711]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5650 5857])
+                    ("toString" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6006 6040])
+                    ("getPublicKey" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "PublicKey")
+                        (reparse-symbol class_member_declaration) [6150 6191])
+                    ("CertificateRep" type
+                       (:typemodifiers ("protected" "static")
+                        :interfaces ("java.io.Serializable")
+                        :members 
+                          ( ("serialVersionUID" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [6359 6426])
+                            ("type" variable
+                               (:typemodifiers ("private")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [6429 6449])
+                            ("data" variable
+                               (:dereference 1
+                                :typemodifiers ("private")
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [6451 6471])
+                            ("CertificateRep" function
+                               (:constructor-flag t
+                                :typemodifiers ("protected")
+                                :arguments 
+                                  ( ("type" variable (:type "String") (reparse-symbol formal_parameters) [6738 6749])
+                                    ("data" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [6751 6762]))                                  )
+                                (reparse-symbol class_member_declaration) [6713 6814])
+                            ("readResolve" function
+                               (:throws ("java.io.ObjectStreamException")
+                                :typemodifiers ("protected")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [7018 7419]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [6285 7425])
+                    ("writeReplace" function
+                       (:throws ("java.io.ObjectStreamException")
+                        :typemodifiers ("protected")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [7713 8020]))                  
+                :type "class")
+                nil [1434 8022]))          
+    :file "Certificate.java"
+    :pointmax 8023
+    :fsize 8022
+    :lastmodtime '(19058 1792)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!security!cert!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

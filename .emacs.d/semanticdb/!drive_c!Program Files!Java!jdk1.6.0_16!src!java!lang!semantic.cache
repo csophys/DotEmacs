@@ -1,0 +1,22 @@
+;; Object lang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lang/"
+  :tables (list 
+   (semanticdb-table "Character.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.lang" package nil nil [176 194])
+            ("java.util.Map" include nil nil [195 216])
+            ("java.util.HashMap" include nil nil [217 242])
+            ("java.util.Locale" include nil nil [243 267]))          
+    :file "Character.java"
+    :pointmax 217191
+    :fsize 217190
+    :lastmodtime '(19058 1782)
+    :unmatched-syntax '((BRACE_BLOCK 4587 . 217190) (GT 4585 . 4586) (IDENTIFIER 4576 . 4585) (PUBLIC 4488 . 4494) (LT 4575 . 4576))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!lang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

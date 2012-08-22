@@ -1,0 +1,356 @@
+;; Object atomic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "atomic/"
+  :tables (list 
+   (semanticdb-table "AtomicBoolean.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.concurrent.atomic" package nil nil [180 216])
+            ("sun.misc.Unsafe" include nil nil [217 240])
+            ("AtomicBoolean" type
+               (:typemodifiers ("public")
+                :interfaces ("java.io.Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [699 765])
+                    ("unsafe" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Unsafe")
+                        (reparse-symbol class_member_declaration) [827 883])
+                    ("valueOffset" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [888 926])
+                    ("value" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1126 1153])
+                    ("AtomicBoolean" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("initialValue" variable (:type "boolean") (reparse-symbol formal_parameters) [1321 1341]))                          )
+                        (reparse-symbol class_member_declaration) [1300 1388])
+                    ("AtomicBoolean" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1487 1517])
+                    ("get" function
+                       (:typemodifiers ("public" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1613 1674])
+                    ("compareAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("expect" variable (:type "boolean") (reparse-symbol formal_parameters) [2056 2070])
+                            ("update" variable (:type "boolean") (reparse-symbol formal_parameters) [2072 2086]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2021 2225])
+                    ("weakCompareAndSet" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("expect" variable (:type "boolean") (reparse-symbol formal_parameters) [2724 2738])
+                            ("update" variable (:type "boolean") (reparse-symbol formal_parameters) [2740 2754]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2691 2893])
+                    ("set" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "boolean") (reparse-symbol formal_parameters) [3029 3045]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3007 3088])
+                    ("lazySet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "boolean") (reparse-symbol formal_parameters) [3241 3257]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3215 3352])
+                    ("getAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "boolean") (reparse-symbol formal_parameters) [3557 3573]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3526 3730])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3878 3950]))                  
+                :type "class")
+                nil [634 3953]))          
+    :file "AtomicBoolean.java"
+    :pointmax 3954
+    :fsize 3953
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AtomicInteger.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.concurrent.atomic" package nil nil [180 216])
+            ("sun.misc.Unsafe" include nil nil [217 240])
+            ("AtomicInteger" type
+               (:typemodifiers ("public")
+                :interfaces ("java.io.Serializable")
+                :superclasses "Number"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [861 927])
+                    ("unsafe" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Unsafe")
+                        (reparse-symbol class_member_declaration) [990 1046])
+                    ("valueOffset" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1051 1089])
+                    ("value" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1289 1316])
+                    ("AtomicInteger" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("initialValue" variable (:type "int") (reparse-symbol formal_parameters) [1476 1492]))                          )
+                        (reparse-symbol class_member_declaration) [1455 1531])
+                    ("AtomicInteger" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1618 1648])
+                    ("get" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1741 1793])
+                    ("set" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [1913 1925]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1891 1960])
+                    ("lazySet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [2113 2125]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2087 2193])
+                    ("getAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [2389 2401]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2362 2554])
+                    ("compareAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("expect" variable (:type "int") (reparse-symbol formal_parameters) [2936 2946])
+                            ("update" variable (:type "int") (reparse-symbol formal_parameters) [2948 2958]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2901 3036])
+                    ("weakCompareAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("expect" variable (:type "int") (reparse-symbol formal_parameters) [3541 3551])
+                            ("update" variable (:type "int") (reparse-symbol formal_parameters) [3553 3563]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3502 3641])
+                    ("getAndIncrement" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3759 3977])
+                    ("getAndDecrement" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4095 4313])
+                    ("getAndAdd" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("delta" variable (:type "int") (reparse-symbol formal_parameters) [4501 4510]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4474 4699])
+                    ("incrementAndGet" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4816 5031])
+                    ("decrementAndGet" function
+                       (:typemodifiers ("public" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5148 5363])
+                    ("addAndGet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("delta" variable (:type "int") (reparse-symbol formal_parameters) [5550 5559]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5523 5745])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5893 5965])
+                    ("intValue" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5972 6016])
+                    ("longValue" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6022 6074])
+                    ("floatValue" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [6080 6135])
+                    ("doubleValue" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [6141 6199]))                  
+                :type "class")
+                nil [781 6202]))          
+    :file "AtomicInteger.java"
+    :pointmax 6203
+    :fsize 6202
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AtomicLong.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.util.concurrent.atomic" package nil nil [177 213])
+            ("sun.misc.Unsafe" include nil nil [214 237])
+            ("AtomicLong" type
+               (:typemodifiers ("public")
+                :interfaces ("java.io.Serializable")
+                :superclasses "Number"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [857 923])
+                    ("unsafe" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Unsafe")
+                        (reparse-symbol class_member_declaration) [987 1043])
+                    ("valueOffset" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1048 1086])
+                    ("VM_SUPPORTS_LONG_CAS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1366 1426])
+                    ("VMSupportsCS8" function
+                       (:typemodifiers ("private" "static" "native")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1589 1635])
+                    ("value" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1832 1860])
+                    ("AtomicLong" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("initialValue" variable (:type "long") (reparse-symbol formal_parameters) [2014 2031]))                          )
+                        (reparse-symbol class_member_declaration) [1996 2070])
+                    ("AtomicLong" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [2154 2181])
+                    ("get" function
+                       (:typemodifiers ("public" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2274 2327])
+                    ("set" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "long") (reparse-symbol formal_parameters) [2447 2460]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2425 2495])
+                    ("lazySet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "long") (reparse-symbol formal_parameters) [2648 2661]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2622 2730])
+                    ("getAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("newValue" variable (:type "long") (reparse-symbol formal_parameters) [2927 2940]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2899 3098])
+                    ("compareAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("expect" variable (:type "long") (reparse-symbol formal_parameters) [3480 3491])
+                            ("update" variable (:type "long") (reparse-symbol formal_parameters) [3493 3504]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3445 3583])
+                    ("weakCompareAndSet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("expect" variable (:type "long") (reparse-symbol formal_parameters) [4088 4099])
+                            ("update" variable (:type "long") (reparse-symbol formal_parameters) [4101 4112]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4049 4191])
+                    ("getAndIncrement" function
+                       (:typemodifiers ("public" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4309 4534])
+                    ("getAndDecrement" function
+                       (:typemodifiers ("public" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4652 4877])
+                    ("getAndAdd" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("delta" variable (:type "long") (reparse-symbol formal_parameters) [5066 5076]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5038 5271])
+                    ("incrementAndGet" function
+                       (:typemodifiers ("public" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5388 5606])
+                    ("decrementAndGet" function
+                       (:typemodifiers ("public" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5723 5941])
+                    ("addAndGet" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("delta" variable (:type "long") (reparse-symbol formal_parameters) [6129 6139]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6101 6327])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6475 6544])
+                    ("intValue" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6551 6600])
+                    ("longValue" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6606 6658])
+                    ("floatValue" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [6664 6719])
+                    ("doubleValue" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [6725 6783]))                  
+                :type "class")
+                nil [780 6786]))          
+    :file "AtomicLong.java"
+    :pointmax 6787
+    :fsize 6786
+    :lastmodtime '(19058 1800)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!util!concurrent!atomic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

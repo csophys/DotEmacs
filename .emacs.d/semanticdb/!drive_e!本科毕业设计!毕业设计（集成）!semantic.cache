@@ -1,0 +1,69 @@
+;; Object 毕业设计（集成）/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "毕业设计（集成）/"
+  :tables (list 
+   (semanticdb-table "outlook.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("javax.swing.*" include nil nil [1 22])
+            ("java.awt.*" include nil nil [23 41])
+            ("java.awt.event.*" include nil nil [42 66])
+            ("java.lang.*" include nil nil [67 86])
+            ("java.io.*" include nil nil [87 104])
+            ("outlook" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("frame" variable (:type "JFrame") (reparse-symbol class_member_declaration) [134 173])
+                    ("p1" variable (:type "Panel") (reparse-symbol class_member_declaration) [179 200])
+                    ("p2" variable (:type "Panel") (reparse-symbol class_member_declaration) [206 227])
+                    ("p3" variable (:type "Panel") (reparse-symbol class_member_declaration) [233 254])
+                    ("p4" variable (:type "Panel") (reparse-symbol class_member_declaration) [260 281])
+                    ("p5" variable (:type "Panel") (reparse-symbol class_member_declaration) [287 308])
+                    ("p6" variable (:type "Panel") (reparse-symbol class_member_declaration) [314 335])
+                    ("t1" variable (:type "TextArea") (reparse-symbol class_member_declaration) [341 368])
+                    ("t2" variable (:type "TextArea") (reparse-symbol class_member_declaration) [371 411])
+                    ("t3" variable (:type "TextArea") (reparse-symbol class_member_declaration) [414 470])
+                    ("t4" variable (:type "TextArea") (reparse-symbol class_member_declaration) [473 514])
+                    ("t5" variable (:type "TextArea") (reparse-symbol class_member_declaration) [517 558])
+                    ("t6" variable (:type "TextArea") (reparse-symbol class_member_declaration) [561 600])
+                    ("mb" variable (:type "JMenuBar") (reparse-symbol class_member_declaration) [603 630])
+                    ("m1" variable (:type "JMenu") (reparse-symbol class_member_declaration) [633 658])
+                    ("m9" variable (:type "JMenu") (reparse-symbol class_member_declaration) [661 686])
+                    ("m2" variable (:type "JMenu") (reparse-symbol class_member_declaration) [689 721])
+                    ("m3" variable (:type "JMenu") (reparse-symbol class_member_declaration) [724 759])
+                    ("m4" variable (:type "JMenu") (reparse-symbol class_member_declaration) [762 795])
+                    ("m5" variable (:type "JMenu") (reparse-symbol class_member_declaration) [798 830])
+                    ("m6" variable (:type "JMenu") (reparse-symbol class_member_declaration) [833 866])
+                    ("m7" variable (:type "JMenu") (reparse-symbol class_member_declaration) [869 901])
+                    ("m8" variable (:type "JMenu") (reparse-symbol class_member_declaration) [904 1046])
+                    ("mi1" variable (:type "JMenuItem") (reparse-symbol class_member_declaration) [1049 1083])
+                    ("mi2" variable (:type "JMenuItem") (reparse-symbol class_member_declaration) [1086 1120])
+                    ("mi4" variable (:type "JMenuItem") (reparse-symbol class_member_declaration) [1165 1201])
+                    ("outlook" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1204 4011])
+                    ("run" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4021 5013])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [5050 5063]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5026 5104]))                  
+                :type "class")
+                nil [106 5106]))          
+    :file "outlook.java"
+    :pointmax 5107
+    :fsize 5481
+    :lastmodtime '(20520 27216)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!本科毕业设计!毕业设计（集成）!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

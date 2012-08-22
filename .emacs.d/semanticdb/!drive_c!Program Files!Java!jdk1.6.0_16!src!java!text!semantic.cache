@@ -1,0 +1,1673 @@
+;; Object text/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "text/"
+  :tables (list 
+   (semanticdb-table "DateFormat.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text" package nil nil [737 755])
+            ("java.io.InvalidObjectException" include nil nil [757 795])
+            ("java.text.spi.DateFormatProvider" include nil nil [796 836])
+            ("java.util.Calendar" include nil nil [837 863])
+            ("java.util.Date" include nil nil [864 886])
+            ("java.util.GregorianCalendar" include nil nil [887 922])
+            ("java.util.HashMap" include nil nil [923 948])
+            ("java.util.Locale" include nil nil [949 973])
+            ("java.util.Map" include nil nil [974 995])
+            ("java.util.MissingResourceException" include nil nil [996 1038])
+            ("java.util.ResourceBundle" include nil nil [1039 1071])
+            ("java.util.TimeZone" include nil nil [1072 1098])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [1099 1142])
+            ("sun.util.LocaleServiceProviderPool" include nil nil [1143 1185])
+            ("DateFormat" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "Format"
+                :members 
+                  ( ("calendar" variable
+                       (:typemodifiers ("protected")
+                        :type "Calendar")
+                        (reparse-symbol class_member_declaration) [5382 5410])
+                    ("numberFormat" variable
+                       (:typemodifiers ("protected")
+                        :type "NumberFormat")
+                        (reparse-symbol class_member_declaration) [5688 5724])
+                    ("ERA_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5848 5886])
+                    ("YEAR_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6010 6049])
+                    ("MONTH_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6174 6214])
+                    ("DATE_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6338 6377])
+                    ("HOUR_OF_DAY1_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6637 6684])
+                    ("HOUR_OF_DAY0_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6946 6993])
+                    ("MINUTE_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7119 7160])
+                    ("SECOND_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7286 7327])
+                    ("MILLISECOND_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7458 7504])
+                    ("DAY_OF_WEEK_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7635 7681])
+                    ("DAY_OF_YEAR_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7812 7859])
+                    ("DAY_OF_WEEK_IN_MONTH_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7999 8055])
+                    ("WEEK_OF_YEAR_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8187 8235])
+                    ("WEEK_OF_MONTH_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8368 8417])
+                    ("AM_PM_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8542 8583])
+                    ("HOUR1_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8836 8877])
+                    ("HOUR0_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9132 9173])
+                    ("TIMEZONE_FIELD" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9301 9345])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [9401 9467])
+                    ("format" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [10886 10896])
+                            ("toAppendTo" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [10898 10921])
+                            ("fieldPosition" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [10960 10987]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [10853 11361])
+                    ("format" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("date" variable (:type "Date") (reparse-symbol formal_parameters) [12659 12668])
+                            ("toAppendTo" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [12670 12693])
+                            ("fieldPosition" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [12735 12762]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [12623 12764])
+                    ("format" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("date" variable (:type "Date") (reparse-symbol formal_parameters) [12972 12981]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12945 13094])
+                    ("parse" function
+                       (:throws ("ParseException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [13647 13660]))                          
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [13629 13949])
+                    ("parse" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [14896 14909])
+                            ("pos" variable (:type "ParsePosition") (reparse-symbol formal_parameters) [14911 14928]))                          
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [14869 14930])
+                    ("parseObject" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [16231 16244])
+                            ("pos" variable (:type "ParsePosition") (reparse-symbol formal_parameters) [16246 16263]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [16205 16307])
+                    ("FULL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16369 16402])
+                    ("LONG" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16463 16496])
+                    ("MEDIUM" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16559 16594])
+                    ("SHORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16656 16690])
+                    ("DEFAULT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16776 16817])
+                    ("getTimeInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [16968 17084])
+                    ("getTimeInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("style" variable (:type "int") (reparse-symbol formal_parameters) [17385 17394]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [17338 17461])
+                    ("getTimeInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("style" variable (:type "int") (reparse-symbol formal_parameters) [17800 17809])
+                            ("aLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [17860 17874]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [17753 17929])
+                    ("getDateInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [18080 18196])
+                    ("getDateInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("style" variable (:type "int") (reparse-symbol formal_parameters) [18497 18506]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [18450 18573])
+                    ("getDateInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("style" variable (:type "int") (reparse-symbol formal_parameters) [18912 18921])
+                            ("aLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [18972 18986]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [18865 19041])
+                    ("getDateTimeInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [19202 19328])
+                    ("getDateTimeInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("dateStyle" variable (:type "int") (reparse-symbol formal_parameters) [19781 19794])
+                            ("timeStyle" variable (:type "int") (reparse-symbol formal_parameters) [19851 19864]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [19730 19943])
+                    ("getDateTimeInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :arguments 
+                          ( ("dateStyle" variable (:type "int") (reparse-symbol formal_parameters) [20314 20327])
+                            ("timeStyle" variable (:type "int") (reparse-symbol formal_parameters) [20329 20342])
+                            ("aLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [20344 20358]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [20255 20425])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "final" "static")
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [20553 20655])
+                    ("getAvailableLocales" function
+                       (:typemodifiers ("public" "static")
+                        :type "Locale[]")
+                        (reparse-symbol class_member_declaration) [21269 21476])
+                    ("setCalendar" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newCalendar" variable (:type "Calendar") (reparse-symbol formal_parameters) [21736 21756]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21712 21806])
+                    ("getCalendar" function
+                       (:typemodifiers ("public")
+                        :type "Calendar")
+                        (reparse-symbol class_member_declaration) [21965 22031])
+                    ("setNumberFormat" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newNumberFormat" variable (:type "NumberFormat") (reparse-symbol formal_parameters) [22186 22214]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22158 22272])
+                    ("getNumberFormat" function
+                       (:typemodifiers ("public")
+                        :type "NumberFormat")
+                        (reparse-symbol class_member_declaration) [22471 22549])
+                    ("setTimeZone" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("zone" variable (:type "TimeZone") (reparse-symbol formal_parameters) [22709 22722]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22685 22771])
+                    ("getTimeZone" function
+                       (:typemodifiers ("public")
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [22893 22973])
+                    ("setLenient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("lenient" variable (:type "boolean") (reparse-symbol formal_parameters) [23384 23399]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23361 23450])
+                    ("isLenient" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23528 23603])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [23651 23780])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [23848 23858]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [23826 24504])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [24553 24783])
+                    ("get" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("timeStyle" variable (:type "int") (reparse-symbol formal_parameters) [25279 25292])
+                            ("dateStyle" variable (:type "int") (reparse-symbol formal_parameters) [25294 25307])
+                            ("flags" variable (:type "int") (reparse-symbol formal_parameters) [25343 25352])
+                            ("loc" variable (:type "Locale") (reparse-symbol formal_parameters) [25354 25364]))                          
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [25249 26901])
+                    ("DateFormat" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected"))
+                        (reparse-symbol class_member_declaration) [26956 26981])
+                    ("Field" type
+                       (:typemodifiers ("public" "static")
+                        :superclasses "Format.Field"
+                        :members 
+                          ( ("serialVersionUID" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [27549 27615])
+                            ("instanceMap" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "Map")
+                                (reparse-symbol class_member_declaration) [27694 27749])
+                            ("calendarToFieldMapping" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "static" "final")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [27870 28001])
+                            ("calendarField" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [28042 28068])
+                            ("ofCalendarField" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("calendarField" variable (:type "int") (reparse-symbol formal_parameters) [28739 28756]))                                  
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [28703 29101])
+                            ("Field" function
+                               (:constructor-flag t
+                                :typemodifiers ("protected")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [29635 29646])
+                                    ("calendarField" variable (:type "int") (reparse-symbol formal_parameters) [29648 29665]))                                  )
+                                (reparse-symbol class_member_declaration) [29619 30066])
+                            ("getCalendarField" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [30529 30604])
+                            ("readResolve" function
+                               (:throws ("InvalidObjectException")
+                                :typemodifiers ("protected")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [30874 31361])
+                            ("ERA" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [31490 31553])
+                            ("YEAR" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [31635 31701])
+                            ("MONTH" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [31784 31853])
+                            ("DAY_OF_MONTH" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [31943 32061])
+                            ("HOUR_OF_DAY1" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [32197 32268])
+                            ("HOUR_OF_DAY0" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [32404 32507])
+                            ("MINUTE" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [32591 32662])
+                            ("SECOND" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [32746 32817])
+                            ("MILLISECOND" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [32906 33009])
+                            ("DAY_OF_WEEK" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [33098 33201])
+                            ("DAY_OF_YEAR" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [33290 33393])
+                            ("DAY_OF_WEEK_IN_MONTH" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [33482 33661])
+                            ("WEEK_OF_YEAR" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [33751 33855])
+                            ("WEEK_OF_MONTH" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [33946 34051])
+                            ("AM_PM" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [34185 34282])
+                            ("HOUR1" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [34411 34469])
+                            ("HOUR0" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [34598 34693])
+                            ("TIME_ZONE" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [34780 34845]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [27437 34851]))                  
+                :type "class")
+                nil [5020 35953]))          
+    :file "DateFormat.java"
+    :pointmax 35954
+    :fsize 35953
+    :lastmodtime '(19058 1794)
+    :unmatched-syntax '((GT 35096 . 35097) (COMMA 35084 . 35085) (PRIVATE 34960 . 34967) (LT 35065 . 35066))
+    )
+   (semanticdb-table "DateFormatSymbols.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text" package nil nil [744 762])
+            ("java.io.IOException" include nil nil [764 791])
+            ("java.io.ObjectOutputStream" include nil nil [792 826])
+            ("java.io.Serializable" include nil nil [827 855])
+            ("java.lang.ref.SoftReference" include nil nil [856 891])
+            ("java.text.spi.DateFormatSymbolsProvider" include nil nil [892 939])
+            ("java.util.Arrays" include nil nil [940 964])
+            ("java.util.Hashtable" include nil nil [965 992])
+            ("java.util.List" include nil nil [993 1015])
+            ("java.util.Locale" include nil nil [1016 1040])
+            ("java.util.ResourceBundle" include nil nil [1041 1073])
+            ("java.util.TimeZone" include nil nil [1074 1100])
+            ("java.util.spi.LocaleServiceProvider" include nil nil [1101 1144])
+            ("sun.util.LocaleServiceProviderPool" include nil nil [1145 1187])
+            ("sun.util.TimeZoneNameUtility" include nil nil [1188 1224])
+            ("sun.util.calendar.ZoneInfo" include nil nil [1225 1259])
+            ("sun.util.resources.LocaleData" include nil nil [1260 1297])
+            ("DateFormatSymbols" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable" "Cloneable")
+                :members 
+                  ( ("DateFormatSymbols" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [4056 4139])
+                    ("DateFormatSymbols" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [4864 4877]))                          )
+                        (reparse-symbol class_member_declaration) [4839 4922])
+                    ("eras" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5104 5125])
+                    ("months" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5375 5398])
+                    ("shortMonths" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5646 5674])
+                    ("weekdays" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5943 5968])
+                    ("shortWeekdays" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6242 6272])
+                    ("ampms" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6467 6489])
+                    ("zoneStrings" variable
+                       (:dereference 2
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7667 7697])
+                    ("isZoneStringsSet" variable
+                       (:typemodifiers ("transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7801 7844])
+                    ("patternChars" variable
+                       (:typemodifiers ("static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8013 8071])
+                    ("localPatternChars" variable (:type "String") (reparse-symbol class_member_declaration) [8579 8612])
+                    ("locale" variable (:type "Locale") (reparse-symbol class_member_declaration) [8754 8775])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [8848 8907])
+                    ("getAvailableLocales" function
+                       (:typemodifiers ("public" "static")
+                        :type "Locale[]")
+                        (reparse-symbol class_member_declaration) [9557 9765])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static" "final")
+                        :type "DateFormatSymbols")
+                        (reparse-symbol class_member_declaration) [10239 10340])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static" "final")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [10975 10988]))                          
+                        :type "DateFormatSymbols")
+                        (reparse-symbol class_member_declaration) [10925 11625])
+                    ("getEras" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [11732 11814])
+                    ("setEras" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newEras" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [11952 11968]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11932 12032])
+                    ("getMonths" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [12156 12244])
+                    ("setMonths" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newMonths" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [12403 12421]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12381 12491])
+                    ("getShortMonths" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [12618 12721])
+                    ("setShortMonths" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newShortMonths" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [12893 12916]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12866 13001])
+                    ("getWeekdays" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [13229 13323])
+                    ("setWeekdays" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newWeekdays" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [13597 13617]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13573 13693])
+                    ("getShortWeekdays" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [13927 14036])
+                    ("setShortWeekdays" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newShortWeekdays" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [14326 14351]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14297 14442])
+                    ("getAmPmStrings" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [14551 14642])
+                    ("setAmPmStrings" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newAmpms" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [14790 14807]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14763 14874])
+                    ("getZoneStrings" function
+                       (:typemodifiers ("public")
+                        :type "String[][]")
+                        (reparse-symbol class_member_declaration) [16746 16822])
+                    ("setZoneStrings" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newZoneStrings" variable
+                               (:dereference 2
+                                :type "String")
+                                (reparse-symbol formal_parameters) [18258 18283]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18231 18649])
+                    ("getLocalPatternChars" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18810 18900])
+                    ("setLocalPatternChars" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newLocalPatternChars" variable (:type "String") (reparse-symbol formal_parameters) [19125 19152]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19092 19223])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [19272 19561])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [19672 19936])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [20003 20013]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [19981 20849])
+                    ("millisPerHour" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [20997 21041])
+                    ("cachedLocaleData" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [21153 21214])
+                    ("cacheLookup" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("desiredLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [21381 21401]))                          
+                        :type "ResourceBundle")
+                        (reparse-symbol class_member_declaration) [21339 21838])
+                    ("initializeData" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("desiredLocale" variable (:type "Locale") (reparse-symbol formal_parameters) [21872 21892]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21844 22944])
+                    ("getZoneIndex" function
+                       (:typemodifiers ("final")
+                        :arguments 
+                          ( ("ID" variable (:type "String") (reparse-symbol formal_parameters) [23441 23450]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [23418 23686])
+                    ("getZoneStringsWrapper" function
+                       (:typemodifiers ("final")
+                        :type "String[][]")
+                        (reparse-symbol class_member_declaration) [23911 24103])
+                    ("getZoneStringsImpl" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("needsCopy" variable (:type "boolean") (reparse-symbol formal_parameters) [24153 24170]))                          
+                        :type "String[][]")
+                        (reparse-symbol class_member_declaration) [24109 24548])
+                    ("isSubclassObject" function
+                       (:typemodifiers ("private" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24554 24678])
+                    ("copyMembers" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("src" variable (:type "DateFormatSymbols") (reparse-symbol formal_parameters) [24965 24986])
+                            ("dst" variable (:type "DateFormatSymbols") (reparse-symbol formal_parameters) [24988 25009]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24934 25680])
+                    ("writeObject" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("stream" variable (:type "ObjectOutputStream") (reparse-symbol formal_parameters) [25929 25954]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25904 26134]))                  
+                :type "class")
+                nil [3295 26957]))          
+    :file "DateFormatSymbols.java"
+    :pointmax 26958
+    :fsize 26957
+    :lastmodtime '(19058 1794)
+    :unmatched-syntax '((GT 26482 . 26483) (COMMA 26395 . 26396) (PRIVATE 26257 . 26264) (LT 26369 . 26370))
+    )
+   (semanticdb-table "MessageFormat.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text" package nil nil [753 771])
+            ("java.io.InvalidObjectException" include nil nil [773 811])
+            ("java.io.IOException" include nil nil [812 839])
+            ("java.io.ObjectInputStream" include nil nil [840 873])
+            ("java.text.DecimalFormat" include nil nil [874 905])
+            ("java.util.ArrayList" include nil nil [906 933])
+            ("java.util.Arrays" include nil nil [934 958])
+            ("java.util.Date" include nil nil [959 981])
+            ("java.util.List" include nil nil [982 1004])
+            ("java.util.Locale" include nil nil [1005 1029])
+            ("MessageFormat" type
+               (:typemodifiers ("public")
+                :superclasses "Format"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [13448 13514])
+                    ("MessageFormat" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [14045 14059]))                          )
+                        (reparse-symbol class_member_declaration) [14024 14142])
+                    ("MessageFormat" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [14735 14749])
+                            ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [14751 14764]))                          )
+                        (reparse-symbol class_member_declaration) [14714 14834])
+                    ("setLocale" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [15691 15704]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15669 15743])
+                    ("getLocale" function
+                       (:typemodifiers ("public")
+                        :type "Locale")
+                        (reparse-symbol class_member_declaration) [15915 15971])
+                    ("applyPattern" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [16437 16451]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16412 19106])
+                    ("toPattern" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [19433 23517])
+                    ("setFormatsByArgumentIndex" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newFormats" variable
+                               (:dereference 1
+                                :type "Format")
+                                (reparse-symbol formal_parameters) [24755 24774]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24717 24979])
+                    ("setFormats" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newFormats" variable
+                               (:dereference 1
+                                :type "Format")
+                                (reparse-symbol formal_parameters) [26101 26120]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26078 26362])
+                    ("setFormatByArgumentIndex" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("argumentIndex" variable (:type "int") (reparse-symbol formal_parameters) [27266 27283])
+                            ("newFormat" variable (:type "Format") (reparse-symbol formal_parameters) [27285 27301]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27229 27476])
+                    ("setFormat" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("formatElementIndex" variable (:type "int") (reparse-symbol formal_parameters) [28433 28455])
+                            ("newFormat" variable (:type "Format") (reparse-symbol formal_parameters) [28457 28473]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28411 28531])
+                    ("getFormatsByArgumentIndex" function
+                       (:typemodifiers ("public")
+                        :type "Format[]")
+                        (reparse-symbol class_member_declaration) [29509 30006])
+                    ("getFormats" function
+                       (:typemodifiers ("public")
+                        :type "Format[]")
+                        (reparse-symbol class_member_declaration) [30795 30986])
+                    ("format" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("arguments" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [33887 33905])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [33907 33926])
+                            ("pos" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [33965 33982]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [33854 34051])
+                    ("format" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [34743 34757]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [34715 34884])
+                    ("format" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("arguments" variable (:type "Object") (reparse-symbol formal_parameters) [35829 35845])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [35847 35866])
+                            ("pos" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [35905 35922]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [35796 36002])
+                    ("formatToCharacterIterator" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("arguments" variable (:type "Object") (reparse-symbol formal_parameters) [38037 38053]))                          
+                        :type "AttributedCharacterIterator")
+                        (reparse-symbol class_member_declaration) [37976 38693])
+                    ("parse" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [40113 40126])
+                            ("pos" variable (:type "ParsePosition") (reparse-symbol formal_parameters) [40128 40145]))                          
+                        :type "Object[]")
+                        (reparse-symbol class_member_declaration) [40091 43168])
+                    ("parse" function
+                       (:throws ("ParseException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [43753 43766]))                          
+                        :type "Object[]")
+                        (reparse-symbol class_member_declaration) [43731 44069])
+                    ("parseObject" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [45386 45399])
+                            ("pos" variable (:type "ParsePosition") (reparse-symbol formal_parameters) [45401 45418]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [45360 45462])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [45582 46179])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [46285 46295]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [46263 46934])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [47016 47118])
+                    ("Field" type
+                       (:typemodifiers ("public" "static")
+                        :superclasses "Format.Field"
+                        :members 
+                          ( ("serialVersionUID" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [47465 47531])
+                            ("Field" function
+                               (:constructor-flag t
+                                :typemodifiers ("protected")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [47689 47700]))                                  )
+                                (reparse-symbol class_member_declaration) [47673 47738])
+                            ("readResolve" function
+                               (:throws ("InvalidObjectException")
+                                :typemodifiers ("protected")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [48018 48299])
+                            ("ARGUMENT" variable
+                               (:typemodifiers ("public" "final" "static")
+                                :type "Field")
+                                (reparse-symbol class_member_declaration) [48742 48842]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [47353 48848])
+                    ("locale" variable
+                       (:typemodifiers ("private")
+                        :type "Locale")
+                        (reparse-symbol class_member_declaration) [49016 49038])
+                    ("pattern" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [49254 49282])
+                    ("INITIAL_FORMATS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [49357 49403])
+                    ("formats" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Format")
+                        (reparse-symbol class_member_declaration) [49511 49566])
+                    ("offsets" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [49714 49763])
+                    ("argumentNumbers" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [49999 50056])
+                    ("maxOffset" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [50474 50501])
+                    ("subformat" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("arguments" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [51148 51166])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [51168 51187])
+                            ("fp" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [51224 51240])
+                            ("characterIterators" variable (:type "List") (reparse-symbol formal_parameters) [51242 51265]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [51117 56182])
+                    ("append" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [56352 56371])
+                            ("iterator" variable (:type "CharacterIterator") (reparse-symbol formal_parameters) [56373 56399]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [56332 56672])
+                    ("typeList" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [56678 56780])
+                    ("modifierList" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [56785 56885])
+                    ("dateModifierList" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [56890 56999])
+                    ("makeFormat" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("position" variable (:type "int") (reparse-symbol formal_parameters) [57029 57041])
+                            ("offsetNumber" variable (:type "int") (reparse-symbol formal_parameters) [57043 57059])
+                            ("segments" variable
+                               (:dereference 1
+                                :type "StringBuffer")
+                                (reparse-symbol formal_parameters) [57089 57112]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [57005 62038])
+                    ("findKeyword" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [62081 62089])
+                            ("list" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [62091 62104]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [62044 62287])
+                    ("copyAndFixQuotes" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [62384 62397])
+                            ("start" variable (:type "int") (reparse-symbol formal_parameters) [62399 62408])
+                            ("end" variable (:type "int") (reparse-symbol formal_parameters) [62410 62417])
+                            ("target" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [62419 62438]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [62293 62826])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("in" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [63074 63094]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [63050 63877]))                  
+                :type "class")
+                nil [13399 63879]))          
+    :file "MessageFormat.java"
+    :pointmax 63880
+    :fsize 63879
+    :lastmodtime '(19058 1794)
+    :unmatched-syntax '((DOT 34768 . 34769) (IDENTIFIER 34759 . 34765) (DOT 34767 . 34768))
+    )
+   (semanticdb-table "DecimalFormat.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text" package nil nil [753 771])
+            ("java.io.InvalidObjectException" include nil nil [773 811])
+            ("java.io.IOException" include nil nil [812 839])
+            ("java.io.ObjectInputStream" include nil nil [840 873])
+            ("java.math.BigDecimal" include nil nil [874 902])
+            ("java.math.BigInteger" include nil nil [903 931])
+            ("java.math.RoundingMode" include nil nil [932 962])
+            ("java.util.ArrayList" include nil nil [963 990])
+            ("java.util.Currency" include nil nil [991 1017])
+            ("java.util.Hashtable" include nil nil [1018 1045])
+            ("java.util.Locale" include nil nil [1046 1070])
+            ("java.util.ResourceBundle" include nil nil [1071 1103])
+            ("java.util.concurrent.atomic.AtomicInteger" include nil nil [1104 1153])
+            ("java.util.concurrent.atomic.AtomicLong" include nil nil [1154 1200])
+            ("sun.util.resources.LocaleData" include nil nil [1201 1238])
+            ("DecimalFormat" type
+               (:typemodifiers ("public")
+                :superclasses "NumberFormat"
+                :members 
+                  ( ("DecimalFormat" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [16362 17050])
+                    ("DecimalFormat" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [17970 17984]))                          )
+                        (reparse-symbol class_member_declaration) [17949 18158])
+                    ("DecimalFormat" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [19191 19205])
+                            ("symbols" variable (:type "DecimalFormatSymbols") (reparse-symbol formal_parameters) [19207 19235]))                          )
+                        (reparse-symbol class_member_declaration) [19169 19401])
+                    ("format" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("number" variable (:type "Object") (reparse-symbol formal_parameters) [20568 20581])
+                            ("toAppendTo" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [20620 20643])
+                            ("pos" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [20682 20699]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [20535 21611])
+                    ("format" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("number" variable (:type "double") (reparse-symbol formal_parameters) [22148 22161])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [22163 22182])
+                            ("fieldPosition" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [22215 22242]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [22121 22403])
+                    ("format" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("number" variable (:type "double") (reparse-symbol formal_parameters) [22849 22862])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [22864 22883])
+                            ("delegate" variable (:type "FieldDelegate") (reparse-symbol formal_parameters) [22917 22939]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [22821 26016])
+                    ("format" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("number" variable (:type "long") (reparse-symbol formal_parameters) [26560 26571])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [26573 26592])
+                            ("fieldPosition" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [26625 26652]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [26533 26813])
+                    ("format" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("number" variable (:type "long") (reparse-symbol formal_parameters) [27292 27303])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [27305 27324])
+                            ("delegate" variable (:type "FieldDelegate") (reparse-symbol formal_parameters) [27357 27379]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [27264 29426])
+                    ("format" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("number" variable (:type "BigDecimal") (reparse-symbol formal_parameters) [29986 30003])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [30005 30024])
+                            ("fieldPosition" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [30058 30085]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [29958 30245])
+                    ("format" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("number" variable (:type "BigDecimal") (reparse-symbol formal_parameters) [30701 30718])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [30720 30739])
+                            ("delegate" variable (:type "FieldDelegate") (reparse-symbol formal_parameters) [30773 30795]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [30673 31720])
+                    ("format" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("number" variable (:type "BigInteger") (reparse-symbol formal_parameters) [32279 32296])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [32298 32317])
+                            ("fieldPosition" variable (:type "FieldPosition") (reparse-symbol formal_parameters) [32350 32377]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [32251 32545])
+                    ("format" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("number" variable (:type "BigInteger") (reparse-symbol formal_parameters) [33036 33053])
+                            ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [33055 33074])
+                            ("delegate" variable (:type "FieldDelegate") (reparse-symbol formal_parameters) [33107 33129])
+                            ("formatLong" variable (:type "boolean") (reparse-symbol formal_parameters) [33131 33149]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [33008 34573])
+                    ("formatToCharacterIterator" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [35567 35577]))                          
+                        :type "AttributedCharacterIterator")
+                        (reparse-symbol class_member_declaration) [35506 36691])
+                    ("subformat" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [36870 36889])
+                            ("delegate" variable (:type "FieldDelegate") (reparse-symbol formal_parameters) [36891 36913])
+                            ("isNegative" variable (:type "boolean") (reparse-symbol formal_parameters) [36950 36968])
+                            ("isInteger" variable (:type "boolean") (reparse-symbol formal_parameters) [36970 36987])
+                            ("maxIntDigits" variable (:type "int") (reparse-symbol formal_parameters) [37024 37040])
+                            ("minIntDigits" variable (:type "int") (reparse-symbol formal_parameters) [37042 37058])
+                            ("maxFraDigits" variable (:type "int") (reparse-symbol formal_parameters) [37095 37111])
+                            ("minFraDigits" variable (:type "int") (reparse-symbol formal_parameters) [37113 37129]))                          
+                        :type "StringBuffer")
+                        (reparse-symbol class_member_declaration) [36839 50627])
+                    ("append" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("result" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [51242 51261])
+                            ("string" variable (:type "String") (reparse-symbol formal_parameters) [51263 51276])
+                            ("delegate" variable (:type "FieldDelegate") (reparse-symbol formal_parameters) [51302 51324])
+                            ("positions" variable
+                               (:dereference 1
+                                :type "FieldPosition")
+                                (reparse-symbol formal_parameters) [51350 51375])
+                            ("signAttribute" variable (:type "Format.Field") (reparse-symbol formal_parameters) [51401 51427]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [51222 52094])
+                    ("parse" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [55422 55433])
+                            ("pos" variable (:type "ParsePosition") (reparse-symbol formal_parameters) [55435 55452]))                          
+                        :type "Number")
+                        (reparse-symbol class_member_declaration) [55402 59646])
+                    ("getBigIntegerMultiplier" function
+                       (:typemodifiers ("private")
+                        :type "BigInteger")
+                        (reparse-symbol class_member_declaration) [59707 59917])
+                    ("bigIntegerMultiplier" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "BigInteger")
+                        (reparse-symbol class_member_declaration) [59922 59972])
+                    ("getBigDecimalMultiplier" function
+                       (:typemodifiers ("private")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [60033 60239])
+                    ("bigDecimalMultiplier" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [60244 60294])
+                    ("STATUS_INFINITE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60300 60345])
+                    ("STATUS_POSITIVE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60350 60395])
+                    ("STATUS_LENGTH" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60400 60445])
+                    ("subparse" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [61111 61122])
+                            ("parsePosition" variable (:type "ParsePosition") (reparse-symbol formal_parameters) [61124 61151])
+                            ("positivePrefix" variable (:type "String") (reparse-symbol formal_parameters) [61172 61193])
+                            ("negativePrefix" variable (:type "String") (reparse-symbol formal_parameters) [61195 61216])
+                            ("digits" variable (:type "DigitList") (reparse-symbol formal_parameters) [61237 61253])
+                            ("isExponent" variable (:type "boolean") (reparse-symbol formal_parameters) [61255 61273])
+                            ("status" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [61294 61310]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [61080 70338])
+                    ("getDecimalFormatSymbols" function
+                       (:typemodifiers ("public")
+                        :type "DecimalFormatSymbols")
+                        (reparse-symbol class_member_declaration) [70579 70852])
+                    ("setDecimalFormatSymbols" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newSymbols" variable (:type "DecimalFormatSymbols") (reparse-symbol formal_parameters) [71113 71144]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [71077 71387])
+                    ("getPositivePrefix" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [71480 71553])
+                    ("setPositivePrefix" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "String") (reparse-symbol formal_parameters) [71677 71692]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [71646 71814])
+                    ("getPositivePrefixFieldPositions" function
+                       (:typemodifiers ("private")
+                        :type "FieldPosition[]")
+                        (reparse-symbol class_member_declaration) [72128 72541])
+                    ("getNegativePrefix" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [72660 72733])
+                    ("setNegativePrefix" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "String") (reparse-symbol formal_parameters) [72883 72898]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [72852 72975])
+                    ("getNegativePrefixFieldPositions" function
+                       (:typemodifiers ("private")
+                        :type "FieldPosition[]")
+                        (reparse-symbol class_member_declaration) [73289 73702])
+                    ("getPositiveSuffix" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [73780 73853])
+                    ("setPositiveSuffix" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "String") (reparse-symbol formal_parameters) [73962 73977]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [73931 74054])
+                    ("getPositiveSuffixFieldPositions" function
+                       (:typemodifiers ("private")
+                        :type "FieldPosition[]")
+                        (reparse-symbol class_member_declaration) [74368 74781])
+                    ("getNegativeSuffix" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [74894 74967])
+                    ("setNegativeSuffix" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "String") (reparse-symbol formal_parameters) [75077 75092]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [75046 75169])
+                    ("getNegativeSuffixFieldPositions" function
+                       (:typemodifiers ("private")
+                        :type "FieldPosition[]")
+                        (reparse-symbol class_member_declaration) [75483 75896])
+                    ("getMultiplier" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [76043 76105])
+                    ("setMultiplier" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [76625 76637]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [76598 76751])
+                    ("getGroupingSize" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [77132 77198])
+                    ("setGroupingSize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [77696 77708]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [77667 77756])
+                    ("isDecimalSeparatorAlwaysShown" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [77989 78087])
+                    ("setDecimalSeparatorAlwaysShown" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "boolean") (reparse-symbol formal_parameters) [78363 78379]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [78320 78436])
+                    ("isParseBigDecimal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [78668 78742])
+                    ("setParseBigDecimal" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "boolean") (reparse-symbol formal_parameters) [78974 78990]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [78943 79035])
+                    ("clone" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [79107 79451])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "Object") (reparse-symbol formal_parameters) [79519 79529]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [79497 81447])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [81495 81650])
+                    ("toPattern" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [81798 81866])
+                    ("toLocalizedPattern" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [82024 82100])
+                    ("expandAffixes" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [82408 83219])
+                    ("expandAffix" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [84024 84038])
+                            ("buffer" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [84040 84059]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [83997 85129])
+                    ("expandAffix" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [85951 85965]))                          
+                        :type "FieldPosition[]")
+                        (reparse-symbol class_member_declaration) [85915 88426])
+                    ("appendAffix" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("buffer" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [89314 89333])
+                            ("affixPattern" variable (:type "String") (reparse-symbol formal_parameters) [89335 89354])
+                            ("expAffix" variable (:type "String") (reparse-symbol formal_parameters) [89385 89400])
+                            ("localized" variable (:type "boolean") (reparse-symbol formal_parameters) [89402 89419]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [89289 91024])
+                    ("appendAffix" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("buffer" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [91239 91258])
+                            ("affix" variable (:type "String") (reparse-symbol formal_parameters) [91260 91272])
+                            ("localized" variable (:type "boolean") (reparse-symbol formal_parameters) [91274 91291]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [91214 92841])
+                    ("toPattern" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("localized" variable (:type "boolean") (reparse-symbol formal_parameters) [92935 92952]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [92910 95966])
+                    ("applyPattern" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [97066 97080]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [97041 97127])
+                    ("applyLocalizedPattern" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [98297 98311]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [98263 98357])
+                    ("applyPattern" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("pattern" variable (:type "String") (reparse-symbol formal_parameters) [98454 98468])
+                            ("localized" variable (:type "boolean") (reparse-symbol formal_parameters) [98470 98487]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [98428 114818])
+                    ("setMaximumIntegerDigits" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [115228 115240]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [115192 115763])
+                    ("setMinimumIntegerDigits" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [116173 116185]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [116137 116708])
+                    ("setMaximumFractionDigits" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [117121 117133]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [117084 117672])
+                    ("setMinimumFractionDigits" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("newValue" variable (:type "int") (reparse-symbol formal_parameters) [118085 118097]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [118048 118636])
+                    ("getMaximumIntegerDigits" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [118950 119031])
+                    ("getMinimumIntegerDigits" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [119345 119426])
+                    ("getMaximumFractionDigits" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [119742 119825])
+                    ("getMinimumFractionDigits" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [120141 120224])
+                    ("getCurrency" function
+                       (:typemodifiers ("public")
+                        :type "Currency")
+                        (reparse-symbol class_member_declaration) [120606 120681])
+                    ("setCurrency" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("currency" variable (:type "Currency") (reparse-symbol formal_parameters) [121257 121274]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [121233 121468])
+                    ("getRoundingMode" function
+                       (:typemodifiers ("public")
+                        :type "RoundingMode")
+                        (reparse-symbol class_member_declaration) [121707 121781])
+                    ("setRoundingMode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("roundingMode" variable (:type "RoundingMode") (reparse-symbol formal_parameters) [122108 122133]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [122080 122319])
+                    ("adjustForCurrencyDefaultFractionDigits" function (:type "void") (reparse-symbol class_member_declaration) [122482 123490])
+                    ("readObject" function
+                       (:throws ("IOException" "ClassNotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("stream" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [125857 125881]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [125833 127061])
+                    ("digitList" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "DigitList")
+                        (reparse-symbol class_member_declaration) [127248 127304])
+                    ("positivePrefix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [127458 127494])
+                    ("positiveSuffix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [127676 127712])
+                    ("negativePrefix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [127866 127903])
+                    ("negativeSuffix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [128085 128121])
+                    ("posPrefixPattern" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [128810 128842])
+                    ("posSuffixPattern" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [129143 129175])
+                    ("negPrefixPattern" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [129472 129504])
+                    ("negSuffixPattern" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [129801 129833])
+                    ("multiplier" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [129962 129993])
+                    ("groupingSize" variable
+                       (:typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [130301 130334])
+                    ("decimalSeparatorAlwaysShown" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [130603 130655])
+                    ("parseBigDecimal" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [130808 130848])
+                    ("isCurrencyFormat" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [131030 131081])
+                    ("symbols" variable
+                       (:typemodifiers ("private")
+                        :type "DecimalFormatSymbols")
+                        (reparse-symbol class_member_declaration) [131403 131447])
+                    ("useExponentialNotation" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [131647 131686])
+                    ("positivePrefixFieldPositions" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "FieldPosition")
+                        (reparse-symbol class_member_declaration) [131919 131982])
+                    ("positiveSuffixFieldPositions" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "FieldPosition")
+                        (reparse-symbol class_member_declaration) [132165 132228])
+                    ("negativePrefixFieldPositions" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "FieldPosition")
+                        (reparse-symbol class_member_declaration) [132411 132474])
+                    ("negativeSuffixFieldPositions" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "transient")
+                        :type "FieldPosition")
+                        (reparse-symbol class_member_declaration) [132657 132720])
+                    ("minExponentDigits" variable
+                       (:typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [132988 133022])
+                    ("maximumIntegerDigits" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [133430 133500])
+                    ("minimumIntegerDigits" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [133850 133920])
+                    ("maximumFractionDigits" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [134279 134351])
+                    ("minimumFractionDigits" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [134707 134779])
+                    ("roundingMode" variable
+                       (:typemodifiers ("private")
+                        :type "RoundingMode")
+                        (reparse-symbol class_member_declaration) [134911 134970])
+                    ("currentSerialVersion" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [135055 135097])
+                    ("serialVersionOnStream" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [136171 136228])
+                    ("PATTERN_ZERO_DIGIT" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136483 136548])
+                    ("PATTERN_GROUPING_SEPARATOR" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136553 136618])
+                    ("PATTERN_DECIMAL_SEPARATOR" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136623 136688])
+                    ("PATTERN_PER_MILLE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136693 136763])
+                    ("PATTERN_PERCENT" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136768 136833])
+                    ("PATTERN_DIGIT" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136838 136903])
+                    ("PATTERN_SEPARATOR" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [136908 136973])
+                    ("PATTERN_EXPONENT" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [136978 137043])
+                    ("PATTERN_MINUS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [137048 137113])
+                    ("CURRENCY_SIGN" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [137537 137594])
+                    ("QUOTE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [137600 137645])
+                    ("EmptyFieldPositionArray" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "FieldPosition")
+                        (reparse-symbol class_member_declaration) [137651 137729])
+                    ("DOUBLE_INTEGER_DIGITS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [137803 137849])
+                    ("DOUBLE_FRACTION_DIGITS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [137854 137900])
+                    ("MAXIMUM_INTEGER_DIGITS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [137986 138047])
+                    ("MAXIMUM_FRACTION_DIGITS" variable
+                       (:typemodifiers ("static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [138052 138113])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [138165 138222])
+                    ("cachedLocaleData" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [138296 138357]))                  
+                :type "class")
+                nil [15618 138359]))          
+    :file "DecimalFormat.java"
+    :pointmax 138360
+    :fsize 138359
+    :lastmodtime '(19058 1794)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Normalizer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("java.text" package nil nil [922 940])
+            ("sun.text.normalizer.NormalizerBase" include nil nil [942 984])
+            ("sun.text.normalizer.NormalizerImpl" include nil nil [985 1027])
+            ("Normalizer" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("Normalizer" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [4132 4155])
+                    ("normalize" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("src" variable (:type "CharSequence") (reparse-symbol formal_parameters) [5534 5550])
+                            ("form" variable (:type "Form") (reparse-symbol formal_parameters) [5552 5561]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5503 5633])
+                    ("isNormalized" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("src" variable (:type "CharSequence") (reparse-symbol formal_parameters) [6324 6340])
+                            ("form" variable (:type "Form") (reparse-symbol formal_parameters) [6342 6351]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6289 6426]))                  
+                :type "class")
+                nil [4096 6428]))          
+    :file "Normalizer.java"
+    :pointmax 6429
+    :fsize 6428
+    :lastmodtime '(19058 1794)
+    :unmatched-syntax '((SEMICOLON 4155 . 4156))
+    )
+   )
+  :file "!drive_c!Program Files!Java!jdk1.6.0_16!src!java!text!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
